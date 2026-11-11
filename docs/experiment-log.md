@@ -37,6 +37,8 @@ Prompt IDs match [`stage-1-suno-plan.md`](stage-1-suno-plan.md).
 | | T3 | b | v6-mini | | | | | | | | | | | | |
 | | T4 | a | v6-mini | | | | | | | | | | | | |
 | | T4 | b | v6-mini | | | | | | | | | | | | |
+| | T5 | a | v6-mini | | | | | | | | | | | | Deed to the Glen | |
+| | T5 | b | v6-mini | | | | | | | | | | | | Deed to the Glen | |
 
 ## CORE (fill after Step 1)
 

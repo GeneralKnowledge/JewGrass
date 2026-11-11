@@ -304,3 +304,9 @@ Sell you back the water that your granddaddy saved
 Y'all have a blessed day now.
 Rent's due Friday.
 ```
+
+### Deed to the Glen (Scottish sibling of Deed to the County · satirical villain)
+
+A Highland laird with forty thousand acres who visits for a week a year.
+Paste-ready Suno version, with styles, is in
+[`drafts/deed-to-the-glen-first-draft.md`](drafts/deed-to-the-glen-first-draft.md).
