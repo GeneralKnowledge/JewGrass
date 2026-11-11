@@ -138,3 +138,20 @@ Own the loch!
 
 If the fiddle and pipes vanish under the guitars, move `Scottish fiddle, bagpipe drone`
 to just after `nu metal rap fusion`.
+
+---
+
+## T7: sung nu metal version (no rap)
+
+Same lyrics as T6. Title `Deed to the Glen T7`. Trap drums, 808 and scratches are
+removed because they pull Suno back towards rap. Tag changes from T6: Verse 1
+`[Gritty sung male vocal, sneering, Scottish accent]`, Verse 2
+`[Aggressive sung vocal, half-screamed]`, Verse 3
+`[Brooding sung vocal, low and menacing, drop-tuned riff]`, choruses
+`[Screamed chorus, heavy guitars]`.
+
+```
+nu metal, Celtic metal, dark and heavy, Scottish accent, gritty sung male vocals, sneering villain character, screamed chorus, drop-tuned seven-string guitars, chugging palm-muted riffs, pounding live drums, down-tuned distorted bass, Scottish fiddle, bagpipe drone, smug posh spoken interludes, sweet psalm-like female vocal on the bridge, heavy breakdown, raw unpolished mix
+```
+
+If it raps or the verses sound crammed, start Styles with `melodic sung vocals, no rap`.

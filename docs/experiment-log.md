@@ -41,6 +41,8 @@ Prompt IDs match [`stage-1-suno-plan.md`](stage-1-suno-plan.md).
 | | T5 | b | v6-mini | | | | | | | | | | | | Deed to the Glen | |
 | | T6 | a | v6-mini | | | | | | | | | | | | Glen, nu metal | |
 | | T6 | b | v6-mini | | | | | | | | | | | | Glen, nu metal | |
+| | T7 | a | v6-mini | | | | | | | | | | | | Glen, sung nu metal | |
+| | T7 | b | v6-mini | | | | | | | | | | | | Glen, sung nu metal | |
 
 ## CORE (fill after Step 1)
 
