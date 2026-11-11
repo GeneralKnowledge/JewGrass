@@ -102,3 +102,39 @@ Sell you back the dram from your granddad's still
 Do enjoy the scenery.
 Rent's due Friday.
 ```
+
+---
+
+## T6: nu metal version
+
+Same lyrics, with three edits. Title `Deed to the Glen T6`.
+
+### Styles (long)
+
+```
+nu metal rap fusion, dark Celtic country trap, Scottish accent, sneering satirical villain rap, drop-tuned seven-string guitars, chugging palm-muted riffs, turntable scratches, screamed chorus, Scottish fiddle, bagpipe drone, distorted 808 bass, hard trap drums, sweet psalm-like female vocal on the bridge, heavy breakdown, raw unpolished mix
+```
+
+### Styles (short)
+
+```
+nu metal rap, Celtic trap, Scottish accent, drop-tuned guitars, screamed chorus, fiddle, bagpipe drone, distorted 808
+```
+
+### Lyric edits
+
+1. Every chorus: `[Gang chant]` becomes `[Screamed gang chant, heavy guitars]`.
+2. Verse 3: `[Half-time beat, cold male rap]` becomes `[Half-time, drop-tuned guitar riff, cold male rap]`.
+3. Between the bridge and Verse 3, add:
+
+```
+[Breakdown]
+[Heavy guitar breakdown, screamed vocal]
+Own the glen!
+Own the loch!
+Own the glen!
+Own the loch!
+```
+
+If the fiddle and pipes vanish under the guitars, move `Scottish fiddle, bagpipe drone`
+to just after `nu metal rap fusion`.
