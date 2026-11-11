@@ -53,6 +53,84 @@ no guidance control), **sft = v6** (slower, 50 steps, supports guidance; use for
 anything we might keep), **base = v6-wild** (less tuned, wider variety; also the
 only one with "complete/extend").
 
+### Running on our machine: Dell G3 17, GTX 1060 6 GB, 8 GB RAM, Ubuntu Server (headless)
+
+**Verdict: borderline. Worth a one-evening test, but plan for a fallback.**
+
+Three problems, in order of severity:
+
+1. **PyTorch build.** ACE-Step pins `torch==2.10.0+cu128` on Linux. The CUDA 12.8
+   builds of PyTorch no longer include kernels for Pascal cards (GTX 10-series,
+   compute capability 6.1), so out of the box it will likely fail with
+   "no kernel image is available". Fix: swap in the CUDA 12.6 build (below).
+2. **8 GB system RAM.** The ≤ 6 GB VRAM tier works by offloading parts of the
+   model to system RAM. 8 GB is tight for that, so add swap. Expect it to be slow
+   when it swaps.
+3. **Pascal is slow at half precision** and has no native bf16. Use the smallest
+   setup (2B **turbo**, LM **off**) and expect minutes per song rather than
+   seconds. If it errors about bf16, look for a dtype/precision option in the UI or
+   CLI help and set fp32 or fp16.
+
+**Setup**
+
+```bash
+# 1. NVIDIA driver. The 580 branch is the last one that supports Pascal.
+sudo apt install nvidia-headless-580 nvidia-utils-580
+sudo reboot
+nvidia-smi            # should show the GTX 1060 and its VRAM
+
+# 2. Keep running with the lid closed
+sudo sed -i 's/^#\?HandleLidSwitch=.*/HandleLidSwitch=ignore/; s/^#\?HandleLidSwitchExternalPower=.*/HandleLidSwitchExternalPower=ignore/' /etc/systemd/logind.conf
+sudo systemctl restart systemd-logind
+
+# 3. 16 GB of swap to cover the 8 GB RAM
+sudo fallocate -l 16G /swapfile && sudo chmod 600 /swapfile
+sudo mkswap /swapfile && sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+# 4. ACE-Step, then replace PyTorch with the Pascal-compatible CUDA 12.6 build
+git clone https://github.com/ace-step/ACE-Step-1.5.git && cd ACE-Step-1.5
+uv sync
+uv pip install --reinstall torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 \
+  --index-url https://download.pytorch.org/whl/cu126
+
+# 5. Check the GPU actually works (should list sm_61 and print a tensor)
+uv run --no-sync python -c "import torch; print(torch.cuda.get_arch_list()); print(torch.ones(1).cuda()+1)"
+
+# 6. Launch. --no-sync stops uv from putting the cu128 build back.
+uv run --no-sync acestep
+```
+
+If step 4 says there is no cu126 build of 2.10.0, try the newest version listed at
+`https://download.pytorch.org/whl/cu126/torch/` that still works with the repo.
+
+**Using it headless:** from your other computer, tunnel the UI over SSH instead of
+exposing it to the network:
+
+```bash
+ssh -L 7860:localhost:7860 you@the-laptop
+# then open http://localhost:7860 in your browser
+```
+
+Run long batches inside `tmux` so they survive the SSH session dropping. Watch
+temperatures with `watch -n 5 nvidia-smi`. With the lid shut, keep the laptop
+raised so the vents underneath get air.
+
+**What this machine can and can't do**
+
+| Task | On the G3? |
+|---|---|
+| Batch 1–4 generation on 2B turbo, 120–150 s songs | Probably, slowly |
+| sft/base models, the language model, XL | Unlikely |
+| Demucs stem separation | Yes (slow but fine) |
+| RVC voice training and conversion | Yes, it fits in 6 GB; training takes hours |
+| ACE-Step LoRA training (Phase 5) | No, rent a GPU for that |
+
+**Fallback if it won't run or is unbearably slow:** rent a cloud GPU by the hour
+(a 24 GB card is enough for everything in this plan) and run the exact same setup
+there. Seeds, prompts and the MIT licence carry over unchanged, so results stay
+comparable with anything made on the laptop.
+
 ### The big local advantage: fixed seeds
 
 Suno can't hold randomness still; ACE-Step can. For every controlled comparison:
