@@ -4,7 +4,7 @@
 dark country trap, bluegrass and glitch. We aren't aiming for album
 production, distribution or perfect voice consistency yet.
 
-**Budget:** 14 generations (about 28 outputs, since Suno usually returns two),
+**Budget:** 14 generations, plus an optional 15th (about 30 outputs, since Suno usually returns two),
 spread over a few sessions as the free daily credits allow. Use **Custom mode**
 and **v6-mini** for everything.
 
@@ -147,7 +147,7 @@ Step 3 tells us how well the voice survives on a different song.
 
 ---
 
-## Step 3: Songs (3 generations)
+## Step 3: Songs (3 generations, plus 1 optional)
 
 **Question:** can we make complete tracks with hooks you remember, not just
 interesting 30-second ideas? This step also tests whether members are recognisable
@@ -158,6 +158,7 @@ on a second song.
 | T1 | *Dirt Under the Nails*, full version. Add a `[Bridge]` and a third chorus, and run to 3+ minutes | Frontman vocal block + CORE + push from S5 if it helped |
 | T2 | *Gravel and Static* | `two contrasting male rappers, first voice` + Frontman block + `, second voice` + Wildcard block + `, call and response chant chorus,` + CORE |
 | T3 | *Porchlight Funeral* | Frontman block for verses + `, haunting` + Ghost block (female or male, whichever won) + `on the chorus,` + CORE with the Ghost trims |
+| T4 (optional) | *Deed to the County*, satirical villain song | Wildcard block + `, sneering satirical villain rap, smug spoken interludes, gospel organ, sweet hymn-like` + Ghost block + `on the bridge,` + CORE |
 
 ---
 
@@ -178,7 +179,7 @@ Three extra checks, logged as yes/no:
 
 ## Stage 1 decision: what to bring back here
 
-After the 14 generations, share the best outputs (links or audio) and the
+After the 14 (or 15) generations, share the best outputs (links or audio) and the
 filled-in log. Then we decide, part by part:
 
 | Part | Keep on Suno if... | Consider local (Stage 2) if... |

@@ -35,6 +35,8 @@ Prompt IDs match [`stage-1-suno-plan.md`](stage-1-suno-plan.md).
 | | T2 | b | v6-mini | | | | | | | | | | | | |
 | | T3 | a | v6-mini | | | | | | | | | | | | |
 | | T3 | b | v6-mini | | | | | | | | | | | | |
+| | T4 | a | v6-mini | | | | | | | | | | | | |
+| | T4 | b | v6-mini | | | | | | | | | | | | |
 
 ## CORE (fill after Step 1)
 

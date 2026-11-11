@@ -221,3 +221,86 @@ Light it up so he can find his way round
 Leave the porchlight on.
 ```
 
+
+### Deed to the County (Wildcard lead, Ghost bridge · satirical villain)
+
+Sung from the point of view of the rich man who owns the whole county. The
+joke is that he's proud of all of it. The Ghost's bridge plays it straight like a
+hymn, which makes it worse.
+
+```
+[Intro - spoken, smug, slow banjo]
+Raise a glass, boys.
+To the coal that ain't mine no more,
+the creek I sold twice,
+and every family that signed without reading.
+Ladies and gentlemen... your landlord.
+
+[Verse 1 - Wildcard, sneering]
+I bought the holler when the mine shut down
+Paid a dollar an acre, then I bought the town
+Bought the bank and the feed store, bought the steeple too
+Now the preacher says amen when I tell him to
+Your granddaddy dug my coal till his lungs went black
+I sent flowers to the funeral and I billed the widow back
+Pension fund? Son, that shit went fishing
+Bought a bass boat, named her Restructuring Decision
+I don't break the law, I just write it in pencil
+Senator's my cousin and the judge is my dentist
+You got a payday loan from a store that I own
+Thirty-nine percent, now I'm driving your truck home
+
+[Chorus - chant]
+I own the county, own the creek
+Own the sheriff seven days a week
+You pay a toll on the road you paved
+Sell you back the water that your granddaddy saved
+
+[Verse 2 - Wildcard, faster]
+Ten thousand bottles to a town of nine hundred
+Feds came sniffing so I smiled and I funded
+A brand new rehab with my name on the sign
+Got a dime off the sickness and a dime off the line
+River turned orange, I said that's iron, that's healthy
+Fish floating belly-up, least they died wealthy
+Private prison sitting pretty out on Route 9
+Every empty bed is a loss on my line
+So the sheriff gets a bonus when the cells fill up
+Your cousin caught a nickel for a bag in his truck
+(Occupancy's up, baby!)
+
+[Chorus - chant]
+I own the county, own the creek
+Own the sheriff seven days a week
+You pay a toll on the road you paved
+Sell you back the water that your granddaddy saved
+
+[Bridge - Ghost, sweet, like a hymn]
+Bless the man who owns the land
+Bless the deed in his holy hand
+We bow our heads and we pay the rent
+And the Lord alone knows where the money went
+
+[Verse 3 - Wildcard, half-time, cold]
+Now you're mad on the internet, typing in caps
+I own the tower that your little signal taps
+You want a union? Cute. Want a vote? Adorable
+I'll move the plant somewhere the workers are more affordable
+Flood took your house and I thanked the good Lord
+Bought the whole street for the price of a Ford
+Put a dollar store where the diner used to be
+Now you buy your eggs from me, your bread from me
+Your coffin from me, and the dirt from me
+I don't need a gun, I got paperwork
+Fine print so sharp it'll make a grown man hurt
+
+[Chorus - chant, layered]
+I own the county, own the creek
+Own the sheriff seven days a week
+You pay a toll on the road you paved
+Sell you back the water that your granddaddy saved
+
+[Outro - spoken, friendly]
+Y'all have a blessed day now.
+Rent's due Friday.
+```
