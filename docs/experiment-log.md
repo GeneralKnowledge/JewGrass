@@ -1,25 +1,52 @@
-# Experiment log
+# Experiment log (Stage 1, Suno)
 
-One row per output. Scores use the weighted sheet in
-[`local-experiment-batches.md`](local-experiment-batches.md#7-scoring).
+One row per output (Suno usually gives two per generation: a and b).
+Prompt IDs match [`stage-1-suno-plan.md`](stage-1-suno-plan.md).
 
-| Batch | Prompt ID | Model (turbo/sft/base, 2B/XL) | Seed | BPM / key / length | Genre /5 | Bass /5 | Vocal /5 | Country /5 | Original /5 | Hook /5 | Score /100 | Consistent? | Distinct? | Notes | File |
+**Score /100** = (Genre×5) + (Bass×4) + (Vocal×4) + (Country×3) + (Original×2) + (Hook×2), each rated 1–5.
+
+| Date | ID | Out | Model | Genre | Bass | Vocal | Country | Original | Hook | Score | Hook test | Same person? | Different people? | Notes | Link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | A | | 1111 | 140 / Fm / 150s | | | | | | | | | | | |
-| 1 | A | | 2222 | 140 / Fm / 150s | | | | | | | | | | | |
+| | S1 | a | v6-mini | | | | | | | | | | | | |
+| | S1 | b | v6-mini | | | | | | | | | | | | |
+| | S2 | a | v6-mini | | | | | | | | | | | | |
+| | S2 | b | v6-mini | | | | | | | | | | | | |
+| | S3 | a | v6-mini | | | | | | | | | | | | |
+| | S3 | b | v6-mini | | | | | | | | | | | | |
+| | S4 | a | v6-mini | | | | | | | | | | | | |
+| | S4 | b | v6-mini | | | | | | | | | | | | |
+| | S5 | a | v6-mini | | | | | | | | | | | | |
+| | S5 | b | v6-mini | | | | | | | | | | | | |
+| | M1 | a | v6-mini | | | | | | | | | | | | |
+| | M1 | b | v6-mini | | | | | | | | | | | | |
+| | M2 | a | v6-mini | | | | | | | | | | | | |
+| | M2 | b | v6-mini | | | | | | | | | | | | |
+| | M3 | a | v6-mini | | | | | | | | | | | | |
+| | M3 | b | v6-mini | | | | | | | | | | | | |
+| | M4 | a | v6-mini | | | | | | | | | | | | |
+| | M4 | b | v6-mini | | | | | | | | | | | | |
+| | M5 | a | v6-mini | | | | | | | | | | | | |
+| | M5 | b | v6-mini | | | | | | | | | | | | |
+| | M6 | a | v6-mini | | | | | | | | | | | | |
+| | M6 | b | v6-mini | | | | | | | | | | | | |
+| | T1 | a | v6-mini | | | | | | | | | | | | |
+| | T1 | b | v6-mini | | | | | | | | | | | | |
+| | T2 | a | v6-mini | | | | | | | | | | | | |
+| | T2 | b | v6-mini | | | | | | | | | | | | |
+| | T3 | a | v6-mini | | | | | | | | | | | | |
+| | T3 | b | v6-mini | | | | | | | | | | | | |
 
-**Score formula:** (Genre×5) + (Bass×4) + (Vocal×4) + (Country×3) + (Original×2) + (Hook×2)
-
-## CORE block (fill after Batch 1)
+## CORE (fill after Step 1)
 
 ```
 CORE =
+S5 push used =
 ```
 
-## Member picks (fill after Batches 2–3)
+## Member picks (fill after Step 2)
 
-| Member | Winning prompt | Reference take | RVC dataset takes |
-|---|---|---|---|
-| Frontman | | | |
-| Wildcard | | | |
-| Ghost | | | |
+| Member | Winning ID | Vocal block (exact words) | Persona saved? | Best output link |
+|---|---|---|---|---|
+| Frontman | | | | |
+| Wildcard | | | | |
+| Ghost | | | | |
