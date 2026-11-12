@@ -1,12 +1,58 @@
-# Stage 2 option: local generation (parked)
+# Local generation plan (active again)
 
-**Status: parked on 2026-11-11.** Stage 1 runs on free Suno first (see
-[`stage-1-suno-plan.md`](stage-1-suno-plan.md)). Come back to this only once
-Stage 1 shows what Suno cannot do for us. It is kept here so the research is
-not lost, including the notes on what the GTX 1060 laptop can and cannot run.
+**Status: back on as of 2026-11-12.** The Suno runs (T4 to T10) gave us a sound
+and a set of songs we like. This plan moves production onto the GTX 1060 laptop
+with ACE-Step 1.5. Start with the **first smoke test** below: it answers
+"can this laptop make a song at all?" in one evening, before we invest more.
 
 Everything here is original: no artist names, song titles or lyrics from the
 reference catalogue go into any prompt.
+
+## First smoke test: Your Landlord on the laptop
+
+Do the "Running on our machine" setup in Section 1 first, then in the Gradio UI:
+
+1. Model: 2B **turbo**, language model **off**.
+2. Duration **60 s** for the first try (full songs come later). BPM 140, seed 1111.
+3. Paste the caption and lyrics below, generate, and note how long it took.
+4. If it works, run the same thing with seed 2222, then try 180 s with the full
+   song from [`lyrics.md`](lyrics.md) (strip the descriptive lines such as
+   `[Sneering raspy male rap]` and keep only the section tags).
+
+**Caption**
+
+```
+dark country trap, satirical villain rap, raspy male vocal, Scottish accent, banjo, distorted 808 bass, hard trap drums, rapid hi-hats, glitch, stuttering vocal chops, fiddle, bagpipe drone, heavy guitars on chorus, gang chant chorus, raw lo-fi mix
+```
+
+**Lyrics** (verse 1 and chorus only)
+
+```
+[verse]
+I own the flat that you rent and the bank with your loan
+The water in your tap and the signal on your phone
+Sewage in the river? That's a dividend, son
+Fined a million quid and I made a hundred and one
+Black mould on the ceiling, black mould on the cot
+Letting agent says ventilate, and that's all that you got
+Went to school with the Chancellor, shared a wee dorm
+Now the rules get written in my old uniform
+
+[chorus]
+I'm your landlord, landlord, keys in my hand
+Every brick in the city, every acre of land
+You can graft all your life and you'll never own a stair
+'Cause my grandad's grandad already got there
+```
+
+**What to report back:** whether it ran, how long 60 s took, peak VRAM from
+`nvidia-smi`, any error text, and whether the result sounds anything like the
+Suno version. Expect it to be rougher than Suno; the question here is speed and
+stability, not quality.
+
+**If it won't run at all:** paste the error. The usual suspects, in order: the
+PyTorch build (Section 1, step 4), running out of RAM (check the swap file),
+or bf16 not being supported (look for a precision setting).
 
 ---
 
