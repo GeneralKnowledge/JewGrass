@@ -406,3 +406,101 @@ Cold hame, son, and I'm warm on my boat
 Stay warm out there.
 Direct debit's due Friday.
 ```
+
+### Your Landlord (Wildcard lead, Ghost bridge · satirical villain, Britain)
+
+A British landlord who owns everything. Uses the broad shape of a favourite
+political rap track (villain's toast to his cronies, the scale widening from the
+street to the nation, three escalating hooks) but none of its words. First
+posted as T10 on 2026-11-12 with the T8 styles, with "smug posh spoken toast".
+
+```
+[Intro]
+[Spoken word, posh smug toast, glitchy banjo and pipe drone]
+Charge your glasses.
+To my lads in the City, my cousin at the Treasury,
+my godson at the paper, the Viscount, the hedge fund,
+and the wee island where the money sleeps.
+And to you, the tenant.
+Ladies and gentlemen... your landlord.
+
+[Verse 1]
+[Sneering raspy male rap, Scottish accent, banjo and 808]
+I own the flat that you rent and the bank with your loan
+The water in your tap and the signal on your phone
+Sewage in the river? That's a dividend, son
+Fined a million quid and I made a hundred and one
+Black mould on the ceiling, black mould on the cot
+Letting agent says ventilate, and that's all that you got
+Went to school with the Chancellor, shared a wee dorm
+Now the rules get written in my old uniform
+Got a seat in the Lords for the price of a donation
+Never been elected and I'm running the nation
+
+[Chorus]
+[Gang chant, heavy guitars]
+I'm your landlord, landlord, keys in my hand
+Every brick in the city, every acre of land
+You can graft all your life and you'll never own a stair
+'Cause my grandad's grandad already got there
+
+[Verse 2]
+[Faster, aggressive male rap, glitching beat]
+Hospital built on a thirty-year loan
+Paid back three times and the building's my own
+Crisis comes round and I'm in the VIP lane
+Masks that don't work at a premium again
+Sold off the railways, sold the post and the gas
+Bought the council houses, now I'm renting 'em back to your class
+Tabloid on the shelf telling you who to blame
+Every scapegoat in the country, never my name
+Offshore island where the sun's always out
+Taxman comes knocking, there's nobody about
+(Non-domiciled, darling!)
+
+[Chorus]
+[Gang chant, heavy guitars]
+I'm your landlord, landlord, I own the news that you read
+The cops at the door and the food that you need
+You can march on the square, you can shout in the rain
+I'll rent you the square and I'll charge you for the rain
+
+[Bridge]
+[Female vocal, sweet Scottish psalm, organ]
+Bless the lord in his castle high
+Bless the rent that keeps him dry
+We bow our heads and we pay the rent
+And the Lord alone knows where the money went
+
+[Breakdown]
+[Glitch breakdown, stuttering vocal chops, heavy guitars, banjo]
+Landlord!
+Rent's due!
+Landlord!
+Rent's due!
+
+[Verse 3]
+[Half-time trap beat, distorted 808, cold male rap]
+Summer in the Highlands, got a glen and a loch
+Stag on the wall and a ghillie on the clock
+Ferry's broke down and the island's cut off
+I fly over in a chopper, give a wee wave from the top
+You want a revolution? Lovely, here's the thing
+I own the shop selling flags and the stage where you sing
+Your anger's a market and your protest's a trend
+I'll print it on a T-shirt and sell it back to your friends
+I don't need a castle wall, I've got the deeds
+And a hundred thousand tenants keeping me in tweeds
+
+[Chorus]
+[Gang chant, heavy guitars, layered]
+I'm your landlord, landlord, I'm the land and the law
+I was here before your vote and I'll be here after yours
+Kings come and go and the governments fall
+But the rent's always due, and I'm owed it all
+
+[Outro]
+[Spoken word, posh and friendly, beat glitches out]
+Mind the damp, now.
+Rent's due Friday.
+```

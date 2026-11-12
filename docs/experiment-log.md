@@ -47,6 +47,8 @@ Prompt IDs match [`stage-1-suno-plan.md`](stage-1-suno-plan.md).
 | | T8 | b | v6-mini | | | | | | | | | | | | Glen, core sound + rap | |
 | | T9 | a | v6-mini | | | | | | | | | | | | Cold Hame, T8 styles | |
 | | T9 | b | v6-mini | | | | | | | | | | | | Cold Hame, T8 styles | |
+| | T10 | a | v6-mini | | | | | | | | | | | | Your Landlord, T8 styles | |
+| | T10 | b | v6-mini | | | | | | | | | | | | Your Landlord, T8 styles | |
 
 ## CORE (fill after Step 1)
 
