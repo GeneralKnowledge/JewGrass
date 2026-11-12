@@ -43,6 +43,8 @@ Prompt IDs match [`stage-1-suno-plan.md`](stage-1-suno-plan.md).
 | | T6 | b | v6-mini | | | | | | | | | | | | Glen, nu metal | |
 | | T7 | a | v6-mini | | | | | | | | | | | | Glen, sung nu metal | |
 | | T7 | b | v6-mini | | | | | | | | | | | | Glen, sung nu metal | |
+| | T8 | a | v6-mini | | | | | | | | | | | | Glen, core sound + rap | |
+| | T8 | b | v6-mini | | | | | | | | | | | | Glen, core sound + rap | |
 
 ## CORE (fill after Step 1)
 

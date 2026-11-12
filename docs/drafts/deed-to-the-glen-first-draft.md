@@ -155,3 +155,20 @@ nu metal, Celtic metal, dark and heavy, Scottish accent, gritty sung male vocals
 ```
 
 If it raps or the verses sound crammed, start Styles with `melodic sung vocals, no rap`.
+
+---
+
+## T8: rap back in, band's original sound in front
+
+Title `Deed to the Glen T8`. Banjo, distorted 808, trap drums and glitch lead.
+Fiddle and pipes are flavour, and nu metal guitars appear only on choruses and
+the breakdown. Tags: rap tags from T6 plus `banjo and 808` (Verse 1),
+`glitching beat` (Verse 2), `Half-time trap beat, distorted 808, cold male rap`
+(Verse 3), breakdown `[Glitch breakdown, stuttering vocal chops, heavy guitars, banjo]`,
+choruses `[Gang chant, heavy guitars]`, outro adds `beat glitches out`.
+
+```
+dark underground country trap, Scottish accent, sneering satirical villain rap, raw banjo riff, distorted sliding 808 bass, hard trap drums, rapid hi-hats, glitch production, stuttering vocal chops, sudden dropouts and tape stops, Scottish fiddle, bagpipe drone, nu metal guitars on the chorus, gang chant chorus, smug posh spoken interludes, sweet psalm-like female vocal on the bridge, raw unpolished mix
+```
+
+If the guitars take over, delete `nu metal guitars on the chorus`.
