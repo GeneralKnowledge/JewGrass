@@ -45,6 +45,8 @@ Prompt IDs match [`stage-1-suno-plan.md`](stage-1-suno-plan.md).
 | | T7 | b | v6-mini | | | | | | | | | | | | Glen, sung nu metal | |
 | | T8 | a | v6-mini | | | | | | | | | | | | Glen, core sound + rap | |
 | | T8 | b | v6-mini | | | | | | | | | | | | Glen, core sound + rap | |
+| | T9 | a | v6-mini | | | | | | | | | | | | Cold Hame, T8 styles | |
+| | T9 | b | v6-mini | | | | | | | | | | | | Cold Hame, T8 styles | |
 
 ## CORE (fill after Step 1)
 

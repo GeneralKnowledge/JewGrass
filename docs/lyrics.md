@@ -310,3 +310,99 @@ Rent's due Friday.
 A Highland laird with forty thousand acres who visits for a week a year.
 Paste-ready Suno version, with styles, is in
 [`drafts/deed-to-the-glen-first-draft.md`](drafts/deed-to-the-glen-first-draft.md).
+
+### Cold Hame (Wildcard lead, Ghost bridge · satirical villain, Scotland)
+
+An energy boss getting rich off North Sea oil while bills rise. First posted
+as T9 on 2026-11-12 with the T8 styles (core sound, rap, Scottish accent,
+"smug corporate spoken interludes"). Ends on "Direct debit's due Friday",
+which ties into the running "due Friday" joke from the Deed songs.
+
+```
+[Intro]
+[Spoken word, smug corporate voice, glitchy banjo and pipe drone]
+Good evening, shareholders.
+Another record year.
+Bills up, profits up, morale... irrelevant.
+Ladies and gentlemen... your energy provider.
+
+[Verse 1]
+[Sneering raspy male rap, Scottish accent, banjo and 808]
+I pumped the oil from the sea off the coast
+Shipped the money south and I raised a wee toast
+Fifty years of black gold, so what have you got?
+A pothole, a food bank and a boarded-up shop
+Profits up billions, I called it a tough year
+Gave the board a bonus and I shed a wee tear
+Your bill went up? That's the market, you see
+And the market's a man, and the man is me
+Standing charge just for staying alive
+Fit a meter in your hall while you're out at nine
+
+[Chorus]
+[Gang chant, heavy guitars]
+Black gold under the cold North Sea
+You pay the bill and the bill pays me
+Put a jumper on, get your granny a coat
+Cold hame, son, and I'm warm on my boat
+
+[Verse 2]
+[Faster, aggressive male rap, glitching beat]
+Rig lads grafting, two weeks on, two off
+Chopper's got a rattle and I'm counting the cost
+Not of them, of the chopper, now do the math
+Cheaper to pay a widow than to fix the latch
+Now I'm green, look, a turbine on the logo
+Same old oil with a leaf on the promo
+Rebranded the rig as a transition hub
+Got a grant for the carbon that I pump in the mud
+Decommission? Nah, leave the steel in the sea
+Taxpayer's paying for the cleanup, not me
+(Net zero, baby!)
+
+[Chorus]
+[Gang chant, heavy guitars]
+Black gold under the cold North Sea
+You pay the bill and the bill pays me
+Put a jumper on, get your granny a coat
+Cold hame, son, and I'm warm on my boat
+
+[Bridge]
+[Female vocal, sweet Scottish psalm, organ]
+Bless the rig and bless the flame
+Bless the men who take no blame
+Light a candle, the meter's run dry
+Lord, keep the bairns warm till the winter goes by
+
+[Breakdown]
+[Glitch breakdown, stuttering vocal chops, heavy guitars, banjo]
+Pay the bill!
+Cold hame!
+Pay the bill!
+Cold hame!
+
+[Verse 3]
+[Half-time trap beat, distorted 808, cold male rap]
+Wave your wee placard outside of the gate
+I'm in a heated pool where the sun's never late
+Politicians join the board when they finish their term
+Revolving door spinning, it's my turn, your turn
+Windfall tax? Aye, I'll pass that on
+Straight into your bill before your breakfast is gone
+Your gran's in a blanket watching telly in the dark
+I'm buying a football club and renaming the park
+I don't need a crown, I've got a pipeline
+And every wee radiator's a friend of mine
+
+[Chorus]
+[Gang chant, heavy guitars, layered]
+Black gold under the cold North Sea
+You pay the bill and the bill pays me
+Put a jumper on, get your granny a coat
+Cold hame, son, and I'm warm on my boat
+
+[Outro]
+[Spoken word, smug and friendly, beat glitches out]
+Stay warm out there.
+Direct debit's due Friday.
+```
