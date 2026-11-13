@@ -504,3 +504,76 @@ But the rent's always due, and I'm owed it all
 Mind the damp, now.
 Rent's due Friday.
 ```
+
+### We Bought the Hill (Ghost lead, full band gang vocals · Celtic folk-punk)
+
+The other side of the villain songs: a Highland village clubs together to buy
+its glen back from the absentee laird. Different genre (fast Celtic folk-punk,
+no rap), and the outro answers the running "Rent's due Friday" joke. First made
+on the laptop with ACE-Step on 2026-11-13: 170 BPM, about 3.5 minutes.
+
+Caption:
+
+```
+Celtic folk punk, fast driving acoustic guitar, frantic fiddle reel, tin whistle, accordion, bodhran and stomping drums, upright bass, raw female lead vocal, Scottish accent, rowdy gang vocals on the chorus, pub singalong energy, raw live recording
+```
+
+```
+[intro]
+Hey! Hey! Hey!
+
+[verse]
+Forty years we paid the rent to a man we never saw
+His name was on the fences and his lawyer was the law
+Then a for-sale sign went up one wet November morn
+And the whole glen packed the village hall the night the plan was born
+
+[pre-chorus]
+Rattle the tin and pass the hat
+Sell the tablet, sell the cat
+Every pocket, every till
+Come on, come on, we'll buy the hill!
+
+[chorus]
+We bought the hill! We bought the shore!
+We bought the burn and the bothy door!
+Every penny from a jam jar spill
+Raise your glass, we bought the hill!
+
+[verse]
+Granny pawned her brooch and the minister sold his van
+The lads put on a ceilidh and the bairns ran a jumble stand
+We phoned every cousin from Toronto down to Perth
+Every homesick Highland family scattered round the earth
+Twelve million by the Friday and the banker laughed at us
+So we paid him all in pennies off the back of the bus
+
+[pre-chorus]
+Rattle the tin and pass the hat
+Sell the tablet, sell the cat
+Every pocket, every till
+Come on, come on, we'll buy the hill!
+
+[chorus]
+We bought the hill! We bought the shore!
+We bought the burn and the bothy door!
+Every penny from a jam jar spill
+Raise your glass, we bought the hill!
+
+[bridge]
+And the hill doesn't know who owns it
+And the deer don't read the deeds
+But tonight every light in the glen is ours
+And tomorrow we'll plant the seeds
+
+[chorus]
+We bought the hill! We bought the shore!
+We bought the burn and the bothy door!
+Every penny from a jam jar spill
+Raise your glass, we bought the hill!
+We bought the hill! We bought the hill!
+
+[outro]
+Rent's due Friday?
+Not any more.
+```
