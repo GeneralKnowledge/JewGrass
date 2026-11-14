@@ -49,7 +49,7 @@ sections:
       Pressure, sure, sure
       Pressure
   - name: drop B
-    tag: drop - instrumental, more distortion on the mid-bass, sub stays clean
+    tag: drop - instrumental, more distortion on the mid-bass, sub stays controlled
     bars: 16
     performer: none
   - name: breakdown
@@ -77,6 +77,5 @@ sections:
 ending: Everything stops on one beat; a reverb tail of the last hit decays into silence.
 transmission_layer: none until the end; the hard stop is followed by a brief signal flicker in the tail.
 caption: >-
-  145 bpm, F-sharp minor, heavy aggressive Memphis and drift phonk hybrid, saturated 808 sub kept clean and
-  controlled, separate distorted synth mid-bass, hard kick clearly separate from the bass, sharp snare, rolling
+  145 bpm, F-sharp minor, heavy aggressive Memphis and drift phonk hybrid, saturated 808 sub kept controlled, separate distorted synth mid-bass, hard kick clearly separate from the bass, sharp snare, rolling
   hats, low cowbell motif, deep male vocal chop with a stutter at the end, hits hard without mud, hard stop ending

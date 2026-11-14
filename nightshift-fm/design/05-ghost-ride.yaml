@@ -18,7 +18,7 @@ palette:
   bed: distant choir-like pads, wide in groove A2
   bass: rolling 808, more prominent in groove C
   drums: soft Memphis drums, low in the mix
-  extra: a subtle clean guitar phrase in groove C
+  extra: a soft guitar phrase blended into the pads in groove C
   left_out: distortion, cowbell lead, hard snare
 
 harmony: Dm - Bb - F - C, spacious open voicings; the melody carries the melancholy.
@@ -55,7 +55,7 @@ sections:
     bars: 8
     performer: none
   - name: groove C
-    tag: groove - instrumental, bass more prominent, subtle clean guitar phrase
+    tag: groove - instrumental, bass more prominent, soft guitar phrase blended into the pads
     bars: 16
     performer: none
   - name: motif B2
@@ -74,5 +74,5 @@ ending: The two-note bell over a held pad, fading, the second note left hanging.
 transmission_layer: none during the music. A clean, clear transmission is this track's contrast; one short filtered tail at the very end.
 caption: >-
   100 bpm, D minor, the most melodic and atmospheric track, warm detuned synth bells playing a haunting two-note
-  motif, distant choir-like pads, rolling 808, soft Memphis drums, subtle clean guitar, a quiet female spoken
+  motif, distant choir-like pads, rolling 808, soft Memphis drums, a quiet female spoken
   phrase turned into a pitched melodic vocal chop, beautiful but slightly unsettling, nothing distorted

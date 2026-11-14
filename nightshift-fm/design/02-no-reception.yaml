@@ -76,15 +76,13 @@ sections:
       Can't, can't, can't
       Get through
   - name: outro
-    tag: outro - drums stop, unsteady piano alone, one last plain phrase
+    tag: outro - instrumental, drums stop, unsteady piano loop alone, fading
     bars: 8
-    performer: deep-chop
-    lyrics: |
-      Can't get through
+    performer: none
 
-ending: The piano loop alone, wavering, and the phrase once more without processing.
+ending: The piano loop alone, wavering, fading out. The plain phrase was heard in the break, so the outro stays instrumental.
 transmission_layer: short tuning sweep into bar 1; a one-beat signal drop just before groove A2; the outro piano filtered away as the signal goes.
 caption: >-
-  92 bpm, C minor, eerie slightly unstable piano loop like an old recording, subtle organ, heavy rolling bass,
+  92 bpm, C minor, eerie slightly unstable piano loop like an old recording, heavy rolling bass,
   dusty swung drums, short cowbell accents only in the hooks, deep male spoken phrase that comes back pitched
   down and chopped into a two-syllable rhythm, an eight-bar break with only bass and voice

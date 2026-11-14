@@ -53,7 +53,8 @@ vocal_rules:
   - Recognisable enough to add character; never a clutter of unintelligible voices.
   - Not every track needs a voice, and most sections have none.
   - The signature treatment, in order across a track - filtered and distant, then a syllable chop repeated in
-    rhythm, then pitched down as a bass-like texture, then reversed as a transition, then the plain phrase at the end.
+    rhythm, then pitched down as a bass-like texture, then reversed as a transition, then the plain phrase once more before the outro.
+  - Outros are instrumental. No spoken outros (they don't come through).
   - Original or properly licensed source recordings only. No lifted records, no uncleared samples.
 
 # How the voice and the instrumental sections reach ACE-Step (it sings whatever is in the lyric lines):
@@ -103,7 +104,7 @@ families:
 caption_core: >-
   dark late-night instrumental hip-hop, phonk, hypnotic and rhythmic, heavy controlled sub-bass with room for
   the kick, dry punchy percussion, the voice used as a sampled instrument in short chopped phrases, no rap verses,
-  minor key, warm dark mix with clear transients
+  minor key, warm dark cohesive mix with every part blended together, punchy drums
 
 # Words that made ACE-Step put hiss or static over whole songs (Brass Plate, Bought and Sold, Nov 14) and their
 # radio relatives. The radio concept lives in the transmission_layer, added on the laptop after rendering, where
