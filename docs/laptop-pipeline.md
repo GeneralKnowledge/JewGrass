@@ -2,7 +2,7 @@
 
 How the songs are made locally on the band laptop (Dell G3 17, GTX 1060 6 GB,
 8 GB RAM, headless Ubuntu Server). Everything lives in `~/band` on the laptop.
-The scripts themselves are copied into [`laptop/`](../laptop/) in this repo.
+The scripts themselves are copied into [`laptop/`](../laptop/) in this repo, with install steps in [`laptop/README.md`](../laptop/README.md).
 
 ## 1. Generate (ACE-Step 1.5, 2B turbo)
 
