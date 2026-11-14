@@ -1,0 +1,46 @@
+note: 'megamix: sections = song excerpts (tools/megamix_plan.py)'
+tempo: 166.67
+sections:
+- name: parcel-of-rogues
+  start_bar: 0
+  bars: 8
+- name: exit-strategy
+  start_bar: 8
+  bars: 40
+- name: natural-capital
+  start_bar: 48
+  bars: 34
+- name: deed-to-the-glen
+  start_bar: 82
+  bars: 26
+- name: cold-hame
+  start_bar: 108
+  bars: 18
+- name: swim-at-your-own-risk
+  start_bar: 126
+  bars: 16
+- name: fast-lane
+  start_bar: 142
+  bars: 40
+- name: brass-plate
+  start_bar: 182
+  bars: 32
+- name: we-bought-the-hill
+  start_bar: 214
+  bars: 39
+- name: bought-and-sold
+  start_bar: 253
+  bars: 50
+- name: viewing
+  start_bar: 303
+  bars: 7
+- name: ermine-and-ink
+  start_bar: 310
+  bars: 42
+- name: sunshine-trust
+  start_bar: 352
+  bars: 52
+- name: gavs-song
+  start_bar: 404
+  bars: 87
+lines: []

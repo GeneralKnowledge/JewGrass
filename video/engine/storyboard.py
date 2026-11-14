@@ -91,6 +91,12 @@ def resolve(sb, tm, analysis):
     if pos != total_bars:
         errors.append(f"shots end at bar {pos}, song has {total_bars} bars")
 
+    # start_s: pin a shot's start to an exact time (a megamix cue that falls
+    # between bar lines); the previous shot ends there.
+    for k, s in enumerate(shots):
+        if k and "start_s" in s:
+            s["t0"] = shots[k - 1]["t1"] = float(s["start_s"])
+
     # The first shot starts at 0 s and the last ends at the end of the audio.
     if shots:
         shots[0]["t0"] = 0.0

@@ -177,7 +177,7 @@ def main():
         if sections and b0 <= sections[-1]["start_bar"]:
             b0 = sections[-1]["start_bar"] + 2
         name = slug if all(s["name"] != slug for s in sections) else f"{slug}-{len(sections)}"
-        sections.append({"name": name, "start_bar": int(b0), "title": title, "slug": slug})
+        sections.append({"name": name, "start_bar": int(b0), "title": title, "slug": slug, "start_s": st})
         heard = [h for h in heard_all if st - 0.3 <= h[0] < en + 0.3]
         ls = song_lines(find_lyrics(slug, title, tracks, a.lyrics_md), heard)
         lines += [dict(L, section=name) for L in ls]
@@ -209,6 +209,7 @@ def main():
                   "title": {"text": s["title"], "kicker": kicker}}
             if k:
                 sh["transition"] = "dissolve"
+                sh["start_s"] = s["start_s"]  # exact cue time, not the nearest bar
             shots.append(sh)
         sb = {"song": os.path.basename(os.path.normpath(a.song_dir)), "style": "glen-gothic", "preset": "lyric",
               "seed": 1707, "max_shot_bars": 200, "motifs": [], "shots": shots,
