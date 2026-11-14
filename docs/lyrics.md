@@ -662,7 +662,8 @@ Do have a lovely summer.
 Bill's due Friday.
 ```
 
-### Natural Capital (concept album, drafts)
+### Natural Capital (concept album, v2 drafts)
 
-Story, cast, track list and first lyric drafts (*Viewing by Appointment Only*,
-*Voicemail 1*, *Natural Capital*) are in [`natural-capital.md`](natural-capital.md).
+Story, cast, 16-track list and first lyric drafts (*Viewing by Appointment Only*,
+*Voicemail: "They've Sold It"*, *Natural Capital*, *Bought and Sold*) are in
+[`natural-capital.md`](natural-capital.md).
