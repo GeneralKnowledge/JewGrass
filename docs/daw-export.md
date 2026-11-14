@@ -1,0 +1,54 @@
+# DAW export
+
+Goal: every JewGrass song can be opened in a DAW as an editable project: one track per part, real MIDI notes, sections, tempo and meter, lyrics, and the original audio next to it for comparison.
+
+## Shape
+
+```
+Song Design yaml ──from_design.py──┐                          ┌─> REAPER project (.rpp)          first exporter
+  (composition route)              ├─> arrangement.json ──export.py──> multitrack MIDI (SMF type 1)   any DAW
+stems from the laptop ─from_audio.py┘   (DAW-independent)      ├─> per-track MIDI
+  (reconstruction route)                                        └─> audio, lyrics, sections, README
+```
+
+- **arrangement.json is the source of truth**, not MIDI and not any DAW's file. Schema at the top of [`tools/daw/arrangement.py`](../tools/daw/arrangement.py). Time is in quarter-note beats from bar 1, so it never depends on a DAW's tick rate. Later exporters (DAWproject, Ardour, an Ableton template) read the same file.
+- **Composition route** (the long-term one): the Song Design already holds sections, bar counts, tempo, key, meter, harmony and lyrics. `from_design.py` turns that into playable parts. Today it makes three: a fingerpicked guitar arpeggio, a bass (root and fifth) and a chord guide. These are sketches proving the pipe works; real part writing (motifs, fills, entries and exits from `roles`) is the next step.
+- **Reconstruction route**: the laptop separates stems (one heavy job at a time); `from_audio.py` runs in the cloud on CPU. Basic Pitch (Apache-2.0) transcribes pitched stems; drums use a three-band onset detector (kick, snare, hat). Each transcribed track keeps its stem audio, muted, so you can A/B. It is an editable approximation, not the exact performance.
+- **Why REAPER first**: its project file is plain text, so we write it directly with no library, no template and no GUI automation. MIDI lives inside the project and is editable. REAPER costs about $60 but its evaluation is fully functional. For a free DAW, the multitrack MIDI file opens in Ardour, LMMS and others.
+
+## Usage
+
+```bash
+pip install mido numpy soundfile pyyaml          # export and composition route
+pip install "basic-pitch[onnx]" librosa           # reconstruction route only (CPU, Python 3.11)
+
+python3 tools/daw/from_design.py docs/album/design/gavs-song.yaml build/daw/gavs-song/arrangement.json
+python3 tools/daw/export.py build/daw/gavs-song/arrangement.json "build/daw/gavs-song/Gav's Song - DAW project" --preview
+
+python3 tools/daw/from_audio.py build/daw/deed/arrangement.json --title "Deed to the Glen" --slug deed-to-the-glen \
+    --ref mix.mp3 --bpm 140 --stem bass=bass.mp3 --stem guitar=guitar.mp3 --stem other=other.mp3 \
+    --stem drums=drums.mp3 --stem vocals=vocals.mp3 --transcribe bass,guitar,other,drums
+
+python3 tools/daw/selftest.py build/daw/gavs-song/arrangement.json build/daw/selftest
+```
+
+If the basic-pitch install pulls in TensorFlow and it fails to import, uninstall TensorFlow (the ONNX model is used instead) and install `setuptools<81` (resampy needs `pkg_resources`).
+
+## Synthetic test (known notes in, notes out)
+
+`selftest.py` renders the Gav's Song sketch with a tiny synth, transcribes it back and scores it (pitch exact, onset within 50 ms). This is the best case: clean, synthetic, one instrument per stem.
+
+| Part | Notes | Found (recall) | Correct (precision) | F1 |
+|---|---|---|---|---|
+| Guitar arpeggio, own stem | 624 | 100% | 90% | 0.95 |
+| Bass, own stem | 208 | 99% | 70% | 0.82 |
+| Chord guide, own stem | 312 | 99% | 57% | 0.72 |
+| All three mixed, no separation | 1144 | 71% | 54% | 0.61 |
+
+What it tells us: separation matters (0.61 without, up to 0.95 with); Basic Pitch rarely misses a note but adds ghost notes, so the per-role thresholds in `from_audio.py` were raised (the defaults doubled the note count). Real ACE-Step stems will score lower than this ceiling.
+
+## Not done yet
+
+- Instruments: MIDI tracks in the .rpp have no instrument loaded. The safe way is a REAPER track template made in Reuben's REAPER (with ReaSynth / ReaSamplOmatic or a free SFZ player per role), which the exporter then copies in. Writing plugin state blind would risk a project that doesn't open.
+- Verified only by parsing: the cloud cannot download REAPER, so the .rpp was checked with an RPP parser and against the MIDI file (same 1144 notes), not opened in REAPER.
+- Tempo maps (one constant tempo is assumed), automation, DAWproject export, Ardour session export.
