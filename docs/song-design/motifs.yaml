@@ -1,0 +1,58 @@
+# Natural Capital motif library: the actual notes, so they can be transposed, rendered and reused.
+# Notation: each note is "PITCH:LENGTH", length in beats (quarter note = 1; in 6/8 a dotted quarter = 1.5).
+# "R" is a rest. Chords are pitches joined with "+".
+# Render an audition with: python3 tools/design/motif_audition.py docs/song-design/motifs.yaml out_dir/
+# Full story of each motif and where it goes: docs/song-design/motifs.md
+
+motifs:
+  ownership:
+    name: The ownership theme
+    what: A short falling pipe phrase, Scotch snap on the first two notes. The sound of the land being taken.
+    key: D major (Highland pipe scale; works over B minor)
+    meter: 4/4
+    bpm: 72
+    voice: pipe
+    drone: A3
+    notes: [A5:0.25, F#5:0.75, E5:0.5, D5:0.5, B4:2]
+    degrees: 5-3-2-1-6(below)
+
+  village:
+    name: The village theme
+    what: The ownership phrase played backwards and carried on, in 6/8. The village answers by reversing it.
+    key: D major
+    meter: 6/8
+    bpm: 76
+    voice: pluck
+    notes: [B4:0.5, D5:0.5, E5:0.5, F#5:1, A5:0.5, F#5:0.5, E5:0.5, D5:0.5, D5:1.5]
+    degrees: 6-1-2-3-5 | 3-2-1-1
+
+  money:
+    name: The money theme
+    what: Four quick notes, up a fifth and back down to a semitone above home. A cash register with a bad conscience.
+    key: C minor
+    meter: 4/4
+    bpm: 112
+    voice: bell
+    notes: [C5:0.25, G5:0.25, Db5:0.25, C5:1.25]
+    degrees: 1-5-b2-1
+
+  hold_music:
+    name: The hold music
+    what: A cheerful little bossa tune over four lounge chords. Harmless at first, which is the joke.
+    key: F major
+    meter: 4/4
+    bpm: 100
+    voice: keys
+    notes: [A4:0.5, Bb4:0.5, C5:1, A4:1, R:1, G4:0.5, A4:0.5, F4:3]
+    chords: [F3+A3+C4:2, D3+F3+A3:2, Bb2+D3+F3:2, C3+E3+G3:2]
+    degrees: 3-4-5-3 | 2-3-1 over I-vi-IV-V
+
+  corruption:
+    name: The corruption progression
+    what: Minor home chord, then the major chord a semitone above it, back, then a diminished chord, all over the same low note. It never settles.
+    key: C minor
+    meter: 4/4
+    bpm: 80
+    voice: pad
+    chords: [C3+Eb3+G3:4, C3+Db3+F3+Ab3:4, C3+Eb3+G3:4, C3+B2+D3+F3:4]
+    degrees: i - bII - i - vii(dim) over a tonic pedal

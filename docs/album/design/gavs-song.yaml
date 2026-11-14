@@ -1,0 +1,171 @@
+# Song Design: Gav's Song (track 14). Format: docs/song-design/README.md
+slug: gavs-song
+title: Gav's Song
+version: 1
+approach: first-person confession told as a story (childhood, the job, the betrayal, the turn)
+identity: A regretful Scottish folk ballad that slowly becomes a small communal anthem.
+story_beat: Gav, paid to keep walkers off his own hill, leaks the papers that tie the investors together. The turn of the album.
+
+render:
+  bpm: 76
+  key: D major          # verses lean on B minor; the pipes can only play this scale, so D major not D minor
+  timesig: "6"          # ACE-Step code for 6/8
+  seconds: 210
+
+palette:
+  world: Human, communal, imperfect. The glen, not the City. Nothing electronic.
+  lead: fingerpicked acoustic guitar
+  secondary: fiddle (answers the voice, never just fills)
+  rhythm: brushed snare and bodhran, from verse 2 only
+  bass: upright bass, from halfway through verse 1
+  colour: accordion swell, second acoustic guitar
+  climax: one solo Highland bagpipe, final chorus only
+  left_out: banjo, 808, trap drums, electric guitars, glitch. This song is the one place the album goes fully acoustic before the finale.
+
+roles:
+  - {instrument: fingerpicked guitar, job: "carries the song alone at the start and the end", enters: intro, leaves: never}
+  - {instrument: upright bass, job: "root notes on beat one, walks only into choruses", enters: verse 1 second half, leaves: outro}
+  - {instrument: fiddle, job: "answers each sung chorus line with a short phrase; in chorus 2 hints at the village theme", enters: chorus 1, leaves: bridge}
+  - {instrument: brushed snare and bodhran, job: "soft 6/8 pulse, never a backbeat", enters: verse 3, leaves: bridge}
+  - {instrument: second guitar, job: "strummed, widens the sound", enters: verse 3, leaves: bridge}
+  - {instrument: group harmonies, job: "the village joining in", enters: chorus 2 (two voices), leaves: outro}
+  - {instrument: Highland bagpipe, job: "plays the village theme (the ownership phrase turned upwards) over the final chorus", enters: final chorus, leaves: outro first}
+  - {instrument: accordion, job: "one swell into the final chorus, then sustains", enters: final chorus, leaves: outro}
+
+harmony:
+  verse: Bm G D A, last line Bm G A (sad side of the key)
+  chorus: G D A Bm, G D A D (lands home on the last line)
+  bridge: Em Bm, Em G, then A held with no resolution
+  final_chorus: as chorus, but the last line resolves to D and stays there
+  ending: voice alone over a held G, then the guitar plays one open D chord
+
+motifs:
+  - 'village theme: first three notes on fiddle in chorus 2; full on pipe in final chorus. Its first appearance on the album.'
+  - 'ownership theme: the pipe plays it upside down, so the land''s theft is literally turned round'
+  - 'due Friday: Friday is payday, the wage that buys Gav''s silence; in the last chorus he leaves the Friday money untouched'
+  - 'money trail: "frae an island I couldnae point to" (the island in Sunshine Trust)'
+  - 'the song starts on D, which resolves the A that Bought and Sold leaves hanging'
+
+sections:
+  - name: intro
+    tag: intro - fingerpicked acoustic guitar alone, no drums
+    bars: 4
+    dynamics: 1
+    lyrics: ""
+  - name: verse 1
+    tag: verse - quiet tired voice, guitar, upright bass joins
+    bars: 16
+    dynamics: 1
+    idea: childhood; the image is the granda naming the burns like old pals
+    lyrics: |
+      My granda walked me up the brae
+      On his good leg and his bad
+      He'd name the burns like auld pals
+      Like they were all the friends he had
+      Naebody owns a hill, son
+      He said, wi' his hand upon my head
+      Ye just look after it a while
+      And I believed every word he said
+  - name: verse 2
+    tag: verse - guitar and bass, a little stronger
+    bars: 16
+    dynamics: 2
+    idea: taking the job; the image is the jacket with RANGER on the back
+    lyrics: |
+      Then the laird sold up and a lady came
+      In a car that never touched the mud
+      She gave me a jacket that said Ranger
+      And a wage that did me good
+      Gav, we need a local face, she said
+      Just keep the walkers to the track
+      I wore it to the pub that Friday
+      And the room went quiet at my back
+  - name: chorus 1
+    tag: chorus - fiddle answers each line
+    bars: 12
+    dynamics: 3
+    lyrics: |
+      So I lock the gate on my own hill
+      I took their money and I'm taking it still
+      I turn away the folk I know
+      Off the hill where my granda used to go
+      Lord forgive the gate I keep
+      They made a collie oot o' me, and my ain folk are the sheep
+  - name: verse 3
+    tag: verse - brushed snare, bodhran and a second guitar enter
+    bars: 16
+    dynamics: 3
+    idea: turning Ewan away; the image is the old man looking at him like a stranger wearing a face he knew
+    lyrics: |
+      Ewan came up on the Sunday
+      Wi' his flask and his auld collie dog
+      I said the path was shut for nesting birds
+      I said ye'll drown up in the bog
+      He didnae argue, he just looked at me
+      Like a stranger wearing a face he knew
+      And the money landed on the Friday
+      Frae an island I couldnae point to
+  - name: chorus 2
+    tag: chorus - fuller, two-part harmony, fiddle melody
+    bars: 12
+    dynamics: 4
+    lyrics: |
+      So I lock the gate on my own hill
+      I took their money and I'm taking it still
+      I turn away the folk I know
+      Off the hill where my granda used to go
+      Lord forgive the gate I keep
+      They made a collie oot o' me, and my ain folk are the sheep
+  - name: bridge
+    tag: bridge - everything drops out, guitar and voice only, almost whispered
+    bars: 8
+    dynamics: 1
+    idea: the decision; the image is the one key on his chain that weighs more than the rest
+    lyrics: |
+      There's a key on my chain that's heavier than the rest
+      There's a box in the office wi' every name and address
+      And Morag's at the paper, and Ewan's at the door
+      I'm nae hero, God knows. But I cannae do this anymore
+  - name: final chorus
+    tag: final chorus - solo bagpipe plays a slow rising melody, group harmonies, accordion swell
+    bars: 14
+    dynamics: 5
+    lyrics: |
+      So I opened the gate on my own hill
+      I gave her the papers and I'm shaking still
+      Let the walkers come, let the whole glen know
+      Up the hill where my granda used to go
+      And the Friday money's sitting there
+      I'll no touch it, I'll let it lie
+      Lord forgive the gate I kept
+      I'm just a man that let the sheep go by
+  - name: outro
+    tag: outro - instruments fall away one by one, voice alone, then one open guitar chord
+    bars: 6
+    dynamics: 1
+    lyrics: |
+      Naebody owns a hill, son
+      Ye just look after it a while
+
+ending: >-
+  Deliberate fade by subtraction, not volume: pipe stops first, then drums, then fiddle, then bass.
+  The last sung line ("ye just look after it a while") is the granda's line from verse 1, sung by Gav with
+  nothing under it. One open D chord on the guitar answers it and rings out. No glitch, no fade.
+
+caption: >-
+  intimate Scottish folk ballad in 6/8, tired cracked Scottish male vocal, close and conversational, heartfelt and
+  ashamed, fingerpicked acoustic guitar alone at the start, upright bass joins in the first verse, mournful fiddle
+  answering the vocal in the choruses, soft brushed snare and bodhran and a second strummed guitar from the third
+  verse, the bridge drops to guitar and voice only, final chorus lifts with warm group harmonies, an accordion swell
+  and a solo Highland bagpipe playing a slow rising melody, then the instruments fall away one by one leaving the
+  voice, ends on one open acoustic guitar chord, fully acoustic, warm, imperfect, room sound, 76 bpm
+
+lyric_audit:
+  before: Strong already (the best lyric on the album). Chorus line "the hill my granda told me so" didn't parse; "a shepherd now that's selling sheep" was opaque; verse 1 mixed childhood and the sale.
+  changes:
+    - 'One idea per verse - childhood, the job, Ewan. The sale moved to verse 2.'
+    - 'New images - the burns named like old pals, the RANGER jacket, the pub going quiet, "a stranger wearing a face he knew".'
+    - 'Collie line replaces the shepherd line - he''s the dog herding his own people, which is clearer and sadder.'
+    - 'Friday becomes payday (the human cost of the running joke) and the last chorus refuses the Friday money.'
+    - 'The ending is sung, not spoken - the granda''s line from verse 1 comes back, so the song closes a circle.'
+  scores_after: {character_voice: 5, narrative: 5, imagery: 4, singability: 4, hook: 4}
