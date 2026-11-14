@@ -10,7 +10,9 @@ write your Kaggle username in ~/band/kaggle/user.
   kjob.py run KEY=VALUE ...      e.g.  kjob.py run JOB=render TRACKS='["brass-plate","gavs-song"]' TAKES=3
                                        kjob.py run JOB=voice VOICE_EPOCHS=300
         Push the notebook with these settings and start it on Kaggle (GPU T4 x2, internet on).
+      If a run is still going, it waits for it to finish and fetches its results first: one run at a time.
   kjob.py status                 Is the latest run still going?
+  kjob.py log [VERSION]          The end of a run's log (why did it stop?)
   kjob.py fetch [--wait]         Download the latest run's output to ~/band/kaggle/runs/<time>/
                                  (--wait: check every 5 minutes until it finishes, then download).
   kjob.py quota                  GPU hours left this week.
@@ -142,6 +144,13 @@ def run(a):
                 sources.append(f"{u}/{name}")
         if f"{u}/jewgrass-voice" not in sources:
             sys.exit("Upload the voice clips first: kjob.py upload-voice")
+    # One run at a time: Kaggle starts a pushed version even while an earlier one is still going, and both
+    # then compete for the week's GPU hours. So wait for the current run, bring its results home, then push.
+    if not a.now and busy():
+        print("A run is already going on Kaggle; this one waits its turn (checking every 5 minutes).")
+        while busy():
+            time.sleep(300)
+        fetch(argparse.Namespace(wait=False))
     push = os.path.join(HOME, "push")
     shutil.rmtree(push, ignore_errors=True)
     os.makedirs(push)
@@ -157,10 +166,33 @@ def run(a):
     print(f"Started. Watch it at https://www.kaggle.com/code/{u}/{SLUG} or run: kjob.py fetch --wait")
 
 
-def status():
-    r = kaggle("kernels", "status", f"{user()}/{SLUG}", capture=True)
-    print(r.stdout.strip())
-    return r.stdout.lower()
+def status(version=""):
+    r = kaggle("kernels", "status", f"{user()}/{SLUG}" + (f"/{version}" if version else ""), check=False, capture=True)
+    print((r.stdout + r.stderr).strip())
+    return (r.stdout + r.stderr).lower()
+
+
+def busy():
+    """True while the latest version is queued or running (False if the notebook doesn't exist yet)."""
+    return bool(re.search(r"running|queued|pending", status()))
+
+
+def show_log(a):
+    """Download a version's run log and print its end: the first place to look when a run fails."""
+    ref = f"{user()}/{SLUG}" + (f"/{a.version}" if a.version else "")
+    status(a.version)
+    dest = os.path.join(HOME, "logs", a.version or "latest")
+    os.makedirs(dest, exist_ok=True)
+    kaggle("kernels", "output", ref, "-p", dest, "--file-pattern", r"\.log$")
+    for f in glob.glob(f"{dest}/*.log"):
+        text = open(f, errors="replace").read()
+        try:  # Kaggle logs are a JSON list of {"stream_name", "time", "data"}
+            text = "".join(e.get("data", "") for e in json.loads(text))
+        except (json.JSONDecodeError, AttributeError, TypeError):
+            pass
+        lines = text.splitlines()
+        print(f"--- {f}: last {min(a.lines, len(lines))} of {len(lines)} lines")
+        print("\n".join(re.sub(r"KGAT_[0-9a-fA-F]+", "KGAT_***", line) for line in lines[-a.lines:]))
 
 
 def fetch(a):
@@ -192,7 +224,11 @@ def main():
     p = sub.add_parser("run")
     p.add_argument("settings", nargs="*")
     p.add_argument("--accelerator", default="NvidiaTeslaT4")
+    p.add_argument("--now", action="store_true", help="push even if a run is still going (it will run alongside)")
     sub.add_parser("status")
+    p = sub.add_parser("log", help="print the end of a run's log")
+    p.add_argument("version", nargs="?", default="", help="version number (default: latest)")
+    p.add_argument("--lines", type=int, default=80)
     p = sub.add_parser("fetch")
     p.add_argument("--wait", action="store_true")
     sub.add_parser("quota")
@@ -204,6 +240,8 @@ def main():
         run(a)
     elif a.cmd == "status":
         status()
+    elif a.cmd == "log":
+        show_log(a)
     elif a.cmd == "fetch":
         fetch(a)
     elif a.cmd == "quota":
