@@ -13,7 +13,7 @@ def rng(seed, *salt):
 
 def fbm2d(h, w, seed, octaves=5, base=4, persistence=0.5):
     """Fractal value noise in [0,1], shape (h, w), float32."""
-    g = rng(seed, "fbm", h, w)
+    g = rng(seed, "fbm")  # independent of size: previews and finals share one world
     out = np.zeros((h, w), np.float32)
     amp, total = 1.0, 0.0
     cells = base
@@ -31,7 +31,7 @@ def fbm2d(h, w, seed, octaves=5, base=4, persistence=0.5):
 
 def fbm1d(n, seed, octaves=6, base=3, persistence=0.55):
     """Fractal 1-D noise in [0,1], length n (for ridge lines)."""
-    g = rng(seed, "fbm1d", n)
+    g = rng(seed, "fbm1d")
     x = np.linspace(0, 1, n)
     out = np.zeros(n)
     amp, total, cells = 1.0, 0.0, base

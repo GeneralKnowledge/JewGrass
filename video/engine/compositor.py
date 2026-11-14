@@ -272,8 +272,11 @@ class Compositor:
         for (word, x, y), age in zip(lay, ages):
             if age <= 0:
                 continue
+            op = min(age / 0.06, 1) * fade
+            shadow, _ = T.word_sprite(word, "stencil", size, P.PEAT)
+            self._paste_rgb(img, shadow, x0 + x + size // 18, y0 + y + size // 18, op * 0.85)
             spr, _ = T.word_sprite(word, "stencil", size, P.BONE, 0.1, self.seed)
-            self._paste_rgb(img, spr, x0 + x, y0 + y, min(age / 0.06, 1) * fade)
+            self._paste_rgb(img, spr, x0 + x, y0 + y, op)
 
     def _paste_rgb(self, img, spr, x, y, op):
         h, w = spr.shape[:2]
