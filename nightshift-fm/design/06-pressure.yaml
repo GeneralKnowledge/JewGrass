@@ -1,0 +1,82 @@
+# NIGHTSHIFT FM Song Design: Pressure (track 06).
+slug: nightshift-pressure
+title: Pressure
+order: 6
+family: drift
+version: 1
+role: Heavy, aggressive Memphis/drift hybrid.
+test: Does the track hit hard on ordinary speakers without becoming a muddy wall of low frequencies?
+
+render:
+  bpm: 145
+  key: F# minor
+  timesig: "4"
+  seconds: 185        # 96 bars at 145 is 159 s
+
+palette:
+  lead: low cowbell motif (F# A G# F#, low register, more pulse than melody)
+  bass: saturated 808 for the sub, a separate distorted synth bass for the mids
+  drums: hard kick, sharp snare, rolling hats; a dusty Memphis snare layered in drop A2
+  left_out: piano, pads, high bright leads; the high end belongs to hats and cowbell
+
+harmony: F#m - D - E - C#, one bar each; tension comes from the bass, which stays on F# under the D and E in drops A and B.
+drums: >-
+  Kick on 1 and 3, never on the same sixteenth as an 808 note change; sharp snare on 2 and 4; rolling sixteenth
+  hats. Variation swaps hats to a triplet feel. Drop A2 adds rimshots and the Memphis snare.
+bass_movement: Pedal F# in drops A and B, then the bass finally follows the chords in drop C.
+vocal_motif:
+  voice: deep-chop
+  phrase: "Pressure"
+  treatments: [deep, filtered in the intro, stutter on the last syllable ("pressure, sure, sure")]
+the_moment: Drop C. The bass stops pedalling and moves with the chords, which releases the tension built in A and B.
+
+sections:
+  - name: intro
+    tag: intro - filtered distorted bass and deep male voice, no drums
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Pressure
+  - name: drop A
+    tag: drop - instrumental, full hard drums, saturated 808, low cowbell motif
+    bars: 16
+    performer: none
+  - name: variation
+    tag: variation - deep vocal chop with a stutter, cowbell and hi-hat pattern change
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Pressure, sure, sure
+      Pressure
+  - name: drop B
+    tag: drop - instrumental, more distortion on the mid-bass, sub stays clean
+    bars: 16
+    performer: none
+  - name: breakdown
+    tag: breakdown - drums out, bass pulses and deep voice only
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Pressure
+      Pressure, sure, sure
+  - name: drop A2
+    tag: drop - instrumental, main rhythm returns with new percussion and rimshots
+    bars: 16
+    performer: none
+  - name: drop C
+    tag: final drop - strongest bass and drums, bass moves with the chords
+    bars: 16
+    performer: deep-chop
+    lyrics: |
+      Pressure!
+  - name: outro
+    tag: outro - instrumental, hard stop, long reverberant tail
+    bars: 8
+    performer: none
+
+ending: Everything stops on one beat; a reverb tail of the last hit decays into silence.
+transmission_layer: none until the end; the hard stop is followed by a brief signal flicker in the tail.
+caption: >-
+  145 bpm, F-sharp minor, heavy aggressive Memphis and drift phonk hybrid, saturated 808 sub kept clean and
+  controlled, separate distorted synth mid-bass, hard kick clearly separate from the bass, sharp snare, rolling
+  hats, low cowbell motif, deep male vocal chop with a stutter at the end, hits hard without mud, hard stop ending

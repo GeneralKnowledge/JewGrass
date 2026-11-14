@@ -1,0 +1,90 @@
+# NIGHTSHIFT FM Song Design: No Reception (track 02, round 1).
+slug: nightshift-no-reception
+title: No Reception
+order: 2
+family: memphis
+version: 1
+role: Establish the core Memphis phonk sound.
+test: Does this feel like a convincing phonk track without depending on a generic drift beat?
+
+render:
+  bpm: 92
+  key: C minor
+  timesig: "4"
+  seconds: 230        # 88 bars at 92 is 230 s
+
+palette:
+  lead: eerie minor-key piano loop, slightly unstable in pitch, like an old recording
+  bed: subtle organ under the grooves
+  bass: heavy rolling bass, moving in eighths, a new figure in groove B
+  drums: dusty kick and snare, swung hats; short cowbell accents in the hooks only
+  left_out: cowbell lead, risers, distorted 808, anything glossy
+
+harmony: Cm - Ab - Bb - G (G major, so the B natural pulls back to C minor), one bar each.
+drums: >-
+  Kick on 1 and the "and" of 2, snare on 2 and 4 with a late, lazy feel; hats in swung eighths. Groove B adds
+  sixteenth hats on beat 4 of every second bar. Hooks add two cowbell hits on the "and" of 3 and 4.
+bass_movement: Rolling eighths on the root with a pickup into each change; groove B walks up C-D-Eb into Ab.
+vocal_motif:
+  voice: deep-chop
+  phrase: "Can't get through"
+  treatments: [normal, pitched down, chopped into a two-syllable rhythm ("can't, can't")]
+the_moment: The break. Drums vanish, the bass and the pitched-down voice are alone for eight bars, then groove A2 hits.
+
+sections:
+  - name: intro
+    tag: intro - filtered piano loop, distant spoken voice, no drums
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Can't get through
+  - name: groove A
+    tag: groove - instrumental, full dusty Memphis drums, rolling bass, eerie piano
+    bars: 16
+    performer: none
+  - name: hook
+    tag: hook - deep vocal chopped in rhythm, two short cowbell accents
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Can't, can't
+      Can't get through
+      Can't, can't
+      Get through
+  - name: groove B
+    tag: groove - instrumental, new bass figure, extra hi-hats, quiet organ underneath
+    bars: 16
+    performer: none
+  - name: break
+    tag: break - drums drop out, bass and pitched-down voice only
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Can't get through
+      Can't get through
+  - name: groove A2
+    tag: groove - instrumental, drums back hard, main piano loop returns
+    bars: 16
+    performer: none
+  - name: hook 2
+    tag: hook - harder stuttered vocal chops, cowbell accents, bass pushed up
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Can't, can't, can't
+      Get through
+      Can't, can't, can't
+      Get through
+  - name: outro
+    tag: outro - drums stop, unsteady piano alone, one last plain phrase
+    bars: 8
+    performer: deep-chop
+    lyrics: |
+      Can't get through
+
+ending: The piano loop alone, wavering, and the phrase once more without processing.
+transmission_layer: short tuning sweep into bar 1; a one-beat signal drop just before groove A2; signal noise only under the outro piano, low.
+caption: >-
+  92 bpm, C minor, eerie slightly unstable piano loop like an old recording, subtle organ, heavy rolling bass,
+  dusty swung drums, short cowbell accents only in the hooks, deep male spoken phrase that comes back pitched
+  down and chopped into a two-syllable rhythm, an eight-bar break with only bass and voice

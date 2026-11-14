@@ -1,0 +1,82 @@
+# NIGHTSHIFT FM Song Design: Dead Channel (track 04).
+slug: nightshift-dead-channel
+title: Dead Channel
+order: 4
+family: experimental
+version: 1
+role: Make the album strange. The experimental production showcase.
+test: Can the system create an interesting phonk-adjacent instrumental that isn't just another loop?
+
+render:
+  bpm: 72
+  key: Eb minor
+  timesig: "4"
+  seconds: 240        # 68 bars at 72 is 227 s. Reuben's sketch had 96 bars (320 s at 72); scaled to keep 240 s
+
+palette:
+  lead: reversed piano fragments, incomplete phrases, a suspended chord now and then
+  bass: sub-bass pulses, sometimes only one per bar
+  drums: fragmented breaks that drop beats; the pulse is always there even when hits are missing
+  voice: breath, syllables and half-words, granular and pitch-bent
+  left_out: cowbell lead, 808 slides, anything that loops unchanged for more than four bars
+
+harmony: Ebm - B - Db - Bb, phrases broken off early, Bbsus4 instead of Bb on some passes.
+drums: >-
+  Rhythm A: kick on 1, snare on 3, hats that skip whole beats; every fourth bar stops a beat early. Rhythm B:
+  same skeleton with extra rimshots and a stuttered snare roll. Final texture: both patterns at once, a beat apart.
+bass_movement: Single sub pulses on the chord changes; in rhythm B they double up on the "and" of 4.
+vocal_motif:
+  voice: grains
+  phrase: syllables and breaths, no sentence
+  treatments: [granular, stuttered, reversed, pitched down into a drone]
+the_moment: The breakdown. Almost no music, just a few voice grains and one bass pulse, then everything collides.
+
+sections:
+  - name: intro
+    tag: intro - fragmented voice grains, short silences, no drums
+    bars: 4
+    performer: grains
+    lyrics: |
+      Ah, hh
+      Ta, ka
+  - name: texture A
+    tag: theme - instrumental, sparse reversed piano, slow sub-bass pulses, long gaps
+    bars: 12
+    performer: none
+  - name: rhythm A
+    tag: groove - instrumental, broken drum break with missing beats, steady pulse underneath
+    bars: 12
+    performer: none
+  - name: texture B
+    tag: interlude - reversed breathy syllables, glitch edits, drums cut out
+    bars: 8
+    performer: grains
+    lyrics: |
+      Hh, ah
+      Mm, ta
+      Ka, ka, ka
+  - name: rhythm B
+    tag: groove - instrumental, more aggressive stuttering percussion, rimshots, doubled bass pulses
+    bars: 12
+    performer: none
+  - name: breakdown
+    tag: breakdown - almost silent, single bass pulse, a few vocal grains
+    bars: 8
+    performer: grains
+    lyrics: |
+      Ah
+  - name: final texture
+    tag: climax - instrumental, everything collides, two drum patterns at once, reversed piano
+    bars: 8
+    performer: none
+  - name: outro
+    tag: outro - instrumental, the signal cuts off suddenly mid-bar
+    bars: 4
+    performer: none
+
+ending: A hard cut to silence in the middle of a bar, no tail.
+transmission_layer: dropouts of a beat or two inside rhythm A and B (cut, not noise); a signal failure exactly where the music cuts.
+caption: >-
+  72 bpm, E-flat minor, strange experimental phonk-adjacent instrumental, glitchy fragmented drum breaks that
+  skip beats but keep a pulse, reversed piano, sub-bass pulses, breathy syllables and vocal grains with no words,
+  deliberate gaps and unexpected silences, short rhythmic interruptions, a sudden cut at the end

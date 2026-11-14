@@ -1,0 +1,73 @@
+# NIGHTSHIFT FM Song Design: Lost Transmission (track 10).
+slug: nightshift-lost-transmission
+title: Lost Transmission
+order: 10
+family: memphis
+version: 1
+role: "Bring the album full circle. No new musical identity: the radio loses the signal it found at the start."
+test: Does the final track make the album feel like one listening experience rather than ten unrelated instrumentals?
+
+render:
+  bpm: 86
+  key: F minor
+  timesig: "4"
+  seconds: 225        # 80 bars at 86 is 223 s (Reuben's 223 plus 2 s so the fade isn't cut)
+
+palette:
+  lead: transmission-piano from Tuning In, slower; signal-bell in the final groove
+  bed: an ambient pad that slowly opens and darkens
+  bass: low sub-bass, quieter than anywhere else on the album
+  drums: subdued Memphis drums
+  voice: the station phrase, reversed, stretched and distorted until only its shape is left
+  left_out: any new melody, cowbell, distortion on the drums
+
+harmony: Fm - Db - Ab - Eb, finally resolving to a held F minor in the outro (Tuning In left it hanging).
+drums: Subdued kick on 1 and the "and" of 2, brushed-sounding snare on 3, hats only in the final groove.
+bass_movement: Sub on the roots, dropping out four bars before the end so the pad holds the last Fm alone.
+vocal_motif:
+  voice: station
+  phrase: "'you''re listening' (the Tuning In material)"
+  treatments: [reversed, stretched, distorted, only the texture left]
+the_moment: Motif B. The Tuning In piano comes back at the exact point you'd expect a new hook.
+
+sections:
+  - name: intro
+    tag: intro - instrumental, radio tuning sweep, the signal returns, faint two-note bell
+    bars: 8
+    performer: none
+  - name: groove A
+    tag: groove - instrumental, soft subdued Memphis drums, low sub-bass
+    bars: 16
+    performer: none
+  - name: motif B
+    tag: theme - instrumental, the opening detuned piano phrase returns
+    bars: 8
+    performer: none
+  - name: groove A2
+    tag: groove - stretched distant reversed voice, blurred, more shape than words
+    bars: 16
+    performer: station
+    lyrics: |
+      Listening
+      You're listening
+  - name: breakdown
+    tag: breakdown - instrumental, piano and slowly opening pad only
+    bars: 8
+    performer: none
+  - name: final groove
+    tag: groove - full album motif reprise, piano and two-note bell together, drums return softly
+    bars: 16
+    performer: station
+    lyrics: |
+      You're, you're
+  - name: outro
+    tag: outro - instrumental, the music thins, the signal fades out completely
+    bars: 8
+    performer: none
+
+ending: The pad holds F minor alone, resolved this time, and fades to nothing.
+transmission_layer: the album's last tuning sweep at the start (the same one as Tuning In, reversed); slow signal loss over the outro until only a faint carrier remains, then silence.
+caption: >-
+  86 bpm, F minor, closing instrumental that reprises the opening, slow detuned piano phrase, subdued Memphis
+  drums, low quiet sub-bass, evolving ambient pad, a faint two-note bell, a calm low voice stretched and
+  blurred until only its shape is left, nothing new introduced, fades out completely
