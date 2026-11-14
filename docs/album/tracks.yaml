@@ -11,15 +11,45 @@ queue:
 - fast-lane
 - brass-plate
 - exit-strategy
+- sunshine-trust
+- ermine-and-ink
+- gavs-song
+- parcel-of-rogues
 - viewing
 tracks:
 - n: 1
   slug: parcel-of-rogues
   title: Parcel of Rogues
-  status: pending
+  status: generate
   batch: 1
   seconds: 90
   bpm: 70
+  caption: |
+    cinematic spoken word prologue, solo Highland bagpipe lament, howling wind, deep calm Scottish male narrator, slow and grave, low drone, distant church bell, sparse heartbeat kick drum, the bagpipe gradually swallowed by glitching stock ticker beeps and digital noise, ends on a sudden silence, 70 bpm
+  lyrics: |
+    [intro]
+
+    [verse]
+    We're bought and sold for English gold.
+    Such a parcel of rogues in a nation.
+    Robert Burns wrote that in seventeen ninety-one.
+    He was talking about the men who signed us away.
+
+    [verse]
+    Sixteen ninety-eight. A swamp in Panama.
+    A country's savings, gone.
+    Seventeen-oh-seven. A parliament, sold.
+    Eighteen-twenty. The glens, emptied for sheep.
+    Nineteen seventy-four. The oil, counted, and hidden.
+
+    [verse]
+    Twenty twenty-six.
+    A glen. A fund. A letterbox in Glasgow.
+    They don't burn the roofs now.
+    They just send you the receipt.
+
+    [outro]
+    This is Natural Capital.
 - n: 2
   slug: viewing
   title: Viewing by Appointment Only
@@ -310,17 +340,120 @@ tracks:
 - n: 11
   slug: ermine-and-ink
   title: Ermine and Ink
-  status: pending
+  status: generate
   batch: 2
   seconds: 200
   bpm: 92
+  caption: |
+    baroque harpsichord trap, pompous posh English male rap, aristocratic sneer, duet with a gravelly older male newsreader voice, typewriter and printing press as drums, string quartet stabs, brass fanfare, distorted 808, hard trap drums, rolling hi-hats, glitch cut-up headlines, regal chant chorus, satirical, raw mix, 92 bpm
+  lyrics: |
+    [intro]
+    Order, order.
+    The noble lord has the floor.
+    And the noble lord would like it carpeted.
+
+    [verse]
+    Gave the party half a million, now they call me lord
+    Red bench, ermine robe, and a seat on the board
+    Never been elected, never will, don't need
+    Write a cheque, wear a hat, then I vote on your feed
+    Planning for the pylons? Have a word in the lift
+    Licence for the carbon? Darling, consider it a gift
+    Dinner at the club with the minister's spad
+    Best four hundred quid that a democracy had
+
+    [chorus]
+    Ermine and ink, ermine and ink
+    We decide the news and the news decides what you think
+    Ermine and ink, ermine and ink
+    One holds the pen and the other holds the drink
+
+    [verse]
+    Press baron here, I own the morning view
+    Ten million readers and they're angry, who at? You
+    Crofters blocking progress, front page, bold
+    Greedy wee villagers, out in the cold
+    Never mention partners, never mention funds
+    Never print the island, print the small boats instead, chums
+    Spiked the girl's story with a phone call and a smile
+    Lord's my godson's godfather, it's been a while
+
+    [chorus]
+    Ermine and ink, ermine and ink
+    We decide the news and the news decides what you think
+    Ermine and ink, ermine and ink
+    One holds the pen and the other holds the drink
+
+    [bridge]
+    Rise for the lords, sit for the press
+    Pay for the honour and we'll do the rest
+    Rise for the lords, sit for the press
+    Pay for the honour and we'll do the rest
+
+    [outro]
+    Division's on Friday.
+    And it's in Friday's edition.
 - n: 12
   slug: sunshine-trust
   title: Sunshine Trust
-  status: pending
+  status: generate
   batch: 3
   seconds: 230
   bpm: 96
+  caption: |
+    silky smooth yacht lounge trap, sultry calm English female vocal, half sung half spoken, never raises her voice, soft Rhodes electric piano, warm nylon string guitar, gentle steel pan accents, seagulls and lapping waves, champagne clinks, deep clean 808, slow crisp trap drums, lazy hi-hats, faint glitch on the money lines, elegant and empty, 96 bpm
+  lyrics: |
+    [intro]
+    Welcome to the island. Do mind the step.
+    Nobody here owns anything.
+    That's rather the point.
+
+    [verse]
+    Palm trees and a harbour and a brass plate too
+    Thirty thousand companies and a population of a few
+    The trust owns the fund and the fund owns the glen
+    And the trust is owned by a foundation, and then
+    The foundation's owned by a purpose, not a man
+    Beneficiaries? Darling, catch me if you can
+    The profits sail in on a spreadsheet tide
+    Tax rate zero, and the tide's on my side
+
+    [chorus]
+    Sunshine trust, sunshine trust
+    Money comes to bask in the sun with us
+    Nothing's ever owed and nothing's ever taxed
+    Sunshine trust, lie back and relax
+
+    [verse]
+    Don't call it foreign, we fly the same flag
+    Same king on the coins in the Highland lad's bag
+    London says sorry and London says reform
+    Then sends us the paperwork to keep us all warm
+    The water man's dividend, the oil man's cut
+    The mask man's millions and the laird's old rut
+    All of it lands on a beach in the sea
+    British as a teapot, and it's taxed like a breeze
+
+    [chorus]
+    Sunshine trust, sunshine trust
+    Money comes to bask in the sun with us
+    Nothing's ever owed and nothing's ever taxed
+    Sunshine trust, lie back and relax
+
+    [bridge]
+    Somewhere there's a glen in the rain
+    Somewhere there's a school with a leak again
+    Somewhere there's a nurse on a bus at three
+    And none of it is anything to do with me
+
+    [chorus]
+    Sunshine trust, sunshine trust
+    Money comes to bask in the sun with us
+    Nothing's ever owed and nothing's ever taxed
+    Sunshine trust, lie back and relax
+
+    [outro]
+    Nothing's due. Ever.
 - n: 13
   slug: bought-and-sold
   title: Bought and Sold
@@ -414,10 +547,67 @@ tracks:
 - n: 14
   slug: gavs-song
   title: Gav's Song
-  status: pending
+  status: generate
   batch: 3
   seconds: 240
   bpm: 76
+  caption: |
+    slow acoustic bluegrass ballad, tired cracked Scottish male vocal, heartfelt and ashamed, fingerpicked acoustic guitar, mournful fiddle, soft upright bass, brushed snare, lap steel, sparse and intimate, solo Highland bagpipe slow air only in the final chorus, subtle tape hiss, gentle glitch fade at the end, 76 bpm
+  lyrics: |
+    [intro]
+
+    [verse]
+    I was born at the foot of the hill
+    Learned to fish where the water's still
+    My granda walked me up the brae
+    Said this is yours, son, come what may
+    Then the laird sold out and a lady came
+    Wi' a London smile and a hi-vis name
+    Said Gav, we need a local face
+    To keep the walkers in their place
+
+    [chorus]
+    So I locked the gate on my own hill
+    I took their wage, I'm taking it still
+    I turned away the folk I know
+    From the hill my granda told me so
+    Lord forgive the gate I keep
+    I'm a shepherd now that's selling sheep
+
+    [verse]
+    Wee Ewan came by wi' his flask and his dog
+    I told him the path was closed for the bog
+    He looked at me like I'd died
+    And I suppose that some of me had, inside
+    They planted trees where the trees won't grow
+    I watched them yellow in the first hard snow
+    And every month the money came
+    From an island I cannae even name
+
+    [chorus]
+    So I locked the gate on my own hill
+    I took their wage, I'm taking it still
+    I turned away the folk I know
+    From the hill my granda told me so
+    Lord forgive the gate I keep
+    I'm a shepherd now that's selling sheep
+
+    [bridge]
+    There's a box in the office, there's a key on my chain
+    There's every name and number, there's every hidden gain
+    And Morag's at the paper and Ewan's at the door
+    And I'm no a hero, but I cannae do this anymore
+
+    [chorus]
+    So I opened up the gate on my own hill
+    I gave them the papers, I'm shaking still
+    Let the walkers come, let the village know
+    The hill my granda told me so
+    Lord forgive the years I keep
+    I was a shepherd, selling sheep
+
+    [outro]
+    Gate's open.
 - n: 15
   slug: exit-strategy
   title: Exit Strategy

@@ -115,6 +115,8 @@ The money-trail motif: in each villain's song, one line says where "the pound" g
 
 ## Lyric drafts
 
+**All final lyrics and captions for every track to be generated now live in [`album/tracks.yaml`](album/tracks.yaml)** (the laptop reads it directly). The drafts below are the originals with performance notes.
+
 First drafts for tracks 2, 4, 5 and 13. *Deed to the Glen*, *Cold Hame*, *Swim at Your Own Risk* and *We Bought the Hill* already exist in [`lyrics.md`](lyrics.md). *Parcel of Rogues*, *Voicemail: "Four Hundred Companies"*, *Brass Plate*, *Fast Lane*, *Ermine and Ink*, *Sunshine Trust*, *Gav's Song* and *Exit Strategy* are still to write. Section tags work in both Suno and ACE-Step.
 
 ### 2. Viewing by Appointment Only (0:50)
