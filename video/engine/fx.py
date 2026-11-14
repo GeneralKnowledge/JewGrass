@@ -165,6 +165,105 @@ class Psych:
         return (cv2.resize(rgb, size, interpolation=cv2.INTER_CUBIC),
                 cv2.resize(mask, size, interpolation=cv2.INTER_LINEAR)[..., None])
 
+    def field(self, t, i, ps, width=800, iters=40):
+        """The whole picture as a fractal: glowing filaments of a slowly
+        turning Julia set on deep ink, for the fractal-only lyric videos.
+
+        ps (the shot's `psych:`): kaleido (segments), hue (0..1 palette turn),
+        zoom (1 = default framing), speed (how fast it turns and drifts),
+        glow (filament brightness), depth (how much the bass pushes in),
+        lock_t (hold the shape and framing of that moment), wander (how far
+        the shape breathes around it), drift (0..1, how much colours move with time/drums)."""
+        if getattr(self, "_fw", None) != width:
+            lw = width if self.W >= self.H else int(width * self.W / self.H)
+            lh = int(lw * self.H / self.W)
+            y, x = np.mgrid[0:lh, 0:lw].astype(np.float32)
+            sc = 2.0 / min(lw, lh)
+            self._fz = ((x - lw / 2) * sc, (y - lh / 2) * sc)
+            self._fw = width
+        k = self._i(i)
+        speed = float(ps.get("speed", 1.0))
+        zx, zy = self._fz
+        # lock_t: hold the shape, framing and view of this moment (a look Reuben
+        # picked); only the rotation, the bass breathing and the colours move
+        lock = ps.get("lock_t")
+        tl = float(lock) if lock is not None else t
+        sl = float(ps.get("lock_speed", speed)) if lock is not None else speed  # speed of the held moment
+        en, bs = float(self.energy[k]), float(self.bass[k])
+        if lock is not None:  # the music only nudges the held shape
+            le, lb = float(ps.get("lock_energy", 0.75)), float(ps.get("lock_bass", 0.8))
+            en, bs = le + 0.08 * (en - le), lb  # the shape itself stays put
+        rot = t * 0.04 * speed
+        zoom = (0.95 - 0.12 * en - 0.06 * np.sin(tl * 0.13 * sl)) / float(ps.get("zoom", 1.0))
+        zoom *= 1 - float(ps.get("depth", 0.04)) * self.bass[k]
+        if lock is not None and ps.get("evolve"):
+            zoom *= 1 - float(ps["evolve"]) * 0.22 * (0.5 - 0.5 * np.cos(t * 0.019))
+        # the view drifts around the set so it never sits still
+        ox, oy = 0.18 * np.sin(tl * 0.031 * sl + 1.0), 0.12 * np.cos(tl * 0.023 * sl)
+        cr, sr = np.cos(rot), np.sin(rot)
+        x = (zx * cr - zy * sr) * zoom + ox
+        y = (zx * sr + zy * cr) * zoom + oy
+        kal = int(ps.get("kaleido", 0))
+        if kal:
+            r = np.hypot(x, y)
+            th = np.arctan2(y, x)
+            seg = 2 * np.pi / kal
+            th = np.abs((th % seg) - seg / 2)
+            x, y = r * np.cos(th), r * np.sin(th)
+        # c walks the edge of the main cardioid of the Mandelbrot set, where
+        # the Julia sets are connected and richly curled (not scattered dust);
+        # the bass nudges it just outside, where the curls start to fray
+        a = self.c_phase + tl * 0.035 * sl
+        if lock is not None and ps.get("wander"):  # optional slow breathing of the held shape
+            a += float(ps["wander"]) * np.sin(t * 0.21)
+        ev = float(ps.get("evolve", 0.0)) if lock is not None else 0.0
+        if ev:  # evolve inside the held pattern: c circles close to the held value
+            a += ev * (0.045 * np.sin(t * 0.029) + 0.02 * np.sin(t * 0.071 + 1.3))
+        w = np.exp(1j * a)
+        mag = 1.0 + 0.02 * np.sin(tl * 0.07) + 0.03 * bs
+        if ev:
+            mag += ev * 0.006 * np.sin(t * 0.043 + 0.4)
+        c = complex((w / 2 - w * w / 4) * mag)
+        z = (x + 1j * y).astype(np.complex64)
+        out = np.zeros(z.shape, np.float32)
+        alive = np.ones(z.shape, bool)
+        idx = np.arange(z.size)
+        zf, of = z.ravel(), out.ravel()
+        for n in range(iters):
+            zz = zf[idx]
+            zz = zz * zz + c
+            esc = np.abs(zz) > 4
+            if esc.any():
+                e = idx[esc]
+                of[e] = n + 1 - np.log2(np.log(np.abs(zz[esc]) + 1e-9) + 1e-9)
+            zf[idx] = zz
+            idx = idx[~esc]
+            if not len(idx):
+                break
+        alive = np.zeros(z.size, bool)
+        alive[idx] = True
+        alive = alive.reshape(z.shape)
+        e = np.clip(out / iters, 0, 1)
+        hue = float(ps.get("hue", 0.0))
+        drift = float(ps.get("drift", 1.0))  # how far the colours wander with time and drums
+        v = (np.sqrt(e) * 2.2 + drift * (0.05 * t * speed + 0.10 * self.hit_phase[k]) + hue) % 1.0
+        rgb = self.lut[(v * 511).astype(np.int32)]
+        # brightness: dark far field, glowing near the edge of the set, the
+        # inside of the set a deep slow-breathing ink
+        glow = float(ps.get("glow", 1.0))
+        b = (0.07 + 0.93 * np.clip((e - 0.03) / 0.4, 0, 1) ** 0.85) * glow
+        inside = 0.12 + 0.05 * np.sin(t * 0.4 + 2 * np.pi * hue)
+        b = np.where(alive, 0.0, b).astype(np.float32)
+        lit = rgb * b[..., None]
+        # the inside of the set: one deep ink, whatever the palette is doing
+        ink = np.array([0.03, 0.045, 0.05], np.float32) * (inside / 0.12)
+        lit[alive] = ink
+        lit = cv2.GaussianBlur(lit, (0, 0), 0.6)
+        # a soft bloom so the filaments read as light, not lines
+        bloom = cv2.GaussianBlur(cv2.resize(lit, (lit.shape[1] // 4, lit.shape[0] // 4), interpolation=cv2.INTER_AREA), (0, 0), 3)
+        lit = lit + 0.6 * cv2.resize(bloom, (lit.shape[1], lit.shape[0]), interpolation=cv2.INTER_LINEAR)
+        return cv2.resize(lit, (self.W, self.H), interpolation=cv2.INTER_CUBIC)
+
     def warp(self, img, t, i, amount):
         if amount <= 0:
             return img

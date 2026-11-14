@@ -1,0 +1,111 @@
+# LOWBRIDGE artist DNA: the persistent identity every LOWBRIDGE song is built from.
+# build.py joins `caption_core` with each song's own caption, so the shared sound is stated the same way every time.
+# Everything here is original. Genre references only: no real artist, record, person or place is named or imitated.
+
+act: LOWBRIDGE
+genre: UK drill, road rap, dark and minimal
+home: >-
+  Southmere, a fictional British city. Tower blocks, railway arches, a ring road, late-night shops,
+  empty bus stops and a town centre that closes a little earlier every year.
+premise: >-
+  Three friends who grew up around the same streets and turned out very different. Not superheroes,
+  cartoon villains or gang caricatures: young men with ambition, pride, history, mistakes and different
+  ideas about what comes next. They sound like people who know each other: they finish each other's
+  hooks, answer each other's lines and share the same places.
+themes: [reputation, loyalty, pressure, money, family, boredom, paranoia, consequences of decisions]
+
+members:
+  rook:
+    role: lead voice and storyteller
+    voice: deep, controlled baritone; never shouts
+    delivery: measured, blunt, conversational, with occasional rapid bursts
+    writing: ordinary observations that land as threats or turning points; short declarative lines; dry endings
+    caption_words: deep calm baritone male rap, measured conversational delivery
+  vex:
+    role: technical rapper
+    voice: higher and sharper than Rook, the most energy in the group
+    delivery: clipped syllables, fast pockets, internal rhymes, sudden pauses and flow switches
+    writing: punchlines, wordplay, stop-start lines, counting and lists
+    caption_words: fast sharp technical male rap, clipped syllables, sudden flow switches
+  vale:
+    role: reflective voice
+    voice: lower register, softer edges
+    delivery: melodic but still rap-led, drawn-out line endings, small sung hooks
+    writing: family, regret, ambition, the cost of the place; the one who says what the others won't
+    caption_words: low melodic male rap, drawn-out line endings, softly sung phrases
+  latch:
+    role: producer, never raps
+    signature: >-
+      eerie two- or four-bar loops, cold piano, reversed swells, deep sliding 808s, dry drums,
+      and now and then one unexpected sample
+
+# Shared world: facts the songs keep consistent, so the three tracks feel like one act's life.
+world:
+  - Mercer House, a twelve-floor tower where the lift is always broken. Rook lives on the twelfth floor.
+  - The Arches, under the railway, where they sat as kids talking about leaving.
+  - The 41, the last bus, top deck front seat.
+  - LATCH's studio is a cupboard in his mum's flat, egg boxes on the walls.
+  - Vale's older brother is away (never said why) and his mum keeps his room as it was. Vale's little brother has exams.
+  - The group chat that never stops, which Rook reads and never answers.
+
+sound:
+  tempo: 138-145 bpm, half-time drill pulse
+  rhythm: half-time groove with skippy, syncopated hi-hats and restrained rolls
+  bass: sliding 808s with their own movement and deliberate gaps; occasional saturation, never muddy
+  drums: sharp snare, tight kick, dry
+  melody: minor-key piano, sparse bells, eerie vocal chops
+  vocals: dry, close, upfront, little reverb
+  hooks: short, built on a repeated phrase, memorable without becoming a pop chorus
+  arrangement: space and contrast; silence is part of the arrangement; energy comes from drops and changes, not layers
+
+production_rules:
+  - Never fill every space. Silence is an instrument.
+  - The 808 moves on its own, not on every kick.
+  - Each rapper gets a different rhythm and register.
+  - No cinematic orchestra, no big pads. Cold and immediate.
+  - Build energy with transitions, drops and instrumental changes, not by stacking layers.
+  - Each song has one planned "moment" (a dropout, a new bass movement) written into its section tags.
+
+# Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+
+caption_core: >-
+  UK drill, dark minimal British road rap, cold and stripped back, half-time drill groove,
+  skippy syncopated hi-hats, sharp dry snare, tight kick, deep sliding 808 bass with deliberate gaps,
+  minor-key piano loop, sparse bells, dry close upfront male rap vocals with British accents,
+  space and silence between hits, clean hard-hitting mix
+
+writing_rules:
+  - Specific and believable: a named stop, a price, a time, an object. No stock lines.
+  - One idea and one image per verse.
+  - No glorifying violence, no weapons talk, no real people or real places. Southmere and everything in it is invented.
+  - Consequences, not bragging. Pressure, loyalty and money are told from the inside.
+  - One line per bar in verses (a 16-bar verse is 16 lines). Hooks repeat a short phrase.
+  - No spoken outros (they don't come through). No lines fully in brackets (the pipeline strips them).
+
+mix_targets:
+  loudness: about -9 LUFS integrated, true peak -1 dBTP
+  low_end: 808 mono below 120 Hz, kick and 808 not stacked on the same hits
+  vocals: dry and forward, short room at most
+  master: the laptop's pedalboard chain, not Matchering
+
+visual_identity:
+  palette: near-black, concrete grey, one sodium-orange streetlight accent
+  video: fractal field plus lyrics, like the JewGrass videos; slow cold movement, hard cuts on drops
+  type: condensed sans, all caps for the act name
+
+variation_rules:
+  - Every song has a different musical purpose (intro, hard single, reflective).
+  - Different key and tempo per song inside the 138-145 range.
+  - No two hooks built the same way (chant, layered group, sung).
+  - The shared signature is the piano-and-808 palette and the dry vocals, not repeated phrases.
+
+pilot_acceptance:
+  group_identity: all three songs sound like the same act
+  member_identity: you can tell the three performers apart
+  production: cold, clean, powerful drill instrumentals
+  lyrics: specific, believable, memorable
+  hooks: at least one genuinely memorable hook per song
+  arrangement: each track has a different musical identity
+  audio: no obvious vocal artefacts, clipping or muddy bass
+  repeatability: a second take keeps the same identity

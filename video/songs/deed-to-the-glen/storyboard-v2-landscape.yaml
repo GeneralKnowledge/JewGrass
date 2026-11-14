@@ -1,0 +1,91 @@
+# Deed to the Glen, v2: background + lyrics only (Reuben, 14 Nov: the animated
+# props didn't work; focus on a good background and good lyrics).
+# One landscape, no props, cut-outs, stamps or motifs. The light moves from
+# dawn to night across the song; the camera drifts slowly; fog breathes with
+# the bass; a faint strangeness in the sky that rises on the choruses.
+# Sections follow the take as performed (media/lyrics-performed.txt): no
+# second chorus before the bridge, no breakdown chant, a closing tag.
+song: deed-to-the-glen
+style: glen-gothic
+preset: lyric
+seed: 1707
+max_shot_bars: 40
+motifs: []
+
+shots:
+  - id: intro
+    at: intro
+    plate: hill-dawn@bare
+    camera: {move: push-in, speed: 0.4}
+    weather: [mist-low]
+    text: {mode: lyric}
+    grade: {exposure: 0.85}
+    psych: {sky: 0.15}
+  - id: verse
+    at: verse
+    plate: hill-dawn@bare
+    camera: {move: drift-right, speed: 0.4}
+    weather: [mist-low]
+    text: {mode: lyric}
+    grade: {exposure: 0.8}
+    psych: {sky: 0.2}
+  - id: chorus
+    at: chorus
+    plate: hill-dawn@bare
+    camera: {move: push-in, speed: 0.5}
+    weather: [mist-low]
+    text: {mode: lyric}
+    grade: {exposure: 0.8}
+    psych: {sky: 0.45}
+  - id: verse-2
+    at: verse-2
+    plate: hill-dusk@bare
+    camera: {move: drift-left, speed: 0.4}
+    weather: [mist-low]
+    text: {mode: lyric}
+    grade: {exposure: 0.8}
+    psych: {sky: 0.2}
+  - id: bridge
+    at: bridge
+    plate: hill-dusk@bare
+    camera: {move: rise, speed: 0.3}
+    weather: [fog-heavy]
+    text: {mode: lyric}
+    grade: {exposure: 0.9}
+    psych: {sky: 0.5}
+  - id: verse-3
+    at: verse-3
+    plate: hill-dusk@bare
+    camera: {move: drift-right, speed: 0.4}
+    weather: [mist-low]
+    text: {mode: lyric}
+    grade: {exposure: 0.8}
+    psych: {sky: 0.2}
+  - id: chorus-2
+    at: chorus-2
+    plate: hill-night@bare
+    camera: {move: pull-out, speed: 0.6}
+    weather: [mist-low]
+    text: {mode: lyric}
+    grade: {exposure: 0.8}
+    psych: {sky: 0.5}
+  - id: outro
+    at: outro
+    plate: hill-night@bare
+    camera: {move: pull-out, speed: 0.3}
+    weather: [fog-heavy]
+    text: {mode: lyric}
+    grade: {exposure: 0.85}
+    psych: {sky: 0.1}
+
+  - id: tag
+    at: tag
+    plate: hill-night@bare
+    camera: {move: hold}
+    weather: [fog-heavy]
+    text: {mode: lyric}
+    grade: {exposure: 0.8}
+    psych: {sky: 0.15}
+
+thumbnail: {shot: chorus-2, at: 0.3, title: "DEED TO THE GLEN", laird: false}
+vertical: {sections: [chorus-2], max_s: 45}

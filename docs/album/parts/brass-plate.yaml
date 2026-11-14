@@ -1,0 +1,57 @@
+# Parts for Brass Plate: turns the Song Design (docs/album/design/brass-plate.yaml)
+# into actual notes. Read by tools/daw/compose.py. Format: docs/daw-export.md#parts-files
+#
+# charts: one entry per bar, "Chord" or "Chord/Bass". A chart shorter than its section repeats.
+# Lookup order for a section: its full name ("verse 3"), then without the number ("verse"),
+# then its last word ("final chorus" -> "chorus").
+# play: section names (or "all"); a trailing * matches any number ("chorus*").
+song: brass-plate
+seed: 112
+
+charts:
+  intro: [Cm, Cm, Cm, Cm]
+  verse: [Cm/C, Cm/Bb, Ab/Ab, G7/G]                 # the pompous lament bass: C Bb Ab G
+  chorus: [Cm, Fm, G7, Cm]
+  verse 3: [Cm/C, Db/C, Cm/C, Bdim/C]               # the corruption progression over a low C
+  final chorus: [Cm, Fm, G7, Cm, Cm, Fm, G7, Cm, Fm, G7]
+  ending: [C]                                       # the comic triumphant major chord
+
+parts:
+  - name: Typewriter
+    generator: typewriter         # 16th-note clacks, carriage-return bell every 2 bars
+    play: all
+    params: {verse 3: sparse}
+
+  - name: Stamp and drums
+    generator: office_drums       # rubber stamp on 2 and 4 (snare + low tom), dry kick, desk bell at section starts
+    play: [verse 1, chorus*, verse 2, final chorus, ending]
+
+  - name: Harpsichord
+    generator: harpsichord        # eighth-note riff, money flourish (C G Db C) closing every 8 bars of verse
+    program: 6
+    play: all
+
+  - name: Tuba
+    generator: march_bass         # oom-pah on 1 and 3, approach note into the next bar
+    program: 58
+    play: [verse*, chorus*, final chorus, ending]
+
+  - name: Pizzicato strings
+    generator: pizzicato          # chugging eighths; verse 3 slows to quarters, low and uneasy
+    program: 45
+    play: [verse*, chorus*, final chorus]
+
+  - name: Brass
+    generator: brass_stabs        # stab on every chord change; held major chord at the end
+    program: 61
+    play: [chorus*, final chorus, ending]
+
+  - name: 808 hit
+    generator: sub_hits           # one low hit per chorus bar, downbeat only
+    program: 38
+    play: [chorus*, final chorus]
+
+  - name: Synth stabs
+    generator: synth_stabs        # punctuation at the end of every 4-bar line (the punchlines)
+    program: 81
+    play: [verse 2, verse 3, final chorus]
