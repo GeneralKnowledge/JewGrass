@@ -68,8 +68,9 @@ def pick_tracks(doc, tracks):
     return [by_slug[s] for s in slugs]
 
 
-def plan(doc, tracks="queue", takes=2, first_seed=8001, seeds=None, gpus=1, max_seconds=300):
-    """seeds: optional {slug: [seed, ...]} that overrides takes/first_seed for that track."""
+def plan(doc, tracks="queue", takes=2, first_seed=8001, seeds=None, gpus=1, max_seconds=300, models=("turbo",)):
+    """seeds: optional {slug: [seed, ...]} that overrides takes/first_seed for that track.
+    models: DiT models to render every take with (see render.py MODELS), e.g. ["turbo", "xl-turbo"] for a blind A/B."""
     seeds = seeds or {}
     jobs, notes = [], []
     for t in pick_tracks(doc, tracks):
@@ -79,18 +80,25 @@ def plan(doc, tracks="queue", takes=2, first_seed=8001, seeds=None, gpus=1, max_
             notes.append(f"{t['slug']}: dropped static-prone phrases {cap_drop + lyr_drop}")
         secs = min(float(t.get("seconds") or 180), max_seconds)
         for seed in seeds.get(t["slug"]) or [first_seed + i for i in range(takes)]:
-            jobs.append({
-                "slug": t["slug"], "title": t.get("title", t["slug"]), "seed": int(seed),
-                "caption": caption, "lyrics": lyrics, "seconds": secs,
-                "bpm": t.get("bpm"), "key": t.get("key") or "", "timesig": str(t.get("timesig") or ""),
-            })
-    # Longest jobs first, then deal them out to the GPU with the least work, so both cards finish together.
-    load = [0.0] * gpus
-    for j in sorted(jobs, key=lambda j: -j["seconds"]):
-        g = load.index(min(load))
-        j["gpu"] = g
-        load[g] += j["seconds"]
+            for model in models:
+                jobs.append({
+                    "slug": t["slug"], "title": t.get("title", t["slug"]), "seed": int(seed), "model": model,
+                    "caption": caption, "lyrics": lyrics, "seconds": secs,
+                    "bpm": t.get("bpm"), "key": t.get("key") or "", "timesig": str(t.get("timesig") or ""),
+                })
+    assign_gpus(jobs, list(range(gpus)) if isinstance(gpus, int) else gpus)
     return jobs, notes
+
+
+def assign_gpus(jobs, gpu_ids):
+    """Deal jobs out in order to the card with the least music so far, so cards finish together and the
+    earlier jobs in the list (e.g. a pilot batch) come first on every card."""
+    load = {g: 0.0 for g in gpu_ids}
+    for j in jobs:
+        g = min(load, key=load.get)
+        j["gpu"] = g
+        load[g] += j["seconds"] * (2 if j.get("model", "turbo").startswith("xl") else 1)
+    return jobs
 
 
 def main():
@@ -101,15 +109,17 @@ def main():
     ap.add_argument("--first-seed", type=int, default=8001)
     ap.add_argument("--seeds", default="{}", help='JSON, e.g. {"brass-plate": [7102, 7103]}')
     ap.add_argument("--gpus", type=int, default=1)
+    ap.add_argument("--models", default="turbo", help="comma-separated: turbo, xl-turbo, sft, xl-sft")
     ap.add_argument("--out", help="write jobs as JSON here")
     a = ap.parse_args()
     doc = yaml.safe_load(open(a.tracks_yaml))
     tracks = a.tracks if a.tracks in ("queue", "all") else [s.strip() for s in a.tracks.split(",") if s.strip()]
-    jobs, notes = plan(doc, tracks, a.takes, a.first_seed, json.loads(a.seeds), a.gpus)
+    jobs, notes = plan(doc, tracks, a.takes, a.first_seed, json.loads(a.seeds), a.gpus,
+                       models=a.models.split(","))
     for n in notes:
         print("NOTE", n, file=sys.stderr)
     for j in jobs:
-        print(f"gpu{j['gpu']}  {j['slug']:<24} seed {j['seed']}  {j['seconds']:.0f}s  bpm {j['bpm']}  "
+        print(f"gpu{j['gpu']}  {j['slug']:<24} {j['model']:<8} seed {j['seed']}  {j['seconds']:.0f}s  bpm {j['bpm']}  "
               f"key {j['key'] or '-'}  timesig {j['timesig'] or '-'}", file=sys.stderr)
     if a.out:
         json.dump(jobs, open(a.out, "w"), indent=1)

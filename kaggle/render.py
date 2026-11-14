@@ -1,8 +1,11 @@
 """Render a list of ACE-Step 1.5 takes on one GPU, loading the model once.
 
 Usage (from the ACE-Step-1.5 checkout, with CUDA_VISIBLE_DEVICES set to one card):
-  python /path/to/kaggle/render.py JOBS_JSON GPU_INDEX OUT_DIR
-Renders the jobs whose "gpu" equals GPU_INDEX into OUT_DIR/<slug>/<slug>-<seed>.wav (+ .mp3 and .json).
+  python /path/to/kaggle/render.py JOBS_JSON GPU_INDEX OUT_DIR [MODEL] [BATCH]
+Renders the jobs whose "gpu" equals GPU_INDEX and whose "model" equals MODEL (default turbo) into
+OUT_DIR/<slug>/<slug>-<seed>.wav (+ .mp3 and .json); other models get a suffix: <slug>-<seed>-xl-turbo.wav.
+MODEL is one of MODELS below. XL is the 4B DiT (twice the 2B's size, about twice the time per take);
+sft models use 50 steps with CFG instead of 8, so they take roughly ten times as long as turbo.
 Jobs whose .wav already exists are skipped, so a rerun picks up where the last one stopped.
 BAND_DEADLINE (unix time): don't start a new take after this, so the run ends inside Kaggle's 12 hours.
 
@@ -27,6 +30,13 @@ FP32_COMPUTE = os.environ.get("BAND_FP32_COMPUTE", "1") == "1"
 ATTN = os.environ.get("BAND_ATTN", "sdpa" if FP32_COMPUTE else "eager")
 OFFLOAD = os.environ.get("BAND_OFFLOAD", "0") == "1"
 DEADLINE = float(os.environ.get("BAND_DEADLINE", "0") or 0)
+# name: (checkpoint, extra GenerationParams). Turbo models run 8 steps without CFG; shift 3 as on the laptop.
+MODELS = {
+    "turbo": ("acestep-v15-turbo", {"shift": 3.0}),
+    "xl-turbo": ("acestep-v15-xl-turbo", {"shift": 3.0}),
+    "sft": ("acestep-v15-sft", {"inference_steps": 50, "guidance_scale": 7.0}),
+    "xl-sft": ("acestep-v15-xl-sft", {"inference_steps": 50, "guidance_scale": 7.0}),
+}
 
 
 # --- fp32 compute for modules flagged with _band_f32 (weights stay fp16); copied from the laptop's gen.py ---------
@@ -98,9 +108,21 @@ def log(msg):
 
 
 jobs_file, gpu, out_root = sys.argv[1], int(sys.argv[2]), sys.argv[3]
-jobs = [j for j in json.load(open(jobs_file)) if j["gpu"] == gpu]
-todo = [j for j in jobs if not os.path.exists(os.path.join(out_root, j["slug"], f"{j['slug']}-{j['seed']}.wav"))]
-log(f"{len(jobs)} takes for this card, {len(todo)} still to do. "
+model = sys.argv[4] if len(sys.argv) > 4 else "turbo"
+batch = int(sys.argv[5]) if len(sys.argv) > 5 else None  # only this batch (the notebook's RENDER_FIRST ordering)
+checkpoint, extra = MODELS[model]
+if model.startswith("xl") and "BAND_OFFLOAD" not in os.environ:
+    OFFLOAD = True  # 4B DiT (~8 GB in fp16) on a 16 GB card: park the text encoder and VAE on the CPU when idle
+
+
+def stem(j):
+    return f"{j['slug']}-{j['seed']}" + ("" if j.get("model", "turbo") == "turbo" else f"-{j['model']}")
+
+
+jobs = [j for j in json.load(open(jobs_file)) if j["gpu"] == gpu and j.get("model", "turbo") == model
+        and (batch is None or j.get("batch") == batch)]
+todo = [j for j in jobs if not os.path.exists(os.path.join(out_root, j["slug"], stem(j) + ".wav"))]
+log(f"{model}: {len(jobs)} takes for this card, {len(todo)} still to do. "
     f"FP32_COMPUTE={FP32_COMPUTE} ATTN={ATTN} OFFLOAD={OFFLOAD} card={torch.cuda.get_device_name(0)}")
 if not todo:
     sys.exit(0)
@@ -108,7 +130,7 @@ if not todo:
 t0 = time.time()
 dit = AceStepHandler()
 status, ok = dit.initialize_service(
-    project_root=os.getcwd(), config_path="acestep-v15-turbo", device="cuda",
+    project_root=os.getcwd(), config_path=checkpoint, device="cuda",
     offload_to_cpu=OFFLOAD, offload_dit_to_cpu=False, quantization=None, compile_model=False,
 )
 print(status, flush=True)
@@ -138,7 +160,7 @@ for j in todo:
     params = GenerationParams(
         caption=j["caption"], lyrics=j["lyrics"], bpm=j["bpm"],
         keyscale=j["key"], timesignature=j["timesig"],
-        duration=float(j["seconds"]), seed=seed, shift=3.0,
+        duration=float(j["seconds"]), seed=seed, **extra,
         thinking=False, use_cot_metas=False, use_cot_caption=False, use_cot_language=False,
     )
     config = GenerationConfig(batch_size=1, use_random_seed=False, seeds=[seed], audio_format="wav")
@@ -155,13 +177,13 @@ for j in todo:
         failed += 1
         log(f"FAILED {slug} seed {seed} after {secs:.0f} s: {err if result is None else result.error}")
         continue
-    base = os.path.join(out_dir, f"{slug}-{seed}")
+    base = os.path.join(out_dir, stem(j))
     shutil.move(result.audios[0]["path"], base + ".wav")
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", base + ".wav", "-b:a", "320k", base + ".mp3"])
     meta = dict(j, render_seconds=round(secs, 1), peak_vram_gb=round(peak, 2), card=torch.cuda.get_device_name(0),
-                settings={"fp32_compute": FP32_COMPUTE, "attn": ATTN, "dit": "acestep-v15-turbo", "shift": 3.0})
+                settings={"fp32_compute": FP32_COMPUTE, "attn": ATTN, "dit": checkpoint, **extra})
     json.dump(meta, open(base + ".json", "w"), indent=1)
     done += 1
-    log(f"done {slug} seed {seed}: {j['seconds']:.0f} s of music in {secs:.0f} s, peak {peak:.1f} GB")
+    log(f"done {stem(j)}: {j['seconds']:.0f} s of music in {secs:.0f} s, peak {peak:.1f} GB")
 shutil.rmtree(tmp_dir, ignore_errors=True)
 log(f"finished: {done} rendered, {failed} failed, {len(todo) - done - failed} left for next time")

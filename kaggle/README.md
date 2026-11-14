@@ -59,6 +59,19 @@ python3 kaggle/laptop/kjob.py fetch --wait     # waits for the run to finish, do
 python3 kaggle/laptop/kjob.py quota            # GPU hours left this week
 ```
 
+More options:
+
+```
+# Voice and takes at once: voice trains on card 0 while takes render on card 1
+python3 kaggle/laptop/kjob.py run JOB=both
+
+# A better music model: XL turbo (4B instead of 2B, about twice the time per take). Both, for a blind A/B:
+python3 kaggle/laptop/kjob.py run JOB=render TRACKS='["gavs-song"]' DIT_MODELS='["turbo","xl-turbo"]'
+
+# A pilot batch first, then the album (RENDER_FIRST takes the same settings in lower case)
+python3 kaggle/laptop/kjob.py run JOB=both RENDER_FIRST='[{"tracks_yaml":"https://.../lowbridge/tracks.yaml","models":["turbo","xl-turbo"]}]'
+```
+
 Every setting in the notebook's first cell can be passed as `NAME=value`. `TRACKS_YAML` picks another track
 list (a repo path or an https link), e.g. `TRACKS_YAML=lowbridge/tracks.yaml BRANCH=<its branch>`.
 
@@ -101,7 +114,7 @@ out/voice/model/reuben_250e_<steps>s.pth      the voice model, plus its .index, 
 
 ## Notes
 
-- Sound matches the laptop: same model (turbo DiT, no language model), same fp32 compute and attention
+- With the default `DIT_MODELS=["turbo"]` the sound matches the laptop: same model (turbo DiT, no language model), same fp32 compute and attention
   settings, same `shift`. A seed should sound like the same seed on the laptop, though the different card can
   make tiny differences.
 - Caption phrases that caused hiss ("crackling gramophone", "typewriter clacks", and similar) are dropped

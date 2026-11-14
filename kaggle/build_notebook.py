@@ -15,7 +15,8 @@ background (you can close the tab) and the results appear under **Output** when 
 Needs: **Accelerator = GPU T4 x2** and **Internet = on** (Settings panel on the right; internet needs a
 phone-verified Kaggle account). For voice training, attach the `jewgrass-voice` dataset with **Add Input**."""),
     (CODE, """# --- settings -------------------------------------------------------------------------------------------------
-JOB = "render"            # "render" (album takes), "voice" (train the RVC voice model), or "both" (voice first, then takes)
+JOB = "render"            # "render" (album takes), "voice" (train the RVC voice model), or "both"
+                          # (both: with two cards, voice trains on card 0 while takes render on card 1)
 BRANCH = "claude/project-thread-l3ovu9"   # which branch of the repo to read tracks.yaml and these scripts from
 
 # Render
@@ -24,6 +25,10 @@ TRACKS = "queue"          # "queue" = every track marked generate, strongest fir
 TAKES = 2                 # takes per track (different seeds)
 FIRST_SEED = 8001         # takes use FIRST_SEED, FIRST_SEED+1, ...
 SEEDS = {}                # exact seeds for a track instead, e.g. {"gavs-song": [7202, 7203, 7204]}
+DIT_MODELS = ["turbo"]    # music model(s), every take is made with each: "turbo" (the laptop's 2B), "xl-turbo"
+                          # (4B, about twice the time per take), "sft"/"xl-sft" (50 steps, roughly 10x turbo's time)
+RENDER_FIRST = []         # batches rendered before the one above, same keys in lower case, e.g.
+                          # [{"tracks_yaml": "https://...", "tracks": "queue", "seeds": {...}, "models": ["turbo", "xl-turbo"]}]
 RENDER_MAX_HOURS = 6      # stop starting new takes after this long
 
 # Voice
@@ -78,15 +83,77 @@ def run_all(cmds, envs, cwd=None):
 parts = (["ace"] if JOB in ("render", "both") else []) + (["applio"] if JOB in ("voice", "both") else [])
 subprocess.run(["bash", f"{REPO}/kaggle/setup.sh", *parts], check=True)
 print(f"installed in {(time.time() - T0) / 60:.0f} min")"""),
-    (CODE, """# --- train the voice model (training on the first GPU, probe clips on the second) -------------------------------
-if JOB in ("voice", "both"):
-    deadline = min(time.time() + VOICE_MAX_HOURS * 3600, HARD_STOP)
-    env = {"VOICE_MODEL": VOICE_MODEL, "VOICE_EPOCHS": str(VOICE_EPOCHS), "VOICE_SAVE_EVERY": str(VOICE_SAVE_EVERY),
-           "VOICE_PITCH": str(VOICE_PITCH), "BAND_DEADLINE": str(deadline), "OUT_DIR": OUT,
-           "CUDA_VISIBLE_DEVICES": ",".join(str(g) for g in range(N_GPU))}
-    codes = run_all([[sys.executable, f"{REPO}/kaggle/voice.py"]], [env])
-    print("voice exited with", codes, f"after {(time.time() - T0) / 60:.0f} min in total")
+    (CODE, """# --- the work: voice training and/or renders ---------------------------------------------------------------------
+sys.path.insert(0, f"{REPO}/kaggle")
+import yaml, plan
+ace = "/kaggle/temp/ACE-Step-1.5"
+CKPT = {"turbo": "acestep-v15-turbo", "xl-turbo": "acestep-v15-xl-turbo", "sft": "acestep-v15-sft", "xl-sft": "acestep-v15-xl-sft"}
 
+
+def load_tracks(src):
+    if src.startswith("https://"):
+        return yaml.safe_load(urllib.request.urlopen(src, timeout=60).read())
+    if os.path.exists(f"{REPO}/{src}"):
+        return yaml.safe_load(open(f"{REPO}/{src}"))
+    url = f"https://raw.githubusercontent.com/GeneralKnowledge/JewGrass/{BRANCH}/{src}"  # outside the sparse checkout
+    return yaml.safe_load(urllib.request.urlopen(url, timeout=60).read())
+
+
+voice_on = JOB in ("voice", "both")
+render_on = JOB in ("render", "both")
+voice_gpus = [0] if (voice_on and render_on and N_GPU > 1) else list(range(N_GPU))
+render_gpus = [g for g in range(N_GPU) if g not in voice_gpus] if (voice_on and render_on and N_GPU > 1) else list(range(N_GPU))
+cmds, envs, names = [], [], []
+
+if render_on:
+    batches = list(RENDER_FIRST) + [{"tracks_yaml": TRACKS_YAML, "tracks": TRACKS, "takes": TAKES,
+                                     "first_seed": FIRST_SEED, "seeds": SEEDS, "models": DIT_MODELS}]
+    jobs = []
+    for bi, b in enumerate(batches):
+        bj, notes = plan.plan(load_tracks(b.get("tracks_yaml", TRACKS_YAML)), b.get("tracks", "queue"), b.get("takes", TAKES),
+                              b.get("first_seed", FIRST_SEED), b.get("seeds", {}), models=b.get("models", DIT_MODELS))
+        for n in notes:
+            print("NOTE", n)
+        for j in bj:
+            j["batch"] = bi
+        print(f"batch {bi} ({b.get('tracks_yaml', TRACKS_YAML)}): {len(bj)} takes")
+        jobs += bj
+    plan.assign_gpus(jobs, render_gpus)
+    json.dump(jobs, open("/kaggle/temp/jobs.json", "w"), indent=1)
+    models = list(dict.fromkeys(j["model"] for j in jobs))
+    for m in models:  # download each model once, before the workers start
+        subprocess.run([f"{ace}/.venv/bin/python", "-c", f"from acestep.model_downloader import ensure_dit_model as e; print(e({CKPT[m]!r}))"],
+                       cwd=ace, check=True)
+    print(f"{len(jobs)} takes, {sum(j['seconds'] for j in jobs) / 60:.0f} min of music, on card(s) {render_gpus}")
+    deadline = min(time.time() + RENDER_MAX_HOURS * 3600, HARD_STOP)
+    for g in render_gpus:  # one worker per card; a card with several models runs them one after another
+        # batch by batch (so RENDER_FIRST really comes first), and within a batch one model load per model
+        mine = list(dict.fromkeys((j["batch"], j["model"]) for j in jobs if j["gpu"] == g))
+        chain = " ; ".join(f"{ace}/.venv/bin/python {REPO}/kaggle/render.py /kaggle/temp/jobs.json {g} {OUT}/renders {m} {b}"
+                           for b, m in mine)
+        cmds.append(["bash", "-c", f"cd {ace} && {chain}"])
+        envs.append({"CUDA_VISIBLE_DEVICES": str(g), "BAND_DEADLINE": str(deadline)})
+        names.append(f"render card {g}")
+
+if voice_on:
+    deadline = min(time.time() + VOICE_MAX_HOURS * 3600, HARD_STOP)
+    cmds.append([sys.executable, f"{REPO}/kaggle/voice.py"])
+    envs.append({"VOICE_MODEL": VOICE_MODEL, "VOICE_EPOCHS": str(VOICE_EPOCHS), "VOICE_SAVE_EVERY": str(VOICE_SAVE_EVERY),
+                 "VOICE_PITCH": str(VOICE_PITCH), "BAND_DEADLINE": str(deadline), "OUT_DIR": OUT,
+                 "CUDA_VISIBLE_DEVICES": ",".join(map(str, voice_gpus))})
+    names.append(f"voice card(s) {voice_gpus}")
+
+if voice_on and render_on and N_GPU == 1:   # one card: voice first, then renders
+    codes = run_all(cmds[-1:], envs[-1:]) + run_all(cmds[:-1], envs[:-1])
+    codes = codes[1:] + codes[:1]
+else:
+    print("running side by side:", names)
+    codes = run_all(cmds, envs)
+for n, c in zip(names, codes):
+    print(f"{n}: exit {c}")
+print(f"work done after {(time.time() - T0) / 60:.0f} min in total")
+
+if voice_on:
     # Keep the training state on Kaggle as the private dataset <user>/jewgrass-voice-state, so the next run
     # carries on from here without anything going through home internet. Needs the KAGGLE_API_TOKEN secret.
     tar = f"{OUT}/voice/state/{VOICE_MODEL}-state.tar"
@@ -113,33 +180,10 @@ if JOB in ("voice", "both"):
     elif os.path.exists(tar):
         print("Training state is in the output (out/voice/state). To carry on next run without downloading it, "
               "add the KAGGLE_API_TOKEN secret and set KAGGLE_USER (see kaggle/README.md).")"""),
-    (CODE, """# --- render album takes, one worker per GPU ----------------------------------------------------------------------
-if JOB in ("render", "both"):
-    sys.path.insert(0, f"{REPO}/kaggle")
-    import yaml, plan
-    if TRACKS_YAML.startswith("https://"):
-        doc = yaml.safe_load(urllib.request.urlopen(TRACKS_YAML, timeout=60).read())
-    elif os.path.exists(f"{REPO}/{TRACKS_YAML}"):
-        doc = yaml.safe_load(open(f"{REPO}/{TRACKS_YAML}"))
-    else:  # a path outside the sparse checkout
-        url = f"https://raw.githubusercontent.com/GeneralKnowledge/JewGrass/{BRANCH}/{TRACKS_YAML}"
-        doc = yaml.safe_load(urllib.request.urlopen(url, timeout=60).read())
-    print("tracks from", TRACKS_YAML)
-    jobs, notes = plan.plan(doc, TRACKS, TAKES, FIRST_SEED, SEEDS, gpus=N_GPU)
-    for n in notes:
-        print("NOTE", n)
-    json.dump(jobs, open("/kaggle/temp/jobs.json", "w"), indent=1)
-    print(f"{len(jobs)} takes, {sum(j['seconds'] for j in jobs) / 60:.0f} min of music, over {N_GPU} GPU(s)")
-    deadline = min(time.time() + RENDER_MAX_HOURS * 3600, HARD_STOP)
-    ace = "/kaggle/temp/ACE-Step-1.5"
-    codes = run_all([[f"{ace}/.venv/bin/python", f"{REPO}/kaggle/render.py", "/kaggle/temp/jobs.json", str(g),
-                      f"{OUT}/renders"] for g in range(N_GPU)],
-                    [{"CUDA_VISIBLE_DEVICES": str(g), "BAND_DEADLINE": str(deadline)} for g in range(N_GPU)], cwd=ace)
-    print("render workers exited with", codes, f"after {(time.time() - T0) / 60:.0f} min in total")"""),
     (CODE, """# --- summary ----------------------------------------------------------------------------------------------------
 lines = [f"JewGrass Kaggle run, {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(T0))}, "
          f"{(time.time() - T0) / 3600:.1f} GPU hours, {gpus[0]} x{N_GPU}", f"settings: JOB={JOB} TRACKS_YAML={TRACKS_YAML} TRACKS={TRACKS} "
-         f"TAKES={TAKES} FIRST_SEED={FIRST_SEED} SEEDS={SEEDS} VOICE_MODEL={VOICE_MODEL} VOICE_EPOCHS={VOICE_EPOCHS}", ""]
+         f"TAKES={TAKES} FIRST_SEED={FIRST_SEED} SEEDS={SEEDS} DIT_MODELS={DIT_MODELS} RENDER_FIRST={RENDER_FIRST} VOICE_MODEL={VOICE_MODEL} VOICE_EPOCHS={VOICE_EPOCHS}", ""]
 for root, _, files in sorted(os.walk(OUT)):
     for f in sorted(files):
         p = os.path.join(root, f)
