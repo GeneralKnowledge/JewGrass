@@ -1,0 +1,142 @@
+[
+ {
+  "title": "Parcel of Rogues",
+  "slug": "parcel-of-rogues",
+  "start_s": 0.0,
+  "end_s": 13.75,
+  "source_file": "final/01-parcel-of-rogues.wav",
+  "source_offset_s": 23.92,
+  "stretch": 1.0,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Exit Strategy",
+  "slug": "exit-strategy",
+  "start_s": 13.75,
+  "end_s": 73.63,
+  "source_file": "final/15-exit-strategy.wav",
+  "source_offset_s": 106.56,
+  "stretch": 1.0769,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Natural Capital",
+  "slug": "natural-capital",
+  "start_s": 73.63,
+  "end_s": 113.58,
+  "source_file": "final/05-natural-capital.wav",
+  "source_offset_s": 192.74,
+  "stretch": 0.9286,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Deed to the Glen",
+  "slug": "deed-to-the-glen",
+  "start_s": 113.58,
+  "end_s": 154.7,
+  "source_file": "final/03-deed-to-the-glen.wav",
+  "source_offset_s": 181.94,
+  "stretch": 1.0,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Cold Hame",
+  "slug": "cold-hame",
+  "start_s": 154.7,
+  "end_s": 171.79,
+  "source_file": "final/08-cold-hame.wav",
+  "source_offset_s": 179.0,
+  "stretch": 1.0,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Swim at Your Own Risk",
+  "slug": "swim-at-your-own-risk",
+  "start_s": 171.79,
+  "end_s": 199.23,
+  "source_file": "final/10-swim-at-your-own-risk.wav",
+  "source_offset_s": 133.76,
+  "stretch": 1.0,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Fast Lane",
+  "slug": "fast-lane",
+  "start_s": 199.23,
+  "end_s": 238.06,
+  "source_file": "final/09-fast-lane.wav",
+  "source_offset_s": 142.5,
+  "stretch": 0.9655,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Brass Plate",
+  "slug": "brass-plate",
+  "start_s": 238.06,
+  "end_s": 282.77,
+  "source_file": "final/07-brass-plate.wav",
+  "source_offset_s": 90.48,
+  "stretch": 0.9667,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "We Bought the Hill",
+  "slug": "we-bought-the-hill",
+  "start_s": 282.77,
+  "end_s": 307.86,
+  "source_file": "final/16-we-bought-the-hill.wav",
+  "source_offset_s": 164.76,
+  "stretch": 1.0,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Bought and Sold",
+  "slug": "bought-and-sold",
+  "start_s": 307.86,
+  "end_s": 379.48,
+  "source_file": "final/13-bought-and-sold.wav",
+  "source_offset_s": 102.76,
+  "stretch": 1.0366,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Viewing by Appointment Only",
+  "slug": "viewing",
+  "start_s": 379.48,
+  "end_s": 387.57,
+  "source_file": "final/02-viewing.wav",
+  "source_offset_s": 0.62,
+  "stretch": 1.0,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Ermine and Ink",
+  "slug": "ermine-and-ink",
+  "start_s": 387.57,
+  "end_s": 445.01,
+  "source_file": "final/11-ermine-and-ink.wav",
+  "source_offset_s": 70.6,
+  "stretch": 0.9783,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Sunshine Trust",
+  "slug": "sunshine-trust",
+  "start_s": 445.01,
+  "end_s": 512.52,
+  "source_file": "final/12-sunshine-trust.wav",
+  "source_offset_s": 106.24,
+  "stretch": 0.9583,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ },
+ {
+  "title": "Gav's Song",
+  "slug": "gavs-song",
+  "start_s": 512.52,
+  "end_s": 599.7,
+  "source_file": "final/14-gavs-song.wav",
+  "source_offset_s": 84.04,
+  "stretch": 1.0,
+  "stretch_note": "stretch applies only to the first 4 bars (the crossfade); 1.0 = untouched"
+ }
+]
