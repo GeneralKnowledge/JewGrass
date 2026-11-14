@@ -1,0 +1,5 @@
+songs/*/out/
+songs/*/analysis.json
+songs/*/master.*
+songs/test-glen/beats.json
+__pycache__/

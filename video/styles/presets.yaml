@@ -1,0 +1,43 @@
+# Per-song visual signatures (docs/video/video-engine.md, section 6).
+# The creative director picks one from the song card (and may blend two).
+# budget = how much of the music reaches the picture, per section type (0..1).
+satirical-dark:
+  for: villain songs
+  cut_bars: [4, 8]
+  camera_speed: 0.8
+  text: {chorus: chorus-sign, verse: quiet, spoken: spoken-title}
+  budget: {intro: 0.2, verse: 0.3, chorus: 0.7, bridge: 0.1, outro: 0.15}
+  weather: [mist-low]
+angry-collage:
+  for: Bought and Sold, protest songs
+  cut_bars: [1, 2, 4]
+  camera_speed: 1.4
+  text: {chorus: slam, verse: chorus-sign, spoken: spoken-title}
+  budget: {intro: 0.4, verse: 0.6, chorus: 0.9, bridge: 0.3, outro: 0.3}
+reflective:
+  for: Gav's Song, voicemails
+  cut_bars: [8, 16]
+  camera_speed: 0.4
+  text: {chorus: quiet, verse: quiet, spoken: voicemail}
+  budget: {intro: 0.05, verse: 0.1, chorus: 0.25, bridge: 0.05, outro: 0.05}
+  weather: [fog-heavy]
+folk:
+  for: We Bought the Hill
+  cut_bars: [4, 8]
+  camera_speed: 0.9
+  text: {chorus: chorus-sign, verse: quiet, spoken: voicemail}
+  budget: {intro: 0.2, verse: 0.4, chorus: 0.8, bridge: 0.2, outro: 0.3}
+  weather: [seeds]
+ominous:
+  for: the offshore act
+  cut_bars: [8, 16]
+  camera_speed: 0.5
+  text: {chorus: quiet, verse: quiet, spoken: spoken-title}
+  budget: {intro: 0.1, verse: 0.2, chorus: 0.4, bridge: 0.1, outro: 0.1}
+  weather: [fog-heavy]
+archive:
+  for: history parts
+  cut_bars: [2, 4]
+  camera_speed: 0.7
+  text: {chorus: slam, verse: spoken-title, spoken: spoken-title}
+  budget: {intro: 0.2, verse: 0.3, chorus: 0.6, bridge: 0.2, outro: 0.2}

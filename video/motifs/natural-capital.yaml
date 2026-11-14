@@ -1,0 +1,23 @@
+# Recurring motifs for the Natural Capital album (docs/video/video-engine.md, section 4).
+# A motif is drawn in code (engine/motifs.py) so it looks the same in every video.
+crow:
+  status: built
+  rule: watches from the frame edge; the only thing that never changes. Leaves at the end of a villain song.
+  poses: [perched-left, perched-right, leaves]
+red-line:
+  status: built
+  rule: warning red = ownership. A boundary line creeping across the land; it grows a little in every song of the album.
+  params: {from: 0..1, to: 0..1}
+deed:
+  status: planned
+  rule: a contract that unfolds a little more each chorus until it fills the screen.
+fund-logo:
+  status: planned
+  rule: the fund's mark turns up on increasingly wrong things (a sheep, a gravestone, a school bell, a salmon).
+the-hill:
+  status: built (procedural placeholder)
+  rule: one master plate; its state changes song by song.
+  states: [bare, surveyed, fenced, developed, bought-back]
+due-friday:
+  status: planned
+  rule: each villain's sign-off as a stamped notice; in the finale the village paints over it.
