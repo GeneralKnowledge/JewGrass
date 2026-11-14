@@ -1,0 +1,121 @@
+# Matching Jackets Song Design: Meal Deal (pilot track 02, the fun one). Format: see left-on-read.yaml.
+slug: mj-meal-deal
+title: Meal Deal
+credit: Kez featuring Ollie and Cal
+version: 1
+order: 2
+purpose: the fun one. Kez's song. Short, bouncy, the rap carries it and the group sings the hook.
+concept: >-
+  He goes to the corner shop every lunchtime for a meal deal. He is not there for the meal deal.
+
+render:
+  bpm: 132
+  key: F major
+  timesig: "4"
+  seconds: 140        # 64 bars at 132 is 116 s, plus room for the tag
+
+palette:
+  groove: 2-step UK garage pop, shuffled hats, skippy kick, swung
+  keys: stabby organ chords, bright synth bass
+  vocals: group chant hook, Kez raps most of it
+  left_out: key change, ballad piano, long breakdown
+
+harmony: F, Dm, Bb, C. Hook stays on the same four chords; the fun is in the voices.
+the_moment: >-
+  In the last rap Kez tells the whole story of the extra sandwich, and the group answers his last line with
+  a big "ooh" before the final hook.
+
+sections:
+  - name: hook 1
+    tag: chorus - starts immediately, group chant hook with stacked harmonies over a 2-step beat
+    bars: 8
+    performer: all five
+    lyrics: |
+      You're my meal deal, a main, a snack and a drink
+      Everything I need for less than you'd think
+      Twelve o'clock, I'm queuing up for you
+      Ooh, you're my meal deal, baby, yes you do
+  - name: verse 1
+    tag: rap verse - playful cheeky British rap, comedic storytelling, bouncy swung groove
+    bars: 16
+    performer: kez
+    lyrics: |
+      Lunch break, half twelve, out the door like a rocket
+      Fiver and a fluff ball living in my pocket
+      Same shop, same aisle, same fridge, same glow
+      Same girl on the till going "you again? hello"
+      I play it cool, I study the sandwiches hard
+      Like I'm sitting an exam and they're marking my card
+      Egg and cress? No, I'm not trying to clear the room
+      Tuna and sweetcorn? Bold, but it's a bit too soon
+      Chicken and stuffing, now that's commitment
+      Fruit pot or crisps? Let's be honest, it's crisps
+      Drink is the tricky bit, I'm reaching for the juice
+      Then I grab a water 'cause I panic, what's the use
+      Bag for life? Of course, I'm a bag-for-life man
+      Thinking maybe she could be my bag for life, man
+  - name: pre-chorus
+    tag: pre-chorus - bright breathy young male voice, sweet, beat thins
+    bars: 4
+    performer: ollie
+    lyrics: |
+      Every day I come in for a sandwich
+      But I'm really here to say hi
+  - name: hook 2
+    tag: chorus - group chant hook, stacked harmonies, full 2-step beat
+    bars: 8
+    performer: all five
+    lyrics: |
+      You're my meal deal, a main, a snack and a drink
+      Everything I need for less than you'd think
+      Twelve o'clock, I'm queuing up for you
+      Ooh, you're my meal deal, baby, yes you do
+  - name: verse 2
+    tag: verse - warm clear tenor sings, organ stabs, handclaps
+    bars: 8
+    performer: cal
+    lyrics: |
+      Monday was a wrap and Tuesday was a roll
+      Wednesday I went wild and I bought the soup in a bowl
+      Thursday I nearly said something to you
+      Friday I bought two sandwiches, one's for you
+  - name: rap 2
+    tag: rap - stop-start playful rap, beat drops out between lines, group answers
+    bars: 8
+    performer: kez, group answers the last line
+    lyrics: |
+      Put it on the counter, slide it over, little nod
+      She looks at the sandwich, then at me, like "that's odd"
+      I say "chicken and stuffing", she says "I'm veggie, mate"
+      Whole shop goes quiet, even the fridge stops to wait
+      She says "swap it for the cheese one, I'm off at two"
+      I say "deal", she says "meal deal", and the whole queue goes "ooh"
+  - name: final hook
+    tag: chorus - everyone in, falsetto ad-libs, handclaps, biggest harmonies
+    bars: 8
+    performer: all five
+    lyrics: |
+      You're my meal deal, a main, a snack and a drink
+      Everything I need for less than you'd think
+      Two o'clock, and I'm waiting out for you
+      Ooh, you're my meal deal, baby, yes you do
+  - name: outro
+    tag: outro - harmonies sing the last line, beat stops dead
+    bars: 4
+    performer: all five
+    lyrics: |
+      A main, a snack, a drink and you
+
+ending: Sung tag over the last chord, then the beat stops dead. Nothing spoken.
+
+caption: >-
+  132 bpm, F major, fun bouncy boy band pop with a 2-step UK garage groove, shuffled hats, skippy kick, stabby
+  organ chords, bright synth bass, handclaps, starts straight on a group chant chorus with stacked harmonies,
+  mostly a cheeky comedic British rap with storytelling punchlines, a sweet breathy pre-chorus, a sung tenor
+  verse, stop-start rap break with the group answering, short and punchy
+
+lyric_audit:
+  idea: a crush disguised as a lunch order
+  images: [the fluff ball in the pocket, chicken and stuffing as commitment, the bag-for-life, the extra sandwich, the cheese swap]
+  hook: '"You''re my meal deal" as a group chant; the last hook changes twelve o''clock to two o''clock because she said yes'
+  rap: Kez narrates his own overthinking in the aisle; the second rap pays off the extra sandwich from Cal's verse

@@ -1,0 +1,154 @@
+# Matching Jackets Song Design: Kept Your Hoodie (pilot track 03, the ballad). Format: see left-on-read.yaml.
+slug: mj-kept-your-hoodie
+title: Kept Your Hoodie
+credit: Cal, with Ollie, Big Jon, Dev and Kez
+version: 1
+order: 3
+purpose: the ballad. The stand-up-off-the-stools song, with a soft rap that is still funny.
+concept: >-
+  She left her hoodie on the chair by the door. He has worn it for nineteen days. When he finally takes it
+  back, she opens the door wearing his.
+
+render:
+  bpm: 70
+  key: Bb major
+  timesig: "4"
+  seconds: 230        # 62 bars at 70 is 213 s, plus room for the last chord to ring
+
+palette:
+  lead: warm piano and soft acoustic guitar, first line sung straight away
+  strings: light strings from the second chorus
+  drums: brushed then full pop ballad drums from the second chorus
+  left_out: synths, 2-step, big drops
+
+harmony: Bb, F/A, Gm, Eb. Final chorus lifts a whole tone to C major.
+the_moment: >-
+  The bridge turns the song around (she opens the door wearing his hoodie) and the last chorus flips every
+  "I kept your" to "you kept my", with a gentle key change.
+
+sections:
+  - name: verse 1
+    tag: verse - starts immediately, warm clear tenor with piano only
+    bars: 8
+    performer: cal
+    lyrics: |
+      You left it on the chair by the door
+      Grey, with the cuffs all chewed and torn
+      Swimming gala, second place, across the back
+      I've worn it every day since, and I'm sorry about that
+      Mum says "are you washing that?", I tell her "aye"
+      Then I hide it in the wardrobe when she's walking by
+      'Cause it still smells like your house and your strawberry shampoo
+      And the wash would take the last of you
+  - name: pre-chorus 1
+    tag: pre-chorus - bright breathy young male voice, acoustic guitar joins
+    bars: 4
+    performer: ollie
+    lyrics: |
+      I could post it back, I've got your address
+      I could drop it round, but I'm a mess
+      So I'm keeping it
+      Yeah, I'm keeping it
+  - name: chorus 1
+    tag: chorus - stacked five-part harmonies, piano and soft drums
+    bars: 8
+    performer: all five
+    lyrics: |
+      I kept your hoodie
+      Kept the strings you pulled when you were nervous
+      I kept your hoodie
+      It's two sizes too big and it's perfect
+      And if you want it back, you know where I'll be
+      Same street, same light on, same me
+      I kept your hoodie
+      Kept a little bit of you with me
+  - name: verse 2
+    tag: verse - deep baritone lead, then soaring falsetto takes over, strings enter
+    bars: 8
+    performer: big jon, then dev
+    lyrics: |
+      Found your hairband in the pocket on the left
+      Found a ticket for the 42, the day you left
+      Found a cherry lip balm, half of it gone
+      Found a chippy receipt, one fish, two forks, we were young
+      Every pocket's like a time machine
+      Every zip's a little memory
+      I don't want the jumper, I want the girl inside
+      But the jumper's all I've got tonight
+  - name: pre-chorus 2
+    tag: pre-chorus - bright breathy young male voice, harmonies join
+    bars: 4
+    performer: ollie
+    lyrics: |
+      I could post it back, I've got your address
+      I could drop it round, but I'm a mess
+      So I'm keeping it
+      Yeah, I'm keeping it
+  - name: chorus 2
+    tag: chorus - stacked harmonies, full ballad drums and strings
+    bars: 8
+    performer: all five
+    lyrics: |
+      I kept your hoodie
+      Kept the strings you pulled when you were nervous
+      I kept your hoodie
+      It's two sizes too big and it's perfect
+      And if you want it back, you know where I'll be
+      Same street, same light on, same me
+      I kept your hoodie
+      Kept a little bit of you with me
+  - name: rap
+    tag: rap - gentle playful British rap, comedic and kind, over piano and brushed drums
+    bars: 8
+    performer: kez
+    lyrics: |
+      Right, Kez here, can we be practical a second?
+      It's a jumper with a hood on, that's all it is, I reckon
+      Nineteen days he's worn it, lads, I've counted on my fingers
+      It's not a memory now, mate, it's a smell, and it lingers
+      I said "give it a wash", he said "but that's where she lives"
+      I said "she lives on Cedar Road", he looked at me like "kids"
+      But nobody forgets a hoodie on a chair by the door
+      She left it there on purpose, mate, go knock once more
+  - name: bridge
+    tag: bridge - soaring male falsetto, music drops to piano, slow build
+    bars: 4
+    performer: dev
+    lyrics: |
+      So I'm walking round with it folded in a bag
+      Practising my lines like it isn't that sad
+      Knock twice on the door and I'm out of time
+      And you open the door wearing mine
+  - name: final chorus
+    tag: final chorus - gentle key change up, everyone standing, full harmonies, falsetto ad-libs
+    bars: 8
+    performer: all five
+    lyrics: |
+      You kept my hoodie
+      Kept the strings I pulled when I was nervous
+      You kept my hoodie
+      It's two sizes too big and it's perfect
+      So keep it, I'll keep yours, call it a trade
+      Same street, same light on, same place
+      You kept my hoodie
+      Kept a little bit of me with you
+  - name: outro
+    tag: outro - soft harmonies and piano, last chord rings out
+    bars: 2
+    performer: all five
+    lyrics: |
+      Kept my hoodie
+
+ending: Soft five-voice "kept my hoodie" over piano, last chord rings out. Nothing spoken.
+
+caption: >-
+  70 bpm, Bb major, heartfelt boy band pop ballad, starts straight away with a warm tenor and piano, soft
+  acoustic guitar, light strings from the second chorus, brushed then full ballad drums, gentle breathy
+  pre-chorus, deep baritone and soaring falsetto verse, a short gentle funny British rap over piano, falsetto
+  bridge, final chorus with a key change and big stacked harmonies, ends softly on piano
+
+lyric_audit:
+  idea: one hoodie, nineteen days, and a twist
+  images: [swimming gala second place, strawberry shampoo, the 42 ticket, one fish two forks, she opens the door wearing his]
+  hook: '"I kept your hoodie" turns into "you kept my hoodie" after the bridge'
+  rap: Kez as the friend who says the obvious thing kindly, and pushes him to go round

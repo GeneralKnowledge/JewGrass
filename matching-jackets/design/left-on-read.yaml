@@ -1,0 +1,137 @@
+# Matching Jackets Song Design: Left on Read (pilot track 01, the upbeat single).
+# Same format as the LOWBRIDGE designs: render, palette, sections (tag, bars, performer, lyrics), caption.
+slug: mj-left-on-read
+title: Left on Read
+credit: Cal, Ollie, Kez, Dev and Big Jon
+version: 1
+order: 1
+purpose: the single. Prove the group sound (five voices, stacked chorus, key change) in one go.
+concept: >-
+  2:14 in the morning, two blue ticks, no reply. Treated like the end of the world, which at 2:14 it is.
+
+render:
+  bpm: 112
+  key: E major
+  timesig: "4"
+  seconds: 210        # 92 bars at 112 is 197 s, plus room so the last line isn't cut
+
+palette:
+  lead: stacked a cappella harmonies for the cold open, then glossy synth pop
+  keys: bright plucked synth, clean muted guitar
+  drums: punchy pop drums, finger snaps on 2 and 4 in the verses
+  bass: round synth bass
+  left_out: long intro, dubstep drops, any sad piano
+
+harmony: E, B, C#m, A in the chorus. Pre-chorus lifts on A to B. Final chorus up a semitone to F major.
+the_moment: >-
+  The song opens with the hook sung a cappella in five-part harmony, and the final chorus does the full boy band
+  key change, everyone in, falsetto ad-libs on top.
+
+sections:
+  - name: cold open
+    tag: chorus - starts immediately, a cappella five-part harmonies, beat drops in on the last line
+    bars: 8
+    performer: all five
+    lyrics: |
+      Left on read at two fourteen
+      Two blue ticks and nothing in between
+      I can see you typing, then you stop
+      Are you writing me a novel or not?
+  - name: verse 1
+    tag: verse - warm clear tenor lead, finger snaps, plucked synth, light drums
+    bars: 16
+    performer: cal
+    lyrics: |
+      Sent you a joke about a dog at the bus stop
+      Thought it was gold, thought you'd laugh till you dropped
+      Added a smiley, then took it away
+      Then put it back on, it's been a long day
+      Now I'm lying here, the ceiling's a screen
+      Reading back every word in between
+      Was it the joke, was it the kiss at the end
+      Was it the one kiss, or was it the ten
+  - name: pre-chorus 1
+    tag: pre-chorus - bright breathy young male voice, building, harmonies join
+    bars: 8
+    performer: ollie
+    lyrics: |
+      And I know you're up, 'cause you posted a cake
+      At one fifty-nine, so you're wide awake
+      Don't leave me hanging like the washing on the line
+      Just tell me I'm fine
+  - name: chorus 1
+    tag: chorus - full band, stacked harmonies, big singalong, deep baritone answers
+    bars: 16
+    performer: all five
+    lyrics: |
+      Left on read at two fourteen
+      Two blue ticks and nothing in between
+      I can see you typing, then you stop
+      Are you writing me a novel or not?
+      Ooh, I'm checking it every minute
+      Ooh, my phone's got my heart in it
+      Left on read, left on read
+      Send me anything, a thumbs-up instead
+  - name: rap
+    tag: rap verse - playful cheeky British rap, comedic storytelling, drums switch to a bouncy groove
+    bars: 16
+    performer: kez
+    lyrics: |
+      Hold up, Kez on the case, let me read it back
+      Message one, "hiya", fine, nothing wrong with that
+      Message two, "what you up to", casual, chill
+      Messages three to eleven, okay, that's a bit much, still
+      Showed my mate, he said "mate, that is a lot"
+      I said "mate, they're called feelings", he said "mate, they're called not"
+      Checked your last seen like a detective at the scene
+      Magnifying glass on a five-inch screen
+      Turned my phone off, turned it back on
+      Turned it off again in case the signal's gone
+      Mum shouts up "are you sleeping?", I say "yes", she says "you're not"
+      Even my own mum can see I've lost the plot
+      So here's my final offer, and I'm putting it in bold
+      Send one letter, even "k", and I'll call that gold
+  - name: bridge
+    tag: bridge - soaring male falsetto lead, drums drop out, deep baritone answers each line
+    bars: 8
+    performer: dev, with big jon answering
+    lyrics: |
+      Maybe you're asleep with the phone on your chest
+      Maybe your battery died like the rest
+      Maybe you're sitting there writing it slow
+      Or maybe the answer's the one I don't wanna know
+  - name: final chorus
+    tag: final chorus - key change up a semitone, everyone in, falsetto ad-libs, biggest harmonies
+    bars: 16
+    performer: all five
+    lyrics: |
+      Left on read at two fourteen
+      Two blue ticks and nothing in between
+      I can see you typing, then you stop
+      Are you writing me a novel or not?
+      Ooh, I'm checking it every minute
+      Ooh, my phone's got my heart in it
+      Left on read, left on read
+      Send me anything, a thumbs-up instead
+  - name: outro
+    tag: outro - harmonies only, soft, then one last snap
+    bars: 4
+    performer: all five
+    lyrics: |
+      Two fifteen, two sixteen
+      Oh, you sent "haha"
+      That'll do for me
+
+ending: Sung a cappella tag, then one finger snap. No fade, nothing spoken.
+
+caption: >-
+  112 bpm, E major, upbeat feel-good boy band single, opens straight away with a cappella stacked harmonies
+  before the beat drops, bright plucked synths, clean muted guitar, finger snaps, warm tenor lead verse, breathy
+  pre-chorus that builds, huge harmony chorus, a cheeky comedic rap verse in the middle, falsetto bridge over
+  sparse drums, final chorus with a key change up a semitone and falsetto ad-libs, ends on harmonies
+
+lyric_audit:
+  idea: one night, one unanswered message, told as a crisis
+  images: [2:14, two blue ticks, the cake posted at 1:59, the magnifying glass on a five-inch screen, "haha"]
+  hook: '"Left on read at two fourteen" sung first, a cappella, so the song starts on the hook'
+  rap: Kez reads the messages back like evidence; the joke is that he's the one who sent eleven
