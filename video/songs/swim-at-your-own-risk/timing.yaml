@@ -1,0 +1,1141 @@
+note: word times from faster-whisper, matched to our lyrics by tools/whisper_timing.py; fix any word by hand; breakdown hooks 4-8 set by hand from the recogniser's 'Swim my job, Chris' times
+tempo: 139.53
+sections:
+- name: intro
+  start_bar: 0
+  bars: 15
+- name: verse
+  start_bar: 15
+  bars: 25
+- name: chorus
+  start_bar: 40
+  bars: 9
+- name: verse-2
+  start_bar: 49
+  bars: 27
+- name: chorus-2
+  start_bar: 76
+  bars: 22
+- name: bridge
+  start_bar: 98
+  bars: 6
+- name: breakdown
+  start_bar: 104
+  bars: 10
+- name: verse-3
+  start_bar: 114
+  bars: 18
+- name: chorus-3
+  start_bar: 132
+  bars: 7
+- name: outro
+  start_bar: 139
+  bars: 25
+lines:
+- section: intro
+  text: Welcome, shareholders, to the AGM.
+  words:
+  - - 0.0
+    - Welcome,
+  - - 4.28
+    - shareholders,
+  - - 4.56
+    - to
+  - - 5.58
+    - the
+  - - 5.82
+    - AGM.
+- section: intro
+  text: Record dividends. Record bonuses.
+  words:
+  - - 8.08
+    - Record
+  - - 8.36
+    - dividends.
+  - - 8.64
+    - Record
+  - - 9.84
+    - bonuses.
+- section: intro
+  text: Record spills... let's not dwell.
+  words:
+  - - 12.0
+    - Record
+  - - 12.34
+    - spills...
+  - - 13.88
+    - let's
+  - - 14.18
+    - not
+  - - 14.38
+    - dwell.
+- section: intro
+  text: Ladies and gentlemen... your water company.
+  words:
+  - - 16.64
+    - Ladies
+  - - 16.98
+    - and
+  - - 17.3
+    - gentlemen...
+  - - 18.92
+    - your
+  - - 19.1
+    - water
+  - - 19.44
+    - company.
+- section: verse
+  text: They sold me the pipes back in eighty-nine
+  words:
+  - - 27.22
+    - They
+  - - 27.84
+    - sold
+  - - 28.12
+    - me
+  - - 28.3
+    - the
+  - - 28.42
+    - pipes
+  - - 28.76
+    - back
+  - - 30.1
+    - in
+  - - 30.38
+    - eighty-nine
+- section: verse
+  text: Every reservoir, every drain down the line
+  words:
+  - - 30.62
+    - Every
+  - - 30.88
+    - reservoir,
+  - - 32.4
+    - every
+  - - 32.6
+    - drain
+  - - 32.86
+    - down
+  - - 33.08
+    - the
+  - - 33.36
+    - line
+- section: verse
+  text: Borrowed ten billion, paid it out to the board
+  words:
+  - - 34.46
+    - Borrowed
+  - - 34.86
+    - ten
+  - - 35.14
+    - billion,
+  - - 35.84
+    - paid
+  - - 35.88
+    - it
+  - - 36.16
+    - out
+  - - 36.48
+    - to
+  - - 36.68
+    - the
+  - - 36.84
+    - board
+- section: verse
+  text: Now the debt's on your bill and my yacht's in a fjord
+  words:
+  - - 37.48
+    - Now
+  - - 37.58
+    - the
+  - - 37.74
+    - debt's
+  - - 38.06
+    - 'on'
+  - - 38.44
+    - your
+  - - 38.6
+    - bill
+  - - 39.02
+    - and
+  - - 39.3
+    - my
+  - - 39.52
+    - yacht's
+  - - 39.96
+    - in
+  - - 40.1
+    - a
+  - - 40.22
+    - fjord
+- section: verse
+  text: Hosepipe ban in a country made of rain
+  words:
+  - - 41.52
+    - Hosepipe
+  - - 42.04
+    - ban
+  - - 42.46
+    - in
+  - - 42.78
+    - a
+  - - 43.0
+    - country
+  - - 43.36
+    - made
+  - - 43.92
+    - of
+  - - 44.2
+    - rain
+- section: verse
+  text: Leaking a third of it straight down the drain
+  words:
+  - - 45.04
+    - Leaking
+  - - 45.36
+    - a
+  - - 45.54
+    - third
+  - - 45.78
+    - of
+  - - 45.96
+    - it
+  - - 46.22
+    - straight
+  - - 46.64
+    - down
+  - - 47.32
+    - the
+  - - 47.62
+    - drain
+- section: verse
+  text: Storm overflow? Darling, that's a feature
+  words:
+  - - 48.82
+    - Storm
+  - - 49.42
+    - overflow?
+  - - 50.54
+    - Darling,
+  - - 50.94
+    - that's
+  - - 51.16
+    - a
+  - - 51.36
+    - feature
+- section: verse
+  text: Brown in the river, call it natural texture
+  words:
+  - - 52.56
+    - Brown
+  - - 52.58
+    - in
+  - - 52.84
+    - the
+  - - 53.06
+    - river,
+  - - 53.72
+    - call
+  - - 53.88
+    - it
+  - - 54.1
+    - natural
+  - - 54.54
+    - texture
+- section: verse
+  text: Surfer got sick at the beach in July
+  words:
+  - - 55.28
+    - Surfer
+  - - 56.12
+    - got
+  - - 56.44
+    - sick
+  - - 56.8
+    - at
+  - - 57.08
+    - the
+  - - 57.2
+    - beach
+  - - 57.66
+    - in
+  - - 57.92
+    - July
+- section: verse
+  text: Sent him a voucher and a cheery goodbye
+  words:
+  - - 58.46
+    - Sent
+  - - 59.36
+    - him
+  - - 59.64
+    - a
+  - - 59.86
+    - voucher
+  - - 60.36
+    - and
+  - - 60.7
+    - a
+  - - 60.96
+    - cheery
+  - - 61.28
+    - goodbye
+- section: verse
+  text: Surfer got sick at the beach in July
+  words:
+  - - 62.44
+    - Surfer
+  - - 63.04
+    - got
+  - - 63.28
+    - sick
+  - - 63.64
+    - at
+  - - 64.1
+    - the
+  - - 64.24
+    - beach
+  - - 64.54
+    - in
+  - - 64.78
+    - July
+- section: verse
+  text: Sent him a voucher and a cheery goodbye
+  words:
+  - - 65.4
+    - Sent
+  - - 66.2
+    - him
+  - - 66.46
+    - a
+  - - 66.7
+    - voucher
+  - - 67.2
+    - and
+  - - 67.52
+    - a
+  - - 67.8
+    - cheery
+  - - 68.06
+    - goodbye
+- section: chorus
+  text: Swim at your own risk, son, swim at your own risk
+  words:
+  - - 69.12
+    - Swim
+  - - 69.4
+    - at
+  - - 69.68
+    - your
+  - - 69.88
+    - own
+  - - 70.34
+    - risk,
+  - - 70.78
+    - son,
+  - - 70.83
+    - swim
+  - - 71.1
+    - at
+  - - 71.38
+    - your
+  - - 71.62
+    - own
+  - - 72.06
+    - risk
+- section: chorus
+  text: Every river in the country's on my bonus list
+  words:
+  - - 72.32
+    - Every
+  - - 72.78
+    - river
+  - - 73.26
+    - in
+  - - 73.58
+    - the
+  - - 73.8
+    - country's
+  - - 74.68
+    - 'on'
+  - - 74.8
+    - my
+  - - 75.06
+    - bonus
+  - - 75.36
+    - list
+- section: chorus
+  text: Pay the bill, flush it down, watch it float on by
+  words:
+  - - 76.12
+    - Pay
+  - - 76.52
+    - the
+  - - 76.7
+    - bill,
+  - - 77.06
+    - flush
+  - - 77.76
+    - it
+  - - 78.02
+    - down,
+  - - 78.4
+    - watch
+  - - 78.68
+    - it
+  - - 78.9
+    - float
+  - - 79.14
+    - 'on'
+  - - 79.46
+    - by
+- section: chorus
+  text: It's raining every day and the taps run dry
+  words:
+  - - 79.8
+    - It's
+  - - 80.2
+    - raining
+  - - 80.46
+    - every
+  - - 80.92
+    - day
+  - - 81.6
+    - and
+  - - 82.08
+    - the
+  - - 82.3
+    - taps
+  - - 82.62
+    - run
+  - - 82.9
+    - dry
+- section: verse-2
+  text: Regulator turned up with a fine and a frown
+  words:
+  - - 84.28
+    - Regulator
+  - - 84.96
+    - turned
+  - - 85.66
+    - up
+  - - 86.14
+    - with
+  - - 86.38
+    - a
+  - - 86.68
+    - fine
+  - - 86.84
+    - and
+  - - 87.04
+    - a
+  - - 87.26
+    - frown
+- section: verse-2
+  text: Ninety million quid, so I put your bill up in town
+  words:
+  - - 87.9
+    - Ninety
+  - - 88.18
+    - million
+  - - 88.64
+    - quid,
+  - - 89.06
+    - so
+  - - 89.76
+    - I
+  - - 90.02
+    - put
+  - - 90.24
+    - your
+  - - 90.42
+    - bill
+  - - 91.02
+    - up
+  - - 91.28
+    - in
+  - - 91.5
+    - town
+- section: verse-2
+  text: Then I paid myself a bonus for meeting our targets
+  words:
+  - - 91.88
+    - Then
+  - - 92.38
+    - I
+  - - 92.6
+    - paid
+  - - 92.78
+    - myself
+  - - 93.22
+    - a
+  - - 93.52
+    - bonus
+  - - 93.9
+    - for
+  - - 94.84
+    - meeting
+  - - 95.28
+    - our
+  - - 95.56
+    - targets
+- section: verse-2
+  text: The target was the river and we hit it, regardless
+  words:
+  - - 96.0
+    - The
+  - - 96.4
+    - target
+  - - 96.76
+    - was
+  - - 97.08
+    - the
+  - - 97.34
+    - river
+  - - 97.62
+    - and
+  - - 97.94
+    - we
+  - - 98.18
+    - hit
+  - - 98.42
+    - it,
+  - - 98.8
+    - regardless
+- section: verse-2
+  text: Dead fish on the bank like silver confetti
+  words:
+  - - 99.4
+    - Dead
+  - - 100.1
+    - fish
+  - - 100.26
+    - 'on'
+  - - 100.52
+    - the
+  - - 100.7
+    - bank
+  - - 101.12
+    - like
+  - - 101.66
+    - silver
+  - - 102.14
+    - confetti
+- section: verse-2
+  text: Shareholders abroad and the payout is ready
+  words:
+  - - 102.88
+    - Shareholders
+  - - 103.6
+    - abroad
+  - - 104.16
+    - and
+  - - 104.4
+    - the
+  - - 104.62
+    - payout
+  - - 105.02
+    - is
+  - - 105.4
+    - ready
+- section: verse-2
+  text: Fixing the pipes? What a lovely idea
+  words:
+  - - 105.86
+    - Fixing
+  - - 107.46
+    - the
+  - - 107.78
+    - pipes?
+  - - 108.26
+    - What
+  - - 108.68
+    - a
+  - - 108.94
+    - lovely
+  - - 109.2
+    - idea
+- section: verse-2
+  text: Pencil it in for, let's say, next year
+  words:
+  - - 109.96
+    - Pencil
+  - - 110.44
+    - it
+  - - 110.68
+    - in
+  - - 110.98
+    - for,
+  - - 111.34
+    - let's
+  - - 112.06
+    - say,
+  - - 112.22
+    - next
+  - - 112.54
+    - year
+- section: verse-2
+  text: And next year, and next year, and the year after that
+  words:
+  - - 112.72
+    - And
+  - - 113.0
+    - next
+  - - 113.4
+    - year,
+  - - 113.72
+    - and
+  - - 114.0
+    - next
+  - - 114.22
+    - year,
+  - - 114.68
+    - and
+  - - 115.46
+    - the
+  - - 115.68
+    - year
+  - - 116.04
+    - after
+  - - 116.44
+    - that
+- section: verse-2
+  text: Sustainability report, baby!
+  words:
+  - - 116.98
+    - Sustainability
+  - - 117.9
+    - report,
+  - - 118.62
+    - baby!
+- section: chorus-2
+  text: Swim at your own risk, son, swim at your own risk
+  words:
+  - - 125.28
+    - Swim
+  - - 125.56
+    - at
+  - - 125.84
+    - your
+  - - 129.92
+    - own
+  - - 130.3
+    - risk,
+  - - 130.78
+    - son,
+  - - 130.84
+    - swim
+  - - 131.12
+    - at
+  - - 131.4
+    - your
+  - - 131.62
+    - own
+  - - 132.02
+    - risk
+- section: chorus-2
+  text: Every river in the country's on my bonus list
+  words:
+  - - 132.36
+    - Every
+  - - 132.78
+    - river
+  - - 133.24
+    - in
+  - - 133.56
+    - the
+  - - 133.8
+    - country's
+  - - 134.68
+    - 'on'
+  - - 134.8
+    - my
+  - - 135.06
+    - bonus
+  - - 135.34
+    - list
+- section: chorus-2
+  text: Pay the bill, flush it down, watch it float on by
+  words:
+  - - 135.98
+    - Pay
+  - - 136.5
+    - the
+  - - 136.74
+    - bill,
+  - - 137.4
+    - flush
+  - - 137.78
+    - it
+  - - 138.02
+    - down,
+  - - 138.52
+    - watch
+  - - 138.68
+    - it
+  - - 138.86
+    - float
+  - - 139.12
+    - 'on'
+  - - 139.52
+    - by
+- section: chorus-2
+  text: It's raining every day and the taps run dry
+  words:
+  - - 139.76
+    - It's
+  - - 140.24
+    - raining
+  - - 140.44
+    - every
+  - - 140.92
+    - day
+  - - 142.12
+    - and
+  - - 142.17
+    - the
+  - - 142.12
+    - taps
+  - - 142.6
+    - run
+  - - 143.02
+    - dry
+- section: bridge
+  text: Bless the tap and bless the drain
+  words:
+  - - 144.02
+    - Bless
+  - - 144.62
+    - the
+  - - 144.86
+    - tap
+  - - 145.62
+    - and
+  - - 145.9
+    - bless
+  - - 145.98
+    - the
+  - - 146.4
+    - drain
+- section: bridge
+  text: Bless the man who sells the rain
+  words:
+  - - 146.88
+    - Bless
+  - - 148.06
+    - the
+  - - 148.28
+    - man
+  - - 148.66
+    - who
+  - - 148.94
+    - sells
+  - - 149.48
+    - the
+  - - 149.9
+    - rain
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 150.78
+    - Swim
+  - - 151.2
+    - at
+  - - 151.52
+    - your
+  - - 151.92
+    - own
+  - - 152.2
+    - risk!
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 152.82
+    - Swim
+  - - 153.08
+    - at
+  - - 153.24
+    - your
+  - - 153.56
+    - own
+  - - 153.84
+    - risk!
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 154.42
+    - Swim
+  - - 154.58
+    - at
+  - - 154.96
+    - your
+  - - 155.34
+    - own
+  - - 155.62
+    - risk!
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 157.4
+    - Swim
+  - - 157.7
+    - at
+  - - 157.9
+    - your
+  - - 158.15
+    - own
+  - - 158.4
+    - risk!
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 159.7
+    - Swim
+  - - 160.0
+    - at
+  - - 160.2
+    - your
+  - - 160.45
+    - own
+  - - 160.7
+    - risk!
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 161.2
+    - Swim
+  - - 161.5
+    - at
+  - - 161.7
+    - your
+  - - 161.95
+    - own
+  - - 162.2
+    - risk!
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 163.0
+    - Swim
+  - - 163.3
+    - at
+  - - 163.5
+    - your
+  - - 163.75
+    - own
+  - - 164.0
+    - risk!
+- section: breakdown
+  text: Swim at your own risk!
+  words:
+  - - 164.9
+    - Swim
+  - - 165.2
+    - at
+  - - 165.4
+    - your
+  - - 165.65
+    - own
+  - - 165.9
+    - risk!
+- section: verse-3
+  text: You want it nationalised? Cute, take a seat
+  words:
+  - - 168.34
+    - You
+  - - 168.36
+    - want
+  - - 168.66
+    - it
+  - - 168.86
+    - nationalised?
+  - - 169.82
+    - Cute,
+  - - 170.2
+    - take
+  - - 170.36
+    - a
+  - - 170.64
+    - seat
+- section: verse-3
+  text: I'll sell it back at triple with the leaks complete
+  words:
+  - - 171.74
+    - I'll
+  - - 172.08
+    - sell
+  - - 172.08
+    - it
+  - - 172.62
+    - back
+  - - 172.9
+    - at
+  - - 172.95
+    - triple
+  - - 173.2
+    - with
+  - - 173.48
+    - the
+  - - 173.68
+    - leaks
+  - - 174.08
+    - complete
+- section: verse-3
+  text: Firm goes bust and the taxpayer bails
+  words:
+  - - 175.36
+    - Firm
+  - - 175.42
+    - goes
+  - - 175.7
+    - bust
+  - - 176.02
+    - and
+  - - 176.42
+    - the
+  - - 177.12
+    - taxpayer
+  - - 177.4
+    - bails
+- section: verse-3
+  text: I'm already gone with the wind in my sails
+  words:
+  - - 178.2
+    - I'm
+  - - 178.48
+    - already
+  - - 179.0
+    - gone
+  - - 179.6
+    - with
+  - - 180.18
+    - the
+  - - 180.46
+    - wind
+  - - 180.82
+    - in
+  - - 181.06
+    - my
+  - - 181.3
+    - sails
+- section: verse-3
+  text: Your kids at the seaside, the flags flying red
+  words:
+  - - 181.82
+    - Your
+  - - 182.1
+    - kids
+  - - 182.54
+    - at
+  - - 182.84
+    - the
+  - - 183.08
+    - seaside,
+  - - 183.8
+    - the
+  - - 184.22
+    - flags
+  - - 184.62
+    - flying
+  - - 185.18
+    - red
+- section: verse-3
+  text: Advice against bathing, the wee sign said
+  words:
+  - - 185.44
+    - Advice
+  - - 186.18
+    - against
+  - - 186.46
+    - bathing,
+  - - 187.26
+    - the
+  - - 187.54
+    - wee
+  - - 187.82
+    - sign
+  - - 188.22
+    - said
+- section: verse-3
+  text: Me? I've a pool at a villa in Spain
+  words:
+  - - 189.0
+    - Me?
+  - - 189.96
+    - I've
+  - - 190.16
+    - a
+  - - 190.36
+    - pool
+  - - 190.68
+    - at
+  - - 191.0
+    - a
+  - - 191.2
+    - villa
+  - - 191.62
+    - in
+  - - 191.92
+    - Spain
+- section: verse-3
+  text: Filled up with water I bottled from your rain
+  words:
+  - - 192.4
+    - Filled
+  - - 193.16
+    - up
+  - - 193.48
+    - with
+  - - 193.7
+    - water
+  - - 194.26
+    - I
+  - - 194.54
+    - bottled
+  - - 194.9
+    - from
+  - - 195.22
+    - your
+  - - 195.42
+    - rain
+- section: verse-3
+  text: I don't need a moat, I've got a monopoly
+  words:
+  - - 195.78
+    - I
+  - - 196.5
+    - don't
+  - - 196.78
+    - need
+  - - 196.98
+    - a
+  - - 197.3
+    - moat,
+  - - 197.84
+    - I've
+  - - 198.14
+    - got
+  - - 198.4
+    - a
+  - - 198.7
+    - monopoly
+- section: chorus-3
+  text: Every river in the country's on my bonus list
+  words:
+  - - 199.46
+    - Every
+  - - 200.52
+    - river
+  - - 200.9
+    - in
+  - - 201.26
+    - the
+  - - 201.46
+    - country's
+  - - 201.96
+    - 'on'
+  - - 202.1
+    - my
+  - - 202.28
+    - bonus
+  - - 202.82
+    - list
+- section: chorus-3
+  text: Pay the bill, flush it down, watch it float on by
+  words:
+  - - 203.44
+    - Pay
+  - - 203.78
+    - the
+  - - 203.96
+    - bill,
+  - - 204.5
+    - flush
+  - - 204.66
+    - it
+  - - 204.84
+    - down,
+  - - 205.4
+    - watch
+  - - 205.54
+    - it
+  - - 205.72
+    - float
+  - - 205.98
+    - 'on'
+  - - 206.32
+    - by
+- section: chorus-3
+  text: It's raining every day and the taps run dry
+  words:
+  - - 206.7
+    - It's
+  - - 207.54
+    - raining
+  - - 207.72
+    - every
+  - - 208.22
+    - day
+  - - 208.68
+    - and
+  - - 208.96
+    - the
+  - - 209.2
+    - taps
+  - - 209.48
+    - run
+  - - 209.84
+    - dry
+- section: outro
+  text: Do have a lovely summer.
+  words:
+  - - 211.48
+    - Do
+  - - 211.76
+    - have
+  - - 212.16
+    - a
+  - - 212.98
+    - lovely
+  - - 212.98
+    - summer.
+- section: outro
+  text: Bill's due Friday.
+  words:
+  - - 213.52
+    - Bill's
+  - - 215.54
+    - due
+  - - 215.82
+    - Friday.
+- section: outro
+  text: Do have a lovely summer.
+  words:
+  - - 218.66
+    - Do
+  - - 218.94
+    - have
+  - - 219.2
+    - a
+  - - 219.8
+    - lovely
+  - - 219.8
+    - summer.
+- section: outro
+  text: Bill's due Friday.
+  words:
+  - - 220.9
+    - Bill's
+  - - 222.72
+    - due
+  - - 223.0
+    - Friday.
+- section: outro
+  text: Bill's due Friday.
+  words:
+  - - 231.44
+    - Bill's
+  - - 232.7
+    - due
+  - - 232.98
+    - Friday.

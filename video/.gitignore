@@ -8,3 +8,8 @@ songs/test-glen/vocals.wav
 songs/test-glen/lyrics.txt
 songs/*/master.flac
 songs/*/grid.json.bak
+
+# song audio travels on the working branch only, never into the default branch
+songs/*/media/*.flac
+songs/*/media/*.opus
+songs/*/media/*.wav
