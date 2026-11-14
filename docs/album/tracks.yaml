@@ -1,6 +1,7 @@
 # Natural Capital: every track, machine-readable, for the laptop.
 # status: generate = make it (two takes, keep the better); existing = already made;
-#         voice = spoken voicemail for Reuben's voice, skip; pending = lyrics not written yet.
+#         voice = spoken voicemail for Reuben's voice, skip; pending = lyrics not written yet;
+#         dropped = cut from the album, keep files, never render.
 # seconds is the target length (one pass up to ~300 s; VRAM stays flat with length). The two skits are short on purpose.
 # queue = the order to generate in, strongest songs first; album order is n.
 # Story and notes: docs/natural-capital.md
@@ -11,7 +12,6 @@ queue:
 - bought-and-sold
 - natural-capital
 - fast-lane
-- brass-plate
 - exit-strategy
 - sunshine-trust
 - ermine-and-ink
@@ -173,7 +173,7 @@ tracks:
 - n: 7
   slug: brass-plate
   title: Brass Plate
-  status: generate
+  status: dropped   # Reuben, 14 Nov: dropped from the album (circus sound). Kept for reference; never render.
   batch: 2
   design: docs/album/design/brass-plate.yaml
   seconds: 170
