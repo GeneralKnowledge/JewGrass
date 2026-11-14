@@ -52,7 +52,8 @@ class Compositor:
         self.particles = Particles(140, W, H, self.seed)
         self.plates = {}
         for sh in plan["shots"]:
-            self._plate(sh["plate"])
+            if sh.get("plate", "fractal") != "fractal":
+                self._plate(sh["plate"])
         self.flashes = self._flash_schedule()
         self.shot_at = np.zeros(analysis["frames"], np.int32)
         for k, sh in enumerate(plan["shots"]):
@@ -265,9 +266,18 @@ class Compositor:
             return self._ll
         lines = [ln for ln in self.plan["lines"] if ln.get("words")]
         out = []
+        # a line comes in a little before its first word, but never before the
+        # previous line's last word has had its moment
+        starts = []
         for j, ln in enumerate(lines):
-            start = ln["words"][0][0] - 0.45
-            nxt = lines[j + 1]["words"][0][0] - 0.45 if j + 1 < len(lines) else 1e9
+            first = ln["words"][0][0]
+            st = first - 0.45
+            if j:
+                st = min(max(st, lines[j - 1]["words"][-1][0] + 0.2), first - 0.05)
+            starts.append(st)
+        for j, ln in enumerate(lines):
+            start = starts[j]
+            nxt = starts[j + 1] if j + 1 < len(lines) else 1e9
             last = ln["words"][-1][0]
             dur_last = max(0.35, min(1.2, (last - ln["words"][0][0]) / max(len(ln["words"]) - 1, 1) * 1.5))
             end = min(nxt, last + dur_last + 1.6)
@@ -333,10 +343,10 @@ class Compositor:
         cy = self.H * float(txt.get("y", 0.62 if self.W >= self.H else 0.62))
         live = []
         for L in self._lyric_lines():
-            if not (L["start"] <= t < L["end"] + 0.3):
+            if not (L["start"] <= t < L["end"] + 0.2):
                 continue
-            fin = ease((t - L["start"]) / 0.3)
-            fout = 1 - ease((t - L["end"]) / 0.3)
+            fin = ease((t - L["start"]) / 0.25)
+            fout = 1 - ease((t - L["end"]) / 0.2)
             live.append((L, fin, fout))
         # the band fades in with the first line of a passage and out after the last
         near = [L for L in self._lyric_lines() if L["start"] - 0.8 <= t < L["end"] + 1.2]
@@ -414,6 +424,11 @@ class Compositor:
             a = ease((t - sh["t0"]) / dur)
             if a < 1:
                 img = img * a + self._body(i, self.plan["shots"][k - 1]) * (1 - a)
+        if sh.get("plate", "fractal") == "fractal":
+            # words go on once, after any dissolve (not once per blended shot)
+            txt = sh.get("text") or {}
+            if self.text_on and txt.get("mode") == "lyric":
+                self._lyric(img, t, txt)
         if sh.get("title"):
             self._title(img, sh, t)
         img = self.atm.finish(img, i)
@@ -451,6 +466,24 @@ class Compositor:
                 self._paste_rgb(img, spr, kx0 + x, ky0 + y, op * 0.9)
 
     def _body(self, i, sh):
+        if sh.get("plate", "fractal") == "fractal":
+            return self._fractal_body(i, sh)
+        return self._landscape_body(i, sh)
+
+    def _fractal_body(self, i, sh):
+        """Fractal-only look: the Julia field fills the frame, then the words."""
+        t = i / self.fps
+        ps = self._psych(sh)
+        img = self.psych.field(t, i, ps)
+        g = sh.get("grade") or {}
+        img *= float(g.get("exposure", 1.0))
+        if sh is self.plan["shots"][-1] and sh.get("fade_out", True):
+            img *= 1 - ease((t - (sh["t1"] - 1.5)) / 1.5)
+        if sh is self.plan["shots"][0]:
+            img *= ease(t / 1.0)
+        return img
+
+    def _landscape_body(self, i, sh):
         t = i / self.fps
         p = (t - sh["t0"]) / max(sh["t1"] - sh["t0"], 1e-6)
         budget = self._budget(sh)

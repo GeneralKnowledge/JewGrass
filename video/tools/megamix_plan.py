@@ -135,12 +135,13 @@ def song_lines(lines, heard, keep=0.6):
     return clean
 
 
-# one look per song, cycling so neighbours differ (light, layout, camera, strangeness)
+# one look per song (Reuben, 14 Nov: fractals + lyrics only, no landscape):
+# neighbours differ in palette turn, speed and kaleidoscope folds
 LOOKS = [
-    ("hill-dawn@bare", "push-in", 0.15), ("sealoch-dusk@bare", "drift-right", 0.3),
-    ("hill-night@bare", "rise", 0.45), ("hill-dusk@bare", "drift-left", 0.25),
-    ("sealoch-dawn@bare", "pull-out", 0.2), ("hill-night@bare", "push-in", 0.5),
-    ("sealoch-night@bare", "drift-right", 0.35), ("hill-dawn@bare", "drift-left", 0.2),
+    {"hue": 0.0, "speed": 0.7}, {"hue": 0.35, "speed": 1.0, "kaleido": 6},
+    {"hue": 0.7, "speed": 0.8}, {"hue": 0.15, "speed": 1.2, "kaleido": 4},
+    {"hue": 0.5, "speed": 0.6, "zoom": 0.85}, {"hue": 0.85, "speed": 1.1, "kaleido": 8},
+    {"hue": 0.25, "speed": 0.9}, {"hue": 0.6, "speed": 1.3, "kaleido": 5},
 ]
 
 
@@ -200,12 +201,10 @@ def main():
     if not os.path.exists(sb_path):
         shots = []
         for k, s in enumerate(sections):
-            plate, move, sky = LOOKS[k % len(LOOKS)]
             n = num.get(s["slug"])
             kicker = f"{a.album} · {n:02d}" if n else a.album
-            sh = {"id": s["name"], "at": s["name"], "plate": plate,
-                  "camera": {"move": move, "speed": 0.4}, "weather": ["mist-low"],
-                  "text": {"mode": "lyric"}, "grade": {"exposure": 0.85}, "psych": {"sky": sky},
+            sh = {"id": s["name"], "at": s["name"], "plate": "fractal",
+                  "text": {"mode": "lyric"}, "grade": {"exposure": 0.9}, "psych": dict(LOOKS[k % len(LOOKS)]),
                   "title": {"text": s["title"], "kicker": kicker}}
             if k:
                 sh["transition"] = "dissolve"
