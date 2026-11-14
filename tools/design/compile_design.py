@@ -34,6 +34,10 @@ def compile_design(path, out_root="build/design"):
     # Phrases that ACE-Step renders as hiss or static (blind A/B, Nov 14): keep them out of captions and tags.
     banned = ["crackl", "gramophone", "vinyl", "tape hiss", "hiss", "static", "lo-fi", "lofi", "raw mix",
               "typewriter clacks", "radio noise", "white noise", "glitch noise"]
+    # Words that turned songs into circus music (round 2, Nov 14).
+    banned += ["circus", "calliope", "oompah", "tuba", "pizzicato", "woodblock", "marching", "military", "fanfare",
+               "comic", "theatrical", "ridiculous", "playful", "cheeky", "pompous", "regal", "whimsical", "brass band",
+               "gavel", "desk bell"]
     alltext = (caption + " " + " ".join(s["tag"] for s in d["sections"])).lower()
     for b in banned:
         if b in alltext:

@@ -1,7 +1,8 @@
 # Song Design: Ermine and Ink (track 11). Format: docs/song-design/README.md
 slug: ermine-and-ink
 title: Ermine and Ink
-version: 1
+version: 2
+v2_note: "Brass fanfare, regal, pompous, gavel and baroque-cadence wording removed after Brass Plate v2 sounded like a circus."
 approach: "dialogue - a lord and a newspaper owner negotiate a favour, verse by verse, and seal it in the chorus"
 identity: "A pompous baroque duet. Theatrical, bureaucratic and slightly ridiculous, the grand cousin of Brass Plate."
 story_beat: "Politics and the press protect the deal. Morag's first article gets spiked."
@@ -41,14 +42,14 @@ motifs:
 
 sections:
   - name: intro
-    tag: "intro - harpsichord alone, a gavel"
+    tag: "intro - dark harpsichord alone"
     bars: 4
     dynamics: 2
     lyrics: |
       Order, order. The noble lord has the floor.
       And the noble lord would like it carpeted.
   - name: verse 1
-    tag: "verse - pompous posh English male rap, harpsichord and printing-press beat"
+    tag: "verse - posh sneering English male rap, harpsichord and heavy trap beat"
     bars: 16
     dynamics: 3
     idea: "the lord - what he bought and what he wants; the image is the cheque and the hat"
@@ -62,7 +63,7 @@ sections:
       I need the hearing quiet and I need the village wrong
       Desmond, old boy, you could help me along
   - name: chorus 1
-    tag: "chorus - brass fanfare, regal chant, both voices"
+    tag: "chorus - both voices, gang chant, heavy 808"
     bars: 8
     dynamics: 4
     lyrics: |
@@ -85,7 +86,7 @@ sections:
       And what do I get? Oh, nothing at all
       Just a quiet word when my own planning's due to fall
   - name: chorus 2
-    tag: "chorus - brass fanfare, regal chant, both voices"
+    tag: "chorus - both voices, gang chant, heavy 808"
     bars: 8
     dynamics: 4
     lyrics: |
@@ -106,7 +107,7 @@ sections:
       And the story?
       Page forty. Under the horoscopes.
   - name: final chorus
-    tag: "final chorus - full brass, choir, harpsichord, both voices"
+    tag: "final chorus - biggest, strings, harpsichord, both voices"
     bars: 10
     dynamics: 5
     lyrics: |
@@ -117,7 +118,7 @@ sections:
       Division's on Friday
       Friday's edition
   - name: outro
-    tag: "outro - a baroque cadence to a major chord, one gavel"
+    tag: "outro - the beat stops, one held string chord"
     bars: 1
     dynamics: 4
     lyrics: ""
@@ -125,11 +126,7 @@ sections:
 ending: "The two Friday lines are a handshake. The band plays a pompous baroque cadence onto a D major chord and a single gavel bang. No fade."
 
 caption: >-
-  pompous baroque hip hop duet, satirical and theatrical, a posh aristocratic English male rapper and a gravelly
-  older English male newsreader voice trading verses, ornate harpsichord riff, string quartet, a deep thudding
-  printing press rhythm as the backbeat, stately hip hop drums, cello bass, short 808 hits on the chorus downbeats,
-  brass fanfare at each chorus, regal chant chorus, the third verse turns quiet and uneasy, the last chorus has full
-  brass and choir, ends on a grand baroque major chord and a gavel, clean polished mix, 92 bpm
+  dark sinister trap duet, a posh sneering English male rapper and a gravelly older English male newsreader voice trading verses, dark minor harpsichord riff, low string quartet, heavy slow trap drums, deep printing press thud on the backbeat, distorted 808 bass, gang chant chorus, the third verse turns quiet and uneasy, the last chorus is biggest with full strings, ends on one held dark string chord, clean polished mix, 92 bpm
 
 lyric_audit:
   before: "Two good villain monologues side by side, plus a repeated four-line bridge. The spiking of Morag's story was one line at the end of verse 2."

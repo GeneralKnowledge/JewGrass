@@ -181,12 +181,12 @@ tracks:
   key: C minor
   timesig: '4'
   caption: |
-    theatrical comic baroque hip hop, fast cheeky Glaswegian male rap, Scottish accent, playful patter, bureaucratic and slightly ridiculous, crisp clean drums with a woodblock backbeat, occasional typewriter bell and rubber stamp accents, harpsichord riff, pizzicato strings, tuba bass line, desk bell dings, crisp dry drums, sharp electronic synth stabs, muted brass stabs, brass band and heavy 808 hits only on the chorus, office gang chant chorus, dark uneasy strings in the third verse, last chorus biggest with full brass, ends on one triumphant major brass chord and a stamp, clean polished mix, 112 bpm
+    dark glitch trap, Scottish hip hop, fast sly Glaswegian male rap, Scottish accent, dark minor harpsichord riff as the hook, plucked banjo answering the riff, distorted 808 bass, crisp hard trap drums, rapid hi-hats, dark synth stabs on the punchlines, gang chant chorus, heavy distorted guitars only in the last chorus, the third verse drops the drums for dark uneasy strings, the beat cuts dead at the end with one rubber stamp thud, clean punchy mix, 112 bpm
   lyrics: |
-    [intro - woodblock rhythm alone, then harpsichord riff, desk bell]
+    [intro - dark harpsichord riff alone, then the beat drops]
     Baird Formations, how can I help?
 
-    [verse - nine in the morning, fast cheeky patter, tuba and pizzicato]
+    [verse - nine in the morning, fast sly patter, 808 and trap drums]
     Nine in the morning, kettle on, the vape shop's open below
     Postie drags a sack up, says Malky, where's all this go
     Four hundred companies living in one wee drawer
@@ -196,13 +196,13 @@ tracks:
     I don't do the business, son, I'm only the address
     The less I know the better, and I know a whole lot less
 
-    [chorus - brass stabs, 808 hits, gang shout]
+    [chorus - gang chant, heavy 808, banjo hook]
     Brass plate! Shiny on the door
     Four hundred companies and room for plenty more
     Who owns the money? Naebody at all
     Brass plate! Letterbox in the hall
 
-    [verse - twelve o'clock, the phone call, synth stabs on punchlines]
+    [verse - twelve o'clock, the phone call, dark synth stabs on punchlines]
     Twelve o'clock, the phone goes, a voice like a gin and tonic
     Darling, we need a partnership, and quickly, it's iconic
     We're buying up a glen to save the planet. Lovely, hen
@@ -212,7 +212,7 @@ tracks:
     The pound that paid the laird's rent comes through my door at two
     And by quarter past it's sailing to an island. Toodle-oo
 
-    [chorus - brass stabs, 808 hits, gang shout]
+    [chorus - gang chant, heavy 808, banjo hook]
     Brass plate! Shiny on the door
     Four hundred companies and room for plenty more
     Who owns the money? Naebody at all
@@ -228,14 +228,14 @@ tracks:
     And there's a lassie at the door, says she's frae the paper, aye
     Are you Malcolm Baird? Naw, hen. Never heard of the guy
 
-    [final chorus - full brass band, everything in, gang shout]
+    [final chorus - everything in, heavy guitars, gang chant]
     Brass plate! Shiny on the door
     Four hundred companies, and they're all mine, for sure
     Who owns the money? I'd rather no say
     Brass plate! Filing's due Friday
     Mine.
 
-    [outro - one triumphant major brass chord, one rubber stamp]
+    [outro - the beat cuts dead, one rubber stamp]
 - n: 8
   slug: cold-hame
   title: Cold Hame
@@ -327,13 +327,13 @@ tracks:
   key: D minor
   timesig: '4'
   caption: |
-    pompous baroque hip hop duet, satirical and theatrical, a posh aristocratic English male rapper and a gravelly older English male newsreader voice trading verses, ornate harpsichord riff, string quartet, a deep thudding printing press rhythm as the backbeat, stately hip hop drums, cello bass, short 808 hits on the chorus downbeats, brass fanfare at each chorus, regal chant chorus, the third verse turns quiet and uneasy, the last chorus has full brass and choir, ends on a grand baroque major chord and a gavel, clean polished mix, 92 bpm
+    dark sinister trap duet, a posh sneering English male rapper and a gravelly older English male newsreader voice trading verses, dark minor harpsichord riff, low string quartet, heavy slow trap drums, deep printing press thud on the backbeat, distorted 808 bass, gang chant chorus, the third verse turns quiet and uneasy, the last chorus is biggest with full strings, ends on one held dark string chord, clean polished mix, 92 bpm
   lyrics: |
-    [intro - harpsichord alone, a gavel]
+    [intro - dark harpsichord alone]
     Order, order. The noble lord has the floor.
     And the noble lord would like it carpeted.
 
-    [verse - pompous posh English male rap, harpsichord and printing-press beat]
+    [verse - posh sneering English male rap, harpsichord and heavy trap beat]
     Gave the party half a million, now they call me lord
     Red bench, ermine robe, and a seat on the board
     Never been elected, never will, don't need
@@ -343,7 +343,7 @@ tracks:
     I need the hearing quiet and I need the village wrong
     Desmond, old boy, you could help me along
 
-    [chorus - brass fanfare, regal chant, both voices]
+    [chorus - both voices, gang chant, heavy 808]
     Ermine and ink, ermine and ink
     We decide the news, and the news decides what you think
     Ermine and ink, ermine and ink
@@ -359,7 +359,7 @@ tracks:
     And what do I get? Oh, nothing at all
     Just a quiet word when my own planning's due to fall
 
-    [chorus - brass fanfare, regal chant, both voices]
+    [chorus - both voices, gang chant, heavy 808]
     Ermine and ink, ermine and ink
     We decide the news, and the news decides what you think
     Ermine and ink, ermine and ink
@@ -373,7 +373,7 @@ tracks:
     And the story?
     Page forty. Under the horoscopes.
 
-    [final chorus - full brass, choir, harpsichord, both voices]
+    [final chorus - biggest, strings, harpsichord, both voices]
     Ermine and ink, ermine and ink
     We decide the news, and the news decides what you think
     Ermine and ink, ermine and ink
@@ -381,7 +381,7 @@ tracks:
     Division's on Friday
     Friday's edition
 
-    [outro - a baroque cadence to a major chord, one gavel]
+    [outro - the beat stops, one held string chord]
 - n: 12
   slug: sunshine-trust
   title: Sunshine Trust
@@ -450,13 +450,13 @@ tracks:
   key: B minor
   timesig: '4'
   caption: |
-    monumental Scottish protest hip hop, old and angry, solo Highland bagpipe lament intro, low orchestral strings and cello drones, military marching snare and deep bass drum, measured angry Scottish male rap, half spoken, space between the lines, heavy hip hop drums from the second verse, deep male choir and gang vocals on the chorus with the bagpipe doubling the melody, heavy distorted guitars and booming 808 only in the choruses, huge dark hall reverb, haunting female vocal bridge over a pipe drone, breakdown of marching drum and call and response chant, ends with the solo bagpipe alone holding one long unresolved note, clean polished mix, 84 bpm
+    dark angry Scottish political hip hop, measured angry Scottish male rap, half spoken, space between the lines, solo Highland bagpipe lament intro, low strings and cello drones, slow heavy boom bap drums, booming 808 and heavy distorted guitars only in the choruses, deep male gang vocals on the chorus with the bagpipe doubling the melody, haunting female vocal bridge over a pipe drone, breakdown of drums and call and response chant, ends with the solo bagpipe alone holding one long unresolved note, clean polished mix, 84 bpm
   lyrics: |
     [intro - solo bagpipe lament, low strings, wind]
     They tell ye it's new. It's no new.
     Sit doon. This is the long version.
 
-    [verse - Darien, measured spoken rap, marching snare and low strings, lots of space]
+    [verse - Darien, measured spoken rap, slow heavy boom bap drums, low strings, lots of space]
     Sixteen ninety-eight. Five ships oot o' Leith.
     Half the coin in Scotland in the hold beneath.
     They sold it as a garden. It was fever. It was mud.
@@ -508,7 +508,7 @@ tracks:
     They've had a Friday every week for three hundred years.
     And every week, it's us that pays.
 
-    [breakdown - marching drum and chant only, call and response]
+    [breakdown - drums and chant only, call and response]
     Who owns the hill? (No you!)
     Who owns the water? (No you!)
     Who owns the oil? (No you!)

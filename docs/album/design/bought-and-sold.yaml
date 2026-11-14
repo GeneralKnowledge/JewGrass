@@ -1,7 +1,8 @@
 # Song Design: Bought and Sold (track 13). Format: docs/song-design/README.md
 slug: bought-and-sold
 title: Bought and Sold
-version: 2
+version: 3
+v3_note: "v2 read as a pageant (military marching snare, monumental). Marching drums replaced by slow heavy hip hop drums throughout."
 approach: spoken documentary verses (no forced rhymes, room between lines) with a protest-anthem chorus the audience can sing
 identity: Old, monumental and angry. The band steps out of the story to give the history lesson, one century per verse.
 story_beat: The album's thesis. The listener sees the whole system - this has happened before, with different paperwork.
@@ -54,7 +55,7 @@ sections:
       They tell ye it's new. It's no new.
       Sit doon. This is the long version.
   - name: verse 1
-    tag: verse - Darien, measured spoken rap, marching snare and low strings, lots of space
+    tag: verse - Darien, measured spoken rap, slow heavy boom bap drums, low strings, lots of space
     bars: 12
     dynamics: 2
     idea: Darien and the Union; the image is the ships coming hame light
@@ -127,7 +128,7 @@ sections:
       They've had a Friday every week for three hundred years.
       And every week, it's us that pays.
   - name: breakdown
-    tag: breakdown - marching drum and chant only, call and response
+    tag: breakdown - drums and chant only, call and response
     bars: 8
     dynamics: 3
     lyrics: |
@@ -163,13 +164,7 @@ ending: >-
   which is where that note wants to go.
 
 caption: >-
-  monumental Scottish protest hip hop, old and angry, solo Highland bagpipe lament intro, low orchestral strings
-  and cello drones, military marching snare and deep bass drum, measured angry Scottish male rap, half spoken,
-  space between the lines, heavy hip hop drums from the second verse, deep male choir and gang vocals on the
-  chorus with the bagpipe doubling the melody, heavy distorted guitars and booming 808 only in the choruses,
-  huge dark hall reverb, haunting female vocal bridge over a
-  pipe drone, breakdown of marching drum and call and response chant, ends with the solo bagpipe alone holding
-  one long unresolved note, clean polished mix, 84 bpm
+  dark angry Scottish political hip hop, measured angry Scottish male rap, half spoken, space between the lines, solo Highland bagpipe lament intro, low strings and cello drones, slow heavy boom bap drums, booming 808 and heavy distorted guitars only in the choruses, deep male gang vocals on the chorus with the bagpipe doubling the melody, haunting female vocal bridge over a pipe drone, breakdown of drums and call and response chant, ends with the solo bagpipe alone holding one long unresolved note, clean polished mix, 84 bpm
 
 lyric_audit:
   before: Clever but overstuffed - Darien, the Union, the Clearances, the oil report, limited partnerships, pandemic contracts and offshore trusts in three 12-line verses of forced couplets. The best line was buried.
