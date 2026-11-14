@@ -6,7 +6,7 @@
 Writes OUT_ROOT/<slug>/design-v<N>/ (default OUT_ROOT: build/design):
   caption.txt   the caption
   lyrics.txt    lyrics with each section tag carrying its arrangement cue, e.g. [verse - guitar and bass only]
-  meta.env      SLUG, BPM, KEY, TIMESIG, SECONDS (gen.py reads BAND_KEY / BAND_TIMESIG)
+  meta.env      SLUG, BPM, KEY, TIMESIG, SECONDS (gen-design.py reads BAND_KEY / BAND_TIMESIG; gen.py ignores them)
   run.sh        the exact laptop command for one seed
 
 Only needs PyYAML. Checks the things that have bitten us before.
@@ -66,7 +66,7 @@ def compile_design(path, out_root="build/design"):
         'cd "$(dirname "$0")"\n'
         "seed=${1:?seed}\n"
         f"BAND_KEY='{r['key']}' BAND_TIMESIG={r['timesig']} \\\n"
-        f"  flock ~/band/.gpu.lock ~/band/heavy.sh ~/band/gen.sh caption.txt lyrics.txt {r['seconds']} \"$seed\" "
+        f"  flock ~/band/.gpu.lock ~/band/heavy.sh ~/band/gen-design.sh caption.txt lyrics.txt {r['seconds']} \"$seed\" "
         f"{name}-s$seed {r['bpm']}\n"
     )
     os.chmod(os.path.join(out, "run.sh"), 0o755)
