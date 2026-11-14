@@ -59,7 +59,8 @@ python3 kaggle/laptop/kjob.py fetch --wait     # waits for the run to finish, do
 python3 kaggle/laptop/kjob.py quota            # GPU hours left this week
 ```
 
-Every setting in the notebook's first cell can be passed as `NAME=value`.
+Every setting in the notebook's first cell can be passed as `NAME=value`. `TRACKS_YAML` picks another track
+list (a repo path or an https link), e.g. `TRACKS_YAML=lowbridge/tracks.yaml BRANCH=<its branch>`.
 
 ## Running from the browser instead (no laptop needed)
 

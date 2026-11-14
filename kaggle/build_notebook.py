@@ -19,6 +19,7 @@ JOB = "render"            # "render" (album takes), "voice" (train the RVC voice
 BRANCH = "claude/project-thread-l3ovu9"   # which branch of the repo to read tracks.yaml and these scripts from
 
 # Render
+TRACKS_YAML = "docs/album/tracks.yaml"   # track list: a path in the repo, or an https:// link to one
 TRACKS = "queue"          # "queue" = every track marked generate, strongest first; or a list: ["brass-plate", "gavs-song"]
 TAKES = 2                 # takes per track (different seeds)
 FIRST_SEED = 8001         # takes use FIRST_SEED, FIRST_SEED+1, ...
@@ -116,7 +117,14 @@ if JOB in ("voice", "both"):
 if JOB in ("render", "both"):
     sys.path.insert(0, f"{REPO}/kaggle")
     import yaml, plan
-    doc = yaml.safe_load(open(f"{REPO}/docs/album/tracks.yaml"))
+    if TRACKS_YAML.startswith("https://"):
+        doc = yaml.safe_load(urllib.request.urlopen(TRACKS_YAML, timeout=60).read())
+    elif os.path.exists(f"{REPO}/{TRACKS_YAML}"):
+        doc = yaml.safe_load(open(f"{REPO}/{TRACKS_YAML}"))
+    else:  # a path outside the sparse checkout
+        url = f"https://raw.githubusercontent.com/GeneralKnowledge/JewGrass/{BRANCH}/{TRACKS_YAML}"
+        doc = yaml.safe_load(urllib.request.urlopen(url, timeout=60).read())
+    print("tracks from", TRACKS_YAML)
     jobs, notes = plan.plan(doc, TRACKS, TAKES, FIRST_SEED, SEEDS, gpus=N_GPU)
     for n in notes:
         print("NOTE", n)
@@ -130,7 +138,7 @@ if JOB in ("render", "both"):
     print("render workers exited with", codes, f"after {(time.time() - T0) / 60:.0f} min in total")"""),
     (CODE, """# --- summary ----------------------------------------------------------------------------------------------------
 lines = [f"JewGrass Kaggle run, {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(T0))}, "
-         f"{(time.time() - T0) / 3600:.1f} GPU hours, {gpus[0]} x{N_GPU}", f"settings: JOB={JOB} TRACKS={TRACKS} "
+         f"{(time.time() - T0) / 3600:.1f} GPU hours, {gpus[0]} x{N_GPU}", f"settings: JOB={JOB} TRACKS_YAML={TRACKS_YAML} TRACKS={TRACKS} "
          f"TAKES={TAKES} FIRST_SEED={FIRST_SEED} SEEDS={SEEDS} VOICE_MODEL={VOICE_MODEL} VOICE_EPOCHS={VOICE_EPOCHS}", ""]
 for root, _, files in sorted(os.walk(OUT)):
     for f in sorted(files):
