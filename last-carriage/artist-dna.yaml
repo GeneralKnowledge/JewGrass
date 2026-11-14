@@ -1,6 +1,6 @@
 # LAST CARRIAGE artist DNA: the persistent identity every OVERNIGHT NORTH track is built from.
 # build.py joins caption_core + the track's family caption + the track's own caption.
-# Seeded by Reuben's own long instrumental mix (InstruReuben.mp3, Nov 14). The concept, titles and designs are
+# Seeded by a long instrumental mix of Reuben's friend's own experimental music (a clip from the friend's livestream, shared by Reuben as InstruReuben.mp3, Nov 14). The concept, titles and designs are
 # original. Genre and technique words only: no real artist, record, sample or melody is named or imitated.
 # Act and album names are working titles and have not been checked for clashes yet.
 
@@ -10,12 +10,12 @@ format: anonymous producer-led instrumental project. No members, no rapper, no f
 genre: heavy melodic bass music, instrumental trap, synth-led electronica
 premise: >-
   One overnight sleeper train, London to the far north-west Highlands, told in music only. Nine tracks that
-  segue into each other, so the album plays as one continuous mix the way Reuben's original does (about
+  segue into each other, so the album plays as one continuous mix the way the friend's mix does (about
   19 minutes in his mix; a little longer here). It leaves in D minor, the key wanders by semitones as the
   line climbs, crosses the border and runs through the dark, and it arrives back in D minor at first light.
   No words, no narrator: the story is in the titles, the keys and the energy.
 
-# What the seed mix actually measured (librosa on Reuben's file; tempos are estimates, not heard by a person).
+# What the seed mix actually measured (librosa on the friend's mix; tempos are estimates, not heard by a person).
 seed_analysis:
   length: 19:04, one continuous piece with several clean breaks and drops
   key_path: D minor drone -> B/G# minor area -> F minor -> E minor (heaviest) -> F# minor (clearest key) ->

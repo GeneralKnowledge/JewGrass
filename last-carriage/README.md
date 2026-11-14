@@ -1,6 +1,6 @@
 # LAST CARRIAGE: OVERNIGHT NORTH (pilot)
 
-An anonymous instrumental act seeded by Reuben's own long instrumental mix (Nov 14). One overnight sleeper
+An anonymous instrumental act seeded by a long instrumental livestream mix of a friend's experimental music, shared by Reuben (Nov 14). One overnight sleeper
 train from London to the far north-west Highlands, told in music only: nine tracks that segue into each other,
 so the album plays as one continuous mix like the original. It leaves in D minor, the key drifts by semitones
 through the night, and it arrives back in D minor at first light. Act and album names are working titles.
@@ -37,5 +37,5 @@ python3 kaggle/laptop/kjob.py run JOB=render \
   SEEDS='{"lastcarriage-beattock":[2401,2402],"lastcarriage-over-the-border":[2501,2502],"lastcarriage-rannoch":[2801,2802]}'
 ```
 
-Optional: Reuben's mix as an ACE-Step sound reference (via the `claude/reference-inputs` branch), once he
-confirms it is his own work.
+Optional: the friend's mix as an ACE-Step sound reference (via the `claude/reference-inputs` branch), only once
+Reuben confirms the friend is happy for it to be used. Until then it is only the inspiration, not an input.
