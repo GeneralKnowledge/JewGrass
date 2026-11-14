@@ -86,6 +86,21 @@ The transcriber isn't scored against true notes here, because there are none. In
 
 Where there is a MIDI note, it's mostly the right one. The 808 is the weak spot: long, gliding sub notes. Lower thresholds raise coverage to 70%, but at 1000 notes and 89% agreement, which means more mess to clean up, so the cleaner setting is the default. "Other" is several instruments in one stem, so its MIDI is a blend of all of them, not one playable part.
 
+## Did the take follow the design? Gav's Song, take 7202
+
+`check_take.py` compares a generated take with its design. It estimates the key, and the chord heard in each 1.5 s window, from the BS-RoFormer instrumental.
+
+```
+design key: D major   heard: D major (fit 0.85)
+design chords: A Bm D Em G
+heard chords (% of time): D 74, G 11, Gm 11, Bm 3, Dm 1
+design chords barely heard (<2%): A Em
+```
+
+ACE-Step took the key (the new `keyscale` conditioning works). It did not take the harmony: the take sits on D with some G. The verse's Bm G D A cycle, the A that drives the chorus, and the bridge's Em are almost absent. The Gm is a borrowed chord the design never asked for. This is the clearest argument for the composition route, or for feeding ACE-Step a composed reference: text alone doesn't carry a chord chart.
+
+The take was also transcribed at 76 bpm in 6/8 (guitar 574 notes, bass 187, other 498, drums 868 hits). The pulse detected was 152 eighth notes per minute, which is 76 quarter notes.
+
 ## Not done yet
 
 - Instruments: MIDI tracks in the .rpp have no instrument loaded. The safe way is a REAPER track template made in Reuben's REAPER (with ReaSynth / ReaSamplOmatic or a free SFZ player per role), which the exporter then copies in. Writing plugin state blind would risk a project that doesn't open.
