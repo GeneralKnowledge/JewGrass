@@ -1,0 +1,158 @@
+# LOWBRIDGE Song Design: Last Bus Home (pilot track 03, reflective). Format: see no-signal.yaml.
+slug: lowbridge-last-bus-home
+title: Last Bus Home
+credit: Vale featuring Rook
+version: 1
+order: 3
+purpose: the reflective track. Show the collective has emotional range, while staying a drill record.
+concept: >-
+  A late journey home on the top deck. People who aren't around anymore, people who are still waiting, and
+  whether any of this is actually going somewhere.
+
+render:
+  bpm: 138
+  key: D minor
+  timesig: "4"
+  seconds: 140        # 72 bars at 138 is 125 s, plus room for the outro
+
+palette:
+  lead: melancholic piano, slow, D minor, lots of space
+  colour: a reversed vocal swell before each hook
+  bass: restrained 808, long notes, few slides
+  drums: lighter, more space between hits, no rolls until the second hook
+  left_out: the vocal chop and distortion from Weight of It, strings, any pop chorus
+
+drums: >-
+  Half-time but sparse: snare on 3, kick only on 1, hats in 8ths with a few skips. More hats in the second
+  verse. Final hook: no drums at all. Outro: just kick and snare come back.
+bass_movement: >-
+  D held for two bars, step down to Bb, then A, with one slow slide up to D into each hook. Stays under the
+  piano, never on top of it.
+harmony: Dm, Bb, F, A (the A major chord gives the lift in the hook). Piano plays broken chords, high and sparse.
+the_moment: >-
+  Vale's final hook with no drums: piano, low bass and voice only. Then just the kick and snare return for
+  the closing bars.
+
+sections:
+  - name: intro
+    tag: intro - sad piano alone, reversed vocal swell, no drums
+    bars: 4
+    performer: vale
+    lyrics: ""
+  - name: verse 1
+    tag: verse - low melodic male rap, drawn-out endings, sparse drums, restrained 808
+    bars: 16
+    performer: vale
+    idea: the ride itself and who isn't there; the image is the names carved in the library bench
+    lyrics: |
+      Top deck, front seat, nobody else on
+      Wipe the window with my sleeve, watch the ring road going on
+      Past the arches where we sat and talked about leaving
+      Past the chicken shop, new name, same lino, same feeling
+      There's a bench by the library, we carved our names in the back
+      Two of them names don't come round now, and one's not coming back
+      I don't say it out loud, I just count the stops
+      Mercer House, the depot, then the bit where the streetlight stops
+      Phone buzzes, it's my mum, are you nearly in
+      Twenty minutes, Mum, she don't sleep till she hears the key go in
+      Little brother's got exams, got a desk by his bed
+      Bought him a lamp so he don't study by the telly instead
+      He thinks I've got it figured, thinks I'm going somewhere
+      I'm on the last bus home, bro, I'm barely going anywhere
+      Driver checks me in the mirror like he's seen me before
+      He has. Same kid, same seat, just a few years more
+  - name: hook 1
+    tag: chorus - slightly sung melodic hook, emotional, 808 slides in
+    bars: 8
+    performer: vale
+    lyrics: |
+      Last bus home and the town's asleep
+      Counting all the faces that I couldn't keep
+      Window's got my reflection and the road behind
+      Everyone I'm missing, they're still on my mind
+      Last bus home and it's taking the long way
+      Past everyone who's waiting and the ones who couldn't stay
+      I don't know if it's going somewhere
+      But I'm on it, I'm on it, I'm still there
+  - name: verse 2
+    tag: verse - low melodic male rap, a little more drive, more hi-hats
+    bars: 16
+    performer: vale
+    idea: whether the music is going anywhere; the image is the cupboard studio with the mic taped to a coat rack
+    lyrics: |
+      Studio's a cupboard in Latch's mum's flat
+      Egg boxes on the wall and the mic's taped to a coat rack
+      Forty tunes on a hard drive and none of them out
+      Rook says the right ears will find them, I nod, but I doubt
+      Every mate that got a job, I'm proud but I feel it
+      They've got a lanyard and a pension, I've got a dream and I'm still in it
+      Twenty-three, still at home, on the sofa in the front room
+      Mum says be patient, son, she's been patient since she was twenty-two
+      Some nights the beat's so cold I can see my breath on it
+      Some nights I write a line and I put my whole chest on it
+      It's not about the money, well it is, but not all
+      It's about my little brother seeing somebody not fall
+      Bus pulls in at the depot, lights flicker off and on
+      Driver says end of the line, mate, I say not for long
+      Walk the last bit home, Mercer House, nine floors
+      Mum's light's still on. Same as before.
+  - name: hook 2
+    tag: chorus - slightly sung melodic hook, hat roll into the next verse
+    bars: 8
+    performer: vale
+    lyrics: |
+      Last bus home and the town's asleep
+      Counting all the faces that I couldn't keep
+      Window's got my reflection and the road behind
+      Everyone I'm missing, they're still on my mind
+      Last bus home and it's taking the long way
+      Past everyone who's waiting and the ones who couldn't stay
+      I don't know if it's going somewhere
+      But I'm on it, I'm on it, I'm still there
+  - name: verse rook
+    tag: verse - deep calm baritone rap, understated, quiet drums
+    bars: 8
+    performer: rook
+    idea: Rook on Vale; the image is the verse folded in a wallet like a twenty
+    lyrics: |
+      I don't get the bus much, I walk it, I like the quiet
+      Vale's always on the top deck with his hood up, writing
+      He says I don't think enough, I say he thinks too much
+      Probably both right. That's the reason we stuck
+      Seen him write a whole verse on the back of a ticket
+      Folded in his wallet like a twenty, won't spend it
+      If this goes anywhere, it's that boy's pen
+      And if it don't, I'm still here. We start again.
+  - name: final hook
+    tag: chorus - drums drop out, piano, low bass and voice only
+    bars: 8
+    performer: vale
+    lyrics: |
+      Last bus home and the town's asleep
+      Counting all the faces that I couldn't keep
+      Window's got my reflection and the road behind
+      Everyone I'm missing, they're still on my mind
+      Last bus home and it's taking the long way
+      Past everyone who's waiting and the ones who couldn't stay
+      I don't know if it's going somewhere
+      But I'm on it, I'm on it, I'm still there
+  - name: outro
+    tag: outro - only kick and snare return under the piano, then stop
+    bars: 4
+    performer: vale
+    lyrics: |
+      Last bus home
+
+ending: Kick and snare alone come back under the piano for four bars, then stop together on beat 1.
+
+caption: >-
+  138 bpm, D minor, melancholic late-night drill, sad sparse piano, reversed vocal swell, restrained 808,
+  lighter drums with space between hits, low melodic male rapper with drawn-out line endings, slightly sung
+  emotional hook, a short understated deep baritone verse near the end, final hook with no drums, just
+  piano, low bass and voice, then only kick and snare return for the closing bars
+
+lyric_audit:
+  character_voice: Vale names feelings the others won't; Rook's verse is the only place Rook is tender, and he hides it in a joke
+  narrative: the ride and who's missing (v1), whether the music is going anywhere (v2), Rook's answer
+  imagery: [names carved in the library bench, the lamp for the little brother, the cupboard studio, the verse folded like a twenty]
+  hook: '"Last bus home" opens each half; "I''m on it, I''m on it, I''m still there" is the line to sing back'
