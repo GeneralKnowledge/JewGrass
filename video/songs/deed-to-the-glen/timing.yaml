@@ -1,1142 +1,1142 @@
-note: ESTIMATED from the beat grid only (no audio yet); replace with tools/align_lyrics.py
+note: aligned by tools/align_lyrics.py; fix any word by hand
 tempo: 139.53
 sections:
 - name: intro
   start_bar: 0
-  bars: 8
+  bars: 16
 - name: verse
-  start_bar: 8
-  bars: 29
+  start_bar: 16
+  bars: 13
 - name: chorus
-  start_bar: 37
-  bars: 10
+  start_bar: 29
+  bars: 4
 - name: verse-2
-  start_bar: 47
-  bars: 30
+  start_bar: 33
+  bars: 17
 - name: chorus-2
-  start_bar: 77
-  bars: 10
+  start_bar: 50
+  bars: 6
 - name: bridge
-  start_bar: 87
+  start_bar: 56
   bars: 10
 - name: breakdown
-  start_bar: 97
-  bars: 4
+  start_bar: 66
+  bars: 12
 - name: verse-3
-  start_bar: 101
-  bars: 26
+  start_bar: 78
+  bars: 34
 - name: chorus-3
-  start_bar: 127
-  bars: 9
+  start_bar: 112
+  bars: 24
 - name: outro
   start_bar: 136
-  bars: 5
+  bars: 4
 lines:
 - section: intro
   text: Raise a dram, gentlemen.
   words:
-  - - 0.73
+  - - 9.099
     - Raise
-  - - 0.962
+  - - 9.279
     - a
-  - - 1.193
+  - - 9.508
     - dram,
-  - - 1.425
+  - - 9.758
     - gentlemen.
 - section: intro
   text: To the glen my great-great-grandfather emptied,
   words:
-  - - 2.582
+  - - 10.446
     - To
-  - - 2.814
+  - - 10.785
     - the
-  - - 3.046
+  - - 10.975
     - glen
-  - - 3.277
+  - - 11.334
     - my
-  - - 3.509
+  - - 11.514
     - great-great-grandfather
-  - - 4.666
+  - - 12.312
     - emptied,
 - section: intro
   text: the river I rent out by the fish,
   words:
-  - - 5.593
+  - - 12.492
     - the
-  - - 5.824
+  - - 12.601
     - river
-  - - 6.287
+  - - 13.09
     - I
-  - - 6.519
+  - - 13.38
     - rent
-  - - 6.75
+  - - 13.579
     - out
-  - - 6.982
+  - - 13.639
     - by
-  - - 7.213
+  - - 13.839
     - the
-  - - 7.445
+  - - 14.178
     - fish,
 - section: intro
   text: and every village that voted to let me keep it.
   words:
-  - - 8.14
+  - - 17.48
     - and
-  - - 8.371
+  - - 17.6
     - every
-  - - 9.066
+  - - 18.179
     - village
-  - - 9.529
+  - - 18.448
     - that
-  - - 9.761
+  - - 18.698
     - voted
-  - - 10.224
+  - - 18.927
     - to
-  - - 10.455
+  - - 19.137
     - let
-  - - 10.687
+  - - 19.396
     - me
-  - - 10.918
+  - - 19.556
     - keep
-  - - 11.15
+  - - 19.635
     - it.
 - section: intro
   text: Ladies and gentlemen... your laird.
   words:
-  - - 11.844
+  - - 21.282
     - Ladies
-  - - 12.308
+  - - 21.661
     - and
-  - - 12.539
+  - - 21.8
     - gentlemen...
-  - - 13.234
+  - - 22.21
     - your
-  - - 13.465
+  - - 22.389
     - laird.
 - section: verse
   text: Great-great-granddad cleared the glen for sheep
   words:
-  - - 14.51
+  - - 28.286
     - Great-great-granddad
-  - - 15.962
+  - - 29.283
     - cleared
-  - - 16.689
+  - - 29.712
     - the
-  - - 17.052
+  - - 29.902
     - glen
-  - - 17.415
+  - - 29.992
     - for
-  - - 17.778
+  - - 30.241
     - sheep
 - section: verse
   text: Burned the roofs so the tenants couldnae sleep
   words:
-  - - 18.867
+  - - 30.391
     - Burned
-  - - 19.593
+  - - 30.85
     - the
-  - - 19.956
+  - - 31.199
     - roofs
-  - - 20.319
+  - - 31.429
     - so
-  - - 20.683
+  - - 31.688
     - the
-  - - 21.046
+  - - 31.808
     - tenants
-  - - 21.772
+  - - 32.067
     - couldnae
-  - - 22.135
+  - - 32.277
     - sleep
 - section: verse
   text: Put 'em on a boat with a Bible and a cough
   words:
-  - - 23.224
+  - - 32.426
     - Put
-  - - 23.587
+  - - 32.536
     - '''em'
-  - - 23.95
+  - - 32.696
     - 'on'
-  - - 24.313
+  - - 32.795
     - a
-  - - 24.676
+  - - 32.905
     - boat
-  - - 25.04
+  - - 32.975
     - with
-  - - 25.403
+  - - 33.055
     - a
-  - - 25.766
+  - - 33.224
     - Bible
-  - - 26.492
+  - - 33.574
     - and
-  - - 26.855
+  - - 33.763
     - a
-  - - 27.218
+  - - 33.843
     - cough
 - section: verse
   text: Now I charge the tourists twelve quid to see where they set off
   words:
-  - - 28.307
+  - - 35.28
     - Now
-  - - 28.67
+  - - 35.519
     - I
-  - - 29.034
+  - - 35.908
     - charge
-  - - 29.397
+  - - 35.968
     - the
-  - - 29.76
+  - - 36.128
     - tourists
-  - - 30.486
+  - - 36.597
     - twelve
-  - - 30.849
+  - - 36.796
     - quid
-  - - 31.212
+  - - 36.996
     - to
-  - - 31.575
+  - - 37.166
     - see
-  - - 31.938
+  - - 37.475
     - where
-  - - 32.301
+  - - 37.664
     - they
-  - - 32.664
+  - - 37.734
     - set
-  - - 33.028
+  - - 37.844
     - 'off'
 - section: verse
   text: I own the hill and the loch and the view
   words:
-  - - 34.117
+  - - 38.034
     - I
-  - - 34.48
+  - - 38.283
     - own
-  - - 34.843
+  - - 38.413
     - the
-  - - 35.206
+  - - 38.522
     - hill
-  - - 35.569
+  - - 38.652
     - and
-  - - 35.932
+  - - 38.732
     - the
-  - - 36.295
+  - - 38.872
     - loch
-  - - 36.658
+  - - 38.961
     - and
-  - - 37.021
+  - - 39.131
     - the
-  - - 37.385
+  - - 39.181
     - view
 - section: verse
   text: Forty thousand acres and I'm up for a week or two
   words:
-  - - 38.474
+  - - 39.311
     - Forty
-  - - 39.2
+  - - 39.62
     - thousand
-  - - 39.926
+  - - 39.839
     - acres
-  - - 40.652
+  - - 40.219
     - and
-  - - 41.015
+  - - 40.418
     - I'm
-  - - 41.379
+  - - 40.628
     - up
-  - - 41.742
+  - - 40.737
     - for
-  - - 42.105
+  - - 40.877
     - a
-  - - 42.468
+  - - 41.087
     - week
-  - - 42.831
+  - - 41.146
     - or
-  - - 43.194
+  - - 41.266
     - two
 - section: verse
   text: Shoot a few grouse, burn a wee bit of heather
   words:
-  - - 44.283
+  - - 42.134
     - Shoot
-  - - 44.646
+  - - 42.364
     - a
-  - - 45.009
+  - - 42.593
     - few
-  - - 45.372
+  - - 42.833
     - grouse,
-  - - 45.736
+  - - 43.042
     - burn
-  - - 46.099
+  - - 43.242
     - a
-  - - 46.462
+  - - 43.451
     - wee
-  - - 46.825
+  - - 43.511
     - bit
-  - - 47.188
+  - - 43.671
     - of
-  - - 47.551
+  - - 44.04
     - heather
 - section: verse
   text: Fly back down to London when it turns to weather
   words:
-  - - 49.003
+  - - 44.289
     - Fly
-  - - 49.366
+  - - 44.339
     - back
-  - - 49.73
+  - - 44.469
     - down
-  - - 50.093
+  - - 44.549
     - to
-  - - 50.456
+  - - 44.908
     - London
-  - - 51.182
+  - - 45.267
     - when
-  - - 51.545
+  - - 45.437
     - it
-  - - 51.908
+  - - 45.566
     - turns
-  - - 52.271
+  - - 45.776
     - to
-  - - 52.634
+  - - 45.956
     - weather
 - section: verse
   text: Want to know who owns it? Good luck with that, son
   words:
-  - - 54.087
+  - - 46.295
     - Want
-  - - 54.45
+  - - 46.405
     - to
-  - - 54.813
+  - - 46.544
     - know
-  - - 55.176
+  - - 46.664
     - who
-  - - 55.539
+  - - 46.873
     - owns
-  - - 55.902
+  - - 46.933
     - it?
-  - - 56.265
+  - - 47.053
     - Good
-  - - 56.628
+  - - 47.173
     - luck
-  - - 56.991
+  - - 47.283
     - with
-  - - 57.354
+  - - 47.532
     - that,
-  - - 57.717
+  - - 47.682
     - son
 - section: verse
   text: It's a trust in a trust in a trust in a fund
   words:
-  - - 58.807
+  - - 47.851
     - It's
-  - - 59.17
+  - - 47.981
     - a
-  - - 59.533
+  - - 48.38
     - trust
-  - - 59.896
+  - - 48.5
     - in
-  - - 60.259
+  - - 48.639
     - a
-  - - 60.622
+  - - 48.809
     - trust
-  - - 60.985
+  - - 48.989
     - in
-  - - 61.348
+  - - 49.208
     - a
-  - - 61.711
+  - - 49.587
     - trust
-  - - 62.075
+  - - 49.837
     - in
-  - - 62.438
+  - - 50.086
     - a
-  - - 62.801
+  - - 50.306
     - fund
 - section: chorus
   text: I own the glen, own the loch
   words:
-  - - 64.24
+  - - 51.573
     - I
-  - - 64.628
+  - - 51.762
     - own
-  - - 65.016
+  - - 51.822
     - the
-  - - 65.404
+  - - 52.141
     - glen,
-  - - 65.793
+  - - 52.421
     - own
-  - - 66.181
+  - - 52.64
     - the
-  - - 66.569
+  - - 52.83
     - loch
 - section: chorus
   text: Own the pier and the parish clock
   words:
-  - - 67.733
+  - - 52.88
     - Own
-  - - 68.121
+  - - 53.119
     - the
-  - - 68.51
+  - - 53.289
     - pier
-  - - 68.898
+  - - 53.578
     - and
-  - - 69.286
+  - - 53.738
     - the
-  - - 69.674
+  - - 53.858
     - parish
-  - - 70.45
+  - - 54.237
     - clock
 - section: chorus
   text: You pay for parking at your granny's hill
   words:
-  - - 71.615
+  - - 54.396
     - You
-  - - 72.003
+  - - 54.616
     - pay
-  - - 72.391
+  - - 54.835
     - for
-  - - 72.779
+  - - 55.025
     - parking
-  - - 73.555
+  - - 55.434
     - at
-  - - 73.943
+  - - 55.683
     - your
-  - - 74.332
+  - - 55.903
     - granny's
-  - - 75.108
+  - - 56.112
     - hill
 - section: chorus
   text: Sell you back the dram from your granddad's still
   words:
-  - - 76.272
+  - - 56.312
     - Sell
-  - - 76.66
+  - - 56.561
     - you
-  - - 77.049
+  - - 56.641
     - back
-  - - 77.437
+  - - 56.731
     - the
-  - - 77.825
+  - - 56.951
     - dram
-  - - 78.213
+  - - 57.12
     - from
-  - - 78.601
+  - - 57.28
     - your
-  - - 78.989
+  - - 57.38
     - granddad's
-  - - 79.766
+  - - 57.789
     - still
 - section: verse-2
   text: Million salmon in a cage in the sea loch
   words:
-  - - 81.28
+  - - 58.008
     - Million
-  - - 81.98
+  - - 58.617
     - salmon
-  - - 82.679
+  - - 58.856
     - in
-  - - 83.029
+  - - 58.996
     - a
-  - - 83.379
+  - - 59.076
     - cage
-  - - 83.729
+  - - 59.295
     - in
-  - - 84.079
+  - - 59.495
     - the
-  - - 84.429
+  - - 59.724
     - sea
-  - - 84.779
+  - - 59.864
     - loch
 - section: verse-2
   text: Lice thick as porridge, I call that good stock
   words:
-  - - 85.828
+  - - 59.944
     - Lice
-  - - 86.178
+  - - 60.113
     - thick
-  - - 86.528
+  - - 60.343
     - as
-  - - 86.878
+  - - 60.562
     - porridge,
-  - - 87.578
+  - - 60.782
     - I
-  - - 87.927
+  - - 60.981
     - call
-  - - 88.277
+  - - 61.201
     - that
-  - - 88.627
+  - - 61.43
     - good
-  - - 88.977
+  - - 61.65
     - stock
 - section: verse-2
   text: Bought the old distillery, sacked the whole crew
   words:
-  - - 90.027
+  - - 62.957
     - Bought
-  - - 90.376
+  - - 63.316
     - the
-  - - 90.726
+  - - 63.635
     - old
-  - - 91.076
+  - - 63.815
     - distillery,
-  - - 92.476
+  - - 64.693
     - sacked
-  - - 93.175
+  - - 65.032
     - the
-  - - 93.525
+  - - 65.122
     - whole
-  - - 94.225
+  - - 65.701
     - crew
 - section: verse-2
   text: Now it's three grand a bottle, made by a robot and two
   words:
-  - - 95.275
+  - - 65.97
     - Now
-  - - 95.624
+  - - 66.15
     - it's
-  - - 95.974
+  - - 66.369
     - three
-  - - 96.324
+  - - 66.798
     - grand
-  - - 96.674
+  - - 66.998
     - a
-  - - 97.024
+  - - 67.237
     - bottle,
-  - - 97.724
+  - - 67.606
     - made
-  - - 98.073
+  - - 67.656
     - by
-  - - 98.423
+  - - 68.095
     - a
-  - - 98.773
+  - - 68.385
     - robot
-  - - 99.473
+  - - 68.664
     - and
-  - - 99.823
+  - - 68.754
     - two
 - section: verse-2
   text: Wind farm on the ridge, and here's the best bit, see
   words:
-  - - 100.872
+  - - 70.21
     - Wind
-  - - 101.222
+  - - 70.43
     - farm
-  - - 101.572
+  - - 70.659
     - 'on'
-  - - 101.922
+  - - 70.819
     - the
-  - - 102.272
+  - - 71.029
     - ridge,
-  - - 102.622
+  - - 71.527
     - and
-  - - 102.972
+  - - 71.817
     - here's
-  - - 103.671
+  - - 72.256
     - the
-  - - 104.021
+  - - 72.366
     - best
-  - - 104.371
+  - - 72.565
     - bit,
-  - - 104.721
+  - - 72.785
     - see
 - section: verse-2
   text: When it blows too hard the grid pays me
   words:
-  - - 105.77
+  - - 73.194
     - When
-  - - 106.12
+  - - 73.583
     - it
-  - - 106.47
+  - - 74.022
     - blows
-  - - 106.82
+  - - 74.082
     - too
-  - - 107.17
+  - - 74.251
     - hard
-  - - 107.52
+  - - 74.471
     - the
-  - - 107.87
+  - - 74.92
     - grid
-  - - 108.219
+  - - 75.189
     - pays
-  - - 108.569
+  - - 75.359
     - me
 - section: verse-2
   text: Planted a forest, sold the carbon to a bank
   words:
-  - - 109.619
+  - - 77.763
     - Planted
-  - - 110.319
+  - - 77.973
     - a
-  - - 110.668
+  - - 78.132
     - forest,
-  - - 111.368
+  - - 78.482
     - sold
-  - - 111.718
+  - - 78.691
     - the
-  - - 112.068
+  - - 78.831
     - carbon
-  - - 112.768
+  - - 79.13
     - to
-  - - 113.118
+  - - 79.31
     - a
-  - - 113.467
+  - - 79.36
     - bank
 - section: verse-2
   text: Flew to Monaco on the credit in the tank
   words:
-  - - 114.517
+  - - 79.589
     - Flew
-  - - 114.867
+  - - 79.759
     - to
-  - - 115.217
+  - - 79.878
     - Monaco
-  - - 116.266
+  - - 80.347
     - 'on'
-  - - 116.616
+  - - 80.557
     - the
-  - - 116.966
+  - - 80.796
     - credit
-  - - 117.666
+  - - 81.006
     - in
-  - - 118.016
+  - - 81.096
     - the
-  - - 118.365
+  - - 81.265
     - tank
 - section: verse-2
   text: Houses in the village? Holiday lets
   words:
-  - - 119.415
+  - - 81.425
     - Houses
-  - - 120.115
+  - - 81.924
     - in
-  - - 120.465
+  - - 82.073
     - the
-  - - 120.815
+  - - 82.173
     - village?
-  - - 121.514
+  - - 82.502
     - Holiday
-  - - 122.564
+  - - 83.141
     - lets
 - section: verse-2
   text: Locals in a caravan, that's as good as it gets
   words:
-  - - 123.613
+  - - 83.39
     - Locals
-  - - 124.313
+  - - 83.869
     - in
-  - - 124.663
+  - - 83.979
     - a
-  - - 125.013
+  - - 84.249
     - caravan,
-  - - 126.062
+  - - 84.867
     - that's
-  - - 126.412
+  - - 85.107
     - as
-  - - 126.762
+  - - 85.316
     - good
-  - - 127.112
+  - - 85.526
     - as
-  - - 127.462
+  - - 85.576
     - it
-  - - 127.812
+  - - 85.955
     - gets
 - section: verse-2
   text: (Five stars on the reviews, darling!)
   words:
-  - - 128.861
+  - - 86.224
     - (Five
-  - - 129.211
+  - - 86.424
     - stars
-  - - 129.561
+  - - 86.623
     - 'on'
-  - - 129.911
+  - - 86.753
     - the
-  - - 130.261
+  - - 86.813
     - reviews,
-  - - 130.961
+  - - 87.282
     - darling!)
 - section: chorus-2
   text: I own the glen, own the loch
   words:
-  - - 132.71
+  - - 87.661
     - I
-  - - 133.1
+  - - 87.741
     - own
-  - - 133.491
+  - - 88.06
     - the
-  - - 133.881
+  - - 88.17
     - glen,
-  - - 134.272
+  - - 88.329
     - own
-  - - 134.662
+  - - 88.529
     - the
-  - - 135.053
+  - - 88.768
     - loch
 - section: chorus-2
   text: Own the pier and the parish clock
   words:
-  - - 136.224
+  - - 88.978
     - Own
-  - - 136.615
+  - - 89.167
     - the
-  - - 137.005
+  - - 89.407
     - pier
-  - - 137.396
+  - - 89.596
     - and
-  - - 137.786
+  - - 89.836
     - the
-  - - 138.177
+  - - 90.035
     - parish
-  - - 138.957
+  - - 90.295
     - clock
 - section: chorus-2
   text: You pay for parking at your granny's hill
   words:
-  - - 140.129
+  - - 91.582
     - You
-  - - 140.519
+  - - 91.761
     - pay
-  - - 140.91
+  - - 91.901
     - for
-  - - 141.3
+  - - 91.981
     - parking
-  - - 142.081
+  - - 92.22
     - at
-  - - 142.472
+  - - 92.33
     - your
-  - - 142.862
+  - - 92.46
     - granny's
-  - - 143.643
+  - - 92.62
     - hill
 - section: chorus-2
   text: Sell you back the dram from your granddad's still
   words:
-  - - 144.814
+  - - 93.557
     - Sell
-  - - 145.205
+  - - 93.667
     - you
-  - - 145.595
+  - - 93.827
     - back
-  - - 145.986
+  - - 93.937
     - the
-  - - 146.376
+  - - 94.066
     - dram
-  - - 146.767
+  - - 94.326
     - from
-  - - 147.157
+  - - 94.505
     - your
-  - - 147.548
+  - - 94.725
     - granddad's
-  - - 148.329
+  - - 95.004
     - still
 - section: bridge
   text: Bless the laird who owns the glen
   words:
-  - - 149.85
+  - - 96.421
     - Bless
-  - - 150.241
+  - - 96.481
     - the
-  - - 150.631
+  - - 96.7
     - laird
-  - - 151.022
+  - - 96.89
     - who
-  - - 151.413
+  - - 97.069
     - owns
-  - - 151.803
+  - - 97.389
     - the
-  - - 152.194
+  - - 97.518
     - glen
 - section: bridge
   text: Bless his hand and his fountain pen
   words:
-  - - 153.366
+  - - 98.626
     - Bless
-  - - 153.757
+  - - 98.736
     - his
-  - - 154.148
+  - - 98.845
     - hand
-  - - 154.538
+  - - 99.025
     - and
-  - - 154.929
+  - - 99.135
     - his
-  - - 155.32
+  - - 99.264
     - fountain
-  - - 156.101
+  - - 99.464
     - pen
 - section: bridge
   text: We bow our heads and we pay the rent
   words:
-  - - 157.273
+  - - 99.703
     - We
-  - - 157.664
+  - - 99.863
     - bow
-  - - 158.055
+  - - 100.073
     - our
-  - - 158.445
+  - - 100.322
     - heads
-  - - 158.836
+  - - 100.442
     - and
-  - - 159.227
+  - - 100.561
     - we
-  - - 159.617
+  - - 100.761
     - pay
-  - - 160.008
+  - - 100.901
     - the
-  - - 160.399
+  - - 101.07
     - rent
 - section: bridge
   text: And the Lord alone knows where the money went
   words:
-  - - 161.571
+  - - 102.038
     - And
-  - - 161.962
+  - - 102.527
     - the
-  - - 162.352
+  - - 102.657
     - Lord
-  - - 162.743
+  - - 102.786
     - alone
-  - - 163.524
+  - - 103.106
     - knows
-  - - 163.915
+  - - 103.315
     - where
-  - - 164.306
+  - - 103.365
     - the
-  - - 164.697
+  - - 103.585
     - money
-  - - 165.478
+  - - 106.957
     - went
 - section: breakdown
   text: Own the glen!
   words:
-  - - 167.0
+  - - 113.771
     - Own
-  - - 167.325
+  - - 113.901
     - the
-  - - 167.65
+  - - 114.001
     - glen!
 - section: breakdown
   text: Own the loch!
   words:
-  - - 168.625
+  - - 118.082
     - Own
-  - - 168.95
+  - - 118.341
     - the
-  - - 169.275
+  - - 118.58
     - loch!
 - section: breakdown
   text: Own the glen!
   words:
-  - - 170.25
+  - - 121.773
     - Own
-  - - 170.575
+  - - 122.013
     - the
-  - - 170.9
+  - - 122.152
     - glen!
 - section: breakdown
   text: Own the loch!
   words:
-  - - 171.875
+  - - 124.537
     - Own
-  - - 172.2
+  - - 124.746
     - the
-  - - 172.525
+  - - 124.926
     - loch!
 - section: verse-3
   text: Now you want a buyout, a wee community fund?
   words:
-  - - 173.85
+  - - 134.365
     - Now
-  - - 174.195
+  - - 134.614
     - you
-  - - 174.539
+  - - 134.844
     - want
-  - - 174.884
+  - - 134.953
     - a
-  - - 175.229
+  - - 135.103
     - buyout,
-  - - 175.574
+  - - 135.302
     - a
-  - - 175.918
+  - - 135.632
     - wee
-  - - 176.263
+  - - 135.921
     - community
-  - - 177.642
+  - - 136.799
     - fund?
 - section: verse-3
   text: Adorable. Bring twelve million by the end of the month
   words:
-  - - 178.676
+  - - 144.492
     - Adorable.
-  - - 180.055
+  - - 145.27
     - Bring
-  - - 180.4
+  - - 145.33
     - twelve
-  - - 180.744
+  - - 145.499
     - million
-  - - 181.434
+  - - 145.759
     - by
-  - - 181.779
+  - - 145.998
     - the
-  - - 182.123
+  - - 146.208
     - end
-  - - 182.468
+  - - 146.447
     - of
-  - - 182.813
+  - - 146.597
     - the
-  - - 183.158
+  - - 146.796
     - month
 - section: verse-3
   text: Sold the fishing rights to a firm down south
   words:
-  - - 184.192
+  - - 149.371
     - Sold
-  - - 184.536
+  - - 149.59
     - the
-  - - 184.881
+  - - 149.67
     - fishing
-  - - 185.571
+  - - 150.149
     - rights
-  - - 185.915
+  - - 150.268
     - to
-  - - 186.26
+  - - 150.498
     - a
-  - - 186.605
+  - - 150.737
     - firm
-  - - 186.95
+  - - 150.937
     - down
-  - - 187.294
+  - - 151.107
     - south
 - section: verse-3
   text: Boats tied up and there's a hook in your mouth
   words:
-  - - 188.328
+  - - 154.549
     - Boats
-  - - 188.673
+  - - 154.788
     - tied
-  - - 189.018
+  - - 154.898
     - up
-  - - 189.363
+  - - 154.998
     - and
-  - - 189.707
+  - - 155.098
     - there's
-  - - 190.397
+  - - 155.457
     - a
-  - - 190.741
+  - - 155.616
     - hook
-  - - 191.086
+  - - 155.886
     - in
-  - - 191.431
+  - - 156.095
     - your
-  - - 191.776
+  - - 156.295
     - mouth
 - section: verse-3
   text: School shut down when the roll got thin
   words:
-  - - 192.81
+  - - 158.829
     - School
-  - - 193.155
+  - - 159.039
     - shut
-  - - 193.499
+  - - 159.348
     - down
-  - - 193.844
+  - - 159.488
     - when
-  - - 194.189
+  - - 159.667
     - the
-  - - 194.533
+  - - 159.737
     - roll
-  - - 194.878
+  - - 160.086
     - got
-  - - 195.223
+  - - 160.296
     - thin
 - section: verse-3
   text: So I turned it into a boutique inn
   words:
-  - - 196.257
+  - - 167.599
     - So
-  - - 196.602
+  - - 167.888
     - I
-  - - 196.947
+  - - 168.238
     - turned
-  - - 197.636
+  - - 168.437
     - it
-  - - 197.981
+  - - 168.497
     - into
-  - - 198.67
+  - - 168.986
     - a
-  - - 199.015
+  - - 169.116
     - boutique
-  - - 199.704
+  - - 169.505
     - inn
 - section: verse-3
   text: Now your weans get the bus an hour each way
   words:
-  - - 200.739
+  - - 171.59
     - Now
-  - - 201.083
+  - - 171.7
     - your
-  - - 201.428
+  - - 171.909
     - weans
-  - - 201.773
+  - - 172.159
     - get
-  - - 202.117
+  - - 172.209
     - the
-  - - 202.462
+  - - 172.448
     - bus
-  - - 202.807
+  - - 172.558
     - an
-  - - 203.152
+  - - 172.707
     - hour
-  - - 203.496
+  - - 172.897
     - each
-  - - 203.841
+  - - 173.027
     - way
 - section: verse-3
   text: And the bus is mine too, so you'll pay
   words:
-  - - 204.875
+  - - 175.112
     - And
-  - - 205.22
+  - - 175.182
     - the
-  - - 205.565
+  - - 175.312
     - bus
-  - - 205.909
+  - - 175.581
     - is
-  - - 206.254
+  - - 175.761
     - mine
-  - - 206.599
+  - - 175.96
     - too,
-  - - 206.944
+  - - 176.05
     - so
-  - - 207.288
+  - - 176.249
     - you'll
-  - - 207.633
+  - - 176.299
     - pay
 - section: verse-3
   text: I don't need a claymore, I got a solicitor
   words:
-  - - 208.667
+  - - 178.584
     - I
-  - - 209.012
+  - - 178.714
     - don't
-  - - 209.357
+  - - 179.023
     - need
-  - - 209.701
+  - - 179.103
     - a
-  - - 210.046
+  - - 179.203
     - claymore,
-  - - 210.736
+  - - 179.452
     - I
-  - - 211.08
+  - - 179.682
     - got
-  - - 211.425
+  - - 179.841
     - a
-  - - 211.77
+  - - 180.031
     - solicitor
 - section: verse-3
   text: Fine print so sharp it'll bleed you, mister
   words:
-  - - 213.838
+  - - 189.709
     - Fine
-  - - 214.183
+  - - 189.908
     - print
-  - - 214.527
+  - - 190.138
     - so
-  - - 214.872
+  - - 190.298
     - sharp
-  - - 215.217
+  - - 190.347
     - it'll
-  - - 215.562
+  - - 190.517
     - bleed
-  - - 215.906
+  - - 190.577
     - you,
-  - - 216.251
+  - - 190.727
     - mister
 - section: chorus-3
   text: I own the glen, own the loch
   words:
-  - - 217.98
+  - - 192.522
     - I
-  - - 218.331
+  - - 192.682
     - own
-  - - 218.681
+  - - 192.892
     - the
-  - - 219.032
+  - - 193.061
     - glen,
-  - - 219.383
+  - - 193.141
     - own
-  - - 219.733
+  - - 193.351
     - the
-  - - 220.084
+  - - 193.51
     - loch
 - section: chorus-3
   text: Own the pier and the parish clock
   words:
-  - - 221.136
+  - - 199.117
     - Own
-  - - 221.487
+  - - 199.347
     - the
-  - - 221.838
+  - - 199.537
     - pier
-  - - 222.188
+  - - 199.746
     - and
-  - - 222.539
+  - - 199.916
     - the
-  - - 222.89
+  - - 200.165
     - parish
-  - - 223.591
+  - - 200.564
     - clock
 - section: chorus-3
   text: You pay for parking at your granny's hill
   words:
-  - - 224.643
+  - - 202.32
     - You
-  - - 224.994
+  - - 202.59
     - pay
-  - - 225.345
+  - - 202.979
     - for
-  - - 225.695
+  - - 203.368
     - parking
-  - - 226.397
+  - - 203.837
     - at
-  - - 226.747
+  - - 204.006
     - your
-  - - 227.098
+  - - 204.056
     - granny's
-  - - 227.8
+  - - 204.306
     - hill
 - section: chorus-3
   text: Sell you back the dram from your granddad's still
   words:
-  - - 228.852
+  - - 206.76
     - Sell
-  - - 229.202
+  - - 207.069
     - you
-  - - 229.553
+  - - 207.259
     - back
-  - - 229.904
+  - - 207.449
     - the
-  - - 230.254
+  - - 207.658
     - dram
-  - - 230.605
+  - - 208.107
     - from
-  - - 230.956
+  - - 208.386
     - your
-  - - 231.307
+  - - 208.556
     - granddad's
-  - - 232.008
+  - - 214.732
     - still
 - section: outro
   text: Do enjoy the scenery.
   words:
-  - - 233.41
+  - - 233.829
     - Do
-  - - 233.954
+  - - 233.988
     - enjoy
-  - - 235.042
+  - - 234.198
     - the
-  - - 235.586
+  - - 234.317
     - scenery.
 - section: outro
   text: Rent's due Friday.
   words:
-  - - 238.306
+  - - 234.876
     - Rent's
-  - - 238.85
+  - - 234.926
     - due
-  - - 239.394
+  - - 235.086
     - Friday.

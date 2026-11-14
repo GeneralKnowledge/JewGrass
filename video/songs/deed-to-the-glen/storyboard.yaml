@@ -153,37 +153,59 @@ shots:
   # ---- Verse 3: the buyout refused, the school sold, the bus owned
   - id: s14
     at: verse-3
-    part: [1, 2]
+    part: [1, 3]
     plate: hill-dawn@fenced+school
     camera: {move: drift-right, speed: 0.6}
     weather: [mist-low]
     text: {mode: quiet}
     react: {bass: ground}
     actors:
-      - {type: stamp, text: "£12,000,000 BY THE END OF THE MONTH", word: month, at: 0.2, pos: [0.5, 0.25], rot: -4, size: 0.06}
+      - {type: stamp, text: "£12,000,000 BY THE END OF THE MONTH", word: month, at: 0.5, pos: [0.5, 0.25], rot: -4, size: 0.06}
       - {type: sign, texts: ["GLEN SCHOOL", "GLEN SCHOOL"]}
   - id: s15
     at: verse-3
-    part: [2, 2]
+    part: [2, 3]
     plate: hill-dusk@fenced+school
     camera: {move: push-in, speed: 0.8, target: [0.62, 0.45]}
     weather: [mist-low]
     text: {mode: quiet}
     react: {bass: ground}
     actors:
-      - {type: sign, texts: ["GLEN SCHOOL", "THE GLEN BOUTIQUE INN"], swap_word: inn, swap: 0.2}
-      - {type: coach, x: [-0.1, 0.4], span: [0.3, 0.7], tag: "MINE"}
-      - {type: laird, side: left, in: 0.7, out: 1.0, size: 0.58}
+      - {type: sign, texts: ["GLEN SCHOOL", "THE GLEN BOUTIQUE INN"], swap_word: inn, swap: 0.7}
+  - id: s15b
+    at: verse-3
+    part: [3, 3]
+    plate: hill-dusk@fenced+school
+    camera: {move: drift-left, speed: 0.6}
+    weather: [mist-low]
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: sign, texts: ["THE GLEN BOUTIQUE INN"]}
+      - {type: coach, x: [-0.1, 0.4], span: [0.0, 0.45], tag: "MINE"}
+      - {type: laird, side: left, in: 0.4, out: 1.0, size: 0.58}
 
-  # ---- Chorus 3: the development, fully lit; the crow leaves
+  # ---- Chorus 3: the development, fully lit
   - id: s16
     at: chorus-3
+    part: [1, 2]
     plate: hill-night@fenced+chalets+lodge
     camera: {move: pull-out, speed: 1.0}
     weather: [mist-low, seeds]
-    motifs: {red-line: {from: 0.85, to: 1.0}, crow: leaves}
+    motifs: {red-line: {from: 0.85, to: 1.0}, crow: perched-right}
     text: {mode: chorus-sign, anchor: [0.40, null], distress: 0.6, tilt: -6}
     react: {bass: ground, drums: flash}
+  # ---- The long instrumental after the last chorus: the glen dissolves; the crow leaves
+  - id: s16b
+    at: chorus-3
+    part: [2, 2]
+    plate: hill-night@fenced+chalets+lodge
+    camera: {move: push-in, speed: 0.7, target: [0.6, 0.4]}
+    weather: [mist-low, embers]
+    motifs: {red-line: {from: 1.0, to: 1.0}, crow: leaves}
+    text: {mode: quiet}
+    react: {bass: ground, drums: flash, budget: 0.8}
+    psych: {sky: 1.0, overlay: 0.45, kaleido: 8, warp: 0.9, chroma: 0.8}
 
   # ---- Outro (spoken): pleasantries, then the bill
   - id: s17

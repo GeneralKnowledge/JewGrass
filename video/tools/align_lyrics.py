@@ -78,27 +78,29 @@ def vocal_onsets(path):
     voiced = rms > max(np.percentile(rms, 60) * 0.25, 1e-4)
     env = librosa.onset.onset_strength(y=y, sr=SR, hop_length=HOP, lag=2, max_size=3)
     on = librosa.onset.onset_detect(onset_envelope=env, sr=SR, hop_length=HOP, units="frames",
-                                    delta=0.02, wait=6, pre_max=3, post_max=3)
+                                    delta=0.01, wait=4, pre_max=2, post_max=2)
     on = [f for f in on if f < len(voiced) and voiced[f]]
     times = librosa.frames_to_time(np.array(on), sr=SR, hop_length=HOP)
     return np.array(times), len(y) / SR
 
 
-def align(syl_line_start, onsets, gap=0.16):
+def align(syl_line_start, onsets, gap=0.16, bounds=None):
+    """bounds: optional {syllable index: (t_min, t_max)} hard windows (anchors)."""
     """syl_line_start[k] is True when syllable k begins a lyric line.
     Returns the onset index for every syllable (monotonic)."""
     n, m = len(syl_line_start), len(onsets)
     if m < n:
         raise SystemExit(f"only {m} vocal onsets for {n} syllables; lower the onset threshold")
     INF = 1e18
-    W = 8  # how many onsets one step may skip
+    W = 8  # how many onsets one step may skip inside a line
+    W_LINE = 80  # ... and between lines (ad-libs, doubles, instrumental breaks)
     cost = np.full((n, m), INF)
     back = np.zeros((n, m), np.int32)
     cost[0, : m - n + 1] = onsets[: m - n + 1] * 0.001  # prefer starting early, barely
     for i in range(1, n):
         lo, hi = i, m - (n - i) + 1
         for j in range(lo, hi):
-            j0 = max(i - 1, j - W)
+            j0 = max(i - 1, j - (W_LINE if syl_line_start[i] else W))
             prev = cost[i - 1, j0:j]
             dt = onsets[j] - onsets[j0:j]
             skips = (j - np.arange(j0, j)) - 1
@@ -109,11 +111,15 @@ def align(syl_line_start, onsets, gap=0.16):
             else:
                 pen = 0.5 * skips + 4.0 * np.clip(dt - gap * 2.2, 0, None) ** 2
             tot = prev + pen
+            if bounds and i in bounds and not (bounds[i][0] <= onsets[j] <= bounds[i][1]):
+                tot = tot + INF
             k = int(np.argmin(tot))
             cost[i, j] = tot[k]
             back[i, j] = j0 + k
         # free long gaps across lines when the previous line ended: handled by W on purpose
     j = int(np.argmin(cost[n - 1]))
+    if cost[n - 1, j] >= INF:
+        raise SystemExit("no alignment satisfies the anchors; check the anchor times")
     path = [j]
     for i in range(n - 1, 0, -1):
         j = back[i, j]
@@ -155,6 +161,8 @@ def main():
     ap.add_argument("lyrics")
     ap.add_argument("beats")
     ap.add_argument("out")
+    ap.add_argument("--anchor", action="append", default=[],
+                    help="SECTION=SECONDS: that section's first word is sung at about this time (e.g. outro=233.6)")
     ap.add_argument("--beats-out", help="write the corrected beat grid here (for engine.analysis --beats)")
     a = ap.parse_args()
 
@@ -176,7 +184,25 @@ def main():
         keep = [k for k, o in enumerate(owner) if o[3] == 0]
         owner = [owner[k] for k in keep]
         syl_start = [syl_start[k] for k in keep]
-    path = align(syl_start, onsets)
+    # Anchors: pin a section's first syllable near a known time, and make the
+    # syllable before it land in the last stretch of singing before that time
+    # (otherwise the aligner packs the lyrics too early when there are extra
+    # onsets from doubles and ad-libs).
+    bounds = {}
+    sec_index = {sc["name"]: k for k, sc in enumerate(secs)}
+    for an in a.anchor:
+        name, _, tt = an.partition("=")
+        tt = float(tt)
+        first = next(k for k, o in enumerate(owner) if o[0] == sec_index[name])
+        bounds[first] = (tt - 1.5, tt + 1.5)
+        before = onsets[onsets < tt - 1.0]
+        if first > 0 and len(before):
+            gaps = np.diff(before)
+            # end of the last continuous singing before the anchor
+            br = np.where(gaps > 4.0)[0]
+            last_end = before[-1]
+            bounds[first - 1] = (last_end - 6.0, tt - 1.0)
+    path = align(syl_start, onsets, bounds=bounds)
 
     times = {}
     for (si, li, wi, k), j in zip(owner, path):

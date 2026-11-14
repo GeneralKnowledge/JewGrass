@@ -6,3 +6,5 @@ __pycache__/
 songs/*/out*/
 songs/test-glen/vocals.wav
 songs/test-glen/lyrics.txt
+songs/*/master.flac
+songs/*/grid.json.bak
