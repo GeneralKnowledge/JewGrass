@@ -1,0 +1,47 @@
+# Test storyboard for the synthetic 30 s song (tools/make_test_song.py).
+# It exercises: a master plate in two states, camera moves with parallax,
+# fog, the crow and red-line motifs, three text modes, bass shudder, flashes.
+song: test-glen
+style: glen-gothic
+preset: satirical-dark
+seed: 1707
+motifs: [crow, red-line]
+
+shots:
+  - id: s01
+    at: intro
+    plate: hill-dawn@bare
+    camera: {move: push-in, speed: 0.8}
+    weather: [mist-low]
+    motifs: {crow: perched-left}
+    text: {mode: spoken-title}
+
+  - id: s02
+    at: chorus-1
+    split: [0, 4]
+    plate: hill-dawn@fenced
+    camera: {move: drift-right, speed: 0.7}
+    weather: [mist-low, seeds]
+    motifs: {red-line: {from: 0.0, to: 0.6}, crow: perched-right}
+    text: {mode: chorus-sign, anchor: [0.36, null], distress: 0.1}
+    react: {bass: ground, drums: cut-allowed flash}
+
+  - id: s03
+    at: chorus-1
+    split: [4, 8]
+    plate: hill-dawn@fenced
+    camera: {move: push-in, speed: 1.2}
+    weather: [mist-low, seeds]
+    motifs: {red-line: {from: 0.6, to: 1.0}}
+    text: {mode: chorus-sign, anchor: [0.50, null], distress: 0.25}
+    react: {bass: ground, drums: cut-allowed flash}
+
+  - id: s04
+    at: verse-1
+    plate: hill-dusk@fenced
+    camera: {move: drift-left, speed: 0.5}
+    weather: [fog-heavy, embers]
+    motifs: {red-line: {from: 1.0, to: 1.0}, crow: leaves}
+    text: {mode: quiet}
+    react: {bass: sway}
+    transition: fog-in

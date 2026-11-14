@@ -1,0 +1,171 @@
+note: synthetic test song; real songs get this file from the alignment step
+sections:
+- name: intro
+  start_bar: 0
+  bars: 4
+- name: chorus-1
+  start_bar: 4
+  bars: 8
+- name: verse-1
+  start_bar: 12
+  bars: 6
+lines:
+- section: intro
+  text: Raise a dram, gentlemen.
+  words:
+  - - 0.429
+    - Raise
+  - - 1.071
+    - a
+  - - 1.714
+    - dram,
+  - - 2.357
+    - gentlemen.
+- section: intro
+  text: To the glen my great-great-grandfather emptied.
+  words:
+  - - 3.429
+    - To
+  - - 3.857
+    - the
+  - - 4.286
+    - glen
+  - - 4.714
+    - my
+  - - 5.143
+    - great-great-grandfather
+  - - 5.571
+    - emptied.
+- section: chorus-1
+  text: I own the glen, own the loch
+  words:
+  - - 6.857
+    - I
+  - - 7.286
+    - own
+  - - 7.714
+    - the
+  - - 8.143
+    - glen,
+  - - 8.571
+    - own
+  - - 9.0
+    - the
+  - - 9.429
+    - loch
+- section: chorus-1
+  text: Own the pier and the parish clock
+  words:
+  - - 10.286
+    - Own
+  - - 10.714
+    - the
+  - - 11.143
+    - pier
+  - - 11.571
+    - and
+  - - 12.0
+    - the
+  - - 12.429
+    - parish
+  - - 12.857
+    - clock
+- section: chorus-1
+  text: You pay for parking at your granny's hill
+  words:
+  - - 13.714
+    - You
+  - - 14.089
+    - pay
+  - - 14.464
+    - for
+  - - 14.839
+    - parking
+  - - 15.214
+    - at
+  - - 15.589
+    - your
+  - - 15.964
+    - granny's
+  - - 16.339
+    - hill
+- section: chorus-1
+  text: Sell you back the dram from your granddad's still
+  words:
+  - - 17.143
+    - Sell
+  - - 17.476
+    - you
+  - - 17.81
+    - back
+  - - 18.143
+    - the
+  - - 18.476
+    - dram
+  - - 18.81
+    - from
+  - - 19.143
+    - your
+  - - 19.476
+    - granddad's
+  - - 19.81
+    - still
+- section: verse-1
+  text: Great-great-granddad cleared the glen for sheep
+  words:
+  - - 20.571
+    - Great-great-granddad
+  - - 21.071
+    - cleared
+  - - 21.571
+    - the
+  - - 22.071
+    - glen
+  - - 22.571
+    - for
+  - - 23.071
+    - sheep
+- section: verse-1
+  text: Burned the roofs so the tenants couldnae sleep
+  words:
+  - - 24.0
+    - Burned
+  - - 24.375
+    - the
+  - - 24.75
+    - roofs
+  - - 25.125
+    - so
+  - - 25.5
+    - the
+  - - 25.875
+    - tenants
+  - - 26.25
+    - couldnae
+  - - 26.625
+    - sleep
+- section: verse-1
+  text: Put 'em on a boat with a Bible and a cough
+  words:
+  - - 27.429
+    - Put
+  - - 27.701
+    - '''em'
+  - - 27.974
+    - 'on'
+  - - 28.247
+    - a
+  - - 28.519
+    - boat
+  - - 28.792
+    - with
+  - - 29.065
+    - a
+  - - 29.338
+    - Bible
+  - - 29.61
+    - and
+  - - 29.883
+    - a
+  - - 30.156
+    - cough

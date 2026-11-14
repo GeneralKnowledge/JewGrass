@@ -1,0 +1,3447 @@
+[
+ {
+  "start": 0.0,
+  "end": 14.54,
+  "text": "Raise a dram, gentlemen. To the glen my great-great-grandfather emptied, the river I rent out by the fish, and every village that voted to let me keep it.",
+  "words": [
+   {
+    "start": 0.0,
+    "end": 0.44,
+    "word": " Raise",
+    "probability": 0.24
+   },
+   {
+    "start": 0.44,
+    "end": 0.7,
+    "word": " a",
+    "probability": 0.915
+   },
+   {
+    "start": 0.7,
+    "end": 1.28,
+    "word": " dram,",
+    "probability": 0.002
+   },
+   {
+    "start": 2.28,
+    "end": 2.28,
+    "word": " gentlemen.",
+    "probability": 0.829
+   },
+   {
+    "start": 3.7,
+    "end": 3.78,
+    "word": " To",
+    "probability": 0.877
+   },
+   {
+    "start": 3.78,
+    "end": 3.98,
+    "word": " the",
+    "probability": 0.987
+   },
+   {
+    "start": 3.98,
+    "end": 4.38,
+    "word": " glen",
+    "probability": 0.786
+   },
+   {
+    "start": 4.38,
+    "end": 4.74,
+    "word": " my",
+    "probability": 0.81
+   },
+   {
+    "start": 4.74,
+    "end": 5.22,
+    "word": " great",
+    "probability": 0.991
+   },
+   {
+    "start": 5.22,
+    "end": 5.62,
+    "word": "-great",
+    "probability": 0.834
+   },
+   {
+    "start": 5.62,
+    "end": 6.62,
+    "word": "-grandfather",
+    "probability": 0.865
+   },
+   {
+    "start": 6.62,
+    "end": 7.34,
+    "word": " emptied,",
+    "probability": 0.987
+   },
+   {
+    "start": 8.52,
+    "end": 8.84,
+    "word": " the",
+    "probability": 0.539
+   },
+   {
+    "start": 8.84,
+    "end": 9.14,
+    "word": " river",
+    "probability": 0.978
+   },
+   {
+    "start": 9.14,
+    "end": 9.5,
+    "word": " I",
+    "probability": 0.945
+   },
+   {
+    "start": 9.5,
+    "end": 9.68,
+    "word": " rent",
+    "probability": 0.69
+   },
+   {
+    "start": 9.68,
+    "end": 10.04,
+    "word": " out",
+    "probability": 0.991
+   },
+   {
+    "start": 10.04,
+    "end": 10.36,
+    "word": " by",
+    "probability": 0.994
+   },
+   {
+    "start": 10.36,
+    "end": 10.56,
+    "word": " the",
+    "probability": 0.996
+   },
+   {
+    "start": 10.56,
+    "end": 11.14,
+    "word": " fish,",
+    "probability": 0.98
+   },
+   {
+    "start": 11.4,
+    "end": 11.5,
+    "word": " and",
+    "probability": 0.961
+   },
+   {
+    "start": 11.5,
+    "end": 11.76,
+    "word": " every",
+    "probability": 0.975
+   },
+   {
+    "start": 11.76,
+    "end": 12.18,
+    "word": " village",
+    "probability": 0.988
+   },
+   {
+    "start": 12.18,
+    "end": 12.42,
+    "word": " that",
+    "probability": 0.992
+   },
+   {
+    "start": 12.42,
+    "end": 12.88,
+    "word": " voted",
+    "probability": 0.984
+   },
+   {
+    "start": 12.88,
+    "end": 13.22,
+    "word": " to",
+    "probability": 0.992
+   },
+   {
+    "start": 13.22,
+    "end": 13.48,
+    "word": " let",
+    "probability": 0.996
+   },
+   {
+    "start": 13.48,
+    "end": 13.72,
+    "word": " me",
+    "probability": 0.999
+   },
+   {
+    "start": 13.72,
+    "end": 14.1,
+    "word": " keep",
+    "probability": 0.998
+   },
+   {
+    "start": 14.1,
+    "end": 14.54,
+    "word": " it.",
+    "probability": 0.998
+   }
+  ]
+ },
+ {
+  "start": 16.8,
+  "end": 25.12,
+  "text": "And every village that voted to let me keep it. Ladies and gentlemen... your laird.",
+  "words": [
+   {
+    "start": 16.8,
+    "end": 17.56,
+    "word": " And",
+    "probability": 0.61
+   },
+   {
+    "start": 17.56,
+    "end": 17.84,
+    "word": " every",
+    "probability": 0.992
+   },
+   {
+    "start": 17.84,
+    "end": 18.3,
+    "word": " village",
+    "probability": 0.999
+   },
+   {
+    "start": 18.3,
+    "end": 18.54,
+    "word": " that",
+    "probability": 0.996
+   },
+   {
+    "start": 18.54,
+    "end": 18.98,
+    "word": " voted",
+    "probability": 0.997
+   },
+   {
+    "start": 18.98,
+    "end": 19.32,
+    "word": " to",
+    "probability": 0.999
+   },
+   {
+    "start": 19.32,
+    "end": 19.5,
+    "word": " let",
+    "probability": 0.998
+   },
+   {
+    "start": 19.5,
+    "end": 19.78,
+    "word": " me",
+    "probability": 0.999
+   },
+   {
+    "start": 19.78,
+    "end": 20.1,
+    "word": " keep",
+    "probability": 0.998
+   },
+   {
+    "start": 20.1,
+    "end": 20.5,
+    "word": " it.",
+    "probability": 0.991
+   },
+   {
+    "start": 21.2,
+    "end": 21.7,
+    "word": " Ladies",
+    "probability": 0.981
+   },
+   {
+    "start": 21.7,
+    "end": 22.24,
+    "word": " and",
+    "probability": 0.997
+   },
+   {
+    "start": 22.24,
+    "end": 24.3,
+    "word": " gentlemen...",
+    "probability": 0.538
+   },
+   {
+    "start": 24.3,
+    "end": 24.52,
+    "word": " your",
+    "probability": 0.163
+   },
+   {
+    "start": 24.52,
+    "end": 25.12,
+    "word": " laird.",
+    "probability": 0.037
+   }
+  ]
+ },
+ {
+  "start": 25.12,
+  "end": 28.1,
+  "text": "You're there, you're there, you're there, you're there, you're there, you're there.",
+  "words": [
+   {
+    "start": 25.12,
+    "end": 25.54,
+    "word": " You're",
+    "probability": 0.45
+   },
+   {
+    "start": 25.54,
+    "end": 25.88,
+    "word": " there,",
+    "probability": 0.76
+   },
+   {
+    "start": 26.06,
+    "end": 26.32,
+    "word": " you're",
+    "probability": 0.972
+   },
+   {
+    "start": 26.32,
+    "end": 26.7,
+    "word": " there,",
+    "probability": 0.996
+   },
+   {
+    "start": 26.74,
+    "end": 27.18,
+    "word": " you're",
+    "probability": 0.982
+   },
+   {
+    "start": 27.18,
+    "end": 27.66,
+    "word": " there,",
+    "probability": 0.992
+   },
+   {
+    "start": 27.9,
+    "end": 27.94,
+    "word": " you're",
+    "probability": 0.949
+   },
+   {
+    "start": 27.94,
+    "end": 27.94,
+    "word": " there,",
+    "probability": 0.97
+   },
+   {
+    "start": 28.1,
+    "end": 28.1,
+    "word": " you're",
+    "probability": 0.918
+   },
+   {
+    "start": 28.1,
+    "end": 28.1,
+    "word": " there,",
+    "probability": 0.927
+   },
+   {
+    "start": 28.1,
+    "end": 28.1,
+    "word": " you're",
+    "probability": 0.923
+   },
+   {
+    "start": 28.1,
+    "end": 28.1,
+    "word": " there.",
+    "probability": 0.931
+   }
+  ]
+ },
+ {
+  "start": 28.16,
+  "end": 31.0,
+  "text": "Great, great, grandad, get a Glen for a sheet.",
+  "words": [
+   {
+    "start": 28.16,
+    "end": 28.42,
+    "word": " Great,",
+    "probability": 0.045
+   },
+   {
+    "start": 28.66,
+    "end": 28.92,
+    "word": " great,",
+    "probability": 0.979
+   },
+   {
+    "start": 29.2,
+    "end": 29.44,
+    "word": " grandad,",
+    "probability": 0.401
+   },
+   {
+    "start": 29.54,
+    "end": 29.64,
+    "word": " get",
+    "probability": 0.457
+   },
+   {
+    "start": 29.64,
+    "end": 29.88,
+    "word": " a",
+    "probability": 0.546
+   },
+   {
+    "start": 29.88,
+    "end": 30.12,
+    "word": " Glen",
+    "probability": 0.644
+   },
+   {
+    "start": 30.12,
+    "end": 30.5,
+    "word": " for",
+    "probability": 0.162
+   },
+   {
+    "start": 30.5,
+    "end": 30.9,
+    "word": " a",
+    "probability": 0.713
+   },
+   {
+    "start": 30.9,
+    "end": 31.0,
+    "word": " sheet.",
+    "probability": 0.685
+   }
+  ]
+ },
+ {
+  "start": 31.26,
+  "end": 34.12,
+  "text": "Burn the roof so the tenants could nay sleep.",
+  "words": [
+   {
+    "start": 31.26,
+    "end": 31.32,
+    "word": " Burn",
+    "probability": 0.989
+   },
+   {
+    "start": 31.32,
+    "end": 31.6,
+    "word": " the",
+    "probability": 0.955
+   },
+   {
+    "start": 31.6,
+    "end": 31.82,
+    "word": " roof",
+    "probability": 0.977
+   },
+   {
+    "start": 31.82,
+    "end": 32.2,
+    "word": " so",
+    "probability": 0.875
+   },
+   {
+    "start": 32.2,
+    "end": 32.42,
+    "word": " the",
+    "probability": 0.615
+   },
+   {
+    "start": 32.42,
+    "end": 32.8,
+    "word": " tenants",
+    "probability": 0.973
+   },
+   {
+    "start": 32.8,
+    "end": 33.12,
+    "word": " could",
+    "probability": 0.695
+   },
+   {
+    "start": 33.12,
+    "end": 33.52,
+    "word": " nay",
+    "probability": 0.842
+   },
+   {
+    "start": 33.52,
+    "end": 34.12,
+    "word": " sleep.",
+    "probability": 0.933
+   }
+  ]
+ },
+ {
+  "start": 34.58,
+  "end": 37.52,
+  "text": "Put them on a boat with a Bible and a cough.",
+  "words": [
+   {
+    "start": 34.58,
+    "end": 34.82,
+    "word": " Put",
+    "probability": 0.96
+   },
+   {
+    "start": 34.82,
+    "end": 35.04,
+    "word": " them",
+    "probability": 0.254
+   },
+   {
+    "start": 35.04,
+    "end": 35.22,
+    "word": " on",
+    "probability": 0.994
+   },
+   {
+    "start": 35.22,
+    "end": 35.48,
+    "word": " a",
+    "probability": 0.927
+   },
+   {
+    "start": 35.48,
+    "end": 35.64,
+    "word": " boat",
+    "probability": 0.993
+   },
+   {
+    "start": 35.64,
+    "end": 36.08,
+    "word": " with",
+    "probability": 0.986
+   },
+   {
+    "start": 36.08,
+    "end": 36.36,
+    "word": " a",
+    "probability": 0.502
+   },
+   {
+    "start": 36.36,
+    "end": 36.62,
+    "word": " Bible",
+    "probability": 0.767
+   },
+   {
+    "start": 36.62,
+    "end": 36.96,
+    "word": " and",
+    "probability": 0.988
+   },
+   {
+    "start": 36.96,
+    "end": 37.26,
+    "word": " a",
+    "probability": 0.968
+   },
+   {
+    "start": 37.26,
+    "end": 37.52,
+    "word": " cough.",
+    "probability": 0.825
+   }
+  ]
+ },
+ {
+  "start": 38.04,
+  "end": 41.36,
+  "text": "Now I charge the tourists twelve quick to see where they set off.",
+  "words": [
+   {
+    "start": 38.04,
+    "end": 38.2,
+    "word": " Now",
+    "probability": 0.97
+   },
+   {
+    "start": 38.2,
+    "end": 38.4,
+    "word": " I",
+    "probability": 0.81
+   },
+   {
+    "start": 38.4,
+    "end": 38.64,
+    "word": " charge",
+    "probability": 0.828
+   },
+   {
+    "start": 38.64,
+    "end": 38.9,
+    "word": " the",
+    "probability": 0.983
+   },
+   {
+    "start": 38.9,
+    "end": 39.18,
+    "word": " tourists",
+    "probability": 0.581
+   },
+   {
+    "start": 39.18,
+    "end": 39.62,
+    "word": " twelve",
+    "probability": 0.683
+   },
+   {
+    "start": 39.62,
+    "end": 39.88,
+    "word": " quick",
+    "probability": 0.851
+   },
+   {
+    "start": 39.88,
+    "end": 40.1,
+    "word": " to",
+    "probability": 0.976
+   },
+   {
+    "start": 40.1,
+    "end": 40.32,
+    "word": " see",
+    "probability": 0.999
+   },
+   {
+    "start": 40.32,
+    "end": 40.54,
+    "word": " where",
+    "probability": 0.993
+   },
+   {
+    "start": 40.54,
+    "end": 40.78,
+    "word": " they",
+    "probability": 0.995
+   },
+   {
+    "start": 40.78,
+    "end": 40.96,
+    "word": " set",
+    "probability": 0.918
+   },
+   {
+    "start": 40.96,
+    "end": 41.36,
+    "word": " off.",
+    "probability": 0.988
+   }
+  ]
+ },
+ {
+  "start": 42.24,
+  "end": 44.76,
+  "text": "I own the hill and the lock and the view.",
+  "words": [
+   {
+    "start": 42.24,
+    "end": 42.24,
+    "word": " I",
+    "probability": 0.48
+   },
+   {
+    "start": 42.24,
+    "end": 42.52,
+    "word": " own",
+    "probability": 0.985
+   },
+   {
+    "start": 42.52,
+    "end": 42.74,
+    "word": " the",
+    "probability": 0.962
+   },
+   {
+    "start": 42.74,
+    "end": 42.98,
+    "word": " hill",
+    "probability": 0.956
+   },
+   {
+    "start": 42.98,
+    "end": 43.38,
+    "word": " and",
+    "probability": 0.772
+   },
+   {
+    "start": 43.38,
+    "end": 43.66,
+    "word": " the",
+    "probability": 0.981
+   },
+   {
+    "start": 43.66,
+    "end": 43.88,
+    "word": " lock",
+    "probability": 0.719
+   },
+   {
+    "start": 43.88,
+    "end": 44.24,
+    "word": " and",
+    "probability": 0.923
+   },
+   {
+    "start": 44.24,
+    "end": 44.52,
+    "word": " the",
+    "probability": 0.993
+   },
+   {
+    "start": 44.52,
+    "end": 44.76,
+    "word": " view.",
+    "probability": 0.977
+   }
+  ]
+ },
+ {
+  "start": 45.3,
+  "end": 48.18,
+  "text": "Forty thousand acres and I'm up for a week or two.",
+  "words": [
+   {
+    "start": 45.3,
+    "end": 45.58,
+    "word": " Forty",
+    "probability": 0.896
+   },
+   {
+    "start": 45.58,
+    "end": 46.1,
+    "word": " thousand",
+    "probability": 0.953
+   },
+   {
+    "start": 46.1,
+    "end": 46.54,
+    "word": " acres",
+    "probability": 0.999
+   },
+   {
+    "start": 46.54,
+    "end": 46.82,
+    "word": " and",
+    "probability": 0.913
+   },
+   {
+    "start": 46.82,
+    "end": 47.02,
+    "word": " I'm",
+    "probability": 0.944
+   },
+   {
+    "start": 47.02,
+    "end": 47.18,
+    "word": " up",
+    "probability": 0.959
+   },
+   {
+    "start": 47.18,
+    "end": 47.44,
+    "word": " for",
+    "probability": 0.98
+   },
+   {
+    "start": 47.44,
+    "end": 47.56,
+    "word": " a",
+    "probability": 0.946
+   },
+   {
+    "start": 47.56,
+    "end": 47.66,
+    "word": " week",
+    "probability": 0.989
+   },
+   {
+    "start": 47.66,
+    "end": 47.86,
+    "word": " or",
+    "probability": 0.997
+   },
+   {
+    "start": 47.86,
+    "end": 48.18,
+    "word": " two.",
+    "probability": 0.999
+   }
+  ]
+ },
+ {
+  "start": 48.66,
+  "end": 51.72,
+  "text": "Shoot a few bros, burn a weed, bid a heather.",
+  "words": [
+   {
+    "start": 48.66,
+    "end": 48.9,
+    "word": " Shoot",
+    "probability": 0.881
+   },
+   {
+    "start": 48.9,
+    "end": 49.2,
+    "word": " a",
+    "probability": 0.981
+   },
+   {
+    "start": 49.2,
+    "end": 49.4,
+    "word": " few",
+    "probability": 0.993
+   },
+   {
+    "start": 49.4,
+    "end": 49.98,
+    "word": " bros,",
+    "probability": 0.419
+   },
+   {
+    "start": 50.18,
+    "end": 50.24,
+    "word": " burn",
+    "probability": 0.973
+   },
+   {
+    "start": 50.24,
+    "end": 50.54,
+    "word": " a",
+    "probability": 0.777
+   },
+   {
+    "start": 50.54,
+    "end": 50.76,
+    "word": " weed,",
+    "probability": 0.85
+   },
+   {
+    "start": 51.08,
+    "end": 51.12,
+    "word": " bid",
+    "probability": 0.303
+   },
+   {
+    "start": 51.12,
+    "end": 51.32,
+    "word": " a",
+    "probability": 0.89
+   },
+   {
+    "start": 51.32,
+    "end": 51.72,
+    "word": " heather.",
+    "probability": 0.878
+   }
+  ]
+ },
+ {
+  "start": 51.72,
+  "end": 58.02,
+  "text": "Fly back down to London when it turns to weather Wanna know who owns it, good luck with that",
+  "words": [
+   {
+    "start": 51.72,
+    "end": 52.32,
+    "word": " Fly",
+    "probability": 0.158
+   },
+   {
+    "start": 52.32,
+    "end": 52.52,
+    "word": " back",
+    "probability": 0.91
+   },
+   {
+    "start": 52.52,
+    "end": 52.76,
+    "word": " down",
+    "probability": 0.98
+   },
+   {
+    "start": 52.76,
+    "end": 53.0,
+    "word": " to",
+    "probability": 0.99
+   },
+   {
+    "start": 53.0,
+    "end": 53.3,
+    "word": " London",
+    "probability": 0.996
+   },
+   {
+    "start": 53.3,
+    "end": 53.66,
+    "word": " when",
+    "probability": 0.856
+   },
+   {
+    "start": 53.66,
+    "end": 53.84,
+    "word": " it",
+    "probability": 0.992
+   },
+   {
+    "start": 53.84,
+    "end": 54.2,
+    "word": " turns",
+    "probability": 0.99
+   },
+   {
+    "start": 54.2,
+    "end": 54.6,
+    "word": " to",
+    "probability": 0.972
+   },
+   {
+    "start": 54.6,
+    "end": 55.02,
+    "word": " weather",
+    "probability": 0.913
+   },
+   {
+    "start": 55.02,
+    "end": 55.42,
+    "word": " Wanna",
+    "probability": 0.821
+   },
+   {
+    "start": 55.42,
+    "end": 55.86,
+    "word": " know",
+    "probability": 0.958
+   },
+   {
+    "start": 55.86,
+    "end": 56.24,
+    "word": " who",
+    "probability": 0.993
+   },
+   {
+    "start": 56.24,
+    "end": 56.64,
+    "word": " owns",
+    "probability": 0.987
+   },
+   {
+    "start": 56.64,
+    "end": 56.9,
+    "word": " it,",
+    "probability": 0.998
+   },
+   {
+    "start": 57.12,
+    "end": 57.26,
+    "word": " good",
+    "probability": 0.939
+   },
+   {
+    "start": 57.26,
+    "end": 57.48,
+    "word": " luck",
+    "probability": 0.992
+   },
+   {
+    "start": 57.48,
+    "end": 57.74,
+    "word": " with",
+    "probability": 0.993
+   },
+   {
+    "start": 57.74,
+    "end": 58.02,
+    "word": " that",
+    "probability": 0.976
+   }
+  ]
+ },
+ {
+  "start": 58.02,
+  "end": 58.42,
+  "text": "son",
+  "words": [
+   {
+    "start": 58.02,
+    "end": 58.42,
+    "word": " son",
+    "probability": 0.821
+   }
+  ]
+ },
+ {
+  "start": 58.42,
+  "end": 65.34,
+  "text": "It's a trust in a trust in a trust in a fund I own the Glen and the parish clock",
+  "words": [
+   {
+    "start": 58.42,
+    "end": 58.88,
+    "word": " It's",
+    "probability": 0.781
+   },
+   {
+    "start": 58.88,
+    "end": 59.06,
+    "word": " a",
+    "probability": 0.966
+   },
+   {
+    "start": 59.06,
+    "end": 59.4,
+    "word": " trust",
+    "probability": 0.981
+   },
+   {
+    "start": 59.4,
+    "end": 59.7,
+    "word": " in",
+    "probability": 0.883
+   },
+   {
+    "start": 59.7,
+    "end": 59.86,
+    "word": " a",
+    "probability": 0.963
+   },
+   {
+    "start": 59.86,
+    "end": 60.14,
+    "word": " trust",
+    "probability": 0.978
+   },
+   {
+    "start": 60.14,
+    "end": 60.54,
+    "word": " in",
+    "probability": 0.978
+   },
+   {
+    "start": 60.54,
+    "end": 60.74,
+    "word": " a",
+    "probability": 0.987
+   },
+   {
+    "start": 60.74,
+    "end": 61.02,
+    "word": " trust",
+    "probability": 0.997
+   },
+   {
+    "start": 61.02,
+    "end": 61.42,
+    "word": " in",
+    "probability": 0.996
+   },
+   {
+    "start": 61.42,
+    "end": 61.6,
+    "word": " a",
+    "probability": 0.967
+   },
+   {
+    "start": 61.6,
+    "end": 61.94,
+    "word": " fund",
+    "probability": 0.606
+   },
+   {
+    "start": 61.94,
+    "end": 62.48,
+    "word": " I",
+    "probability": 0.928
+   },
+   {
+    "start": 62.48,
+    "end": 62.88,
+    "word": " own",
+    "probability": 0.763
+   },
+   {
+    "start": 62.88,
+    "end": 63.2,
+    "word": " the",
+    "probability": 0.942
+   },
+   {
+    "start": 63.2,
+    "end": 63.64,
+    "word": " Glen",
+    "probability": 0.631
+   },
+   {
+    "start": 63.64,
+    "end": 63.92,
+    "word": " and",
+    "probability": 0.315
+   },
+   {
+    "start": 63.92,
+    "end": 64.22,
+    "word": " the",
+    "probability": 0.945
+   },
+   {
+    "start": 64.22,
+    "end": 64.9,
+    "word": " parish",
+    "probability": 0.203
+   },
+   {
+    "start": 64.9,
+    "end": 65.34,
+    "word": " clock",
+    "probability": 0.982
+   }
+  ]
+ },
+ {
+  "start": 65.34,
+  "end": 68.82,
+  "text": "You pay for parking at your granny's still",
+  "words": [
+   {
+    "start": 65.34,
+    "end": 65.8,
+    "word": " You",
+    "probability": 0.873
+   },
+   {
+    "start": 65.8,
+    "end": 66.18,
+    "word": " pay",
+    "probability": 0.986
+   },
+   {
+    "start": 66.18,
+    "end": 66.64,
+    "word": " for",
+    "probability": 0.995
+   },
+   {
+    "start": 66.64,
+    "end": 67.04,
+    "word": " parking",
+    "probability": 0.573
+   },
+   {
+    "start": 67.04,
+    "end": 67.4,
+    "word": " at",
+    "probability": 0.981
+   },
+   {
+    "start": 67.4,
+    "end": 67.62,
+    "word": " your",
+    "probability": 0.994
+   },
+   {
+    "start": 67.62,
+    "end": 68.56,
+    "word": " granny's",
+    "probability": 0.868
+   },
+   {
+    "start": 68.56,
+    "end": 68.82,
+    "word": " still",
+    "probability": 0.596
+   }
+  ]
+ },
+ {
+  "start": 68.82,
+  "end": 72.2,
+  "text": "You pay for parking at your granny's still",
+  "words": [
+   {
+    "start": 68.82,
+    "end": 69.22,
+    "word": " You",
+    "probability": 0.746
+   },
+   {
+    "start": 69.22,
+    "end": 69.58,
+    "word": " pay",
+    "probability": 0.988
+   },
+   {
+    "start": 69.58,
+    "end": 70.02,
+    "word": " for",
+    "probability": 0.998
+   },
+   {
+    "start": 70.02,
+    "end": 70.5,
+    "word": " parking",
+    "probability": 0.993
+   },
+   {
+    "start": 70.5,
+    "end": 70.8,
+    "word": " at",
+    "probability": 0.994
+   },
+   {
+    "start": 70.8,
+    "end": 71.0,
+    "word": " your",
+    "probability": 0.997
+   },
+   {
+    "start": 71.0,
+    "end": 71.96,
+    "word": " granny's",
+    "probability": 0.974
+   },
+   {
+    "start": 71.96,
+    "end": 72.2,
+    "word": " still",
+    "probability": 0.983
+   }
+  ]
+ },
+ {
+  "start": 72.2,
+  "end": 75.8,
+  "text": "So you back the drown from your granddad still",
+  "words": [
+   {
+    "start": 72.2,
+    "end": 72.48,
+    "word": " So",
+    "probability": 0.662
+   },
+   {
+    "start": 72.48,
+    "end": 72.7,
+    "word": " you",
+    "probability": 0.963
+   },
+   {
+    "start": 72.7,
+    "end": 73.0,
+    "word": " back",
+    "probability": 0.661
+   },
+   {
+    "start": 73.0,
+    "end": 73.46,
+    "word": " the",
+    "probability": 0.963
+   },
+   {
+    "start": 73.46,
+    "end": 73.9,
+    "word": " drown",
+    "probability": 0.381
+   },
+   {
+    "start": 73.9,
+    "end": 74.22,
+    "word": " from",
+    "probability": 0.946
+   },
+   {
+    "start": 74.22,
+    "end": 74.5,
+    "word": " your",
+    "probability": 0.993
+   },
+   {
+    "start": 74.5,
+    "end": 75.14,
+    "word": " granddad",
+    "probability": 0.918
+   },
+   {
+    "start": 75.14,
+    "end": 75.8,
+    "word": " still",
+    "probability": 0.652
+   }
+  ]
+ },
+ {
+  "start": 75.8,
+  "end": 80.56,
+  "text": "Blah, blah",
+  "words": [
+   {
+    "start": 75.8,
+    "end": 76.52,
+    "word": " Blah,",
+    "probability": 0.645
+   },
+   {
+    "start": 80.56,
+    "end": 80.56,
+    "word": " blah",
+    "probability": 0.912
+   }
+  ]
+ },
+ {
+  "start": 80.56,
+  "end": 83.76,
+  "text": "Life's thick as porridge, I call that good stock",
+  "words": [
+   {
+    "start": 80.56,
+    "end": 81.28,
+    "word": " Life's",
+    "probability": 0.576
+   },
+   {
+    "start": 81.28,
+    "end": 81.38,
+    "word": " thick",
+    "probability": 0.984
+   },
+   {
+    "start": 81.38,
+    "end": 81.6,
+    "word": " as",
+    "probability": 0.927
+   },
+   {
+    "start": 81.6,
+    "end": 82.12,
+    "word": " porridge,",
+    "probability": 0.999
+   },
+   {
+    "start": 82.34,
+    "end": 82.52,
+    "word": " I",
+    "probability": 0.966
+   },
+   {
+    "start": 82.52,
+    "end": 82.68,
+    "word": " call",
+    "probability": 0.965
+   },
+   {
+    "start": 82.68,
+    "end": 82.88,
+    "word": " that",
+    "probability": 0.96
+   },
+   {
+    "start": 82.88,
+    "end": 83.14,
+    "word": " good",
+    "probability": 0.952
+   },
+   {
+    "start": 83.14,
+    "end": 83.76,
+    "word": " stock",
+    "probability": 0.979
+   }
+  ]
+ },
+ {
+  "start": 83.76,
+  "end": 87.18,
+  "text": "Bought the old distillery, sacked the whole crew",
+  "words": [
+   {
+    "start": 83.76,
+    "end": 84.38,
+    "word": " Bought",
+    "probability": 0.18
+   },
+   {
+    "start": 84.38,
+    "end": 84.68,
+    "word": " the",
+    "probability": 0.836
+   },
+   {
+    "start": 84.68,
+    "end": 84.88,
+    "word": " old",
+    "probability": 0.759
+   },
+   {
+    "start": 84.88,
+    "end": 85.68,
+    "word": " distillery,",
+    "probability": 0.996
+   },
+   {
+    "start": 85.68,
+    "end": 86.48,
+    "word": " sacked",
+    "probability": 0.757
+   },
+   {
+    "start": 86.48,
+    "end": 86.76,
+    "word": " the",
+    "probability": 0.963
+   },
+   {
+    "start": 86.76,
+    "end": 86.92,
+    "word": " whole",
+    "probability": 0.998
+   },
+   {
+    "start": 86.92,
+    "end": 87.18,
+    "word": " crew",
+    "probability": 0.999
+   }
+  ]
+ },
+ {
+  "start": 87.18,
+  "end": 90.5,
+  "text": "Now it's three grand a bottle, made by a robot and two",
+  "words": [
+   {
+    "start": 87.18,
+    "end": 87.38,
+    "word": " Now",
+    "probability": 0.209
+   },
+   {
+    "start": 87.38,
+    "end": 87.64,
+    "word": " it's",
+    "probability": 0.869
+   },
+   {
+    "start": 87.64,
+    "end": 87.9,
+    "word": " three",
+    "probability": 0.712
+   },
+   {
+    "start": 87.9,
+    "end": 88.24,
+    "word": " grand",
+    "probability": 0.987
+   },
+   {
+    "start": 88.24,
+    "end": 88.5,
+    "word": " a",
+    "probability": 0.832
+   },
+   {
+    "start": 88.5,
+    "end": 88.76,
+    "word": " bottle,",
+    "probability": 0.999
+   },
+   {
+    "start": 88.76,
+    "end": 89.1,
+    "word": " made",
+    "probability": 0.855
+   },
+   {
+    "start": 89.1,
+    "end": 89.34,
+    "word": " by",
+    "probability": 0.991
+   },
+   {
+    "start": 89.34,
+    "end": 89.52,
+    "word": " a",
+    "probability": 0.781
+   },
+   {
+    "start": 89.52,
+    "end": 89.94,
+    "word": " robot",
+    "probability": 0.994
+   },
+   {
+    "start": 89.94,
+    "end": 90.22,
+    "word": " and",
+    "probability": 0.495
+   },
+   {
+    "start": 90.22,
+    "end": 90.5,
+    "word": " two",
+    "probability": 0.975
+   }
+  ]
+ },
+ {
+  "start": 90.5,
+  "end": 93.14,
+  "text": "Wind farm on the bridge, and here's the best bit",
+  "words": [
+   {
+    "start": 90.5,
+    "end": 91.24,
+    "word": " Wind",
+    "probability": 0.851
+   },
+   {
+    "start": 91.24,
+    "end": 91.44,
+    "word": " farm",
+    "probability": 0.912
+   },
+   {
+    "start": 91.44,
+    "end": 91.72,
+    "word": " on",
+    "probability": 0.994
+   },
+   {
+    "start": 91.72,
+    "end": 91.86,
+    "word": " the",
+    "probability": 0.991
+   },
+   {
+    "start": 91.86,
+    "end": 92.12,
+    "word": " bridge,",
+    "probability": 0.986
+   },
+   {
+    "start": 92.3,
+    "end": 92.32,
+    "word": " and",
+    "probability": 0.839
+   },
+   {
+    "start": 92.32,
+    "end": 92.56,
+    "word": " here's",
+    "probability": 0.984
+   },
+   {
+    "start": 92.56,
+    "end": 92.72,
+    "word": " the",
+    "probability": 0.988
+   },
+   {
+    "start": 92.72,
+    "end": 92.94,
+    "word": " best",
+    "probability": 0.955
+   },
+   {
+    "start": 92.94,
+    "end": 93.14,
+    "word": " bit",
+    "probability": 0.526
+   }
+  ]
+ },
+ {
+  "start": 93.14,
+  "end": 95.4,
+  "text": "See, when it blows too far, the grid pays me",
+  "words": [
+   {
+    "start": 93.14,
+    "end": 93.34,
+    "word": " See,",
+    "probability": 0.457
+   },
+   {
+    "start": 93.48,
+    "end": 93.52,
+    "word": " when",
+    "probability": 0.992
+   },
+   {
+    "start": 93.52,
+    "end": 93.64,
+    "word": " it",
+    "probability": 0.99
+   },
+   {
+    "start": 93.64,
+    "end": 93.8,
+    "word": " blows",
+    "probability": 0.993
+   },
+   {
+    "start": 93.8,
+    "end": 94.02,
+    "word": " too",
+    "probability": 0.956
+   },
+   {
+    "start": 94.02,
+    "end": 94.26,
+    "word": " far,",
+    "probability": 0.935
+   },
+   {
+    "start": 94.38,
+    "end": 94.5,
+    "word": " the",
+    "probability": 0.931
+   },
+   {
+    "start": 94.5,
+    "end": 94.64,
+    "word": " grid",
+    "probability": 0.872
+   },
+   {
+    "start": 94.64,
+    "end": 94.86,
+    "word": " pays",
+    "probability": 0.608
+   },
+   {
+    "start": 94.86,
+    "end": 95.4,
+    "word": " me",
+    "probability": 0.997
+   }
+  ]
+ },
+ {
+  "start": 96.06,
+  "end": 98.2,
+  "text": "Flew to Monaco on the credit",
+  "words": [
+   {
+    "start": 96.06,
+    "end": 96.34,
+    "word": " Flew",
+    "probability": 0.757
+   },
+   {
+    "start": 96.34,
+    "end": 96.64,
+    "word": " to",
+    "probability": 0.99
+   },
+   {
+    "start": 96.64,
+    "end": 97.14,
+    "word": " Monaco",
+    "probability": 0.997
+   },
+   {
+    "start": 97.14,
+    "end": 97.68,
+    "word": " on",
+    "probability": 0.645
+   },
+   {
+    "start": 97.68,
+    "end": 97.84,
+    "word": " the",
+    "probability": 0.986
+   },
+   {
+    "start": 97.84,
+    "end": 98.2,
+    "word": " credit",
+    "probability": 0.938
+   }
+  ]
+ },
+ {
+  "start": 98.2,
+  "end": 101.46,
+  "text": "In the tillage, holiday lads, locals in the caravan",
+  "words": [
+   {
+    "start": 98.2,
+    "end": 98.56,
+    "word": " In",
+    "probability": 0.446
+   },
+   {
+    "start": 98.56,
+    "end": 98.78,
+    "word": " the",
+    "probability": 0.969
+   },
+   {
+    "start": 98.78,
+    "end": 99.16,
+    "word": " tillage,",
+    "probability": 0.87
+   },
+   {
+    "start": 99.24,
+    "end": 99.54,
+    "word": " holiday",
+    "probability": 0.939
+   },
+   {
+    "start": 99.54,
+    "end": 99.96,
+    "word": " lads,",
+    "probability": 0.457
+   },
+   {
+    "start": 100.1,
+    "end": 100.38,
+    "word": " locals",
+    "probability": 0.972
+   },
+   {
+    "start": 100.38,
+    "end": 100.72,
+    "word": " in",
+    "probability": 0.985
+   },
+   {
+    "start": 100.72,
+    "end": 100.98,
+    "word": " the",
+    "probability": 0.979
+   },
+   {
+    "start": 100.98,
+    "end": 101.46,
+    "word": " caravan",
+    "probability": 0.998
+   }
+  ]
+ },
+ {
+  "start": 101.98,
+  "end": 103.78,
+  "text": "That's as good as it gets",
+  "words": [
+   {
+    "start": 101.98,
+    "end": 102.48,
+    "word": " That's",
+    "probability": 0.954
+   },
+   {
+    "start": 102.48,
+    "end": 102.7,
+    "word": " as",
+    "probability": 0.891
+   },
+   {
+    "start": 102.7,
+    "end": 102.82,
+    "word": " good",
+    "probability": 0.998
+   },
+   {
+    "start": 102.82,
+    "end": 103.04,
+    "word": " as",
+    "probability": 0.997
+   },
+   {
+    "start": 103.04,
+    "end": 103.28,
+    "word": " it",
+    "probability": 0.998
+   },
+   {
+    "start": 103.28,
+    "end": 103.78,
+    "word": " gets",
+    "probability": 0.996
+   }
+  ]
+ },
+ {
+  "start": 106.58,
+  "end": 110.4,
+  "text": "5 stars on the reviews, darling",
+  "words": [
+   {
+    "start": 106.58,
+    "end": 107.42,
+    "word": " 5",
+    "probability": 0.067
+   },
+   {
+    "start": 107.42,
+    "end": 108.2,
+    "word": " stars",
+    "probability": 0.699
+   },
+   {
+    "start": 108.2,
+    "end": 108.48,
+    "word": " on",
+    "probability": 0.927
+   },
+   {
+    "start": 108.48,
+    "end": 108.7,
+    "word": " the",
+    "probability": 0.935
+   },
+   {
+    "start": 108.7,
+    "end": 109.18,
+    "word": " reviews,",
+    "probability": 0.911
+   },
+   {
+    "start": 109.76,
+    "end": 110.4,
+    "word": " darling",
+    "probability": 0.847
+   }
+  ]
+ },
+ {
+  "start": 113.78,
+  "end": 120.1,
+  "text": "Bless the Laird who owns the lodge Own the pier and the parish clock",
+  "words": [
+   {
+    "start": 113.6,
+    "end": 114.02,
+    "word": " Bless",
+    "probability": 0.387
+   },
+   {
+    "start": 114.02,
+    "end": 114.54,
+    "word": " the",
+    "probability": 0.991
+   },
+   {
+    "start": 114.54,
+    "end": 115.18,
+    "word": " Laird",
+    "probability": 0.906
+   },
+   {
+    "start": 115.18,
+    "end": 115.44,
+    "word": " who",
+    "probability": 0.878
+   },
+   {
+    "start": 115.44,
+    "end": 115.88,
+    "word": " owns",
+    "probability": 0.993
+   },
+   {
+    "start": 115.88,
+    "end": 116.26,
+    "word": " the",
+    "probability": 0.981
+   },
+   {
+    "start": 116.26,
+    "end": 116.72,
+    "word": " lodge",
+    "probability": 0.452
+   },
+   {
+    "start": 116.72,
+    "end": 117.54,
+    "word": " Own",
+    "probability": 0.786
+   },
+   {
+    "start": 117.54,
+    "end": 117.94,
+    "word": " the",
+    "probability": 0.896
+   },
+   {
+    "start": 117.94,
+    "end": 118.42,
+    "word": " pier",
+    "probability": 0.589
+   },
+   {
+    "start": 118.42,
+    "end": 118.74,
+    "word": " and",
+    "probability": 0.944
+   },
+   {
+    "start": 118.74,
+    "end": 119.04,
+    "word": " the",
+    "probability": 0.981
+   },
+   {
+    "start": 119.04,
+    "end": 119.64,
+    "word": " parish",
+    "probability": 0.902
+   },
+   {
+    "start": 119.64,
+    "end": 120.1,
+    "word": " clock",
+    "probability": 0.564
+   }
+  ]
+ },
+ {
+  "start": 120.1,
+  "end": 126.76,
+  "text": "You pay for parking at your granny's hill Sell you back the tram from your granddad's",
+  "words": [
+   {
+    "start": 120.1,
+    "end": 120.52,
+    "word": " You",
+    "probability": 0.682
+   },
+   {
+    "start": 120.52,
+    "end": 120.94,
+    "word": " pay",
+    "probability": 0.675
+   },
+   {
+    "start": 120.94,
+    "end": 121.36,
+    "word": " for",
+    "probability": 0.995
+   },
+   {
+    "start": 121.36,
+    "end": 121.84,
+    "word": " parking",
+    "probability": 0.888
+   },
+   {
+    "start": 121.84,
+    "end": 122.16,
+    "word": " at",
+    "probability": 0.989
+   },
+   {
+    "start": 122.16,
+    "end": 122.42,
+    "word": " your",
+    "probability": 0.987
+   },
+   {
+    "start": 122.42,
+    "end": 123.3,
+    "word": " granny's",
+    "probability": 0.815
+   },
+   {
+    "start": 123.3,
+    "end": 123.68,
+    "word": " hill",
+    "probability": 0.98
+   },
+   {
+    "start": 123.68,
+    "end": 124.26,
+    "word": " Sell",
+    "probability": 0.756
+   },
+   {
+    "start": 124.26,
+    "end": 124.48,
+    "word": " you",
+    "probability": 0.872
+   },
+   {
+    "start": 124.48,
+    "end": 124.68,
+    "word": " back",
+    "probability": 0.987
+   },
+   {
+    "start": 124.68,
+    "end": 124.98,
+    "word": " the",
+    "probability": 0.891
+   },
+   {
+    "start": 124.98,
+    "end": 125.24,
+    "word": " tram",
+    "probability": 0.385
+   },
+   {
+    "start": 125.24,
+    "end": 125.58,
+    "word": " from",
+    "probability": 0.989
+   },
+   {
+    "start": 125.58,
+    "end": 125.84,
+    "word": " your",
+    "probability": 0.986
+   },
+   {
+    "start": 125.84,
+    "end": 126.76,
+    "word": " granddad's",
+    "probability": 0.938
+   }
+  ]
+ },
+ {
+  "start": 126.76,
+  "end": 130.26,
+  "text": "hill Bless the Laird who owns the Glen",
+  "words": [
+   {
+    "start": 126.76,
+    "end": 127.12,
+    "word": " hill",
+    "probability": 0.98
+   },
+   {
+    "start": 127.12,
+    "end": 127.82,
+    "word": " Bless",
+    "probability": 0.968
+   },
+   {
+    "start": 127.82,
+    "end": 128.24,
+    "word": " the",
+    "probability": 0.998
+   },
+   {
+    "start": 128.24,
+    "end": 128.84,
+    "word": " Laird",
+    "probability": 0.997
+   },
+   {
+    "start": 128.84,
+    "end": 129.18,
+    "word": " who",
+    "probability": 0.986
+   },
+   {
+    "start": 129.18,
+    "end": 129.6,
+    "word": " owns",
+    "probability": 0.998
+   },
+   {
+    "start": 129.6,
+    "end": 129.86,
+    "word": " the",
+    "probability": 0.987
+   },
+   {
+    "start": 129.86,
+    "end": 130.26,
+    "word": " Glen",
+    "probability": 0.871
+   }
+  ]
+ },
+ {
+  "start": 134.04,
+  "end": 138.7,
+  "text": "Bless his hands and we pay the rent and the loot alone",
+  "words": [
+   {
+    "start": 134.04,
+    "end": 134.7,
+    "word": " Bless",
+    "probability": 0.219
+   },
+   {
+    "start": 134.7,
+    "end": 135.1,
+    "word": " his",
+    "probability": 0.93
+   },
+   {
+    "start": 135.1,
+    "end": 135.6,
+    "word": " hands",
+    "probability": 0.971
+   },
+   {
+    "start": 135.6,
+    "end": 135.86,
+    "word": " and",
+    "probability": 0.743
+   },
+   {
+    "start": 135.86,
+    "end": 136.04,
+    "word": " we",
+    "probability": 0.992
+   },
+   {
+    "start": 136.04,
+    "end": 136.38,
+    "word": " pay",
+    "probability": 0.838
+   },
+   {
+    "start": 136.38,
+    "end": 136.66,
+    "word": " the",
+    "probability": 0.988
+   },
+   {
+    "start": 136.66,
+    "end": 137.3,
+    "word": " rent",
+    "probability": 0.996
+   },
+   {
+    "start": 137.3,
+    "end": 137.58,
+    "word": " and",
+    "probability": 0.829
+   },
+   {
+    "start": 137.58,
+    "end": 137.82,
+    "word": " the",
+    "probability": 0.956
+   },
+   {
+    "start": 137.82,
+    "end": 138.04,
+    "word": " loot",
+    "probability": 0.759
+   },
+   {
+    "start": 138.04,
+    "end": 138.7,
+    "word": " alone",
+    "probability": 0.804
+   }
+  ]
+ },
+ {
+  "start": 140.78,
+  "end": 144.04,
+  "text": "Now you wanna buy out a weak community fund",
+  "words": [
+   {
+    "start": 140.57,
+    "end": 140.9,
+    "word": " Now",
+    "probability": 0.163
+   },
+   {
+    "start": 140.9,
+    "end": 141.16,
+    "word": " you",
+    "probability": 0.975
+   },
+   {
+    "start": 141.16,
+    "end": 141.48,
+    "word": " wanna",
+    "probability": 0.547
+   },
+   {
+    "start": 141.48,
+    "end": 141.86,
+    "word": " buy",
+    "probability": 0.986
+   },
+   {
+    "start": 141.86,
+    "end": 142.26,
+    "word": " out",
+    "probability": 0.937
+   },
+   {
+    "start": 142.26,
+    "end": 142.54,
+    "word": " a",
+    "probability": 0.815
+   },
+   {
+    "start": 142.54,
+    "end": 142.74,
+    "word": " weak",
+    "probability": 0.605
+   },
+   {
+    "start": 142.74,
+    "end": 143.38,
+    "word": " community",
+    "probability": 0.941
+   },
+   {
+    "start": 143.38,
+    "end": 144.04,
+    "word": " fund",
+    "probability": 0.906
+   }
+  ]
+ },
+ {
+  "start": 144.04,
+  "end": 147.36,
+  "text": "Adorable bring twelve million by the end of the month",
+  "words": [
+   {
+    "start": 144.04,
+    "end": 144.92,
+    "word": " Adorable",
+    "probability": 0.516
+   },
+   {
+    "start": 144.92,
+    "end": 145.24,
+    "word": " bring",
+    "probability": 0.232
+   },
+   {
+    "start": 145.24,
+    "end": 145.48,
+    "word": " twelve",
+    "probability": 0.598
+   },
+   {
+    "start": 145.48,
+    "end": 145.76,
+    "word": " million",
+    "probability": 0.991
+   },
+   {
+    "start": 145.76,
+    "end": 146.12,
+    "word": " by",
+    "probability": 0.983
+   },
+   {
+    "start": 146.12,
+    "end": 146.4,
+    "word": " the",
+    "probability": 0.996
+   },
+   {
+    "start": 146.4,
+    "end": 146.56,
+    "word": " end",
+    "probability": 0.999
+   },
+   {
+    "start": 146.56,
+    "end": 146.76,
+    "word": " of",
+    "probability": 0.996
+   },
+   {
+    "start": 146.76,
+    "end": 146.9,
+    "word": " the",
+    "probability": 0.993
+   },
+   {
+    "start": 146.9,
+    "end": 147.36,
+    "word": " month",
+    "probability": 0.998
+   }
+  ]
+ },
+ {
+  "start": 147.36,
+  "end": 151.0,
+  "text": "Sold the fishing rights to a firm down south",
+  "words": [
+   {
+    "start": 147.36,
+    "end": 147.82,
+    "word": " Sold",
+    "probability": 0.952
+   },
+   {
+    "start": 147.82,
+    "end": 148.1,
+    "word": " the",
+    "probability": 0.457
+   },
+   {
+    "start": 148.1,
+    "end": 148.34,
+    "word": " fishing",
+    "probability": 0.845
+   },
+   {
+    "start": 148.34,
+    "end": 148.9,
+    "word": " rights",
+    "probability": 0.786
+   },
+   {
+    "start": 148.9,
+    "end": 149.54,
+    "word": " to",
+    "probability": 0.896
+   },
+   {
+    "start": 149.54,
+    "end": 149.72,
+    "word": " a",
+    "probability": 0.996
+   },
+   {
+    "start": 149.72,
+    "end": 150.12,
+    "word": " firm",
+    "probability": 0.608
+   },
+   {
+    "start": 150.12,
+    "end": 150.44,
+    "word": " down",
+    "probability": 0.978
+   },
+   {
+    "start": 150.44,
+    "end": 151.0,
+    "word": " south",
+    "probability": 0.878
+   }
+  ]
+ },
+ {
+  "start": 151.0,
+  "end": 154.28,
+  "text": "Most tied up when there's a hook in your mouth",
+  "words": [
+   {
+    "start": 151.0,
+    "end": 151.7,
+    "word": " Most",
+    "probability": 0.672
+   },
+   {
+    "start": 151.7,
+    "end": 151.94,
+    "word": " tied",
+    "probability": 0.624
+   },
+   {
+    "start": 151.94,
+    "end": 152.3,
+    "word": " up",
+    "probability": 0.96
+   },
+   {
+    "start": 152.3,
+    "end": 152.78,
+    "word": " when",
+    "probability": 0.482
+   },
+   {
+    "start": 152.78,
+    "end": 153.02,
+    "word": " there's",
+    "probability": 0.986
+   },
+   {
+    "start": 153.02,
+    "end": 153.18,
+    "word": " a",
+    "probability": 0.998
+   },
+   {
+    "start": 153.18,
+    "end": 153.36,
+    "word": " hook",
+    "probability": 0.998
+   },
+   {
+    "start": 153.36,
+    "end": 153.62,
+    "word": " in",
+    "probability": 0.996
+   },
+   {
+    "start": 153.62,
+    "end": 153.88,
+    "word": " your",
+    "probability": 0.973
+   },
+   {
+    "start": 153.88,
+    "end": 154.28,
+    "word": " mouth",
+    "probability": 0.996
+   }
+  ]
+ },
+ {
+  "start": 154.28,
+  "end": 157.64,
+  "text": "School shut down when the road got bent",
+  "words": [
+   {
+    "start": 154.28,
+    "end": 155.06,
+    "word": " School",
+    "probability": 0.832
+   },
+   {
+    "start": 155.06,
+    "end": 155.42,
+    "word": " shut",
+    "probability": 0.919
+   },
+   {
+    "start": 155.42,
+    "end": 156.14,
+    "word": " down",
+    "probability": 0.997
+   },
+   {
+    "start": 156.14,
+    "end": 156.44,
+    "word": " when",
+    "probability": 0.919
+   },
+   {
+    "start": 156.44,
+    "end": 156.68,
+    "word": " the",
+    "probability": 0.988
+   },
+   {
+    "start": 156.68,
+    "end": 156.8,
+    "word": " road",
+    "probability": 0.192
+   },
+   {
+    "start": 156.8,
+    "end": 157.12,
+    "word": " got",
+    "probability": 0.951
+   },
+   {
+    "start": 157.12,
+    "end": 157.64,
+    "word": " bent",
+    "probability": 0.967
+   }
+  ]
+ },
+ {
+  "start": 157.64,
+  "end": 161.1,
+  "text": "So I turned it into a boutique and",
+  "words": [
+   {
+    "start": 157.64,
+    "end": 158.1,
+    "word": " So",
+    "probability": 0.928
+   },
+   {
+    "start": 158.1,
+    "end": 158.32,
+    "word": " I",
+    "probability": 0.948
+   },
+   {
+    "start": 158.32,
+    "end": 158.72,
+    "word": " turned",
+    "probability": 0.916
+   },
+   {
+    "start": 158.72,
+    "end": 158.98,
+    "word": " it",
+    "probability": 0.817
+   },
+   {
+    "start": 158.98,
+    "end": 159.58,
+    "word": " into",
+    "probability": 0.886
+   },
+   {
+    "start": 159.58,
+    "end": 160.12,
+    "word": " a",
+    "probability": 0.921
+   },
+   {
+    "start": 160.12,
+    "end": 160.46,
+    "word": " boutique",
+    "probability": 0.995
+   },
+   {
+    "start": 160.46,
+    "end": 161.1,
+    "word": " and",
+    "probability": 0.416
+   }
+  ]
+ },
+ {
+  "start": 161.1,
+  "end": 163.0,
+  "text": "Now your food will shut down",
+  "words": [
+   {
+    "start": 161.1,
+    "end": 161.54,
+    "word": " Now",
+    "probability": 0.35
+   },
+   {
+    "start": 161.54,
+    "end": 161.76,
+    "word": " your",
+    "probability": 0.784
+   },
+   {
+    "start": 161.76,
+    "end": 161.96,
+    "word": " food",
+    "probability": 0.091
+   },
+   {
+    "start": 161.96,
+    "end": 162.16,
+    "word": " will",
+    "probability": 0.947
+   },
+   {
+    "start": 162.16,
+    "end": 162.44,
+    "word": " shut",
+    "probability": 0.968
+   },
+   {
+    "start": 162.44,
+    "end": 163.0,
+    "word": " down",
+    "probability": 0.955
+   }
+  ]
+ },
+ {
+  "start": 163.0,
+  "end": 165.2,
+  "text": "I woke up then",
+  "words": [
+   {
+    "start": 163.0,
+    "end": 163.72,
+    "word": " I",
+    "probability": 0.162
+   },
+   {
+    "start": 163.72,
+    "end": 163.9,
+    "word": " woke",
+    "probability": 0.526
+   },
+   {
+    "start": 163.9,
+    "end": 164.18,
+    "word": " up",
+    "probability": 0.724
+   },
+   {
+    "start": 164.18,
+    "end": 165.2,
+    "word": " then",
+    "probability": 0.27
+   }
+  ]
+ },
+ {
+  "start": 165.2,
+  "end": 167.9,
+  "text": "In control, boutique and",
+  "words": [
+   {
+    "start": 165.2,
+    "end": 165.82,
+    "word": " In",
+    "probability": 0.443
+   },
+   {
+    "start": 165.82,
+    "end": 166.26,
+    "word": " control,",
+    "probability": 0.19
+   },
+   {
+    "start": 166.96,
+    "end": 167.36,
+    "word": " boutique",
+    "probability": 0.883
+   },
+   {
+    "start": 167.36,
+    "end": 167.9,
+    "word": " and",
+    "probability": 0.764
+   }
+  ]
+ },
+ {
+  "start": 167.9,
+  "end": 169.78,
+  "text": "Now your veins get the bust",
+  "words": [
+   {
+    "start": 167.9,
+    "end": 168.4,
+    "word": " Now",
+    "probability": 0.698
+   },
+   {
+    "start": 168.4,
+    "end": 168.68,
+    "word": " your",
+    "probability": 0.964
+   },
+   {
+    "start": 168.68,
+    "end": 169.0,
+    "word": " veins",
+    "probability": 0.129
+   },
+   {
+    "start": 169.0,
+    "end": 169.24,
+    "word": " get",
+    "probability": 0.913
+   },
+   {
+    "start": 169.24,
+    "end": 169.46,
+    "word": " the",
+    "probability": 0.85
+   },
+   {
+    "start": 169.46,
+    "end": 169.78,
+    "word": " bust",
+    "probability": 0.58
+   }
+  ]
+ },
+ {
+  "start": 169.78,
+  "end": 173.32,
+  "text": "And now we're each late, flight of bust is mine too",
+  "words": [
+   {
+    "start": 169.78,
+    "end": 170.34,
+    "word": " And",
+    "probability": 0.687
+   },
+   {
+    "start": 170.34,
+    "end": 170.6,
+    "word": " now",
+    "probability": 0.705
+   },
+   {
+    "start": 170.6,
+    "end": 170.78,
+    "word": " we're",
+    "probability": 0.546
+   },
+   {
+    "start": 170.78,
+    "end": 171.0,
+    "word": " each",
+    "probability": 0.426
+   },
+   {
+    "start": 171.0,
+    "end": 171.36,
+    "word": " late,",
+    "probability": 0.135
+   },
+   {
+    "start": 171.62,
+    "end": 171.84,
+    "word": " flight",
+    "probability": 0.754
+   },
+   {
+    "start": 171.84,
+    "end": 172.06,
+    "word": " of",
+    "probability": 0.826
+   },
+   {
+    "start": 172.06,
+    "end": 172.26,
+    "word": " bust",
+    "probability": 0.655
+   },
+   {
+    "start": 172.26,
+    "end": 172.56,
+    "word": " is",
+    "probability": 0.665
+   },
+   {
+    "start": 172.56,
+    "end": 172.74,
+    "word": " mine",
+    "probability": 0.979
+   },
+   {
+    "start": 172.74,
+    "end": 173.32,
+    "word": " too",
+    "probability": 0.942
+   }
+  ]
+ },
+ {
+  "start": 173.32,
+  "end": 174.5,
+  "text": "So you pay",
+  "words": [
+   {
+    "start": 173.32,
+    "end": 173.92,
+    "word": " So",
+    "probability": 0.808
+   },
+   {
+    "start": 173.92,
+    "end": 174.12,
+    "word": " you",
+    "probability": 0.972
+   },
+   {
+    "start": 174.12,
+    "end": 174.5,
+    "word": " pay",
+    "probability": 0.612
+   }
+  ]
+ },
+ {
+  "start": 175.1,
+  "end": 177.92,
+  "text": "I don't need a claymore, I got a solicitor",
+  "words": [
+   {
+    "start": 174.92,
+    "end": 175.26,
+    "word": " I",
+    "probability": 0.571
+   },
+   {
+    "start": 175.26,
+    "end": 175.56,
+    "word": " don't",
+    "probability": 0.993
+   },
+   {
+    "start": 175.56,
+    "end": 175.74,
+    "word": " need",
+    "probability": 0.998
+   },
+   {
+    "start": 175.74,
+    "end": 176.08,
+    "word": " a",
+    "probability": 0.439
+   },
+   {
+    "start": 176.08,
+    "end": 176.48,
+    "word": " claymore,",
+    "probability": 0.82
+   },
+   {
+    "start": 176.66,
+    "end": 176.8,
+    "word": " I",
+    "probability": 0.96
+   },
+   {
+    "start": 176.8,
+    "end": 177.02,
+    "word": " got",
+    "probability": 0.331
+   },
+   {
+    "start": 177.02,
+    "end": 177.26,
+    "word": " a",
+    "probability": 0.576
+   },
+   {
+    "start": 177.26,
+    "end": 177.92,
+    "word": " solicitor",
+    "probability": 0.944
+   }
+  ]
+ },
+ {
+  "start": 177.92,
+  "end": 181.44,
+  "text": "Find Prince O'Shaab, they'll bleed you, mister",
+  "words": [
+   {
+    "start": 177.92,
+    "end": 178.82,
+    "word": " Find",
+    "probability": 0.532
+   },
+   {
+    "start": 178.82,
+    "end": 179.18,
+    "word": " Prince",
+    "probability": 0.843
+   },
+   {
+    "start": 179.18,
+    "end": 179.4,
+    "word": " O",
+    "probability": 0.44
+   },
+   {
+    "start": 179.4,
+    "end": 179.82,
+    "word": "'Shaab,",
+    "probability": 0.585
+   },
+   {
+    "start": 179.92,
+    "end": 180.12,
+    "word": " they'll",
+    "probability": 0.724
+   },
+   {
+    "start": 180.12,
+    "end": 180.52,
+    "word": " bleed",
+    "probability": 0.987
+   },
+   {
+    "start": 180.52,
+    "end": 180.94,
+    "word": " you,",
+    "probability": 0.996
+   },
+   {
+    "start": 181.32,
+    "end": 181.44,
+    "word": " mister",
+    "probability": 0.887
+   }
+  ]
+ },
+ {
+  "start": 181.44,
+  "end": 184.9,
+  "text": "I own the Glen, own the lock",
+  "words": [
+   {
+    "start": 181.44,
+    "end": 181.96,
+    "word": " I",
+    "probability": 0.588
+   },
+   {
+    "start": 181.96,
+    "end": 182.36,
+    "word": " own",
+    "probability": 0.713
+   },
+   {
+    "start": 182.36,
+    "end": 182.74,
+    "word": " the",
+    "probability": 0.969
+   },
+   {
+    "start": 182.74,
+    "end": 183.14,
+    "word": " Glen,",
+    "probability": 0.925
+   },
+   {
+    "start": 183.72,
+    "end": 184.06,
+    "word": " own",
+    "probability": 0.975
+   },
+   {
+    "start": 184.06,
+    "end": 184.56,
+    "word": " the",
+    "probability": 0.996
+   },
+   {
+    "start": 184.56,
+    "end": 184.9,
+    "word": " lock",
+    "probability": 0.203
+   }
+  ]
+ },
+ {
+  "start": 184.9,
+  "end": 188.24,
+  "text": "Own the pier and the parish clock",
+  "words": [
+   {
+    "start": 184.9,
+    "end": 185.68,
+    "word": " Own",
+    "probability": 0.333
+   },
+   {
+    "start": 185.68,
+    "end": 186.22,
+    "word": " the",
+    "probability": 0.991
+   },
+   {
+    "start": 186.22,
+    "end": 186.56,
+    "word": " pier",
+    "probability": 0.537
+   },
+   {
+    "start": 186.56,
+    "end": 186.88,
+    "word": " and",
+    "probability": 0.824
+   },
+   {
+    "start": 186.88,
+    "end": 187.18,
+    "word": " the",
+    "probability": 0.987
+   },
+   {
+    "start": 187.18,
+    "end": 187.82,
+    "word": " parish",
+    "probability": 0.824
+   },
+   {
+    "start": 187.82,
+    "end": 188.24,
+    "word": " clock",
+    "probability": 0.542
+   }
+  ]
+ },
+ {
+  "start": 188.24,
+  "end": 191.74,
+  "text": "You paid for parking at your granny's still",
+  "words": [
+   {
+    "start": 188.24,
+    "end": 188.72,
+    "word": " You",
+    "probability": 0.679
+   },
+   {
+    "start": 188.72,
+    "end": 189.1,
+    "word": " paid",
+    "probability": 0.634
+   },
+   {
+    "start": 189.1,
+    "end": 189.5,
+    "word": " for",
+    "probability": 0.998
+   },
+   {
+    "start": 189.5,
+    "end": 189.98,
+    "word": " parking",
+    "probability": 0.716
+   },
+   {
+    "start": 189.98,
+    "end": 190.3,
+    "word": " at",
+    "probability": 0.989
+   },
+   {
+    "start": 190.3,
+    "end": 190.54,
+    "word": " your",
+    "probability": 0.993
+   },
+   {
+    "start": 190.54,
+    "end": 191.4,
+    "word": " granny's",
+    "probability": 0.802
+   },
+   {
+    "start": 191.4,
+    "end": 191.74,
+    "word": " still",
+    "probability": 0.482
+   }
+  ]
+ },
+ {
+  "start": 191.74,
+  "end": 195.04,
+  "text": "Sell you back the tram from your granddad still",
+  "words": [
+   {
+    "start": 191.74,
+    "end": 192.36,
+    "word": " Sell",
+    "probability": 0.406
+   },
+   {
+    "start": 192.36,
+    "end": 192.58,
+    "word": " you",
+    "probability": 0.888
+   },
+   {
+    "start": 192.58,
+    "end": 192.82,
+    "word": " back",
+    "probability": 0.998
+   },
+   {
+    "start": 192.82,
+    "end": 193.04,
+    "word": " the",
+    "probability": 0.968
+   },
+   {
+    "start": 193.04,
+    "end": 193.4,
+    "word": " tram",
+    "probability": 0.796
+   },
+   {
+    "start": 193.4,
+    "end": 193.68,
+    "word": " from",
+    "probability": 0.98
+   },
+   {
+    "start": 193.68,
+    "end": 193.98,
+    "word": " your",
+    "probability": 0.994
+   },
+   {
+    "start": 193.98,
+    "end": 194.64,
+    "word": " granddad",
+    "probability": 0.911
+   },
+   {
+    "start": 194.64,
+    "end": 195.04,
+    "word": " still",
+    "probability": 0.62
+   }
+  ]
+ },
+ {
+  "start": 195.04,
+  "end": 198.74,
+  "text": "You paid for parking at your granny's hill",
+  "words": [
+   {
+    "start": 195.04,
+    "end": 195.56,
+    "word": " You",
+    "probability": 0.36
+   },
+   {
+    "start": 195.56,
+    "end": 195.94,
+    "word": " paid",
+    "probability": 0.919
+   },
+   {
+    "start": 195.94,
+    "end": 196.34,
+    "word": " for",
+    "probability": 0.999
+   },
+   {
+    "start": 196.34,
+    "end": 196.82,
+    "word": " parking",
+    "probability": 0.995
+   },
+   {
+    "start": 196.82,
+    "end": 197.14,
+    "word": " at",
+    "probability": 0.995
+   },
+   {
+    "start": 197.14,
+    "end": 197.34,
+    "word": " your",
+    "probability": 0.998
+   },
+   {
+    "start": 197.34,
+    "end": 198.24,
+    "word": " granny's",
+    "probability": 0.982
+   },
+   {
+    "start": 198.24,
+    "end": 198.74,
+    "word": " hill",
+    "probability": 0.56
+   }
+  ]
+ },
+ {
+  "start": 198.74,
+  "end": 202.08,
+  "text": "Sell you back the tram from your granddad still",
+  "words": [
+   {
+    "start": 198.74,
+    "end": 199.22,
+    "word": " Sell",
+    "probability": 0.963
+   },
+   {
+    "start": 199.22,
+    "end": 199.44,
+    "word": " you",
+    "probability": 0.998
+   },
+   {
+    "start": 199.44,
+    "end": 199.66,
+    "word": " back",
+    "probability": 1.0
+   },
+   {
+    "start": 199.66,
+    "end": 199.88,
+    "word": " the",
+    "probability": 0.997
+   },
+   {
+    "start": 199.88,
+    "end": 200.28,
+    "word": " tram",
+    "probability": 0.999
+   },
+   {
+    "start": 200.28,
+    "end": 200.54,
+    "word": " from",
+    "probability": 0.998
+   },
+   {
+    "start": 200.54,
+    "end": 200.72,
+    "word": " your",
+    "probability": 0.998
+   },
+   {
+    "start": 200.72,
+    "end": 201.5,
+    "word": " granddad",
+    "probability": 0.988
+   },
+   {
+    "start": 201.5,
+    "end": 202.08,
+    "word": " still",
+    "probability": 0.942
+   }
+  ]
+ },
+ {
+  "start": 202.08,
+  "end": 205.58,
+  "text": "You paid for parking at your granny's hill",
+  "words": [
+   {
+    "start": 202.08,
+    "end": 202.42,
+    "word": " You",
+    "probability": 0.964
+   },
+   {
+    "start": 202.42,
+    "end": 202.8,
+    "word": " paid",
+    "probability": 0.973
+   },
+   {
+    "start": 202.8,
+    "end": 203.22,
+    "word": " for",
+    "probability": 0.999
+   },
+   {
+    "start": 203.22,
+    "end": 203.7,
+    "word": " parking",
+    "probability": 0.997
+   },
+   {
+    "start": 203.7,
+    "end": 204.02,
+    "word": " at",
+    "probability": 0.997
+   },
+   {
+    "start": 204.02,
+    "end": 204.18,
+    "word": " your",
+    "probability": 0.998
+   },
+   {
+    "start": 204.18,
+    "end": 205.1,
+    "word": " granny's",
+    "probability": 0.99
+   },
+   {
+    "start": 205.1,
+    "end": 205.58,
+    "word": " hill",
+    "probability": 0.998
+   }
+  ]
+ },
+ {
+  "start": 205.58,
+  "end": 209.16,
+  "text": "Sell you back the tram from your granddad still",
+  "words": [
+   {
+    "start": 205.58,
+    "end": 206.1,
+    "word": " Sell",
+    "probability": 0.992
+   },
+   {
+    "start": 206.1,
+    "end": 206.32,
+    "word": " you",
+    "probability": 0.998
+   },
+   {
+    "start": 206.32,
+    "end": 206.52,
+    "word": " back",
+    "probability": 1.0
+   },
+   {
+    "start": 206.52,
+    "end": 206.72,
+    "word": " the",
+    "probability": 0.998
+   },
+   {
+    "start": 206.72,
+    "end": 207.12,
+    "word": " tram",
+    "probability": 0.999
+   },
+   {
+    "start": 207.12,
+    "end": 207.4,
+    "word": " from",
+    "probability": 0.999
+   },
+   {
+    "start": 207.4,
+    "end": 207.56,
+    "word": " your",
+    "probability": 0.999
+   },
+   {
+    "start": 207.56,
+    "end": 208.34,
+    "word": " granddad",
+    "probability": 0.994
+   },
+   {
+    "start": 208.34,
+    "end": 209.16,
+    "word": " still",
+    "probability": 0.926
+   }
+  ]
+ },
+ {
+  "start": 213.86,
+  "end": 215.6,
+  "text": "Do enjoy the scene",
+  "words": [
+   {
+    "start": 213.86,
+    "end": 214.62,
+    "word": " Do",
+    "probability": 0.619
+   },
+   {
+    "start": 214.62,
+    "end": 215.08,
+    "word": " enjoy",
+    "probability": 0.966
+   },
+   {
+    "start": 215.08,
+    "end": 215.38,
+    "word": " the",
+    "probability": 0.966
+   },
+   {
+    "start": 215.38,
+    "end": 215.6,
+    "word": " scene",
+    "probability": 0.871
+   }
+  ]
+ },
+ {
+  "start": 232.98,
+  "end": 236.46,
+  "text": "Going to Claymore, a goddess of bliss, son.",
+  "words": [
+   {
+    "start": 232.98,
+    "end": 233.58,
+    "word": " Going",
+    "probability": 0.101
+   },
+   {
+    "start": 233.58,
+    "end": 234.18,
+    "word": " to",
+    "probability": 0.976
+   },
+   {
+    "start": 234.18,
+    "end": 234.8,
+    "word": " Claymore,",
+    "probability": 0.6
+   },
+   {
+    "start": 235.1,
+    "end": 235.12,
+    "word": " a",
+    "probability": 0.894
+   },
+   {
+    "start": 235.12,
+    "end": 235.36,
+    "word": " goddess",
+    "probability": 0.876
+   },
+   {
+    "start": 235.36,
+    "end": 235.74,
+    "word": " of",
+    "probability": 0.65
+   },
+   {
+    "start": 235.74,
+    "end": 235.96,
+    "word": " bliss,",
+    "probability": 0.31
+   },
+   {
+    "start": 236.46,
+    "end": 236.46,
+    "word": " son.",
+    "probability": 0.958
+   }
+  ]
+ },
+ {
+  "start": 236.78,
+  "end": 238.32,
+  "text": "Find stars, they'll bleed you.",
+  "words": [
+   {
+    "start": 236.78,
+    "end": 237.02,
+    "word": " Find",
+    "probability": 0.97
+   },
+   {
+    "start": 237.02,
+    "end": 237.56,
+    "word": " stars,",
+    "probability": 0.973
+   },
+   {
+    "start": 237.68,
+    "end": 237.84,
+    "word": " they'll",
+    "probability": 0.94
+   },
+   {
+    "start": 237.84,
+    "end": 238.02,
+    "word": " bleed",
+    "probability": 0.983
+   },
+   {
+    "start": 238.02,
+    "end": 238.32,
+    "word": " you.",
+    "probability": 0.998
+   }
+  ]
+ }
+]
