@@ -37,5 +37,6 @@ python3 kaggle/laptop/kjob.py run JOB=render \
   SEEDS='{"lastcarriage-beattock":[2401,2402],"lastcarriage-over-the-border":[2501,2502],"lastcarriage-rannoch":[2801,2802]}'
 ```
 
-Optional: the friend's mix as an ACE-Step sound reference (via the `claude/reference-inputs` branch), only once
-Reuben confirms the friend is happy for it to be used. Until then it is only the inspiration, not an input.
+Sound reference (friend's permission confirmed Nov 14; the album was the friend's idea): the full mix and a
+one-minute excerpt per pilot are on the never-merged `claude/reference-inputs` branch, as
+`reference-inputs/overnight-north-ref-beattock.mp3`, `-over-the-border.mp3` and `-rannoch.mp3`.
