@@ -60,7 +60,7 @@ def _render_chunk(args):
 
 
 def find_master(song_dir):
-    for n in ("master.wav", "master.flac", "master.mp3"):
+    for n in ("master.wav", "master.flac", "master.mp3", "master.opus"):
         p = os.path.join(song_dir, n)
         if os.path.exists(p):
             return p

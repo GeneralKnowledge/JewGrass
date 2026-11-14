@@ -405,7 +405,53 @@ class Compositor:
     # ---------- the frame ----------
     def frame(self, i):
         t = i / self.fps
-        sh = self.plan["shots"][int(self.shot_at[min(i, len(self.shot_at) - 1)])]
+        k = int(self.shot_at[min(i, len(self.shot_at) - 1)])
+        sh = self.plan["shots"][k]
+        img = self._body(i, sh)
+        # dissolve: the previous shot keeps running underneath for a moment
+        if sh.get("transition") == "dissolve" and k > 0:
+            dur = float(sh.get("dissolve_s", 1.6))
+            a = ease((t - sh["t0"]) / dur)
+            if a < 1:
+                img = img * a + self._body(i, self.plan["shots"][k - 1]) * (1 - a)
+        if sh.get("title"):
+            self._title(img, sh, t)
+        img = self.atm.finish(img, i)
+        return (img * 255 + 0.5).astype(np.uint8)
+
+    def _title(self, img, sh, t):
+        """A song title as the song arrives: small kicker over a big serif title."""
+        ti = sh["title"]
+        hold = float(ti.get("hold", 5.0))
+        age = t - sh["t0"] - float(ti.get("delay", 0.4))
+        if age < 0 or age > hold + 1.0:
+            return
+        op = ease(age / 0.7) * (1 - ease((age - hold) / 1.0))
+        cy = self.H * float(ti.get("y", 0.34))
+        size = int(self.U * float(ti.get("size", 0.095)))
+        words = str(ti["text"]).split()
+        lay, (lw, lh) = T.layout_words(words, "serif", size, int(self.W * 0.8))
+        pad = size // 6
+        x0, y0 = int((self.W - lw) / 2) - pad, int(cy - lh / 2) - pad + int((1 - ease(age / 0.9)) * size * 0.2)
+        self._scrim(img, int(cy), lh * 1.3 + size, 0.35 * op)
+        for word, x, y in lay:
+            spr, _ = T.word_sprite(word, "serif", size, P.BONE)
+            sk = ("t-shadow", word, size)
+            if sk not in self.board_cache:
+                self.board_cache[sk] = self._soft_shadow(spr, size / 10)
+            self._paste_rgb(img, self.board_cache[sk], x0 + x + size // 25, y0 + y + size // 18, op * 0.7)
+            self._paste_rgb(img, spr, x0 + x, y0 + y, op)
+        if ti.get("kicker"):
+            ks = int(size * 0.32)
+            kw = str(ti["kicker"]).upper().split()
+            klay, (kw_, kh) = T.layout_words(kw, "stencil", ks, int(self.W * 0.8))
+            kx0, ky0 = int((self.W - kw_) / 2) - ks // 6, y0 - kh - int(size * 0.25)
+            for word, x, y in klay:
+                spr, _ = T.word_sprite(word, "stencil", ks, (246, 196, 104))
+                self._paste_rgb(img, spr, kx0 + x, ky0 + y, op * 0.9)
+
+    def _body(self, i, sh):
+        t = i / self.fps
         p = (t - sh["t0"]) / max(sh["t1"] - sh["t0"], 1e-6)
         budget = self._budget(sh)
         plate = self.plates[sh["plate"]]
@@ -514,8 +560,7 @@ class Compositor:
         if sh is self.plan["shots"][0]:
             img *= ease(t / 1.0)
 
-        img = self.atm.finish(img, i)
-        return (img * 255 + 0.5).astype(np.uint8)
+        return img
 
     # ---------- actors ----------
     ACTOR_LAYERS = {"flames": "mid", "blades": "far", "ship": "loch", "coach": "mid",
