@@ -188,15 +188,16 @@ class Psych:
         # picked); only the rotation, the bass breathing and the colours move
         lock = ps.get("lock_t")
         tl = float(lock) if lock is not None else t
+        sl = float(ps.get("lock_speed", speed)) if lock is not None else speed  # speed of the held moment
         en, bs = float(self.energy[k]), float(self.bass[k])
         if lock is not None:  # the music only nudges the held shape
             le, lb = float(ps.get("lock_energy", 0.75)), float(ps.get("lock_bass", 0.8))
             en, bs = le + 0.08 * (en - le), lb  # the shape itself stays put
         rot = t * 0.04 * speed
-        zoom = (0.95 - 0.12 * en - 0.06 * np.sin(tl * 0.13 * speed)) / float(ps.get("zoom", 1.0))
+        zoom = (0.95 - 0.12 * en - 0.06 * np.sin(tl * 0.13 * sl)) / float(ps.get("zoom", 1.0))
         zoom *= 1 - float(ps.get("depth", 0.04)) * self.bass[k]
         # the view drifts around the set so it never sits still
-        ox, oy = 0.18 * np.sin(tl * 0.031 * speed + 1.0), 0.12 * np.cos(tl * 0.023 * speed)
+        ox, oy = 0.18 * np.sin(tl * 0.031 * sl + 1.0), 0.12 * np.cos(tl * 0.023 * sl)
         cr, sr = np.cos(rot), np.sin(rot)
         x = (zx * cr - zy * sr) * zoom + ox
         y = (zx * sr + zy * cr) * zoom + oy
@@ -210,7 +211,7 @@ class Psych:
         # c walks the edge of the main cardioid of the Mandelbrot set, where
         # the Julia sets are connected and richly curled (not scattered dust);
         # the bass nudges it just outside, where the curls start to fray
-        a = self.c_phase + tl * 0.035 * speed
+        a = self.c_phase + tl * 0.035 * sl
         if lock is not None and ps.get("wander"):  # optional slow breathing of the held shape
             a += float(ps["wander"]) * np.sin(t * 0.21)
         w = np.exp(1j * a)

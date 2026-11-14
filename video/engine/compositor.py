@@ -355,7 +355,7 @@ class Compositor:
             sc = min(ease((t - (L["start"] - 0.8)) / 0.8), 1 - ease((t - (L["end"] + 0.4)) / 0.8))
             if len(near) > 1:
                 sc = 1.0
-            self._scrim(img, int(cy + size * 0.35), size * 2.1, 0.42 * sc)
+            self._scrim(img, int(cy + size * 0.35), size * 2.1, 0.55 * sc)
         for L, fin, fout in live:
             ln = L["line"]
             words = [w for _, w in ln["words"]]
@@ -372,7 +372,7 @@ class Compositor:
                     states.append(1.0)
             op = fin * fout
             lift = (1 - fin) * size * 0.25 - (1 - fout) * size * 0.25
-            lh = self._set_line(img, words, self.W / 2, cy + lift, size, max_w, states, op, idle=0.45)
+            lh = self._set_line(img, words, self.W / 2, cy + lift, size, max_w, states, op, idle=0.6)
             # the next line, smaller, so the eye can read ahead
             nx = L["next"]
             if nx and nx["words"][0][0] - t < 6:
