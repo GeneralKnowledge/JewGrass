@@ -36,7 +36,7 @@ sections:
       Twelve o'clock, I'm queuing up for you
       Ooh, you're my meal deal, baby, yes you do
   - name: verse 1
-    tag: rap verse - playful cheeky British rap, comedic storytelling, bouncy swung groove
+    tag: rap verse - playful cheeky British rap, witty storytelling, bouncy swung groove
     bars: 16
     performer: kez
     lyrics: |
@@ -109,9 +109,9 @@ sections:
 ending: Sung tag over the last chord, then the beat stops dead. Nothing spoken.
 
 caption: >-
-  132 bpm, F major, fun bouncy boy band pop with a 2-step UK garage groove, shuffled hats, skippy kick, stabby
-  organ chords, bright synth bass, handclaps, starts straight on a group chant chorus with stacked harmonies,
-  mostly a cheeky comedic British rap with storytelling punchlines, a sweet breathy pre-chorus, a sung tenor
+  132 bpm, F major, fun bouncy boy band pop with a 2-step UK garage groove, organ chords,
+  handclaps, starts straight on a group chant chorus with stacked harmonies,
+  mostly a cheeky witty British rap with storytelling punchlines, a sweet breathy pre-chorus, a sung tenor
   verse, stop-start rap break with the group answering, short and punchy
 
 lyric_audit:

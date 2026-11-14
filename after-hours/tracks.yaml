@@ -13,20 +13,20 @@ tracks:
   key: A major
   timesig: '4'
   seconds: 225
-  caption: contemporary male vocal pop group, four distinct male singers, polished modern pop production, expressive
+  caption: contemporary male vocal pop group, four distinct male singers, warm modern pop production, expressive
     lead tenor, bright high tenor harmonies, warm baritone lower harmonies, smooth soulful tenor, carefully arranged
-    four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, clean modern drums, warm
-    bass, polished radio-ready mix, 112 bpm, A major, upbeat romantic pop single, starts straight away with a high
-    tenor singing the hook over bright piano stabs, warm synth bass, tight pop kick, claps, clean electric guitar,
-    subtle synth arpeggio, intimate lead tenor verses, soulful pre-chorus lift, big group chorus with a clear lead
-    melody and harmonies in thirds above and below, stripped-back bridge with exposed harmonies, final chorus builds
-    voice by voice before the beat returns, ends on an a cappella group tag
+    four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, soft modern drums, warm
+    bass, warm cohesive blended mix, 112 bpm, A major, upbeat romantic pop single, starts straight away with a high
+    tenor singing the hook over piano chords and warm synth bass under the voices, light claps, intimate lead tenor
+    verses, soulful pre-chorus lift, big group chorus with a clear lead melody and harmonies in thirds above and
+    below, stripped-back bridge with exposed harmonies, final chorus builds voice by voice before the beat returns,
+    ends on an a cappella group tag
   lyrics: |
-    [opening - starts immediately, bright high tenor sings the hook over piano stabs]
+    [opening - starts immediately, bright high tenor sings the hook over soft piano]
     One more night
     Don't say goodbye
 
-    [verse - expressive lead tenor with slight rasp, piano stabs, tight kick, intimate]
+    [verse - expressive lead tenor with slight rasp, intimate, light beat]
     Taxi's been outside for twenty minutes now
     Meter's running and the driver turned the music down
     You've got your coat on but you haven't done it up
@@ -48,7 +48,7 @@ tracks:
     So don't
     Don't
 
-    [chorus - lead tenor melody, high tenor and baritone harmonies, claps, full beat]
+    [chorus - lead tenor melody, high tenor and baritone harmonies, full beat]
     One more night, don't say goodbye
     One more dance beneath these lights
     We both know where this goes
@@ -74,7 +74,7 @@ tracks:
     But you're still here
     And so am I
 
-    [chorus - lead tenor melody, four-part harmonies, claps, synth arpeggio]
+    [chorus - lead tenor melody, four-part harmonies, fuller beat]
     One more night, don't say goodbye
     One more dance beneath these lights
     We both know where this goes
@@ -113,14 +113,14 @@ tracks:
   key: D major
   timesig: '4'
   seconds: 240
-  caption: contemporary male vocal pop group, four distinct male singers, polished modern pop production, expressive
+  caption: contemporary male vocal pop group, four distinct male singers, warm modern pop production, expressive
     lead tenor, bright high tenor harmonies, warm baritone lower harmonies, smooth soulful tenor, carefully arranged
-    four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, clean modern drums, warm
-    bass, polished radio-ready mix, 76 bpm, D major, emotional pop ballad, starts straight away with a warm baritone
-    and solo piano, subtle acoustic guitar, warm strings from the first chorus, restrained bass, almost no drums
-    until the final chorus, each verse sung by a different voice, chorus with a lead tenor melody over four-part
-    harmonies, a cappella bridge where the voices enter one by one from low to high, vocal harmony is the emotional
-    centre, ends on an unaccompanied four-part chord
+    four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, soft modern drums, warm
+    bass, warm cohesive blended mix, 76 bpm, D major, emotional pop ballad, starts straight away with a warm baritone
+    and solo piano, warm strings from the first chorus, almost no drums until the final chorus, each verse sung
+    by a different voice, chorus with a lead tenor melody over four-part harmonies, a cappella bridge where the
+    voices enter one by one from low to high, vocal harmony is the emotional centre, ends on an unaccompanied four-part
+    chord
   lyrics: |
     [verse - starts immediately, warm intimate baritone with solo piano]
     There's a seat in the second row with nobody in it
@@ -132,7 +132,7 @@ tracks:
     Now there's two thousand people and they know every word
     And the one voice I'm listening for is the one I haven't heard
 
-    [verse - expressive lead tenor, piano and soft acoustic guitar]
+    [verse - expressive lead tenor, piano]
     I wrote you a message, then I didn't send it
     You'd be proud, was all it said, I couldn't find an ending
     Mum says you'd be laughing at the shirts that we've got on
@@ -190,14 +190,13 @@ tracks:
   key: E major
   timesig: '4'
   seconds: 215
-  caption: contemporary male vocal pop group, four distinct male singers, polished modern pop production, expressive
+  caption: contemporary male vocal pop group, four distinct male singers, warm modern pop production, expressive
     lead tenor, bright high tenor harmonies, warm baritone lower harmonies, smooth soulful tenor, carefully arranged
-    four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, clean modern drums, warm
-    bass, polished radio-ready mix, 120 bpm, E major, playful upbeat dance-pop, starts straight away with group
-    call and response over handclaps, bouncy synth bass, bright guitar chops, punchy dance-pop drums, short brass-like
-    synth stabs, verses where the singers interrupt and answer each other, chorus opens in unison then splits into
-    four-part harmony, percussion-only breakdown with two voices trading lines, ends on a group chant and a hard
-    stop
+    four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, soft modern drums, warm
+    bass, warm cohesive blended mix, 120 bpm, E major, playful upbeat dance-pop, starts straight away with group
+    call and response over handclaps, bouncy synth bass and guitar chops, verses where the singers interrupt and
+    answer each other, chorus opens in unison then splits into four-part harmony, percussion-only breakdown with
+    two voices trading lines, ends on a group chant and a hard stop
   lyrics: |
     [opening - starts immediately, group call and response over handclaps, unison answers]
     Everybody knows
@@ -207,7 +206,7 @@ tracks:
     Everybody but you two
     Everybody but you two
 
-    [verse - smooth soulful tenor, rhythmic, other voices interrupt, guitar chops and synth bass]
+    [verse - smooth soulful tenor, rhythmic, other voices interrupt]
     Saturday, same table, same seat by the window
     You both turn up early, then pretend you didn't know
     She laughs at your jokes, even the one about the ferry
@@ -253,7 +252,7 @@ tracks:
     You saved her number under Don't
     And you ring it every night, so go on, go on
 
-    [chorus - unison first half, then four-part harmony, brass-like synth stabs]
+    [chorus - unison first half, then four-part harmony, fuller beat]
     Everybody knows, everybody sees
     She's looking at you when you're looking at your feet
     Everybody knows, but nobody says

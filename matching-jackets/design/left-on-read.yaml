@@ -16,8 +16,8 @@ render:
   seconds: 210        # 92 bars at 112 is 197 s, plus room so the last line isn't cut
 
 palette:
-  lead: stacked a cappella harmonies for the cold open, then glossy synth pop
-  keys: bright plucked synth, clean muted guitar
+  lead: stacked a cappella harmonies for the cold open, then warm synth pop
+  keys: plucked synth, muted guitar
   drums: punchy pop drums, finger snaps on 2 and 4 in the verses
   bass: round synth bass
   left_out: long intro, dubstep drops, any sad piano
@@ -73,7 +73,7 @@ sections:
       Left on read, left on read
       Send me anything, a thumbs-up instead
   - name: rap
-    tag: rap verse - playful cheeky British rap, comedic storytelling, drums switch to a bouncy groove
+    tag: rap verse - playful cheeky British rap, witty storytelling, drums switch to a bouncy groove
     bars: 16
     performer: kez
     lyrics: |
@@ -126,8 +126,8 @@ ending: Sung a cappella tag, then one finger snap. No fade, nothing spoken.
 
 caption: >-
   112 bpm, E major, upbeat feel-good boy band single, opens straight away with a cappella stacked harmonies
-  before the beat drops, bright plucked synths, clean muted guitar, finger snaps, warm tenor lead verse, breathy
-  pre-chorus that builds, huge harmony chorus, a cheeky comedic rap verse in the middle, falsetto bridge over
+  before the beat drops, plucked synths and finger snaps, warm tenor lead verse, breathy
+  pre-chorus that builds, huge harmony chorus, a cheeky witty rap verse in the middle, falsetto bridge over
   sparse drums, final chorus with a key change up a semitone and falsetto ad-libs, ends on harmonies
 
 lyric_audit:

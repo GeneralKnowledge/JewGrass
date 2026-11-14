@@ -74,13 +74,14 @@ writing_rules:
   - No lines fully in brackets (the pipeline strips them).
 
 # Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi,
+  tuba, pizzicato, woodblock, marching snare, oom-pah, circus, comic, comedic, theatrical, brass, polished, glossy, clean mix, radio-ready]
 
 caption_core: >-
-  contemporary male vocal pop group, four distinct male singers, polished modern pop production, expressive
+  contemporary male vocal pop group, four distinct male singers, warm modern pop production, expressive
   lead tenor, bright high tenor harmonies, warm baritone lower harmonies, smooth soulful tenor, carefully
-  arranged four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, clean modern
-  drums, warm bass, polished radio-ready mix
+  arranged four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, soft modern
+  drums, warm bass, warm cohesive blended mix
 
 # The big unknown: ACE-Step may treat "four singers" as one choir. Round 1 tests exactly that.
 pilot_acceptance:

@@ -36,7 +36,7 @@ members:
     role: the rapper, the funny one
     voice: quick, cheeky, conversational British rap with a grin in it
     delivery: playful, storytelling, self-aware jokes, talks to the others mid-verse, punchlines about everyday things
-    caption_words: playful cheeky light-hearted British rap verse, comedic storytelling flow
+    caption_words: playful cheeky light-hearted British rap verse, witty storytelling flow
 
 world:
   - The leisure centre, where they met in choir. Spring swimming gala, silver medals.
@@ -49,7 +49,7 @@ sound:
   tempo: varies by song, 70 to 132 bpm
   vocals: five distinct male voices, stacked harmonies on every chorus, call and response, ad-libs over the last chorus
   harmony: big major-key choruses, pre-choruses that lift, at least one key change in the album
-  production: glossy modern pop. Punchy drums, clean bass, bright synths, clean guitar, piano on the ballads, finger snaps
+  production: warm modern pop. Pop drums, warm bass, synths, guitar, piano on the ballads, finger snaps
   rap: one light, funny rap section per song, sat in the middle of the song, never the whole song
   structure: songs start straight in (no standard intro), endings are sung or played, never spoken
 
@@ -61,13 +61,14 @@ production_rules:
   - No spoken outros. No spoken skits.
 
 # Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi,
+  tuba, pizzicato, woodblock, marching snare, oom-pah, circus, comic, comedic, theatrical, brass, polished, glossy, clean mix, radio-ready]
 
 caption_core: >-
-  late-90s style pop boy band with modern polished production, five male singers, stacked five-part vocal
+  late-90s style pop boy band with warm modern production, five male singers, stacked five-part vocal
   harmonies on every chorus, call and response vocals, warm male lead tenor, soaring falsetto ad-libs, deep
-  baritone harmony, one playful light-hearted British rap section, big singalong major-key chorus, punchy pop
-  drums, clean bass, bright synths, finger snaps, clean radio-ready mix
+  baritone harmony, one playful light-hearted British rap section, big singalong major-key chorus, pop drums,
+  warm bass, warm cohesive blended mix
 
 writing_rules:
   - Small, specific, everyday things (a time on a phone, a sandwich, a bus number) treated like big romance.

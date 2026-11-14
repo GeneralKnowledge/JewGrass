@@ -19,7 +19,7 @@ palette:
   keys: bright piano stabs, subtle rhythmic synth arpeggio
   bass: warm synth bass
   drums: tight pop kick, claps
-  guitar: clean electric guitar
+  guitar: light electric guitar
   left_out: instrumental intro, strings, heavy pads
 
 harmony: A, E, F#m, D. Pre-chorus leans on F#m for tension before the chorus opens up.
@@ -32,14 +32,14 @@ changes_from_spec: >-
 
 sections:
   - name: opening
-    tag: opening - starts immediately, bright high tenor sings the hook over piano stabs
+    tag: opening - starts immediately, bright high tenor sings the hook over soft piano
     bars: 4
     performer: jamie
     lyrics: |
       One more night
       Don't say goodbye
   - name: verse 1
-    tag: verse - expressive lead tenor with slight rasp, piano stabs, tight kick, intimate
+    tag: verse - expressive lead tenor with slight rasp, intimate, light beat
     bars: 16
     performer: alex
     lyrics: |
@@ -67,7 +67,7 @@ sections:
       So don't
       Don't
   - name: chorus 1
-    tag: chorus - lead tenor melody, high tenor and baritone harmonies, claps, full beat
+    tag: chorus - lead tenor melody, high tenor and baritone harmonies, full beat
     bars: 16
     performer: all four, alex leads
     lyrics: |
@@ -102,7 +102,7 @@ sections:
       But you're still here
       And so am I
   - name: chorus 2
-    tag: chorus - lead tenor melody, four-part harmonies, claps, synth arpeggio
+    tag: chorus - lead tenor melody, four-part harmonies, fuller beat
     bars: 16
     performer: all four, alex leads
     lyrics: |
@@ -150,8 +150,7 @@ ending: A cappella four-part "One more night, don't say goodbye", then silence. 
 
 caption: >-
   112 bpm, A major, upbeat romantic pop single, starts straight away with a high tenor singing the hook over
-  bright piano stabs, warm synth bass, tight pop kick, claps, clean electric guitar, subtle synth arpeggio,
-  intimate lead tenor verses, soulful pre-chorus lift, big group chorus with a clear lead melody and harmonies
+  piano chords and warm synth bass under the voices, light claps, intimate lead tenor verses, soulful pre-chorus lift, big group chorus with a clear lead melody and harmonies
   in thirds above and below, stripped-back bridge with exposed harmonies, final chorus builds voice by voice
   before the beat returns, ends on an a cappella group tag
 

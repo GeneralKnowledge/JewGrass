@@ -21,7 +21,7 @@ palette:
   bass: bouncy synth bass
   guitar: bright guitar chops
   drums: punchy dance-pop drums, handclaps
-  stabs: short brass-like synth stabs
+  stabs: short synth chords
   left_out: strings, ballad piano, long intro
 
 harmony: E, B, C#m, A. Simple on purpose; the rhythm and the voices do the work.
@@ -46,7 +46,7 @@ sections:
       Everybody but you two
       Everybody but you two
   - name: verse 1
-    tag: verse - smooth soulful tenor, rhythmic, other voices interrupt, guitar chops and synth bass
+    tag: verse - smooth soulful tenor, rhythmic, other voices interrupt
     bars: 16
     performer: leo, with jamie and noah cutting in
     lyrics: |
@@ -107,7 +107,7 @@ sections:
       You saved her number under Don't
       And you ring it every night, so go on, go on
   - name: chorus 2
-    tag: chorus - unison first half, then four-part harmony, brass-like synth stabs
+    tag: chorus - unison first half, then four-part harmony, fuller beat
     bars: 16
     performer: all four
     lyrics: |
@@ -155,8 +155,7 @@ ending: Group chant, then the beat stops dead on the last word. Nothing spoken.
 
 caption: >-
   120 bpm, E major, playful upbeat dance-pop, starts straight away with group call and response over
-  handclaps, bouncy synth bass, bright guitar chops, punchy dance-pop drums, short brass-like synth stabs,
-  verses where the singers interrupt and answer each other, chorus opens in unison then splits into four-part
+  handclaps, bouncy synth bass and guitar chops, verses where the singers interrupt and answer each other, chorus opens in unison then splits into four-part
   harmony, percussion-only breakdown with two voices trading lines, ends on a group chant and a hard stop
 
 lyric_audit:
