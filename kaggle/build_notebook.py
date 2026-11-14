@@ -48,6 +48,8 @@ T0 = time.time()
 # Kaggle's Jupyter sets MPLBACKEND to its inline backend, which matplotlib rejects outside the notebook process;
 # ACE-Step (via lightning/torchmetrics) and Applio import matplotlib, so every worker gets a plain backend.
 os.environ["MPLBACKEND"] = "Agg"
+# Progress bars (downloads, diffusion steps, training) print thousands of lines; keep the log readable.
+os.environ.update(TQDM_DISABLE="1", HF_HUB_DISABLE_PROGRESS_BARS="1")
 HARD_STOP = T0 + 11.5 * 3600          # Kaggle stops GPU sessions at 12 h; leave time to save the output
 OUT = "/kaggle/working/out"
 os.makedirs(OUT, exist_ok=True)
