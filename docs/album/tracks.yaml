@@ -1,0 +1,297 @@
+# Natural Capital: every track, machine-readable, for the laptop.
+# status: generate = make it (two takes, keep the better); existing = already made;
+#         voice = spoken voicemail for Reuben's voice, skip; pending = lyrics not written yet.
+# seconds is the target length (all <= 260 so nothing should OOM). The two skits are short on purpose.
+# queue = the order to generate in, strongest songs first; album order is n.
+# Story and notes: docs/natural-capital.md
+album: Natural Capital
+queue:
+- bought-and-sold
+- natural-capital
+- viewing
+tracks:
+- n: 1
+  slug: parcel-of-rogues
+  title: Parcel of Rogues
+  status: pending
+  batch: 1
+  seconds: 90
+  bpm: 70
+- n: 2
+  slug: viewing
+  title: Viewing by Appointment Only
+  status: generate
+  batch: 1
+  seconds: 60
+  bpm: 90
+  caption: |
+    solo Highland bagpipe lament on a windy hillside, abruptly cut off, cheesy estate agent hold music, soft electric piano, smooth corporate muzak, cheerful English male voiceover, spoken word, tape warble, glitch stutter ending, no drums
+  lyrics: |
+    [intro]
+    (solo bagpipe lament, wind, cut off mid-phrase by hold music)
+
+    Hello and welcome to Glen Corran.
+    Forty thousand acres of unspoilt Highland,
+    very lightly peopled.
+    To your left, a loch. Fishing rights included.
+    To your right, a village. Not included,
+    but very quiet, we're told.
+    Sporting estate, wonderful views,
+    and tremendous natural capital.
+    Viewing by appointment only.
+    Offers over... well. Make us an offer.
+
+    [outro]
+    (hold music slows, skips, glitches into silence)
+- n: 3
+  slug: deed-to-the-glen
+  title: Deed to the Glen
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
+- n: 4
+  slug: voicemail-sold
+  title: 'Voicemail: They''ve Sold It'
+  status: voice
+  note: Spoken voicemail for Reuben's own voice later; text in docs/natural-capital.md. Do not generate.
+- n: 5
+  slug: natural-capital
+  title: Natural Capital
+  status: generate
+  batch: 1
+  seconds: 260
+  bpm: 140
+  caption: |
+    dark glitch trap, slow build, minimal then huge, whispered close-mic English female spoken word, cool half-sung female vocal, sneering Scottish male rap features, chopped bagpipe drone used as a jingle, cheesy hold music sample, distorted 808 bass, crisp trap drums, champagne glass clinks, crowd applause, gang chant chorus, cinematic, raw mix
+  lyrics: |
+    [intro]
+    Thank you all for coming.
+    Do help yourselves to the salmon.
+    It's local. Everything here is local,
+    except the money.
+    Ladies and gentlemen... your future.
+
+    [verse]
+    I don't see a glen, I see a balance sheet
+    Bog and bracken, darling, that's a carbon receipt
+    Every inch of heather is a unit I can sell
+    Every drop of rain, I'll invoice that as well
+    Bought it off a laird who was tired of the cold
+    Paid him in pounds, and I'll sell it back in gold
+    Plant a little forest where no forest should grow
+    It doesn't have to live, it just has to look good on a slide show
+
+    [chorus]
+    Natural capital! (Ka-ching!)
+    Every hill is a bank and the deer can sing
+    Natural capital! (Sold!)
+    Greenest thing in Scotland and it's paved with gold
+    Natural capital!
+
+    [verse]
+    Doc Rory Mair, I'm the man with the stamp
+    Call a bog a forest and a puddle a swamp
+    Fee's in advance and the science is flexible
+    Planet's a client and the client's always delectable
+
+    I am the Grid Man. Wind blows, I win.
+    Wind stops, I win. Cable's full, I win.
+    Switch it off. Send the bill. Begin.
+
+    Hi guys, it's Tamsin! I'm literally obsessed
+    Beavers and a sauna and a forty-quid rest
+    Book the glamping pods while the locals are asleep
+    Wellness in the wilderness, the wilderness is cheap
+
+    And I'm just a humble peer with a word for the minister
+    Planning's a formality, the pylons aren't sinister
+    Paperwork's sorted and the hearing's adjourned
+    And the village? The village will be very concerned
+
+    [chorus]
+    Natural capital! (Ka-ching!)
+    Every hill is a bank and the deer can sing
+    Natural capital! (Sold!)
+    Greenest thing in Scotland and it's paved with gold
+    Natural capital!
+
+    [bridge]
+    They'll call it a land grab.
+    We call it a nature-based solution.
+    They'll call it a clearance.
+    We call it a transition.
+    Same glen. Same leaving.
+    Better branding.
+
+    [verse]
+    Tax relief in the morning, a grant by lunch
+    Credits by teatime, and that's just the brunch
+    Village wants houses? Well, so do the bees
+    Can't put a family where I put the trees
+    Ninety-nine years and a covenant tight
+    Hill's off limits to the walkers at night
+    And in five or six years when the numbers are done
+    I'll sell it again to the next one along
+
+    [chorus]
+    Natural capital! (Ka-ching!)
+    Every hill is a bank and the deer can sing
+    Natural capital! (Sold!)
+    Greenest thing in Scotland and it's paved with gold
+    Natural capital! Natural capital!
+
+    [outro]
+    Thank you so much. Do enjoy the views.
+    They're ours now.
+    Settlement's due Friday.
+- n: 6
+  slug: voicemail-companies
+  title: 'Voicemail: Four Hundred Companies'
+  status: voice
+  note: Spoken voicemail for Reuben's own voice later; text in docs/natural-capital.md. Do not generate.
+- n: 7
+  slug: brass-plate
+  title: Brass Plate
+  status: pending
+  batch: 2
+  seconds: 160
+  bpm: 150
+- n: 8
+  slug: cold-hame
+  title: Cold Hame
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
+- n: 9
+  slug: fast-lane
+  title: Fast Lane
+  status: pending
+  batch: 2
+  seconds: 250
+  bpm: 145
+- n: 10
+  slug: swim-at-your-own-risk
+  title: Swim at Your Own Risk
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
+- n: 11
+  slug: ermine-and-ink
+  title: Ermine and Ink
+  status: pending
+  batch: 2
+  seconds: 200
+  bpm: 92
+- n: 12
+  slug: sunshine-trust
+  title: Sunshine Trust
+  status: pending
+  batch: 3
+  seconds: 230
+  bpm: 96
+- n: 13
+  slug: bought-and-sold
+  title: Bought and Sold
+  status: generate
+  batch: 1
+  seconds: 260
+  bpm: 82
+  caption: |
+    dark political hip hop with Celtic country trap, hard boom bap drums switching to heavy trap, distorted 808 bass, angry precise male rap, Scottish accent, solo bagpipe lament in the intro, banjo and fiddle loops, nu metal guitars on the chorus, haunting female vocal bridge, gang chant chorus, raw mix, 82 bpm
+  lyrics: |
+    [intro]
+    They tell ye it's new. It's no new.
+    Sit doon. This is the long version.
+
+    [verse]
+    Sixteen ninety-eight, a nation bet the lot
+    On a swamp in Panama, a colony that rot
+    Fever in the tents and the ships came hame light
+    A fortune in the mud and a country in a fright
+    So the men wi' the money took a cheque to sign away
+    Called it the Equivalent, a lovely word for pay
+    Parliament adjourned and the pens went to work
+    The crowds in the street, and the lords did the smirk
+    They paid back the shareholders, the bonnet lairds were sorted
+    The ploughman got nothing but the news when it reported
+    Three hundred years later, same suit, different cloth
+    A glen for a carbon cheque, a land for a loss
+
+    [chorus]
+    Bought and sold! (Bought and sold!)
+    For somebody else's gold!
+    Same glen, same leaving, better branding on the deed
+    Bought and sold! (Bought and sold!)
+    And the story's never told
+    They don't burn the roofs now, they just send ye the receipt
+
+    [verse]
+    Next came the sheep, the factor wi' the torch
+    Families on the shore wi' a Bible and a porch
+    No porch, just the beach, and the boats to the west
+    Forty thousand acres for a hundred-sheep rest
+    Now the glens are empty and they call it a view
+    Wild land, wilderness, it was full of people too
+    And the same estates now are a portfolio line
+    Rewilding a hill that was cleared the first time
+    Plant a sitka forest on the bones of a croft
+    Sell the air above it to a firm in a loft
+    Ye can't buy a hoose in the glen where ye were born
+    But a fund in the Capital can buy it every morn
+
+    [chorus]
+    Bought and sold! (Bought and sold!)
+    For somebody else's gold!
+    Same glen, same leaving, better branding on the deed
+    Bought and sold! (Bought and sold!)
+    And the story's never told
+    They don't burn the roofs now, they just send ye the receipt
+
+    [verse]
+    Seventy-four, a report on the oil
+    Said Scotland's rich, so they buried it in foil
+    Thirty years secret, while the platforms pumped
+    And the pits shut down and the shipyards slumped
+    Now a letterbox in Glasgow holds four hundred names
+    A brass plate company for anybody's games
+    Billions through partnerships nobody would own
+    Till the regulators noticed it and changed the tone
+    Ten point nine billion gone in the panic years
+    Fast lane contracts, slow lane tears
+    And the profit takes a yacht to a sunny British rock
+    Where the trust owns the trust and the clock's got no clock
+
+    [bridge]
+    Fareweel to a' our Scottish fame
+    Fareweel our ancient glory
+    We were bought and sold, we were bought and sold
+    And they're telling us the same old story
+
+    [breakdown]
+    Who owns the hill? (Not you!)
+    Who owns the water? (Not you!)
+    Who owns the oil? (Not you!)
+    Who owns the law? (Not you!)
+    Who owns the hill?
+    (We will.)
+
+    [outro]
+    They didnae need a war this time.
+    Just a form, a fund, and an address in Glasgow.
+    Next track.
+- n: 14
+  slug: gavs-song
+  title: Gav's Song
+  status: pending
+  batch: 3
+  seconds: 240
+  bpm: 76
+- n: 15
+  slug: exit-strategy
+  title: Exit Strategy
+  status: pending
+  batch: 3
+  seconds: 260
+  bpm: 130
+- n: 16
+  slug: we-bought-the-hill
+  title: We Bought the Hill
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
