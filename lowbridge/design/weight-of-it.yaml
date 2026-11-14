@@ -1,0 +1,165 @@
+# LOWBRIDGE Song Design: Weight of It (pilot track 02, main single). Format: see no-signal.yaml.
+slug: lowbridge-weight-of-it
+title: Weight of It
+credit: Rook, Vex and Vale
+version: 1
+order: 2
+purpose: the hard single. Prove the group can make a proper drill record with three distinct performers.
+concept: >-
+  The pressure of carrying expectations: money, reputation, family, loyalty, and the feeling that everyone
+  expects something from you.
+
+render:
+  bpm: 144
+  key: C minor
+  timesig: "4"
+  seconds: 135        # 72 bars at 144 is 120 s, plus room for the outro
+
+palette:
+  lead: an ominous chopped vocal sample, two syllables, repeating every two bars
+  piano: distorted low piano, octave Cs and Abs
+  bass: aggressive sliding 808 with saturation on the long notes
+  drums: busier hats, punchy kick, hard snare on 3
+  left_out: pads, strings, bells (saved for No Signal), any sung chorus
+
+drums: >-
+  Half-time, snare on 3 with a ghost snare before it every fourth bar. Hats in 16ths with triplet rolls into
+  each section, kick doubled on the "and" of 4. Vex's verse: hats switch to triplets for his second half.
+bass_movement: >-
+  C to Ab slide, then up to Bb and a long slide back to C, with a bar of silence before each hook. Final hook:
+  a second 808 line enters an octave up, answering the first (Eb to D to C) - the track grows, not just louder.
+harmony: Cm, Ab, Bb, Cm. Final hook adds a counter-melody on high piano, G Ab G F, against the vocal chop.
+the_moment: >-
+  At the final hook a second bass movement and a subtle high piano counter-melody come in, so the record
+  has grown by the end rather than just getting louder.
+
+sections:
+  - name: intro
+    tag: intro - ominous vocal chop and distorted low piano, no drums
+    bars: 4
+    performer: rook
+    lyrics: |
+      Weight of it
+  - name: verse rook
+    tag: verse - deep calm baritone rap, controlled, punchy half-time drums and 808
+    bars: 16
+    performer: rook
+    idea: everyone wants something from him; the image is the uncle's four Fridays
+    lyrics: |
+      Everybody wants a piece, that's the first thing I learned
+      Mum wants me home by twelve, landlord wants what he's earned
+      Little cousin wants the trainers, I can see it in his face
+      Uncle wants a loan, swears it's back by Friday, same place
+      That was four Fridays back, I still nod when he's passing
+      Ends want a name, someone they can point at when they're asking
+      Girl wants a straight answer and I ain't got one, that's that
+      Teachers said potential like it's money in the bank
+      Never said who's holding it or how you pay it back
+      I don't raise my voice, I just lower my head
+      Count what I owe to the living, what I owe to the dead
+      Twenty-one years old and I'm a cashpoint and a guardian
+      Bank card in my pocket and a key to my nan's garden
+      Nobody asks how heavy, only if I've got it
+      And I always say I've got it
+      That's the weight of it. I've got it.
+  - name: hook 1
+    tag: chorus - three male voices trading lines, group shout on weight of it
+    bars: 8
+    performer: all three, trading lines
+    lyrics: |
+      Weight of it, weight of it
+      Everybody leaning and I'm carrying the weight of it
+      Mum's on my mind, man's on my back
+      Name on the ends and I can't give it back
+      Weight of it, weight of it
+      Smile in the photo, you can't see the weight of it
+      Shoulders don't drop, head don't crack
+      All of it's mine and I can't put it back
+  - name: verse vex a
+    tag: verse - fast sharp higher male rap, clipped syllables, rapid pocket
+    bars: 8
+    performer: vex
+    idea: the clock and the phone; the image is the clip being zoomed into
+    lyrics: |
+      Rent up, phone cut, left sole split
+      Late shift, cold bus, boss says quick, you're quick
+      Quick, 'cause the clock don't wait for me
+      Clock in, clock out, clock's got the whole week's weight on me
+      Twenty-two views and they think that they know me
+      Screenshot, zoom in, read it back slowly
+      Slowly
+      Slowly
+  - name: verse vex b
+    tag: verse - flow switch, stop-start pauses, punchlines, triplet hats
+    bars: 8
+    performer: vex
+    lyrics: |
+      Look who's still here, same three, same street
+      Same shop, same chips, same seat
+      You want a story? I give you a gap
+      Mind the gap, I ain't filling that
+      Every word that I spare is a word you can't twist
+      So I cut it in half and I keep it in my fist
+      Fast when I want it, slow when I'm thinking
+      Weight on my tongue but I'm not the one sinking
+  - name: hook 2
+    tag: chorus - three male voices trading lines, group shout on weight of it
+    bars: 8
+    performer: all three, trading lines
+    lyrics: |
+      Weight of it, weight of it
+      Everybody leaning and I'm carrying the weight of it
+      Mum's on my mind, man's on my back
+      Name on the ends and I can't give it back
+      Weight of it, weight of it
+      Smile in the photo, you can't see the weight of it
+      Shoulders don't drop, head don't crack
+      All of it's mine and I can't put it back
+  - name: verse vale
+    tag: verse - low melodic male voice, emotional, drums thin out
+    bars: 8
+    performer: vale
+    idea: where he learned the weight; the image is his mum's shoulders at the kitchen sink
+    lyrics: |
+      Mum used to say don't carry what ain't yours
+      Then she'd do a double shift and come home and do the floors
+      I watched her shoulders drop at the kitchen sink
+      She never said a word but I saw it, I didn't blink
+      Now it's my turn and I'm proud and I'm tired
+      Twenty-one, feel forty, on a contract they can fire
+      If I put it down, tell me who's gonna lift it
+      Nobody. So I hold it. I don't even shift it.
+  - name: final hook
+    tag: chorus - full drums, second 808 line and high piano counter-melody enter
+    bars: 8
+    performer: all three, layered
+    lyrics: |
+      Weight of it, weight of it
+      Everybody leaning and I'm carrying the weight of it
+      Mum's on my mind, man's on my back
+      Name on the ends and I can't give it back
+      Weight of it, weight of it
+      Smile in the photo, you can't see the weight of it
+      Shoulders don't drop, head don't crack
+      All of it's mine and I can't put it back
+  - name: outro
+    tag: outro - vocal chop and 808 only, hard stop
+    bars: 4
+    performer: rook
+    lyrics: |
+      Weight of it
+
+ending: The vocal chop and one last 808 slide, then a hard stop on beat 1. No fade.
+
+caption: >-
+  144 bpm, C minor, the hardest track, ominous chopped vocal sample, distorted low piano, aggressive sliding
+  808 with saturation, busier rolling hi-hats, punchy kick, three different male rappers trading verses:
+  first a calm deep baritone, then a fast sharp technical rapper with flow switches, then a low melodic
+  voice, group hook with voices trading lines, final hook adds a second bass line and a high piano
+  counter-melody, hard stop ending
+
+lyric_audit:
+  character_voice: Rook lists and carries, Vex cuts and switches, Vale explains where it came from
+  narrative: what everyone wants (Rook), what it does to you day to day (Vex), where you learned it (Vale)
+  imagery: [four Fridays, a key to nan's garden, the zoomed screenshot, mum's shoulders at the sink]
+  hook: '"Weight of it, weight of it" as a group shout, each line answered by a different voice'

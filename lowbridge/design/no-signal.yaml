@@ -1,0 +1,146 @@
+# LOWBRIDGE Song Design: No Signal (pilot track 01). Same format as the JewGrass Song Design files,
+# plus `performer` per section. build.py compiles it into lowbridge/tracks.yaml.
+slug: lowbridge-no-signal
+title: No Signal
+credit: Rook featuring Vale
+version: 1
+order: 1
+purpose: the introduction. Establish the sound and make Rook the first recognisable character.
+concept: >-
+  Southmere through Rook's eyes. Everyone is talking, nobody is listening, and the group has learned to
+  keep certain things to themselves.
+
+render:
+  bpm: 140
+  key: F minor
+  timesig: "4"
+  seconds: 125        # 64 bars at 140 is 110 s; the rest is room so the outro isn't cut
+
+palette:
+  lead: a haunting two-note piano motif (F and Db, high, left hanging)
+  bed: a distant airy pad, very quiet, never busy
+  bass: deep sliding 808, slides up into each hook
+  drums: sparse at the start, then a hard half-time groove
+  left_out: strings, choir, guitar, cinematic hits, any second melody before the hook
+
+drums: >-
+  Intro: hats only, then a single snare on beat 3 of bar 8. Verse: half-time, snare on 3, kick on 1 and the
+  "and" of 2, skippy hats in 16ths with a triplet flick every second bar. Hook: same groove, one hat roll into
+  the last bar.
+bass_movement: >-
+  F held, slide down to Db on bar 3, slide up to Eb into bar 4, then silence for half a bar. The 808 skips the
+  kick on the "and" of 2 so it has its own rhythm.
+harmony: Fm (two bars), Db, Eb. The piano only ever plays the two-note motif; the 808 implies the chords.
+the_moment: >-
+  The last four bars of Rook's first verse: drums and 808 cut out, the vocal sits almost alone over the piano
+  motif, then the beat comes back hard on the first word of the hook.
+
+sections:
+  - name: intro
+    tag: intro - two-note piano motif alone, then hats, then one snare
+    bars: 8
+    performer: rook
+    lyrics: |
+      Twelfth floor. Lift's broke again.
+  - name: verse 1
+    tag: verse - deep calm baritone rap, measured, hard half-time groove
+    bars: 12
+    performer: rook
+    idea: what Southmere is like at night; the image is the bus shelter with no glass that people still stand in
+    lyrics: |
+      Half six in Southmere, all the shutters coming down
+      Town shuts earlier each year like it's leaving town
+      Bus shelter's got no glass, man still stands inside it
+      Habit's a funny thing, you keep the shape and hide in it
+      Twelfth floor, Mercer House, lift's been broke since June
+      I know every landing by the smell before I'm through
+      Mum's got the telly loud so she don't hear the block
+      I've got my phone face down so I don't hear the talk
+      Group chat's on fire and the whole ends got a theory
+      Everybody saw it, funny, no one saw it clearly
+      I don't type, I don't send, I just read it and I leave it
+      If you weren't in the room then you don't get to believe it
+  - name: verse 1 dropout
+    tag: break - drums and 808 cut out, voice and piano only
+    bars: 4
+    performer: rook
+    lyrics: |
+      See round here what you say is a debt
+      And it gets collected later when you least expect
+      So I keep my mouth shut and my phone in my coat
+      Man can't quote what I never wrote
+  - name: hook 1
+    tag: chorus - beat slams back in, short chanted hook, 808 slides
+    bars: 8
+    performer: rook, vale doubling the last line
+    lyrics: |
+      No signal, no signal
+      Lift's broke, stairs again
+      No signal, no signal
+      I don't talk on the phone to friends
+      No signal, no signal
+      Everybody's talking, nobody hears
+      No signal, no signal
+      Same block, same faces, ten years
+  - name: verse 2
+    tag: verse - deep calm baritone rap, blunt, sparse bells enter
+    bars: 8
+    performer: rook
+    idea: the group's shared history; the image is the wall under the arches the council keeps painting over
+    lyrics: |
+      Mum asks where I've been and I say nowhere, that's true
+      Nowhere's where we've been since we were in Year Two
+      Same wall by the arches, same paint, different names
+      Council keeps covering it, we keep writing the same
+      Bredrin got a job at the depot doing nights
+      Says the money's alright but he don't see daylight
+      Everybody's got a plan, I've got a pen and a pad
+      And a list of all the things I'll never say to my dad
+  - name: verse 2 vale
+    tag: verse - softer low melodic male voice, drawn-out endings, hats thin out
+    bars: 8
+    performer: vale
+    idea: the brother who isn't there; the image is the room kept with the door half open
+    lyrics: |
+      I've still got his number saved, I don't ring it
+      Some nights I nearly do, then I don't, I just think it
+      Mum keeps his room how it was, door half open
+      Like the house is holding its breath for someone she's still hoping
+      Signal's full on my phone, I've got five bars
+      But I can't reach no one from where we are
+      Everybody's talking, I hear it through the wall
+      Nobody's listening, nobody's listening at all
+  - name: hook 2
+    tag: chorus - short chanted hook, full groove, hat roll at the end
+    bars: 8
+    performer: rook and vale together
+    lyrics: |
+      No signal, no signal
+      Lift's broke, stairs again
+      No signal, no signal
+      I don't talk on the phone to friends
+      No signal, no signal
+      Everybody's talking, nobody hears
+      No signal, no signal
+      Same block, same faces, ten years
+  - name: outro
+    tag: outro - drums fall away, two-note piano motif alone, then silence
+    bars: 8
+    performer: rook
+    lyrics: |
+      No signal
+      No signal
+
+ending: The drums drop out bar by bar until only the two-note piano motif is left, unresolved, then silence.
+
+caption: >-
+  140 bpm, F minor, haunting two-note piano motif, distant airy pad, sparse opening then a hard half-time
+  groove, deep calm baritone lead rapper with a measured conversational delivery, a softer low melodic male
+  voice for one short passage, short repetitive chanted hook, drums and 808 drop out for a moment leaving
+  voice and piano, ends on the piano motif alone
+
+lyric_audit:
+  character_voice: Rook observes and never explains; Vale's passage is the only one that admits a feeling
+  narrative: verse 1 is the place, verse 2 is the history, Vale is the cost
+  imagery: [bus shelter with no glass, landings known by smell, phone face down, the wall the council repaints, the half-open door]
+  hook: '"No signal, no signal" repeated four times, with a concrete line between each'
