@@ -143,9 +143,22 @@ if render_on:
 if voice_on:
     deadline = min(time.time() + VOICE_MAX_HOURS * 3600, HARD_STOP)
     cmds.append([sys.executable, f"{REPO}/kaggle/voice.py"])
-    envs.append({"VOICE_MODEL": VOICE_MODEL, "VOICE_EPOCHS": str(VOICE_EPOCHS), "VOICE_SAVE_EVERY": str(VOICE_SAVE_EVERY),
-                 "VOICE_PITCH": str(VOICE_PITCH), "BAND_DEADLINE": str(deadline), "OUT_DIR": OUT,
-                 "CUDA_VISIBLE_DEVICES": ",".join(map(str, voice_gpus))})
+    venv = {"VOICE_MODEL": VOICE_MODEL, "VOICE_EPOCHS": str(VOICE_EPOCHS), "VOICE_SAVE_EVERY": str(VOICE_SAVE_EVERY),
+            "VOICE_PITCH": str(VOICE_PITCH), "BAND_DEADLINE": str(deadline), "OUT_DIR": OUT,
+            "CUDA_VISIBLE_DEVICES": ",".join(map(str, voice_gpus))}
+    # Probe clips go up as the private dataset <user>/jewgrass-voice-probes as soon as each checkpoint is converted,
+    # so `kjob.py probes --watch` on the laptop can play them during the run (needs the KAGGLE_API_TOKEN secret).
+    try:
+        from kaggle_secrets import UserSecretsClient
+        _tok = UserSecretsClient().get_secret("KAGGLE_API_TOKEN")
+    except Exception:
+        _tok = None
+    if _tok and KAGGLE_USER:
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "kaggle"], check=False)
+        venv.update(KAGGLE_API_TOKEN=_tok, PROBE_DATASET=f"{KAGGLE_USER}/jewgrass-voice-probes")
+    else:
+        print("probe clips arrive at the end of the run only (no KAGGLE_API_TOKEN secret or KAGGLE_USER)")
+    envs.append(venv)
     names.append(f"voice card(s) {voice_gpus}")
 
 if voice_on and render_on and N_GPU == 1:   # one card: voice first, then renders

@@ -57,6 +57,9 @@ python3 kaggle/laptop/kjob.py run JOB=voice VOICE_EPOCHS=250
 python3 kaggle/laptop/kjob.py status
 python3 kaggle/laptop/kjob.py fetch --wait     # waits for the run to finish, downloads to ~/band/kaggle/runs/<time>/
 python3 kaggle/laptop/kjob.py quota            # GPU hours left this week
+
+# Voice runs: hear each checkpoint while training is still going (needs the KAGGLE_API_TOKEN secret, step 4)
+python3 kaggle/laptop/kjob.py probes --watch   # new probe clips land in ~/band/kaggle/probes/ every 25 epochs
 ```
 
 More options:

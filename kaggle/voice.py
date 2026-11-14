@@ -10,6 +10,8 @@ Usage: python kaggle/voice.py   (settings come from environment variables, set b
   APPLIO_DIR, APPLIO_PY   the Applio checkout and its venv python (setup.sh makes them)
   OUT_DIR            where results go (/kaggle/working/out)
   BAND_DEADLINE      unix time: stop training here so the run ends inside Kaggle's 12 hours
+  PROBE_DATASET      optional <user>/<dataset>: upload the probe clips there after every checkpoint, so they can be
+                     heard during the run (kjob.py probes --watch). Needs KAGGLE_API_TOKEN in the environment.
 
 Inputs are found under /kaggle/input (attach them with "Add Input"):
   - a dataset folder of cleaned clips (a folder named "dataset", or any folder with 5+ .wav/.flac files)
@@ -24,6 +26,7 @@ Outputs in OUT_DIR/voice:
   state/<model>-state.tar                                attach this next time to resume training
 """
 import glob
+import json
 import os
 import re
 import shutil
@@ -45,6 +48,7 @@ PY = os.environ.get("APPLIO_PY", "/kaggle/temp/venv-applio/bin/python")
 OUT = os.path.join(os.environ.get("OUT_DIR", "/kaggle/working/out"), "voice")
 DEADLINE = float(os.environ.get("BAND_DEADLINE", "0") or 0)
 INPUT = os.environ.get("KAGGLE_INPUT", "/kaggle/input")
+PROBE_DATASET = os.environ.get("PROBE_DATASET", "")
 os.environ["MPLBACKEND"] = "Agg"  # Kaggle's inline backend breaks matplotlib in subprocesses
 os.environ.setdefault("APPLIO_CONFIG_FILE", "/kaggle/temp/applio-config.json")  # written by setup.sh (fp16/fp32)
 PROBE_URL = ("https://raw.githubusercontent.com/GeneralKnowledge/JewGrass/claude/voice-probe/"
@@ -144,6 +148,29 @@ def convert_probe(weight, vocal, inst):
                         "-ar", "48000", "-b:a", "320k", f"{OUT}/probes/{tag}-mix.mp3"])
     os.remove(raw)
     log(f"probe clip ready: probes/{tag}-your-voice.mp3")
+    publish_probes()
+
+
+def publish_probes():
+    """Upload every probe clip made so far as a new version of PROBE_DATASET (small: about 1 MB per checkpoint)."""
+    if not PROBE_DATASET or not os.environ.get("KAGGLE_API_TOKEN"):
+        return
+    up = os.path.join(os.environ.get("KAGGLE_TEMP", "/kaggle/temp"), "probe-upload")
+    shutil.rmtree(up, ignore_errors=True)
+    os.makedirs(up)
+    for f in glob.glob(f"{OUT}/probes/*.mp3"):
+        shutil.copy2(f, f"{up}/{MODEL}-{os.path.basename(f)}")
+    json.dump({"title": PROBE_DATASET.split("/")[1], "id": PROBE_DATASET, "licenses": [{"name": "CC0-1.0"}]},
+              open(f"{up}/dataset-metadata.json", "w"))
+    cli = [sys.executable, "-c", "import sys; from kaggle.cli import main; sys.exit(main())"]
+    latest = sorted(glob.glob(f"{OUT}/probes/*-your-voice.mp3"))[-1:]
+    note = f"{MODEL} " + (os.path.basename(latest[0]).split("-")[0] if latest else "probes")
+    for args in (["datasets", "version", "-p", up, "-m", note, "-d"], ["datasets", "create", "-p", up]):
+        r = subprocess.run(cli + args, capture_output=True, text=True)
+        if r.returncode == 0:
+            log(f"probe clips uploaded to {PROBE_DATASET} ({note})")
+            return
+    log(f"probe upload failed (training carries on): {(r.stdout + r.stderr).strip()[-300:]}")
 
 
 def probe_watcher(stop, vocal, inst):

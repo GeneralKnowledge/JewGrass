@@ -15,6 +15,8 @@ write your Kaggle username in ~/band/kaggle/user.
   kjob.py log [VERSION]          The end of a run's log (why did it stop?)
   kjob.py fetch [--wait]         Download the latest run's output to ~/band/kaggle/runs/<time>/
                                  (--wait: check every 5 minutes until it finishes, then download).
+  kjob.py probes [--watch]       Download the voice probe clips made so far in the current run to ~/band/kaggle/probes/
+                                 (--watch: check every 5 minutes and print each new checkpoint until the run ends).
   kjob.py quota                  GPU hours left this week.
 
 Light on the laptop: it only uploads, polls and downloads. No GPU, no lock needed.
@@ -213,6 +215,29 @@ def fetch(a):
         print(open(run_txt[0]).read())
 
 
+def probes(a):
+    """Probe clips arrive during a voice run as the dataset <user>/jewgrass-voice-probes (one version per checkpoint)."""
+    ref = f"{user()}/jewgrass-voice-probes"
+    dest = os.path.join(HOME, "probes")
+    os.makedirs(dest, exist_ok=True)
+    seen = set(os.listdir(dest))
+    while True:
+        r = kaggle("datasets", "download", ref, "-p", dest, "--unzip", "--force", check=False, capture=True)
+        if r.returncode and not a.watch:
+            sys.exit(f"No probe clips yet ({ref}): {(r.stdout + r.stderr).strip()[-200:]}")
+        new = sorted(set(os.listdir(dest)) - seen)
+        for f in new:
+            print(f"new: {os.path.join(dest, f)}")
+        seen |= set(new)
+        if not a.watch:
+            print(f"{len([f for f in seen if f.endswith('.mp3')])} probe clips in {dest}")
+            return
+        if not busy():
+            print("run finished; all probe clips are in", dest)
+            return
+        time.sleep(300)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -231,6 +256,8 @@ def main():
     p.add_argument("--lines", type=int, default=80)
     p = sub.add_parser("fetch")
     p.add_argument("--wait", action="store_true")
+    p = sub.add_parser("probes", help="download the voice probe clips made so far")
+    p.add_argument("--watch", action="store_true")
     sub.add_parser("quota")
     a = ap.parse_args()
     os.makedirs(HOME, exist_ok=True)
@@ -244,6 +271,8 @@ def main():
         show_log(a)
     elif a.cmd == "fetch":
         fetch(a)
+    elif a.cmd == "probes":
+        probes(a)
     elif a.cmd == "quota":
         kaggle("quota")
 
