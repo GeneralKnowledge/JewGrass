@@ -1,0 +1,109 @@
+# IRON CANTICLE Song Design: Tithe Bell (track 01, round 1, cathedral family).
+slug: canticle-tithe-bell
+title: Tithe Bell
+credit: IRON CANTICLE featuring the Herald
+order: 1
+family: cathedral
+version: 1
+role: The opener. Sets the album's sound and world in under two minutes - the bell, the choir, the levy.
+story: >-
+  The levy day in Vigil. The Synod's Herald reads the order: every tenth child goes to the war. A mother on a
+  stairwell asks the count to skip her door. It doesn't. (The child is Kell.)
+test: Can the choir, organ and 808 become one sound, and does a cold rap sit on top of a choir hook?
+
+render:
+  bpm: 140
+  key: C minor
+  timesig: "4"
+  seconds: 110        # 52 bars at 140 is 89 s; the rest is room for the bell to ring out
+
+palette:
+  lead: the choir hook, unison, low
+  bass: distorted 808 on the downbeat only, long notes
+  drums: half-time trap, sparse; war drums only in the last chorus
+  colour: one deep tolling bell on the first beat of each chorus
+  left_out: guitars, strings, hand drums, anything fast
+harmony: Cm - Ab - Fm - G (the G major chord is the cold lift of the hook). Organ holds the chords low; choir in unison.
+drums: >-
+  Half-time: kick on 1, snare on 3, hats in eighths with triplet rolls only at the end of the verse. Mother's
+  bridge has no drums. Final chorus adds slow war-drum toms on every beat.
+bass_movement: 808 follows the chord roots, one long note per bar, slides down a fifth into the final chorus.
+the_moment: >-
+  The mother's "count to nine" sung over organ alone, then the bell and the whole choir come straight back in
+  over it, louder, as if she wasn't heard.
+
+sections:
+  - name: chorus 1
+    tag: chorus - massive deep male choir chant in unison, deep bell, 808 hits, straight in
+    bars: 8
+    performer: synod
+    lyrics: |
+      Ring the bell, the tenth one goes
+      Ring the bell, the Synod knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: verse
+    tag: verse - cold measured male rap, precise diction, sparse half-time trap drums, organ underneath
+    bars: 16
+    performer: herald
+    idea: the order read out as arithmetic; the image is the ledger by the altar
+    lyrics: |
+      By order of the Synod in the year of the long night
+      Every house on every level, every tenth one, read it right
+      We don't take the strongest and we don't take the weak
+      We take the tenth, the count is holy, so don't let me hear you speak
+      Your son was born for this, it's in the ledger on the wall
+      By the altar where the candles burn, we keep the names of all
+      He'll get a coat, a number and a rifle older than his street
+      He'll get a candle in the chapel if the war gets what it eats
+      Don't call it cruel, it's arithmetic, the sun is going cold
+      Twelve thousand years of candles and the light is getting old
+      Something in the dark is hungry, something out past the stars
+      Every tenth child is a wall between that hunger and what's ours
+      Mothers on the stairwell with their hands upon the rail
+      Hold him if you have to, but the bell will never fail
+      The levy ship is fuelled and it's waiting on the pad
+      Say goodbye, say nothing, say he's all you ever had
+  - name: chorus 2
+    tag: chorus - deep male choir chant, deep bell, 808 hits
+    bars: 8
+    performer: synod
+    lyrics: |
+      Ring the bell, the tenth one goes
+      Ring the bell, the Synod knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: bridge
+    tag: bridge - soft low female voice sung alone over a held organ chord, no drums
+    bars: 8
+    performer: mother
+    lyrics: |
+      Count to nine and skip my door
+      Count to nine, I'll ask no more
+      He's only small, he's only mine
+      Count to nine, count to nine
+  - name: final chorus
+    tag: final chorus - choir louder, slow pounding war drums join the 808, bell on every bar
+    bars: 8
+    performer: synod
+    lyrics: |
+      Ring the bell, the tenth one goes
+      Ring the bell, the Synod knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: end
+    tag: ending - instrumental, everything stops, one deep bell rings out alone
+    bars: 4
+    performer: none
+
+ending: Everything stops on the downbeat; one bell strike rings out and decays. No outro, no voice.
+caption: >-
+  140 bpm, C minor, opens straight in on a massive low male choir chant, cold measured male rap verse with
+  precise diction over sparse half-time trap drums and low organ, a soft low female voice sings a short bridge
+  over organ alone, final chorus adds slow pounding war drums, ends on a single deep bell ringing out
+
+lyric_audit:
+  character_voice: the Herald never raises his voice; everything is procedure. The mother only asks.
+  imagery: [the ledger on the wall, a rifle older than his street, the levy ship on the pad, hands on the stairwell rail]
+  hook: '"Ring the bell" four times a chorus; "Count to nine" is the line people remember'
+  throughline: counting (every tenth one, count to nine) and candles (light a candle, twelve thousand years of candles)

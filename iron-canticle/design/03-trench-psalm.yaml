@@ -1,0 +1,154 @@
+# IRON CANTICLE Song Design: Trench Psalm (track 03, round 1, war family).
+slug: canticle-trench-psalm
+title: Trench Psalm
+credit: IRON CANTICLE featuring Kell
+order: 3
+family: war
+version: 1
+role: The first high-energy track and Kell's first verse. Proves the album can hit hard, not just loom.
+story: >-
+  Six months on a frozen moon at the edge of the system. Kell's friend Teague, who sang in the choir back home,
+  dies on a push. The chaplain reads the same psalm he read for the hundred before. Kell looks at the sky,
+  which you're not supposed to do, and sees the sun has become a red ember.
+test: Can doom guitars, war drums and a rap verse share the low end without turning to mud?
+
+render:
+  bpm: 145
+  key: E minor
+  timesig: "4"
+  seconds: 150        # 76 bars at 145 is 126 s, plus room for the last organ note
+
+palette:
+  lead: Kell's rap; the soldiers' call and response is the hook
+  bass: distorted 808 locked to the kick; guitars and 808 never both hold long notes at once
+  drums: war drums and toms over trap hats; double-kick bursts at the ends of hook lines
+  guitars: down-tuned chugs on the hooks only; verses have none
+  left_out: bell (it belongs to Vigil, not the front), hand drums, female voice, strings
+harmony: Em - C - Am - B (B major for the harmonic-minor bite). Guitars play the root on the hooks, organ is barely there.
+drums: >-
+  Verses: kick on 1 and the "and" of 2, snare on 3 (half-time), fast hats with rolls. Hooks: full-time, toms on
+  every beat, snare on 2 and 4, double-kick at the end of each call. Bridge: no drums, choir only.
+bass_movement: 808 slides up into each hook; drops out entirely in the bridge.
+the_moment: >-
+  The chaplain's psalm (bridge) over nothing but choir, then the final hook crashes back in with the guitars
+  at their heaviest.
+
+sections:
+  - name: hook 1
+    tag: chorus - gruff group shout call and response, down-tuned guitar chugs, war drums, straight in
+    bars: 8
+    performer: soldiers
+    lyrics: |
+      Who holds the line
+      We hold the line
+      Who feeds the guns
+      The tenth-born sons
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+  - name: verse 1
+    tag: verse - gritty low male rap, tired and close, half-time war drums, fast hats, no guitars
+    bars: 16
+    performer: kell
+    idea: the cold and the waiting; the image is the coat with another man's name sewn in
+    lyrics: |
+      Six months in the ice and I've forgotten the sun
+      They gave me a coat with another man's name on
+      Number on my wrist where my mother used to hold it
+      Rifle older than the chapel, and the chaplain never told us
+      Mud freezes in the trench, by the morning it's stone
+      Sergeant says this moon was ours before the dark came home
+      We don't see the enemy, we see the lights in the haze
+      We fire at the lights and the lights fire back for days
+      Lad beside me, Teague, used to sing in the choir
+      Now he hums the evening psalm while he's feeding the fire
+      Says the Synod sees us all, every candle is a soul
+      I count the candles in the chapel, they don't need us all
+      The ships pass over us at night and they never come down
+      Supply drop's a crate of prayers and a box of rounds
+      Write home, they tell us, I don't know what I'd write
+      Dear Mum, it's cold here. The bell was right
+  - name: hook 2
+    tag: chorus - gruff group shout call and response, guitar chugs, double-kick bursts
+    bars: 8
+    performer: soldiers
+    lyrics: |
+      Who holds the line
+      We hold the line
+      Who feeds the guns
+      The tenth-born sons
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+  - name: verse 2
+    tag: verse - gritty male rap, harder and angrier, fuller drums, no guitars
+    bars: 16
+    performer: kell
+    idea: Teague dies and the psalm doesn't change; the image is the sun as a red ember
+    lyrics: |
+      Night four of the push and the lights came close
+      Saw the thing behind them and I won't say what it was
+      Teague went over first 'cause the whistle said go
+      He sang the whole way out, then the singing stopped. Slow
+      I dragged him by the coat with the other man's name
+      Chaplain read the psalm and the psalm read the same
+      Same words for him as the hundred before
+      Candle in the chapel, then they ask us for more
+      I'm not scared of the dark, I've been in it for years
+      I'm scared of a sermon that's dry where there should be tears
+      Synod's in the spire with a fire and a feast
+      We're the wall at the edge, we're the tithe, we're the least
+      Sergeant's got a rule, you don't look at the sky
+      You look at the sky and you start asking why
+      I looked up last night past the guns and the smoke
+      And the sun was a red ember. Nobody spoke
+  - name: bridge
+    tag: bridge - deep solo male singer, slow and sermon-like, choir hum only, no drums, no bass
+    bars: 8
+    performer: chaplain
+    lyrics: |
+      Lie down in the frozen field
+      Your name is in the ledger sealed
+      The bell has rung, the count is kept
+      The Synod wakes while you have slept
+  - name: final hook
+    tag: final chorus - heaviest, guitars and war drums crash back in, group shouts and choir together
+    bars: 16
+    performer: soldiers
+    lyrics: |
+      Who holds the line
+      We hold the line
+      Who feeds the guns
+      The tenth-born sons
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+      Who holds the line
+      We hold the line
+      Who lights the dead
+      The sun burns red
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+  - name: end
+    tag: ending - instrumental, guns and drums stop dead, one low organ note held, then silence
+    bars: 4
+    performer: none
+
+ending: Drums and guitars stop dead on the downbeat. One low organ E is held for the last bars and cut, no fade.
+caption: >-
+  145 bpm, E minor, opens straight in on a gruff group-shout call and response hook over down-tuned doom guitar
+  chugs and pounding war drums, gritty tired low male rap verses with half-time drums and fast hats, guitars
+  only on the hooks, a slow deep solo male voice sings a short bridge over a choir hum with no drums, final
+  chorus is the heaviest, ends with drums stopping dead and one held low organ note
+
+lyric_audit:
+  character_voice: Kell is dry and plain-spoken; he jokes once (the crate of prayers) and stops joking after Teague
+  narrative: waiting (v1), the push and Teague's death (v2), the chaplain's psalm, the hook turns from duty to the red sun
+  imagery: [another man's name on the coat, the lights in the haze, a crate of prayers and a box of rounds, the sun as a red ember]
+  hook: call and response with the same catechism shape as Prayer's bridge, so the army and the cult sound like one church
+  throughline: Kell counts the candles; the bell from Tithe Bell is in the last line of verse 1; the ledger returns in the psalm
