@@ -1,5 +1,7 @@
 # TAM LIGHTLY
 
+**Status: sketch.** MR. SIDEQUEST (`../mr-sidequest/`) is the main rap act now; this stays for later.
+
 A fictional, lighthearted rap act: **Tam Lightly**, twenty-three, from Auchterbeg (a made-up small town in
 central Scotland). He raps about tiny everyday wins as if they were cup finals: total confidence, very low
 stakes, and the joke is always on him. Bright, bouncy, catchy and daft, with a bit of heart.

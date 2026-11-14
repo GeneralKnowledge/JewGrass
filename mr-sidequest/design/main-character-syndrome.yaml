@@ -1,0 +1,166 @@
+# MR. SIDEQUEST Song Design: Main Character Syndrome (01, introduction / single). From Reuben's spec, Nov 14.
+# Changes from the spec for his standing rules: no spoken intro (starts on verse 1), the bridge is rapped on a
+# stripped beat rather than spoken, and the outro is a rapped punchline with a hard stop.
+slug: mr-sidequest-main-character-syndrome
+title: Main Character Syndrome
+credit: MR. SIDEQUEST
+version: 1
+order: 1
+purpose: Introduce the personality and prove he is a good rapper, not just a comedian.
+concept: >-
+  A man who believes he is the protagonist of his own film. Every minor inconvenience is a turning point and
+  everyone else is an extra, until he notices that everyone else has their own film.
+
+render:
+  bpm: 104
+  key: G minor
+  timesig: "4"
+  seconds: 220        # 92 bars at 104 is 212 s, plus room for the ending
+
+palette: funky bass guitar, crisp boom bap drums, chopped soul keys, short brass accents, an occasional guitar riff
+harmony: Gm, Eb, Bb, F, circular
+the_moment: >-
+  At the end of verse 1 the beat cuts out before the punchline, one dry vocal line, then bass and drums return.
+
+sections:
+  - name: verse 1
+    tag: verse - starts straight in, relaxed conversational rap, funky bass and boom bap drums
+    bars: 16
+    idea: buying milk as an epic mission
+    lyrics: |
+      Saturday, half nine, out of milk, that's the mission
+      Wide shot in the doorway, strings swelling, cinematic vision
+      Hoodie zipped up like armour, car keys gripped like a relic
+      Neighbour says "alright, mate", one line, he's an extra, I respect it
+      Automatic doors slide open like they knew that I was coming
+      Trolley with a wonky wheel, my sidekick, loyal, running
+      Pulling left to the biscuits every aisle, he's got a weakness
+      Every hero needs a flaw and mine's a trolley, I can't beat this
+      Aisle six and the plot thickens, semi-skimmed is missing
+      Whole or oat, it's a test of my moral position
+      Slow zoom on my face while I'm weighing up the options
+      Lad restocking yoghurts asks "you alright?" Mate, I'm mid plot twist
+      Grab the oat, cue the choir, the whole crowd stands in my head
+      Queue's ten deep, woman in front paying in five-pence pieces instead
+      Home by ten, walk in slow like I'm winning an award
+      Mum says "that's oat, I said semi-skimmed." Cut. Take two. Out the door.
+  - name: hook 1
+    tag: chorus - chanted melodic hook, brass stabs, full beat
+    bars: 8
+    lyrics: |
+      Main character syndrome, walking through the scene
+      Got a soundtrack in my head though the budget's looking lean
+      Everybody's got a part and everybody's got a role
+      I'm the centre of the universe, or that's what I've been told
+      Told by who? Told by me
+      Slow motion down the high street like a trailer on a screen
+      Extras in the background and they don't know what they've seen
+      Main character syndrome, roll the credits, that's me
+  - name: verse 2
+    tag: verse - denser technical rap, internal rhymes, guitar riff, beat cuts before last line
+    bars: 16
+    idea: strangers, a traffic light and a missed bus as omens
+    lyrics: |
+      Monday morning, bus stop, the timetable's a prophecy
+      Eight-oh-two, it's foretold, I'm the chosen one, obviously
+      Man in a suit checking his watch, that's my mentor, I can sense it
+      Woman with a pram is the oracle, mysterious, intense, it's
+      Pigeon on the shelter, that's a symbol, that's a sign
+      Red light for a minute, the universe testing my timing
+      Amber means patience, green means the second act's starting
+      Then the bus goes straight past, full, the driver's not even parking
+      Hold up, that's a plot hole, that's a scene that they cut
+      Get the writers, get the director, somebody tell me what's up
+      Mentor gets a taxi, oracle walks, pigeon flies off
+      Whole cast leaves the set and nobody even says they're off
+      Standing on my own like a trailer with no film
+      Twenty minutes, next bus, I get on, it's just a bus, and I'm still
+      Back seat, headphones in, scoring the scene with a theme tune
+      Old man beside me eats a scotch egg at eight. He's the lead. I'm in his film.
+  - name: hook 2
+    tag: chorus - chanted melodic hook, brass stabs, full beat
+    bars: 8
+    lyrics: |
+      Main character syndrome, walking through the scene
+      Got a soundtrack in my head though the budget's looking lean
+      Everybody's got a part and everybody's got a role
+      I'm the centre of the universe, or that's what I've been told
+      Told by who? Told by me
+      Slow motion down the high street like a trailer on a screen
+      Extras in the background and they don't know what they've seen
+      Main character syndrome, roll the credits, that's me
+  - name: bridge
+    tag: bridge - beat strips to bass and kick, calm rap on the beat, thoughtful
+    bars: 8
+    lyrics: |
+      Here's the thing about the background, it's got its own foreground
+      Every extra in the queue has got a story you don't know now
+      Lad in the yoghurts got a kid and a mortgage and a bad back
+      Woman with the five-pence pieces counting 'cause the month's been that bad
+      Not a villain, that's a Tuesday, that's a life, that's a budget
+      Pigeon's probably got a plot as well, I'm not gonna judge it
+      So the camera that I carry, maybe turn it round the other way
+      Get the whole crowd in focus, let them have their say
+  - name: verse 3
+    tag: verse - fast flow switches and callbacks, full beat returns, brass accents
+    bars: 16
+    idea: same mission, new angle; he's in everybody else's film
+    lyrics: |
+      Saturday, half nine, out of milk, same mission, different lens
+      This time I'm watching, not starring, the camera's on my friends
+      Lad restocking yoghurts, ask him how it's going, he's grinning
+      Little girl took her first steps on Friday, his whole life's beginning
+      Woman with the coins, I hold the queue, tell her take your time
+      She says "thanks, love", whole film in two words, best line
+      Trolley still pulls to the biscuits, fine, I let him, he's earned it
+      Every sidekick needs a win, every lesson needs learning
+      Different angle, different camera, different cast, I'm a cameo
+      Not the hero or the villain, I'm the bloke in the corner going hello
+      Everybody's in a feature and they're writing it themselves
+      Every queue's an anthology, every bus is a box set on the shelves
+      Pigeon's got a franchise, old man's got a trilogy
+      Me, I'm in the background and I'm fine with that, willingly
+      Got the semi-skimmed this time, Mum's chuffed, nobody claps
+      Nobody's meant to. That's life. I'm still in it. And that's that.
+  - name: final hook
+    tag: chorus - layered vocals and ad-libs, brass, biggest groove
+    bars: 16
+    lyrics: |
+      Main character syndrome, walking through the scene
+      Got a soundtrack in my head though the budget's looking lean
+      Everybody's got a part and everybody's got a role
+      I'm the centre of the universe, or that's what I've been told
+      Told by who? Told by me
+      Slow motion down the high street like a trailer on a screen
+      Extras in the background and they don't know what they've seen
+      Main character syndrome, roll the credits, that's me
+      Main character syndrome, but I'm learning how to share
+      Got a soundtrack in my head and there's a part for you in there
+      Everybody's got a part and everybody's got a role
+      I'm the centre of my universe, and yours is yours to hold
+      Told by who? Told by me
+      Slow motion down the high street like a trailer on a screen
+      Everybody's got a film and I'm an extra in eighteen
+      Main character syndrome, roll the credits, that's me
+  - name: ending
+    tag: outro - rapped punchline over the bass riff, hard stop
+    bars: 4
+    lyrics: |
+      Credits roll and my name's at the bottom in the smallest font
+      Man buying milk. That's me. Still counts.
+      Cut.
+
+ending: Rapped punchline over the bass riff, hard stop on "Cut". No speech.
+
+caption: >-
+  104 bpm, G minor, funky boom bap hip hop, funky bass guitar, crisp boom bap drums, chopped soul keys, short
+  brass stabs, occasional guitar riff, energetic but not busy, starts straight in on the first verse,
+  relaxed conversational flow then denser technical flow, chanted melodic hook, beat drops out before
+  punchlines, stripped breakdown with bass and kick only, fast final verse with callbacks, layered final hook
+  with ad-libs, hard stop ending
+
+lyric_audit:
+  verse_progression: supermarket epic (v1), omens at the bus stop (v2), everyone else has their own film (v3)
+  callbacks: [out of milk, the oat, the trolley and the biscuits, the five-pence woman, the yoghurt lad, the pigeon, the old man]
+  technical: dense internal rhyme in v2, fast switches in v3
+  hook: '"Main character syndrome ... roll the credits, that''s me"; the final hook turns it outward'
