@@ -17,10 +17,12 @@ SONG=$(realpath --relative-to=. "$SONG" 2>/dev/null || echo "$SONG")
 M=$SONG/media
 
 echo "== 1. lyric timing from the vocal stem"
-python3 tools/align_lyrics.py "$M/vocals.flac" "$M/lyrics.txt" "$M/beats.json" "$SONG/timing.yaml" --beats-out "$SONG/grid.json"
+# ANCHORS="verse=28.3 outro=233.6" pins sections to known times (see the Glen run in docs)
+ANCH=(); for a in ${ANCHORS:-}; do ANCH+=(--anchor "$a"); done
+python3 tools/align_lyrics.py "$M/vocals.flac" "$M/lyrics.txt" "$M/beats.json" "$SONG/timing.yaml" --beats-out "$SONG/grid.json" "${ANCH[@]}"
 
 echo "== 2. analysis of the master"
-ln -sf "$(realpath "$M/master.flac")" "$SONG/master.flac"
+ln -sf media/master.flac "$SONG/master.flac"
 rm -f "$SONG/master.wav"   # the click-track guide, if a preview was made
 python3 -m engine.analysis "$SONG/master.flac" "$SONG/analysis.json" --beats "$SONG/grid.json" ${STEMS:+--stems "$STEMS"}
 
