@@ -170,6 +170,12 @@ def main():
                 for k in range(syllables(w)):
                     syl_start.append(wi == 0 and k == 0)
                     owner.append((si, li, wi, k))
+    if len(onsets) < len(syl_start):
+        # too few onsets for syllables (e.g. a smooth sung line): align words instead
+        print(f"note: {len(onsets)} onsets < {len(syl_start)} syllables, aligning by word")
+        keep = [k for k, o in enumerate(owner) if o[3] == 0]
+        owner = [owner[k] for k in keep]
+        syl_start = [syl_start[k] for k in keep]
     path = align(syl_start, onsets)
 
     times = {}

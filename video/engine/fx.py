@@ -102,7 +102,7 @@ class Psych:
 
     def __init__(self, W, H, seed, analysis):
         self.W, self.H = W, H
-        self.lw, self.lh = (320, int(320 * H / W)) if W >= H else (int(320 * W / H), 320)
+        self.lw, self.lh = (480, int(480 * H / W)) if W >= H else (int(480 * W / H), 480)
         y, x = np.mgrid[0:self.lh, 0:self.lw].astype(np.float32)
         s = 2.0 / min(self.lw, self.lh)
         self.zx = (x - self.lw / 2) * s
@@ -155,7 +155,7 @@ class Psych:
             alive &= ~esc
         out[alive] = iters
         v = (np.sqrt(out / iters) * 2.5 + 0.06 * t + 0.12 * self.hit_phase[k]) % 1.0
-        rgb = self.lut[(v * 511).astype(np.int32)]
+        rgb = cv2.GaussianBlur(self.lut[(v * 511).astype(np.int32)], (0, 0), 0.7)
         return cv2.resize(rgb, (self.W, self.H), interpolation=cv2.INTER_CUBIC)
 
     def warp(self, img, t, i, amount):

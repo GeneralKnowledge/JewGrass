@@ -196,3 +196,7 @@ shots:
     react: {budget: 0.05}
     actors:
       - {type: stamp, text: "RENT'S DUE FRIDAY", word: Friday, at: 0.5, pos: [0.5, 0.42], rot: -5, size: 0.11}
+
+# Stage 5 extras
+thumbnail: {shot: s16, at: 0.55, title: "DEED TO THE GLEN", laird: true}
+vertical: {sections: [chorus-3], max_s: 45}

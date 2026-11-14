@@ -44,6 +44,7 @@ class Compositor:
         self.plan, self.a = plan, analysis
         self.W, self.H = W, H
         self.U = min(H, W * 0.5625)  # sprite/text size unit (portrait-safe)
+        self.text_on = True  # thumbnails switch the lyrics off
         self.fps = analysis["fps"]
         self.seed = int(plan["meta"].get("seed", 1707))
         self.atm = Atmosphere(W, H, self.seed)
@@ -335,7 +336,7 @@ class Compositor:
         if crow and Mnear is not None:
             self._draw_crow(img, crow, plate, Mnear, p, t)
         txt = sh.get("text") or {}
-        mode = txt.get("mode", "none")
+        mode = txt.get("mode", "none") if self.text_on else "none"
         if mode == "chorus-sign" and Mnear is not None:
             self._over(img, self._chorus_board(sh, t, plate, Mnear))
 
