@@ -30,6 +30,7 @@ FP32_COMPUTE = os.environ.get("BAND_FP32_COMPUTE", "1") == "1"
 ATTN = os.environ.get("BAND_ATTN", "sdpa" if FP32_COMPUTE else "eager")
 OFFLOAD = os.environ.get("BAND_OFFLOAD", "0") == "1"
 DEADLINE = float(os.environ.get("BAND_DEADLINE", "0") or 0)
+STOP_FILE = os.environ.get("BAND_STOP_FILE", "")  # extra "fill" takes stop as soon as this file appears
 # name: (checkpoint, extra GenerationParams). Turbo models run 8 steps without CFG; shift 3 as on the laptop.
 MODELS = {
     "turbo": ("acestep-v15-turbo", {"shift": 3.0}),
@@ -150,6 +151,9 @@ done = failed = 0
 for j in todo:
     if DEADLINE and time.time() > DEADLINE:
         log("time budget reached, stopping before the next take (rerun to finish the rest)")
+        break
+    if j.get("fill") and STOP_FILE and os.path.exists(STOP_FILE):
+        log("the other card has finished, so no more extra takes")
         break
     slug, seed = j["slug"], j["seed"]
     out_dir = os.path.join(out_root, slug)

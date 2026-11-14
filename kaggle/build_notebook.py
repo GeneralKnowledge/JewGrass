@@ -30,6 +30,8 @@ DIT_MODELS = ["xl-turbo"] # music model(s), every take is made with each: "xl-tu
 RENDER_FIRST = []         # batches rendered before the one above, same keys in lower case, e.g.
                           # [{"tracks_yaml": "https://...", "tracks": "queue", "seeds": {...}, "models": ["turbo", "xl-turbo"]}]
 RENDER_MAX_HOURS = 6      # stop starting new takes after this long
+RENDER_FILL = 8           # JOB=both: when the render card runs out of takes before voice training ends, it keeps
+                          # making extra takes (next seeds of the same tracks, up to this many more each) instead of idling
 
 # Voice
 VOICE_MODEL = "reuben"    # model name; reuse it to carry on training an earlier run
@@ -105,6 +107,7 @@ def load_tracks(src):
 
 
 voice_on = JOB in ("voice", "both")
+VOICE_DONE = "/kaggle/temp/voice.done"   # appears when voice training ends, so extra render takes stop
 render_on = JOB in ("render", "both")
 voice_gpus = [0] if (voice_on and render_on and N_GPU > 1) else list(range(N_GPU))
 render_gpus = [g for g in range(N_GPU) if g not in voice_gpus] if (voice_on and render_on and N_GPU > 1) else list(range(N_GPU))
@@ -124,6 +127,21 @@ if render_on:
         print(f"batch {bi} ({b.get('tracks_yaml', TRACKS_YAML)}): {len(bj)} takes")
         jobs += bj
     plan.assign_gpus(jobs, render_gpus)
+    if voice_on and N_GPU > 1 and RENDER_FILL:
+        # Extra takes so the render card never idles while the voice trains: round after round of the next
+        # seeds for every track in this run (pilot batches first). They stop the moment the voice finishes.
+        used, order = {}, []
+        for j in jobs:
+            key = (j["slug"], j["model"])
+            if key not in used:
+                order.append(j)
+            used[key] = max(used.get(key, 0), j["seed"])
+        fill_batch = len(batches)
+        for r in range(1, RENDER_FILL + 1):
+            for j in order:
+                jobs.append(dict(j, seed=used[(j["slug"], j["model"])] + r, batch=fill_batch, fill=True,
+                                 gpu=render_gpus[(r - 1) % len(render_gpus)]))
+        print(f"up to {RENDER_FILL * len(order)} extra takes queued in case the voice training outlasts the renders")
     json.dump(jobs, open("/kaggle/temp/jobs.json", "w"), indent=1)
     models = list(dict.fromkeys(j["model"] for j in jobs))
     for m in models:  # download each model once, before the workers start
@@ -137,12 +155,12 @@ if render_on:
         chain = " ; ".join(f"{ace}/.venv/bin/python {REPO}/kaggle/render.py /kaggle/temp/jobs.json {g} {OUT}/renders {m} {b}"
                            for b, m in mine)
         cmds.append(["bash", "-c", f"cd {ace} && {chain}"])
-        envs.append({"CUDA_VISIBLE_DEVICES": str(g), "BAND_DEADLINE": str(deadline)})
+        envs.append({"CUDA_VISIBLE_DEVICES": str(g), "BAND_DEADLINE": str(deadline), "BAND_STOP_FILE": VOICE_DONE})
         names.append(f"render card {g}")
 
 if voice_on:
     deadline = min(time.time() + VOICE_MAX_HOURS * 3600, HARD_STOP)
-    cmds.append([sys.executable, f"{REPO}/kaggle/voice.py"])
+    cmds.append(["bash", "-c", f"{sys.executable} {REPO}/kaggle/voice.py; rc=$?; touch {VOICE_DONE}; exit $rc"])
     venv = {"VOICE_MODEL": VOICE_MODEL, "VOICE_EPOCHS": str(VOICE_EPOCHS), "VOICE_SAVE_EVERY": str(VOICE_SAVE_EVERY),
             "VOICE_PITCH": str(VOICE_PITCH), "BAND_DEADLINE": str(deadline), "OUT_DIR": OUT,
             "CUDA_VISIBLE_DEVICES": ",".join(map(str, voice_gpus))}

@@ -65,7 +65,8 @@ python3 kaggle/laptop/kjob.py probes --watch   # new probe clips land in ~/band/
 More options:
 
 ```
-# Voice and takes at once: voice trains on card 0 while takes render on card 1
+# Voice and takes at once: voice trains on card 0 while takes render on card 1. If the takes run out first,
+# card 1 keeps making extra takes (next seeds of the same tracks, RENDER_FILL=8 rounds max) until the voice is done
 python3 kaggle/laptop/kjob.py run JOB=both
 
 # A better music model: XL turbo (4B instead of 2B, about twice the time per take). Both, for a blind A/B:
