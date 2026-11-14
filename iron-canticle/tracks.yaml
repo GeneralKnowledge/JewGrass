@@ -15,13 +15,13 @@ tracks:
   key: C minor
   timesig: '4'
   seconds: 110
-  caption: dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low cathedral
-    pipe organ, heavy distorted 808 bass, huge slow war drums under trap drums, one deep tolling bell, minor key,
-    ominous and sacred, bleak not heroic, cohesive blended dark mix with room for the kick, half-time trap groove,
-    slow 808 hits on the downbeat, choir and organ carry the harmony, sparse hats, bell on the first beat of each
-    section, 140 bpm, C minor, opens straight in on a massive low male choir chant, cold measured male rap verse
-    with precise diction over sparse half-time trap drums and low organ, a soft low female voice sings a short bridge
-    over organ alone, final chorus adds slow pounding war drums, ends on a single deep bell ringing out
+  caption: dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low pipe organ
+    sitting back in the mix, heavy distorted 808 bass, minor key, ominous and sacred, bleak not heroic, warm cohesive
+    blended dark mix where every instrument sits inside the whole, room for the kick, half-time trap groove, slow
+    808 hits on the downbeat, choir carries the harmony, sparse hats, 140 bpm, C minor, opens straight in on a massive
+    low male choir chant with one deep bell, cold measured male rap verse with precise diction over sparse half-time
+    trap drums, a soft low female voice sings a short bridge with the drums gone, final chorus adds slow war drums,
+    ends with the choir singing the last line alone
   lyrics: |
     [chorus - massive deep male choir chant in unison, deep bell, 808 hits, straight in]
     Ring the bell, the tenth one goes
@@ -65,7 +65,8 @@ tracks:
     Light a candle, close the door
     Ring the bell and ask no more
 
-    [ending - instrumental, everything stops, one deep bell rings out alone]
+    [ending - choir sings the last line alone, drums stop, one deep bell]
+    Ring the bell and ask no more
 - slug: canticle-trench-psalm
   title: Trench Psalm
   credit: IRON CANTICLE
@@ -75,14 +76,14 @@ tracks:
   key: E minor
   timesig: '4'
   seconds: 150
-  caption: dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low cathedral
-    pipe organ, heavy distorted 808 bass, huge slow war drums under trap drums, one deep tolling bell, minor key,
-    ominous and sacred, bleak not heroic, cohesive blended dark mix with room for the kick, driving war drums and
-    pounding toms, down-tuned doom metal guitar chugs on the hooks, double-kick bursts, gruff group shouts answering
-    the lead, harder rap delivery, 145 bpm, E minor, opens straight in on a gruff group-shout call and response
-    hook over down-tuned doom guitar chugs and pounding war drums, gritty tired low male rap verses with half-time
-    drums and fast hats, guitars only on the hooks, a slow deep solo male voice sings a short bridge over a choir
-    hum with no drums, final chorus is the heaviest, ends with drums stopping dead and one held low organ note
+  caption: dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low pipe organ
+    sitting back in the mix, heavy distorted 808 bass, minor key, ominous and sacred, bleak not heroic, warm cohesive
+    blended dark mix where every instrument sits inside the whole, room for the kick, driving war drums, down-tuned
+    doom guitar chugs blended low under the hooks, gruff group shouts answering the lead, harder rap delivery, 145
+    bpm, E minor, opens straight in on a gruff group-shout call and response hook over heavy war drums with down-tuned
+    guitars blended low, gritty tired low male rap verses with half-time drums and fast hats, a slow deep solo male
+    voice sings a short bridge over a choir hum with no drums, final chorus is the heaviest, ends with the drums
+    stopping dead and the group singing the last line slowly
   lyrics: |
     [chorus - gruff group shout call and response, down-tuned guitar chugs, war drums, straight in]
     Who holds the line
@@ -164,7 +165,8 @@ tracks:
     Then dig it deeper
     Dig it deeper, friend
 
-    [ending - instrumental, guns and drums stop dead, one low organ note held, then silence]
+    [ending - drums stop dead, group sings the last line slowly over one held low note]
+    Dig it deeper, friend
 - slug: canticle-prayer
   title: Prayer
   credit: IRON CANTICLE
@@ -174,15 +176,14 @@ tracks:
   key: D minor
   timesig: '4'
   seconds: 215
-  caption: dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low cathedral
-    pipe organ, heavy distorted 808 bass, huge slow war drums under trap drums, one deep tolling bell, minor key,
-    ominous and sacred, bleak not heroic, cohesive blended dark mix with room for the kick, ritual hymn trap, hand
-    drums and deep frame drum pulse, congregation call and response, low half-sung male lead, candlelit and close
-    at first, building to a crushing final chorus with doom guitars, 144 bpm, D minor, ritual dark hymn, opens straight
-    in on a congregation chant with one deep bell, low half-sung male lead with a crowd answering, frame drum and
-    hand drums in the verses, half-time trap drums and very deep distorted 808 from the first chorus, call and response
-    with drums almost gone, crushing final chorus with down-tuned doom guitars and war drums, ends on the chant
-    over a held organ chord
+  caption: dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low pipe organ
+    sitting back in the mix, heavy distorted 808 bass, minor key, ominous and sacred, bleak not heroic, warm cohesive
+    blended dark mix where every instrument sits inside the whole, room for the kick, ritual hymn trap, deep frame
+    drum pulse, congregation call and response, low half-sung male lead, close and intimate at first, building to
+    a crushing final chorus, 144 bpm, D minor, ritual dark hymn, opens straight in on a congregation chant, low
+    half-sung male lead with a crowd answering, only a deep frame drum in the verses, half-time trap drums and very
+    deep distorted 808 from the first chorus, call and response with the drums almost gone, crushing final chorus
+    with heavy guitars blended low, ends on the congregation singing the chant
   lyrics: |
     [opening - congregation chant over one deep bell and frame drum, straight in]
     Every death is a prayer

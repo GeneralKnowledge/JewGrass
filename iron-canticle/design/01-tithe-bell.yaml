@@ -92,15 +92,17 @@ sections:
       Light a candle, close the door
       Ring the bell and ask no more
   - name: end
-    tag: ending - instrumental, everything stops, one deep bell rings out alone
+    tag: ending - choir sings the last line alone, drums stop, one deep bell
     bars: 4
-    performer: none
+    performer: synod
+    lyrics: |
+      Ring the bell and ask no more
 
-ending: Everything stops on the downbeat; one bell strike rings out and decays. No outro, no voice.
+ending: Drums and 808 stop; the choir sings "Ring the bell and ask no more" alone and one bell strike lands under the last word. Ends sung, no spoken outro.
 caption: >-
-  140 bpm, C minor, opens straight in on a massive low male choir chant, cold measured male rap verse with
-  precise diction over sparse half-time trap drums and low organ, a soft low female voice sings a short bridge
-  over organ alone, final chorus adds slow pounding war drums, ends on a single deep bell ringing out
+  140 bpm, C minor, opens straight in on a massive low male choir chant with one deep bell, cold measured male
+  rap verse with precise diction over sparse half-time trap drums, a soft low female voice sings a short bridge
+  with the drums gone, final chorus adds slow war drums, ends with the choir singing the last line alone
 
 lyric_audit:
   character_voice: the Herald never raises his voice; everything is procedure. The mother only asks.

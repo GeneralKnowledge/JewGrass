@@ -29,7 +29,7 @@ feel:
   - heavy low end, slow and crushing more often than fast
   - the choir is the album's constant: it gets darker and smaller as the story goes on
   - violence is sung like scripture, never celebrated like an action film
-  - every track starts straight in (no long intros) and none ends on a spoken outro
+  - every track starts straight in (no long intros) and ends on a sung line, never a spoken outro or an instrumental tail
 
 palette:
   choir: deep monastic male choir chant, unison, Latin-free (our own English words); a small congregation for call and response
@@ -62,27 +62,26 @@ lyric_conventions:
   - Instrumental sections have a tag that says instrumental and no lyric lines.
 
 caption_core: >-
-  dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low cathedral pipe
-  organ, heavy distorted 808 bass, huge slow war drums under trap drums, one deep tolling bell, minor key,
-  ominous and sacred, bleak not heroic, cohesive blended dark mix with room for the kick
+  dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low pipe organ
+  sitting back in the mix, heavy distorted 808 bass, minor key, ominous and sacred, bleak not heroic,
+  warm cohesive blended dark mix where every instrument sits inside the whole, room for the kick
 
 # Each family gets its own drums and its own sentence in the caption.
 families:
   cathedral:
     feel: the Synod's sound. Slow, vast, cold.
     caption: >-
-      half-time trap groove, slow 808 hits on the downbeat, choir and organ carry the harmony, sparse hats,
-      bell on the first beat of each section
+      half-time trap groove, slow 808 hits on the downbeat, choir carries the harmony, sparse hats
   war:
     feel: the front. Faster, physical, exhausted.
     caption: >-
-      driving war drums and pounding toms, down-tuned doom metal guitar chugs on the hooks, double-kick bursts,
-      gruff group shouts answering the lead, harder rap delivery
+      driving war drums, down-tuned doom guitar chugs blended low under the hooks, gruff group shouts
+      answering the lead, harder rap delivery
   cult:
     feel: the Undercroft. Ritual, intimate, then overwhelming.
     caption: >-
-      ritual hymn trap, hand drums and deep frame drum pulse, congregation call and response, low half-sung
-      male lead, candlelit and close at first, building to a crushing final chorus with doom guitars
+      ritual hymn trap, deep frame drum pulse, congregation call and response, low half-sung male lead,
+      close and intimate at first, building to a crushing final chorus
   machine:
     feel: the factories and the engine-priests. Metallic and mechanical.
     caption: >-
@@ -93,8 +92,9 @@ families:
     caption: >-
       minimal and dark, sub-bass drone, slow single bell strokes, distant choir, a heartbeat kick
 
-# Words that put hiss or static over whole songs (Nov 14), plus the circus/oom-pah words Reuben disliked.
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere, tuba, pizzicato, woodblock, march, marching, playful, cheeky, comic, theatrical, polished, epic, cinematic]
+# Words that put hiss or static over whole songs (Nov 14), plus the circus/oom-pah words Reuben disliked,
+# and "clean/polished mix" (made solo instruments stick out; ask for a warm blended mix instead).
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere, tuba, pizzicato, woodblock, march, marching, playful, cheeky, comic, theatrical, polished, clean mix, epic, cinematic]
 avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, lo-fi, march, marching]
 
 # Franchise names and terms that must never appear in lyrics, titles or captions (whole words, any case).
@@ -108,7 +108,7 @@ acceptance:
   words: rap and choir words are audible; the hooks can be chanted back
   bleakness: nothing sounds triumphant, festive or comic
   variation: cathedral, war and cult tracks have clearly different drums
-  starts: straight in, no long intro; no spoken outro
+  starts: straight in, no long intro; ends sung, no spoken outro
 
 round1:
   tracks: [tithe-bell, trench-psalm, prayer]

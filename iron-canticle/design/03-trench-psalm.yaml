@@ -135,16 +135,18 @@ sections:
       Then dig it deeper
       Dig it deeper, friend
   - name: end
-    tag: ending - instrumental, guns and drums stop dead, one low organ note held, then silence
+    tag: ending - drums stop dead, group sings the last line slowly over one held low note
     bars: 4
-    performer: none
+    performer: soldiers
+    lyrics: |
+      Dig it deeper, friend
 
-ending: Drums and guitars stop dead on the downbeat. One low organ E is held for the last bars and cut, no fade.
+ending: Drums and guitars stop dead on the downbeat; the soldiers sing "Dig it deeper, friend" slowly over one held low E, then silence. Ends sung, no spoken outro.
 caption: >-
-  145 bpm, E minor, opens straight in on a gruff group-shout call and response hook over down-tuned doom guitar
-  chugs and pounding war drums, gritty tired low male rap verses with half-time drums and fast hats, guitars
-  only on the hooks, a slow deep solo male voice sings a short bridge over a choir hum with no drums, final
-  chorus is the heaviest, ends with drums stopping dead and one held low organ note
+  145 bpm, E minor, opens straight in on a gruff group-shout call and response hook over heavy war drums with
+  down-tuned guitars blended low, gritty tired low male rap verses with half-time drums and fast hats, a slow
+  deep solo male voice sings a short bridge over a choir hum with no drums, final chorus is the heaviest, ends
+  with the drums stopping dead and the group singing the last line slowly
 
 lyric_audit:
   character_voice: Kell is dry and plain-spoken; he jokes once (the crate of prayers) and stops joking after Teague
