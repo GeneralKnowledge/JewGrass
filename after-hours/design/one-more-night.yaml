@@ -1,0 +1,161 @@
+# AFTER HOURS Song Design: One More Night (01, lead single). Same format as the LOWBRIDGE designs.
+slug: ah-one-more-night
+title: One More Night
+credit: Alex, Leo, Noah and Jamie
+version: 1
+order: 1
+purpose: introduce the group. Immediately memorable, upbeat, romantic and slightly reckless.
+concept: >-
+  Two people know they should go home, but neither wants the night to end. The narrator knows it's probably
+  a bad idea and asks for one more night anyway.
+
+render:
+  bpm: 112
+  key: A major
+  timesig: "4"
+  seconds: 225        # 100 bars at 112 is 214 s, plus room for the a cappella tag
+
+palette:
+  keys: bright piano stabs, subtle rhythmic synth arpeggio
+  bass: warm synth bass
+  drums: tight pop kick, claps
+  guitar: clean electric guitar
+  left_out: instrumental intro, strings, heavy pads
+
+harmony: A, E, F#m, D. Pre-chorus leans on F#m for tension before the chorus opens up.
+the_moment: >-
+  The final chorus starts with Alex alone, Jamie enters above him, Noah adds the low line, Leo completes the
+  chord, and only then does the beat come back.
+changes_from_spec: >-
+  The 4-bar intro is now Jamie singing the hook motif straight away over piano stabs (voice first, no
+  instrumental intro). Verse 2 is 8 bars and the second pre-chorus 4, to stay near the 205 s target.
+
+sections:
+  - name: opening
+    tag: opening - starts immediately, bright high tenor sings the hook over piano stabs
+    bars: 4
+    performer: jamie
+    lyrics: |
+      One more night
+      Don't say goodbye
+  - name: verse 1
+    tag: verse - expressive lead tenor with slight rasp, piano stabs, tight kick, intimate
+    bars: 16
+    performer: alex
+    lyrics: |
+      Taxi's been outside for twenty minutes now
+      Meter's running and the driver turned the music down
+      You've got your coat on but you haven't done it up
+      Said you're leaving three times and you haven't left once
+      Last song's playing and they're stacking the chairs
+      Someone's mopping round us like we're not even there
+      Your shoes are in your hand and your feet are on mine
+      And I know that it's late, but we're not out of time
+      We said we'd be sensible, we said we'd be good
+      We said just the one drink, and we meant it, we would
+      But you're laughing at a joke that I haven't finished yet
+      And that's the kind of trouble I'd be happy to regret
+  - name: pre-chorus 1
+    tag: pre-chorus - smooth soulful tenor with gentle runs, lead tenor joins in harmony, building
+    bars: 8
+    performer: leo, alex joins
+    lyrics: |
+      I know, I know, we should call it a night
+      Your friends are in the taxi and they're flashing the lights
+      But tell me why you're still here holding my hand
+      If you wanted to go, I would understand
+      So don't
+      Don't
+  - name: chorus 1
+    tag: chorus - lead tenor melody, high tenor and baritone harmonies, claps, full beat
+    bars: 16
+    performer: all four, alex leads
+    lyrics: |
+      One more night, don't say goodbye
+      One more dance beneath these lights
+      We both know where this goes
+      But I don't want to let you go
+      One more night, the sun can wait
+      Tell the driver we'll be late
+      We both know it's a bad idea
+      But the best ones always start right here
+  - name: verse 2
+    tag: verse - warm intimate baritone, then lead tenor, beat pulls back
+    bars: 8
+    performer: noah, then alex
+    lyrics: |
+      Kitchen at the after-party, two in the morning
+      Someone's burning toast and the smoke alarm's warning
+      You're on the counter in my jacket, swinging your feet
+      Telling me your whole life story while we wait for something to eat
+      They say nothing good happens after two
+      But nobody who said it ever stayed up late with you
+      Clock says go and my heart says stay
+      And I never did what I was told anyway
+  - name: pre-chorus 2
+    tag: pre-chorus - smooth soulful tenor, call and response with the group
+    bars: 4
+    performer: leo
+    lyrics: |
+      I know, I know, we should call it a night
+      Your friends are in the taxi and they're flashing the lights
+      But you're still here
+      And so am I
+  - name: chorus 2
+    tag: chorus - lead tenor melody, four-part harmonies, claps, synth arpeggio
+    bars: 16
+    performer: all four, alex leads
+    lyrics: |
+      One more night, don't say goodbye
+      One more dance beneath these lights
+      We both know where this goes
+      But I don't want to let you go
+      One more night, the sun can wait
+      Tell the driver we'll be late
+      We both know it's a bad idea
+      But the best ones always start right here
+  - name: bridge
+    tag: bridge - drums drop out, warm baritone lead, exposed close harmonies, piano only
+    bars: 8
+    performer: noah, group harmonies
+    lyrics: |
+      Maybe in the morning we'll both feel the cost
+      Maybe we'll be tired and the bus fare's lost
+      But I'd rather be sorry for the night that we had
+      Than lie awake wondering, and that's twice as bad
+      Stay
+      Just stay
+  - name: final chorus
+    tag: final chorus - lead alone, high tenor joins, baritone, fourth voice, then beat returns
+    bars: 16
+    performer: alex, then jamie, noah, leo; jamie ad-libs on top
+    lyrics: |
+      One more night, don't say goodbye
+      One more dance beneath these lights
+      We both know where this goes
+      But I don't want to let you go
+      One more night, the sun can wait
+      Tell the driver we'll be late
+      We both know it's a bad idea
+      So stay right here, stay right here
+  - name: outro
+    tag: outro - a cappella four-part harmony tag, no instruments
+    bars: 4
+    performer: all four
+    lyrics: |
+      One more night
+      Don't say goodbye
+
+ending: A cappella four-part "One more night, don't say goodbye", then silence. Nothing spoken.
+
+caption: >-
+  112 bpm, A major, upbeat romantic pop single, starts straight away with a high tenor singing the hook over
+  bright piano stabs, warm synth bass, tight pop kick, claps, clean electric guitar, subtle synth arpeggio,
+  intimate lead tenor verses, soulful pre-chorus lift, big group chorus with a clear lead melody and harmonies
+  in thirds above and below, stripped-back bridge with exposed harmonies, final chorus builds voice by voice
+  before the beat returns, ends on an a cappella group tag
+
+lyric_audit:
+  idea: one night that should have ended an hour ago
+  images: [the taxi meter, shoes in hand and feet on mine, the toast and the smoke alarm, friends flashing the lights]
+  hook: '"One more night, don''t say goodbye" (Reuben''s hook) sung first by Jamie, so the song opens on it'

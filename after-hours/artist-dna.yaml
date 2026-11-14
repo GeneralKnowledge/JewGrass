@@ -1,0 +1,92 @@
+# AFTER HOURS artist DNA: the persistent identity every AFTER HOURS song is built from (Reuben's spec, Nov 14).
+# build.py joins `caption_core` with each song's own caption, so the shared sound is stated the same way every time.
+# Everything here is original. Genre references only: no real artist, record, person or place is named or imitated.
+# Separate from LOWBRIDGE and Matching Jackets: shares the JewGrass pipeline, not their musical identity.
+
+act: AFTER HOURS
+genre: contemporary pop, vocal pop, dance-pop, pop ballads
+home: a fictional British/European urban setting, deliberately not tied to one city
+mood: romantic, nostalgic, hopeful, occasionally cheeky
+audience: broad pop audience; emotional without being juvenile
+themes: [love, missed chances, friendship, growing up, nights out, regret, commitment]
+signature: four distinct male voices, interlocking harmonies, memorable choruses
+premise: >-
+  Four friends who grew up singing together. Their selling point is the blend: each voice is recognisable,
+  but the group becomes more compelling when they sing together.
+
+members:
+  alex:
+    role: the lead
+    voice: expressive mid-to-high tenor, slight natural rasp at the top of his range
+    signature: open vowels, sustained notes, expressive melodic movement; carries the melody and emotional centre
+    caption_words: expressive male lead tenor with a slight rasp
+  jamie:
+    role: the high voice
+    voice: bright high tenor, light, clear and agile
+    signature: high harmony, clean falsetto, short melodic responses and ad-libs; adds lift, never dominates
+    caption_words: bright high male tenor, clean falsetto
+  noah:
+    role: the foundation
+    voice: warm baritone, rounded, grounded and intimate; not a stereotypical deep bass
+    signature: warm low register, steady phrasing, close-mic intimacy; a real lower line, takes conversational verses
+    caption_words: warm intimate male baritone
+  leo:
+    role: the colour
+    voice: smooth soulful tenor, more rhythmic and flexible than Alex
+    signature: subtle R&B phrasing, gentle runs, pre-chorus lifts, call and response
+    caption_words: smooth soulful male tenor with gentle runs
+
+sound:
+  tempo: 76-125 bpm; the songs never sit in the same tempo bracket
+  harmony: major and minor pop progressions, suspended chords, added ninths, occasional relative-minor shifts, strong voice-leading
+  instruments:
+    - piano and acoustic guitar for emotional songs
+    - modern synth bass, tight pop drums and rhythmic guitar for upbeat tracks
+    - strings and soft pads used selectively
+    - occasional vocal chops, handclaps and percussion
+    - no permanent retro synth palette; never a 1990s tribute act
+
+vocal_arrangement_rules:
+  - Every song contains at least one genuine multi-part harmony section.
+  - The chorus has a clear lead melody, not four voices singing the same line throughout.
+  - Thirds and sixths are the main harmony intervals, with occasional octave doubling.
+  - The baritone sings a real lower line, not the lead an octave down.
+  - Call and response between members in at least one section.
+  - Save the full four-member stack for the chorus, bridge or final chorus.
+  - A brief exposed vocal moment in at least one song per three-song set.
+  - Not every member sings every section.
+
+mix:
+  lead: centred, warm and upfront
+  harmonies: spread moderately left and right
+  low_voice: centred or slightly offset, not buried
+  space: controlled reverb and delay; intimate verses, wider choruses
+  diction: consonants clear so the harmonies stay intelligible
+  master: the laptop's pedalboard chain
+
+writing_rules:
+  - Sincere rather than sentimental.
+  - Romantic without generic declarations.
+  - Concrete moments - a message left unanswered, a taxi outside, a familiar song, a kitchen at 2 AM.
+  - No forced slang or exaggerated Americanisms.
+  - Not every song about a relationship ending.
+  - Lyrics one line per bar at most; songs start straight in (voice first, no instrumental intro) and end sung. Nothing spoken.
+  - No lines fully in brackets (the pipeline strips them).
+
+# Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+
+caption_core: >-
+  contemporary male vocal pop group, four distinct male singers, polished modern pop production, expressive
+  lead tenor, bright high tenor harmonies, warm baritone lower harmonies, smooth soulful tenor, carefully
+  arranged four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, clean modern
+  drums, warm bass, polished radio-ready mix
+
+# The big unknown: ACE-Step may treat "four singers" as one choir. Round 1 tests exactly that.
+pilot_acceptance:
+  group: the chorus sounds like a group, not one voice duplicated four times
+  members: at least the lead, the high voice and the baritone are distinguishable
+  harmony: the a cappella passage in If You Were Here holds together as real harmony
+  hooks: each song has a chorus you can sing after one listen
+  start: each song starts straight in on a voice
+  audio: no hiss, clipping or smeared vocals
