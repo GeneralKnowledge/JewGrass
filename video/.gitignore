@@ -3,3 +3,6 @@ songs/*/analysis.json
 songs/*/master.*
 songs/test-glen/beats.json
 __pycache__/
+songs/*/out*/
+songs/test-glen/vocals.wav
+songs/test-glen/lyrics.txt
