@@ -45,6 +45,7 @@ PY = os.environ.get("APPLIO_PY", "/kaggle/temp/venv-applio/bin/python")
 OUT = os.path.join(os.environ.get("OUT_DIR", "/kaggle/working/out"), "voice")
 DEADLINE = float(os.environ.get("BAND_DEADLINE", "0") or 0)
 INPUT = os.environ.get("KAGGLE_INPUT", "/kaggle/input")
+os.environ["MPLBACKEND"] = "Agg"  # Kaggle's inline backend breaks matplotlib in subprocesses
 os.environ.setdefault("APPLIO_CONFIG_FILE", "/kaggle/temp/applio-config.json")  # written by setup.sh (fp16/fp32)
 PROBE_URL = ("https://raw.githubusercontent.com/GeneralKnowledge/JewGrass/claude/voice-probe/"
              "voice-probe/00-original-ai-vocal.mp3")

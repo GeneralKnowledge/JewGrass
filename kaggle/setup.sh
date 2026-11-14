@@ -11,7 +11,7 @@ TORCH="torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0"
 CU=https://download.pytorch.org/whl/cu126
 mkdir -p $T
 command -v uv >/dev/null || pip install -q uv
-export UV_LINK_MODE=copy UV_CACHE_DIR=$T/uv-cache
+export UV_LINK_MODE=copy UV_CACHE_DIR=$T/uv-cache MPLBACKEND=Agg
 
 clone() {  # clone REPO DIR COMMIT
   [ -d "$2/.git" ] && return

@@ -45,6 +45,9 @@ globals().update(SETTINGS_JSON)"""),
     (CODE, """# --- check the machine ------------------------------------------------------------------------------------------
 import json, os, subprocess, sys, threading, time, urllib.request
 T0 = time.time()
+# Kaggle's Jupyter sets MPLBACKEND to its inline backend, which matplotlib rejects outside the notebook process;
+# ACE-Step (via lightning/torchmetrics) and Applio import matplotlib, so every worker gets a plain backend.
+os.environ["MPLBACKEND"] = "Agg"
 HARD_STOP = T0 + 11.5 * 3600          # Kaggle stops GPU sessions at 12 h; leave time to save the output
 OUT = "/kaggle/working/out"
 os.makedirs(OUT, exist_ok=True)
@@ -74,7 +77,7 @@ def run_all(cmds, envs, cwd=None):
             print(f"{tag} {line}", end="", flush=True)
     procs = []
     for i, (cmd, env) in enumerate(zip(cmds, envs)):
-        p = subprocess.Popen(cmd, cwd=cwd, env=dict(os.environ, PYTHONUNBUFFERED="1", **env),
+        p = subprocess.Popen(cmd, cwd=cwd, env=dict(os.environ, PYTHONUNBUFFERED="1", MPLBACKEND="Agg", **env),
                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
         threading.Thread(target=pump, args=(p, f"[{i}]"), daemon=True).start()
         procs.append(p)
