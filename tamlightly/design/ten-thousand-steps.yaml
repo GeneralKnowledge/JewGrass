@@ -24,7 +24,7 @@ the_moment: >-
 
 sections:
   - name: hook 1
-    tag: chorus - starts straight in, bleepy synth lead, fast bouncy drums, chant
+    tag: chorus - starts straight in, bright synth lead, fast bouncy drums, chant
     bars: 8
     lyrics: |
       Ten thousand steps, ten thousand steps
@@ -57,7 +57,7 @@ sections:
       Down it comes, watch goes off, fireworks, confetti
       Fell asleep on the stairs but my legs are ready
   - name: hook 2
-    tag: chorus - everything stops for one beat then explodes, bleepy synth lead
+    tag: chorus - everything stops for one beat then explodes, bright synth lead
     bars: 8
     lyrics: |
       Ten thousand steps, ten thousand steps
@@ -105,7 +105,7 @@ sections:
 ending: Hard stop on "Done", one synth bleep.
 
 caption: >-
-  160 bpm, E minor, fast bouncy energetic rap, bright bleepy chiptune-style synth lead, fast bouncy hi-hats,
+  160 bpm, E minor, fast bouncy energetic rap, bright synth lead, fast bouncy hi-hats,
   snappy snare, claps, bouncy 808, starts straight in on the chorus, fast excited rapid-fire delivery,
   double-time second verse, one-beat full stop before the second chorus, gang chant chorus, hard stop ending
 

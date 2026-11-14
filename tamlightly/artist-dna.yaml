@@ -19,7 +19,7 @@ performer:
     voice: bright, cheeky young male voice with a Scottish accent and a grin in it
     delivery: bouncy and rhythmic, clear diction, punchline pauses, sudden fast bursts when he gets excited
     writing: mock-epic bragging about small things, exact prices and times, a twist or deflation at the end of a verse
-    caption_words: cheeky bright Scottish male rap, bouncy playful delivery, comedic timing
+    caption_words: cheeky bright Scottish male rap, bouncy playful delivery
 
 # Shared world: facts the songs keep consistent, so the three tracks feel like one person's life.
 world:
@@ -47,12 +47,12 @@ production_rules:
   - No spoken outros (they don't come through). Endings are a hook line and a hard stop or one chord.
 
 # Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, radio noise, tuba, pizzicato, woodblock, marching snare, comic, comedy, theatrical, polished, circus, white noise, texture, ambience, atmosphere, rain, lo-fi]
 
 caption_core: >-
-  playful comedic UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent,
-  bouncy rhythmic delivery with comedic timing, big catchy chantable hooks, punchy clean bouncy drums, claps,
-  warm round bass, bright colourful melodies, clear upfront vocals, fun upbeat energy, clean modern mix
+  playful UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent,
+  bouncy rhythmic delivery with cheeky timing, big catchy chantable hooks, punchy bouncy drums, claps,
+  warm round bass, bright colourful melodies, clear upfront vocals, fun upbeat energy, warm cohesive blended mix
 
 writing_rules:
   - Specific and silly: a price, a time, an object. No stock party lines.

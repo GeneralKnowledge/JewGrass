@@ -57,7 +57,7 @@ sections:
       Extras in the background and they don't know what they've seen
       Main character syndrome, roll the credits, that's me
   - name: verse 2
-    tag: verse - denser technical rap, internal rhymes, guitar riff, beat cuts before last line
+    tag: verse - denser technical rap, internal rhymes, beat cuts before last line
     bars: 16
     idea: strangers, a traffic light and a missed bus as omens
     lyrics: |
@@ -153,11 +153,10 @@ sections:
 ending: Rapped punchline over the bass riff, hard stop on "Cut". No speech.
 
 caption: >-
-  104 bpm, G minor, funky boom bap hip hop, funky bass guitar, crisp boom bap drums, chopped soul keys, short
-  brass stabs, occasional guitar riff, energetic but not busy, starts straight in on the first verse,
-  relaxed conversational flow then denser technical flow, chanted melodic hook, beat drops out before
-  punchlines, stripped breakdown with bass and kick only, fast final verse with callbacks, layered final hook
-  with ad-libs, hard stop ending
+  104 bpm, G minor, funky boom bap hip hop, funky bass, crisp boom bap drums, soul keys, short brass stabs,
+  energetic but not busy, starts straight in on the first verse, relaxed conversational flow then denser
+  technical flow, chanted melodic hook, beat drops out before punchlines, stripped breakdown with bass and kick
+  only, fast final verse with callbacks, layered final hook with ad-libs, ends on a rapped line with a hard stop
 
 lyric_audit:
   verse_progression: supermarket epic (v1), omens at the bus stop (v2), everyone else has their own film (v3)

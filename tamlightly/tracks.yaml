@@ -13,12 +13,12 @@ tracks:
   key: F major
   timesig: '4'
   seconds: 105
-  caption: playful comedic UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent,
-    bouncy rhythmic delivery with comedic timing, big catchy chantable hooks, punchy clean bouncy drums, claps,
-    warm round bass, bright colourful melodies, clear upfront vocals, fun upbeat energy, clean modern mix, 146 bpm,
-    F major, bouncy party rap single, whistled melody hook, plucky marimba, bouncy hi-hats, handclaps, bouncy 808,
-    starts straight in on the chorus, playful mock-epic bragging, drums drop out before punchlines, breakdown with
-    whistle and handclaps, gang vocal final chorus, hard stop ending
+  caption: playful UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent, bouncy
+    rhythmic delivery with cheeky timing, big catchy chantable hooks, punchy bouncy drums, claps, warm round bass,
+    bright colourful melodies, clear upfront vocals, fun upbeat energy, warm cohesive blended mix, 146 bpm, F major,
+    bouncy party rap single, whistled melody hook, bright keys, bouncy hi-hats, handclaps, bouncy 808, starts straight
+    in on the chorus, playful mock-epic bragging, drums drop out before punchlines, breakdown with whistle and handclaps,
+    gang vocal final chorus, hard stop ending
   lyrics: |
     [chorus - starts straight in, whistle melody, bouncy drums, chantable hook]
     Meal deal champion, meal deal champion
@@ -30,7 +30,7 @@ tracks:
     Card on the reader, beep, that's me
     Meal deal champion, Auchterbeg's MVP
 
-    [verse - cheeky bouncy rap, marimba plucks, punchline pauses]
+    [verse - cheeky bouncy rap, light keys, punchline pauses]
     Twelve twenty-nine and the whole floor's moving
     I was out the door at twenty-eight, I keep improving
     Shortcut through the car park, hop the wee wall
@@ -95,14 +95,14 @@ tracks:
   key: E minor
   timesig: '4'
   seconds: 90
-  caption: playful comedic UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent,
-    bouncy rhythmic delivery with comedic timing, big catchy chantable hooks, punchy clean bouncy drums, claps,
-    warm round bass, bright colourful melodies, clear upfront vocals, fun upbeat energy, clean modern mix, 160 bpm,
-    E minor, fast bouncy energetic rap, bright bleepy chiptune-style synth lead, fast bouncy hi-hats, snappy snare,
-    claps, bouncy 808, starts straight in on the chorus, fast excited rapid-fire delivery, double-time second verse,
-    one-beat full stop before the second chorus, gang chant chorus, hard stop ending
+  caption: playful UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent, bouncy
+    rhythmic delivery with cheeky timing, big catchy chantable hooks, punchy bouncy drums, claps, warm round bass,
+    bright colourful melodies, clear upfront vocals, fun upbeat energy, warm cohesive blended mix, 160 bpm, E minor,
+    fast bouncy energetic rap, bright synth lead, fast bouncy hi-hats, snappy snare, claps, bouncy 808, starts straight
+    in on the chorus, fast excited rapid-fire delivery, double-time second verse, one-beat full stop before the
+    second chorus, gang chant chorus, hard stop ending
   lyrics: |
-    [chorus - starts straight in, bleepy synth lead, fast bouncy drums, chant]
+    [chorus - starts straight in, bright synth lead, fast bouncy drums, chant]
     Ten thousand steps, ten thousand steps
     Watch on my wrist says I'm nowhere yet
     Up and down the hall like a man possessed
@@ -130,7 +130,7 @@ tracks:
     Down it comes, watch goes off, fireworks, confetti
     Fell asleep on the stairs but my legs are ready
 
-    [chorus - everything stops for one beat then explodes, bleepy synth lead]
+    [chorus - everything stops for one beat then explodes, bright synth lead]
     Ten thousand steps, ten thousand steps
     Watch on my wrist says I'm nowhere yet
     Up and down the hall like a man possessed
@@ -175,13 +175,13 @@ tracks:
   key: C major
   timesig: '4'
   seconds: 175
-  caption: playful comedic UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent,
-    bouncy rhythmic delivery with comedic timing, big catchy chantable hooks, punchy clean bouncy drums, claps,
-    warm round bass, bright colourful melodies, clear upfront vocals, fun upbeat energy, clean modern mix, 92 bpm,
-    C major, warm feel-good laid-back hip hop, swinging boom bap drums, finger snaps, warm electric piano chords,
-    warm round bass guitar, starts straight in on a cheerful sung chorus, friendly storytelling rap verses, heartfelt
-    and funny, breakdown with electric piano and snaps and a singalong, final chorus adds bells and group vocals,
-    ends on one warm piano chord
+  caption: playful UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent, bouncy
+    rhythmic delivery with cheeky timing, big catchy chantable hooks, punchy bouncy drums, claps, warm round bass,
+    bright colourful melodies, clear upfront vocals, fun upbeat energy, warm cohesive blended mix, 92 bpm, C major,
+    warm feel-good laid-back hip hop, swinging boom bap drums, finger snaps, warm electric piano chords, warm round
+    bass guitar, starts straight in on a cheerful sung chorus, friendly storytelling rap verses, heartfelt and funny,
+    breakdown with electric piano and snaps and a singalong, final chorus adds bells and group vocals, ends on one
+    warm piano chord
   lyrics: |
     [chorus - starts straight in, cheerful sung hook, warm electric piano]
     Nan says I'm gorgeous, Nan says I'm smart

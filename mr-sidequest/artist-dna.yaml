@@ -3,7 +3,7 @@
 # no real artist, record, person or brand is named or imitated in any file that goes into generation.
 
 act: MR. SIDEQUEST
-genre: alternative hip-hop, comedy rap, boom bap, funk rap, melodic hip-hop
+genre: alternative hip-hop, funny rap, boom bap, funk rap, melodic hip-hop
 origin: British, with an international hip-hop sound
 personality: overconfident, curious, self-aware, chaotic, charming
 themes: [everyday absurdity, bad decisions, ambition, technology, relationships, self-deception]
@@ -60,12 +60,12 @@ mix:
 
 # Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
 # ("dusty" is left out of the boom bap description for the same reason.)
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, dusty, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, dusty, radio noise, tuba, pizzicato, woodblock, marching snare, comic, comedy, theatrical, polished, circus, white noise, texture, ambience, atmosphere, rain, lo-fi]
 
 caption_core: >-
   versatile alternative hip-hop, charismatic British male rapper, conversational expressive rap delivery,
   sharp technical wordplay, dense internal rhymes, multisyllabic patterns, playful storytelling, unexpected
-  punchlines, natural British accent, dynamic flow switches, clear intelligible upfront vocal, modern hip-hop production
+  punchlines, natural British accent, dynamic flow switches, clear intelligible upfront vocal, warm cohesive blended mix
 
 writing_rules:
   - One line per bar in verses. Hooks repeat a phrase you can say back.
