@@ -8,6 +8,9 @@ album: Natural Capital
 queue:
 - bought-and-sold
 - natural-capital
+- fast-lane
+- brass-plate
+- exit-strategy
 - viewing
 tracks:
 - n: 1
@@ -151,10 +154,61 @@ tracks:
 - n: 7
   slug: brass-plate
   title: Brass Plate
-  status: pending
+  status: generate
   batch: 2
   seconds: 160
   bpm: 150
+  caption: |
+    bouncy glitch trap, cheeky fast Glaswegian male rap, Scottish accent, playful patter, office sounds, stamp thuds and typewriter as percussion, filing cabinet drawer slams, chiptune bleeps, plucked banjo hook, tin whistle riff, distorted 808, rapid hi-hats, catchy chant chorus, comedic, raw mix, 150 bpm
+  lyrics: |
+    [intro]
+    Right, son. Name of the company? Disnae matter.
+    Name of the owner? Even less.
+    Sign there. Lovely. You're a business.
+
+    [verse]
+    Wee office in Glasgow up above a vape shop
+    Four hundred companies, the letters never stop
+    Brass plate, brass neck, rubber stamp, done
+    I can make ye a company before your tea's gone cauld, son
+    Partners in Belize and a partner in the Seychelles
+    Partner is a company that's a partner in itself
+    Who's the real owner? Pal, I never ask
+    I'm a postbox wi' a pension and I'm brilliant at my task
+    Billions went through here, every currency and flag
+    I didnae see a penny, just the fee and a fag
+    Moldova, Latvia, never been, nae idea
+    Cannae point to it on a map but it all came through here
+
+    [chorus]
+    Brass plate, brass plate, shiny on the door
+    Four hundred companies and room for a hundred more
+    Who owns the money? Nobody at all
+    Brass plate, brass plate, letterbox in the hall
+    Brass plate!
+
+    [verse]
+    Then the government woke up and they changed the rules
+    Wanted names and addresses, think we're all fools?
+    Fine, I'll write a name, it's a name I've been given
+    Name's in a trust and the trust is in Switzerland
+    Now a posh lady phones me from a fund down south
+    Wants a partnership quick, she's got a glen in her mouth
+    Carbon and acres and a laird to buy out
+    Partners are a who's who that nobody'll shout about
+    The oil man, the water man, the fella wi' the masks
+    All in the same envelope, nobody asks
+
+    [chorus]
+    Brass plate, brass plate, shiny on the door
+    Four hundred companies and room for a hundred more
+    Who owns the money? Nobody at all
+    Brass plate, brass plate, letterbox in the hall
+    Brass plate!
+
+    [outro]
+    Mind and keep your receipt. Actually, don't.
+    Filing's due Friday.
 - n: 8
   slug: cold-hame
   title: Cold Hame
@@ -163,10 +217,91 @@ tracks:
 - n: 9
   slug: fast-lane
   title: Fast Lane
-  status: pending
+  status: generate
   batch: 2
   seconds: 250
   bpm: 145
+  caption: |
+    loud flashy UK trap banger, cocky English male rap, posh chancer voice, laughing ad-libs, revving sports car 808 slides, hard trap drums, rapid hi-hats, cash register samples, distorted banjo riff, Celtic fiddle stabs, nu metal guitars on the chorus, gang chant hook, glitch stutters, raw mix, 145 bpm
+  lyrics: |
+    [intro]
+    Hello? Yes, Minister. Of course, Minister.
+    How many? How many million?
+    Oh, I'm sure we can find some.
+
+    [verse]
+    Woke up Tuesday with a hangover and a hunch
+    Country's in a panic so I'm skipping lunch
+    Never sold a glove in my life, that's fine
+    Got a mate of a mate with a number on the line
+    Set up a company at half past three
+    By Friday it was worth a hundred million, see
+    Gowns in a warehouse that never got shipped
+    Masks with the loops that snapped when you slipped
+    Price went up when the people got scared
+    Nobody checked and nobody cared
+    Lorry full of boxes and the boxes full of air
+    Sign here, sign here, sign here, there
+
+    [chorus]
+    Fast lane, fast lane, wave me through
+    Skip the queue, the queue was for you
+    Fast lane, fast lane, cash in the boot
+    Panic pays better than a pinstripe suit
+    Fast lane!
+
+    [verse]
+    Nurses in bin bags on the evening news
+    I was in Mustique choosing yachts to cruise
+    Inquiry later? Darling, that's a decade
+    By the time they report, all the money's been made
+    Ten billion lost and they call it an error
+    I call it a bonus, the business of terror
+    Some of it's fraud and some of it's waste
+    And some of it's me with exquisite taste
+    Paid a little back so the headline would fade
+    Kept a bigger bit in a Scottish brigade
+    Of limited partners at a Glasgow address
+    Put the rest in a glen, cause the glen's a success
+
+    [chorus]
+    Fast lane, fast lane, wave me through
+    Skip the queue, the queue was for you
+    Fast lane, fast lane, cash in the boot
+    Panic pays better than a pinstripe suit
+    Fast lane!
+
+    [bridge]
+    Thank you for clapping on a Thursday night
+    Thank you for staying in and doing it right
+    Thank you for the money that you never got to see
+    It's planted on a hillside and it's growing for me
+
+    [breakdown]
+    Wave me through!
+    Wave me through!
+    Skip the queue!
+    Wave me through!
+
+    [verse]
+    Next time there's a crisis give us a ring
+    Floods or a war or a pandemic thing
+    I'll sell you the sandbags, I'll sell you the tents
+    I'll sell you the sorry and the lessons learnt since
+    Now I'm going green with a carbon estate
+    Same mates, same lane, same velvet gate
+    Don't call it greed, call it nimble supply
+    Every disaster's got a fella like I
+
+    [chorus]
+    Fast lane, fast lane, wave me through
+    Skip the queue, the queue was for you
+    Fast lane, fast lane, cash in the boot
+    Panic pays better than a pinstripe suit
+    Fast lane!
+
+    [outro]
+    Invoice due Friday.
 - n: 10
   slug: swim-at-your-own-risk
   title: Swim at Your Own Risk
@@ -286,10 +421,77 @@ tracks:
 - n: 15
   slug: exit-strategy
   title: Exit Strategy
-  status: pending
+  status: generate
   batch: 3
   seconds: 260
   bpm: 130
+  caption: |
+    dark epic cinematic trap, slow menacing build, whispered close-mic English female spoken word, panicked overlapping male voices on a conference call, sneering Scottish male rap, cool half-sung female vocal, heavy nu metal guitars and screamed gang chant chorus, distorted 808, glitch stutters, slowed broken hold music sample, church organ, solo bagpipe drone in the final chorus, huge raw mix, 130 bpm
+  lyrics: |
+    [intro]
+    You are now joining the call.
+    Is everyone on? Lovely.
+    Has anyone seen the paper this morning?
+
+    [verse]
+    Front page, my face, the glen and the trees
+    The fund, the partners, the brass plate fees
+    The oil man's shouting, the water man's sweating
+    The mask man's laughing, the lord's forgetting
+    "I never met her", "I don't recall"
+    "My office handles it", "not me at all"
+    Calm down, darlings, breathe, sit tight
+    This was always the plan for a Friday night
+
+    [chorus]
+    Bought and sold! Bought and sold!
+    Sell it on before it's cold
+    Bought and sold! Bought and sold!
+    Every scandal's worth its weight in gold
+    Exit! Exit! Exit strategy!
+
+    [verse]
+    The reporter's a lassie from a glen up north
+    Her brother's on the phone saying she's coming forth
+    With paperwork leaked by a lad on the payroll
+    Gav? Gav, you idiot, you've lost us the whole
+    No. We've lost nothing. Listen to me
+    Scandal's just a discount for the next buyer's fee
+    There's a fund in New York and a fund in Dubai
+    And a pension in Ontario that doesn't ask why
+
+    [verse]
+    Did you think there'd be handcuffs? Did you think there'd be jail?
+    Did you think that a story was the end of the sale?
+    Nobody's charged, nobody's named
+    Committee will meet and the system gets blamed
+    Sold it on Thursday at a forty percent
+    Paid it offshore to the island it went
+    The trees are still dead and the houses still dear
+    And all of us here will be richer next year
+
+    [chorus]
+    Bought and sold! Bought and sold!
+    Sell it on before it's cold
+    Bought and sold! Bought and sold!
+    Every scandal's worth its weight in gold
+    Exit! Exit! Exit strategy!
+
+    [bridge]
+    Thank you all for joining.
+    The glen is no longer our concern.
+    The village wants to buy it? How sweet.
+    Let them. At market value.
+    Settlement's due Friday.
+
+    [breakdown]
+    Bought and sold!
+    Bought and sold!
+    Bought and sold!
+    Bought and sold!
+
+    [outro]
+    You have left the call.
 - n: 16
   slug: we-bought-the-hill
   title: We Bought the Hill
