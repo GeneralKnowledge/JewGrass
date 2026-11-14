@@ -196,6 +196,8 @@ class Psych:
         rot = t * 0.04 * speed
         zoom = (0.95 - 0.12 * en - 0.06 * np.sin(tl * 0.13 * sl)) / float(ps.get("zoom", 1.0))
         zoom *= 1 - float(ps.get("depth", 0.04)) * self.bass[k]
+        if lock is not None and ps.get("evolve"):
+            zoom *= 1 - float(ps["evolve"]) * 0.22 * (0.5 - 0.5 * np.cos(t * 0.019))
         # the view drifts around the set so it never sits still
         ox, oy = 0.18 * np.sin(tl * 0.031 * sl + 1.0), 0.12 * np.cos(tl * 0.023 * sl)
         cr, sr = np.cos(rot), np.sin(rot)
@@ -214,8 +216,14 @@ class Psych:
         a = self.c_phase + tl * 0.035 * sl
         if lock is not None and ps.get("wander"):  # optional slow breathing of the held shape
             a += float(ps["wander"]) * np.sin(t * 0.21)
+        ev = float(ps.get("evolve", 0.0)) if lock is not None else 0.0
+        if ev:  # evolve inside the held pattern: c circles close to the held value
+            a += ev * (0.045 * np.sin(t * 0.029) + 0.02 * np.sin(t * 0.071 + 1.3))
         w = np.exp(1j * a)
-        c = complex((w / 2 - w * w / 4) * (1.0 + 0.02 * np.sin(tl * 0.07) + 0.03 * bs))
+        mag = 1.0 + 0.02 * np.sin(tl * 0.07) + 0.03 * bs
+        if ev:
+            mag += ev * 0.006 * np.sin(t * 0.043 + 0.4)
+        c = complex((w / 2 - w * w / 4) * mag)
         z = (x + 1j * y).astype(np.complex64)
         out = np.zeros(z.shape, np.float32)
         alive = np.ones(z.shape, bool)
