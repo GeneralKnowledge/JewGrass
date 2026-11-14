@@ -256,6 +256,120 @@ class Compositor:
             rule_y = y0 + lh + size // 3
             img[rule_y:rule_y + 2, x0:x0 + int(lw * min(1, fade))] = P.f(rgb)
 
+    # ---------- the lyric-video mode ----------
+    def _lyric_lines(self):
+        """All lines with their display windows, computed once: a line appears
+        a little before its first word (so it can be read ahead) and leaves when
+        the next one arrives, or a while after its last word if music follows."""
+        if hasattr(self, "_ll"):
+            return self._ll
+        lines = [ln for ln in self.plan["lines"] if ln.get("words")]
+        out = []
+        for j, ln in enumerate(lines):
+            start = ln["words"][0][0] - 0.45
+            nxt = lines[j + 1]["words"][0][0] - 0.45 if j + 1 < len(lines) else 1e9
+            last = ln["words"][-1][0]
+            dur_last = max(0.35, min(1.2, (last - ln["words"][0][0]) / max(len(ln["words"]) - 1, 1) * 1.5))
+            end = min(nxt, last + dur_last + 1.6)
+            out.append({"line": ln, "start": start, "end": end, "next": lines[j + 1] if j + 1 < len(lines) else None})
+        self._ll = out
+        return out
+
+    @staticmethod
+    def _soft_shadow(spr, blur):
+        a = spr[..., 3]
+        sh = cv2.GaussianBlur(a, (0, 0), blur) * 0.85
+        out = np.zeros_like(spr)
+        out[..., 3] = sh
+        return out
+
+    def _set_line(self, img, words, cx, cy, size, max_w, states, base_op, kind="stencil", upper=True, idle=0.32):
+        """Draw a line centred at (cx, cy). states[k] in 0..1 = how 'sung' word k is."""
+        ws = [w.upper() if upper else w for w in words]
+        lay, (lw, lh) = T.layout_words(ws, kind, size, max_w)
+        # balance two-line wraps: prefer splitting near the middle
+        if lh > size * 1.5 and len(ws) > 2:
+            for frac in (0.55, 0.6, 0.65, 0.7, 0.75):
+                lay2, (lw2, lh2) = T.layout_words(ws, kind, size, int(max_w * frac))
+                if lh2 <= lh:
+                    lay, lw, lh = lay2, lw2, lh2
+                    break
+        pad = size // 6
+        x0, y0 = int(cx - lw / 2) - pad, int(cy - lh / 2) - pad
+        key = ("shadow", kind, size)
+        for (word, x, y), st in zip(lay, states):
+            spr, _ = T.word_sprite(word, kind, size, P.BONE)
+            sk = (word, kind, size)
+            if sk not in self.board_cache:
+                self.board_cache[sk] = self._soft_shadow(spr, size / 10)
+            self._paste_rgb(img, self.board_cache[sk], x0 + x + size // 25, y0 + y + size // 18,
+                            base_op * (0.45 + 0.45 * st))
+        for (word, x, y), st in zip(lay, states):
+            # unsung: dim bone; being sung: warm lamp gold; sung: full bone
+            if st >= 1:
+                spr, _ = T.word_sprite(word, kind, size, P.BONE)
+                self._paste_rgb(img, spr, x0 + x, y0 + y, base_op)
+            else:
+                dim, _ = T.word_sprite(word, kind, size, P.BONE)
+                self._paste_rgb(img, dim, x0 + x, y0 + y, base_op * (idle + 0.2 * st))
+                if st > 0:
+                    hot, _ = T.word_sprite(word, kind, size, (246, 196, 104))
+                    self._paste_rgb(img, hot, x0 + x, y0 + y - int(3 * st), base_op * min(1, st * 2.5))
+        return lh
+
+    def _scrim(self, img, cy, half, strength):
+        """A soft dark band behind the words: the land stays visible, the words read."""
+        if strength <= 0.01:
+            return
+        if not hasattr(self, "_scrim_cache") or self._scrim_cache[0] != (cy, half):
+            y = (np.arange(self.H, dtype=np.float32) - cy) / half
+            prof = np.exp(-0.5 * (y * y) ** 1.5)
+            self._scrim_cache = ((cy, half), prof[:, None, None])
+        img *= 1 - strength * self._scrim_cache[1]
+
+    def _lyric(self, img, t, txt):
+        size = int(self.U * float(txt.get("size", 0.085)))
+        max_w = int(self.W * (0.80 if self.W >= self.H else 0.86))
+        cy = self.H * float(txt.get("y", 0.62 if self.W >= self.H else 0.62))
+        live = []
+        for L in self._lyric_lines():
+            if not (L["start"] <= t < L["end"] + 0.3):
+                continue
+            fin = ease((t - L["start"]) / 0.3)
+            fout = 1 - ease((t - L["end"]) / 0.3)
+            live.append((L, fin, fout))
+        # the band fades in with the first line of a passage and out after the last
+        near = [L for L in self._lyric_lines() if L["start"] - 0.8 <= t < L["end"] + 1.2]
+        if near:
+            L = near[0]
+            sc = min(ease((t - (L["start"] - 0.8)) / 0.8), 1 - ease((t - (L["end"] + 0.4)) / 0.8))
+            if len(near) > 1:
+                sc = 1.0
+            self._scrim(img, int(cy + size * 0.35), size * 2.1, 0.42 * sc)
+        for L, fin, fout in live:
+            ln = L["line"]
+            words = [w for _, w in ln["words"]]
+            times = [wt for wt, _ in ln["words"]]
+            # each word turns gold as it starts, then settles to bone as the next begins
+            states = []
+            for k, wt in enumerate(times):
+                nxt = times[k + 1] if k + 1 < len(times) else wt + 0.5
+                if t < wt:
+                    states.append(0.0)
+                elif t < nxt:
+                    states.append(min(1.0, 0.2 + (t - wt) / 0.08) * 0.99)
+                else:
+                    states.append(1.0)
+            op = fin * fout
+            lift = (1 - fin) * size * 0.25 - (1 - fout) * size * 0.25
+            lh = self._set_line(img, words, self.W / 2, cy + lift, size, max_w, states, op, idle=0.45)
+            # the next line, smaller, so the eye can read ahead
+            nx = L["next"]
+            if nx and nx["words"][0][0] - t < 6:
+                nwords = [w for _, w in nx["words"]]
+                self._set_line(img, nwords, self.W / 2, cy + lh / 2 + size * 0.85 + lift, int(size * 0.52), max_w,
+                               [0.0] * len(nwords), op * 0.9, idle=0.62)
+
     def _slam(self, img, sh, t):
         ln, ages, fade = self._active_line(sh, t, linger=1.0)
         if not ln:
@@ -312,8 +426,9 @@ class Compositor:
                 if ps.get("sky"):
                     k = ps["sky"] * (0.65 + 0.35 * self.a["macro"]["energy"][min(i, self.a["frames"] - 1)])
                     if fr is None:
-                        fr = self.psych.fractal(t, i, int(ps.get("kaleido", 0)))
-                    cv2.addWeighted(img, 1 - k, fr, k, 0, dst=img)
+                        fr, fm = self.psych.fractal(t, i, int(ps.get("kaleido", 0)))
+                    w_ = fm * k
+                    img[...] = img * (1 - w_) + fr * w_
             else:
                 self._over(img, self._warp(L.rgba, Mx))
             for act in (sh.get("actors") or []):
@@ -346,7 +461,7 @@ class Compositor:
         # the strange layer over the land, before the text so lyrics stay legible
         if ps.get("overlay"):
             if fr is None:
-                fr = self.psych.fractal(t, i, int(ps.get("kaleido", 0)))
+                fr, fm = self.psych.fractal(t, i, int(ps.get("kaleido", 0)))
             k = ps["overlay"] * (0.3 + 0.7 * self.a["env"]["bass"][min(i, self.a["frames"] - 1)])
             img = 1 - (1 - img) * (1 - fr * k)  # screen blend
         if ps.get("warp"):
@@ -361,6 +476,13 @@ class Compositor:
             amt = budget * 1.4 * self.a["env"]["other"][min(i, self.a["frames"] - 1)] + 0.15
             self.particles.draw(img, t, amt, P.BONE if "seeds" in weather else (230, 150, 90))
 
+        # grade the picture before the words so the words keep their own brightness
+        g = sh.get("grade") or {}
+        if g:
+            img *= float(g.get("exposure", 1.0))
+            warm = float(g.get("warm", 0.0))
+            img[..., 0] *= 1 + warm * 0.08
+            img[..., 2] *= 1 - warm * 0.08
         if mode == "spoken-title":
             self._lower_third(img, sh, t, "serif", P.BONE, 0.040, "left")
         elif mode == "quiet":
@@ -369,13 +491,9 @@ class Compositor:
             self._lower_third(img, sh, t, "hand", P.BONE, 0.055, "center")
         elif mode == "slam":
             self._slam(img, sh, t)
+        elif mode == "lyric":
+            self._lyric(img, t, txt)
 
-        g = sh.get("grade") or {}
-        if g:
-            img *= float(g.get("exposure", 1.0))
-            warm = float(g.get("warm", 0.0))
-            img[..., 0] *= 1 + warm * 0.08
-            img[..., 2] *= 1 - warm * 0.08
 
         if ps.get("chroma"):
             img = self.psych.chroma(img, i, ps["chroma"])

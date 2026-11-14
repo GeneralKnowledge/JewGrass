@@ -156,7 +156,14 @@ class Psych:
         out[alive] = iters
         v = (np.sqrt(out / iters) * 2.5 + 0.06 * t + 0.12 * self.hit_phase[k]) % 1.0
         rgb = cv2.GaussianBlur(self.lut[(v * 511).astype(np.int32)], (0, 0), 0.7)
-        return cv2.resize(rgb, (self.W, self.H), interpolation=cv2.INTER_CUBIC)
+        # coverage: only the filaments near the set's edge show; the inside of
+        # the set and the far field stay sky (no flat grey blobs)
+        e = out / iters
+        mask = np.where(alive, 0.0, np.clip((e - 0.12) / 0.35, 0, 1) ** 1.5).astype(np.float32)
+        mask = cv2.GaussianBlur(mask, (0, 0), 1.2)
+        size = (self.W, self.H)
+        return (cv2.resize(rgb, size, interpolation=cv2.INTER_CUBIC),
+                cv2.resize(mask, size, interpolation=cv2.INTER_LINEAR)[..., None])
 
     def warp(self, img, t, i, amount):
         if amount <= 0:

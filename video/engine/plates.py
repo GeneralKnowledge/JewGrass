@@ -129,6 +129,17 @@ def hill_plate(w, h, seed=1707, state="bare", tod="dawn", layout="hill", props=(
     shade = np.clip((xx / w - 0.30) * 1.6, 0, 1) * 0.7 + 0.25 * fbm2d(h, w, seed + 6, base=5)
     hatch = _hatching(h, w, spacing=11, width=2.2, seed=seed)
     mid = _grade_rgb(mid, np.clip(shade * (0.25 + 0.75 * hatch), 0, 0.9))
+    # light from the sky: a rim of the hour's colour along the ridge, and the
+    # slope darkening as it falls away (so the hill isn't one flat green)
+    d = np.clip((np.arange(h, dtype=np.float32)[:, None] - ys[None, :]) / h, 0, 1)
+    rim_rgb, rim_k, low_k, tint = {
+        "dawn": ((250, 214, 160), 0.30, 0.25, 1.0),
+        "dusk": ((236, 140, 120), 0.32, 0.35, 0.85),
+        "night": ((150, 170, 205), 0.18, 0.55, 0.55),
+    }[tod]
+    rim = (np.exp(-d / 0.012) * rim_k)[..., None]
+    mid = mid * (1 - rim) + np.array(P.f(rim_rgb), np.float32) * rim
+    mid = mid * (1 - low_k * np.clip(d / 0.35, 0, 1))[..., None] * tint
     layers.append(Layer(_premul(mid, m), 0.5, "mid"))
     hill_ridge = ys
 

@@ -1,0 +1,224 @@
+# Deed to the Glen: the Laird's song (Natural Capital, Act 1).
+# Visual idea: the glen starts as a perfect tourism poster and is turned,
+# verse by verse, into property. The red boundary line grows all song; the
+# chorus is stencilled on the new fence, and weathers each time it returns;
+# the crow watches until the chalets are lit, then leaves.
+# Time of day runs dawn -> dusk -> night across the song.
+song: deed-to-the-glen
+style: glen-gothic
+preset: satirical-dark
+seed: 1707
+motifs: [crow, red-line]
+
+shots:
+  # ---- Intro (spoken toast): the poster, then the man who owns it
+  - id: s01
+    at: intro
+    part: [1, 2]
+    plate: hill-dawn@bare+lodge+kirk+crofts
+    camera: {move: push-in, speed: 0.5}
+    weather: [mist-low]
+    motifs: {crow: perched-left}
+    text: {mode: spoken-title}
+  - id: s02
+    at: intro
+    part: [2, 2]
+    plate: hill-dawn@bare+lodge+kirk+crofts
+    camera: {move: push-in, speed: 0.9, target: [0.36, 0.42]}
+    weather: [mist-low]
+    text: {mode: spoken-title}
+    actors:
+      - {type: laird, side: right, in: 0.35, out: 1.0}
+
+  # ---- Verse 1: the Clearances, then the tourists paying to see them
+  - id: s03
+    at: verse
+    part: [1, 3]
+    plate: hill-dusk@bare+crofts
+    camera: {move: drift-left, speed: 0.6}
+    weather: [mist-low, embers]
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: flames, word: Burned, at: 0.25}
+  - id: s04
+    at: verse
+    part: [2, 3]
+    plate: sealoch-dusk@bare
+    camera: {move: drift-right, speed: 0.5}
+    weather: [fog-heavy]
+    text: {mode: quiet}
+    react: {bass: sway}
+    actors:
+      - {type: ship, x: [0.12, 0.42], span: [0.0, 0.55], size: 0.18}
+      - {type: coach, x: [1.15, 0.55], span: [0.45, 1.0], tag: "£12"}
+  - id: s05
+    at: verse
+    part: [3, 3]
+    plate: hill-dawn@bare+lodge
+    camera: {move: pull-out, speed: 0.8}
+    weather: [mist-low]
+    motifs: {red-line: {from: 0.0, to: 0.3}, crow: perched-right}
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: stamp, text: "40,000 ACRES", word: acres, at: 0.2, pos: [0.30, 0.28], rot: -6}
+      - {type: stamp, text: "A TRUST IN A TRUST IN A FUND", word: fund, at: 0.85, pos: [0.62, 0.45], rot: 4, size: 0.06}
+
+  # ---- Chorus 1: the new fence, the sign, the line
+  - id: s06
+    at: chorus
+    part: [1, 2]
+    plate: hill-dawn@fenced+kirk
+    camera: {move: drift-right, speed: 0.7}
+    weather: [mist-low, seeds]
+    motifs: {red-line: {from: 0.3, to: 0.5}, crow: perched-right}
+    text: {mode: chorus-sign, anchor: [0.36, null], distress: 0.05}
+    react: {bass: ground, drums: flash}
+  - id: s07
+    at: chorus
+    part: [2, 2]
+    plate: hill-dawn@fenced+lodge
+    camera: {move: push-in, speed: 1.1}
+    weather: [mist-low, seeds]
+    motifs: {red-line: {from: 0.5, to: 0.6}}
+    text: {mode: chorus-sign, anchor: [0.52, null], distress: 0.1}
+    react: {bass: ground, drums: flash}
+
+  # ---- Verse 2: the money machine (salmon, whisky, wind, carbon, lets)
+  - id: s08
+    at: verse-2
+    part: [1, 3]
+    plate: sealoch-dawn@bare+cages
+    camera: {move: drift-left, speed: 0.6}
+    weather: [mist-low]
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: stamp, text: "GOOD STOCK", word: stock, at: 0.25, pos: [0.25, 0.30], rot: -8}
+      - {type: stamp, text: "£3,000 A BOTTLE", word: bottle, at: 0.8, pos: [0.66, 0.24], rot: 5}
+  - id: s09
+    at: verse-2
+    part: [2, 3]
+    plate: sealoch-dusk@bare+turbines+plantation
+    camera: {move: rise, speed: 0.7}
+    weather: [mist-low]
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: blades, spin: [1.0, 0.0]}
+      - {type: stamp, text: "PAID TO SWITCH OFF", word: pays, at: 0.4, pos: [0.30, 0.22], rot: -5}
+      - {type: stamp, text: "CARBON CREDIT", word: carbon, at: 0.7, pos: [0.70, 0.40], rot: 7}
+  - id: s10
+    at: verse-2
+    part: [3, 3]
+    plate: hill-dusk@fenced+chalets
+    camera: {move: push-in, speed: 0.6}
+    weather: [mist-low]
+    motifs: {red-line: {from: 0.6, to: 0.7}}
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: stamp, text: "HOLIDAY LET", word: lets, at: 0.3, pos: [0.28, 0.25], rot: -6}
+      - {type: stamp, text: "FIVE STARS, DARLING", word: stars, at: 0.85, pos: [0.64, 0.32], rot: 5}
+
+  # ---- Chorus 2: same sign, weathered; the line keeps going
+  - id: s11
+    at: chorus-2
+    plate: hill-dusk@fenced+lodge
+    camera: {move: drift-left, speed: 0.8}
+    weather: [mist-low, seeds]
+    motifs: {red-line: {from: 0.7, to: 0.85}, crow: perched-left}
+    text: {mode: chorus-sign, anchor: [0.48, null], distress: 0.35, tilt: -4}
+    react: {bass: ground, drums: flash}
+
+  # ---- Bridge (the psalm): stillness at the kirk
+  - id: s12
+    at: bridge
+    plate: hill-night@fenced+kirk
+    camera: {move: push-in, speed: 0.5, target: [0.16, 0.45]}
+    weather: [fog-heavy]
+    text: {mode: quiet}
+    react: {budget: 0.05}
+
+  # ---- Breakdown: the chant fills the screen
+  - id: s13
+    at: breakdown
+    plate: hill-night@fenced+chalets
+    camera: {move: hold}
+    weather: [mist-low]
+    text: {mode: slam}
+    react: {bass: ground, drums: flash, budget: 0.9}
+
+  # ---- Verse 3: the buyout refused, the school sold, the bus owned
+  - id: s14
+    at: verse-3
+    part: [1, 3]
+    plate: hill-dawn@fenced+school
+    camera: {move: drift-right, speed: 0.6}
+    weather: [mist-low]
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: stamp, text: "£12,000,000 BY THE END OF THE MONTH", word: month, at: 0.5, pos: [0.5, 0.25], rot: -4, size: 0.06}
+      - {type: sign, texts: ["GLEN SCHOOL", "GLEN SCHOOL"]}
+  - id: s15
+    at: verse-3
+    part: [2, 3]
+    plate: hill-dusk@fenced+school
+    camera: {move: push-in, speed: 0.8, target: [0.62, 0.45]}
+    weather: [mist-low]
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: sign, texts: ["GLEN SCHOOL", "THE GLEN BOUTIQUE INN"], swap_word: inn, swap: 0.7}
+  - id: s15b
+    at: verse-3
+    part: [3, 3]
+    plate: hill-dusk@fenced+school
+    camera: {move: drift-left, speed: 0.6}
+    weather: [mist-low]
+    text: {mode: quiet}
+    react: {bass: ground}
+    actors:
+      - {type: sign, texts: ["THE GLEN BOUTIQUE INN"]}
+      - {type: coach, x: [-0.1, 0.4], span: [0.0, 0.45], tag: "MINE"}
+      - {type: laird, side: left, in: 0.4, out: 1.0, size: 0.58}
+
+  # ---- Chorus 3: the development, fully lit
+  - id: s16
+    at: chorus-3
+    part: [1, 2]
+    plate: hill-night@fenced+chalets+lodge
+    camera: {move: pull-out, speed: 1.0}
+    weather: [mist-low, seeds]
+    motifs: {red-line: {from: 0.85, to: 1.0}, crow: perched-right}
+    text: {mode: chorus-sign, anchor: [0.40, null], distress: 0.6, tilt: -6}
+    react: {bass: ground, drums: flash}
+  # ---- The long instrumental after the last chorus: the glen dissolves; the crow leaves
+  - id: s16b
+    at: chorus-3
+    part: [2, 2]
+    plate: hill-night@fenced+chalets+lodge
+    camera: {move: push-in, speed: 0.7, target: [0.6, 0.4]}
+    weather: [mist-low, embers]
+    motifs: {red-line: {from: 1.0, to: 1.0}, crow: leaves}
+    text: {mode: quiet}
+    react: {bass: ground, drums: flash, budget: 0.8}
+    psych: {sky: 1.0, overlay: 0.45, kaleido: 8, warp: 0.9, chroma: 0.8}
+
+  # ---- Outro (spoken): pleasantries, then the bill
+  - id: s17
+    at: outro
+    plate: hill-night@fenced+chalets+lodge
+    camera: {move: pull-out, speed: 0.5}
+    weather: [fog-heavy]
+    motifs: {red-line: {from: 1.0, to: 1.0}}
+    text: {mode: spoken-title}
+    react: {budget: 0.05}
+    actors:
+      - {type: stamp, text: "RENT'S DUE FRIDAY", word: Friday, at: 0.5, pos: [0.5, 0.42], rot: -5, size: 0.11}
+
+# Stage 5 extras
+thumbnail: {shot: s16, at: 0.55, title: "DEED TO THE GLEN", laird: true}
+vertical: {sections: [chorus-3], max_s: 45}

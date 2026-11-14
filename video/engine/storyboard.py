@@ -19,7 +19,7 @@ Rules enforced (docs/video/video-engine.md section 3, stage 2):
 import yaml
 
 MIN_BARS, MAX_BARS = 2, 16
-KNOWN_TEXT_MODES = {"chorus-sign", "spoken-title", "slam", "quiet", "voicemail", "none"}
+KNOWN_TEXT_MODES = {"lyric", "chorus-sign", "spoken-title", "slam", "quiet", "voicemail", "none"}
 KNOWN_ACTORS = {"flames", "blades", "ship", "coach", "sign", "stamp", "laird"}
 KNOWN_MOVES = {"push-in", "pull-out", "drift-left", "drift-right", "hold", "rise"}
 
@@ -48,6 +48,7 @@ def resolve(sb, tm, analysis):
     sections = {s["name"]: s for s in tm["sections"]}
     total_bars = max(s["start_bar"] + s["bars"] for s in tm["sections"])
     declared = set(sb.get("motifs", []))
+    max_bars = int(sb.get("max_shot_bars", MAX_BARS))
     shots = []
     for sh in sb["shots"]:
         if "at" in sh:
@@ -65,8 +66,8 @@ def resolve(sb, tm, analysis):
         else:
             b0, b1 = sh["bars"]
         n = b1 - b0
-        if n < MIN_BARS or n > MAX_BARS:
-            errors.append(f"{sh['id']}: {n} bars (allowed {MIN_BARS}-{MAX_BARS})")
+        if n < MIN_BARS or n > max_bars:
+            errors.append(f"{sh['id']}: {n} bars (allowed {MIN_BARS}-{max_bars})")
         cam = sh.get("camera", {})
         if cam.get("move", "hold") not in KNOWN_MOVES:
             errors.append(f"{sh['id']}: unknown camera move {cam.get('move')!r}")
