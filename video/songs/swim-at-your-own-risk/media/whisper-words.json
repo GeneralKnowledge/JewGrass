@@ -1,0 +1,3045 @@
+[
+ {
+  "start": 0.0,
+  "end": 20.08,
+  "text": "Welcome, Cheryl, to the AGM. Record bonuses. Record spills... let's not dwell. Ladies and gentlemen... your water company",
+  "words": [
+   {
+    "start": 0.0,
+    "end": 0.6,
+    "word": " Welcome,",
+    "probability": 0.761
+   },
+   {
+    "start": 3.06,
+    "end": 3.34,
+    "word": " Cheryl,",
+    "probability": 0.414
+   },
+   {
+    "start": 4.56,
+    "end": 5.58,
+    "word": " to",
+    "probability": 0.971
+   },
+   {
+    "start": 5.58,
+    "end": 5.82,
+    "word": " the",
+    "probability": 0.983
+   },
+   {
+    "start": 5.82,
+    "end": 7.7,
+    "word": " AGM.",
+    "probability": 0.382
+   },
+   {
+    "start": 8.64,
+    "end": 9.84,
+    "word": " Record",
+    "probability": 0.98
+   },
+   {
+    "start": 9.84,
+    "end": 10.44,
+    "word": " bonuses.",
+    "probability": 0.946
+   },
+   {
+    "start": 12.0,
+    "end": 12.34,
+    "word": " Record",
+    "probability": 0.997
+   },
+   {
+    "start": 12.34,
+    "end": 13.88,
+    "word": " spills...",
+    "probability": 0.335
+   },
+   {
+    "start": 13.88,
+    "end": 14.18,
+    "word": " let's",
+    "probability": 0.574
+   },
+   {
+    "start": 14.18,
+    "end": 14.38,
+    "word": " not",
+    "probability": 0.999
+   },
+   {
+    "start": 14.38,
+    "end": 14.84,
+    "word": " dwell.",
+    "probability": 0.999
+   },
+   {
+    "start": 16.64,
+    "end": 16.98,
+    "word": " Ladies",
+    "probability": 0.991
+   },
+   {
+    "start": 16.98,
+    "end": 17.3,
+    "word": " and",
+    "probability": 0.991
+   },
+   {
+    "start": 17.3,
+    "end": 18.92,
+    "word": " gentlemen...",
+    "probability": 0.552
+   },
+   {
+    "start": 18.92,
+    "end": 19.1,
+    "word": " your",
+    "probability": 0.565
+   },
+   {
+    "start": 19.1,
+    "end": 19.44,
+    "word": " water",
+    "probability": 0.925
+   },
+   {
+    "start": 19.44,
+    "end": 20.08,
+    "word": " company",
+    "probability": 0.998
+   }
+  ]
+ },
+ {
+  "start": 27.22,
+  "end": 33.66,
+  "text": "They sold me the pipes back in 89 in every reservoir, in every train down the line.",
+  "words": [
+   {
+    "start": 27.22,
+    "end": 27.84,
+    "word": " They",
+    "probability": 0.408
+   },
+   {
+    "start": 27.84,
+    "end": 28.12,
+    "word": " sold",
+    "probability": 0.922
+   },
+   {
+    "start": 28.12,
+    "end": 28.3,
+    "word": " me",
+    "probability": 0.998
+   },
+   {
+    "start": 28.3,
+    "end": 28.42,
+    "word": " the",
+    "probability": 0.992
+   },
+   {
+    "start": 28.42,
+    "end": 28.76,
+    "word": " pipes",
+    "probability": 0.951
+   },
+   {
+    "start": 28.76,
+    "end": 29.38,
+    "word": " back",
+    "probability": 0.467
+   },
+   {
+    "start": 29.38,
+    "end": 29.58,
+    "word": " in",
+    "probability": 0.99
+   },
+   {
+    "start": 29.58,
+    "end": 30.1,
+    "word": " 89",
+    "probability": 0.698
+   },
+   {
+    "start": 30.1,
+    "end": 30.62,
+    "word": " in",
+    "probability": 0.349
+   },
+   {
+    "start": 30.62,
+    "end": 30.88,
+    "word": " every",
+    "probability": 0.935
+   },
+   {
+    "start": 30.88,
+    "end": 31.64,
+    "word": " reservoir,",
+    "probability": 0.984
+   },
+   {
+    "start": 31.68,
+    "end": 32.4,
+    "word": " in",
+    "probability": 0.056
+   },
+   {
+    "start": 32.4,
+    "end": 32.6,
+    "word": " every",
+    "probability": 0.968
+   },
+   {
+    "start": 32.6,
+    "end": 32.86,
+    "word": " train",
+    "probability": 0.789
+   },
+   {
+    "start": 32.86,
+    "end": 33.08,
+    "word": " down",
+    "probability": 0.988
+   },
+   {
+    "start": 33.08,
+    "end": 33.36,
+    "word": " the",
+    "probability": 0.989
+   },
+   {
+    "start": 33.36,
+    "end": 33.66,
+    "word": " line.",
+    "probability": 0.997
+   }
+  ]
+ },
+ {
+  "start": 34.46,
+  "end": 39.52,
+  "text": "Borrowed 10 billion, paid it out to the board, now the jets on your bill and my",
+  "words": [
+   {
+    "start": 34.46,
+    "end": 34.88,
+    "word": " Borrowed",
+    "probability": 0.765
+   },
+   {
+    "start": 34.88,
+    "end": 35.14,
+    "word": " 10",
+    "probability": 0.548
+   },
+   {
+    "start": 35.14,
+    "end": 35.52,
+    "word": " billion,",
+    "probability": 0.936
+   },
+   {
+    "start": 35.84,
+    "end": 35.88,
+    "word": " paid",
+    "probability": 0.747
+   },
+   {
+    "start": 35.88,
+    "end": 36.16,
+    "word": " it",
+    "probability": 0.992
+   },
+   {
+    "start": 36.16,
+    "end": 36.48,
+    "word": " out",
+    "probability": 0.993
+   },
+   {
+    "start": 36.48,
+    "end": 36.68,
+    "word": " to",
+    "probability": 0.892
+   },
+   {
+    "start": 36.68,
+    "end": 36.84,
+    "word": " the",
+    "probability": 0.983
+   },
+   {
+    "start": 36.84,
+    "end": 37.24,
+    "word": " board,",
+    "probability": 0.92
+   },
+   {
+    "start": 37.48,
+    "end": 37.58,
+    "word": " now",
+    "probability": 0.733
+   },
+   {
+    "start": 37.58,
+    "end": 37.74,
+    "word": " the",
+    "probability": 0.533
+   },
+   {
+    "start": 37.74,
+    "end": 38.06,
+    "word": " jets",
+    "probability": 0.299
+   },
+   {
+    "start": 38.06,
+    "end": 38.44,
+    "word": " on",
+    "probability": 0.962
+   },
+   {
+    "start": 38.44,
+    "end": 38.6,
+    "word": " your",
+    "probability": 0.918
+   },
+   {
+    "start": 38.6,
+    "end": 39.02,
+    "word": " bill",
+    "probability": 0.986
+   },
+   {
+    "start": 39.02,
+    "end": 39.3,
+    "word": " and",
+    "probability": 0.621
+   },
+   {
+    "start": 39.3,
+    "end": 39.52,
+    "word": " my",
+    "probability": 0.768
+   }
+  ]
+ },
+ {
+  "start": 39.52,
+  "end": 40.76,
+  "text": "yachts in a fjord.",
+  "words": [
+   {
+    "start": 39.52,
+    "end": 39.96,
+    "word": " yachts",
+    "probability": 0.926
+   },
+   {
+    "start": 39.96,
+    "end": 40.1,
+    "word": " in",
+    "probability": 0.745
+   },
+   {
+    "start": 40.1,
+    "end": 40.22,
+    "word": " a",
+    "probability": 0.634
+   },
+   {
+    "start": 40.22,
+    "end": 40.76,
+    "word": " fjord.",
+    "probability": 0.918
+   }
+  ]
+ },
+ {
+  "start": 41.52,
+  "end": 47.62,
+  "text": "Hostpipe ban in a country made of brain, leaking a third of it straight down the",
+  "words": [
+   {
+    "start": 41.52,
+    "end": 42.04,
+    "word": " Hostpipe",
+    "probability": 0.411
+   },
+   {
+    "start": 42.04,
+    "end": 42.46,
+    "word": " ban",
+    "probability": 0.788
+   },
+   {
+    "start": 42.46,
+    "end": 42.78,
+    "word": " in",
+    "probability": 0.982
+   },
+   {
+    "start": 42.78,
+    "end": 43.0,
+    "word": " a",
+    "probability": 0.983
+   },
+   {
+    "start": 43.0,
+    "end": 43.36,
+    "word": " country",
+    "probability": 0.998
+   },
+   {
+    "start": 43.36,
+    "end": 43.92,
+    "word": " made",
+    "probability": 0.99
+   },
+   {
+    "start": 43.92,
+    "end": 44.2,
+    "word": " of",
+    "probability": 0.975
+   },
+   {
+    "start": 44.2,
+    "end": 44.62,
+    "word": " brain,",
+    "probability": 0.396
+   },
+   {
+    "start": 45.04,
+    "end": 45.36,
+    "word": " leaking",
+    "probability": 0.844
+   },
+   {
+    "start": 45.36,
+    "end": 45.54,
+    "word": " a",
+    "probability": 0.656
+   },
+   {
+    "start": 45.54,
+    "end": 45.78,
+    "word": " third",
+    "probability": 0.951
+   },
+   {
+    "start": 45.78,
+    "end": 45.96,
+    "word": " of",
+    "probability": 0.995
+   },
+   {
+    "start": 45.96,
+    "end": 46.22,
+    "word": " it",
+    "probability": 0.935
+   },
+   {
+    "start": 46.22,
+    "end": 46.64,
+    "word": " straight",
+    "probability": 0.974
+   },
+   {
+    "start": 46.64,
+    "end": 47.32,
+    "word": " down",
+    "probability": 0.943
+   },
+   {
+    "start": 47.32,
+    "end": 47.62,
+    "word": " the",
+    "probability": 0.994
+   }
+  ]
+ },
+ {
+  "start": 47.62,
+  "end": 48.14,
+  "text": "train.",
+  "words": [
+   {
+    "start": 47.62,
+    "end": 48.14,
+    "word": " train.",
+    "probability": 0.972
+   }
+  ]
+ },
+ {
+  "start": 48.82,
+  "end": 51.86,
+  "text": "Storm overflow! Darling, that's a feature!",
+  "words": [
+   {
+    "start": 48.82,
+    "end": 49.42,
+    "word": " Storm",
+    "probability": 0.536
+   },
+   {
+    "start": 49.42,
+    "end": 50.02,
+    "word": " overflow!",
+    "probability": 0.685
+   },
+   {
+    "start": 50.54,
+    "end": 50.76,
+    "word": " Darling,",
+    "probability": 0.757
+   },
+   {
+    "start": 50.94,
+    "end": 51.16,
+    "word": " that's",
+    "probability": 0.984
+   },
+   {
+    "start": 51.16,
+    "end": 51.36,
+    "word": " a",
+    "probability": 0.979
+   },
+   {
+    "start": 51.36,
+    "end": 51.86,
+    "word": " feature!",
+    "probability": 0.996
+   }
+  ]
+ },
+ {
+  "start": 52.56,
+  "end": 55.28,
+  "text": "Brown in the river, call it natural texture",
+  "words": [
+   {
+    "start": 52.56,
+    "end": 52.58,
+    "word": " Brown",
+    "probability": 0.118
+   },
+   {
+    "start": 52.58,
+    "end": 52.84,
+    "word": " in",
+    "probability": 0.795
+   },
+   {
+    "start": 52.84,
+    "end": 53.06,
+    "word": " the",
+    "probability": 0.995
+   },
+   {
+    "start": 53.06,
+    "end": 53.36,
+    "word": " river,",
+    "probability": 0.969
+   },
+   {
+    "start": 53.72,
+    "end": 53.88,
+    "word": " call",
+    "probability": 0.938
+   },
+   {
+    "start": 53.88,
+    "end": 54.1,
+    "word": " it",
+    "probability": 0.988
+   },
+   {
+    "start": 54.1,
+    "end": 54.54,
+    "word": " natural",
+    "probability": 0.947
+   },
+   {
+    "start": 54.54,
+    "end": 55.28,
+    "word": " texture",
+    "probability": 0.995
+   }
+  ]
+ },
+ {
+  "start": 55.28,
+  "end": 58.46,
+  "text": "Surfer got sick at the beach in July",
+  "words": [
+   {
+    "start": 55.28,
+    "end": 56.12,
+    "word": " Surfer",
+    "probability": 0.577
+   },
+   {
+    "start": 56.12,
+    "end": 56.44,
+    "word": " got",
+    "probability": 0.991
+   },
+   {
+    "start": 56.44,
+    "end": 56.8,
+    "word": " sick",
+    "probability": 0.998
+   },
+   {
+    "start": 56.8,
+    "end": 57.08,
+    "word": " at",
+    "probability": 0.987
+   },
+   {
+    "start": 57.08,
+    "end": 57.2,
+    "word": " the",
+    "probability": 0.996
+   },
+   {
+    "start": 57.2,
+    "end": 57.66,
+    "word": " beach",
+    "probability": 0.994
+   },
+   {
+    "start": 57.66,
+    "end": 57.92,
+    "word": " in",
+    "probability": 0.991
+   },
+   {
+    "start": 57.92,
+    "end": 58.46,
+    "word": " July",
+    "probability": 0.994
+   }
+  ]
+ },
+ {
+  "start": 58.46,
+  "end": 61.8,
+  "text": "Sent him a voucher and a cheery goodbye",
+  "words": [
+   {
+    "start": 58.46,
+    "end": 59.36,
+    "word": " Sent",
+    "probability": 0.628
+   },
+   {
+    "start": 59.36,
+    "end": 59.64,
+    "word": " him",
+    "probability": 0.99
+   },
+   {
+    "start": 59.64,
+    "end": 59.86,
+    "word": " a",
+    "probability": 0.993
+   },
+   {
+    "start": 59.86,
+    "end": 60.36,
+    "word": " voucher",
+    "probability": 0.905
+   },
+   {
+    "start": 60.36,
+    "end": 60.7,
+    "word": " and",
+    "probability": 0.952
+   },
+   {
+    "start": 60.7,
+    "end": 60.96,
+    "word": " a",
+    "probability": 0.991
+   },
+   {
+    "start": 60.96,
+    "end": 61.28,
+    "word": " cheery",
+    "probability": 0.983
+   },
+   {
+    "start": 61.28,
+    "end": 61.8,
+    "word": " goodbye",
+    "probability": 0.969
+   }
+  ]
+ },
+ {
+  "start": 62.44,
+  "end": 65.4,
+  "text": "Surfer got sick at the beach in July",
+  "words": [
+   {
+    "start": 62.44,
+    "end": 63.04,
+    "word": " Surfer",
+    "probability": 0.565
+   },
+   {
+    "start": 63.04,
+    "end": 63.28,
+    "word": " got",
+    "probability": 0.998
+   },
+   {
+    "start": 63.28,
+    "end": 63.64,
+    "word": " sick",
+    "probability": 0.999
+   },
+   {
+    "start": 63.64,
+    "end": 64.1,
+    "word": " at",
+    "probability": 0.991
+   },
+   {
+    "start": 64.1,
+    "end": 64.24,
+    "word": " the",
+    "probability": 0.999
+   },
+   {
+    "start": 64.24,
+    "end": 64.54,
+    "word": " beach",
+    "probability": 0.999
+   },
+   {
+    "start": 64.54,
+    "end": 64.78,
+    "word": " in",
+    "probability": 0.999
+   },
+   {
+    "start": 64.78,
+    "end": 65.4,
+    "word": " July",
+    "probability": 0.999
+   }
+  ]
+ },
+ {
+  "start": 65.4,
+  "end": 68.86,
+  "text": "Sent him a voucher and a cheery goodbye",
+  "words": [
+   {
+    "start": 65.4,
+    "end": 66.2,
+    "word": " Sent",
+    "probability": 0.944
+   },
+   {
+    "start": 66.2,
+    "end": 66.46,
+    "word": " him",
+    "probability": 0.999
+   },
+   {
+    "start": 66.46,
+    "end": 66.7,
+    "word": " a",
+    "probability": 0.999
+   },
+   {
+    "start": 66.7,
+    "end": 67.2,
+    "word": " voucher",
+    "probability": 0.994
+   },
+   {
+    "start": 67.2,
+    "end": 67.52,
+    "word": " and",
+    "probability": 0.995
+   },
+   {
+    "start": 67.52,
+    "end": 67.8,
+    "word": " a",
+    "probability": 0.998
+   },
+   {
+    "start": 67.8,
+    "end": 68.06,
+    "word": " cheery",
+    "probability": 0.996
+   },
+   {
+    "start": 68.06,
+    "end": 68.86,
+    "word": " goodbye",
+    "probability": 0.998
+   }
+  ]
+ },
+ {
+  "start": 68.86,
+  "end": 72.32,
+  "text": "Smet your own risk, son, smet your own risk",
+  "words": [
+   {
+    "start": 68.86,
+    "end": 69.68,
+    "word": " Smet",
+    "probability": 0.549
+   },
+   {
+    "start": 69.68,
+    "end": 69.88,
+    "word": " your",
+    "probability": 0.567
+   },
+   {
+    "start": 69.88,
+    "end": 70.34,
+    "word": " own",
+    "probability": 0.915
+   },
+   {
+    "start": 70.34,
+    "end": 70.52,
+    "word": " risk,",
+    "probability": 0.518
+   },
+   {
+    "start": 70.78,
+    "end": 70.98,
+    "word": " son,",
+    "probability": 0.395
+   },
+   {
+    "start": 71.14,
+    "end": 71.38,
+    "word": " smet",
+    "probability": 0.933
+   },
+   {
+    "start": 71.38,
+    "end": 71.62,
+    "word": " your",
+    "probability": 0.99
+   },
+   {
+    "start": 71.62,
+    "end": 72.06,
+    "word": " own",
+    "probability": 0.997
+   },
+   {
+    "start": 72.06,
+    "end": 72.32,
+    "word": " risk",
+    "probability": 0.983
+   }
+  ]
+ },
+ {
+  "start": 72.32,
+  "end": 76.12,
+  "text": "Every river in the country's on my bonus list",
+  "words": [
+   {
+    "start": 72.32,
+    "end": 72.78,
+    "word": " Every",
+    "probability": 0.83
+   },
+   {
+    "start": 72.78,
+    "end": 73.26,
+    "word": " river",
+    "probability": 0.993
+   },
+   {
+    "start": 73.26,
+    "end": 73.58,
+    "word": " in",
+    "probability": 0.521
+   },
+   {
+    "start": 73.58,
+    "end": 73.8,
+    "word": " the",
+    "probability": 0.991
+   },
+   {
+    "start": 73.8,
+    "end": 74.68,
+    "word": " country's",
+    "probability": 0.891
+   },
+   {
+    "start": 74.68,
+    "end": 74.8,
+    "word": " on",
+    "probability": 0.994
+   },
+   {
+    "start": 74.8,
+    "end": 75.06,
+    "word": " my",
+    "probability": 0.979
+   },
+   {
+    "start": 75.06,
+    "end": 75.36,
+    "word": " bonus",
+    "probability": 0.994
+   },
+   {
+    "start": 75.36,
+    "end": 76.12,
+    "word": " list",
+    "probability": 0.997
+   }
+  ]
+ },
+ {
+  "start": 76.12,
+  "end": 83.72,
+  "text": "pay the bill flush it down watch it float on by it's raining every day and the taps run tight",
+  "words": [
+   {
+    "start": 76.12,
+    "end": 76.52,
+    "word": " pay",
+    "probability": 0.208
+   },
+   {
+    "start": 76.52,
+    "end": 76.7,
+    "word": " the",
+    "probability": 0.992
+   },
+   {
+    "start": 76.7,
+    "end": 77.06,
+    "word": " bill",
+    "probability": 0.992
+   },
+   {
+    "start": 77.06,
+    "end": 77.76,
+    "word": " flush",
+    "probability": 0.573
+   },
+   {
+    "start": 77.76,
+    "end": 78.02,
+    "word": " it",
+    "probability": 0.998
+   },
+   {
+    "start": 78.02,
+    "end": 78.4,
+    "word": " down",
+    "probability": 0.999
+   },
+   {
+    "start": 78.4,
+    "end": 78.68,
+    "word": " watch",
+    "probability": 0.882
+   },
+   {
+    "start": 78.68,
+    "end": 78.9,
+    "word": " it",
+    "probability": 0.949
+   },
+   {
+    "start": 78.9,
+    "end": 79.14,
+    "word": " float",
+    "probability": 0.26
+   },
+   {
+    "start": 79.14,
+    "end": 79.46,
+    "word": " on",
+    "probability": 0.988
+   },
+   {
+    "start": 79.46,
+    "end": 79.8,
+    "word": " by",
+    "probability": 0.971
+   },
+   {
+    "start": 79.8,
+    "end": 80.2,
+    "word": " it's",
+    "probability": 0.941
+   },
+   {
+    "start": 80.2,
+    "end": 80.46,
+    "word": " raining",
+    "probability": 0.994
+   },
+   {
+    "start": 80.46,
+    "end": 80.92,
+    "word": " every",
+    "probability": 0.955
+   },
+   {
+    "start": 80.92,
+    "end": 81.6,
+    "word": " day",
+    "probability": 0.999
+   },
+   {
+    "start": 81.6,
+    "end": 82.08,
+    "word": " and",
+    "probability": 0.95
+   },
+   {
+    "start": 82.08,
+    "end": 82.3,
+    "word": " the",
+    "probability": 0.998
+   },
+   {
+    "start": 82.3,
+    "end": 82.62,
+    "word": " taps",
+    "probability": 0.931
+   },
+   {
+    "start": 82.62,
+    "end": 83.02,
+    "word": " run",
+    "probability": 0.965
+   },
+   {
+    "start": 83.02,
+    "end": 83.72,
+    "word": " tight",
+    "probability": 0.902
+   }
+  ]
+ },
+ {
+  "start": 84.28,
+  "end": 91.88,
+  "text": "regulator turned up with a fine and a frown 90 million quid so i put your bill up in town",
+  "words": [
+   {
+    "start": 84.28,
+    "end": 84.96,
+    "word": " regulator",
+    "probability": 0.973
+   },
+   {
+    "start": 84.96,
+    "end": 85.66,
+    "word": " turned",
+    "probability": 0.995
+   },
+   {
+    "start": 85.66,
+    "end": 86.14,
+    "word": " up",
+    "probability": 0.995
+   },
+   {
+    "start": 86.14,
+    "end": 86.38,
+    "word": " with",
+    "probability": 0.94
+   },
+   {
+    "start": 86.38,
+    "end": 86.68,
+    "word": " a",
+    "probability": 0.958
+   },
+   {
+    "start": 86.68,
+    "end": 86.84,
+    "word": " fine",
+    "probability": 0.971
+   },
+   {
+    "start": 86.84,
+    "end": 87.04,
+    "word": " and",
+    "probability": 0.606
+   },
+   {
+    "start": 87.04,
+    "end": 87.26,
+    "word": " a",
+    "probability": 0.882
+   },
+   {
+    "start": 87.26,
+    "end": 87.58,
+    "word": " frown",
+    "probability": 0.937
+   },
+   {
+    "start": 87.58,
+    "end": 88.18,
+    "word": " 90",
+    "probability": 0.864
+   },
+   {
+    "start": 88.18,
+    "end": 88.64,
+    "word": " million",
+    "probability": 0.997
+   },
+   {
+    "start": 88.64,
+    "end": 89.06,
+    "word": " quid",
+    "probability": 0.988
+   },
+   {
+    "start": 89.06,
+    "end": 89.76,
+    "word": " so",
+    "probability": 0.964
+   },
+   {
+    "start": 89.76,
+    "end": 90.02,
+    "word": " i",
+    "probability": 0.878
+   },
+   {
+    "start": 90.02,
+    "end": 90.24,
+    "word": " put",
+    "probability": 0.995
+   },
+   {
+    "start": 90.24,
+    "end": 90.42,
+    "word": " your",
+    "probability": 0.85
+   },
+   {
+    "start": 90.42,
+    "end": 91.02,
+    "word": " bill",
+    "probability": 0.92
+   },
+   {
+    "start": 91.02,
+    "end": 91.28,
+    "word": " up",
+    "probability": 0.999
+   },
+   {
+    "start": 91.28,
+    "end": 91.5,
+    "word": " in",
+    "probability": 0.995
+   },
+   {
+    "start": 91.5,
+    "end": 91.88,
+    "word": " town",
+    "probability": 0.999
+   }
+  ]
+ },
+ {
+  "start": 91.88,
+  "end": 98.8,
+  "text": "then i paid myself a bono for meeting the targets the target was the river and we hit it",
+  "words": [
+   {
+    "start": 91.88,
+    "end": 92.38,
+    "word": " then",
+    "probability": 0.442
+   },
+   {
+    "start": 92.38,
+    "end": 92.6,
+    "word": " i",
+    "probability": 0.97
+   },
+   {
+    "start": 92.6,
+    "end": 92.78,
+    "word": " paid",
+    "probability": 0.598
+   },
+   {
+    "start": 92.78,
+    "end": 93.22,
+    "word": " myself",
+    "probability": 0.997
+   },
+   {
+    "start": 93.22,
+    "end": 93.52,
+    "word": " a",
+    "probability": 0.815
+   },
+   {
+    "start": 93.52,
+    "end": 93.9,
+    "word": " bono",
+    "probability": 0.798
+   },
+   {
+    "start": 93.9,
+    "end": 94.84,
+    "word": " for",
+    "probability": 0.434
+   },
+   {
+    "start": 94.84,
+    "end": 95.26,
+    "word": " meeting",
+    "probability": 0.985
+   },
+   {
+    "start": 95.26,
+    "end": 95.56,
+    "word": " the",
+    "probability": 0.705
+   },
+   {
+    "start": 95.56,
+    "end": 96.0,
+    "word": " targets",
+    "probability": 0.993
+   },
+   {
+    "start": 96.0,
+    "end": 96.4,
+    "word": " the",
+    "probability": 0.983
+   },
+   {
+    "start": 96.4,
+    "end": 96.76,
+    "word": " target",
+    "probability": 0.983
+   },
+   {
+    "start": 96.76,
+    "end": 97.08,
+    "word": " was",
+    "probability": 0.999
+   },
+   {
+    "start": 97.08,
+    "end": 97.34,
+    "word": " the",
+    "probability": 1.0
+   },
+   {
+    "start": 97.34,
+    "end": 97.62,
+    "word": " river",
+    "probability": 0.999
+   },
+   {
+    "start": 97.62,
+    "end": 97.94,
+    "word": " and",
+    "probability": 0.995
+   },
+   {
+    "start": 97.94,
+    "end": 98.18,
+    "word": " we",
+    "probability": 0.999
+   },
+   {
+    "start": 98.18,
+    "end": 98.42,
+    "word": " hit",
+    "probability": 0.781
+   },
+   {
+    "start": 98.42,
+    "end": 98.8,
+    "word": " it",
+    "probability": 0.995
+   }
+  ]
+ },
+ {
+  "start": 98.8,
+  "end": 105.4,
+  "text": "regardless dead fish on the bank like silver confetti shareholders abroad and the payout is",
+  "words": [
+   {
+    "start": 98.8,
+    "end": 99.4,
+    "word": " regardless",
+    "probability": 0.995
+   },
+   {
+    "start": 99.4,
+    "end": 100.1,
+    "word": " dead",
+    "probability": 0.667
+   },
+   {
+    "start": 100.1,
+    "end": 100.26,
+    "word": " fish",
+    "probability": 0.973
+   },
+   {
+    "start": 100.26,
+    "end": 100.52,
+    "word": " on",
+    "probability": 0.998
+   },
+   {
+    "start": 100.52,
+    "end": 100.7,
+    "word": " the",
+    "probability": 1.0
+   },
+   {
+    "start": 100.7,
+    "end": 101.12,
+    "word": " bank",
+    "probability": 0.634
+   },
+   {
+    "start": 101.12,
+    "end": 101.66,
+    "word": " like",
+    "probability": 0.956
+   },
+   {
+    "start": 101.66,
+    "end": 102.14,
+    "word": " silver",
+    "probability": 0.999
+   },
+   {
+    "start": 102.14,
+    "end": 102.88,
+    "word": " confetti",
+    "probability": 0.999
+   },
+   {
+    "start": 102.88,
+    "end": 103.6,
+    "word": " shareholders",
+    "probability": 0.996
+   },
+   {
+    "start": 103.6,
+    "end": 104.16,
+    "word": " abroad",
+    "probability": 0.665
+   },
+   {
+    "start": 104.16,
+    "end": 104.4,
+    "word": " and",
+    "probability": 0.834
+   },
+   {
+    "start": 104.4,
+    "end": 104.62,
+    "word": " the",
+    "probability": 0.967
+   },
+   {
+    "start": 104.62,
+    "end": 105.02,
+    "word": " payout",
+    "probability": 0.986
+   },
+   {
+    "start": 105.02,
+    "end": 105.4,
+    "word": " is",
+    "probability": 0.999
+   }
+  ]
+ },
+ {
+  "start": 105.4,
+  "end": 113.74,
+  "text": "already fixing the pipes what a lovely idea pencil it in for let's say next year next year",
+  "words": [
+   {
+    "start": 105.4,
+    "end": 105.86,
+    "word": " already",
+    "probability": 0.041
+   },
+   {
+    "start": 105.86,
+    "end": 107.46,
+    "word": " fixing",
+    "probability": 0.217
+   },
+   {
+    "start": 107.46,
+    "end": 107.78,
+    "word": " the",
+    "probability": 0.967
+   },
+   {
+    "start": 107.78,
+    "end": 108.26,
+    "word": " pipes",
+    "probability": 0.904
+   },
+   {
+    "start": 108.26,
+    "end": 108.68,
+    "word": " what",
+    "probability": 0.677
+   },
+   {
+    "start": 108.68,
+    "end": 108.94,
+    "word": " a",
+    "probability": 0.996
+   },
+   {
+    "start": 108.94,
+    "end": 109.2,
+    "word": " lovely",
+    "probability": 0.995
+   },
+   {
+    "start": 109.2,
+    "end": 109.96,
+    "word": " idea",
+    "probability": 0.965
+   },
+   {
+    "start": 109.96,
+    "end": 110.44,
+    "word": " pencil",
+    "probability": 0.956
+   },
+   {
+    "start": 110.44,
+    "end": 110.68,
+    "word": " it",
+    "probability": 0.984
+   },
+   {
+    "start": 110.68,
+    "end": 110.98,
+    "word": " in",
+    "probability": 0.998
+   },
+   {
+    "start": 110.98,
+    "end": 111.34,
+    "word": " for",
+    "probability": 0.957
+   },
+   {
+    "start": 111.34,
+    "end": 112.06,
+    "word": " let's",
+    "probability": 0.968
+   },
+   {
+    "start": 112.06,
+    "end": 112.22,
+    "word": " say",
+    "probability": 0.998
+   },
+   {
+    "start": 112.22,
+    "end": 112.54,
+    "word": " next",
+    "probability": 0.996
+   },
+   {
+    "start": 112.54,
+    "end": 113.0,
+    "word": " year",
+    "probability": 0.998
+   },
+   {
+    "start": 113.0,
+    "end": 113.4,
+    "word": " next",
+    "probability": 0.727
+   },
+   {
+    "start": 113.4,
+    "end": 113.74,
+    "word": " year",
+    "probability": 0.969
+   }
+  ]
+ },
+ {
+  "start": 113.74,
+  "end": 119.48,
+  "text": "the next year and the year after that sustainable report baby",
+  "words": [
+   {
+    "start": 113.74,
+    "end": 114.0,
+    "word": " the",
+    "probability": 0.565
+   },
+   {
+    "start": 114.0,
+    "end": 114.22,
+    "word": " next",
+    "probability": 0.996
+   },
+   {
+    "start": 114.22,
+    "end": 114.68,
+    "word": " year",
+    "probability": 0.997
+   },
+   {
+    "start": 114.68,
+    "end": 115.46,
+    "word": " and",
+    "probability": 0.974
+   },
+   {
+    "start": 115.46,
+    "end": 115.68,
+    "word": " the",
+    "probability": 0.998
+   },
+   {
+    "start": 115.68,
+    "end": 116.04,
+    "word": " year",
+    "probability": 0.998
+   },
+   {
+    "start": 116.04,
+    "end": 116.44,
+    "word": " after",
+    "probability": 0.999
+   },
+   {
+    "start": 116.44,
+    "end": 116.98,
+    "word": " that",
+    "probability": 0.986
+   },
+   {
+    "start": 116.98,
+    "end": 117.9,
+    "word": " sustainable",
+    "probability": 0.914
+   },
+   {
+    "start": 117.9,
+    "end": 118.62,
+    "word": " report",
+    "probability": 0.995
+   },
+   {
+    "start": 118.62,
+    "end": 119.48,
+    "word": " baby",
+    "probability": 0.97
+   }
+  ]
+ },
+ {
+  "start": 125.18,
+  "end": 132.36,
+  "text": "So let your own risks, son, so let your own risks",
+  "words": [
+   {
+    "start": 125.18,
+    "end": 125.84,
+    "word": " So",
+    "probability": 0.016
+   },
+   {
+    "start": 125.84,
+    "end": 125.84,
+    "word": " let",
+    "probability": 0.297
+   },
+   {
+    "start": 125.84,
+    "end": 129.92,
+    "word": " your",
+    "probability": 0.864
+   },
+   {
+    "start": 129.92,
+    "end": 130.3,
+    "word": " own",
+    "probability": 0.958
+   },
+   {
+    "start": 130.3,
+    "end": 130.76,
+    "word": " risks,",
+    "probability": 0.083
+   },
+   {
+    "start": 130.78,
+    "end": 131.0,
+    "word": " son,",
+    "probability": 0.608
+   },
+   {
+    "start": 131.1,
+    "end": 131.3,
+    "word": " so",
+    "probability": 0.535
+   },
+   {
+    "start": 131.3,
+    "end": 131.4,
+    "word": " let",
+    "probability": 0.994
+   },
+   {
+    "start": 131.4,
+    "end": 131.62,
+    "word": " your",
+    "probability": 0.992
+   },
+   {
+    "start": 131.62,
+    "end": 132.02,
+    "word": " own",
+    "probability": 0.991
+   },
+   {
+    "start": 132.02,
+    "end": 132.36,
+    "word": " risks",
+    "probability": 0.957
+   }
+  ]
+ },
+ {
+  "start": 132.36,
+  "end": 135.98,
+  "text": "Every river in the country's on my bonus list",
+  "words": [
+   {
+    "start": 132.36,
+    "end": 132.78,
+    "word": " Every",
+    "probability": 0.55
+   },
+   {
+    "start": 132.78,
+    "end": 133.24,
+    "word": " river",
+    "probability": 0.986
+   },
+   {
+    "start": 133.24,
+    "end": 133.56,
+    "word": " in",
+    "probability": 0.984
+   },
+   {
+    "start": 133.56,
+    "end": 133.8,
+    "word": " the",
+    "probability": 0.992
+   },
+   {
+    "start": 133.8,
+    "end": 134.68,
+    "word": " country's",
+    "probability": 0.796
+   },
+   {
+    "start": 134.68,
+    "end": 134.8,
+    "word": " on",
+    "probability": 0.963
+   },
+   {
+    "start": 134.8,
+    "end": 135.06,
+    "word": " my",
+    "probability": 0.919
+   },
+   {
+    "start": 135.06,
+    "end": 135.34,
+    "word": " bonus",
+    "probability": 0.994
+   },
+   {
+    "start": 135.34,
+    "end": 135.98,
+    "word": " list",
+    "probability": 0.995
+   }
+  ]
+ },
+ {
+  "start": 135.98,
+  "end": 139.76,
+  "text": "Pay the bill, flush it down, watch it float on by",
+  "words": [
+   {
+    "start": 135.98,
+    "end": 136.5,
+    "word": " Pay",
+    "probability": 0.911
+   },
+   {
+    "start": 136.5,
+    "end": 136.74,
+    "word": " the",
+    "probability": 0.994
+   },
+   {
+    "start": 136.74,
+    "end": 137.12,
+    "word": " bill,",
+    "probability": 0.972
+   },
+   {
+    "start": 137.4,
+    "end": 137.78,
+    "word": " flush",
+    "probability": 0.988
+   },
+   {
+    "start": 137.78,
+    "end": 138.02,
+    "word": " it",
+    "probability": 0.995
+   },
+   {
+    "start": 138.02,
+    "end": 138.3,
+    "word": " down,",
+    "probability": 0.989
+   },
+   {
+    "start": 138.52,
+    "end": 138.68,
+    "word": " watch",
+    "probability": 0.959
+   },
+   {
+    "start": 138.68,
+    "end": 138.86,
+    "word": " it",
+    "probability": 0.899
+   },
+   {
+    "start": 138.86,
+    "end": 139.12,
+    "word": " float",
+    "probability": 0.381
+   },
+   {
+    "start": 139.12,
+    "end": 139.52,
+    "word": " on",
+    "probability": 0.878
+   },
+   {
+    "start": 139.52,
+    "end": 139.76,
+    "word": " by",
+    "probability": 0.658
+   }
+  ]
+ },
+ {
+  "start": 139.76,
+  "end": 144.02,
+  "text": "It's raining every day, and taps run dry",
+  "words": [
+   {
+    "start": 139.76,
+    "end": 140.24,
+    "word": " It's",
+    "probability": 0.943
+   },
+   {
+    "start": 140.24,
+    "end": 140.44,
+    "word": " raining",
+    "probability": 0.941
+   },
+   {
+    "start": 140.44,
+    "end": 140.92,
+    "word": " every",
+    "probability": 0.762
+   },
+   {
+    "start": 140.92,
+    "end": 141.58,
+    "word": " day,",
+    "probability": 0.999
+   },
+   {
+    "start": 142.12,
+    "end": 142.12,
+    "word": " and",
+    "probability": 0.314
+   },
+   {
+    "start": 142.12,
+    "end": 142.6,
+    "word": " taps",
+    "probability": 0.967
+   },
+   {
+    "start": 142.6,
+    "end": 143.02,
+    "word": " run",
+    "probability": 0.972
+   },
+   {
+    "start": 143.02,
+    "end": 144.02,
+    "word": " dry",
+    "probability": 1.0
+   }
+  ]
+ },
+ {
+  "start": 144.02,
+  "end": 150.28,
+  "text": "Bless the tap pen, bless the drink, bless the man who sells the rain.",
+  "words": [
+   {
+    "start": 144.02,
+    "end": 144.62,
+    "word": " Bless",
+    "probability": 0.401
+   },
+   {
+    "start": 144.62,
+    "end": 144.86,
+    "word": " the",
+    "probability": 0.977
+   },
+   {
+    "start": 144.86,
+    "end": 145.14,
+    "word": " tap",
+    "probability": 0.649
+   },
+   {
+    "start": 145.14,
+    "end": 145.58,
+    "word": " pen,",
+    "probability": 0.174
+   },
+   {
+    "start": 145.9,
+    "end": 145.98,
+    "word": " bless",
+    "probability": 0.944
+   },
+   {
+    "start": 145.98,
+    "end": 146.4,
+    "word": " the",
+    "probability": 0.997
+   },
+   {
+    "start": 146.4,
+    "end": 146.74,
+    "word": " drink,",
+    "probability": 0.375
+   },
+   {
+    "start": 146.88,
+    "end": 148.06,
+    "word": " bless",
+    "probability": 0.84
+   },
+   {
+    "start": 148.06,
+    "end": 148.28,
+    "word": " the",
+    "probability": 0.997
+   },
+   {
+    "start": 148.28,
+    "end": 148.66,
+    "word": " man",
+    "probability": 0.997
+   },
+   {
+    "start": 148.66,
+    "end": 148.94,
+    "word": " who",
+    "probability": 0.992
+   },
+   {
+    "start": 148.94,
+    "end": 149.48,
+    "word": " sells",
+    "probability": 0.959
+   },
+   {
+    "start": 149.48,
+    "end": 149.9,
+    "word": " the",
+    "probability": 0.996
+   },
+   {
+    "start": 149.9,
+    "end": 150.28,
+    "word": " rain.",
+    "probability": 0.388
+   }
+  ]
+ },
+ {
+  "start": 150.78,
+  "end": 156.0,
+  "text": "Swim at your home risk, swim at your home risk, swim at your home risk.",
+  "words": [
+   {
+    "start": 150.78,
+    "end": 151.2,
+    "word": " Swim",
+    "probability": 0.876
+   },
+   {
+    "start": 151.2,
+    "end": 151.52,
+    "word": " at",
+    "probability": 0.958
+   },
+   {
+    "start": 151.52,
+    "end": 151.8,
+    "word": " your",
+    "probability": 0.938
+   },
+   {
+    "start": 151.8,
+    "end": 152.2,
+    "word": " home",
+    "probability": 0.589
+   },
+   {
+    "start": 152.2,
+    "end": 152.54,
+    "word": " risk,",
+    "probability": 0.511
+   },
+   {
+    "start": 152.82,
+    "end": 153.08,
+    "word": " swim",
+    "probability": 0.972
+   },
+   {
+    "start": 153.08,
+    "end": 153.24,
+    "word": " at",
+    "probability": 0.997
+   },
+   {
+    "start": 153.24,
+    "end": 153.56,
+    "word": " your",
+    "probability": 0.996
+   },
+   {
+    "start": 153.56,
+    "end": 153.84,
+    "word": " home",
+    "probability": 0.98
+   },
+   {
+    "start": 153.84,
+    "end": 154.22,
+    "word": " risk,",
+    "probability": 0.963
+   },
+   {
+    "start": 154.42,
+    "end": 154.58,
+    "word": " swim",
+    "probability": 0.978
+   },
+   {
+    "start": 154.58,
+    "end": 154.96,
+    "word": " at",
+    "probability": 0.994
+   },
+   {
+    "start": 154.96,
+    "end": 155.28,
+    "word": " your",
+    "probability": 0.998
+   },
+   {
+    "start": 155.28,
+    "end": 155.62,
+    "word": " home",
+    "probability": 0.967
+   },
+   {
+    "start": 155.62,
+    "end": 156.0,
+    "word": " risk.",
+    "probability": 0.982
+   }
+  ]
+ },
+ {
+  "start": 157.42,
+  "end": 168.34,
+  "text": "Swim my job, Chris. Swim my job, Chris. Swim my job, Chris. Swim my job, Chris. Swim my job, Chris. Swim my job, Chris.",
+  "words": [
+   {
+    "start": 157.42,
+    "end": 158.02,
+    "word": " Swim",
+    "probability": 0.007
+   },
+   {
+    "start": 158.02,
+    "end": 158.36,
+    "word": " my",
+    "probability": 0.452
+   },
+   {
+    "start": 158.36,
+    "end": 158.6,
+    "word": " job,",
+    "probability": 0.635
+   },
+   {
+    "start": 158.96,
+    "end": 159.3,
+    "word": " Chris.",
+    "probability": 0.853
+   },
+   {
+    "start": 159.68,
+    "end": 159.9,
+    "word": " Swim",
+    "probability": 0.832
+   },
+   {
+    "start": 159.9,
+    "end": 160.14,
+    "word": " my",
+    "probability": 0.953
+   },
+   {
+    "start": 160.14,
+    "end": 160.38,
+    "word": " job,",
+    "probability": 0.995
+   },
+   {
+    "start": 160.74,
+    "end": 161.04,
+    "word": " Chris.",
+    "probability": 0.992
+   },
+   {
+    "start": 161.22,
+    "end": 161.44,
+    "word": " Swim",
+    "probability": 0.874
+   },
+   {
+    "start": 161.44,
+    "end": 161.78,
+    "word": " my",
+    "probability": 0.972
+   },
+   {
+    "start": 161.78,
+    "end": 162.1,
+    "word": " job,",
+    "probability": 0.997
+   },
+   {
+    "start": 162.42,
+    "end": 162.82,
+    "word": " Chris.",
+    "probability": 0.997
+   },
+   {
+    "start": 163.04,
+    "end": 163.34,
+    "word": " Swim",
+    "probability": 0.933
+   },
+   {
+    "start": 163.34,
+    "end": 163.54,
+    "word": " my",
+    "probability": 0.948
+   },
+   {
+    "start": 163.54,
+    "end": 163.82,
+    "word": " job,",
+    "probability": 0.996
+   },
+   {
+    "start": 164.12,
+    "end": 164.46,
+    "word": " Chris.",
+    "probability": 0.992
+   },
+   {
+    "start": 164.86,
+    "end": 164.86,
+    "word": " Swim",
+    "probability": 0.929
+   },
+   {
+    "start": 164.86,
+    "end": 165.24,
+    "word": " my",
+    "probability": 0.955
+   },
+   {
+    "start": 165.24,
+    "end": 165.56,
+    "word": " job,",
+    "probability": 0.992
+   },
+   {
+    "start": 165.82,
+    "end": 166.2,
+    "word": " Chris.",
+    "probability": 0.995
+   },
+   {
+    "start": 168.06,
+    "end": 168.34,
+    "word": " Swim",
+    "probability": 0.47
+   },
+   {
+    "start": 168.34,
+    "end": 168.34,
+    "word": " my",
+    "probability": 0.961
+   },
+   {
+    "start": 168.34,
+    "end": 168.34,
+    "word": " job,",
+    "probability": 0.99
+   },
+   {
+    "start": 168.34,
+    "end": 168.34,
+    "word": " Chris.",
+    "probability": 0.995
+   }
+  ]
+ },
+ {
+  "start": 168.34,
+  "end": 171.06,
+  "text": "You want it naturalized? Cute. Take a seat.",
+  "words": [
+   {
+    "start": 168.34,
+    "end": 168.36,
+    "word": " You",
+    "probability": 0.319
+   },
+   {
+    "start": 168.36,
+    "end": 168.66,
+    "word": " want",
+    "probability": 0.44
+   },
+   {
+    "start": 168.66,
+    "end": 168.86,
+    "word": " it",
+    "probability": 0.985
+   },
+   {
+    "start": 168.86,
+    "end": 169.64,
+    "word": " naturalized?",
+    "probability": 0.762
+   },
+   {
+    "start": 169.82,
+    "end": 170.0,
+    "word": " Cute.",
+    "probability": 0.702
+   },
+   {
+    "start": 170.2,
+    "end": 170.36,
+    "word": " Take",
+    "probability": 0.985
+   },
+   {
+    "start": 170.36,
+    "end": 170.64,
+    "word": " a",
+    "probability": 0.998
+   },
+   {
+    "start": 170.64,
+    "end": 171.06,
+    "word": " seat.",
+    "probability": 0.913
+   }
+  ]
+ },
+ {
+  "start": 171.74,
+  "end": 174.6,
+  "text": "I'll sell it. Get your boat. The league's complete.",
+  "words": [
+   {
+    "start": 171.74,
+    "end": 172.08,
+    "word": " I'll",
+    "probability": 0.596
+   },
+   {
+    "start": 172.08,
+    "end": 172.08,
+    "word": " sell",
+    "probability": 0.98
+   },
+   {
+    "start": 172.08,
+    "end": 172.32,
+    "word": " it.",
+    "probability": 0.838
+   },
+   {
+    "start": 172.52,
+    "end": 172.74,
+    "word": " Get",
+    "probability": 0.802
+   },
+   {
+    "start": 172.74,
+    "end": 172.9,
+    "word": " your",
+    "probability": 0.555
+   },
+   {
+    "start": 172.9,
+    "end": 173.18,
+    "word": " boat.",
+    "probability": 0.945
+   },
+   {
+    "start": 173.48,
+    "end": 173.68,
+    "word": " The",
+    "probability": 0.943
+   },
+   {
+    "start": 173.68,
+    "end": 174.08,
+    "word": " league's",
+    "probability": 0.6
+   },
+   {
+    "start": 174.08,
+    "end": 174.6,
+    "word": " complete.",
+    "probability": 0.974
+   }
+  ]
+ },
+ {
+  "start": 175.36,
+  "end": 177.82,
+  "text": "Firmbows bust and the tax pay to bail.",
+  "words": [
+   {
+    "start": 175.36,
+    "end": 175.7,
+    "word": " Firmbows",
+    "probability": 0.329
+   },
+   {
+    "start": 175.7,
+    "end": 176.02,
+    "word": " bust",
+    "probability": 0.85
+   },
+   {
+    "start": 176.02,
+    "end": 176.42,
+    "word": " and",
+    "probability": 0.674
+   },
+   {
+    "start": 176.42,
+    "end": 176.62,
+    "word": " the",
+    "probability": 0.97
+   },
+   {
+    "start": 176.62,
+    "end": 176.9,
+    "word": " tax",
+    "probability": 0.957
+   },
+   {
+    "start": 176.9,
+    "end": 177.24,
+    "word": " pay",
+    "probability": 0.418
+   },
+   {
+    "start": 177.24,
+    "end": 177.4,
+    "word": " to",
+    "probability": 0.885
+   },
+   {
+    "start": 177.4,
+    "end": 177.82,
+    "word": " bail.",
+    "probability": 0.917
+   }
+  ]
+ },
+ {
+  "start": 178.26,
+  "end": 181.72,
+  "text": "Some already gone with the wind in my sails.",
+  "words": [
+   {
+    "start": 178.26,
+    "end": 178.48,
+    "word": " Some",
+    "probability": 0.649
+   },
+   {
+    "start": 178.48,
+    "end": 179.0,
+    "word": " already",
+    "probability": 0.93
+   },
+   {
+    "start": 179.0,
+    "end": 179.6,
+    "word": " gone",
+    "probability": 0.991
+   },
+   {
+    "start": 179.6,
+    "end": 180.18,
+    "word": " with",
+    "probability": 0.44
+   },
+   {
+    "start": 180.18,
+    "end": 180.46,
+    "word": " the",
+    "probability": 0.996
+   },
+   {
+    "start": 180.46,
+    "end": 180.82,
+    "word": " wind",
+    "probability": 0.999
+   },
+   {
+    "start": 180.82,
+    "end": 181.06,
+    "word": " in",
+    "probability": 0.986
+   },
+   {
+    "start": 181.06,
+    "end": 181.3,
+    "word": " my",
+    "probability": 0.996
+   },
+   {
+    "start": 181.3,
+    "end": 181.72,
+    "word": " sails.",
+    "probability": 0.997
+   }
+  ]
+ },
+ {
+  "start": 181.72,
+  "end": 183.8,
+  "text": "Hit kids at the seaside",
+  "words": [
+   {
+    "start": 181.72,
+    "end": 182.1,
+    "word": " Hit",
+    "probability": 0.114
+   },
+   {
+    "start": 182.1,
+    "end": 182.54,
+    "word": " kids",
+    "probability": 0.682
+   },
+   {
+    "start": 182.54,
+    "end": 182.84,
+    "word": " at",
+    "probability": 0.98
+   },
+   {
+    "start": 182.84,
+    "end": 183.08,
+    "word": " the",
+    "probability": 0.961
+   },
+   {
+    "start": 183.08,
+    "end": 183.8,
+    "word": " seaside",
+    "probability": 0.965
+   }
+  ]
+ },
+ {
+  "start": 183.8,
+  "end": 186.8,
+  "text": "The flags fly in red, advice intense, bathing",
+  "words": [
+   {
+    "start": 183.8,
+    "end": 184.22,
+    "word": " The",
+    "probability": 0.496
+   },
+   {
+    "start": 184.22,
+    "end": 184.62,
+    "word": " flags",
+    "probability": 0.867
+   },
+   {
+    "start": 184.62,
+    "end": 184.96,
+    "word": " fly",
+    "probability": 0.541
+   },
+   {
+    "start": 184.96,
+    "end": 185.18,
+    "word": " in",
+    "probability": 0.719
+   },
+   {
+    "start": 185.18,
+    "end": 185.42,
+    "word": " red,",
+    "probability": 0.951
+   },
+   {
+    "start": 185.44,
+    "end": 185.76,
+    "word": " advice",
+    "probability": 0.636
+   },
+   {
+    "start": 185.76,
+    "end": 186.26,
+    "word": " intense,",
+    "probability": 0.504
+   },
+   {
+    "start": 186.46,
+    "end": 186.8,
+    "word": " bathing",
+    "probability": 0.683
+   }
+  ]
+ },
+ {
+  "start": 186.8,
+  "end": 189.22,
+  "text": "Nobody signs said, me?",
+  "words": [
+   {
+    "start": 186.8,
+    "end": 187.82,
+    "word": " Nobody",
+    "probability": 0.102
+   },
+   {
+    "start": 187.82,
+    "end": 188.22,
+    "word": " signs",
+    "probability": 0.72
+   },
+   {
+    "start": 188.22,
+    "end": 188.68,
+    "word": " said,",
+    "probability": 0.684
+   },
+   {
+    "start": 189.0,
+    "end": 189.22,
+    "word": " me?",
+    "probability": 0.16
+   }
+  ]
+ },
+ {
+  "start": 189.96,
+  "end": 192.4,
+  "text": "I've a pool at a villa in Spain",
+  "words": [
+   {
+    "start": 189.96,
+    "end": 190.16,
+    "word": " I've",
+    "probability": 0.643
+   },
+   {
+    "start": 190.16,
+    "end": 190.36,
+    "word": " a",
+    "probability": 0.966
+   },
+   {
+    "start": 190.36,
+    "end": 190.68,
+    "word": " pool",
+    "probability": 0.993
+   },
+   {
+    "start": 190.68,
+    "end": 191.0,
+    "word": " at",
+    "probability": 0.909
+   },
+   {
+    "start": 191.0,
+    "end": 191.2,
+    "word": " a",
+    "probability": 0.969
+   },
+   {
+    "start": 191.2,
+    "end": 191.62,
+    "word": " villa",
+    "probability": 0.995
+   },
+   {
+    "start": 191.62,
+    "end": 191.92,
+    "word": " in",
+    "probability": 0.994
+   },
+   {
+    "start": 191.92,
+    "end": 192.4,
+    "word": " Spain",
+    "probability": 0.995
+   }
+  ]
+ },
+ {
+  "start": 192.4,
+  "end": 195.78,
+  "text": "Filled up with water, a bottle from your rain",
+  "words": [
+   {
+    "start": 192.4,
+    "end": 193.16,
+    "word": " Filled",
+    "probability": 0.902
+   },
+   {
+    "start": 193.16,
+    "end": 193.48,
+    "word": " up",
+    "probability": 0.99
+   },
+   {
+    "start": 193.48,
+    "end": 193.7,
+    "word": " with",
+    "probability": 0.994
+   },
+   {
+    "start": 193.7,
+    "end": 194.12,
+    "word": " water,",
+    "probability": 0.996
+   },
+   {
+    "start": 194.42,
+    "end": 194.54,
+    "word": " a",
+    "probability": 0.705
+   },
+   {
+    "start": 194.54,
+    "end": 194.9,
+    "word": " bottle",
+    "probability": 1.0
+   },
+   {
+    "start": 194.9,
+    "end": 195.22,
+    "word": " from",
+    "probability": 0.987
+   },
+   {
+    "start": 195.22,
+    "end": 195.42,
+    "word": " your",
+    "probability": 0.867
+   },
+   {
+    "start": 195.42,
+    "end": 195.78,
+    "word": " rain",
+    "probability": 0.921
+   }
+  ]
+ },
+ {
+  "start": 195.78,
+  "end": 199.46,
+  "text": "I don't need a moat, I've got a monopoly",
+  "words": [
+   {
+    "start": 195.78,
+    "end": 196.5,
+    "word": " I",
+    "probability": 0.952
+   },
+   {
+    "start": 196.5,
+    "end": 196.78,
+    "word": " don't",
+    "probability": 0.997
+   },
+   {
+    "start": 196.78,
+    "end": 196.98,
+    "word": " need",
+    "probability": 0.995
+   },
+   {
+    "start": 196.98,
+    "end": 197.3,
+    "word": " a",
+    "probability": 0.964
+   },
+   {
+    "start": 197.3,
+    "end": 197.62,
+    "word": " moat,",
+    "probability": 0.982
+   },
+   {
+    "start": 197.84,
+    "end": 198.14,
+    "word": " I've",
+    "probability": 0.972
+   },
+   {
+    "start": 198.14,
+    "end": 198.4,
+    "word": " got",
+    "probability": 0.994
+   },
+   {
+    "start": 198.4,
+    "end": 198.7,
+    "word": " a",
+    "probability": 0.997
+   },
+   {
+    "start": 198.7,
+    "end": 199.46,
+    "word": " monopoly",
+    "probability": 0.945
+   }
+  ]
+ },
+ {
+  "start": 199.46,
+  "end": 203.44,
+  "text": "Every river in the country's on my bonus list",
+  "words": [
+   {
+    "start": 199.46,
+    "end": 200.52,
+    "word": " Every",
+    "probability": 0.886
+   },
+   {
+    "start": 200.52,
+    "end": 200.9,
+    "word": " river",
+    "probability": 0.998
+   },
+   {
+    "start": 200.9,
+    "end": 201.26,
+    "word": " in",
+    "probability": 0.995
+   },
+   {
+    "start": 201.26,
+    "end": 201.46,
+    "word": " the",
+    "probability": 0.985
+   },
+   {
+    "start": 201.46,
+    "end": 201.96,
+    "word": " country's",
+    "probability": 0.932
+   },
+   {
+    "start": 201.96,
+    "end": 202.1,
+    "word": " on",
+    "probability": 0.989
+   },
+   {
+    "start": 202.1,
+    "end": 202.28,
+    "word": " my",
+    "probability": 0.981
+   },
+   {
+    "start": 202.28,
+    "end": 202.82,
+    "word": " bonus",
+    "probability": 0.798
+   },
+   {
+    "start": 202.82,
+    "end": 203.44,
+    "word": " list",
+    "probability": 0.531
+   }
+  ]
+ },
+ {
+  "start": 203.44,
+  "end": 206.7,
+  "text": "Pay the bill, flush it down, watch it float on by",
+  "words": [
+   {
+    "start": 203.44,
+    "end": 203.78,
+    "word": " Pay",
+    "probability": 0.916
+   },
+   {
+    "start": 203.78,
+    "end": 203.96,
+    "word": " the",
+    "probability": 0.994
+   },
+   {
+    "start": 203.96,
+    "end": 204.28,
+    "word": " bill,",
+    "probability": 0.984
+   },
+   {
+    "start": 204.5,
+    "end": 204.66,
+    "word": " flush",
+    "probability": 0.993
+   },
+   {
+    "start": 204.66,
+    "end": 204.84,
+    "word": " it",
+    "probability": 0.982
+   },
+   {
+    "start": 204.84,
+    "end": 205.2,
+    "word": " down,",
+    "probability": 0.999
+   },
+   {
+    "start": 205.4,
+    "end": 205.54,
+    "word": " watch",
+    "probability": 0.952
+   },
+   {
+    "start": 205.54,
+    "end": 205.72,
+    "word": " it",
+    "probability": 0.959
+   },
+   {
+    "start": 205.72,
+    "end": 205.98,
+    "word": " float",
+    "probability": 0.615
+   },
+   {
+    "start": 205.98,
+    "end": 206.32,
+    "word": " on",
+    "probability": 0.972
+   },
+   {
+    "start": 206.32,
+    "end": 206.7,
+    "word": " by",
+    "probability": 0.993
+   }
+  ]
+ },
+ {
+  "start": 206.7,
+  "end": 210.44,
+  "text": "It's raining every day and the taps run dry",
+  "words": [
+   {
+    "start": 206.7,
+    "end": 207.54,
+    "word": " It's",
+    "probability": 0.97
+   },
+   {
+    "start": 207.54,
+    "end": 207.72,
+    "word": " raining",
+    "probability": 0.951
+   },
+   {
+    "start": 207.72,
+    "end": 208.22,
+    "word": " every",
+    "probability": 0.656
+   },
+   {
+    "start": 208.22,
+    "end": 208.68,
+    "word": " day",
+    "probability": 0.999
+   },
+   {
+    "start": 208.68,
+    "end": 208.96,
+    "word": " and",
+    "probability": 0.855
+   },
+   {
+    "start": 208.96,
+    "end": 209.2,
+    "word": " the",
+    "probability": 0.994
+   },
+   {
+    "start": 209.2,
+    "end": 209.48,
+    "word": " taps",
+    "probability": 0.982
+   },
+   {
+    "start": 209.48,
+    "end": 209.84,
+    "word": " run",
+    "probability": 0.989
+   },
+   {
+    "start": 209.84,
+    "end": 210.44,
+    "word": " dry",
+    "probability": 1.0
+   }
+  ]
+ },
+ {
+  "start": 210.44,
+  "end": 216.44,
+  "text": "To have a lovely summer builds to Friday.",
+  "words": [
+   {
+    "start": 210.44,
+    "end": 211.76,
+    "word": " To",
+    "probability": 0.454
+   },
+   {
+    "start": 211.76,
+    "end": 212.16,
+    "word": " have",
+    "probability": 0.947
+   },
+   {
+    "start": 212.16,
+    "end": 212.98,
+    "word": " a",
+    "probability": 0.749
+   },
+   {
+    "start": 212.98,
+    "end": 212.98,
+    "word": " lovely",
+    "probability": 0.966
+   },
+   {
+    "start": 212.98,
+    "end": 213.52,
+    "word": " summer",
+    "probability": 0.947
+   },
+   {
+    "start": 213.52,
+    "end": 215.5,
+    "word": " builds",
+    "probability": 0.131
+   },
+   {
+    "start": 215.5,
+    "end": 215.82,
+    "word": " to",
+    "probability": 0.817
+   },
+   {
+    "start": 215.82,
+    "end": 216.44,
+    "word": " Friday.",
+    "probability": 0.991
+   }
+  ]
+ },
+ {
+  "start": 218.18,
+  "end": 223.96,
+  "text": "To have a lovely summer builds to Friday.",
+  "words": [
+   {
+    "start": 218.18,
+    "end": 218.94,
+    "word": " To",
+    "probability": 0.663
+   },
+   {
+    "start": 218.94,
+    "end": 219.2,
+    "word": " have",
+    "probability": 0.997
+   },
+   {
+    "start": 219.2,
+    "end": 219.8,
+    "word": " a",
+    "probability": 0.999
+   },
+   {
+    "start": 219.8,
+    "end": 219.8,
+    "word": " lovely",
+    "probability": 0.998
+   },
+   {
+    "start": 219.8,
+    "end": 220.9,
+    "word": " summer",
+    "probability": 0.998
+   },
+   {
+    "start": 220.9,
+    "end": 222.56,
+    "word": " builds",
+    "probability": 0.974
+   },
+   {
+    "start": 222.56,
+    "end": 223.0,
+    "word": " to",
+    "probability": 0.995
+   },
+   {
+    "start": 223.0,
+    "end": 223.96,
+    "word": " Friday.",
+    "probability": 0.998
+   }
+  ]
+ },
+ {
+  "start": 231.44,
+  "end": 233.54,
+  "text": "Builds to Friday.",
+  "words": [
+   {
+    "start": 231.44,
+    "end": 232.82,
+    "word": " Builds",
+    "probability": 0.677
+   },
+   {
+    "start": 232.82,
+    "end": 232.98,
+    "word": " to",
+    "probability": 0.997
+   },
+   {
+    "start": 232.98,
+    "end": 233.54,
+    "word": " Friday.",
+    "probability": 0.995
+   }
+  ]
+ }
+]
