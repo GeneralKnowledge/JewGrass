@@ -19,7 +19,12 @@ M=$SONG/media
 echo "== 1. lyric timing from the vocal stem"
 # ANCHORS="verse=28.3 outro=233.6" pins sections to known times (see the Glen run in docs)
 ANCH=(); for a in ${ANCHORS:-}; do ANCH+=(--anchor "$a"); done
-python3 tools/align_lyrics.py "$M/vocals.flac" "$M/lyrics.txt" "$M/beats.json" "$SONG/timing.yaml" --beats-out "$SONG/grid.json" "${ANCH[@]}"
+if [ -f "$M/whisper-words.json" ]; then
+  # word timestamps from speech recognition, matched to our lyrics (preferred)
+  python3 tools/whisper_timing.py "$M/whisper-words.json" "$M/lyrics.txt" "$M/beats.json" "$SONG/timing.yaml" --beats-out "$SONG/grid.json" --audio "$M/master.flac"
+else
+  python3 tools/align_lyrics.py "$M/vocals.flac" "$M/lyrics.txt" "$M/beats.json" "$SONG/timing.yaml" --beats-out "$SONG/grid.json" "${ANCH[@]}"
+fi
 
 echo "== 2. analysis of the master"
 ln -sf media/master.flac "$SONG/master.flac"
