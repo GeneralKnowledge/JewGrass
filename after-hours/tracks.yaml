@@ -3,6 +3,7 @@ act: AFTER HOURS
 queue:
 - ah-one-more-night
 - ah-if-you-were-here
+- ah-everybody-knows
 tracks:
 - slug: ah-one-more-night
   title: One More Night
@@ -181,3 +182,105 @@ tracks:
 
     [outro - unaccompanied four-part final chord]
     Where you belong
+- slug: ah-everybody-knows
+  title: Everybody Knows
+  credit: Leo, Alex, Jamie and Noah
+  status: pending
+  bpm: 120
+  key: E major
+  timesig: '4'
+  seconds: 215
+  caption: contemporary male vocal pop group, four distinct male singers, polished modern pop production, expressive
+    lead tenor, bright high tenor harmonies, warm baritone lower harmonies, smooth soulful tenor, carefully arranged
+    four-part male vocal harmonies, memorable melodic choruses, interlocking vocal lines, clean modern drums, warm
+    bass, polished radio-ready mix, 120 bpm, E major, playful upbeat dance-pop, starts straight away with group
+    call and response over handclaps, bouncy synth bass, bright guitar chops, punchy dance-pop drums, short brass-like
+    synth stabs, verses where the singers interrupt and answer each other, chorus opens in unison then splits into
+    four-part harmony, percussion-only breakdown with two voices trading lines, ends on a group chant and a hard
+    stop
+  lyrics: |
+    [opening - starts immediately, group call and response over handclaps, unison answers]
+    Everybody knows
+    Everybody knows
+    Everybody sees
+    Everybody sees
+    Everybody but you two
+    Everybody but you two
+
+    [verse - smooth soulful tenor, rhythmic, other voices interrupt, guitar chops and synth bass]
+    Saturday, same table, same seat by the window
+    You both turn up early, then pretend you didn't know
+    She laughs at your jokes, even the one about the ferry
+    You've told it nine times and it isn't even funny
+    It isn't
+    She saves you a chair with her coat every week
+    You save her the crisps that you don't even eat
+    You both say we're just mates in the very same voice
+    Same voice
+    Like you practised it together, like you didn't have a choice
+    Group chat's got a bet on, we've all put a tenner in
+    Twenty
+    Alex says by Christmas, I said before the summer begins
+
+    [pre-chorus - lead tenor and high tenor trading lines, building, drums thin]
+    You talk about her all the time
+    Then say it's nothing, that's a lie
+    You saved her number under Don't
+    And you ring it every night, so
+    Come on
+
+    [chorus - unison first half, then splits into four-part harmony, handclaps, full beat]
+    Everybody knows, everybody sees
+    She's looking at you when you're looking at your feet
+    Everybody knows, but nobody says
+    You're the only two who haven't worked it out yet
+    Everybody knows, the barman knows
+    Your mum knows, the dog knows, the whole street knows
+    Everybody knows, so go on and say it
+    You're the only two who haven't worked it out yet
+
+    [verse - high tenor and warm baritone trading lines, quick call and response]
+    She asked me what your favourite song was
+    Then asked if you were seeing anyone
+    I said ask him yourself, she went red as a bus
+    Then you asked me the same, it was ridiculous
+    Same day
+    Same question
+    Same face
+    Same blush
+
+    [pre-chorus - lead tenor, building, synth stabs]
+    You saved her number under Don't
+    And you ring it every night, so go on, go on
+
+    [chorus - unison first half, then four-part harmony, brass-like synth stabs]
+    Everybody knows, everybody sees
+    She's looking at you when you're looking at your feet
+    Everybody knows, but nobody says
+    You're the only two who haven't worked it out yet
+    Everybody knows, the barman knows
+    Your mum knows, the dog knows, the whole street knows
+    Everybody knows, so go on and say it
+    You're the only two who haven't worked it out yet
+
+    [breakdown - percussion and handclaps only, baritone and soulful tenor trading lines]
+    Here's how it goes, you walk over there
+    Don't fix your hair, she likes your hair
+    Say something simple, say hiya, you alright
+    Not the ferry joke
+    Not the ferry joke
+    And ask her out tonight
+
+    [final chorus - full harmonies, group answers every line, high tenor ad-libs]
+    Everybody knows, we know, everybody sees, we see
+    She's looking at you when you're looking at your feet
+    Everybody knows, but nobody says
+    You're the only two who haven't worked it out yet
+    Everybody knows, the barman knows
+    Your mum knows, the dog knows, the whole street knows
+    Everybody knows, so go on and say it
+    You're the only two who haven't worked it out yet
+
+    [outro - group chant over handclaps, hard stop]
+    Everybody knows
+    Now you know too
