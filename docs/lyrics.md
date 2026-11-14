@@ -577,3 +577,87 @@ We bought the hill! We bought the hill!
 Rent's due Friday?
 Not any more.
 ```
+
+### Swim at Your Own Risk (Wildcard lead, Ghost bridge · satirical villain, Britain)
+
+A water company boss: sewage spills, debt-funded dividends, hosepipe bans in a
+wet country. Original genre (T8 sound, caption with "smug corporate spoken intro").
+First made on the laptop 2026-11-14, 240 s, BPM 140, seeds 5555 and 6666.
+
+```
+[intro]
+Welcome, shareholders, to the AGM.
+Record dividends. Record bonuses.
+Record spills... let's not dwell.
+Ladies and gentlemen... your water company.
+
+[verse]
+They sold me the pipes back in eighty-nine
+Every reservoir, every drain down the line
+Borrowed ten billion, paid it out to the board
+Now the debt's on your bill and my yacht's in a fjord
+Hosepipe ban in a country made of rain
+Leaking a third of it straight down the drain
+Storm overflow? Darling, that's a feature
+Brown in the river, call it natural texture
+Surfer got sick at the beach in July
+Sent him a voucher and a cheery goodbye
+
+[chorus]
+Swim at your own risk, son, swim at your own risk
+Every river in the country's on my bonus list
+Pay the bill, flush it down, watch it float on by
+It's raining every day and the taps run dry
+
+[verse]
+Regulator turned up with a fine and a frown
+Ninety million quid, so I put your bill up in town
+Then I paid myself a bonus for meeting our targets
+The target was the river and we hit it, regardless
+Dead fish on the bank like silver confetti
+Shareholders abroad and the payout is ready
+Fixing the pipes? What a lovely idea
+Pencil it in for, let's say, next year
+And next year, and next year, and the year after that
+(Sustainability report, baby!)
+
+[chorus]
+Swim at your own risk, son, swim at your own risk
+Every river in the country's on my bonus list
+Pay the bill, flush it down, watch it float on by
+It's raining every day and the taps run dry
+
+[bridge]
+Bless the tap and bless the drain
+Bless the man who sells the rain
+We bow our heads beside the stream
+And hold our noses while we dream
+
+[breakdown]
+Swim at your own risk!
+Swim at your own risk!
+Swim at your own risk!
+Swim at your own risk!
+
+[verse]
+You want it nationalised? Cute, take a seat
+I'll sell it back at triple with the leaks complete
+Firm goes bust and the taxpayer bails
+I'm already gone with the wind in my sails
+Your kids at the seaside, the flags flying red
+Advice against bathing, the wee sign said
+Me? I've a pool at a villa in Spain
+Filled up with water I bottled from your rain
+I don't need a moat, I've got a monopoly
+And every toilet in Britain pays me properly
+
+[chorus]
+Swim at your own risk, son, swim at your own risk
+Every river in the country's on my bonus list
+Pay the bill, flush it down, watch it float on by
+It's raining every day and the taps run dry
+
+[outro]
+Do have a lovely summer.
+Bill's due Friday.
+```
