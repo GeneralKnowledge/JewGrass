@@ -1,0 +1,131 @@
+# Song Design: Sunshine Trust (track 12). Format: docs/song-design/README.md
+slug: sunshine-trust
+title: Sunshine Trust
+version: 1
+approach: "seduction - a silky guided tour that slowly reveals there's nobody at the end of the trail"
+identity: "The prettiest song on the album, and the emptiest. It never raises its voice."
+story_beat: "The end of the money trail. It was British all along."
+
+render:
+  bpm: 88
+  key: Db major
+  timesig: "4"
+  seconds: 215
+
+palette:
+  world: "Offshore. Sun, water, nobody home."
+  lead: "soft Rhodes electric piano"
+  secondary: "warm nylon string guitar"
+  rhythm: "slow bossa nova groove with a soft trap hi-hat"
+  bass: "deep clean sub-bass"
+  colour: "steel pan playing the money theme slowly, seagulls, gentle waves, the hold music as hotel lobby music"
+  weight: "lush strings in the last chorus, nothing harder"
+  left_out: "every Scottish instrument, every distorted sound, every shout. The glen is a long way away."
+
+roles:
+  - {instrument: Rhodes, job: "the chords, slow and warm", enters: intro, leaves: never}
+  - {instrument: nylon guitar, job: "bossa nova comping and a short answer to each vocal line", enters: verse 1, leaves: bridge}
+  - {instrument: steel pan, job: "the money theme, slow and pretty, after each chorus", enters: chorus 1, leaves: final chorus}
+  - {instrument: hotel lobby music, job: "the hold music tune on a lounge piano in the intro, as if overheard in reception", enters: intro, leaves: verse 1}
+  - {instrument: strings, job: "the last chorus only, as a sunset", enters: final chorus, leaves: end}
+
+harmony:
+  verse: "D flat major 7, B flat minor 9, G flat major 7, A flat 13 - endless, never resolving hard"
+  chorus: "G flat major 7, F minor 7, E flat minor 7, A flat, D flat major 7"
+  bridge: "the same chords with the bass dropped out, so it floats"
+  ending: "D flat major 9, held; waves"
+
+motifs:
+  - "hold music: hotel lobby music in the intro, slowed and sun-soaked"
+  - "money theme: steel pan, slow, so it sounds like a holiday"
+  - "money trail: the end - every villain's money lands here"
+  - "due Friday: the end of the joke - 'Nothing's due. Ever.' as the last sung line"
+
+sections:
+  - name: intro
+    tag: "intro - lounge piano hold music in a hotel lobby, waves, seagulls"
+    bars: 4
+    dynamics: 1
+    lyrics: |
+      Welcome to the island. Do mind the step.
+      Nobody here owns anything. That's rather the point.
+  - name: verse 1
+    tag: "verse - sultry calm English female vocal, half sung, Rhodes and nylon guitar"
+    bars: 16
+    dynamics: 2
+    idea: "the structure; the image is a trust owned by a purpose, not a person"
+    lyrics: |
+      Palm trees and a harbour and a brass plate too
+      Thirty thousand companies and a population of a few
+      The trust owns the fund and the fund owns the glen
+      And the trust is owned by a foundation, and then
+      The foundation's owned by a purpose, not a man
+      Beneficiaries? Darling, catch me if you can
+  - name: chorus 1
+    tag: "chorus - soft sung female hook, steel pan answers"
+    bars: 8
+    dynamics: 3
+    lyrics: |
+      Sunshine trust, sunshine trust
+      Money comes to bask in the sun with us
+      Nothing's ever owed and nothing's ever taxed
+      Sunshine trust, lie back and relax
+  - name: verse 2
+    tag: "verse - the same calm voice, a little closer, sub-bass enters"
+    bars: 16
+    dynamics: 3
+    idea: "it's British; the image is the same king on the coins"
+    lyrics: |
+      Don't call it foreign, we fly the same flag
+      Same king on the coins in a Highland lad's bag
+      London says sorry and London says reform
+      Then sends us the paperwork to keep us all warm
+      The water man, the oil man, the mask man, the laird
+      All of them end on a beach, and none of them scared
+  - name: chorus 2
+    tag: "chorus - soft sung female hook, steel pan answers"
+    bars: 8
+    dynamics: 3
+    lyrics: |
+      Sunshine trust, sunshine trust
+      Money comes to bask in the sun with us
+      Nothing's ever owed and nothing's ever taxed
+      Sunshine trust, lie back and relax
+  - name: bridge
+    tag: "bridge - bass and drums drop out, Rhodes floats, she almost whispers"
+    bars: 8
+    dynamics: 1
+    idea: "the cost, said without caring; the image is a nurse on a bus at three"
+    lyrics: |
+      Somewhere there's a glen in the rain
+      Somewhere there's a school with a leak again
+      Somewhere there's a nurse on a bus at three
+      And none of it is anything to do with me
+  - name: final chorus
+    tag: "final chorus - strings like a sunset, steel pan, then just Rhodes"
+    bars: 10
+    dynamics: 4
+    lyrics: |
+      Sunshine trust, sunshine trust
+      Money comes to bask in the sun with us
+      Nothing's ever owed and nothing's ever taxed
+      Sunshine trust, lie back and relax
+      Nothing's due. Ever.
+
+ending: "The strings fade into one held Rhodes chord and the sound of waves. The only track that ends calm, and that's the threat."
+
+caption: >-
+  silky smooth bossa nova lounge pop with a slow soft trap groove, elegant and empty, sultry calm English female
+  vocal, half sung half spoken, never raises her voice, soft Rhodes electric piano, warm nylon string guitar, slow
+  steel pan melody, deep clean sub bass, soft brushed bossa drums with a lazy hi-hat, seagulls and gentle waves, a
+  lounge piano tune like hotel lobby music in the intro, the bridge floats with no bass or drums, lush strings in
+  the last chorus, ends on one held electric piano chord and waves, clean polished mix, 88 bpm
+
+lyric_audit:
+  before: "Already one of the best. Verse 2 listed every villain's cut in four lines, and the caption asked for glitch on the money lines."
+  changes:
+    - "Verses trimmed to six lines so the bossa groove has room."
+    - "The roll-call of villains is now one line, so verse 2 stays on its single idea (it's British)."
+    - "Glitch removed; the steel pan carries the money theme instead."
+    - "'Nothing's due. Ever.' sung at the end of the final chorus, not a spoken outro."
+  scores_after: {character_voice: 5, narrative: 4, imagery: 4, singability: 5, hook: 5}

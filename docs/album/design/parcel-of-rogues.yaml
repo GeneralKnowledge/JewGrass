@@ -1,0 +1,97 @@
+# Song Design: Parcel of Rogues (track 1). Format: docs/song-design/README.md
+slug: parcel-of-rogues
+title: Parcel of Rogues
+version: 1
+approach: "spoken documentary prologue - four dates, one image each, then the present"
+identity: "The album's trailer. A grave narrator over a lone pipe, and the ownership theme stated plainly for the first time."
+story_beat: "Sets the thesis before the story starts - this has happened before."
+
+render:
+  bpm: 70
+  key: B minor
+  timesig: "4"
+  seconds: 80
+
+palette:
+  world: "History. Old, bare, cold."
+  lead: "solo Highland bagpipe playing the ownership theme"
+  secondary: "low cello drone"
+  rhythm: "a single deep heartbeat drum, from the second verse"
+  colour: "wind on a hillside, one distant church bell"
+  weight: "none - this is the quietest track on the album"
+  left_out: "beats, 808, banjo, fiddle, guitars, glitch, choir. Everything the album will build is held back."
+
+roles:
+  - {instrument: solo bagpipe, job: "plays the ownership theme twice, slowly, then is cut off", enters: intro, leaves: "cut at the last line"}
+  - {instrument: cello drone, job: "one held low note under the narrator", enters: verse 1, leaves: end}
+  - {instrument: heartbeat drum, job: "one hit per bar, the pulse of the dates", enters: verse 2, leaves: end}
+  - {instrument: wind and church bell, job: "place and age", enters: intro, leaves: verse 3}
+
+harmony:
+  all: "a B pedal under the pipe; no chord changes at all, so the album's first change of harmony belongs to the story"
+  ending: "the pipe stops mid-phrase on the ownership theme's fourth note; the drone holds alone for a beat, then silence"
+
+motifs:
+  - "ownership theme: first full statement, slow, solo pipe; heard again (transformed) in Natural Capital, Bought and Sold, Gav's Song and We Bought the Hill"
+  - "bought and sold: the Burns line, read once, plain"
+  - "receipt: the last line plants the Bought and Sold chorus"
+
+sections:
+  - name: intro
+    tag: "intro - solo bagpipe lament, wind, distant church bell"
+    bars: 4
+    dynamics: 1
+    lyrics: ""
+  - name: verse 1
+    tag: "verse - deep calm Scottish narrator, cello drone"
+    bars: 4
+    dynamics: 1
+    idea: "the Burns line"
+    lyrics: |
+      We're bought and sold for English gold.
+      Such a parcel of rogues in a nation.
+      Burns wrote that in seventeen ninety-one.
+  - name: verse 2
+    tag: "verse - narrator, slow heartbeat drum, long pauses"
+    bars: 8
+    dynamics: 2
+    idea: "four dates, one image each"
+    lyrics: |
+      Sixteen ninety-eight. A swamp in Panama.
+
+      Seventeen-oh-seven. A parliament, closed.
+
+      Eighteen-twenty. A glen, emptied for sheep.
+
+      Nineteen seventy-four. The oil, counted, and kept quiet.
+  - name: verse 3
+    tag: "verse - narrator, heartbeat drum, pipe returns softly"
+    bars: 6
+    dynamics: 2
+    idea: "the present; the image is the receipt"
+    lyrics: |
+      Now. A glen. A fund. A letterbox in Glasgow.
+      They don't burn the roofs now.
+      They just send ye the receipt.
+  - name: outro
+    tag: "outro - the bagpipe stops mid-phrase, silence"
+    bars: 1
+    dynamics: 1
+    lyrics: ""
+
+ending: "The pipe is cut off mid-phrase, one beat of drone, then real silence. The next track's hold music starts in that silence."
+
+caption: >-
+  cinematic spoken word prologue, deep calm Scottish male narrator, slow and grave, long pauses between lines,
+  solo Highland bagpipe playing a slow falling lament, low cello drone, howling wind on a hillside, distant church
+  bell, a single deep heartbeat drum from the second verse, no other instruments, very sparse and spacious, the
+  bagpipe stops suddenly mid-phrase and the track ends in silence, clean polished mix, 70 bpm
+
+lyric_audit:
+  before: "Good bones. Five dates crammed into one verse, and the 'This is Natural Capital' spoken outro (spoken outros don't render)."
+  changes:
+    - "Each date gets a line to itself with a blank line after it, so the listener hears four separate pictures."
+    - "The oil line now says what happened (counted and kept quiet) rather than 'hidden'."
+    - "The receipt line is the last thing said, planting the Bought and Sold chorus."
+    - "Spoken outro removed; the pipe being cut off is the ending."
+  scores_after: {character_voice: 4, narrative: 4, imagery: 4, singability: 3, hook: 4}

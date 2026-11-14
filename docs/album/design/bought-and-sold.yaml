@@ -1,7 +1,7 @@
 # Song Design: Bought and Sold (track 13). Format: docs/song-design/README.md
 slug: bought-and-sold
 title: Bought and Sold
-version: 1
+version: 2
 approach: spoken documentary verses (no forced rhymes, room between lines) with a protest-anthem chorus the audience can sing
 identity: Old, monumental and angry. The band steps out of the story to give the history lesson, one century per verse.
 story_beat: The album's thesis. The listener sees the whole system - this has happened before, with different paperwork.
@@ -18,7 +18,7 @@ palette:
   secondary: low orchestral strings and cello drones
   rhythm: military marching snare and a deep bass drum; heavy hip hop drums only from verse 2
   bass: low strings in the verses; booming 808 only on chorus downbeats
-  colour: crackling old gramophone texture that grows more distorted each verse
+  colour: reverb that grows larger and darker each verse (v2 - the gramophone crackle read as static and was removed)
   weight: deep male choir and gang vocals plus heavy distorted guitars, choruses only
   left_out: banjo and fiddle loops, glitch stutters, trap hi-hats. The band's usual country trap sound is held back so this song sounds like nothing else on the album.
 
@@ -30,7 +30,7 @@ roles:
   - {instrument: distorted guitars and 808, job: "weight in choruses only", enters: chorus 1, leaves: outro}
   - {instrument: male choir and gang vocals, job: "sing the chorus with the crowd", enters: chorus 1, leaves: outro}
   - {instrument: female vocal, job: "sings the Burns verse alone over pipe drone", enters: bridge, leaves: bridge}
-  - {instrument: gramophone crackle, job: "age; gets more distorted with each verse", enters: intro, leaves: final chorus}
+  - {instrument: hall reverb, job: "scale; grows larger and darker with each verse", enters: intro, leaves: final chorus}
 
 harmony:
   verse: Bm held, Bm, G, A (static, leaves room for the words)
@@ -47,7 +47,7 @@ motifs:
 
 sections:
   - name: intro
-    tag: intro - solo bagpipe lament, low strings, wind, gramophone crackle
+    tag: intro - solo bagpipe lament, low strings, wind
     bars: 8
     dynamics: 1
     lyrics: |
@@ -79,7 +79,7 @@ sections:
       They don't burn the roofs now
       They just send ye the receipt
   - name: verse 2
-    tag: verse - the Clearances, heavy hip hop drums take over, more distorted crackle
+    tag: verse - the Clearances, heavy hip hop drums take over
     bars: 12
     dynamics: 3
     idea: the Clearances; the image is a family on the shingle with a Bible and a kist, watching their roof burn
@@ -113,7 +113,7 @@ sections:
       We were bought and sold, we were bought and sold
       And they tell us the same old story
   - name: verse 3
-    tag: verse - now, angrier, drums back, distorted crackle at its worst
+    tag: verse - now, angrier, drums back, darkest and heaviest
     bars: 12
     dynamics: 4
     idea: the present; the image is a sitka forest planted on the bones of a croft, and the deed in a letterbox
@@ -167,9 +167,9 @@ caption: >-
   and cello drones, military marching snare and deep bass drum, measured angry Scottish male rap, half spoken,
   space between the lines, heavy hip hop drums from the second verse, deep male choir and gang vocals on the
   chorus with the bagpipe doubling the melody, heavy distorted guitars and booming 808 only in the choruses,
-  crackling old gramophone texture growing more distorted through the song, haunting female vocal bridge over a
+  huge dark hall reverb, haunting female vocal bridge over a
   pipe drone, breakdown of marching drum and call and response chant, ends with the solo bagpipe alone holding
-  one long unresolved note, 84 bpm
+  one long unresolved note, clean polished mix, 84 bpm
 
 lyric_audit:
   before: Clever but overstuffed - Darien, the Union, the Clearances, the oil report, limited partnerships, pandemic contracts and offshore trusts in three 12-line verses of forced couplets. The best line was buried.

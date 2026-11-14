@@ -1,0 +1,146 @@
+# Song Design: Fast Lane (track 9). Format: docs/song-design/README.md
+slug: fast-lane
+title: Fast Lane
+version: 1
+approach: "narrative storytelling against the clock - one phone call, one week, one decade, told by a chancer who can't believe his luck"
+identity: "Loud, flashy and fast. The one villain who borrows the band's own country-trap sound, because he borrows everything."
+story_beat: "The second investor - public money straight out of the door in a national emergency, then into the glen."
+
+render:
+  bpm: 145
+  key: G minor
+  timesig: "4"
+  seconds: 200
+
+palette:
+  world: "Panic money. Engines, cash, speed."
+  lead: "distorted banjo riff playing the money theme, fast"
+  secondary: "fiddle stabs on the downbeats"
+  rhythm: "hard trap drums, rapid hi-hats"
+  bass: "revving 808 slides, the money theme's shape"
+  colour: "a car engine revving into the drops"
+  weight: "heavy guitars in the choruses only"
+  left_out: "pipes, strings, choir, anything slow. Gideon never stops to listen."
+
+roles:
+  - {instrument: banjo, job: "the money theme as a fast riff, the hook of the song", enters: intro, leaves: bridge}
+  - {instrument: 808 slides, job: "rev up into each chorus like an engine", enters: verse 1, leaves: bridge}
+  - {instrument: fiddle stabs, job: "punch the downbeats in the choruses", enters: chorus 1, leaves: final chorus}
+  - {instrument: heavy guitars, job: "weight in the choruses only", enters: chorus 1, leaves: final chorus}
+  - {instrument: lone piano, job: "the bridge only - a slow, sincere melody under the clapping lines", enters: bridge, leaves: bridge}
+
+harmony:
+  verse: "G minor and E flat, two chords, relentless"
+  chorus: "E flat, F, G minor, G minor, then E flat, F, D - the D pushes straight back into the next verse"
+  bridge: "G minor, E flat, B flat, F on a slow piano at half speed"
+  ending: "the final chorus cuts to the banjo alone playing the money theme, then a car door slam"
+
+motifs:
+  - "money theme: banjo riff, and the 808 slides follow its shape"
+  - "due Friday: routine stage - 'Invoice due Friday. Paid on Thursday.' in the final chorus (the fast lane paid him before it was due)"
+  - "money trail: verse 3 sends the profit to a Glasgow letterbox and into a glen (Brass Plate and Natural Capital)"
+
+sections:
+  - name: intro
+    tag: "intro - banjo riff alone, car engine revving"
+    bars: 4
+    dynamics: 3
+    lyrics: |
+      Hello? Yes, Minister. Of course, Minister.
+      How many million? Oh, I'm sure we can find some.
+  - name: verse 1
+    tag: "verse - cocky posh English male rap, fast, trap drums and 808"
+    bars: 16
+    dynamics: 3
+    idea: "the call; the image is a company made at half past three and worth a hundred million by Friday"
+    lyrics: |
+      Woke up Tuesday with a hangover and a hunch
+      Country's in a panic so I'm skipping lunch
+      Never sold a glove in my life, that's fine
+      Got a mate of a mate with a number on the line
+      Set up a company at half past three
+      By Friday it was worth a hundred million to me
+      Lorry full of boxes and the boxes full of air
+      Sign here, sign here, sign here, there
+  - name: chorus 1
+    tag: "chorus - gang chant, heavy guitars, fiddle stabs, 808 slide"
+    bars: 8
+    dynamics: 5
+    lyrics: |
+      Fast lane, fast lane, wave me through
+      Skip the queue, the queue was for you
+      Fast lane, fast lane, cash in the boot
+      Panic pays better than a pinstripe suit
+  - name: verse 2
+    tag: "verse - rap gets smug and slower, half-time drums"
+    bars: 16
+    dynamics: 3
+    idea: "the cost; the image is nurses in bin bags on the news while he's choosing a boat"
+    lyrics: |
+      Gowns in a warehouse that never got shipped
+      Masks with the loops that snapped when you slipped
+      Nurses in bin bags on the evening news
+      I was on a beach, choosing which boat to cruise
+      Inquiry later? Darling, that's a decade
+      By the time they report, all the money's been made
+      Some of it's fraud and some of it's waste
+      And some of it's me, with exquisite taste
+  - name: chorus 2
+    tag: "chorus - gang chant, heavy guitars, fiddle stabs, 808 slide"
+    bars: 8
+    dynamics: 5
+    lyrics: |
+      Fast lane, fast lane, wave me through
+      Skip the queue, the queue was for you
+      Fast lane, fast lane, cash in the boot
+      Panic pays better than a pinstripe suit
+  - name: bridge
+    tag: "bridge - everything stops, slow lone piano, he sings mockingly sweet"
+    bars: 8
+    dynamics: 1
+    lyrics: |
+      Thank you for clapping on a Thursday night
+      Thank you for staying in and doing it right
+      Thank you for the money that you never got to see
+      It's planted on a hillside and it's growing for me
+  - name: verse 3
+    tag: "verse - full speed again, banjo and 808 back"
+    bars: 12
+    dynamics: 4
+    idea: "where it went; the image is the profit going green"
+    lyrics: |
+      Paid a little back so the headline would fade
+      Put the rest through a letterbox where partnerships are made
+      Now I'm going green with a carbon estate
+      Same mates, same lane, same velvet gate
+      Next time there's a crisis, give us a ring
+      Floods or a war, I'll sell you anything
+  - name: final chorus
+    tag: "final chorus - biggest, gang chant, guitars, then banjo alone"
+    bars: 10
+    dynamics: 5
+    lyrics: |
+      Fast lane, fast lane, wave me through
+      Skip the queue, the queue was for you
+      Fast lane, fast lane, cash in the boot
+      Panic pays better than a pinstripe suit
+      Invoice due Friday
+      Paid on Thursday
+
+ending: "The band cuts on 'Paid on Thursday'; the banjo plays the money theme once alone, then a car door slams. Done."
+
+caption: >-
+  loud flashy UK trap banger, cocky posh English male rap, a chancer who can't believe his luck, laughing ad-libs,
+  fast distorted banjo riff as the main hook, revving sports car 808 slides, hard trap drums, rapid hi-hats, fiddle
+  stabs and heavy distorted guitars only on the chorus, gang chant hook, the second verse drops to half-time, the
+  bridge stops for a slow lone piano and a mocking sweet sung melody, ends on the banjo riff alone and a car door
+  slam, clean punchy mix, 145 bpm
+
+lyric_audit:
+  before: "Strong hook and bridge. Three verses of twelve lines each covered the deal, the yacht, the inquiry, fraud, the letterbox, the glen and the next crisis, with a 'Scottish brigade' line forced for the rhyme."
+  changes:
+    - "One idea per verse - the call, the cost, where the money went. Verse 3 shortened to six lines."
+    - "The nurses-in-bin-bags image moved next to the beach so the contrast lands."
+    - "The forced 'Scottish brigade' rhyme cut; the letterbox line now plainly hands the trail to Brass Plate."
+    - "'Invoice due Friday. Paid on Thursday.' replaces the spoken outro: the joke now says the fast lane paid him early."
+  scores_after: {character_voice: 5, narrative: 4, imagery: 4, singability: 4, hook: 5}

@@ -1,0 +1,155 @@
+# Song Design: Exit Strategy (track 15). Format: docs/song-design/README.md
+slug: exit-strategy
+title: Exit Strategy
+version: 1
+approach: "dialogue in real time - an emergency conference call: panic, blame, then one calm voice who has already sold"
+identity: "The darkest, heaviest track. Powerful and oppressive, then frighteningly calm."
+story_beat: "Morag's story is published. The villains don't lose, they leave."
+
+render:
+  bpm: 130
+  key: B minor          # pipes play in the final chorus, so a key inside the pipe scale
+  timesig: "4"
+  seconds: 285
+
+palette:
+  world: "Industry and power, at its heaviest. Organ, metal, machinery."
+  lead: "church organ playing the corruption progression"
+  secondary: "heavy distorted guitars"
+  rhythm: "half-time heavy drums with metallic industrial percussion"
+  bass: "distorted 808 and industrial bass, pounding"
+  colour: "the hold music, slowed and broken, while everyone waits on the line; a conference call beep"
+  weight: "the screamed 'bought and sold' gang chant and, in the final chorus, a solo bagpipe drone"
+  left_out: "banjo, fiddle, Rhodes, steel pan, anything pretty. The fund's beautiful sound is gone."
+
+roles:
+  - {instrument: slowed hold music, job: "the intro, warped and sinister, as the call connects", enters: intro, leaves: verse 1}
+  - {instrument: church organ, job: "the corruption progression, slow, under everything", enters: verse 1, leaves: end}
+  - {instrument: heavy guitars and gang chant, job: "the choruses only", enters: chorus 1, leaves: final chorus}
+  - {instrument: industrial percussion, job: "metallic hits on the half-time backbeat", enters: verse 1, leaves: bridge}
+  - {instrument: voices, job: "panicked overlapping men in verse 1, a sneering Scottish rapper in verse 2, a cool calm woman in verse 3 and the bridge", enters: verse 1, leaves: end}
+  - {instrument: bagpipe drone, job: "a low held drone under the final chorus - the glen is still there", enters: final chorus, leaves: end}
+
+harmony:
+  verse: "the corruption progression in B minor (B minor, C, B minor, A sharp diminished over a low B), on loop"
+  chorus: "G, A, B minor, B minor - a heavy, rising shout"
+  bridge: "B minor held on organ alone"
+  ending: "the band cuts; the organ holds one B minor chord, then the call disconnects with a beep"
+
+motifs:
+  - "hold music: slowed, broken and sinister in the intro (its last appearance before the album's coda)"
+  - "corruption progression: the whole song is built on it, on church organ"
+  - "bought and sold: the band's chorus line turned into the villains' sneering gang chant"
+  - "money theme: distorted and stuck in a loop under verse 3"
+  - "due Friday: threat stage - 'Settlement's due Friday' said once, quietly, to the village"
+
+sections:
+  - name: intro
+    tag: "intro - slowed broken hold music, conference call beep"
+    bars: 8
+    dynamics: 1
+    lyrics: |
+      You are now joining the call.
+      Is everyone on? Lovely.
+      Has anyone seen the paper this morning?
+  - name: verse 1
+    tag: "verse - panicked overlapping male voices, church organ, heavy half-time drums"
+    bars: 16
+    dynamics: 3
+    idea: "panic; the image is everyone's alibi at once"
+    lyrics: |
+      Front page, my face, the glen and the trees
+      The fund, the partners, the brass plate fees
+      The oil man's shouting, the water man's sweating
+      The mask man's laughing, the lord's forgetting
+      I never met her. I don't recall.
+      My office handles it. Not me at all.
+  - name: chorus 1
+    tag: "chorus - screamed gang chant, heavy distorted guitars"
+    bars: 8
+    dynamics: 5
+    lyrics: |
+      Bought and sold! Bought and sold!
+      Sell it on before it's cold
+      Bought and sold! Bought and sold!
+      Every scandal's worth its weight in gold
+  - name: verse 2
+    tag: "verse - sneering Scottish male rap, organ and industrial drums"
+    bars: 16
+    dynamics: 4
+    idea: "blame; the image is Gav, the lad on the payroll, named as the leak"
+    lyrics: |
+      The reporter's a lassie from a glen up north
+      Her brother's on the phone and the papers come forth
+      Leaked by a lad that we paid to keep the gate
+      Gav? Gav, ye idiot, ye've sealed our fate
+      And the Grid Man, flat as a dial tone, says
+      Switch it off. Send the bill. Begin again.
+  - name: chorus 2
+    tag: "chorus - screamed gang chant, heavy distorted guitars"
+    bars: 8
+    dynamics: 5
+    lyrics: |
+      Bought and sold! Bought and sold!
+      Sell it on before it's cold
+      Bought and sold! Bought and sold!
+      Every scandal's worth its weight in gold
+  - name: verse 3
+    tag: "verse - cool calm English female voice, half sung, drums thin out, money theme looping"
+    bars: 16
+    dynamics: 2
+    idea: "calm - she has already sold; the image is a forty percent profit on dead trees"
+    lyrics: |
+      Calm down, darlings. Breathe. Sit tight.
+      Did you think there'd be handcuffs? Did you think that was right?
+      Nobody's charged and nobody's named
+      Committee will meet and the system gets blamed
+      I sold it on Thursday at forty percent
+      To a pension abroad that won't ask where it went
+      The trees are still dead and the houses still dear
+      And all of us here will be richer next year
+  - name: bridge
+    tag: "bridge - everything drops to organ, whispered close-mic female voice"
+    bars: 8
+    dynamics: 1
+    lyrics: |
+      Thank you all for joining.
+      The glen is no longer our concern.
+      The village wants to buy it? How sweet.
+      Let them. At market value.
+      Settlement's due Friday.
+  - name: final chorus
+    tag: "final chorus - biggest, gang chant, guitars, a low bagpipe drone underneath"
+    bars: 12
+    dynamics: 5
+    lyrics: |
+      Bought and sold! Bought and sold!
+      Sell it on before it's cold
+      Bought and sold! Bought and sold!
+      Every scandal's worth its weight in gold
+      Bought and sold!
+      Bought and sold!
+  - name: outro
+    tag: "outro - band cuts, organ holds one chord, call disconnect beep"
+    bars: 2
+    dynamics: 1
+    lyrics: ""
+
+ending: "The chant cuts dead; the organ holds B minor alone under the pipe drone, then one disconnect beep. The silence after it is where We Bought the Hill begins."
+
+caption: >-
+  dark epic industrial trap, slow menacing build, powerful and oppressive, an emergency conference call, church
+  organ playing a slow uneasy chord progression throughout, heavy half-time drums with metallic industrial
+  percussion, distorted 808 and pounding industrial bass, panicked overlapping English male voices, a sneering
+  Scottish male rapper, a cool calm English female voice half sung and whispered, heavy distorted guitars and a
+  screamed gang chant chorus, a slowed warped hold music melody in the intro, a low bagpipe drone under the final
+  chorus, ends on a held organ chord and a phone call disconnect beep, huge clean mix, 130 bpm
+
+lyric_audit:
+  before: "Three twelve-line verses mixed panic, blame and the calm sale together; the Gav lines came mid-verse and the calm voice arrived without a change of sound."
+  changes:
+    - "One idea per verse with its own voice and its own sound - panic (overlapping men), blame (the Scottish rapper), calm (Fenella, drums thinning)."
+    - "The Grid Man, cut from Natural Capital, gets his robotic line here, where switching things off is the plot."
+    - "'Settlement's due Friday' is now a threat to the village, said once in the bridge."
+    - "Spoken outro ('You have left the call') replaced by the organ chord and the disconnect beep."
+  scores_after: {character_voice: 5, narrative: 5, imagery: 4, singability: 4, hook: 5}

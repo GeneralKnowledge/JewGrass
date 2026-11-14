@@ -1,7 +1,7 @@
 # Song Design: Brass Plate (track 7). Format: docs/song-design/README.md
 slug: brass-plate
 title: Brass Plate
-version: 1
+version: 2
 approach: dark comedy told as a story - one working day, three clock times, and the villain exposes himself
 identity: A theatrical, bureaucratic, slightly ridiculous patter song, where the office itself is the band.
 story_beat: How anonymous money hides in plain sight in Glasgow. Malky never asks who owns anything, until a rule change makes him find out it's him.
@@ -16,14 +16,14 @@ palette:
   world: Bureaucratic, theatrical, slightly ridiculous. The paperwork is the percussion.
   lead: harpsichord riff (plays the money theme as a flourish)
   secondary: pizzicato strings
-  rhythm: typewriter clacks, rubber stamp thuds on the backbeat, desk bell, crisp dry drums
+  rhythm: crisp clean drums with a woodblock backbeat; typewriter bell, desk bell and rubber stamp as occasional accents only (v2 - constant typewriter clacks read as static)
   bass: tuba, walking down C Bb Ab G like a pompous march
   colour: muted brass stabs, sharp electronic synth stabs
   weight: brass band and a heavy 808 hit, choruses only
   left_out: banjo, fiddle, nu-metal guitars, bagpipes, constant 808. Nothing about this office is Highland.
 
 roles:
-  - {instrument: typewriter and rubber stamp, job: "the groove; the stamp lands on beats 2 and 4", enters: intro, leaves: never}
+  - {instrument: "woodblock, typewriter bell and rubber stamp", job: "accents on the punchlines; the woodblock carries the backbeat", enters: intro, leaves: never}
   - {instrument: harpsichord, job: "the riff, and the four-note money flourish whenever a company is made", enters: intro, leaves: never}
   - {instrument: tuba, job: "walking bass line, falling C Bb Ab G", enters: verse 1, leaves: final stamp}
   - {instrument: pizzicato strings, job: "chugging eighth notes under the patter", enters: verse 1, leaves: final chord}
@@ -45,7 +45,7 @@ motifs:
 
 sections:
   - name: intro
-    tag: intro - typewriter rhythm alone, then harpsichord riff, desk bell
+    tag: intro - woodblock rhythm alone, then harpsichord riff, desk bell
     bars: 4
     dynamics: 2
     lyrics: |
@@ -132,10 +132,10 @@ ending: >-
 
 caption: >-
   theatrical comic baroque hip hop, fast cheeky Glaswegian male rap, Scottish accent, playful patter,
-  bureaucratic and slightly ridiculous, typewriter clacks and rubber stamp thuds as the beat, harpsichord riff,
+  bureaucratic and slightly ridiculous, crisp clean drums with a woodblock backbeat, occasional typewriter bell and rubber stamp accents, harpsichord riff,
   pizzicato strings, tuba bass line, desk bell dings, crisp dry drums, sharp electronic synth stabs, muted brass
   stabs, brass band and heavy 808 hits only on the chorus, office gang chant chorus, dark uneasy strings in the
-  third verse, last chorus biggest with full brass, ends on one triumphant major brass chord and a stamp, 112 bpm
+  third verse, last chorus biggest with full brass, ends on one triumphant major brass chord and a stamp, clean polished mix, 112 bpm
 
 lyric_audit:
   before: Funny, but a list of jokes. Verse 2 crammed the rule change, Switzerland, Fenella's call and the investors into ten lines. Ended on a spoken "Filing's due Friday" tag like every other villain.

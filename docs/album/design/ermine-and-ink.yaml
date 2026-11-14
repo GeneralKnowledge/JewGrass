@@ -1,0 +1,141 @@
+# Song Design: Ermine and Ink (track 11). Format: docs/song-design/README.md
+slug: ermine-and-ink
+title: Ermine and Ink
+version: 1
+approach: "dialogue - a lord and a newspaper owner negotiate a favour, verse by verse, and seal it in the chorus"
+identity: "A pompous baroque duet. Theatrical, bureaucratic and slightly ridiculous, the grand cousin of Brass Plate."
+story_beat: "Politics and the press protect the deal. Morag's first article gets spiked."
+
+render:
+  bpm: 92
+  key: D minor
+  timesig: "4"
+  seconds: 185
+
+palette:
+  world: "Paperwork and power, the expensive end. Wood panelling and printing presses."
+  lead: "harpsichord, ornate"
+  secondary: "string quartet"
+  rhythm: "a stately hip hop beat with a deep thudding printing-press rhythm on the backbeat"
+  bass: "cello and a short 808 hit only on chorus downbeats"
+  colour: "a brass fanfare at each chorus, a gavel"
+  weight: "full brass and choir on the last chorus"
+  left_out: "banjo, fiddle, pipes, nu-metal guitars, glitch. Nobody in this room has been to a glen."
+
+roles:
+  - {instrument: harpsichord, job: "the riff; ornaments every line the lord says", enters: intro, leaves: never}
+  - {instrument: string quartet, job: "plays under the press baron's verse, and the corruption progression under the deal", enters: verse 2, leaves: final chorus}
+  - {instrument: brass fanfare, job: "announces each chorus", enters: chorus 1, leaves: end}
+  - {instrument: printing-press thud, job: "the backbeat, steady and heavy", enters: verse 1, leaves: bridge}
+  - {instrument: two voices, job: "the lord (posh, pompous) and the press baron (gravelly older newsreader); they trade lines in verse 3", enters: verse 1, leaves: end}
+
+harmony:
+  verse: "D minor, B flat, G minor, A - baroque, a descending bass"
+  chorus: "F, C, D minor, B flat, then G minor, A, D minor - grand and smug"
+  verse_3: "the corruption progression in D minor (D minor, E flat, D minor, C sharp diminished over a low D) on the string quartet"
+  ending: "a baroque cadence ending on a D major chord (the smug Picardy third), one gavel"
+
+motifs:
+  - "corruption progression: string quartet under verse 3, when they agree to spike the story"
+  - "due Friday: routine stage - they say it to each other as a handshake: 'Division's on Friday.' 'Friday's edition.'"
+
+sections:
+  - name: intro
+    tag: "intro - harpsichord alone, a gavel"
+    bars: 4
+    dynamics: 2
+    lyrics: |
+      Order, order. The noble lord has the floor.
+      And the noble lord would like it carpeted.
+  - name: verse 1
+    tag: "verse - pompous posh English male rap, harpsichord and printing-press beat"
+    bars: 16
+    dynamics: 3
+    idea: "the lord - what he bought and what he wants; the image is the cheque and the hat"
+    lyrics: |
+      Gave the party half a million, now they call me lord
+      Red bench, ermine robe, and a seat on the board
+      Never been elected, never will, don't need
+      Write a cheque, wear a hat, and I vote on your feed
+      Now a little glen up north has a planning snag
+      Some crofters and a petition and a reporter with a bag
+      I need the hearing quiet and I need the village wrong
+      Desmond, old boy, you could help me along
+  - name: chorus 1
+    tag: "chorus - brass fanfare, regal chant, both voices"
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Ermine and ink, ermine and ink
+      We decide the news, and the news decides what you think
+      Ermine and ink, ermine and ink
+      One holds the pen and the other holds the drink
+  - name: verse 2
+    tag: "verse - gravelly older male newsreader voice, string quartet"
+    bars: 16
+    dynamics: 3
+    idea: "the press baron names his price; the image is the front page he's already written"
+    lyrics: |
+      Press baron here, I own the morning view
+      Ten million readers and they're angry, who at? You
+      I can see the headline, darling, front page, bold
+      Greedy wee crofters, keep Britain in the cold
+      Never print the partners, never print the fund
+      Never print the island, print a scapegoat, then we're done
+      And what do I get? Oh, nothing at all
+      Just a quiet word when my own planning's due to fall
+  - name: chorus 2
+    tag: "chorus - brass fanfare, regal chant, both voices"
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Ermine and ink, ermine and ink
+      We decide the news, and the news decides what you think
+      Ermine and ink, ermine and ink
+      One holds the pen and the other holds the drink
+  - name: verse 3
+    tag: "verse - the two voices trade lines, string quartet plays something uneasy"
+    bars: 12
+    dynamics: 2
+    idea: "together they spike Morag's story; the image is a phone call and a smile"
+    lyrics: |
+      There's a girl at the paper with a story on the fund
+      Then there isn't. Phone call. Smile. Done.
+      Her editor's a godson of a friend of mine
+      Then her editor's a sensible man. Fine.
+      And the story?
+      Page forty. Under the horoscopes.
+  - name: final chorus
+    tag: "final chorus - full brass, choir, harpsichord, both voices"
+    bars: 10
+    dynamics: 5
+    lyrics: |
+      Ermine and ink, ermine and ink
+      We decide the news, and the news decides what you think
+      Ermine and ink, ermine and ink
+      One holds the pen and the other holds the drink
+      Division's on Friday
+      Friday's edition
+  - name: outro
+    tag: "outro - a baroque cadence to a major chord, one gavel"
+    bars: 1
+    dynamics: 4
+    lyrics: ""
+
+ending: "The two Friday lines are a handshake. The band plays a pompous baroque cadence onto a D major chord and a single gavel bang. No fade."
+
+caption: >-
+  pompous baroque hip hop duet, satirical and theatrical, a posh aristocratic English male rapper and a gravelly
+  older English male newsreader voice trading verses, ornate harpsichord riff, string quartet, a deep thudding
+  printing press rhythm as the backbeat, stately hip hop drums, cello bass, short 808 hits on the chorus downbeats,
+  brass fanfare at each chorus, regal chant chorus, the third verse turns quiet and uneasy, the last chorus has full
+  brass and choir, ends on a grand baroque major chord and a gavel, clean polished mix, 92 bpm
+
+lyric_audit:
+  before: "Two good villain monologues side by side, plus a repeated four-line bridge. The spiking of Morag's story was one line at the end of verse 2."
+  changes:
+    - "Dialogue instead of two monologues - the lord asks, the baron names his price, together they spike the story."
+    - "Verse 3 is the plot beat (Morag's article buried on page forty), told in short traded lines."
+    - "The repeated bridge is gone; the chorus carries the hook."
+    - "'Division's on Friday' / 'Friday's edition' become a handshake inside the final chorus, not a spoken outro."
+  scores_after: {character_voice: 5, narrative: 5, imagery: 4, singability: 4, hook: 4}
