@@ -121,8 +121,10 @@ def hill_plate(w, h, seed=1707, state="bare", tod="dawn", layout="hill", props=(
     if layout == "sealoch":  # the hill pushed back to a headland on the right
         m, ys = _ridge_mask(h, w, 0.80, 0.36, seed + 5, base=2, octaves=5, roughness=0.6)
         fade = np.clip((np.arange(w) / w - 0.52) * 6, 0, 1)
-        ys = ys * fade + h * 1.2 * (1 - fade)
-        m = m * fade[None, :]
+        # the ridge sinks smoothly below the water line to the left (no hard edge)
+        fade = fade * fade * (3 - 2 * fade)
+        ys = ys * fade + h * 1.05 * (1 - fade)
+        m = np.clip(np.arange(h, dtype=np.float32)[:, None] - ys[None, :] + 0.5, 0, 1)
     else:
         m, ys = _ridge_mask(h, w, 0.80, 0.36, seed + 5, base=2, octaves=5, roughness=0.6)
     mid = _solid(h, w, P.mix(P.MOSS, P.LOCH, 0.35))
