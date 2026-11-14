@@ -24,9 +24,9 @@ python3 nightshift-fm/build.py      # rebuild after editing a design; exits 1 on
   through"). Treatment goes in the section tag. Instrumental sections have a tag that says "instrumental" and
   no lyric lines (build.py checks both ways).
 - Chord charts, drum patterns and bass movement are for the DAW stage; ACE-Step only hears them as words.
-- The radio concept (tuning sweeps, static bursts, crackle, signal loss) is kept out of captions, because those
+- No crackle, hiss or static anywhere, in renders or in post (Reuben's call). The radio concept is kept out of captions, because those
   words put hiss over whole songs before. Each design has a `transmission_layer` saying where those events go;
-  they get added on the laptop after rendering, on the exact bar. Section tags may name one event
+  they get added on the laptop after rendering, on the exact bar: sweeps, filtering, dropouts, pitch drift, tape stops. Section tags may name one event
   ("radio tuning sweep", "tape stop"), never a constant bed.
 - Dead Channel was 96 bars in the sketch (320 s at 72 bpm); it is scaled to 68 bars to keep 240 s.
   Lost Transmission is 225 s (80 bars at 86 is 223 s). Static Dreams has no spare seconds: check its outro.

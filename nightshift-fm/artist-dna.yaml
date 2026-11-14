@@ -28,7 +28,7 @@ palette:
   melody: minor-key piano fragments, detuned bells, eerie synth pads, reversed keys, short guitar phrases, occasional organ
   percussion: cowbell (a colour, not a compulsory lead), dry snares, Memphis-style patterns, shuffled hats, syncopated kicks, rimshots, claps; Brazilian funk percussion on one track
   bass: deep 808, saturated sub, distorted mid-bass, occasional slides. Powerful but controlled, room for the kick
-  transmission: tuning sweeps, tape stops, filtered tails, reversed fragments, bit reduction, pitch drift, signal loss. Placed on purpose, never pasted over a whole track
+  transmission: tuning sweeps, tape stops, filtered tails, reversed fragments, bit reduction, pitch drift, signal loss. Placed on purpose, never pasted over a whole track. No crackle, hiss or static
 
 # The one album-wide melodic thread. ACE-Step can't read notation, so it reaches the renders as words only;
 # the notes are here for the DAW stage and for checking takes.
@@ -115,8 +115,9 @@ avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, t
 transmission_layer: >-
   After rendering, each track gets its radio events on the laptop from short original sound-design files:
   a tuning sweep into the first bar, signal drops at the moments listed in each design's transmission_layer,
-  tape stops and filtered tails, and the signal loss at the end. Constant beds (cassette hiss, vinyl crackle,
-  radio static) only where a design asks, low, and arranged rather than looped under everything.
+  tape stops and filtered tails, and the signal loss at the end. No crackle, hiss, static
+  or other noise beds anywhere, in the renders or in post (Reuben, Nov 14): the radio idea comes from sweeps,
+  filtering, dropouts, pitch drift and tape stops only.
 
 sample_bank: >-
   Later, not in round 1: a bank of original source recordings (10-15 spoken phrases, 5-10 chants, 5 non-verbal

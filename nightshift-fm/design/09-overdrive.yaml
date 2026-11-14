@@ -79,7 +79,7 @@ sections:
     performer: none
 
 ending: An abrupt cut mid-phrase; the station loses the signal.
-transmission_layer: the abrupt cut is followed by a burst of radio static (added in post, under one second) that leads into Lost Transmission.
+transmission_layer: the abrupt cut to silence is the signal loss; a half-second of silence, then Lost Transmission tunes in.
 caption: >-
   170 bpm, C-sharp minor, the biggest highest-energy drift phonk track, a memorable original cowbell hook
   melody from the first drop, heavily saturated 808 with intact sub, rapid hats, hard snare, punchy kick,
