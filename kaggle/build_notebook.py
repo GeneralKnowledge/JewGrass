@@ -25,8 +25,8 @@ TRACKS = "queue"          # "queue" = every track marked generate, strongest fir
 TAKES = 2                 # takes per track (different seeds)
 FIRST_SEED = 8001         # takes use FIRST_SEED, FIRST_SEED+1, ...
 SEEDS = {}                # exact seeds for a track instead, e.g. {"gavs-song": [7202, 7203, 7204]}
-DIT_MODELS = ["turbo"]    # music model(s), every take is made with each: "turbo" (the laptop's 2B), "xl-turbo"
-                          # (4B, about twice the time per take), "sft"/"xl-sft" (50 steps, roughly 10x turbo's time)
+DIT_MODELS = ["xl-turbo"] # music model(s), every take is made with each: "xl-turbo" (4B, the default since Nov 14), "turbo" (the laptop's 2B)
+                          # (about half the time per take), "sft"/"xl-sft" (50 steps, roughly 10x turbo's time)
 RENDER_FIRST = []         # batches rendered before the one above, same keys in lower case, e.g.
                           # [{"tracks_yaml": "https://...", "tracks": "queue", "seeds": {...}, "models": ["turbo", "xl-turbo"]}]
 RENDER_MAX_HOURS = 6      # stop starting new takes after this long

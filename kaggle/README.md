@@ -114,7 +114,7 @@ out/voice/model/reuben_250e_<steps>s.pth      the voice model, plus its .index, 
 
 ## Notes
 
-- With the default `DIT_MODELS=["turbo"]` the sound matches the laptop: same model (turbo DiT, no language model), same fp32 compute and attention
+- Renders use XL turbo (4B) by default since Nov 14 (Reuben's choice). With `DIT_MODELS='["turbo"]'` the sound matches the laptop: same model (turbo DiT, no language model), same fp32 compute and attention
   settings, same `shift`. A seed should sound like the same seed on the laptop, though the different card can
   make tiny differences.
 - Caption phrases that caused hiss ("crackling gramophone", "typewriter clacks", and similar) are dropped
