@@ -102,6 +102,19 @@ What we borrow is only the storytelling toolkit, which is common to many concept
 
 **Trade-off.** The funniest premise and the most musically adventurous (a genre-hopping track, a singing ship), but the real story involves identifiable officials, so it needs the most careful handling and is the furthest from our current songs.
 
+## Bagpipes (a little, on purpose)
+
+Reuben wants a touch of pipes. The rule: **pipes are a signal, not a wallpaper**. They come in at story moments, then get out of the way, so they never turn into a tourist-shop cliché.
+
+- **Option A, *Natural Capital*.** A lone pipe lament opens *Viewing by Appointment Only* before the muzak cuts it off (the glen being sold out from under its own music). In *Natural Capital* the fund "licenses" the pipes: a short drone chopped and glitched into the beat as a marketing jingle. In *Gav's Song* a single slow air plays under the last chorus. In the finale *We Bought the Hill*, the full set of pipes finally plays properly and loud, so the payoff lands because they were held back all album.
+- **Option B, *Special Administration*.** One gag only: a pipe band skirl at the "golden share" moment in *Golden Share*, pitched down and slowed like a dying balloon.
+- **Option C, *Six Years Late*.** A pipe tune at the *Launch Day* ceremony; it returns in *Maiden Voyage*, out of breath and out of tune, six years older.
+
+**Practical notes for the laptop.**
+- In ACE-Step captions write "brief Highland bagpipe drone in the intro" or "solo bagpipe lament, sparse" rather than plain "bagpipes", which tends to flood the whole track.
+- If a take overuses them, keep the take and repaint just the section, or ask for pipes only in a short intro/bridge clip and splice it in, the same way we patched *Deed to the Glen*.
+- Highland pipes sit around B-flat and play in a fixed scale, so pipe moments fit best in songs in B-flat or A, mixolydian-ish. Their drone is a natural match for our 808 sub-bass if both sit on the same note.
+
 ## Mixing options
 
 These are not exclusive. A's fund could own B's water company, and the Grid Man could reappear on a later album. A good long-term shape is a **trilogy of the same "consortium"** wrecking a different public good on each record: land, then water, then transport.
