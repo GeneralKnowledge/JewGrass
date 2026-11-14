@@ -58,6 +58,8 @@ def main(out):
 
     words_out = []
 
+    vox = np.zeros_like(y)
+
     def voice(text_words, start_bar, beats_each=1.0, f0=196):
         tt0 = start_bar * BAR
         ws = []
@@ -67,6 +69,8 @@ def main(out):
             tt = np.arange(n) / SR
             sig = 0.12 * np.sign(np.sin(2 * np.pi * f0 * tt)) * np.exp(-tt * 3)
             add(sig, at)
+            i = int(at * SR)
+            vox[i:i + len(sig)] += sig[: len(vox) - i]
             ws.append([round(at, 3), w])
         return ws
 
@@ -86,6 +90,11 @@ def main(out):
         lines.append({"section": "verse-1", "text": text, "words": voice(ws, bar, 7 / len(ws), 180)})
 
     sf.write(os.path.join(out, "master.wav"), np.clip(y, -1, 1).astype(np.float32), SR)
+    sf.write(os.path.join(out, "vocals.wav"), np.clip(vox, -1, 1).astype(np.float32), SR)
+    with open(os.path.join(out, "lyrics.txt"), "w") as fh:
+        for sec in ("intro", "chorus-1", "verse-1"):
+            fh.write(f"[{sec}]\n")
+            fh.writelines(ln["text"] + "\n" for ln in lines if ln["section"] == sec)
     timing = {
         "note": "synthetic test song; real songs get this file from the alignment step",
         "sections": [{"name": "intro", "start_bar": 0, "bars": 4},

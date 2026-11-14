@@ -20,6 +20,7 @@ import yaml
 
 MIN_BARS, MAX_BARS = 2, 16
 KNOWN_TEXT_MODES = {"chorus-sign", "spoken-title", "slam", "quiet", "voicemail", "none"}
+KNOWN_ACTORS = {"flames", "blades", "ship", "coach", "sign", "stamp", "laird"}
 KNOWN_MOVES = {"push-in", "pull-out", "drift-left", "drift-right", "hold", "rise"}
 
 
@@ -57,6 +58,10 @@ def resolve(sb, tm, analysis):
             b0, b1 = s["start_bar"], s["start_bar"] + s["bars"]
             if "split" in sh:  # e.g. split: [0, 4] -> bars 0..4 of the section
                 b0, b1 = s["start_bar"] + sh["split"][0], s["start_bar"] + sh["split"][1]
+            elif "part" in sh:  # part: [k, n] -> the k-th of n near-equal pieces (bar-aligned)
+                k, parts = sh["part"]
+                b0 = s["start_bar"] + round((k - 1) * s["bars"] / parts)
+                b1 = s["start_bar"] + round(k * s["bars"] / parts)
         else:
             b0, b1 = sh["bars"]
         n = b1 - b0
@@ -65,6 +70,9 @@ def resolve(sb, tm, analysis):
         cam = sh.get("camera", {})
         if cam.get("move", "hold") not in KNOWN_MOVES:
             errors.append(f"{sh['id']}: unknown camera move {cam.get('move')!r}")
+        for act in sh.get("actors") or []:
+            if act.get("type") not in KNOWN_ACTORS:
+                errors.append(f"{sh['id']}: unknown actor {act.get('type')!r}")
         mode = (sh.get("text") or {}).get("mode", "none")
         if mode not in KNOWN_TEXT_MODES:
             errors.append(f"{sh['id']}: unknown text mode {mode!r}")

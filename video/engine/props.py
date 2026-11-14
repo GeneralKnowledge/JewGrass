@@ -20,7 +20,7 @@ from . import typography as T
 from .noise import rng
 
 LAMP = (246, 196, 104)   # lit windows
-FLAME = (238, 122, 44)
+FLAME = (238, 122, 44)  # fire is not money, so it's orange, never the warning red
 FLAME_CORE = (252, 214, 120)
 SS = 2  # supersampling for one-time prop painting
 
@@ -51,6 +51,12 @@ def S(pts):
     return [(x * SS, y * SS) for x, y in pts]
 
 
+def _unit(plate):
+    """1% of the scene's 'size': the height in landscape, the 16:9-equivalent
+    height in portrait, so props keep their proportions in a vertical cut."""
+    return min(plate["h"], plate["w"] * 0.5625) / 100
+
+
 def _ground(plate, layer, x):
     ridge = plate[{"mid": "hill_ridge", "far": "far_ridge", "near": "near_ridge"}[layer]]
     return float(ridge[int(np.clip(x, 0, plate["w"] - 1))])
@@ -60,7 +66,7 @@ def _ground(plate, layer, x):
 def lodge(pt, plate, x, s):
     """A baronial shooting lodge: turrets, crow-stepped gables, lit windows."""
     y = _ground(plate, "mid", x) + 0.035 * plate["h"]
-    u = plate["h"] / 100 * s
+    u = _unit(plate) * s
     ink = pt.draw(P.PEAT)
     body = [(x - 9 * u, y), (x - 9 * u, y - 9 * u), (x + 9 * u, y - 9 * u), (x + 9 * u, y)]
     ink.polygon(S(body), fill=255)
@@ -85,7 +91,7 @@ def crofts(pt, plate, xs, s):
     ink = pt.draw(P.PEAT)
     for x in xs:
         y = _ground(plate, "mid", x) + 0.05 * plate["h"]
-        u = plate["h"] / 100 * s
+        u = _unit(plate) * s
         ink.rounded_rectangle(S([(x - 4 * u, y - 2.6 * u), (x + 4 * u, y)]), radius=int(0.6 * u * SS), fill=255)
         ink.chord(S([(x - 4.8 * u, y - 6 * u), (x + 4.8 * u, y - 0.6 * u)]), 180, 360, fill=255)
         ink.rectangle(S([(x - 0.6 * u, y - 2 * u), (x + 0.6 * u, y)]), fill=0)  # door gap
@@ -96,7 +102,7 @@ def crofts(pt, plate, xs, s):
 def plantation(pt, plate, x0, x1, s):
     """Carbon forest: trees planted in a perfect grid, blocks of identical cones."""
     ink = pt.draw(P.mix(P.PEAT, P.MOSS, 0.35))
-    u = plate["h"] / 100 * s
+    u = _unit(plate) * s
     for x in np.arange(x0, x1, 2.4 * u):
         g = _ground(plate, "mid", x)
         for r in range(6):
@@ -110,7 +116,7 @@ def turbine_towers(pt, plate, xs, s):
     out = []
     for x in xs:
         y = _ground(plate, "far", x) + 0.01 * plate["h"]
-        u = plate["h"] / 100 * s
+        u = _unit(plate) * s
         ink.polygon(S([(x - 0.35 * u, y), (x - 0.15 * u, y - 14 * u), (x + 0.15 * u, y - 14 * u), (x + 0.35 * u, y)]), fill=255)
         out.append(("turbine", (x, y - 14 * u, u), "far"))
     return out
@@ -121,7 +127,7 @@ def salmon_cages(pt, plate, xs, s):
     y0 = plate["loch_y"]
     out = []
     for x in xs:
-        u = plate["h"] / 100 * s
+        u = _unit(plate) * s
         for k in range(3):
             cx = x + k * 6.5 * u
             ink.ellipse(S([(cx - 3 * u, y0 - 0.9 * u), (cx + 3 * u, y0 + 0.9 * u)]), outline=255, width=int(0.45 * u * SS))
@@ -132,7 +138,7 @@ def salmon_cages(pt, plate, xs, s):
 def school(pt, plate, x, s):
     """The village school with its bell-cote. Its sign is an actor (it changes)."""
     y = _ground(plate, "mid", x) + 0.07 * plate["h"]
-    u = plate["h"] / 100 * s
+    u = _unit(plate) * s
     ink = pt.draw(P.PEAT)
     ink.polygon(S([(x - 10 * u, y), (x - 10 * u, y - 7 * u), (x, y - 12 * u), (x + 10 * u, y - 7 * u), (x + 10 * u, y)]), fill=255)
     ink.rectangle(S([(x - 1.2 * u, y - 15 * u), (x + 1.2 * u, y - 11 * u)]), fill=255)
@@ -146,7 +152,7 @@ def school(pt, plate, x, s):
 def chalets(pt, plate, x0, x1, s, seed):
     """The development: identical luxury chalets in rows, every window lit."""
     g = rng(seed, "chalets")
-    u = plate["h"] / 100 * s
+    u = _unit(plate) * s
     ink = pt.draw(P.PEAT)
     lit = pt.draw(LAMP)
     for row in range(2):
@@ -166,7 +172,7 @@ def chalets(pt, plate, x0, x1, s, seed):
 def kirk(pt, plate, x, s):
     """The parish kirk with its clock tower (the Laird owns the clock)."""
     y = _ground(plate, "mid", x) + 0.05 * plate["h"]
-    u = plate["h"] / 100 * s
+    u = _unit(plate) * s
     ink = pt.draw(P.PEAT)
     ink.rectangle(S([(x - 7 * u, y - 6 * u), (x + 5 * u, y)]), fill=255)
     ink.polygon(S([(x - 7.6 * u, y - 6 * u), (x - 1 * u, y - 10 * u), (x + 5.6 * u, y - 6 * u)]), fill=255)
@@ -199,7 +205,7 @@ def paint_props(plate, props, seed):
     for p in props:
         name, _, arg = p.partition(":")
         if name == "lodge":
-            anchors += lodge(pt_for("mid"), plate, w * float(arg or 0.30), 1.0)
+            anchors += lodge(pt_for("mid"), plate, w * float(arg or 0.34), 1.0)
         elif name == "crofts":
             anchors += crofts(pt_for("mid"), plate, [w * f for f in (0.42, 0.53, 0.61, 0.70)], 0.9)
         elif name == "plantation":
@@ -213,7 +219,7 @@ def paint_props(plate, props, seed):
         elif name == "chalets":
             anchors += chalets(pt_for("mid"), plate, w * 0.30, w * 0.90, 1.0, seed)
         elif name == "kirk":
-            anchors += kirk(pt_for("mid"), plate, w * float(arg or 0.12), 1.1)
+            anchors += kirk(pt_for("mid"), plate, w * float(arg or 0.17), 1.1)
         elif name == "fence":
             pass  # painted by plates.hill_plate state
         else:

@@ -18,14 +18,20 @@ from . import plates as PL
 from . import motifs as M
 from . import typography as T
 from . import props as PR
-from .fx import Atmosphere, Particles
+from .fx import Atmosphere, Particles, Psych
 
 PLATE_SCALE = 1.25  # plates are bigger than the frame so the camera can move
 
 DEFAULT_BUDGET = {"intro": 0.2, "verse": 0.3, "chorus": 0.7, "bridge": 0.1,
                   "breakdown": 0.1, "outro": 0.15}
 
-WEATHER = {"mist-low": 0.55, "fog-heavy": 0.95, "clear": 0.0}
+# The strange layer, by section type (a shot's own `psych:` overrides it).
+PSYCH_DEFAULT = {"intro": {"sky": 0.15}, "verse": {"sky": 0.35, "warp": 0.3},
+                 "chorus": {"sky": 0.85, "overlay": 0.12, "kaleido": 6, "warp": 0.6, "chroma": 0.6},
+                 "bridge": {"sky": 0.25}, "breakdown": {"sky": 1.0, "overlay": 0.5, "kaleido": 8, "warp": 1.0, "chroma": 1.0},
+                 "outro": {"sky": 0.1}}
+
+WEATHER = {"mist-low": 0.5, "fog-heavy": 0.75, "clear": 0.0}
 
 
 def ease(p):
@@ -37,9 +43,11 @@ class Compositor:
     def __init__(self, plan, analysis, W=1920, H=1080):
         self.plan, self.a = plan, analysis
         self.W, self.H = W, H
+        self.U = min(H, W * 0.5625)  # sprite/text size unit (portrait-safe)
         self.fps = analysis["fps"]
         self.seed = int(plan["meta"].get("seed", 1707))
         self.atm = Atmosphere(W, H, self.seed)
+        self.psych = Psych(W, H, self.seed, analysis)
         self.particles = Particles(140, W, H, self.seed)
         self.plates = {}
         for sh in plan["shots"]:
@@ -102,6 +110,15 @@ class Compositor:
                 return v
         return 0.3
 
+    def _psych(self, sh):
+        if "psych" in sh:
+            return sh["psych"] or {}
+        sec = sh.get("at", "verse")
+        for k, v in PSYCH_DEFAULT.items():
+            if sec.startswith(k):
+                return v
+        return {}
+
     def _camera(self, sh, p, t, i, budget):
         cam = sh.get("camera") or {}
         move, speed = cam.get("move", "hold"), float(cam.get("speed", 1.0))
@@ -118,6 +135,10 @@ class Compositor:
             px = -m * (1 - 2 * e)
         elif move == "rise":
             py = 0.05 * self.H * speed * (1 - 2 * e)
+        if "target" in cam:  # drift the centre towards a point (plate fractions) as we move
+            tx, ty = cam["target"]
+            px += (tx - 0.5) * self.W * PLATE_SCALE * 0.6 * e
+            py += (ty - 0.5) * self.H * PLATE_SCALE * 0.6 * e
         # breathing so nothing is ever fully frozen
         px += 3 * np.sin(t * 0.37)
         py += 2 * np.sin(t * 0.23 + 1)
@@ -183,13 +204,20 @@ class Compositor:
         board = self.board_cache[key].copy()
         if ln:
             words = [w.upper() for _, w in ln["words"]]
-            size = int(bh * 0.34)
-            lay, (lw, lh) = T.layout_words(words, "stencil", size, int(bw * 0.9))
-            ox, oy = (bw - lw) // 2, (bh - lh) // 2 - size // 8
+            # fit: the largest size whose wrapped block fits inside the board
+            size = int(bh * 0.40)
+            while True:
+                lay, (lw, lh) = T.layout_words(words, "stencil", size, int(bw * 0.88))
+                if (lw <= bw * 0.9 and lh <= bh * 0.86) or size <= 12:
+                    break
+                size = int(size * 0.92)
+            pad = size // 6  # sprites carry this much padding on every side
+            ox, oy = (bw - lw) // 2 - pad, (bh - lh) // 2 - pad
             for (word, x, y), age in zip(lay, ages):
                 if age <= 0:
                     continue
-                spr, _ = T.word_sprite(word, "stencil", size, P.PEAT, float(txt.get("distress", 0.15)), self.seed)
+                # distress weathers the paint but must never make the chorus unreadable
+                spr, _ = T.word_sprite(word, "stencil", size, P.PEAT, min(float(txt.get("distress", 0.15)), 1.0) * 0.55, self.seed)
                 op = min(age / 0.08, 1.0)  # slapped on fast, like a stencil
                 T.paste(board, spr, ox + x, oy + y - int(4 * (1 - op)), op * fade)
         # place the board on the fence line (plate coords), then camera-transform
@@ -208,11 +236,12 @@ class Compositor:
         ln, ages, fade = self._active_line(sh, t)
         if not ln:
             return
-        size = int(self.H * size_ratio)
+        size = int(self.U * size_ratio)
         words = [w for _, w in ln["words"]]
         lay, (lw, lh) = T.layout_words(words, kind, size, int(self.W * 0.62))
         x0 = int(self.W * 0.08) if where == "left" else (self.W - lw) // 2
         y0 = int(self.H * 0.80) - lh
+        pad = size // 6
         # quiet band behind the text for legibility
         band = img[max(y0 - size // 2, 0):y0 + lh + size // 2]
         band *= (1 - 0.35 * fade)
@@ -221,7 +250,7 @@ class Compositor:
                 continue
             spr, _ = T.word_sprite(word, kind, size, rgb)
             op = min(age / 0.25, 1.0) * fade
-            self._paste_rgb(img, spr, x0 + x, y0 + y, op)
+            self._paste_rgb(img, spr, x0 + x - pad, y0 + y - pad, op)
         if where == "left":
             rule_y = y0 + lh + size // 3
             img[rule_y:rule_y + 2, x0:x0 + int(lw * min(1, fade))] = P.f(rgb)
@@ -230,10 +259,15 @@ class Compositor:
         ln, ages, fade = self._active_line(sh, t, linger=1.0)
         if not ln:
             return
-        size = int(self.H * 0.17)
+        size = int(self.U * 0.17)
         words = [w.upper() for _, w in ln["words"]]
-        lay, (lw, lh) = T.layout_words(words, "stencil", size, int(self.W * 0.86))
-        x0, y0 = (self.W - lw) // 2, (self.H - lh) // 2
+        while True:
+            lay, (lw, lh) = T.layout_words(words, "stencil", size, int(self.W * 0.86))
+            if (lw <= self.W * 0.9 and lh <= self.H * 0.8) or size <= 16:
+                break
+            size = int(size * 0.92)
+        pad = size // 6
+        x0, y0 = (self.W - lw) // 2 - pad, (self.H - lh) // 2 - pad
         for (word, x, y), age in zip(lay, ages):
             if age <= 0:
                 continue
@@ -262,6 +296,8 @@ class Compositor:
         fog_d = max([WEATHER.get(w, 0) for w in weather] + [0])
         fog_d *= 1 + 0.25 * budget * self.a["env"]["bass"][min(i, self.a["frames"] - 1)]
 
+        ps = self._psych(sh)
+        fr = None
         img = np.zeros((self.H, self.W, 3), np.float32)
         Ms = {}
         for L in plate["layers"]:
@@ -269,6 +305,11 @@ class Compositor:
             Ms[L.name] = Mx
             if L.name == "sky":  # opaque: no blend needed
                 img[...] = self._warp(L.rgba, Mx, replicate=True)[..., :3]
+                if ps.get("sky"):
+                    k = ps["sky"] * (0.65 + 0.35 * self.a["macro"]["energy"][min(i, self.a["frames"] - 1)])
+                    if fr is None:
+                        fr = self.psych.fractal(t, i, int(ps.get("kaleido", 0)))
+                    cv2.addWeighted(img, 1 - k, fr, k, 0, dst=img)
             else:
                 self._over(img, self._warp(L.rgba, Mx))
             for act in (sh.get("actors") or []):
@@ -298,6 +339,15 @@ class Compositor:
         if mode == "chorus-sign" and Mnear is not None:
             self._over(img, self._chorus_board(sh, t, plate, Mnear))
 
+        # the strange layer over the land, before the text so lyrics stay legible
+        if ps.get("overlay"):
+            if fr is None:
+                fr = self.psych.fractal(t, i, int(ps.get("kaleido", 0)))
+            k = ps["overlay"] * (0.3 + 0.7 * self.a["env"]["bass"][min(i, self.a["frames"] - 1)])
+            img = 1 - (1 - img) * (1 - fr * k)  # screen blend
+        if ps.get("warp"):
+            img = self.psych.warp(img, t, i, ps["warp"])
+
         for act in (sh.get("actors") or []):
             if self._actor_layer(act) == "screen":
                 self._actor(img, act, None, plate, sh, p, t, i)
@@ -323,6 +373,9 @@ class Compositor:
             img[..., 0] *= 1 + warm * 0.08
             img[..., 2] *= 1 - warm * 0.08
 
+        if ps.get("chroma"):
+            img = self.psych.chroma(img, i, ps["chroma"])
+
         fl = self.flashes[i] if i < len(self.flashes) else 0
         if fl:
             img += fl
@@ -343,7 +396,7 @@ class Compositor:
         return (img * 255 + 0.5).astype(np.uint8)
 
     # ---------- actors ----------
-    ACTOR_LAYERS = {"flames": "mid", "blades": "far", "ship": "loch", "coach": "near",
+    ACTOR_LAYERS = {"flames": "mid", "blades": "far", "ship": "loch", "coach": "mid",
                     "sign": "mid", "stamp": "screen", "laird": "screen"}
 
     def _actor_layer(self, act):
@@ -374,13 +427,18 @@ class Compositor:
 
     def _actor(self, img, act, Mx, plate, sh, p, t, i):
         kind = act["type"]
+        if "span" in act:
+            a0, a1 = act["span"]
+            if not (a0 <= p <= a1):
+                return
+            p = (p - a0) / max(a1 - a0, 1e-6)
         anchors = plate.get("anchors", [])
         z = Mx[0, 0] if Mx is not None else 1.0
         if kind == "flames":
             t0 = self._when(act, sh, default=0.0)
             amt = min(max((t - t0) / 1.5, 0), 1)
             pts = [self._tx(Mx, *a[1][:2]) for a in anchors if a[0] == "croft"]
-            PR.flames(img, pts, plate["h"] / 100 * 0.9 * z * self.H / plate["h"] * 1.25, t, amt, self.seed)
+            PR.flames(img, pts, min(plate["h"], plate["w"] * 0.5625) / 100 * 1.4 * z, t, amt, self.seed)
         elif kind == "blades":
             s0, s1 = act.get("spin", [1.0, 1.0])
             # angle = integral of a speed that eases from s0 to s1 across the shot
@@ -394,22 +452,22 @@ class Compositor:
             x0, x1 = act.get("x", [0.1, 0.4])
             xp = plate["w"] * (x0 + (x1 - x0) * p)
             x, y = self._tx(Mx, xp, plate["loch_y"])
-            spr = PR.ship_sprite(int(self.H * act.get("size", 0.16)))
+            spr = PR.ship_sprite(int(self.U * act.get("size", 0.16)))
             self._paste_rgb(img, spr, int(x - spr.shape[1] / 2), int(y - spr.shape[0] * 0.86), 1.0)
         elif kind == "coach":
             x0, x1 = act.get("x", [1.1, 0.5])
             xp = plate["w"] * (x0 + (x1 - x0) * ease(p * 1.4))
-            yp = float(plate["near_ridge"][int(np.clip(xp, 0, plate["w"] - 1))])
+            yp = plate["h"] * act.get("y", 0.82)  # the shore road along the foot of the hill
             x, y = self._tx(Mx, xp, yp)
-            spr = PR.coach_sprite(int(self.H * 0.07))
+            spr = PR.coach_sprite(int(self.U * 0.07))
             self._paste_rgb(img, spr, int(x - spr.shape[1] / 2), int(y - spr.shape[0] * 0.9), 1.0)
             if act.get("tag") and p > 0.45:
-                tag = PR.stamp_sprite(act["tag"], int(self.H * 0.05), seed=self.seed)
+                tag = PR.stamp_sprite(act["tag"], int(self.U * 0.05), seed=self.seed)
                 k = min((p - 0.45) / 0.03, 1)
                 self._paste_rotated(img, tag, x, y - spr.shape[0] * 1.5, 1.4 - 0.4 * k, -6, k)
         elif kind == "sign":
             texts = act.get("texts", ["GLEN SCHOOL"])
-            swap = sh["t0"] + act.get("swap", 0.5) * (sh["t1"] - sh["t0"])
+            swap = self._when({"word": act["swap_word"]} if "swap_word" in act else {"at": act.get("swap", 0.5)}, sh)
             a = next((x for x in anchors if x[0] == "school-sign"), None)
             if a is None:
                 return
@@ -428,7 +486,7 @@ class Compositor:
             if t < t0:
                 return
             k = min((t - t0) / 0.09, 1)  # slammed on in 3 frames
-            spr = PR.stamp_sprite(act["text"], int(self.H * act.get("size", 0.07)), seed=self.seed)
+            spr = PR.stamp_sprite(act["text"], int(self.U * act.get("size", 0.07)), seed=self.seed)
             x, y = act.get("pos", [0.5, 0.5])
             self._paste_rotated(img, spr, x * self.W, y * self.H, 1.5 - 0.5 * k, act.get("rot", -7), k)
         elif kind == "laird":
@@ -437,7 +495,7 @@ class Compositor:
             if not (tin <= t <= tout + 0.6):
                 return
             k = ease((t - tin) / 0.6) * (1 - ease((t - tout) / 0.6))
-            spr = PR.laird_sprite(int(self.H * act.get("size", 0.62)))
+            spr = PR.laird_sprite(int(self.U * act.get("size", 0.62)))
             side = act.get("side", "right")
             h, w = spr.shape[:2]
             bob = 4 * self.a["env"]["bass"][min(i, self.a["frames"] - 1)] * self._budget(sh)
@@ -458,7 +516,7 @@ class Compositor:
         side = 0.12 if pose.endswith("left") else 0.86
         x = side * plate["w"]
         y = float(plate["near_ridge"][int(x)])
-        hpx = int(self.H * 0.10)
+        hpx = int(self.U * 0.10)
         if pose == "leaves" and p > 0.55:
             q = (p - 0.55) / 0.45
             spr = M.crow_sprite(hpx, "flying")
