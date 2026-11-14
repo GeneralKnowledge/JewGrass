@@ -1,0 +1,86 @@
+# TAM LIGHTLY artist DNA: the persistent identity every Tam Lightly song is built from.
+# build.py joins `caption_core` with each song's own caption, so the shared sound is stated the same way every time.
+# Everything here is original. Genre references only: no real artist, record, person, brand or place is named
+# or imitated in any file that goes into generation.
+
+act: TAM LIGHTLY
+genre: playful UK rap, bouncy and comedic, feel-good
+home: >-
+  Auchterbeg, a fictional small town in central Scotland. One high street, a corner shop with a bell on the
+  door, a bus stop with a bench, a pub with an upstairs function room, and his nan's house two streets over.
+premise: >-
+  Tam is twenty-three, works in an office he never explains, and raps about tiny everyday wins as if they
+  were cup finals. Total confidence, very low stakes. The joke is never on other people: it's on Tam, and
+  he's in on it. Underneath the bravado he's warm, a bit daft and genuinely likeable.
+themes: [lunch, small victories, family, gadgets, local fame, trying too hard, being proud of nothing much]
+
+performer:
+  tam:
+    voice: bright, cheeky young male voice with a Scottish accent and a grin in it
+    delivery: bouncy and rhythmic, clear diction, punchline pauses, sudden fast bursts when he gets excited
+    writing: mock-epic bragging about small things, exact prices and times, a twist or deflation at the end of a verse
+    caption_words: cheeky bright Scottish male rap, bouncy playful delivery, comedic timing
+
+# Shared world: facts the songs keep consistent, so the three tracks feel like one person's life.
+world:
+  - The corner shop: bell on the door, the auntie at the till who says "you again".
+  - Lunch is from twelve twenty-nine. The meal deal is three pound sixty.
+  - His smartwatch, which nags him to stand up.
+  - Nan, ninety-one, metal hip, slippers, front row at every gig, shouts "that's my grandson".
+  - The gig upstairs at the pub where eleven people came and nine were in the wrong room.
+  - His mum, who thinks it's all a phase.
+
+sound:
+  tempo: 90-165 bpm; every song a different speed and feel
+  drums: punchy, clean and bouncy; claps, snappy snares, bouncy hi-hats
+  bass: round, warm, bouncy; 808 allowed but friendly, never menacing
+  melody: bright and colourful; plucky marimba, whistles, bells, warm keys, toy-like synth leads
+  vocals: clear, upfront, dry enough to hear every joke
+  hooks: big, simple, chantable, made to be shouted back
+  arrangement: starts straight in on the hook or the first line; every hook lands, every verse has a punchline pause
+
+production_rules:
+  - Start straight in. No instrumental intro, no count-in.
+  - Leave a gap before punchlines (a beat drop-out) so the joke lands.
+  - Bright major or bouncy minor keys; never dark or menacing.
+  - One playful sound per song that becomes its signature (whistle, marimba, toy piano).
+  - No spoken outros (they don't come through). Endings are a hook line and a hard stop or one chord.
+
+# Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+
+caption_core: >-
+  playful comedic UK rap, bouncy feel-good hip hop, cheeky bright young male rapper with a Scottish accent,
+  bouncy rhythmic delivery with comedic timing, big catchy chantable hooks, punchy clean bouncy drums, claps,
+  warm round bass, bright colourful melodies, clear upfront vocals, fun upbeat energy, clean modern mix
+
+writing_rules:
+  - Specific and silly: a price, a time, an object. No stock party lines.
+  - The joke is on Tam. Never punch down, no insults at real people, no swearing needed.
+  - One small thing per song, treated as the most important thing in the world.
+  - Every verse ends on a twist or a deflation.
+  - One line per bar in verses. Hooks repeat a phrase you can shout back.
+  - No lines fully in brackets (the pipeline strips them).
+
+mix_targets:
+  loudness: about -9 LUFS integrated, true peak -1 dBTP
+  vocals: forward and clear, every word audible
+  master: the laptop's pedalboard chain
+
+visual_identity:
+  palette: bright yellow, sky blue, white
+  video: fractal field plus lyrics, like the JewGrass videos, but bouncy and colourful; words pop on the beat
+  type: rounded bold sans
+
+variation_rules:
+  - Three different tempos and feels (bounce single, fast sprint, warm slow singalong).
+  - Three different lengths (short, medium, longer).
+  - Three different signature sounds (whistle and marimba, chiptune-style synth, warm electric piano).
+
+pilot_acceptance:
+  fun: you smile at least once per song
+  identity: all three songs sound like the same cheeky rapper
+  hooks: every hook is easy to remember after one listen
+  words: the punchlines are audible and land
+  production: bright, bouncy, clean; nothing muddy or dark
+  audio: no obvious vocal artefacts, clipping or hiss
