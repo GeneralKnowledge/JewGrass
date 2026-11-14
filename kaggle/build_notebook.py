@@ -15,7 +15,7 @@ background (you can close the tab) and the results appear under **Output** when 
 Needs: **Accelerator = GPU T4 x2** and **Internet = on** (Settings panel on the right; internet needs a
 phone-verified Kaggle account). For voice training, attach the `jewgrass-voice` dataset with **Add Input**."""),
     (CODE, """# --- settings -------------------------------------------------------------------------------------------------
-JOB = "render"            # "render" (album takes), "voice" (train the RVC voice model), or "both" (render first)
+JOB = "render"            # "render" (album takes), "voice" (train the RVC voice model), or "both" (voice first, then takes)
 BRANCH = "claude/project-thread-l3ovu9"   # which branch of the repo to read tracks.yaml and these scripts from
 
 # Render
@@ -77,22 +77,6 @@ def run_all(cmds, envs, cwd=None):
 parts = (["ace"] if JOB in ("render", "both") else []) + (["applio"] if JOB in ("voice", "both") else [])
 subprocess.run(["bash", f"{REPO}/kaggle/setup.sh", *parts], check=True)
 print(f"installed in {(time.time() - T0) / 60:.0f} min")"""),
-    (CODE, """# --- render album takes, one worker per GPU ----------------------------------------------------------------------
-if JOB in ("render", "both"):
-    sys.path.insert(0, f"{REPO}/kaggle")
-    import yaml, plan
-    doc = yaml.safe_load(open(f"{REPO}/docs/album/tracks.yaml"))
-    jobs, notes = plan.plan(doc, TRACKS, TAKES, FIRST_SEED, SEEDS, gpus=N_GPU)
-    for n in notes:
-        print("NOTE", n)
-    json.dump(jobs, open("/kaggle/temp/jobs.json", "w"), indent=1)
-    print(f"{len(jobs)} takes, {sum(j['seconds'] for j in jobs) / 60:.0f} min of music, over {N_GPU} GPU(s)")
-    deadline = min(time.time() + RENDER_MAX_HOURS * 3600, HARD_STOP)
-    ace = "/kaggle/temp/ACE-Step-1.5"
-    codes = run_all([[f"{ace}/.venv/bin/python", f"{REPO}/kaggle/render.py", "/kaggle/temp/jobs.json", str(g),
-                      f"{OUT}/renders"] for g in range(N_GPU)],
-                    [{"CUDA_VISIBLE_DEVICES": str(g), "BAND_DEADLINE": str(deadline)} for g in range(N_GPU)], cwd=ace)
-    print("render workers exited with", codes, f"after {(time.time() - T0) / 60:.0f} min in total")"""),
     (CODE, """# --- train the voice model (training on the first GPU, probe clips on the second) -------------------------------
 if JOB in ("voice", "both"):
     deadline = min(time.time() + VOICE_MAX_HOURS * 3600, HARD_STOP)
@@ -128,6 +112,22 @@ if JOB in ("voice", "both"):
     elif os.path.exists(tar):
         print("Training state is in the output (out/voice/state). To carry on next run without downloading it, "
               "add the KAGGLE_API_TOKEN secret and set KAGGLE_USER (see kaggle/README.md).")"""),
+    (CODE, """# --- render album takes, one worker per GPU ----------------------------------------------------------------------
+if JOB in ("render", "both"):
+    sys.path.insert(0, f"{REPO}/kaggle")
+    import yaml, plan
+    doc = yaml.safe_load(open(f"{REPO}/docs/album/tracks.yaml"))
+    jobs, notes = plan.plan(doc, TRACKS, TAKES, FIRST_SEED, SEEDS, gpus=N_GPU)
+    for n in notes:
+        print("NOTE", n)
+    json.dump(jobs, open("/kaggle/temp/jobs.json", "w"), indent=1)
+    print(f"{len(jobs)} takes, {sum(j['seconds'] for j in jobs) / 60:.0f} min of music, over {N_GPU} GPU(s)")
+    deadline = min(time.time() + RENDER_MAX_HOURS * 3600, HARD_STOP)
+    ace = "/kaggle/temp/ACE-Step-1.5"
+    codes = run_all([[f"{ace}/.venv/bin/python", f"{REPO}/kaggle/render.py", "/kaggle/temp/jobs.json", str(g),
+                      f"{OUT}/renders"] for g in range(N_GPU)],
+                    [{"CUDA_VISIBLE_DEVICES": str(g), "BAND_DEADLINE": str(deadline)} for g in range(N_GPU)], cwd=ace)
+    print("render workers exited with", codes, f"after {(time.time() - T0) / 60:.0f} min in total")"""),
     (CODE, """# --- summary ----------------------------------------------------------------------------------------------------
 lines = [f"JewGrass Kaggle run, {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(T0))}, "
          f"{(time.time() - T0) / 3600:.1f} GPU hours, {gpus[0]} x{N_GPU}", f"settings: JOB={JOB} TRACKS={TRACKS} "
