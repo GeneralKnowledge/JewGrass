@@ -96,3 +96,15 @@ python3 tools/design/motif_audition.py docs/song-design/motifs.yaml build/motifs
 Both need only PyYAML and numpy. The compiled caption, lyrics, key and meter are also written into [`tracks.yaml`](../album/tracks.yaml) for the laptop.
 
 Not adopted yet: music21, Tonal, Strudel, isobar, Basic Pitch, Surge XT. Each becomes worth installing only for a specific job (Basic Pitch to pull a melody out of a good take so it can become a motif; Surge XT if we render motif intros with better sounds). Nothing here needed them.
+
+## Banned caption phrases
+
+The blind A/B on 14 November found that ACE-Step renders some texture words as audible static. `compile_design.py` refuses captions and tags containing: crackle, gramophone, vinyl, hiss, static, lo-fi, raw mix, typewriter clacks, radio noise, white noise, glitch noise. Every design caption ends with "clean polished mix" (or "clean punchy mix").
+
+## Old versions
+
+Nothing old is deleted. The pre-design captions and lyrics for every track are kept in [`../album/previous/tracks-pre-design.yaml`](../album/previous/tracks-pre-design.yaml), and on the laptop every earlier take stays in `songs/<slug>/00-gen/` and `final/`. Design renders go to new files (`design-vN-<seed>.wav`) and to `final/alternates/`.
+
+## Status (14 Nov)
+
+All ten tracks to be generated now have a design: Parcel of Rogues, Viewing by Appointment Only, Natural Capital, Brass Plate, Fast Lane, Ermine and Ink, Sunshine Trust, Bought and Sold, Gav's Song and Exit Strategy. The pilot's blind test: where there was no static, Reuben preferred the design version twice and called one a tie.

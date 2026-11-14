@@ -1,0 +1,156 @@
+# Song Design: Natural Capital (track 5). Format: docs/song-design/README.md
+slug: natural-capital
+title: Natural Capital
+version: 1
+approach: "dark comedy as a product launch - the host's pitch, two guests who give the game away, then the exit plan"
+identity: "Beautiful, wealthy and morally empty. The most expensive-sounding track on the album."
+story_beat: "The local scheme explained, and a hint that the money behind it is far bigger than the glen."
+
+render:
+  bpm: 92
+  key: F major
+  timesig: "4"
+  seconds: 240
+
+palette:
+  world: "The fund. Glass, champagne, nothing touches the ground."
+  lead: "Rhodes electric piano"
+  secondary: "lush expensive strings"
+  rhythm: "soft clean drums, finger snaps, a slow trap hi-hat only in the choruses"
+  bass: "clean deep sub-bass, smooth"
+  colour: "glassy bell synths playing the money theme, the hold music turned into a corporate jingle, champagne clinks"
+  weight: "choruses get a gospel-style choir and a bigger sub, never distortion"
+  left_out: "banjo, fiddle, distorted 808, nu-metal guitars, glitch. Fenella's world is clean. The only Highland sound is two chopped pipe notes, used as a jingle."
+
+roles:
+  - {instrument: Rhodes, job: "the main chords, warm and expensive", enters: intro, leaves: never}
+  - {instrument: strings, job: "swells under the host's best lines, sweetening the lie", enters: verse 1, leaves: bridge}
+  - {instrument: glassy bell synth, job: "the money theme after each chorus line", enters: chorus 1, leaves: final chorus}
+  - {instrument: chopped bagpipe, job: "two notes of the ownership theme, cut short, used as a jingle sting", enters: chorus 1, leaves: final chorus}
+  - {instrument: choir, job: "corporate gospel on the chorus hook", enters: chorus 1, leaves: final chorus}
+  - {instrument: hold music, job: "the jingle version on electric piano in the intro and under the bridge", enters: intro, leaves: bridge}
+
+harmony:
+  verse: "F major 7, D minor 9, B flat major 7, C 11 - smooth, never sad"
+  chorus: "B flat, C, A minor, D minor, B flat, C, F - a big glossy lift"
+  bridge: "the corruption progression transposed, very quiet, under her whisper (F minor, G flat, F minor, E diminished over F)"
+  ending: "back to F major 7, held, with a champagne clink"
+
+motifs:
+  - "hold music: licensed - the Viewing tune comes back as a bright corporate jingle"
+  - "ownership theme: chopped into a two-note bagpipe jingle (the land sold back as branding)"
+  - "money theme: glassy bell synth, clean and beautiful"
+  - "corruption progression: under the bridge, so the one honest moment sounds wrong"
+  - "due Friday: joke stage - Fenella whispers 'Settlement's due Friday' as the last line of the final chorus"
+
+sections:
+  - name: intro
+    tag: "intro - hold music jingle on electric piano, champagne glasses, crowd murmur"
+    bars: 4
+    dynamics: 1
+    lyrics: |
+      Thank you all for coming.
+      Do help yourselves to the salmon. It's local.
+      Everything here is local. Except the money.
+  - name: verse 1
+    tag: "verse - whispered close-mic English female voice, Rhodes and strings"
+    bars: 16
+    dynamics: 2
+    idea: "the product; the image is rain invoiced by the drop"
+    lyrics: |
+      I don't see a glen, I see a balance sheet
+      Bog and bracken, darling, that's a carbon receipt
+      Every inch of heather is a unit I can sell
+      Every drop of rain, I'll invoice that as well
+      Bought it off a laird who was tired of the cold
+      Paid him in pounds, and I'll sell it back in gold
+      Plant a little forest where no forest will grow
+      It doesn't have to live, it just has to look good on a slide show
+  - name: chorus 1
+    tag: "chorus - cool half-sung female hook, gospel choir, bell synth, chopped bagpipe jingle"
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Natural capital
+      Every hill's a bank and the deer can sing
+      Natural capital
+      Greenest thing in Scotland and it's paved with gold
+  - name: verse 2
+    tag: "verse - two guests, a breathless nerdy male voice then a bubbly influencer voice"
+    bars: 16
+    dynamics: 3
+    idea: "the guests give the game away; the image is the planet as a client"
+    lyrics: |
+      Doc Rory Mair, I'm the man with the stamp
+      Call a bog a forest and a puddle a swamp
+      Fee's in advance and the science is flexible
+      Planet's a client and the client's always respectable
+
+      Hi guys, it's Tamsin, I'm literally obsessed
+      Beavers and a sauna and a forty-quid rest
+      Book the glamping pods while the locals are asleep
+      Wellness in the wilderness, the wilderness is cheap
+  - name: chorus 2
+    tag: "chorus - cool half-sung female hook, gospel choir, bell synth"
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Natural capital
+      Every hill's a bank and the deer can sing
+      Natural capital
+      Greenest thing in Scotland and it's paved with gold
+  - name: bridge
+    tag: "bridge - music drops to a single uneasy organ chord, whispered, hold music faint underneath"
+    bars: 8
+    dynamics: 1
+    idea: "the honest moment; the image is the same glen, renamed"
+    lyrics: |
+      They'll call it a land grab.
+      We call it a nature-based solution.
+      They'll call it a clearance.
+      We call it a transition.
+      Same glen. Same leaving.
+      Better branding.
+  - name: verse 3
+    tag: "verse - whispered female voice, strings return, colder"
+    bars: 12
+    dynamics: 3
+    idea: "the exit plan, already written; foreshadows Exit Strategy"
+    lyrics: |
+      Tax relief by breakfast and a grant by lunch
+      Credits by teatime, and the village? Have a brunch
+      Ninety-nine years and a covenant tight
+      Hill's off limits to the walkers at night
+      And in five or six years when the numbers are done
+      I'll sell it again to the next one along
+  - name: final chorus
+    tag: "final chorus - biggest, choir, strings, bell synth, then everything stops for a whisper"
+    bars: 10
+    dynamics: 5
+    lyrics: |
+      Natural capital
+      Every hill's a bank and the deer can sing
+      Natural capital
+      Greenest thing in Scotland and it's paved with gold
+      Natural capital
+      Settlement's due Friday
+
+ending: "The choir cuts out, she whispers the Friday line with nothing under it, then one Rhodes F major 7 chord and a single champagne clink."
+
+caption: >-
+  luxurious smooth soul pop with a slow trap groove, beautiful, wealthy and empty, whispered close-mic English
+  female spoken word verses, cool half-sung female chorus hook, soft Rhodes electric piano, lush expensive string
+  section, glassy bell synth melody, clean deep sub bass, soft clean drums and finger snaps, gospel choir on the
+  chorus, a two-note bagpipe sting used like a jingle, champagne glass clinks, a breathless nerdy male guest and a
+  bubbly influencer guest in the second verse, the bridge drops to one uneasy organ chord, ends on a whisper and a
+  single electric piano chord, clean polished mix, 92 bpm
+
+lyric_audit:
+  before: "Five voices in one verse (Rory, Grid Man, Tamsin and the lord) and three verses that all listed scams. 'Ka-ching' and 'Sold' ad-libs on every chorus."
+  changes:
+    - "One idea per verse - the product, the guests, the exit plan."
+    - "Two guests instead of four; the Grid Man and the lord move to Exit Strategy and Ermine and Ink, which are their worlds."
+    - "Verse 3 now foreshadows the sale in Exit Strategy instead of listing more scams."
+    - "Bracketed ad-libs removed (they read as stage directions on the laptop); the bell synth plays the money theme instead."
+    - "'Settlement's due Friday' is sung inside the final chorus, not a spoken outro."
+  scores_after: {character_voice: 5, narrative: 4, imagery: 4, singability: 4, hook: 5}

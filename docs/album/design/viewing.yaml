@@ -1,0 +1,75 @@
+# Song Design: Viewing by Appointment Only (track 2, skit). Format: docs/song-design/README.md
+slug: viewing
+title: Viewing by Appointment Only
+version: 1
+approach: "dark comedy monologue - an estate agent's video tour that says too much"
+identity: "Cheerful, oblivious, and the first appearance of the hold music, played completely straight."
+story_beat: "The glen is for sale and nobody local was asked."
+
+render:
+  bpm: 100
+  key: F major
+  timesig: "4"
+  seconds: 55
+
+palette:
+  world: "Property brochure. Bright, cheap, smiling."
+  lead: "soft electric piano playing the hold music tune"
+  secondary: "light bossa nova guitar"
+  rhythm: "brushed bossa nova shuffle, very soft"
+  colour: "a little vibraphone"
+  left_out: "pipes (the prologue's pipe has just been cut off), drums with weight, bass you can feel, anything Scottish."
+
+roles:
+  - {instrument: electric piano, job: "the hold music melody, played straight and cheerful, over and over", enters: intro, leaves: end}
+  - {instrument: bossa guitar and brushes, job: "the lounge groove, never changes", enters: intro, leaves: end}
+  - {instrument: estate agent voice, job: "spoken, bright, over the music", enters: verse, leaves: end}
+
+harmony:
+  all: "F, D minor, B flat, C on loop, the hold music's own chords"
+  ending: "the loop simply stops on the C chord, unresolved, as if someone hung up"
+
+motifs:
+  - "hold music: first appearance, exactly as written in the motif library; it will come back in Natural Capital, Sunshine Trust, Exit Strategy and, unchanged, at the end of We Bought the Hill"
+
+sections:
+  - name: intro
+    tag: "intro - cheerful hold music, electric piano and bossa guitar"
+    bars: 2
+    dynamics: 2
+    lyrics: ""
+  - name: verse
+    tag: "verse - cheerful English male voiceover, spoken, music underneath"
+    bars: 16
+    dynamics: 2
+    idea: "the sales pitch; the image is the village listed like a feature that isn't included"
+    lyrics: |
+      Hello, and welcome to Glen Corran.
+      Forty thousand acres of unspoilt Highland,
+      very lightly peopled.
+      To your left, a loch. Fishing rights included.
+      To your right, a village. Not included,
+      but very quiet, we're told.
+      Wonderful views. Tremendous natural capital.
+      Viewing by appointment only.
+      Offers over... well. Make us an offer.
+  - name: outro
+    tag: "outro - hold music stops dead on a chord"
+    bars: 1
+    dynamics: 2
+    lyrics: ""
+
+ending: "The hold music stops dead mid-loop on its fourth chord. No glitch: just cut, like a phone line."
+
+caption: >-
+  cheerful estate agent property video, spoken word, bright smiling English male voiceover, smooth corporate hold
+  music, soft electric piano playing a simple happy melody, light bossa nova guitar, soft brushed shuffle,
+  vibraphone, cheap and cheerful, no vocals sung, the music stops suddenly at the end, clean polished mix, 100 bpm
+
+lyric_audit:
+  before: "Already tight and funny. Began with a pipe lament (the prologue already ends on one) and ended with glitch."
+  changes:
+    - "Pipe removed: the prologue's pipe is cut off, and this track answers it with the hold music in the same silence."
+    - "Glitch ending replaced by a clean stop, so the hold music is heard plainly, as the motif library intends."
+    - "Lyric unchanged apart from tightening the 'sporting estate' line."
+  scores_after: {character_voice: 5, narrative: 3, imagery: 4, singability: 3, hook: 4}

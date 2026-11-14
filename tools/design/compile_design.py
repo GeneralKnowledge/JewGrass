@@ -31,6 +31,14 @@ def compile_design(path, out_root="build/design"):
     if str(r["timesig"]) not in ("2", "3", "4", "6"):
         problems.append("timesig must be 2, 3, 4 or 6 (ACE-Step codes)")
 
+    # Phrases that ACE-Step renders as hiss or static (blind A/B, Nov 14): keep them out of captions and tags.
+    banned = ["crackl", "gramophone", "vinyl", "tape hiss", "hiss", "static", "lo-fi", "lofi", "raw mix",
+              "typewriter clacks", "radio noise", "white noise", "glitch noise"]
+    alltext = (caption + " " + " ".join(s["tag"] for s in d["sections"])).lower()
+    for b in banned:
+        if b in alltext:
+            problems.append(f"banned phrase '{b}' (renders as static)")
+
     blocks = []
     for s in d["sections"]:
         tag = s["tag"].strip()

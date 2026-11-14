@@ -23,7 +23,7 @@ palette:
   left_out: banjo, fiddle, nu-metal guitars, bagpipes, constant 808. Nothing about this office is Highland.
 
 roles:
-  - {instrument: woodblock, typewriter bell and rubber stamp, job: "accents on the punchlines; the woodblock carries the backbeat", enters: intro, leaves: never}
+  - {instrument: "woodblock, typewriter bell and rubber stamp", job: "accents on the punchlines; the woodblock carries the backbeat", enters: intro, leaves: never}
   - {instrument: harpsichord, job: "the riff, and the four-note money flourish whenever a company is made", enters: intro, leaves: never}
   - {instrument: tuba, job: "walking bass line, falling C Bb Ab G", enters: verse 1, leaves: final stamp}
   - {instrument: pizzicato strings, job: "chugging eighth notes under the patter", enters: verse 1, leaves: final chord}
