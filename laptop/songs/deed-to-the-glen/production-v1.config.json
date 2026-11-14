@@ -1,0 +1,16 @@
+{
+  "original": "40-edits/outro/repaint_219.64-240_8003.wav",
+  "analysis": "10-analysis/analysis-v2-8003.json",
+  "stems": {
+    "vocals": "20-stems/bs-roformer-v2/repaint_219.64-240_8003_(Vocals)_model_bs_roformer_ep_317_sdr_12.wav",
+    "drums": "20-stems/demucs/repaint_219.64-240_8003_(Instrumental)_model_bs_roformer_ep_317_sdr_12_(Drums)_htdemucs_6s.wav",
+    "bass": "20-stems/demucs/repaint_219.64-240_8003_(Instrumental)_model_bs_roformer_ep_317_sdr_12_(Bass)_htdemucs_6s.wav",
+    "guitar": "20-stems/demucs/repaint_219.64-240_8003_(Instrumental)_model_bs_roformer_ep_317_sdr_12_(Guitar)_htdemucs_6s.wav",
+    "piano": "20-stems/demucs/repaint_219.64-240_8003_(Instrumental)_model_bs_roformer_ep_317_sdr_12_(Piano)_htdemucs_6s.wav",
+    "other": "20-stems/demucs/repaint_219.64-240_8003_(Instrumental)_model_bs_roformer_ep_317_sdr_12_(Other)_htdemucs_6s.wav"
+  },
+  "output": "60-master/production-v1.wav",
+  "reference_master": "60-master/pedalboard-v2.wav",
+  "sections": null,
+  "overrides": {}
+}

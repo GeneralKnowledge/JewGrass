@@ -39,12 +39,14 @@ layout below. Secrets and IP addresses have been removed.
 | `tools/repaint_check.py` | Null test outside a repaint window, change inside, seam levels |
 | `tools/master.py` | Pedalboard master to -14 LUFS / -1 dBTP, plus Matchering against a reference |
 | `tools/stem_master.py` | Process vocal and instrumental stems separately, then remix (master afterwards with `master.py`) |
+| `tools/produce.py` | Full stem-based production pass: Demucs stems, measured per-stem processing, vocal doubles and octave, sidechain, gentler master, report. Config example in `songs/deed-to-the-glen/` |
 | `systemd/claude-remote-control.service` | Optional user unit so Remote Control restarts by itself (written, not enabled) |
 | `systemd/wifi-powersave-off.sh` | Optional, needs sudo, not applied: turn Wi-Fi power saving off |
 | `NOTES.md` | Standing preferences for new songs |
+| `songs/deed-to-the-glen/production-v1.config*.json` | `produce.py` config for Glen, and the sections it detected |
 | `songs/swim-at-your-own-risk/caption.txt` | Example caption. The lyrics are in [`docs/lyrics.md`](../docs/lyrics.md) |
 
-GPU jobs run one at a time: `flock ~/band/.gpu.lock ~/band/heavy.sh ...`.
+Every heavy job, GPU or CPU, runs one at a time: `flock ~/band/.gpu.lock ~/band/heavy.sh ...`. On the laptop, `heavy.sh` now also wraps the job in a systemd user scope (CPUQuota=500%, MemoryMax=6G, 2 GB of swap, 6 threads); the copy here is the earlier version.
 
 ## Installing the tool venvs (uv, Python 3.12)
 
