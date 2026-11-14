@@ -12,7 +12,7 @@ OUT_DIR/
                               Ableton, Bitwig, Logic, MuseScore...)
   midi/NN <Track>.mid         one file per part, same timing
   audio/                      reference mix and stems (copied, only if the arrangement has them)
-  preview/midi-sketch.mp3     the MIDI played by a tiny built-in synth (with --preview)
+  preview/midi-preview.mp3    the MIDI played through a General MIDI SoundFont (with --preview)
   lyrics.txt, sections.csv, arrangement.json, README.txt
 
 Positions: everything is shifted by whole "lead-in" bars when the reference
@@ -193,8 +193,8 @@ def write_rpp(arr, out_dir, lead, audio_files):
 
     # reference audio and stems, positioned so beat 0 lines up with the lead-in
     audio_pos = sec(lead) - (arr.get("audio_offset_seconds") or 0.0)
-    for name, rel, dur, mute in audio_files:
-        L += _track(name, [_item(audio_pos, dur, name, _audio_source(rel))], mute=mute)
+    for name, rel, dur, mute, *pos in audio_files:      # pos given: already on the project timeline
+        L += _track(name, [_item(pos[0] if pos else audio_pos, dur, name, _audio_source(rel))], mute=mute)
 
     parts = [t for t in arr["tracks"] if t.get("clips")]
     for i, tr in enumerate(parts):
@@ -268,21 +268,19 @@ def export(arr_path, out_dir, preview=False):
             f.write(f"[{s['name']}]\n{s.get('lyrics') or ''}\n\n")
 
     if preview:
-        import numpy as np
+        import subprocess
         import synth
-        mix = None
-        for t in arr["tracks"]:
-            if t.get("clips"):
-                y = synth.render_track(arr, t)
-                mix = y if mix is None else mix + y
-        if mix is not None:
+        sf2 = synth.default_soundfont()
+        if sf2:
+            y = synth.render_sf2(arr, sf2, lead_beats=lead)
             os.makedirs(os.path.join(out_dir, "preview"), exist_ok=True)
-            pad = np.zeros(int(A.beat_to_sec(arr, lead) * synth.SR))
-            wav = os.path.join(out_dir, "preview", "midi-sketch.wav")
-            synth.write_wav(wav, np.concatenate([pad, mix]))
-            import subprocess
+            wav = os.path.join(out_dir, "preview", "midi-preview.wav")
+            synth.write_wav(wav, y)
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", wav, "-b:a", "192k", wav[:-4] + ".mp3"], check=True)
             os.remove(wav)
+            # also as a muted audio track in the REAPER project, so the MIDI can be heard before instruments exist
+            audio_files.append(("MIDI preview (GM SoundFont)", "preview/midi-preview.mp3", len(y) / synth.SR, True, 0.0))
+            rpp = write_rpp(arr, out_dir, lead, audio_files)
 
     write_readme(arr, out_dir, lead, audio_files)
     return rpp
@@ -311,7 +309,7 @@ def write_readme(arr, out_dir, lead, audio_files):
     lines += ["Tracks:"]
     for t in arr["tracks"]:
         lines.append(f"  {t['name']:<14} {t['origin']:<11} {t['instrument']['name']}. {t.get('notes', '')}")
-    for name, rel, _, mute in audio_files:
+    for name, rel, _, mute, *_ in audio_files:
         lines.append(f"  {name:<14} audio       {rel}{' (muted: unmute to compare)' if mute else ''}")
     open(os.path.join(out_dir, "README.txt"), "w").write("\n".join(lines) + "\n")
 

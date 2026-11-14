@@ -55,3 +55,52 @@ def write_wav(path, y):
     import soundfile as sf
     peak = np.max(np.abs(y)) or 1.0
     sf.write(path, (y / peak * 0.8).astype(np.float32), SR, subtype="PCM_16")
+
+
+# ---------------------------------------------------------------- SoundFont render
+
+def default_soundfont():
+    """TimGM6mb.sf2 (GPL-2), a small General MIDI SoundFont that ships inside pretty_midi."""
+    import importlib.util
+    import os
+    spec = importlib.util.find_spec("pretty_midi")
+    if spec and spec.origin:
+        p = os.path.join(os.path.dirname(spec.origin), "TimGM6mb.sf2")
+        if os.path.exists(p):
+            return p
+    return None
+
+
+def render_sf2(arr, sf2, tracks=None, lead_beats=0.0, tail_sec=3.0):
+    """Render the arrangement's MIDI through a General MIDI SoundFont (tinysoundfont). Stereo float32."""
+    import tinysoundfont as tsf
+    syn = tsf.Synth(samplerate=SR, gain=-6)
+    sfid = syn.sfload(sf2)
+    events = []                                   # (seconds, order, kind, ch, note, vel)
+    parts = [t for t in arr["tracks"] if t.get("clips")]
+    for i, tr in enumerate(parts):
+        if tracks and tr["name"] not in tracks:
+            continue
+        drums = tr["instrument"].get("drums")
+        ch = 9 if drums else (i % 15 if i % 15 < 9 else i % 15 + 1)
+        syn.program_select(ch, sfid, 128 if drums else 0, 0 if drums else tr["instrument"]["program"],
+                           is_drums=bool(drums))
+        for c in tr["clips"]:
+            for s, d, p, v in c["notes"]:
+                t0 = A.beat_to_sec(arr, lead_beats + c["start"] + s)
+                events.append((t0, 1, "on", ch, p, v))
+                events.append((A.beat_to_sec(arr, lead_beats + c["start"] + s + d), 0, "off", ch, p, 0))
+    events.sort()
+    end = (events[-1][0] if events else 0) + tail_sec
+    out = np.zeros((int(end * SR), 2), dtype=np.float32)
+    pos = 0
+    for t, _, kind, ch, p, v in events + [(end, 2, "end", 0, 0, 0)]:
+        n = int(t * SR) - pos
+        if n > 0:
+            out[pos:pos + n] = np.frombuffer(syn.generate(n), dtype=np.float32).reshape(-1, 2)
+            pos += n
+        if kind == "on":
+            syn.noteon(ch, p, v)
+        elif kind == "off":
+            syn.noteoff(ch, p)
+    return out
