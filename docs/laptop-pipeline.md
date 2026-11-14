@@ -62,7 +62,7 @@ The best take is the one with no gaps, a steady tempo and the vocal parts presen
 ## 4. Repaint (fix a section without regenerating the song)
 
 ```
-repaint.py  <song.wav> <start-s> <end-s> <seed> <caption> ...
+cd ~/band/ACE-Step-1.5 && uv run --no-sync python ../repaint.py SRC.wav caption.txt lyrics.txt BPM START END OUT_DIR SEED[,SEED...]
 ```
 
 - Uses ACE-Step's `task_type=repaint` on a full 4-minute song.
