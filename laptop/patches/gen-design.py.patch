@@ -1,0 +1,30 @@
+--- laptop/gen.py (after gen.py.patch)	2026-11-13 11:24:59.125318725 +0000
++++ laptop/gen-design.py	2026-11-14 09:55:47.489763569 +0000
+@@ -9,6 +9,8 @@
+                         (fp16 compute gives NaN latents on Pascal). original: 0
+   BAND_DIT_DIRECT=1     load DiT weights straight onto the GPU, no full CPU copy. original: 0
+   BAND_OFFLOAD_DIT=0    keep the DiT on the GPU; moving it back to 7.6 GB RAM stalls. original: 1
++  BAND_KEY=""           musical key passed to ACE-Step as keyscale, e.g. "C minor" ("" = auto). gen-design.py only.
++  BAND_TIMESIG=""       time signature code: 2, 3, 4 or 6 (6 = 6/8) ("" = auto). gen-design.py only.
+   BAND_ATTN=sdpa        DiT attention backend after load. sdpa uses PyTorch's memory-efficient kernel
+                         (linear memory in length); eager builds the full attention matrix (quadratic),
+                         which ACE-Step picks on Pascal only to dodge fp16 softmax overflow. original: eager
+@@ -94,7 +96,8 @@
+ bpm = int(sys.argv[6]) if len(sys.argv) > 6 and sys.argv[6] else None
+ out_dir = os.path.expanduser("~/band/outputs")
+ os.makedirs(out_dir, exist_ok=True)
+-print(f"BAND settings: FP32_COMPUTE={FP32_COMPUTE} DIT_DIRECT={DIT_DIRECT} OFFLOAD_DIT={OFFLOAD_DIT} ATTN={ATTN}", flush=True)
++print(f"BAND settings: FP32_COMPUTE={FP32_COMPUTE} DIT_DIRECT={DIT_DIRECT} OFFLOAD_DIT={OFFLOAD_DIT} ATTN={ATTN} "
++      f"KEY={os.environ.get('BAND_KEY', '')!r} TIMESIG={os.environ.get('BAND_TIMESIG', '')!r}", flush=True)
+ 
+ t0 = time.time()
+ dit = AceStepHandler()
+@@ -124,6 +127,8 @@
+     caption=open(caption_file).read().strip(),
+     lyrics=open(lyrics_file).read().strip(),
+     bpm=bpm,
++    keyscale=os.environ.get("BAND_KEY", ""),
++    timesignature=os.environ.get("BAND_TIMESIG", ""),
+     duration=float(seconds),
+     seed=int(seed),
+     shift=3.0,

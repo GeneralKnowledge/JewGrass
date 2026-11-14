@@ -1,0 +1,148 @@
+# Song Design: Brass Plate (track 7). Format: docs/song-design/README.md
+slug: brass-plate
+title: Brass Plate
+version: 1
+approach: dark comedy told as a story - one working day, three clock times, and the villain exposes himself
+identity: A theatrical, bureaucratic, slightly ridiculous patter song, where the office itself is the band.
+story_beat: How anonymous money hides in plain sight in Glasgow. Malky never asks who owns anything, until a rule change makes him find out it's him.
+
+render:
+  bpm: 112
+  key: C minor
+  timesig: "4"
+  seconds: 170
+
+palette:
+  world: Bureaucratic, theatrical, slightly ridiculous. The paperwork is the percussion.
+  lead: harpsichord riff (plays the money theme as a flourish)
+  secondary: pizzicato strings
+  rhythm: typewriter clacks, rubber stamp thuds on the backbeat, desk bell, crisp dry drums
+  bass: tuba, walking down C Bb Ab G like a pompous march
+  colour: muted brass stabs, sharp electronic synth stabs
+  weight: brass band and a heavy 808 hit, choruses only
+  left_out: banjo, fiddle, nu-metal guitars, bagpipes, constant 808. Nothing about this office is Highland.
+
+roles:
+  - {instrument: typewriter and rubber stamp, job: "the groove; the stamp lands on beats 2 and 4", enters: intro, leaves: never}
+  - {instrument: harpsichord, job: "the riff, and the four-note money flourish whenever a company is made", enters: intro, leaves: never}
+  - {instrument: tuba, job: "walking bass line, falling C Bb Ab G", enters: verse 1, leaves: final stamp}
+  - {instrument: pizzicato strings, job: "chugging eighth notes under the patter", enters: verse 1, leaves: final chord}
+  - {instrument: brass section and 808 hit, job: "weight on chorus downbeats only", enters: chorus 1, leaves: after each chorus}
+  - {instrument: synth stabs, job: "punctuation on the punchlines", enters: verse 2, leaves: final chord}
+  - {instrument: gang vocal, job: "shouts \"Brass plate!\" in the chorus like an office choir", enters: chorus 1, leaves: final chorus}
+
+harmony:
+  verse: Cm Ab G7, over a bass falling C Bb Ab G (pompous lament bass)
+  chorus: Cm Fm G7 Cm, a brass stab on every change
+  verse_3: the corruption progression (Cm, Db, Cm, B diminished over a low C) when he finds his own name
+  ending: the last chorus ends on a C major chord (a comic "triumphant" major ending) and one stamp
+
+motifs:
+  - 'money theme: harpsichord flourish (C G Db C) after the line where each company gets made'
+  - 'corruption progression: under verse 3, the moment he reads his own name on the register'
+  - 'due Friday: folded into the last chorus as a gang shout, and this time the filing is his own'
+  - 'money trail: "the pound that paid the laird''s rent comes through my door at two"'
+
+sections:
+  - name: intro
+    tag: intro - typewriter rhythm alone, then harpsichord riff, desk bell
+    bars: 4
+    dynamics: 2
+    lyrics: |
+      Baird Formations, how can I help?
+  - name: verse 1
+    tag: verse - nine in the morning, fast cheeky patter, tuba and pizzicato
+    bars: 16
+    dynamics: 2
+    idea: what the business is; the image is four hundred companies living in one wee drawer
+    lyrics: |
+      Nine in the morning, kettle on, the vape shop's open below
+      Postie drags a sack up, says Malky, where's all this go
+      Four hundred companies living in one wee drawer
+      Nae staff, nae desks, nae carpet, just a letterbox and a door
+      I'm a landlord for paper, I'm a hotel for a name
+      Ye check in as a partnership, ye check out the same
+      I don't do the business, son, I'm only the address
+      The less I know the better, and I know a whole lot less
+  - name: chorus 1
+    tag: chorus - brass stabs, 808 hits, gang shout
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Brass plate! Shiny on the door
+      Four hundred companies and room for plenty more
+      Who owns the money? Naebody at all
+      Brass plate! Letterbox in the hall
+  - name: verse 2
+    tag: verse - twelve o'clock, the phone call, synth stabs on punchlines
+    bars: 16
+    dynamics: 3
+    idea: the glen deal arrives by phone and he refuses to hear who's in it; the image is him humming with his fingers in his ears
+    lyrics: |
+      Twelve o'clock, the phone goes, a voice like a gin and tonic
+      Darling, we need a partnership, and quickly, it's iconic
+      We're buying up a glen to save the planet. Lovely, hen
+      D'ye want to know the partners? Naw. Never. Then again
+      She tells me anyway, an oil man, a water man, a lord
+      I'm humming wi' my fingers in my ears, I'm stamping, I'm bored
+      The pound that paid the laird's rent comes through my door at two
+      And by quarter past it's sailing to an island. Toodle-oo
+  - name: chorus 2
+    tag: chorus - brass stabs, 808 hits, gang shout
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Brass plate! Shiny on the door
+      Four hundred companies and room for plenty more
+      Who owns the money? Naebody at all
+      Brass plate! Letterbox in the hall
+  - name: verse 3
+    tag: verse - four o'clock, drums drop out, dark uneasy strings, he slows down
+    bars: 16
+    dynamics: 2
+    idea: the twist; the government wants a real name, the only human in the room is Malky, so he now owns a glen
+    lyrics: |
+      Four o'clock, an email, the government's changed the law
+      Ye need a real live human name on every company in the drawer
+      Well naebody's volunteering, so I look around the room
+      There's only one human in it, and the human's me. Oh, doom
+      Now I own Glen Corran and a loch I've never seen
+      Half a tanker and a hospital contract and a hedge fund in between
+      And there's a lassie at the door, says she's frae the paper, aye
+      Are you Malcolm Baird? Naw, hen. Never heard of the guy
+  - name: final chorus
+    tag: final chorus - full brass band, everything in, gang shout
+    bars: 10
+    dynamics: 5
+    lyrics: |
+      Brass plate! Shiny on the door
+      Four hundred companies, and they're all mine, for sure
+      Who owns the money? I'd rather no say
+      Brass plate! Filing's due Friday
+      Mine.
+  - name: ending
+    tag: outro - one triumphant major brass chord, one rubber stamp
+    bars: 1
+    dynamics: 5
+    lyrics: ""
+
+ending: >-
+  The gang shouts "Filing's due Friday", Malky answers "Mine." in a small voice, and the band hits one
+  pompous C major brass chord with a single rubber stamp thud. Silence. A comic full stop, not a fade.
+
+caption: >-
+  theatrical comic baroque hip hop, fast cheeky Glaswegian male rap, Scottish accent, playful patter,
+  bureaucratic and slightly ridiculous, typewriter clacks and rubber stamp thuds as the beat, harpsichord riff,
+  pizzicato strings, tuba bass line, desk bell dings, crisp dry drums, sharp electronic synth stabs, muted brass
+  stabs, brass band and heavy 808 hits only on the chorus, office gang chant chorus, dark uneasy strings in the
+  third verse, last chorus biggest with full brass, ends on one triumphant major brass chord and a stamp, 112 bpm
+
+lyric_audit:
+  before: Funny, but a list of jokes. Verse 2 crammed the rule change, Switzerland, Fenella's call and the investors into ten lines. Ended on a spoken "Filing's due Friday" tag like every other villain.
+  changes:
+    - 'A story with a clock - 9am (the business), noon (the glen deal), 4pm (the twist). One idea per verse.'
+    - 'Malky exposes himself - the rule change forces a real name onto the register and it''s his.'
+    - 'Morag appears at his door, so the song moves the album''s plot instead of pausing it.'
+    - '"Due Friday" moves into the last chorus and turns on him ("Mine."), not a spoken tag.'
+    - 'Kept the best lines - letterbox in the hall, brass plate chant, "the less I know".'
+  scores_after: {character_voice: 5, narrative: 4, imagery: 4, singability: 4, hook: 5}

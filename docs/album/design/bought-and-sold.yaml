@@ -1,0 +1,183 @@
+# Song Design: Bought and Sold (track 13). Format: docs/song-design/README.md
+slug: bought-and-sold
+title: Bought and Sold
+version: 1
+approach: spoken documentary verses (no forced rhymes, room between lines) with a protest-anthem chorus the audience can sing
+identity: Old, monumental and angry. The band steps out of the story to give the history lesson, one century per verse.
+story_beat: The album's thesis. The listener sees the whole system - this has happened before, with different paperwork.
+
+render:
+  bpm: 84
+  key: B minor          # inside the pipe scale, so the lament and the pipe chorus doubling don't clash
+  timesig: "4"
+  seconds: 270
+
+palette:
+  world: Old, monumental, angry. Pipes, strings and a marching drum, getting more distorted as history reaches the present.
+  lead: solo Highland bagpipe (the ownership theme)
+  secondary: low orchestral strings and cello drones
+  rhythm: military marching snare and a deep bass drum; heavy hip hop drums only from verse 2
+  bass: low strings in the verses; booming 808 only on chorus downbeats
+  colour: crackling old gramophone texture that grows more distorted each verse
+  weight: deep male choir and gang vocals plus heavy distorted guitars, choruses only
+  left_out: banjo and fiddle loops, glitch stutters, trap hi-hats. The band's usual country trap sound is held back so this song sounds like nothing else on the album.
+
+roles:
+  - {instrument: solo bagpipe, job: "plays the ownership theme as a lament in the intro, doubles the chorus melody, has the last note", enters: intro, leaves: final note}
+  - {instrument: low strings and cello, job: "drones and slow chords under the spoken verses", enters: intro, leaves: final chorus}
+  - {instrument: marching snare and bass drum, job: "the pulse of verse 1", enters: verse 1, leaves: bridge}
+  - {instrument: heavy hip hop drums, job: "take over from the march in verse 2 (history speeding up)", enters: verse 2, leaves: bridge}
+  - {instrument: distorted guitars and 808, job: "weight in choruses only", enters: chorus 1, leaves: outro}
+  - {instrument: male choir and gang vocals, job: "sing the chorus with the crowd", enters: chorus 1, leaves: outro}
+  - {instrument: female vocal, job: "sings the Burns verse alone over pipe drone", enters: bridge, leaves: bridge}
+  - {instrument: gramophone crackle, job: "age; gets more distorted with each verse", enters: intro, leaves: final chorus}
+
+harmony:
+  verse: Bm held, Bm, G, A (static, leaves room for the words)
+  chorus: G A Bm, G A Bm, then G A D on "receipt" (the only bright chord, and it's sarcastic)
+  bridge: D A Bm G (the Burns lines get the major side)
+  breakdown: Bm pedal, drums and voices only
+  ending: the pipe alone plays the ownership phrase and stops on a held A, unresolved. Gav's Song starts on D, which resolves it.
+
+motifs:
+  - 'ownership theme: pipe lament in the intro; the last sound of the song is the same phrase, left hanging'
+  - '"bought and sold": the Burns line from the prologue becomes the chorus'
+  - 'due Friday: "They''ve had a Friday every week for three hundred years, and every week it''s us that pays." The joke stops being funny here.'
+  - 'village seed: the breakdown ends with the crowd answering "We will." (pays off in the finale)'
+
+sections:
+  - name: intro
+    tag: intro - solo bagpipe lament, low strings, wind, gramophone crackle
+    bars: 8
+    dynamics: 1
+    lyrics: |
+      They tell ye it's new. It's no new.
+      Sit doon. This is the long version.
+  - name: verse 1
+    tag: verse - Darien, measured spoken rap, marching snare and low strings, lots of space
+    bars: 12
+    dynamics: 2
+    idea: Darien and the Union; the image is the ships coming hame light
+    lyrics: |
+      Sixteen ninety-eight. Five ships oot o' Leith.
+      Half the coin in Scotland in the hold beneath.
+      They sold it as a garden. It was fever. It was mud.
+      And the ships came hame light.
+
+      Nine years on, the men who'd lost the most
+      Got their money back, a pen, and a parliament to close.
+      They called it the Equivalent.
+      That's a lovely word for paid.
+  - name: chorus 1
+    tag: chorus - male choir and gang vocals, pipes double the melody, guitars and 808 hit
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Bought and sold! (Bought and sold!)
+      For somebody else's gold
+      Same glen, same leaving, better branding on the deed
+      They don't burn the roofs now
+      They just send ye the receipt
+  - name: verse 2
+    tag: verse - the Clearances, heavy hip hop drums take over, more distorted crackle
+    bars: 12
+    dynamics: 3
+    idea: the Clearances; the image is a family on the shingle with a Bible and a kist, watching their roof burn
+    lyrics: |
+      Then came the sheep.
+      The factor wi' a torch and a list.
+      A family on the shingle wi' a Bible and a kist,
+      Watching their roof go up behind them,
+      Watching for the boat.
+
+      A hundred years later, walkers come up the glen
+      And call it wilderness.
+      It wasnae empty. It was emptied.
+  - name: chorus 2
+    tag: chorus - male choir and gang vocals, pipes double the melody, guitars and 808 hit
+    bars: 8
+    dynamics: 4
+    lyrics: |
+      Bought and sold! (Bought and sold!)
+      For somebody else's gold
+      Same glen, same leaving, better branding on the deed
+      They don't burn the roofs now
+      They just send ye the receipt
+  - name: bridge
+    tag: bridge - beat drops out, haunting female vocal, pipe drone, choir hum
+    bars: 8
+    dynamics: 1
+    lyrics: |
+      Fareweel to a' our Scottish fame
+      Fareweel our ancient glory
+      We were bought and sold, we were bought and sold
+      And they tell us the same old story
+  - name: verse 3
+    tag: verse - now, angrier, drums back, distorted crackle at its worst
+    bars: 12
+    dynamics: 4
+    idea: the present; the image is a sitka forest planted on the bones of a croft, and the deed in a letterbox
+    lyrics: |
+      Nobody needs a torch now.
+      A fund in the City buys the hill for the air above it,
+      Plants a sitka forest on the bones of a croft,
+      And the deed goes to a letterbox in Glasgow
+      Above a vape shop, wi' four hundred other names.
+
+      They've had a Friday every week for three hundred years.
+      And every week, it's us that pays.
+  - name: breakdown
+    tag: breakdown - marching drum and chant only, call and response
+    bars: 8
+    dynamics: 3
+    lyrics: |
+      Who owns the hill? (No you!)
+      Who owns the water? (No you!)
+      Who owns the oil? (No you!)
+      Who owns the law? (No you!)
+      Who owns the hill?
+      We will.
+  - name: final chorus
+    tag: final chorus - everything, biggest, crowd singing
+    bars: 12
+    dynamics: 5
+    lyrics: |
+      Bought and sold! (Bought and sold!)
+      For somebody else's gold
+      Same glen, same leaving, better branding on the deed
+      They don't burn the roofs now
+      They just send ye the receipt
+      Bought and sold! (Bought and sold!)
+      And the story's never told
+      They don't burn the roofs now
+      They just send ye the receipt
+  - name: outro
+    tag: outro - everything stops, solo bagpipe alone, ends on one long unresolved note
+    bars: 4
+    dynamics: 1
+    lyrics: ""
+
+ending: >-
+  The final chorus cuts dead on "receipt". The solo pipe plays the ownership phrase alone, with no drone
+  under it, and holds its last note (A) without resolving. Silence. The next track, Gav's Song, opens on D,
+  which is where that note wants to go.
+
+caption: >-
+  monumental Scottish protest hip hop, old and angry, solo Highland bagpipe lament intro, low orchestral strings
+  and cello drones, military marching snare and deep bass drum, measured angry Scottish male rap, half spoken,
+  space between the lines, heavy hip hop drums from the second verse, deep male choir and gang vocals on the
+  chorus with the bagpipe doubling the melody, heavy distorted guitars and booming 808 only in the choruses,
+  crackling old gramophone texture growing more distorted through the song, haunting female vocal bridge over a
+  pipe drone, breakdown of marching drum and call and response chant, ends with the solo bagpipe alone holding
+  one long unresolved note, 84 bpm
+
+lyric_audit:
+  before: Clever but overstuffed - Darien, the Union, the Clearances, the oil report, limited partnerships, pandemic contracts and offshore trusts in three 12-line verses of forced couplets. The best line was buried.
+  changes:
+    - 'Three verses, three centuries - Darien and the Union (1698-1707), the Clearances, now. One image each - ships hame light, the Bible and the kist, sitka on a croft.'
+    - 'The oil, the pandemic money and the offshore trust are left to their own songs (Cold Hame, Fast Lane, Sunshine Trust) and survive here as one word each in the breakdown.'
+    - 'No forced couplets - the verses are spoken documentary with blank space, and the rhymes are saved for the chorus.'
+    - 'New line that gives the album''s argument room to land - "It wasnae empty. It was emptied."'
+    - '"Due Friday" turns serious - three hundred years of Fridays.'
+    - 'The spoken outro ("Next track.") is gone; the pipe has the last word.'
+  scores_after: {character_voice: 4, narrative: 5, imagery: 5, singability: 4, hook: 5}

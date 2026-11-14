@@ -60,6 +60,7 @@ The money-trail motif: in each villain's song, one line says where "the pound" g
   3. **The phone line.** Every voicemail has the same beep and hiss.
   4. **"Due Friday."** Every villain has one. In the finale the village answers it.
   5. **"Bought and sold."** The Burns line from the prologue comes back in the bridge of *Bought and Sold* and as the gang chant in *Exit Strategy*.
+- **Song Design.** Per-song composition plans, the motif library (with real notes) and the lyric edit live in [`song-design/`](song-design/README.md).
 - **Bagpipe captions.** Write "brief Highland bagpipe drone in the intro" or "solo bagpipe lament, sparse", never plain "bagpipes". Pipe songs work best in B-flat or A.
 
 ## Track by track (16 tracks, about 54 minutes)
