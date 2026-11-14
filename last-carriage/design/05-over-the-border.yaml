@@ -1,0 +1,72 @@
+# LAST CARRIAGE Song Design: Over the Border (track 05, round 1).
+slug: lastcarriage-over-the-border
+title: Over the Border
+order: 5
+family: glide
+version: 1
+role: The lift. Crossing into Scotland in the dark; the most melodic, highest-energy track. From the seed mix's 7:04-10:54 stretch (F# minor, its clearest key, bright pitch-gliding lead).
+test: Does the gliding lead carry a whole track as a hook, with no voice doing the work?
+
+render:
+  bpm: 118
+  key: F# minor
+  timesig: "4"
+  seconds: 200        # 96 bars at 118 is 195 s
+
+palette:
+  lead: bright pitch-gliding synth lead, the glide motif (bend up a fourth, fall back), wider each time
+  bed: warm layered synth chords pumping gently with the kick
+  bass: steady driving eighth-note bass, the rails, never stops until the breakdown
+  drums: tight trap kick and snare, rolling hi-hats
+  voice: the hum, once, in the breakdown
+  left_out: piano, half-time drums, distorted bass
+
+harmony: F#m - D - A - E, one bar each; the breakdown sits on D - E for eight bars.
+drums: Kick on 1 and 3 with a ghost on the "and" of 4, snare on 2 and 4, hats in sixteenths with triplet rolls into every eighth bar.
+bass_movement: Driving eighths on the root, octave jump on beat 4; in the breakdown it stops dead and the sub holds.
+vocal_motif:
+  voice: hum
+  phrase: "Ooh"
+  treatments: [soft and high, doubling the glide lead's shape]
+the_moment: The breakdown. Drums and eighths stop, the wordless voice sings the glide shape once over held chords, then the full groove crashes back in with the lead an octave higher.
+
+sections:
+  - name: groove A
+    tag: instrumental, straight in, driving eighth-note bass, tight drums, gliding synth lead hook
+    bars: 16
+    performer: none
+  - name: groove B
+    tag: instrumental, lead glides wider, rolling hi-hats, warm synth chords pumping
+    bars: 16
+    performer: none
+  - name: peak 1
+    tag: instrumental, full energy, lead doubled an octave up, bass driving hard
+    bars: 16
+    performer: none
+  - name: breakdown
+    tag: breakdown - drums stop, held synth chords, soft high wordless female voice
+    bars: 8
+    performer: hum
+    lyrics: |
+      Ooh
+      Ooh, ooh
+      Ooh
+      Ah
+  - name: rebuild
+    tag: instrumental, eighth-note bass returns alone, drums build back in
+    bars: 8
+    performer: none
+  - name: peak 2
+    tag: instrumental, full groove crashes back, lead an octave higher, biggest moment
+    bars: 24
+    performer: none
+  - name: run out
+    tag: instrumental, drums drop away, bass eighths and the lead glide keep going
+    bars: 8
+    performer: none
+
+ending: Bass eighths and one last wide glide carry straight into Points Failure (segue).
+caption: >-
+  118 bpm, F# minor, uplifting and driving, a bright pitch-gliding synth lead that bends up and falls back as
+  the hook, steady eighth-note bass like rails underneath, rolling hi-hats, a breakdown with only held chords and
+  a soft high wordless female voice, then the groove crashes back bigger

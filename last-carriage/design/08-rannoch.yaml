@@ -1,0 +1,54 @@
+# LAST CARRIAGE Song Design: Rannoch (track 08, round 1).
+slug: lastcarriage-rannoch
+title: Rannoch
+order: 8
+family: pulse
+version: 1
+role: First light on the open moor. Lighter, hypnotic, the comedown before home. From the seed mix's 16:00-17:50 stretch (fast rising and falling arpeggio, around 103 bpm).
+test: Can a short, lighter track keep the album's weight in the sub while the top end opens up?
+
+render:
+  bpm: 104
+  key: E minor
+  timesig: "4"
+  seconds: 150        # 64 bars at 104 is 148 s
+
+palette:
+  lead: fast rising and falling synth arpeggio built from the departure figure, stretched over two octaves
+  bed: spacious warm synth pads that open up slowly, like light coming up
+  bass: warm sub-bass on the root, long notes, no glides
+  drums: soft steady kick, light hi-hats, a clap on 4 only in the second half
+  left_out: half-time drums, distorted bass, voice, any lead other than the arpeggio
+
+harmony: Em - Cmaj7 - G - D, two bars each; the last eight bars move to Dm to set up End of the Line.
+drums: Four-on-the-floor soft kick, closed hats on the offbeat; second half adds a clap on 4 and open hats on the "and" of 4.
+bass_movement: Long sub notes on each root; in the last eight bars it steps down E to D.
+the_moment: The last eight bars, where the chords turn from E minor to D minor and the arpeggio slows to half speed, arriving home.
+
+sections:
+  - name: arpeggio
+    tag: instrumental, straight in, fast synth arpeggio and soft kick, warm sub
+    bars: 16
+    performer: none
+  - name: opening up
+    tag: instrumental, spacious synth pads rise underneath, light hi-hats
+    bars: 16
+    performer: none
+  - name: full
+    tag: instrumental, clap on four, open hi-hats, arpeggio over two octaves, brightest point
+    bars: 16
+    performer: none
+  - name: thinning
+    tag: instrumental, drums drop to the kick, pads hold
+    bars: 8
+    performer: none
+  - name: turn home
+    tag: instrumental, chords turn to D minor, arpeggio slows to half speed
+    bars: 8
+    performer: none
+
+ending: The slowed arpeggio on D minor, which End of the Line picks up (segue).
+caption: >-
+  104 bpm, E minor, hypnotic and lighter, a fast rising and falling synth arpeggio over two octaves, soft steady
+  kick, spacious warm synth pads that open up slowly like light coming up, warm sub-bass, the last bars turn to
+  D minor and the arpeggio slows down

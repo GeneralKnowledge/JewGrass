@@ -1,0 +1,58 @@
+# LAST CARRIAGE Song Design: Beattock (track 04, round 1).
+slug: lastcarriage-beattock
+title: Beattock
+order: 4
+family: heavy
+version: 1
+role: The heaviest track. The long climb to the summit in the dark. From the seed mix's 4:47-7:04 stretch (E minor, half-time, loudest part).
+test: Is it massive and slow without turning into mud, and does it still feel like it is moving forward?
+
+render:
+  bpm: 76
+  key: E minor
+  timesig: "4"
+  seconds: 230        # 72 bars at 76 is 227 s
+
+palette:
+  lead: the departure figure, now in E minor, played low on a dark synth and climbing a step each section
+  bed: dark layered synth chords, very wide
+  bass: huge sub with gliding 808 notes that bend up into each chord change
+  drums: half-time snare on 3, rolling hi-hats that double up in the second climb
+  left_out: piano, voice, anything bright before the summit
+
+harmony: Em - C - Am - B (B major, pulling hard back to E minor), two bars each; the summit moves to G - D - Em.
+drums: Kick on 1 and the "and" of 2, snare on 3, hats in eighths rolling into thirty-seconds at the ends of phrases. Climb 2 adds a second kick on the "and" of 4.
+bass_movement: Sustained sub on the root, 808 glide up a fourth into every change; at the summit it holds one low E for eight bars.
+the_moment: The summit. Everything stops for one beat, then the chords lift to G major and the glide lead goes up an octave.
+
+sections:
+  - name: climb 1
+    tag: instrumental, straight in, half-time drums and huge sub, dark synth figure climbing
+    bars: 16
+    performer: none
+  - name: climb 2
+    tag: instrumental, hi-hats double up, gliding 808 bends into every chord, heavier
+    bars: 16
+    performer: none
+  - name: drop
+    tag: instrumental, drop to near silence, low sub swell and the synth figure alone
+    bars: 8
+    performer: none
+  - name: climb 3
+    tag: instrumental, full drums return harder, distorted mid-bass joins, synth figure higher
+    bars: 16
+    performer: none
+  - name: summit
+    tag: instrumental, one beat of silence then chords lift to major, glide lead an octave up
+    bars: 8
+    performer: none
+  - name: over the top
+    tag: instrumental, drums thin to kick and hats, sub holds one low note, synth figure hands over
+    bars: 8
+    performer: none
+
+ending: The synth figure on its own over the held low E, which becomes the first bar of Over the Border (segue, no fade to silence).
+caption: >-
+  76 bpm, E minor, slow and enormous, a dark synth figure that climbs a step every section, gliding 808 notes
+  bending up into each chord change, the music drops to near silence halfway then comes back harder, a lift to
+  a major chord near the end
