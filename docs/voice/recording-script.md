@@ -1,124 +1,111 @@
 # Voice recording script (short version, about 5 minutes)
 
-For training a voice model (RVC) on your own voice. About **5 minutes of clean
-reading** in total. That's on the low side for RVC but workable: it gives a
-usable model for speech and rap-style lines. If we later want it to hold sung
-notes better, you can add another 5 minutes and we retrain.
+For training a voice model (RVC) so that **your voice becomes the band's
+singing voice**. The plan: we keep generating the songs as now, then the model
+swaps the generated singer's voice for yours.
 
-No singing or rapping skill needed. Just read it in your own voice and accent.
+## You don't need to be able to sing
 
-## Before you start (quick)
+The model copies the **sound** of your voice (its tone and accent). The tune,
+timing and pitch all come from the generated vocal it's replacing. So the songs
+won't be out of tune just because you are.
 
-- **Phone is fine.** Voice memo app, best quality setting. About a hand's width
-  and a half (20–30 cm) from your mouth, slightly to the side. Same distance
-  throughout.
+What it does need is to have heard your voice **holding notes, high and low**.
+If it has only ever heard you talking, sung parts come out thin, wobbly or
+robotic, especially high notes. So in this script you'll hold notes and sing a
+few lines. Sing badly; that's fine. Wobbly and off-key is useful. Silent is not.
+
+**About length:** 5 minutes is the minimum that works. Expect a decent result on
+rap and low or mid singing, and some roughness on high or long held notes. If
+we want it better after the first try, record this script a second time on
+another day (10 minutes total) and I retrain. That's the biggest single
+improvement.
+
+## Before you start
+
+- **Phone is fine.** Voice memo app, best quality setting. Hold it 20–30 cm
+  from your mouth, slightly to the side. Same distance throughout.
 - **Quiet, soft room.** Bedroom with curtains and a duvet is ideal. No kitchen or
   bathroom (echo). Fans, TV and music off. Phone on airplane mode.
-- **Test the loud line first** (the shouts in Part 6). If it crackles, move the
-  phone back a bit and keep it there.
-- **One take per part.** Make a new recording for each part and name it with the
-  part number (`1-warmup`, `2-sentences`, ...). If you fluff a line, pause and
-  say it again. Don't restart; the bad bits get trimmed.
-- Sip water between parts. Leave a second of silence at the start of each file.
+- **No music playing out loud.** If you want a beat or a tune to follow, use
+  headphones, so it doesn't get into the recording.
+- **Test the loudest part first** (Part 6). If it crackles, move the phone back
+  a bit and keep it there.
+- **One recording per part**, named with the part number (`1-warmup`,
+  `2-notes`, ...). If you mess up, pause and carry on. Don't restart.
+- Warm up properly, sip water, and stop if your throat gets sore.
 
-## Part 1: Warm-up (about 30 seconds)
+## Part 1: Warm-up slides (about 45 seconds)
 
-Hold each sound for about 2 seconds:
+Slide on "aah" from your lowest comfortable note up to your highest and back
+down, slowly. Do it three times. Then the same on "oo", then on "ee".
+Going a bit croaky at the top is fine.
 
-> aah, ee, oo, oh, ay, mmm, sss, shh, rrr, lll
+## Part 2: Held notes (about 1 minute)
 
-Then slide on "aah" from your lowest comfortable note up to your highest and
-back down, once. It doesn't need to sound nice.
+Pick a low note, a middle note and a high-ish note (any notes, they don't have
+to match anything). On each of those three notes, hold each vowel for about
+3 seconds:
 
-## Part 2: Sentences (about 1 minute 30)
+> aah, ee, oo, oh, ay
 
-Natural pace, as if telling a pal:
+Then hum "mmm" on each note for 3 seconds.
+
+## Part 3: Spoken sentences (about 45 seconds)
+
+Natural pace, as if telling a pal. These cover the rest of the sounds in
+English and your accent:
 
 1. Grandad's rusty van broke down by the loch on a wet Thursday in June.
-2. She sells smoked fish and thick shortbread from a shed beside the pier.
-3. Which witch switched the watch on the window ledge at half past nine?
-4. A judge in a beige jacket measured the gorge with a plastic gauge.
-5. The thirsty farmer bought three thousand feathers for thirty pence.
-6. The ferry's cancelled again, so the whole island queues for the bus.
-7. It's a braw bright night, but the wind off the hill would cut ye in two.
-8. Pour the boiling water slowly; the yellow jug is very hot.
-9. Could you pass the cheese and pickle, and the big jar of mustard, please?
-10. Hush now, the wean's sleeping, and the radio's turned right down.
-11. Twelve, twenty, fifty-five, ninety-nine, a hundred, a thousand, a million.
-12. Is it Tuesday or Wednesday? I honestly couldnae tell you.
+2. Which witch switched the watch on the window ledge at half past nine?
+3. A judge in a beige jacket measured the gorge with a plastic gauge.
+4. The thirsty farmer bought three thousand feathers for thirty pence.
+5. It's a braw bright night, but the wind off the hill would cut ye in two.
+6. Could you pass the cheese and pickle, and the big jar of mustard, please?
+7. Hush now, the wean's sleeping, and the radio's turned right down.
+8. Is it Tuesday or Wednesday? I honestly couldnae tell you.
 
-## Part 3: The villain (about 45 seconds)
+## Part 4: Singing (about 1 minute 30)
 
-Read each line **twice**: first quiet and creepy, almost a whisper, then loud
-and showy like you're at a party.
+Sing these slowly to any simple tune you like (make one up). Stretch the long
+words out. Sing each verse **twice**: first quietly, then with full voice.
 
-> Raise a dram, gentlemen. To the glen my great-great-grandfather emptied, and every village that voted to let me keep it.
+> Bless the laird who owns the glen
+> Bless his hand and his fountain pen
+> We bow our heads and we pay the rent
+> And the Lord alone knows where the money went
 
-> Good evening, shareholders. Another record year. Bills up, profits up, morale... irrelevant.
+> We bought the hill! We bought the shore!
+> We bought the burn and the bothy door!
+> Every penny from a jam jar spill
+> Raise your glass, we bought the hill!
 
-> Do enjoy the scenery. Rent's due Friday.
+Then sing a song you know well, for about 30 seconds, with no backing track.
 
-## Part 4: In rhythm (about 30 seconds)
+## Part 5: Rap (about 45 seconds)
 
-Say this to a steady beat (tap your foot). Not rapping, just speaking in time,
-with attitude. Once laid back, once angry.
+Tap your foot or use a metronome at 140 BPM **in headphones**. Say it in time
+with attitude; it doesn't need to be good. Once laid back, once aggressive.
+
+> I own the flat that you rent and the bank with your loan
+> The water in your tap and the signal on your phone
+> Sewage in the river? That's a dividend, son
+> Fined a million quid and I made a hundred and one
 
 > Great-great-granddad cleared the glen for sheep
 > Burned the roofs so the tenants couldnae sleep
 > Put 'em on a boat with a Bible and a cough
 > Now I charge the tourists twelve quid to see where they set off
 
-## Part 5: Ewan's voicemails (about 1 minute 30)
+## Part 6: Chants and shouts (about 20 seconds)
 
-These go on the album as they are (tracks 4 and 6), so they do double duty.
-Ewan is a young crofter leaving messages for his sister Morag. Plain, natural,
-a bit fed up. Read them like a real voicemail: phone a bit closer than before.
-Do each one twice and we'll keep the better take. Don't say the bits in
-brackets.
+Like a crowd at a gig. Step back a little first. Hold the last word of each
+line as a long shout.
 
-**Track 4: "They've Sold It"** (spring, half joking)
-
-> Morag, it's me. You'll not believe this.
-> He's sold it. The whole glen.
-> The laird. Sold the lot.
-> Nobody knows who to.
-> Mrs Grant at the shop says it's a bank.
-> Davie says it's a film star.
-> Somebody said "a fund", whatever that is.
-> Anyway. Spring's here, the lambs are out,
-> and apparently we belong to somebody new.
-> Phone me back.
-
-**Track 6: "Four Hundred Companies"** (summer, starting to dig)
-
-> Morag, it's me again. Right. I did what you said,
-> I looked them up on that Companies House thing.
-> The buyer's called Corran Natural Capital L P.
-> A limited partnership. Scottish, would you believe.
-> Registered to a wee office in Glasgow. Above a vape shop.
-> And Morag... there's four hundred companies at that address.
-> Four hundred. In one room. Above a vape shop.
-> (pause)
-> So who owns it? Another company.
-> Who owns that? Something in Belize.
-> I'm sat in the van wi' the midges, reading about Belize.
-> Oh, and they've put a gate on the hill path.
-> Phone me back. I mean it this time.
-
-## Part 6: Shouts and whispers (about 20 seconds)
-
-Step back a little for the shouts.
-
-> (shout) Own the glen! Own the loch!
-> (shout) Landlord! Rent's due!
-> (shout) Swim at your own risk!
-> (whisper) Nobody here owns anything. That's rather the point.
-> (whisper) Phone me back.
-
-## Part 7: Just talk (about 30 seconds)
-
-Talk about anything: your day, what you had for breakfast, what you want the
-band to sound like. This gives the model your everyday voice.
+> Own the glen! Own the loooch!
+> Pay the bill! Cold haaame!
+> Landlord! Rent's duuue!
+> Swim at your own riiisk!
 
 ## Sending the files to the laptop
 
@@ -126,12 +113,11 @@ Copy them to your computer, then:
 
 ```
 ssh red@create 'mkdir -p ~/band/voice/raw'
-scp 1-* 2-* 3-* 4-* 5-* 6-* 7-* red@create:~/band/voice/raw/
+scp 1-* 2-* 3-* 4-* 5-* 6-* red@create:~/band/voice/raw/
 ```
 
 If `create` doesn't resolve, use the laptop's IP address. Then tell me they're
-there, and I'll clean them up, train the voice model and try it on a song. The
-Ewan takes from Part 5 also get cleaned up and saved for tracks 4 and 6.
+there, and I'll clean them up, train the voice model and try it on a song.
 
 ## A note on use
 
