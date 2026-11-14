@@ -1,0 +1,142 @@
+--- gen.py.orig	2026-11-13 10:52:16 +0000
++++ gen.py	2026-11-13 11:24:59 +0000
+@@ -1,20 +1,100 @@
+-"""Generate one song with ACE-Step 1.5: 2B turbo DiT, no language model, CPU offload.
++"""Generate one song with ACE-Step 1.5: 2B turbo DiT, no language model.
+
+ Usage (from ~/band/ACE-Step-1.5, via gen.sh):
+   uv run --no-sync python ../gen.py CAPTION_FILE LYRICS_FILE SECONDS SEED OUTPUT_NAME [BPM]
++
++Settings for the GTX 1060 (Pascal: no bf16, fp16 overflows, 6 GB VRAM, 7.6 GB RAM).
++Each is an env var; set the "original" value to get the earlier gen.py behaviour.
++  BAND_FP32_COMPUTE=1   DiT weights stay fp16 on the GPU but every layer computes in fp32
++                        (fp16 compute gives NaN latents on Pascal). original: 0
++  BAND_DIT_DIRECT=1     load DiT weights straight onto the GPU, no full CPU copy. original: 0
++  BAND_OFFLOAD_DIT=0    keep the DiT on the GPU; moving it back to 7.6 GB RAM stalls. original: 1
++  BAND_ATTN=sdpa        DiT attention backend after load. sdpa uses PyTorch's memory-efficient kernel
++                        (linear memory in length); eager builds the full attention matrix (quadratic),
++                        which ACE-Step picks on Pascal only to dodge fp16 softmax overflow. original: eager
+ """
+ import os
+ import shutil
+ import sys
+ import time
+
+-from acestep.handler import AceStepHandler
+-from acestep.inference import GenerationConfig, GenerationParams, generate_music
++import torch
++import torch.nn as nn
++import torch.nn.functional as F
++
++FP32_COMPUTE = os.environ.get("BAND_FP32_COMPUTE", "1") == "1"
++DIT_DIRECT = os.environ.get("BAND_DIT_DIRECT", "1") == "1"
++OFFLOAD_DIT = os.environ.get("BAND_OFFLOAD_DIT", "0") == "1"
++ATTN = os.environ.get("BAND_ATTN", "sdpa" if FP32_COMPUTE else "eager")
++
++
++# --- fp32 compute for modules flagged with _band_f32 (weights stay fp16) -------------
++def _up(x):
++    return x.float() if torch.is_tensor(x) and x.dtype in (torch.float16, torch.bfloat16) else x
++
++
++def _f(t):
++    return None if t is None else t.float()
++
++
++_linear_fwd = nn.Linear.forward
++_conv_fwd = nn.Conv1d._conv_forward
++_convt_fwd = nn.ConvTranspose1d.forward
++_emb_fwd = nn.Embedding.forward
++
++
++def _linear(self, x):
++    if getattr(self, "_band_f32", False):
++        return F.linear(_up(x), self.weight.float(), _f(self.bias))
++    return _linear_fwd(self, x)
++
++
++def _conv(self, x, weight, bias):
++    if getattr(self, "_band_f32", False):
++        return _conv_fwd(self, _up(x), weight.float(), _f(bias))
++    return _conv_fwd(self, x, weight, bias)
++
++
++def _convt(self, x, output_size=None):
++    if getattr(self, "_band_f32", False):
++        op = self._output_padding(x, output_size, self.stride, self.padding, self.kernel_size, 1, self.dilation)
++        return F.conv_transpose1d(_up(x), self.weight.float(), _f(self.bias), self.stride,
++                                  self.padding, op, self.groups, self.dilation)
++    return _convt_fwd(self, x, output_size)
++
++
++def _emb(self, x):
++    out = _emb_fwd(self, x)
++    return _up(out) if getattr(self, "_band_f32", False) else out
++
++
++nn.Linear.forward = _linear
++nn.Conv1d._conv_forward = _conv
++nn.ConvTranspose1d.forward = _convt
++nn.Embedding.forward = _emb
++
++# --- load the DiT straight onto the GPU ------------------------------------------------
++if DIT_DIRECT:
++    import transformers
++
++    _from_pretrained = transformers.AutoModel.from_pretrained.__func__
++
++    def _direct(cls, path, *args, **kwargs):
++        if "acestep-v15" in str(path) and "device_map" not in kwargs:
++            kwargs["device_map"] = {"": "cuda"}
++            kwargs["low_cpu_mem_usage"] = True
++        return _from_pretrained(cls, path, *args, **kwargs)
++
++    transformers.AutoModel.from_pretrained = classmethod(_direct)
++
++from acestep.handler import AceStepHandler  # noqa: E402
++from acestep.inference import GenerationConfig, GenerationParams, generate_music  # noqa: E402
+
+ caption_file, lyrics_file, seconds, seed, out_name = sys.argv[1:6]
+ bpm = int(sys.argv[6]) if len(sys.argv) > 6 and sys.argv[6] else None
+ out_dir = os.path.expanduser("~/band/outputs")
+ os.makedirs(out_dir, exist_ok=True)
++print(f"BAND settings: FP32_COMPUTE={FP32_COMPUTE} DIT_DIRECT={DIT_DIRECT} OFFLOAD_DIT={OFFLOAD_DIT} ATTN={ATTN}", flush=True)
+
+ t0 = time.time()
+ dit = AceStepHandler()
+@@ -23,14 +103,22 @@
+     config_path="acestep-v15-turbo",
+     device="cuda",
+     offload_to_cpu=True,
+-    offload_dit_to_cpu=os.environ.get("BAND_OFFLOAD_DIT", "1") == "1",  # 0 keeps the DiT on the GPU; offloading it back to 8GB RAM stalls
++    offload_dit_to_cpu=OFFLOAD_DIT,
+     quantization=None,  # INT8 needs torch.compile/Triton, which Pascal lacks
+     compile_model=False,
+ )
+ print(status)
+ if not ok:
+     sys.exit("model init failed")
++if FP32_COMPUTE:
++    for m in dit.model.modules():
++        m._band_f32 = True
++for m in dit.model.modules():
++    cfg = getattr(m, "config", None)
++    if cfg is not None and hasattr(cfg, "_attn_implementation"):
++        cfg._attn_implementation = ATTN
+ t_load = time.time() - t0
++print(f"LOAD_SECONDS={t_load:.1f} VRAM_ALLOC_GB={torch.cuda.memory_allocated() / 2**30:.2f}", flush=True)
+
+ params = GenerationParams(
+     caption=open(caption_file).read().strip(),
+@@ -46,9 +134,11 @@
+ )
+ config = GenerationConfig(batch_size=1, use_random_seed=False, seeds=[int(seed)], audio_format="wav")
+
++torch.cuda.reset_peak_memory_stats()
+ t1 = time.time()
+ result = generate_music(dit, None, params, config, save_dir=out_dir)
+ t_gen = time.time() - t1
++print(f"PEAK_VRAM_TORCH_GB={torch.cuda.max_memory_allocated() / 2**30:.2f}", flush=True)
+ if not result.success:
+     sys.exit(f"generation failed: {result.error}")
+
