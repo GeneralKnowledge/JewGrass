@@ -31,9 +31,11 @@ member's delivery is written into the tag of every section he raps.
 What we've learned from JewGrass and built in:
 - ACE-Step follows key and tempo but not chord charts, so harmony, drum patterns and bass movement in the
   designs are the plan for the DAW stage; they reach the model only as words.
-- Words for constant noise textures caused hiss before, so `build.py` refuses captions and tags with
-  words like static, crackle, vinyl, texture or atmosphere.
-- Spoken outros don't come through, so every outro is a short rapped line or instrumental.
+- Words for constant noise textures caused hiss, circus/oom-pah instruments took over, and "clean polished
+  mix" made instruments stick out, so `build.py` refuses captions and tags with those words, and the shared
+  caption asks for a warm, cohesive, blended mix.
+- Songs start straight in (voice in the first bars) and end sung; spoken outros don't come through.
+- Few named instruments per song: piano, 808 and drums, plus one colour.
 
 ```
 python3 lowbridge/build.py      # rebuild tracks.yaml after editing a design; exits 1 on any warning

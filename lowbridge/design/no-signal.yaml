@@ -14,14 +14,13 @@ render:
   bpm: 140
   key: F minor
   timesig: "4"
-  seconds: 125        # 64 bars at 140 is 110 s; the rest is room so the outro isn't cut
+  seconds: 115        # 58 bars at 140 is 99 s; the rest is room so the sung outro isn't cut
 
 palette:
   lead: a haunting two-note piano motif (F and Db, high, left hanging)
-  bed: a distant airy pad, very quiet, never busy
   bass: deep sliding 808, slides up into each hook
   drums: sparse at the start, then a hard half-time groove
-  left_out: strings, choir, guitar, cinematic hits, any second melody before the hook
+  left_out: pads, strings, choir, guitar, cinematic hits, any second melody before the hook
 
 drums: >-
   Intro: hats only, then a single snare on beat 3 of bar 8. Verse: half-time, snare on 3, kick on 1 and the
@@ -37,8 +36,8 @@ the_moment: >-
 
 sections:
   - name: intro
-    tag: intro - two-note piano motif alone, then hats, then one snare
-    bars: 8
+    tag: intro - two-note piano motif with the deep voice straight in, hats enter
+    bars: 2
     performer: rook
     lyrics: |
       Twelfth floor. Lift's broke again.
@@ -124,20 +123,20 @@ sections:
       No signal, no signal
       Same block, same faces, ten years
   - name: outro
-    tag: outro - drums fall away, two-note piano motif alone, then silence
-    bars: 8
-    performer: rook
+    tag: outro - hook sung one last time, drums fall away, piano motif, stop
+    bars: 4
+    performer: rook and vale together
     lyrics: |
-      No signal
-      No signal
+      No signal, no signal
+      Same block, same faces, ten years
 
-ending: The drums drop out bar by bar until only the two-note piano motif is left, unresolved, then silence.
+ending: The last sung hook lines, with the drums dropping out under them, leave the two-note piano motif unresolved, then silence.
 
 caption: >-
-  140 bpm, F minor, haunting two-note piano motif, distant airy pad, sparse opening then a hard half-time
-  groove, deep calm baritone lead rapper with a measured conversational delivery, a softer low melodic male
+  140 bpm, F minor, haunting two-note piano motif, starts straight in with voice and piano then a hard
+  half-time groove, deep calm baritone lead rapper with a measured conversational delivery, a softer low melodic male
   voice for one short passage, short repetitive chanted hook, drums and 808 drop out for a moment leaving
-  voice and piano, ends on the piano motif alone
+  voice and piano, ends on the hook sung over the piano motif
 
 lyric_audit:
   character_voice: Rook observes and never explains; Vale's passage is the only one that admits a feeling
