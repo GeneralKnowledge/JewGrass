@@ -72,6 +72,20 @@ If the basic-pitch install pulls in TensorFlow and it fails to import, uninstall
 
 What it tells us: separation matters (0.61 without, up to 0.95 with); Basic Pitch rarely misses a note but adds ghost notes, so the per-role thresholds in `from_audio.py` were raised (the defaults doubled the note count). Real ACE-Step stems will score lower than this ceiling.
 
+## Real test: Deed to the Glen (reconstruction)
+
+The stems came from the laptop: BS-RoFormer vocals plus htdemucs_6s drums, bass, guitar, piano and other, at 140 bpm. Sections were estimated from the laptop's vocal analysis and are marked "(est.)". The guitar and piano stems are nearly silent (-48 and -42 dB), because Demucs put the banjo, fiddle and guitars into "other". So those two stay audio-only.
+
+The transcriber isn't scored against true notes here, because there are none. Instead, each stem is compared, frame by frame, with its own MIDI on the loud frames:
+
+| Part | Notes | Loud time covered by a MIDI note | Covered time where MIDI has the stem's main pitch class |
+|---|---|---|---|
+| Bass (808) | 236 | 40% | 94% |
+| Other (banjo, fiddle, pipes, guitars) | 1026 | 88% | 92% |
+| Drums (kick, snare, hat) | 1526 hits | n/a | n/a |
+
+Where there is a MIDI note, it's mostly the right one. The 808 is the weak spot: long, gliding sub notes. Lower thresholds raise coverage to 70%, but at 1000 notes and 89% agreement, which means more mess to clean up, so the cleaner setting is the default. "Other" is several instruments in one stem, so its MIDI is a blend of all of them, not one playable part.
+
 ## Not done yet
 
 - Instruments: MIDI tracks in the .rpp have no instrument loaded. The safe way is a REAPER track template made in Reuben's REAPER (with ReaSynth / ReaSamplOmatic or a free SFZ player per role), which the exporter then copies in. Writing plugin state blind would risk a project that doesn't open.

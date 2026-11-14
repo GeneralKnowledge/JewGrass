@@ -156,6 +156,8 @@ def main():
     beat_src = a.ref or dict(s.split("=", 1) for s in a.stem).get("drums")
     if beat_src:
         bpm, off = detect_beats(beat_src, a.bpm)
+        num_, den_ = map(int, a.timesig.split("/"))
+        off %= (60.0 / bpm) * num_ * 4.0 / den_          # earliest bar line in the file: intros stay on the grid
         arr["tempo_bpm"], arr["audio_offset_seconds"] = bpm, off
         print(f"tempo {bpm:g} bpm, beat 0 at {off:.3f} s")
     if a.ref:
