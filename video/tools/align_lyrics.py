@@ -46,7 +46,7 @@ def parse_lyrics(path):
     sections, cur = [], None
     for raw in open(path, encoding="utf-8"):
         line = raw.strip()
-        if not line or line.startswith("```"):
+        if not line or line.startswith(("```", "#")):
             continue
         m = re.fullmatch(r"\[([^\]]+)\]", line)
         if m:
