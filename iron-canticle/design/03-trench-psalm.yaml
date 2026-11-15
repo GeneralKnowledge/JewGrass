@@ -1,0 +1,143 @@
+# IRON CANTICLE Song Design: Trench Psalm (track 03, round 1, war family).
+slug: canticle-trench-psalm
+title: Trench Psalm
+credit: IRON CANTICLE featuring Kell
+order: 3
+family: war
+version: 2   # v2 Nov 15: sung heavy metal, no rap (Reuben). v1 in previous/v1-hymn-trap/
+role: The first fast track and Kell's first song. The album's war anthem.
+story: >-
+  Six months on a frozen moon at the edge of the system. Kell's friend Teague, who sang in the choir back home,
+  dies on a push. The chaplain reads the same psalm he read for the hundred before. Kell looks at the sky,
+  which you're not supposed to do, and sees the sun has become a red ember.
+test: Can a galloping sung verse and a gang-choir call and response carry a bleak story without sounding triumphant?
+
+render:
+  bpm: 145
+  key: E minor
+  timesig: "4"
+  seconds: 165        # 88 bars at 145 is 146 s, plus room for the last line
+
+palette:
+  lead: Kell sings the verses; the gang choir's call and response is the chorus
+  guitars: galloping palm-muted riffs in the verses, open power chords in the chorus, a harmonised lead in the solo
+  drums: fast double-kick gallop in the verses, driving straight beat in the chorus
+  left_out: rap, 808, bell (it belongs to Vigil, not the front), female voice
+harmony: "Em - C - Am - B (B major for the harmonic-minor bite). Chorus: Em - C - G - B."
+drums: >-
+  Verses: galloping double kick (eighth plus two sixteenths), snare on 2 and 4. Chorus: straight driving beat,
+  crash on every bar. Bridge: no drums. Solo: double kick throughout. Final chorus: everything.
+bass_movement: bass guitar gallops with the kick; drops out entirely in the bridge.
+the_moment: >-
+  The chaplain's psalm (bridge) over nothing but choir, then a short harmonised guitar solo, then the final
+  chorus crashes in at its heaviest.
+
+sections:
+  - name: hook 1
+    tag: chorus - big male gang choir sings call and response, power chords, driving drums, straight in
+    bars: 8
+    performer: soldiers
+    lyrics: |
+      Who holds the line
+      We hold the line
+      Who feeds the guns
+      The tenth-born sons
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+  - name: verse 1
+    tag: verse - powerful gritty male lead singing a melody, galloping double kick and guitars
+    bars: 16
+    performer: kell
+    idea: the cold and the waiting; the image is the dead man's coat
+    lyrics: |
+      Six months in the ice and I've forgotten the sun
+      They gave me a dead man's coat and a rifle older than anyone
+      We never see the enemy, just the lights out in the haze
+      We fire at the lights and the lights fire back for days
+      Teague sang in the choir back home before the bell
+      Now he hums the evening psalm in the mouth of hell
+      Write home, they tell us, but what is there to write
+      Dear mother, it is cold here. The bell was right
+  - name: hook 2
+    tag: chorus - big male gang choir sings call and response, power chords, driving drums
+    bars: 8
+    performer: soldiers
+    lyrics: |
+      Who holds the line
+      We hold the line
+      Who feeds the guns
+      The tenth-born sons
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+  - name: verse 2
+    tag: verse - powerful gritty male lead singing higher and angrier, galloping drums
+    bars: 16
+    performer: kell
+    idea: Teague dies and the psalm doesn't change; the image is the sun as a red ember
+    lyrics: |
+      Night four of the push and the whistle said go
+      Teague went over singing, and the singing stopped slow
+      I dragged him by his coat with another man's name
+      The chaplain read the psalm, and the psalm read the same
+      The Synod in the spire with a fire and a feast
+      We're the wall at the edge, we're the tithe, we're the least
+      I looked up at the sky, though they tell you never to
+      The sun was a red ember and the dark was coming through
+  - name: bridge
+    tag: bridge - deep solo male singer, slow and sermon-like, choir hum only, no drums, no bass
+    bars: 8
+    performer: chaplain
+    lyrics: |
+      Lie down in the frozen field
+      Your name is in the ledger sealed
+      The bell has rung, the count is kept
+      The Synod wakes while you have slept
+  - name: solo
+    tag: guitar solo - instrumental, harmonised twin guitar lead over double kick
+    bars: 8
+    performer: none
+  - name: final hook
+    tag: final chorus - heaviest, gang choir and lead together, full band
+    bars: 16
+    performer: soldiers
+    lyrics: |
+      Who holds the line
+      We hold the line
+      Who feeds the guns
+      The tenth-born sons
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+      Who holds the line
+      We hold the line
+      Who lights the dead
+      The sun burns red
+      How long's the night
+      It doesn't end
+      Then dig it deeper
+      Dig it deeper, friend
+  - name: end
+    tag: ending - band stops dead, choir sings the last line slowly over one held chord
+    bars: 4
+    performer: soldiers
+    lyrics: |
+      Dig it deeper, friend
+
+ending: Drums and guitars stop dead on the downbeat; the soldiers sing "Dig it deeper, friend" slowly over one held low E, then silence. Ends sung, no spoken outro.
+caption: >-
+  145 bpm, E minor, opens straight in on a big male gang choir singing a call and response chorus over power
+  chords and driving drums, a powerful gritty male lead sings melodic verses over galloping double kick and
+  palm-muted guitars, a slow deep solo male voice sings a short bridge over a choir hum, a harmonised twin
+  guitar solo, heaviest final chorus, ends with the band stopping and the choir singing the last line slowly
+
+lyric_audit:
+  character_voice: Kell is plain-spoken; verse 1 is weary, verse 2 is angry
+  narrative: waiting (v1), the push and Teague's death (v2), the chaplain's psalm, the hook turns from duty to the red sun
+  imagery: [the dead man's coat, the lights in the haze, the psalm that reads the same, the sun as a red ember]
+  hook: call and response with the same catechism shape as Prayer's bridge, so the army and the cult sound like one church
+  throughline: the bell from Tithe Bell is in the last line of verse 1; the ledger returns in the psalm; the red sun points to Prayer

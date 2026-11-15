@@ -1,0 +1,119 @@
+# IRON CANTICLE Song Design: Candles for a Dead Sun (track 10, cathedral family). The finale.
+slug: canticle-candles-for-a-dead-sun
+title: Candles for a Dead Sun
+credit: IRON CANTICLE
+order: 10
+family: cathedral
+version: 2
+role: The finale and title track. Nothing is saved. Kell becomes the Herald.
+story: >-
+  The cult rules from the spire, in the Synod's robes. The thing past the stars is still coming, so they open a
+  new ledger. Kell stands on the stairwell where the Herald stood and reads the levy. A different mother sings
+  "count to nine". The bell rings once.
+test: Can a slow anthem land as tragedy rather than victory?
+
+render:
+  bpm: 84
+  key: C minor
+  timesig: "4"
+  seconds: 200        # 64 bars at 84 is 183 s
+
+palette:
+  lead: Kell, older, steady, singing like the Herald did
+  guitars: heavy slow chords, a slow melodic solo
+  drums: slow heavy beat, big cymbals, double kick only in the last chorus
+  colour: the bell, once at the very end
+  left_out: rap, 808, gang shouts, anything fast
+harmony: "Cm - Ab - Fm - G, the same as Tithe Bell, slower."
+drums: Slow half-time; the mother's bridge has none; last chorus doubles the kick.
+bass_movement: bass on the roots, long notes.
+the_moment: The last chorus turns into the Tithe Bell chorus, sung by the new rulers, and the bell rings once at the end with nothing after it.
+
+sections:
+  - name: verse 1
+    tag: verse - steady powerful male lead sings over slow heavy chords, straight in
+    bars: 8
+    performer: kell
+    lyrics: |
+      The spire is ours, the hall is still, the ledgers burned to grey
+      We wear the Synod's robes now, and they fit us anyway
+      We sit where the old priests sat, and we look out on the dark
+      The sun hangs low and red and small, a dying ember spark
+      The people climb the stairwells and they bring us what they bring
+      Bread and salt and candles, and they ask the same old thing
+      To keep the dark from coming, to keep the cold away
+      And we tell them there's a price for that, and someone has to pay
+  - name: chorus 1
+    tag: chorus - male lead and deep male choir, slow and huge
+    bars: 8
+    performer: kell+synod
+    lyrics: |
+      Light the candles for a dead sun
+      Light them, every one
+      New hands on the same old flame
+      Every candle, every name
+  - name: verse 2
+    tag: verse - male lead sings, colder, heavier band
+    bars: 8
+    performer: kell
+    lyrics: |
+      We opened up a ledger new, the old one was in flames
+      But somebody must count the guns, and somebody the names
+      The thing out past the stars won't care whose candle's in the hall
+      It's hungry and it's coming, and it's hungry for us all
+      So I stood upon the stairwell where the Herald used to stand
+      I read the order to them with a ledger in my hand
+      Every tenth child, I sang it, and I heard my mother's voice
+      And I told myself we're different, and I told myself no choice
+  - name: chorus 2
+    tag: chorus - male lead and deep male choir, full heavy band
+    bars: 8
+    performer: kell+synod
+    lyrics: |
+      Light the candles for a dead sun
+      Light them, every one
+      New hands on the same old flame
+      Every candle, every name
+  - name: bridge
+    tag: bridge - band drops away, soft low female voice sings alone
+    bars: 4
+    performer: mother
+    lyrics: |
+      Count to nine and skip my door
+      Count to nine, I'll ask no more
+      He's only small, he's only mine
+      Count to nine, count to nine
+  - name: solo
+    tag: guitar solo - instrumental, slow melodic guitar lead over heavy chords
+    bars: 8
+    performer: none
+  - name: final chorus
+    tag: final chorus - everything, male lead and choir, double kick, the old hymn returns
+    bars: 16
+    performer: kell+synod
+    lyrics: |
+      Light the candles for a dead sun
+      Light them, every one
+      New hands on the same old flame
+      Every candle, every name
+      Ring the bell, the tenth one goes
+      Ring the bell, the spire knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: end
+    tag: ending - band stops, choir sings the title alone, one deep bell
+    bars: 4
+    performer: synod
+    lyrics: |
+      Candles for a dead sun
+
+ending: The band stops; the choir sings "Candles for a dead sun", one bell strikes under the last word, and nothing answers it.
+caption: >-
+  84 bpm, C minor, slow heavy metal anthem, tragic not triumphant, opens straight in on a steady powerful male lead
+  over slow heavy chords, a deep male choir joins the chorus, a soft low female voice sings a short bridge alone,
+  slow melodic guitar solo, huge final chorus, ends with the choir singing the title and one deep bell
+
+lyric_audit:
+  character_voice: Kell sings the Herald's job in the Herald's voice and half knows it
+  imagery: [the robes that fit anyway, the sun as an ember spark, the new ledger, the stairwell where the Herald stood]
+  throughline: closes every loop - Tithe Bell's chords, key and chorus, the mother's count, the ledger, the bell that isn't answered

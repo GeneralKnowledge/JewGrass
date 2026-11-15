@@ -1,0 +1,125 @@
+# IRON CANTICLE artist DNA: the persistent identity every CANDLES FOR A DEAD SUN track is built from.
+# build.py joins caption_core + the track's family caption + the track's own caption, so the shared sound is
+# stated the same way every time while each production family keeps its own drums.
+# Everything is original. The album is inspired by the grimdark sci-fi genre in general: no Games Workshop
+# (or any other franchise) names, factions, places, terms or quotes, in lyrics, titles or captions. build.py
+# checks lyrics, titles and captions against `banned_lore`. Genre and tone words only in captions.
+
+act: IRON CANTICLE
+album: CANDLES FOR A DEAD SUN
+format: >-
+  A studio project with a cast. Each song is sung or rapped by a character from the story, backed by the
+  Synod choir. One song (Prayer) was written by a friend of Reuben's and is used with permission, with
+  lore names changed so it is fully original (see design/07-prayer.yaml).
+genre: anthemic heavy metal / power metal, sung throughout, big choir choruses, war stories told as songs
+version: 3   # v3 Nov 15 13:08: Reuben 'too clean' - grittier, rawer production words, 'clean' banned.
+             # v1 (hymn trap with rap verses) is kept in previous/v1-hymn-trap/. Reuben, Nov 15: "too much rap
+             # like singing", wants a big anthemic war-metal band sound. Genre words only: no band named or imitated.
+premise: >-
+  Vigil is a city that covers a whole world, twelve thousand years old, lit by candles because its sun is
+  dying. It is ruled by the Synod, a priesthood that keeps the faith, the ledgers and the levy: every tenth
+  child goes to the war at the edge of the system, against something in the dark that nobody describes.
+  Kell is taken by the levy, survives a frozen moon, deserts, and comes home to the Undercroft beneath the
+  city, where a murder cult sings to the Red Saint. He joins. The cult rises, the Synod falls, and the new
+  rulers light the same candles in the same spire. Nothing is saved. The sun keeps going out.
+throughline: >-
+  Candles and counting. The Synod counts children (the tithe), the cult counts the dead ("count the drops"),
+  Kell counts candles in the chapel. Every song has a candle or a count in it. The album opens with a bell
+  and ends with the last candle.
+
+feel:
+  - every line is sung: a raw powerful male lead and huge gang-choir choruses you can shout back. No rap anywhere
+  - anthemic and driving: mid-tempo stomps and galloping verses, big singalong refrains
+  - the story is told like a war history, but the words stay bleak; the music lifts, the lyrics don't celebrate
+  - the choir is the album's constant: it gets darker and smaller as the story goes on
+  - violence is sung like scripture, never celebrated like an action film
+  - every track starts straight in (no long intros) and ends on a sung line, never a spoken outro or an instrumental tail
+
+palette:
+  vocals: raw powerful male lead with grit (baritone to tenor), big male gang choir doubling every chorus, one deep low choir for the Synod
+  guitars: heavy palm-muted rhythm guitars, chugging and galloping, harmonised lead lines only in instrumental breaks
+  keys: a low organ layer underneath at most; no orchestral or symphonic sheen
+  drums: real metal drum kit, double-kick gallops in verses, big four-on-the-floor stomp in choruses
+  bass: bass guitar locked to the kick
+  colour: one deep bell (Tithe Bell and Prayer only)
+  left_out: rap, trap drums, 808, hand drums, banjo, pipes, brass sections, anything comic or festive
+
+motifs:
+  tithe-bell: one deep bell on D, struck on the downbeat. Opens the album, returns before Prayer, rings once at the end of Candles for a Dead Sun and is not answered
+  call-and-response: the catechism shape from Prayer ("Who do you serve"). The levy hook, the trench hook and the cult hook all use it, so the Synod, the army and the cult sound like the same church
+  count-to-nine: the mother's four-note falling phrase from Tithe Bell (D C Bb A), returns in Candles for a Dead Sun
+
+voices:
+  synod: massive deep male choir, unison
+  herald: powerful low male lead singer, stern and commanding (the Synod's spokesman)
+  mother: low, plain female voice, sung softly, no vibrato
+  kell: raw powerful male lead with grit, the album's main singer (could become Reuben's RVC voice)
+  soldiers: big male gang choir, sung shouts, call and response
+  chaplain: deep solo male singer, slow
+  red-choir: low powerful male lead singer of the cult, with the congregation answering
+  congregation: huge crowd choir answering the lead
+  forge: hard, cold male lead singer, a factory worker (Engine Litany)
+  engine-choir: rigid male choir in strict mechanical unison, chanting on one note (Engine Litany)
+
+lyric_conventions:
+  - Everything is sung. Verses are 8 lines (two bars a line), so they are melodies, not rap bars.
+  - Lyrics hold only the words. Delivery goes in the section tag.
+  - Call and response is written as alternating lines, never in brackets.
+  - Never more lines than bars. Nothing fully in brackets (the pipeline strips it).
+  - Instrumental sections have a tag that says instrumental and no lyric lines.
+
+caption_core: >-
+  gritty anthemic heavy metal with power metal choruses, dark sci-fi war story, raw powerful male lead vocals
+  with grit, huge rough male gang choir choruses, thick saturated distorted guitars, hard-hitting live-sounding
+  drums with double kick, dirty bass guitar, minor key, raw and heavy, not overproduced, gritty blended mix
+  where every instrument sits inside the whole
+
+# Each family gets its own drums and its own sentence in the caption.
+families:
+  cathedral:
+    feel: the Synod's sound. Slow, vast, cold.
+    caption: >-
+      mid-tempo stomping groove, deep male choir carries the chorus, low organ layer under the guitars
+  war:
+    feel: the front. Faster, physical, exhausted.
+    caption: >-
+      fast galloping double-kick verses, driving chugging guitars, gang choir shouting the call and response, harmonised guitar lead in the break
+  cult:
+    feel: the Undercroft. Ritual, intimate, then overwhelming.
+    caption: >-
+      slow heavy ritual metal hymn, crushing half-time riffs, low powerful male lead with a huge crowd choir answering, quiet verses that build to an overwhelming final chorus
+  machine:
+    feel: the factories and the engine-priests. Metallic and mechanical.
+    caption: >-
+      industrial metal, mechanical riffs locked to the kick, repeating choir phrases, grinding bass guitar
+  undercroft:
+    feel: under the city. Almost still.
+    caption: >-
+      dark and slow, dark arpeggiated guitar, distant choir, a heartbeat kick, no distortion until the end
+
+# Words that put hiss or static over whole songs (Nov 14), plus the circus/oom-pah words Reuben disliked,
+# and "clean/polished mix" (made solo instruments stick out; ask for a warm blended mix instead).
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere, tuba, pizzicato, woodblock, march, marching, playful, cheeky, comic, theatrical, polished, clean, pristine, glossy, crisp, symphonic, orchestral, epic, cinematic]
+avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, lo-fi, march, marching]
+
+# Franchise names and terms that must never appear in lyrics, titles or captions (whole words, any case).
+banned_lore: [warhammer, 40k, emperor, imperium, imperial, astartes, space marine, space marines, chaos, khorne, nurgle, tzeentch, slaanesh, blood god, skull throne, golden throne, warp, xenos, heretic, heresy, inquisition, inquisitor, mechanicus, omnissiah, servitor, servitors, hive city, hive world, underhive, lasgun, bolter, commissar, guardsman, astra militarum, adeptus, primarch, ecclesiarchy, promethium, grimdark, bhaal, slayer, murder court, dead three, lord of murder]
+
+energy_curve: [01 cold, 02 low, 03 high, 04 mid, 05 high, 06 lowest, 07 building, 08 mid, 09 highest, 10 low]
+
+acceptance:
+  identity: the sung lead and gang choir over heavy guitars make a sound you'd know within five seconds
+  no_rap: every line is sung; any take that slips into rap is rejected
+  weight: heavy guitars without mud; the kick and the voice still cut through
+  words: lead and choir words are audible; the choruses can be sung back
+  bleakness: nothing sounds triumphant, festive or comic
+  variation: cathedral, war and cult tracks have clearly different drums
+  starts: straight in, no long intro; ends sung, no spoken outro
+
+round1:
+  tracks: [tithe-bell, trench-psalm, prayer]
+  takes: 2
+  model: xl-turbo
+  seeds_v2: [3111, 3112, 3311, 3312, 3711, 3712]
+  round3: whole album, 2 takes each, see README
+  why: one track per family (cathedral, war, cult). Prayer also tests the friend's song as a sound reference on the laptop. The other seven are written only after Reuben has heard these.

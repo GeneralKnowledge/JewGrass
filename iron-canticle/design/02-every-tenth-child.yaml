@@ -1,0 +1,107 @@
+# IRON CANTICLE Song Design: Every Tenth Child (track 02, cathedral family).
+slug: canticle-every-tenth-child
+title: Every Tenth Child
+credit: IRON CANTICLE
+order: 2
+family: cathedral
+version: 2
+role: The power ballad. The cost of the levy, from the mother's side, right after the opener.
+story: >-
+  The night after the levy ship leaves. Kell's mother keeps his candle on the sill, counts the ship lights going
+  up, and finds the neighbours kept their nine. The priest leaves her a red candle.
+test: Can a low female lead carry a slow heavy ballad without it turning sweet?
+
+render:
+  bpm: 76
+  key: A minor
+  timesig: "4"
+  seconds: 160        # 46 bars at 76 is 145 s
+
+palette:
+  lead: the mother, low and plain, no vibrato
+  guitars: dark arpeggiated guitar in verse 1, heavy sustained chords from the second chorus
+  drums: none in verse 1, slow heavy beat from the first chorus
+  left_out: rap, 808, gang shouts, guitar solo
+harmony: "Am - F - C - G; chorus Am - F - C - E (the E major is the ache)."
+drums: Verse 1 none. Chorus 1 floor toms and cymbal swells. Verse 2 and after, slow heavy half-time beat.
+bass_movement: bass enters in chorus 1, root notes only.
+the_moment: The bridge quotes her line from Tithe Bell, "count to nine", now in the past tense, then the band crashes in.
+
+sections:
+  - name: verse 1
+    tag: verse - low plain female voice sings alone over dark arpeggiated guitar, straight in
+    bars: 8
+    performer: mother
+    lyrics: |
+      I kept his candle on the sill
+      The wax ran down, it's burning still
+      His coat hook empty by the stair
+      I set his plate, he isn't there
+      The levy ship went up at dawn
+      A thousand lights, and his was one
+      I counted them until they'd gone
+      Nine, ten, and then the sky was none
+  - name: chorus 1
+    tag: chorus - female lead with deep male choir behind her, heavy chords, floor toms
+    bars: 8
+    performer: mother+synod
+    lyrics: |
+      Every tenth child, every tenth name
+      Written in the ledger and the ledger stays the same
+      Ring the bell for Vigil, light the spire for the dead
+      Every tenth child, and the tenth was mine instead
+  - name: verse 2
+    tag: verse - female lead, heavy guitars enter low, slow half-time drums
+    bars: 8
+    performer: mother
+    lyrics: |
+      The neighbours brought me bread and salt
+      They didn't say it was my fault
+      They didn't say it wasn't, though
+      They kept their nine and let him go
+      The priest came round to bless the door
+      He'd blessed a hundred doors before
+      He left a candle, blessed and red
+      I lit it like the Synod said
+  - name: chorus 2
+    tag: chorus - female lead and choir, full heavy band
+    bars: 8
+    performer: mother+synod
+    lyrics: |
+      Every tenth child, every tenth name
+      Written in the ledger and the ledger stays the same
+      Ring the bell for Vigil, light the spire for the dead
+      Every tenth child, and the tenth was mine instead
+  - name: bridge
+    tag: bridge - band drops away, female voice alone over one held chord
+    bars: 4
+    performer: mother
+    lyrics: |
+      Count to nine and skip my door
+      I asked them once, I'll ask no more
+  - name: final chorus
+    tag: final chorus - band crashes back, heaviest, choir and female lead together
+    bars: 8
+    performer: mother+synod
+    lyrics: |
+      Every tenth child, every tenth name
+      Written in the ledger and the ledger stays the same
+      Ring the bell for Vigil, light the spire for the dead
+      Every tenth child, and the tenth was mine instead
+  - name: end
+    tag: ending - band stops, female voice sings the title alone
+    bars: 2
+    performer: mother
+    lyrics: |
+      Every tenth child
+
+ending: The band stops on the downbeat; she sings "Every tenth child" alone and it ends there.
+caption: >-
+  76 bpm, A minor, slow heavy power ballad, a low plain female lead sings from the first bar over dark
+  arpeggiated guitar, a deep male choir joins her on the chorus, heavy guitars and slow drums arrive in the second
+  verse, the band drops away for a short bridge, ends with her singing the title alone
+
+lyric_audit:
+  character_voice: she never accuses anyone directly; the anger is in "they kept their nine"
+  imagery: [the candle on the sill, the empty coat hook, counting the ship lights, the red candle]
+  throughline: counting (nine, ten), candles, the ledger; the red candle points to the Red Saint

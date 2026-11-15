@@ -1,0 +1,118 @@
+# IRON CANTICLE Song Design: Engine Litany (track 04, machine family).
+slug: canticle-engine-litany
+title: Engine Litany
+credit: IRON CANTICLE
+order: 4
+family: machine
+version: 2
+role: The industrial track. Where the guns come from, and why the war never ends.
+story: >-
+  Forty floors beneath the spire, worker-priests bless every shell they pour. A shaking soldier sent back from
+  the war says the guns only feed the thing in the dark. He is walked to the furnace, and they sing louder.
+test: Can mechanical, locked-in riffs and a rigid choir sound industrial without the static and clatter of earlier tests?
+
+render:
+  bpm: 120
+  key: F minor
+  timesig: "4"
+  seconds: 185        # 84 bars at 120 is 168 s
+
+palette:
+  lead: the forge, a hard cold male lead
+  guitars: tight mechanical palm-muted riff locked to the kick, same riff all song with small changes
+  drums: rigid straight beat, kick on every beat in the choruses
+  colour: the engine-choir chanting on one note
+  left_out: rap, 808, bell, guitar solo, swing of any kind
+harmony: "Fm pedal under everything; chorus Fm - Db - Eb - C."
+drums: Strict four-on-the-floor in choruses, half-time in verses, everything quantised and machine-straight.
+bass_movement: bass guitar doubles the riff an octave down, never moves off F in the verses.
+the_moment: The numbered litany in the bridge, sung by the engine-choir on one note, then the chorus slams back louder.
+
+sections:
+  - name: chorus 1
+    tag: chorus - rigid male choir in unison, mechanical riff locked to the kick, straight in
+    bars: 8
+    performer: engine-choir
+    lyrics: |
+      Strike the anvil, turn the wheel
+      Bless the barrel, bless the steel
+      Every gun a holy thing
+      Hear the engines, hear them sing
+  - name: verse 1
+    tag: verse - hard cold male lead sings, half-time machine beat, chugging riff
+    bars: 16
+    performer: forge
+    lyrics: |
+      Forty floors beneath the spire, the furnaces are fed
+      We pour the shells by candlelight and bless them for the dead
+      A hymn for every rivet and a psalm for every seam
+      We haven't seen the sky in years, we haven't time to dream
+      My father worked this hammer, and his father worked it too
+      They never asked who it was for, and neither will I, will you
+      The Synod sends a tally and we meet it every night
+      Ten thousand guns go to the edge and none come back to light
+  - name: chorus 2
+    tag: chorus - rigid male choir in unison, kick on every beat
+    bars: 8
+    performer: engine-choir
+    lyrics: |
+      Strike the anvil, turn the wheel
+      Bless the barrel, bless the steel
+      Every gun a holy thing
+      Hear the engines, hear them sing
+  - name: verse 2
+    tag: verse - hard cold male lead, louder, riff gets heavier
+    bars: 16
+    performer: forge
+    lyrics: |
+      A boy came down the shaft last week, they'd sent him back from war
+      His hands were shaking on the line, he'd held these guns before
+      He said the thing out past the stars is fed on what we make
+      That every gun we bless for them is one more thing to break
+      The overseer took his arm and walked him to the flame
+      And we sang the litany louder so we wouldn't hear his name
+      Strike the anvil, turn the wheel, the tally must be met
+      The sun is going out up there, it isn't out just yet
+  - name: break
+    tag: break - instrumental, the riff alone, then drums lock back in
+    bars: 8
+    performer: none
+  - name: litany
+    tag: bridge - rigid male choir chants on one note, kick only
+    bars: 8
+    performer: engine-choir
+    lyrics: |
+      One for the furnace
+      Two for the wheel
+      Three for the Synod
+      Four for the steel
+  - name: final chorus
+    tag: final chorus - choir and lead together, heaviest riff, kick on every beat
+    bars: 16
+    performer: engine-choir+forge
+    lyrics: |
+      Strike the anvil, turn the wheel
+      Bless the barrel, bless the steel
+      Every gun a holy thing
+      Hear the engines, hear them sing
+      Strike the anvil, turn the wheel
+      Bless the barrel, bless the steel
+      Every gun a holy thing
+      Hear the engines, hear them sing
+  - name: end
+    tag: ending - riff stops dead, choir sings the last line alone
+    bars: 4
+    performer: engine-choir
+    lyrics: |
+      Hear the engines sing
+
+ending: The riff stops dead on the downbeat; the choir sings "Hear the engines sing" alone on one note.
+caption: >-
+  120 bpm, F minor, industrial metal, opens straight in on a rigid male choir singing in strict unison over a
+  tight mechanical guitar riff locked to the kick, a hard cold male lead sings the verses, machine-straight
+  drums, a chanted counting bridge on one note, ends with the riff stopping and the choir singing alone
+
+lyric_audit:
+  character_voice: the forge worker is proud and numb; the only feeling comes out sideways ("neither will I, will you")
+  imagery: [blessing shells by candlelight, the father's hammer, the shaking boy, walked to the flame]
+  throughline: the tally (counting), candlelight, the sun going out

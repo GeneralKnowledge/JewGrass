@@ -1,0 +1,138 @@
+# IRON CANTICLE Song Design: When Kingdoms Fall (track 09, war family with cult choir).
+slug: canticle-when-kingdoms-fall
+title: When Kingdoms Fall
+credit: IRON CANTICLE
+order: 9
+family: war
+version: 2
+role: The heaviest track. The rising. Every voice on the album in one song.
+story: >-
+  The cult comes up from the Undercroft; the forges turn the guns around; the bell-ringers are theirs. Kell
+  passes his mother's stairwell without stopping. In the high hall the Synod sings its oldest hymn, the ledgers
+  burn, Kell feeds his own name to the fire, and someone lights a candle in the middle of the room.
+test: Can the biggest arrangement stay blended, with the lead still on top?
+
+render:
+  bpm: 150
+  key: D minor
+  timesig: "4"
+  seconds: 215        # 124 bars at 150 is 198 s
+
+palette:
+  lead: Kell at full power, with the crowd choir and gang choir behind him
+  guitars: all of it - gallops in the verses, huge open chords in the chorus, twin solo
+  drums: double kick throughout, half-time breakdown
+  colour: the bell once, in the Synod's hymn
+  left_out: rap, 808, female voice
+harmony: "Dm - Bb - F - C; chorus Dm - Bb - C - A."
+drums: Verses double-kick gallop; choruses driving; Synod hymn no drums; breakdown slow half-time with double kick.
+bass_movement: bass gallops with the kick; drops out for the Synod hymn.
+the_moment: >-
+  The Synod's choir sings the Tithe Bell chorus slowly with no band, for the last time, and the breakdown
+  crushes it with the congregation chanting Prayer's line.
+
+sections:
+  - name: chorus 1
+    tag: chorus - powerful male lead and huge gang choir, heavy open chords, straight in
+    bars: 16
+    performer: kell+soldiers
+    lyrics: |
+      When kingdoms fall, they fall in fire
+      We climbed the stairs, we climbed the spire
+      Ten thousand candles in our hands
+      To burn the Synod where it stands
+      When kingdoms fall, they fall like this
+      A bell, a blade, the dark abyss
+      Every death a prayer to him
+      Let the spire burn, let the sun go dim
+  - name: verse 1
+    tag: verse - powerful gritty male lead sings, galloping double kick and guitars
+    bars: 16
+    performer: kell
+    lyrics: |
+      We came up from the Undercroft on the night of the dead sun
+      Deserters, orphans, tithe-born sons, we came up every one
+      Through the levels and the forges, and the forges joined the climb
+      The men who blessed the barrels turned the barrels round this time
+      The levy wardens ran for doors and found the doors were barred
+      The bells rang out the warning, but the bell-ringers were ours
+      I passed my mother's stairwell and I saw her candle burn
+      I didn't stop, I couldn't stop, there's no way to return
+  - name: chorus 2
+    tag: chorus - male lead and huge gang choir, heavy open chords
+    bars: 16
+    performer: kell+soldiers
+    lyrics: |
+      When kingdoms fall, they fall in fire
+      We climbed the stairs, we climbed the spire
+      Ten thousand candles in our hands
+      To burn the Synod where it stands
+      When kingdoms fall, they fall like this
+      A bell, a blade, the dark abyss
+      Every death a prayer to him
+      Let the spire burn, let the sun go dim
+  - name: verse 2
+    tag: verse - male lead sings, higher and harder, galloping drums
+    bars: 16
+    performer: kell
+    lyrics: |
+      The Synod in the high hall sang the oldest hymn they knew
+      Twelve thousand years of candles, and they thought the hymn was true
+      The Herald read the order, but his voice began to break
+      Every tenth child, every tenth, and the tenth came back to take
+      We dragged the ledgers to the fire, a thousand years of names
+      I looked for mine, I found it there, and fed it to the flames
+      And when the last priest fell, the hall went silent as a tomb
+      And someone lit a candle in the middle of the room
+  - name: synod hymn
+    tag: bridge - deep male choir sings slowly alone, one deep bell, no band
+    bars: 8
+    performer: synod
+    lyrics: |
+      Ring the bell, the tenth one goes
+      Ring the bell, the Synod knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: breakdown
+    tag: breakdown - crushing half-time riff, crowd choir chants, double kick
+    bars: 8
+    performer: congregation
+    lyrics: |
+      Every death is a prayer
+      Every death is a prayer
+      Every death is a prayer
+      Every death is a prayer
+  - name: solo
+    tag: guitar solo - instrumental, harmonised twin guitar lead, double kick
+    bars: 8
+    performer: none
+  - name: final chorus
+    tag: final chorus - everything, lead, gang choir and crowd choir together
+    bars: 16
+    performer: kell+soldiers+congregation
+    lyrics: |
+      When kingdoms fall, they fall in fire
+      We climbed the stairs, we climbed the spire
+      Ten thousand candles in our hands
+      To burn the Synod where it stands
+      When kingdoms fall, they fall like this
+      A bell, a blade, the dark abyss
+      Every death a prayer to him
+      Let the spire burn, let the sun go dim
+  - name: end
+    tag: ending - band stops dead, whole choir sings the last line
+    bars: 4
+    performer: kell+congregation
+    lyrics: |
+      Let the spire burn
+
+ending: Band stops dead; the whole choir sings "Let the spire burn" and it ends.
+caption: >-
+  150 bpm, D minor, the heaviest track, opens straight in on a powerful male lead and a huge gang choir singing a
+  big chorus, galloping double-kick verses, a deep male choir sings a slow hymn alone with one bell, a crushing
+  half-time breakdown with a chanting crowd, twin guitar solo, ends with the whole choir singing the last line
+
+lyric_audit:
+  character_voice: Kell doesn't gloat; the victory is told like a list of facts
+  imagery: [the forges turning the guns round, the bell-ringers were ours, feeding his own name to the flames, a candle in the middle of the room]
+  throughline: every motif returns - Tithe Bell's chorus, Prayer's chant, the mother's candle, the ledger, the dead sun

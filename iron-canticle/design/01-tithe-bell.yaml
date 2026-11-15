@@ -1,0 +1,103 @@
+# IRON CANTICLE Song Design: Tithe Bell (track 01, round 1, cathedral family).
+slug: canticle-tithe-bell
+title: Tithe Bell
+credit: IRON CANTICLE
+order: 1
+family: cathedral
+version: 2   # v2 Nov 15: sung heavy metal, no rap (Reuben). v1 in previous/v1-hymn-trap/
+role: The opener. Sets the album's sound and world in under two minutes - the bell, the choir, the levy.
+story: >-
+  The levy day in Vigil. The Synod's Herald reads the order: every tenth child goes to the war. A mother on a
+  stairwell asks the count to skip her door. It doesn't. (The child is Kell.)
+test: Does a sung metal verse and a huge choir chorus feel like the opening of a war story?
+
+render:
+  bpm: 140
+  key: C minor
+  timesig: "4"
+  seconds: 110        # 52 bars at 140 is 89 s; the rest is room for the bell to ring out
+
+palette:
+  lead: the choir chorus; the Herald sings the verse, stern and low
+  guitars: heavy palm-muted chugs on the root, open chords in the chorus
+  drums: mid-tempo stomp, double kick only in the final chorus
+  colour: one deep bell on the first beat of each chorus
+  left_out: rap, 808, trap drums, guitar solo (saved for Trench Psalm)
+harmony: Cm - Ab - Fm - G (the G major chord is the cold lift of the hook). Keyboard strings hold the chords low; choir in unison.
+drums: >-
+  Chorus: four-on-the-floor stomp, snare on 2 and 4, big crash on each bar. Verse: half-time, kick following the
+  guitar chugs. Mother's bridge: no drums. Final chorus: double-kick sixteenths under the stomp.
+bass_movement: bass guitar doubles the guitar roots, one note per beat, drops out for the bridge.
+the_moment: >-
+  The mother's "count to nine" sung over one held chord, then the bell and the whole choir come straight back in
+  over it, louder, as if she wasn't heard.
+
+sections:
+  - name: chorus 1
+    tag: chorus - huge deep male choir sings the hook, heavy guitars and stomping drums, straight in
+    bars: 8
+    performer: synod
+    lyrics: |
+      Ring the bell, the tenth one goes
+      Ring the bell, the Synod knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: verse
+    tag: verse - powerful low male lead singing a stern proclamation, chugging guitars, half-time drums
+    bars: 16
+    performer: herald
+    idea: the order read out as scripture; the image is the ledger on the altar wall
+    lyrics: |
+      By order of the Synod in the long night
+      Every tenth child from every house, the count is right
+      Written in the ledger on the altar wall
+      A coat, a gun, a number, and a candle when he falls
+      The sun is going cold and something hungers past the stars
+      Every tenth child is a wall between the dark and ours
+      The levy ship is waiting, burning on the pad
+      Say goodbye and say nothing, he's all you ever had
+  - name: chorus 2
+    tag: chorus - huge deep male choir sings the hook, heavy guitars, bell
+    bars: 8
+    performer: synod
+    lyrics: |
+      Ring the bell, the tenth one goes
+      Ring the bell, the Synod knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: bridge
+    tag: bridge - soft low female voice sings alone over one held chord, no drums
+    bars: 8
+    performer: mother
+    lyrics: |
+      Count to nine and skip my door
+      Count to nine, I'll ask no more
+      He's only small, he's only mine
+      Count to nine, count to nine
+  - name: final chorus
+    tag: final chorus - choir and lead together, double kick, heaviest guitars, bell
+    bars: 8
+    performer: synod
+    lyrics: |
+      Ring the bell, the tenth one goes
+      Ring the bell, the Synod knows
+      Light a candle, close the door
+      Ring the bell and ask no more
+  - name: end
+    tag: ending - choir sings the last line alone, drums stop, one deep bell
+    bars: 4
+    performer: synod
+    lyrics: |
+      Ring the bell and ask no more
+
+ending: Drums and guitars stop; the choir sings "Ring the bell and ask no more" alone and one bell strike lands under the last word. Ends sung, no spoken outro.
+caption: >-
+  140 bpm, C minor, opens straight in on a huge deep male choir singing the chorus over heavy guitars and a
+  stomping beat, one deep bell, a stern powerful low male lead sings the verse, a soft low female voice sings
+  a short bridge with the band gone, final chorus with double kick, ends with the choir singing the last line
+
+lyric_audit:
+  character_voice: the Herald sings like a decree; the mother only asks.
+  imagery: [the ledger on the wall, a rifle older than his street, the levy ship on the pad, hands on the stairwell rail]
+  hook: '"Ring the bell" four times a chorus; "Count to nine" is the line people remember'
+  throughline: counting (every tenth one, count to nine) and candles (light a candle, twelve thousand years of candles)
