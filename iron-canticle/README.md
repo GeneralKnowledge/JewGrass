@@ -1,7 +1,8 @@
 # IRON CANTICLE: CANDLES FOR A DEAD SUN
 
-A grimdark sci-fi concept album: industrial hymn trap, a deep monastic choir, cathedral organ, war drums and
-doom-heavy 808s. Inspired by the genre in general and fully original: no franchise names, factions, places,
+A grimdark sci-fi concept album sung as anthemic heavy/power metal: a powerful clean male lead, huge gang-choir
+choruses, galloping double kick and heavy guitars. Every line is sung; no rap. (v2, Nov 15: Reuben found v1's
+hymn-trap rap verses "too much rap like singing"; v1 is kept in `previous/v1-hymn-trap/`.) Inspired by the genre in general and fully original: no franchise names, factions, places,
 terms or quotes anywhere (`build.py` checks every lyric, title and caption against `banned_lore`).
 
 **The world.** Vigil is a city covering a whole world, twelve thousand years old, lit by candles because its
@@ -46,13 +47,13 @@ kept only on the never-merged branch `claude/reference-inputs` (`reference-input
 
 ## Round 1
 
-Tithe Bell, Trench Psalm and Prayer (one per family), 2 takes each on Kaggle, XL turbo. Seeds 3101/3102,
-3301/3302, 3701/3702 (3000 + track number x 100 + take). Plus one laptop render of Prayer with the friend's mix
+Tithe Bell, Trench Psalm and Prayer (one per family), 2 takes each on Kaggle, XL turbo. v1 seeds 3101/3102,
+3301/3302, 3701/3702 (in project files iron-canticle/round1/). v2 seeds 3111/3112, 3311/3312, 3711/3712. Plus one laptop render of Prayer with the friend's mix
 as reference, for a blind A/B against the plain take.
 
 ```
 python3 kaggle/laptop/kjob.py run JOB=render \
   TRACKS_YAML=https://raw.githubusercontent.com/GeneralKnowledge/JewGrass/claude/project-thread-pku6cs/iron-canticle/tracks.yaml \
   TRACKS='["canticle-tithe-bell","canticle-trench-psalm","canticle-prayer"]' \
-  SEEDS='{"canticle-tithe-bell":[3101,3102],"canticle-trench-psalm":[3301,3302],"canticle-prayer":[3701,3702]}'
+  SEEDS='{"canticle-tithe-bell":[3111,3112],"canticle-trench-psalm":[3311,3312],"canticle-prayer":[3711,3712]}'
 ```

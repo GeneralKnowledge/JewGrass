@@ -11,7 +11,9 @@ format: >-
   A studio project with a cast. Each song is sung or rapped by a character from the story, backed by the
   Synod choir. One song (Prayer) was written by a friend of Reuben's and is used with permission, with
   lore names changed so it is fully original (see design/07-prayer.yaml).
-genre: industrial hymn trap, dark choral rap, doom metal weight, cathedral organ, war drums
+genre: anthemic heavy metal / power metal, sung throughout, big choir choruses, war stories told as songs
+version: 2   # v1 (hymn trap with rap verses) is kept in previous/v1-hymn-trap/. Reuben, Nov 15: "too much rap
+             # like singing", wants a big anthemic war-metal band sound. Genre words only: no band named or imitated.
 premise: >-
   Vigil is a city that covers a whole world, twelve thousand years old, lit by candles because its sun is
   dying. It is ruled by the Synod, a priesthood that keeps the faith, the ledgers and the levy: every tenth
@@ -25,20 +27,21 @@ throughline: >-
   and ends with the last candle.
 
 feel:
-  - huge and sacred, but bleak rather than heroic
-  - heavy low end, slow and crushing more often than fast
+  - every line is sung: a powerful clean male lead and huge gang-choir choruses you can shout back. No rap anywhere
+  - anthemic and driving: mid-tempo stomps and galloping verses, big singalong refrains
+  - the story is told like a war history, but the words stay bleak; the music lifts, the lyrics don't celebrate
   - the choir is the album's constant: it gets darker and smaller as the story goes on
   - violence is sung like scripture, never celebrated like an action film
   - every track starts straight in (no long intros) and ends on a sung line, never a spoken outro or an instrumental tail
 
 palette:
-  choir: deep monastic male choir chant, unison, Latin-free (our own English words); a small congregation for call and response
-  organ: cathedral pipe organ, low sustained chords and single held notes, never a hymn-book melody on top
-  drums: trap drums (808 kick, sharp snare, triplet hats) under huge slow war drums and toms
-  bass: distorted 808, very low, long notes; the album lives below 120 Hz like the reference song
-  guitars: down-tuned doom metal guitars, used only for weight at the biggest moments
-  colour: one deep tolling bell, low strings, a few metallic industrial hits
-  left_out: banjo, pipes, brass sections, anything bright, comic or festive
+  vocals: powerful clean male lead with grit (baritone to tenor), big male gang choir doubling every chorus, one deep low choir for the Synod
+  guitars: heavy palm-muted rhythm guitars, chugging and galloping, harmonised lead lines only in instrumental breaks
+  keys: orchestral keyboard strings and a low organ layer underneath, holding the chords, never on top
+  drums: real metal drum kit, double-kick gallops in verses, big four-on-the-floor stomp in choruses
+  bass: bass guitar locked to the kick
+  colour: one deep bell (Tithe Bell and Prayer only)
+  left_out: rap, trap drums, 808, hand drums, banjo, pipes, brass sections, anything comic or festive
 
 motifs:
   tithe-bell: one deep bell on D, struck on the downbeat. Opens the album, returns before Prayer, rings once at the end of Candles for a Dead Sun and is not answered
@@ -46,51 +49,50 @@ motifs:
   count-to-nine: the mother's four-note falling phrase from Tithe Bell (D C Bb A), returns in Candles for a Dead Sun
 
 voices:
-  synod: massive deep monastic male choir, unison chant
-  herald: cold, measured male rap, precise diction, bureaucratic menace (the Synod's spokesman)
+  synod: massive deep male choir, unison
+  herald: powerful low male lead singer, stern and commanding (the Synod's spokesman)
   mother: low, plain female voice, sung softly, no vibrato
-  kell: gritty low male rap, tired and close, gets harder as the album goes on (could become Reuben's RVC voice)
-  soldiers: rough group shout, call and response
-  chaplain: deep solo male singer, slow, sermon-like
-  red-choir: low male lead singer of the cult, half-sung, with the congregation answering
-  congregation: crowd chant answering the lead
+  kell: powerful clean male lead with grit, the album's main singer (could become Reuben's RVC voice)
+  soldiers: big male gang choir, sung shouts, call and response
+  chaplain: deep solo male singer, slow
+  red-choir: low powerful male lead singer of the cult, with the congregation answering
+  congregation: huge crowd choir answering the lead
 
 lyric_conventions:
+  - Everything is sung. Verses are 8 lines (two bars a line), so they are melodies, not rap bars.
   - Lyrics hold only the words. Delivery goes in the section tag.
   - Call and response is written as alternating lines, never in brackets.
   - Never more lines than bars. Nothing fully in brackets (the pipeline strips it).
   - Instrumental sections have a tag that says instrumental and no lyric lines.
 
 caption_core: >-
-  dark industrial hymn trap, grim sci-fi cathedral mood, deep monastic male choir chant, low pipe organ
-  sitting back in the mix, heavy distorted 808 bass, minor key, ominous and sacred, bleak not heroic,
-  warm cohesive blended dark mix where every instrument sits inside the whole, room for the kick
+  anthemic heavy metal, power metal, dark sci-fi war story, powerful clean sung male lead vocals,
+  huge male gang choir choruses, heavy palm-muted rhythm guitars, real metal drums with double kick,
+  orchestral keyboard strings underneath, minor key, warm cohesive blended mix where every instrument sits
+  inside the whole
 
 # Each family gets its own drums and its own sentence in the caption.
 families:
   cathedral:
     feel: the Synod's sound. Slow, vast, cold.
     caption: >-
-      half-time trap groove, slow 808 hits on the downbeat, choir carries the harmony, sparse hats
+      mid-tempo stomping groove, deep male choir carries the chorus, low organ layer under the guitars
   war:
     feel: the front. Faster, physical, exhausted.
     caption: >-
-      driving war drums, down-tuned doom guitar chugs blended low under the hooks, gruff group shouts
-      answering the lead, harder rap delivery
+      fast galloping double-kick verses, driving chugging guitars, gang choir shouting the call and response, harmonised guitar lead in the break
   cult:
     feel: the Undercroft. Ritual, intimate, then overwhelming.
     caption: >-
-      ritual hymn trap, deep frame drum pulse, congregation call and response, low half-sung male lead,
-      close and intimate at first, building to a crushing final chorus
+      slow heavy ritual metal hymn, crushing half-time riffs, low powerful male lead with a huge crowd choir answering, quiet verses that build to an overwhelming final chorus
   machine:
     feel: the factories and the engine-priests. Metallic and mechanical.
     caption: >-
-      industrial glitch trap, metallic percussion, stuttering edits, mechanical repeating choir phrases,
-      grinding distorted bass
+      industrial metal, mechanical riffs locked to the kick, repeating choir phrases, grinding bass guitar
   undercroft:
     feel: under the city. Almost still.
     caption: >-
-      minimal and dark, sub-bass drone, slow single bell strokes, distant choir, a heartbeat kick
+      dark and slow, clean guitar arpeggios, distant choir, a heartbeat kick, no distortion until the end
 
 # Words that put hiss or static over whole songs (Nov 14), plus the circus/oom-pah words Reuben disliked,
 # and "clean/polished mix" (made solo instruments stick out; ask for a warm blended mix instead).
@@ -103,9 +105,10 @@ banned_lore: [warhammer, 40k, emperor, imperium, imperial, astartes, space marin
 energy_curve: [01 cold, 02 low, 03 high, 04 mid, 05 high, 06 lowest, 07 building, 08 mid, 09 highest, 10 low]
 
 acceptance:
-  identity: the choir, organ and 808 make a sound you'd know within five seconds
-  weight: heavy low end without mud; the kick still cuts through
-  words: rap and choir words are audible; the hooks can be chanted back
+  identity: the sung lead and gang choir over heavy guitars make a sound you'd know within five seconds
+  no_rap: every line is sung; any take that slips into rap is rejected
+  weight: heavy guitars without mud; the kick and the voice still cut through
+  words: lead and choir words are audible; the choruses can be sung back
   bleakness: nothing sounds triumphant, festive or comic
   variation: cathedral, war and cult tracks have clearly different drums
   starts: straight in, no long intro; ends sung, no spoken outro
@@ -114,4 +117,5 @@ round1:
   tracks: [tithe-bell, trench-psalm, prayer]
   takes: 2
   model: xl-turbo
+  seeds_v2: [3111, 3112, 3311, 3312, 3711, 3712]
   why: one track per family (cathedral, war, cult). Prayer also tests the friend's song as a sound reference on the laptop. The other seven are written only after Reuben has heard these.

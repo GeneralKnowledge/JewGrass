@@ -1,0 +1,175 @@
+# IRON CANTICLE Song Design: Prayer (track 07, round 1, cult family).
+# Words and song by a friend of Reuben's, used with permission (Nov 14 2026). The original lyrics name a god and
+# lore from a fantasy tabletop/video-game setting (a trademarked god, his "Murder Court", the "three gods of
+# death", his death on a bridge, "the Slayer"). Those lines are changed below so the song is fully original;
+# everything else is the friend's words as written. Changes are listed in `changes` so the friend can approve them.
+slug: canticle-prayer
+title: Prayer
+credit: IRON CANTICLE (words and song by a friend of Reuben's, adapted with permission)
+order: 7
+family: cult
+version: 1
+role: The hymn of the Undercroft cult and the album's centre. The point where Kell joins.
+story: >-
+  Beneath Vigil, deserters, orphans and the tithed-back meet by candlelight to sing to Cull, the Red Saint, the
+  Saint of Murder. The Synod burned him on a spire long ago; the cult says he rose. Verse 2 is a new member's
+  oath at the Silent Court, which on the album is Kell's.
+test: >-
+  Does the cult sound like the same church as the Synod, only darker and closer? Also the reference test: a
+  laptop render with the friend's mix as the ACE-Step sound reference, against the plain Kaggle takes.
+reference_audio: reference-inputs/prayer-friend.mp3   # branch claude/reference-inputs, never merged. Laptop only.
+
+changes:
+  - "The Lord of Murder -> the Saint of Murder (the original's title is the trademarked god's epithet)"
+  - "Bhaal -> Cull (original name; one syllable so the line still scans)"
+  - "Hail the Slayer -> Hail the Red Saint (the Slayer is that god's avatar)"
+  - "He fell upon a bridge of stone / And rose again to claim his throne -> They burned him on the iron spire / And he rose again out of the fire (the bridge is his death in that lore)"
+  - "Three gods of death but one is red -> A thousand saints but one is red (the three gods are that setting's trio)"
+  - "the Murder Court -> the Silent Court"
+
+render:
+  bpm: 144             # the friend's mix measures ~144 BPM (half-time feel), D minor, very bass-heavy
+  key: D minor
+  timesig: "4"
+  seconds: 215         # 116 bars at 144 is 193 s, plus room for the last chant
+
+palette:
+  lead: the Red Choir lead, low and half-sung, with the congregation answering
+  bass: distorted 808, very low, like the reference (about half its energy is below 120 Hz)
+  drums: hand drums and a deep frame drum in the verses, full trap drums from the first chorus, war drums in the last
+  guitars: down-tuned doom guitars in the final chorus only
+  colour: organ held under everything; the tithe bell once, at the very start
+  left_out: rap, female voice, strings, anything fast
+harmony: >-
+  Dm - Bb - Gm - A (A major, harmonic minor), choruses lift to F - C - Dm - A. The reference drifts toward G and
+  F-sharp in its second half; the last chorus may do the same.
+drums: >-
+  Verses: frame drum on 1 and 3, hand drums in a slow six-against-four pattern, no hats. Choruses: half-time trap,
+  kick on 1, snare on 3, triplet hats. Catechism: drums drop to the frame drum only. Final chorus: war drums
+  and toms on every beat, double-kick at line ends.
+bass_movement: long 808 notes on chord roots; drops out for the catechism and slams back on "Every death".
+the_moment: >-
+  The catechism: the lead asks, the congregation answers, drums nearly gone, then "Then go and pray with every
+  death" and the final chorus lands with guitars, war drums and the whole choir.
+
+sections:
+  - name: opening chant
+    tag: opening - congregation chant over one deep bell and frame drum, straight in
+    bars: 4
+    performer: congregation
+    lyrics: |
+      Every death is a prayer
+      Every death is a prayer
+  - name: verse 1
+    tag: verse - low half-sung male lead, candlelit and close, frame drum and hand drums, organ drone
+    bars: 16
+    performer: red-choir
+    lyrics: |
+      Beneath the city in the dark
+      We light the candles bone and stark
+      We sing the name the cowards fear
+      The Saint of Murder, he is near
+      They burned him on the iron spire
+      And he rose again out of the fire
+      A thousand saints but one is red
+      And every heart he stops is fed
+  - name: pre 1
+    tag: pre-chorus - congregation joins the lead, drums build
+    bars: 4
+    performer: red-choir+congregation
+    lyrics: |
+      Kneel before the skull of red
+      Count the drops for all the dead
+  - name: chorus 1
+    tag: chorus - full choir and congregation, half-time trap drums, heavy 808
+    bars: 16
+    performer: red-choir+congregation
+    lyrics: |
+      Every death is a prayer to you
+      Every blade in the night rings true
+      Hail the Red Saint, hail his throne
+      Hail the skull of blood and bone
+      Saint of Murder, hear our call
+      Cull will rise when kingdoms fall
+      Every scream a holy hymn
+      Every death belongs to him
+  - name: verse 2
+    tag: verse - low half-sung male lead, darker, trap drums stay, organ louder
+    bars: 16
+    performer: red-choir
+    lyrics: |
+      I stood before the Silent Court
+      My life was long, my mercy short
+      They gave the knife, they gave the name
+      They marked my brow in crimson flame
+      I took the oath, I made the vow
+      I never fear the darkness now
+      And when I strike in silent night
+      I feel him smiling at the sight
+  - name: pre 2
+    tag: pre-chorus - congregation joins the lead, drums build
+    bars: 4
+    performer: red-choir+congregation
+    lyrics: |
+      Kneel before the skull of red
+      Count the drops for all the dead
+  - name: chorus 2
+    tag: chorus - full choir and congregation, trap drums, heavy 808
+    bars: 16
+    performer: red-choir+congregation
+    lyrics: |
+      Every death is a prayer to you
+      Every blade in the night rings true
+      Hail the Red Saint, hail his throne
+      Hail the skull of blood and bone
+      Saint of Murder, hear our call
+      Cull will rise when kingdoms fall
+      Every scream a holy hymn
+      Every death belongs to him
+  - name: break
+    tag: break - instrumental, low organ and frame drum, 808 drops out
+    bars: 8
+    performer: none
+  - name: catechism
+    tag: call and response - lead asks, congregation answers, frame drum only
+    bars: 16
+    performer: red-choir+congregation
+    lyrics: |
+      Who do you serve
+      The Saint of Murder
+      What do you give
+      The final breath
+      Where will you go
+      Into the red
+      Then go and pray with every death
+  - name: final chorus
+    tag: final chorus - crushing, doom guitars, war drums, whole choir and congregation
+    bars: 16
+    performer: red-choir+congregation
+    lyrics: |
+      Every death is a prayer to you
+      Every blade in the night rings true
+      Hail the Red Saint, hail his throne
+      Hail the skull of blood and bone
+      Saint of Murder, hear our call
+      Cull will rise when kingdoms fall
+      Every scream a holy hymn
+      Every death belongs to him
+  - name: last chant
+    tag: ending - congregation chant, drums stop, organ chord held
+    bars: 4
+    performer: congregation
+    lyrics: |
+      Every death is a prayer
+      Every death is a prayer
+
+ending: The final "Every death is a prayer" is sung over a held organ chord; drums and bass stop under it. No spoken outro.
+caption: >-
+  144 bpm, D minor, ritual dark hymn, opens straight in on a congregation chant, low half-sung male lead with a
+  crowd answering, only a deep frame drum in the verses, half-time trap drums and very deep distorted 808 from
+  the first chorus, call and response with the drums almost gone, crushing final chorus with heavy guitars
+  blended low, ends on the congregation singing the chant
+
+lyric_audit:
+  author: the friend; only the six lore changes above are ours
+  throughline: candles (bone and stark), counting (count the drops), the catechism shape that the levy and trench hooks borrow

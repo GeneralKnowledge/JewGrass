@@ -8,7 +8,7 @@ title: Prayer
 credit: IRON CANTICLE (words and song by a friend of Reuben's, adapted with permission)
 order: 7
 family: cult
-version: 1
+version: 2   # v2 Nov 15: sung heavy metal (Reuben). v1 in previous/v1-hymn-trap/
 role: The hymn of the Undercroft cult and the album's centre. The point where Kell joins.
 story: >-
   Beneath Vigil, deserters, orphans and the tithed-back meet by candlelight to sing to Cull, the Red Saint, the
@@ -34,34 +34,32 @@ render:
   seconds: 215         # 116 bars at 144 is 193 s, plus room for the last chant
 
 palette:
-  lead: the Red Choir lead, low and half-sung, with the congregation answering
-  bass: distorted 808, very low, like the reference (about half its energy is below 120 Hz)
-  drums: hand drums and a deep frame drum in the verses, full trap drums from the first chorus, war drums in the last
-  guitars: down-tuned doom guitars in the final chorus only
-  colour: organ held under everything; the tithe bell once, at the very start
-  left_out: rap, female voice, strings, anything fast
+  lead: a low powerful male lead, fully sung, with the congregation choir answering
+  guitars: clean dark arpeggios in verse 1, heavy half-time riffs from the first chorus, everything in the final chorus
+  drums: sparse toms in verse 1, slow heavy half-time beat from the first chorus, double kick in the last
+  colour: the bell once at the very start; keyboard strings hold the chords underneath
+  left_out: rap, 808, trap drums, hand drums, female voice
 harmony: >-
   Dm - Bb - Gm - A (A major, harmonic minor), choruses lift to F - C - Dm - A. The reference drifts toward G and
   F-sharp in its second half; the last chorus may do the same.
 drums: >-
-  Verses: frame drum on 1 and 3, hand drums in a slow six-against-four pattern, no hats. Choruses: half-time trap,
-  kick on 1, snare on 3, triplet hats. Catechism: drums drop to the frame drum only. Final chorus: war drums
-  and toms on every beat, double-kick at line ends.
-bass_movement: long 808 notes on chord roots; drops out for the catechism and slams back on "Every death".
+  Verse 1: floor toms on 1 and 3 only. Choruses: slow crushing half-time beat, kick with the riff, snare on 3.
+  Catechism: toms only. Final chorus: double kick under the half-time beat.
+bass_movement: bass guitar on the chord roots with the riff; drops out for the catechism and slams back on "Every death".
 the_moment: >-
   The catechism: the lead asks, the congregation answers, drums nearly gone, then "Then go and pray with every
-  death" and the final chorus lands with guitars, war drums and the whole choir.
+  death" and the final chorus lands with the full band and the whole choir.
 
 sections:
   - name: opening chant
-    tag: opening - congregation chant over one deep bell and frame drum, straight in
+    tag: opening - huge crowd choir sings, one deep bell, heavy chord, straight in
     bars: 4
     performer: congregation
     lyrics: |
       Every death is a prayer
       Every death is a prayer
   - name: verse 1
-    tag: verse - low half-sung male lead, candlelit and close, frame drum and hand drums, organ drone
+    tag: verse - low powerful male lead sings quietly, clean dark guitar arpeggios, floor toms
     bars: 16
     performer: red-choir
     lyrics: |
@@ -74,14 +72,14 @@ sections:
       A thousand saints but one is red
       And every heart he stops is fed
   - name: pre 1
-    tag: pre-chorus - congregation joins the lead, drums build
+    tag: pre-chorus - crowd choir joins the lead, distorted guitars build
     bars: 4
     performer: red-choir+congregation
     lyrics: |
       Kneel before the skull of red
       Count the drops for all the dead
   - name: chorus 1
-    tag: chorus - full choir and congregation, half-time trap drums, heavy 808
+    tag: chorus - full choir and lead, crushing half-time riffs, heavy drums
     bars: 16
     performer: red-choir+congregation
     lyrics: |
@@ -94,7 +92,7 @@ sections:
       Every scream a holy hymn
       Every death belongs to him
   - name: verse 2
-    tag: verse - low half-sung male lead, darker, trap drums stay, organ louder
+    tag: verse - low powerful male lead sings, darker, heavy riffs stay
     bars: 16
     performer: red-choir
     lyrics: |
@@ -107,14 +105,14 @@ sections:
       And when I strike in silent night
       I feel him smiling at the sight
   - name: pre 2
-    tag: pre-chorus - congregation joins the lead, drums build
+    tag: pre-chorus - crowd choir joins the lead, drums build
     bars: 4
     performer: red-choir+congregation
     lyrics: |
       Kneel before the skull of red
       Count the drops for all the dead
   - name: chorus 2
-    tag: chorus - full choir and congregation, trap drums, heavy 808
+    tag: chorus - full choir and lead, crushing half-time riffs, heavy drums
     bars: 16
     performer: red-choir+congregation
     lyrics: |
@@ -127,11 +125,11 @@ sections:
       Every scream a holy hymn
       Every death belongs to him
   - name: break
-    tag: break - instrumental, low organ and frame drum, 808 drops out
+    tag: break - instrumental, slow heavy riff and a mournful guitar lead
     bars: 8
     performer: none
   - name: catechism
-    tag: call and response - lead asks, congregation answers, frame drum only
+    tag: call and response - lead sings the question, crowd choir sings the answer, toms only
     bars: 16
     performer: red-choir+congregation
     lyrics: |
@@ -143,7 +141,7 @@ sections:
       Into the red
       Then go and pray with every death
   - name: final chorus
-    tag: final chorus - crushing, doom guitars, war drums, whole choir and congregation
+    tag: final chorus - overwhelming, double kick, full band, whole choir and lead
     bars: 16
     performer: red-choir+congregation
     lyrics: |
@@ -156,19 +154,19 @@ sections:
       Every scream a holy hymn
       Every death belongs to him
   - name: last chant
-    tag: ending - congregation chant, drums stop, organ chord held
+    tag: ending - crowd choir sings the chant, band stops, one held chord
     bars: 4
     performer: congregation
     lyrics: |
       Every death is a prayer
       Every death is a prayer
 
-ending: The final "Every death is a prayer" is sung over a held organ chord; drums and bass stop under it. No spoken outro.
+ending: The final "Every death is a prayer" is sung over one held chord; drums and bass stop under it. No spoken outro.
 caption: >-
-  144 bpm, D minor, ritual dark hymn, opens straight in on a congregation chant, low half-sung male lead with a
-  crowd answering, only a deep frame drum in the verses, half-time trap drums and very deep distorted 808 from
-  the first chorus, call and response with the drums almost gone, crushing final chorus with heavy guitars
-  blended low, ends on the congregation singing the chant
+  144 bpm, D minor, slow heavy ritual metal hymn, opens straight in on a huge crowd choir with one deep bell,
+  a low powerful male lead sings over clean dark guitar arpeggios in the first verse, crushing half-time riffs
+  from the first chorus, the lead sings questions and the crowd choir sings the answers with the drums almost
+  gone, overwhelming final chorus with double kick, ends on the crowd choir singing the chant
 
 lyric_audit:
   author: the friend; only the six lore changes above are ours
