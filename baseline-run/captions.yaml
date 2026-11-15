@@ -1,0 +1,128 @@
+# Baseline run (Nov 15): every act's captions rewritten in the style of the overnight Natural Capital run
+# (Nov 14 night, takes in project files album-run1/ and album-xl/) and Swim at Your Own Risk.
+#
+# Overnight style: one line, genre fusion first, then the voice (accent + attitude), then a handful of
+# concrete instruments with character (distorted 808, hard drums, heavy guitars on the chorus), one or two
+# song-specific colours, "raw mix", tempo. No mix-engineering boilerplate, no word piles about clean/not clean.
+#
+# Rules kept (they fix real problems): no crackle/hiss/static/vinyl/gramophone/typewriter/tape words
+# (they add static), no circus/oom-pah instruments, songs start straight in and end sung (spoken outros
+# dropped). Key and time signature still go to the model through key/timesig, not the caption.
+#
+# Each act: source = snapshot in sources/, slug prefix for this run. Lyrics, length, bpm, key come from the
+# source unchanged, except where noted (drop_outro).
+
+acts:
+  natural-capital:
+    note: Recreates the overnight album. Captions are the overnight text with only the static-prone words removed.
+    source: sources/natural-capital.yaml
+    prefix: nc-
+    drop_outro: true            # the spoken "due Friday" outros (rule: end sung). Spoken intros stay.
+    no_key: true                # the overnight run had no key conditioning
+    skip: [brass-plate]         # Reuben dropped it (Nov 14)
+    extra:
+      - slug: swim-at-your-own-risk
+        title: Swim at Your Own Risk
+        seconds: 240
+        bpm: 140
+        lyrics_file: sources/swim-at-your-own-risk.lyrics.txt
+        note: Reuben's favourite, made on the laptop. Rendered again with its own caption as the control take.
+    captions:
+      bought-and-sold: dark political hip hop with Celtic country trap, hard boom bap drums switching to heavy trap, distorted 808 bass, angry precise male rap, Scottish accent, solo bagpipe lament in the intro, banjo and fiddle loops, nu metal guitars on the chorus, haunting female vocal bridge, gang chant chorus, raw mix, 82 bpm
+      natural-capital: dark glitch trap, slow build, minimal then huge, whispered close-mic English female spoken word, cool half-sung female vocal, sneering Scottish male rap features, chopped bagpipe drone used as a jingle, cheesy hold music sample, distorted 808 bass, crisp trap drums, champagne glass clinks, crowd applause, gang chant chorus, cinematic, raw mix
+      fast-lane: loud flashy UK trap banger, cocky English male rap, posh chancer voice, laughing ad-libs, revving sports car 808 slides, hard trap drums, rapid hi-hats, cash register samples, distorted banjo riff, Celtic fiddle stabs, nu metal guitars on the chorus, gang chant hook, glitch stutters, raw mix, 145 bpm
+      exit-strategy: dark epic cinematic trap, slow menacing build, whispered close-mic English female spoken word, panicked overlapping male voices on a conference call, sneering Scottish male rap, cool half-sung female vocal, heavy nu metal guitars and screamed gang chant chorus, distorted 808, glitch stutters, slowed broken hold music sample, church organ, solo bagpipe drone in the final chorus, huge raw mix, 130 bpm
+      sunshine-trust: silky smooth yacht lounge trap, sultry calm English female vocal, half sung half spoken, never raises her voice, soft Rhodes electric piano, warm nylon string guitar, gentle steel pan accents, seagulls and lapping waves, champagne clinks, deep clean 808, slow crisp trap drums, lazy hi-hats, faint glitch on the money lines, elegant and empty, 96 bpm
+      # was "typewriter and printing press as drums"
+      ermine-and-ink: baroque harpsichord trap, pompous posh English male rap, aristocratic sneer, duet with a gravelly older male newsreader voice, heavy stamp thuds as percussion, string quartet stabs, brass fanfare, distorted 808, hard trap drums, rolling hi-hats, glitch cut-up headlines, regal chant chorus, satirical, raw mix, 92 bpm
+      # was "subtle tape hiss, gentle glitch fade at the end"
+      gavs-song: slow acoustic bluegrass ballad, tired cracked Scottish male vocal, heartfelt and ashamed, fingerpicked acoustic guitar, mournful fiddle, soft upright bass, brushed snare, lap steel, sparse and intimate, solo Highland bagpipe slow air only in the final chorus, ends on the sung chorus, 76 bpm
+      # was "glitching stock ticker beeps and digital noise"
+      parcel-of-rogues: cinematic spoken word prologue, solo Highland bagpipe lament, howling wind, deep calm Scottish male narrator, slow and grave, low drone, distant church bell, sparse heartbeat kick drum, the bagpipe gradually swallowed by glitching stock ticker beeps and stutter edits, ends on a sudden silence, 70 bpm
+      # was "... spoken word, tape warble, glitch stutter ending"
+      viewing: solo Highland bagpipe lament on a windy hillside, abruptly cut off, cheesy estate agent hold music, soft electric piano, smooth corporate muzak, cheerful English male voiceover, spoken word, glitch stutter ending, no drums
+      # Swim's own laptop caption, unchanged
+      swim-at-your-own-risk: dark underground country trap, Scottish accent, sneering satirical villain rap, raw banjo riff, distorted sliding 808 bass, hard trap drums, rapid hi-hats, glitch production, stuttering vocal chops, Scottish fiddle, bagpipe drone, nu metal guitars on the chorus, gang chant chorus, smug corporate spoken intro, sweet psalm-like female vocal on the bridge, raw unpolished mix
+
+  book-of-names:
+    note: Same band as Natural Capital, so the overnight style applies directly.
+    source: sources/book-of-names.yaml
+    prefix: ''
+    captions:
+      bon-judgment-day: dark epic cinematic trap, angry precise male rap, Scottish accent, heavy trap drums, distorted 808 bass, soaring female vocal and full choir on the chorus, heavy nu metal guitars on the chorus, church organ, slow choir breakdown with the beat dropped out, screamed gang chant, glitch stutters, starts straight in on the rap, ends on the choir and gang singing together, huge raw mix, 132 bpm
+      bon-rose: slow haunting emotional ballad, fragile female vocal, soft piano, distant strings, deep slow 808 swells, layered female harmonies on the chorus, quiet voice and piano bridge, huge final chorus with heavy drums, starts straight in on the voice, ends on the voice alone, raw mix, 68 bpm
+      bon-two-guards-asleep: aggressive dark nu metal trap, furious male rap, Scottish accent, heavy down-tuned guitars, pounding trap drums, distorted 808, screamed gang chant chorus, glitch stutters and sudden dropouts, half-time haunting sung female bridge, starts straight in on the rap, ends on the gang chant, raw mix, 150 bpm
+      bon-the-black-book: dark political hip hop with Celtic country trap, angry precise male rap, Scottish accent, hard boom bap drums switching to heavy trap, distorted 808 bass, banjo loop, haunting sung female chorus, low choir under the chorus, glitch stutters, starts straight in on the rap, ends on the sung chorus, raw mix, 90 bpm
+      bon-redacted: dark glitch pop trap, Scottish female lead vocal, pulsing synth bass, sharp glitch stutters cutting the vocal, hard trap drums, distorted 808, haunting layered sung chorus, banjo figure, nu metal guitars on the final chorus, starts straight in on the vocal, ends on the sung chorus, raw mix, 120 bpm
+      bon-book-of-names: triumphant Celtic folk hymn with trap drums, tender Scottish female vocal, strummed acoustic guitar, a second fragile female vocal, warm Scottish male vocal on the third verse, big community choir on the chorus, soft 808 and slow trap drums, fiddle, full Highland bagpipes only on the final chorus, starts straight in on the vocal, ends with everyone singing, raw mix, 80 bpm
+      bon-last-supper: dark slow R&B trap, silky deep male half-sung vocal, Rhodes electric piano, deep sub bass, slow heavy trap drums, eerie male and female backing vocals on the chorus, distant church choir, one fragile female vocal in the bridge, starts straight in on the vocal, ends on the sung chorus, raw mix, 66 bpm
+      bon-confession: dark gospel soul trap, powerful gospel male lead vocal, church organ, full gospel choir answering on the chorus, slow heavy trap drums, distorted 808 bass, soulful piano chords, one fragile female line in the bridge, starts straight in on the vocal, ends on the choir singing, raw mix, 72 bpm
+      bon-indulgences: dark UK glitch trap, smug posh English male rap, aristocratic sneer, hard trap drums, rapid hi-hats, distorted sliding 808, cold dark synth chords, low choir pad, sung male and female hook, glitch stutters, starts straight in on the rap, ends on the sung hook, raw mix, 140 bpm
+      bon-pilate: soulful folk trap, rich soulful group vocals, fingerpicked acoustic guitar, mournful fiddle, trap drums, warm 808 bass, weary male and bright female sung verses, angry Scottish male rap on the bridge, starts straight in on the group vocals, ends on the group vocals singing, raw mix, 84 bpm
+      bon-all-rise: dark Celtic gospel trap hymn, deep Scottish male vocal, slow church organ chords, slow heavy trap drums, distorted 808 bass, small choir and haunting female vocal on the chorus, mournful fiddle, heavy nu metal guitars only on the final chorus, starts straight in on the vocal, ends on the choir singing, raw mix, 74 bpm
+      bon-sweetheart-deal: cold sparse dark trap, calm deadpan male rap, sparse heavy trap drums, distorted 808, cold minor piano notes, smooth sung female hook with a male harmony, glitch stutters, starts straight in on the rap, ends on the sung hook, raw mix, 96 bpm
+
+  after-hours:
+    source: sources/after-hours.yaml
+    prefix: ''
+    captions:
+      ah-one-more-night: upbeat romantic pop, male vocal group, four distinct male singers, expressive lead tenor, bright high tenor and warm baritone harmonies, big group chorus with four-part harmonies, piano chords, warm synth bass, punchy pop drums, light claps, starts straight in on the high tenor singing the hook, ends on an a cappella group tag, raw mix, 112 bpm
+      ah-if-you-were-here: emotional pop ballad, male vocal group, four distinct male singers, warm baritone opening, lead tenor chorus over four-part harmonies, solo piano, strings from the first chorus, almost no drums until the final chorus, a cappella bridge with voices entering low to high, starts straight in on voice and piano, ends on an unaccompanied four-part chord, raw mix, 76 bpm
+      ah-everybody-knows: playful upbeat dance-pop, male vocal group, four distinct male singers, group call and response, singers interrupting and answering each other, unison chorus that splits into four-part harmony, handclaps, bouncy synth bass, funky guitar chops, punchy dance drums, percussion-only breakdown, starts straight in on the group, ends on a group chant and a hard stop, raw mix, 120 bpm
+
+  mr-sidequest:
+    source: sources/mr-sidequest.yaml
+    prefix: ''
+    captions:
+      mr-sidequest-main-character-syndrome: funky boom bap hip hop, charismatic British male rapper, conversational witty rap with dense internal rhymes and flow switches, funky bass, punchy boom bap drums, soul keys, short brass stabs, chanted melodic hook, beat drops out before punchlines, stripped bass and kick breakdown, starts straight in on the first verse, ends on a rapped line with a hard stop, raw mix, 104 bpm
+      mr-sidequest-ive-got-a-system: fast boom bap and trap hybrid, charismatic British male rapper, rapid multisyllabic rap, triplet flow switches, rubbery distorted bass, punchy snare, rapid hi-hats, syncopated keys, chopped vocal stabs, bouncy chanted hook, half-time breakdown with calm deadpan rap, starts straight in on the first verse, ends on a rapped line with a hard stop, raw mix, 138 bpm
+      mr-sidequest-laughing-at-myself: warm melodic hip hop, charismatic British male rapper, heartfelt conversational rap, electric piano, round bass, boom bap drums, warm sung melodic hook with harmonies, close intimate half-sung bridge, strings in the final chorus, starts straight in on the first verse, ends on a sung line over electric piano, raw mix, 92 bpm
+
+  nightshift-fm:
+    note: Instrumental, so no sung ending; radio effects stay a post job.
+    source: sources/nightshift-fm.yaml
+    prefix: ''
+    captions:
+      nightshift-no-reception: instrumental Memphis phonk, dark and hypnotic, eerie unstable piano loop, heavy rolling bass, swung dry kick and snare, cowbell accents in the hooks, deep male spoken phrase pitched down and chopped into rhythm, eight-bar break with only bass and voice, no rap, raw mix, 92 bpm
+      nightshift-redline: aggressive instrumental drift phonk, melodic cowbell lead with call and response, distorted 808 bass, rapid hi-hats, punchy kick, hard snare, low engine rumble, short risers into heavy drops, half-time break, pitched-down male shout as an accent, no rap, raw mix, 160 bpm
+      nightshift-baile-fantasma: dark Brazilian funk and Memphis phonk instrumental, syncopated baile funk drum pattern, dry kicks, clipped snares, hand percussion, rolling bass locked to the kick, dark synth stabs, occasional cowbell, chanted group vocal chops as percussion, percussion-only break, no rap, raw mix, 130 bpm
+      nightshift-tuning-in: instrumental Memphis phonk, dark and hypnotic, slow swing, eerie detuned piano loop, faint two-note bell motif, deep sub-bass, muffled kick building into a full groove, chopped pitched-down spoken vocal samples, no rap, unresolved final chord, raw mix, 90 bpm
+      nightshift-dead-channel: experimental glitch phonk instrumental, broken drum breaks that skip beats but keep a pulse, stuttering edits, deliberate silences, reversed piano, sub-bass pulses, breathy wordless vocal fragments, sudden cut at the end, no rap, raw mix, 72 bpm
+      nightshift-ghost-ride: atmospheric melodic phonk instrumental, warm detuned synth bells playing a haunting two-note motif, distant choir pads, rolling 808, soft Memphis drums, quiet female spoken phrase turned into a pitched melodic vocal chop, beautiful but unsettling, no rap, raw mix, 100 bpm
+      nightshift-pressure: heavy aggressive Memphis and drift phonk instrumental, saturated distorted 808, distorted synth mid-bass, hard punchy kick, sharp snare, rolling hi-hats, low cowbell motif, stuttering deep male vocal chop, hard stop ending, no rap, raw mix, 145 bpm
+      nightshift-static-dreams: slow hypnotic Memphis phonk instrumental, spacious, faded piano phrase, soft organ, muffled swung drums, deep round bass, distant pads, descending piano counter-melody, whispered stretched vocal fragment, ends in a slowdown, no rap, raw mix, 80 bpm
+      nightshift-overdrive: high-energy drift phonk instrumental, memorable cowbell hook melody, heavily distorted 808, rapid hi-hats, hard snare, punchy kick, electronic risers, big drops, half-time breakdown, two-word male shout chopped into rhythm, abrupt ending, no rap, raw mix, 170 bpm
+      nightshift-lost-transmission: closing Memphis phonk instrumental, slow detuned piano phrase, subdued swung drums, low sub-bass, evolving ambient pad, faint two-note bell, calm low voice stretched and blurred, fades out, no rap, raw mix, 86 bpm
+
+  iron-canticle:
+    note: Fully sung heavy/power metal with choir choruses; grit comes from distortion words, as Reuben asked.
+    source: sources/iron-canticle.yaml
+    prefix: ''
+    captions:
+      canticle-tithe-bell: anthemic heavy metal, dark sci-fi war hymn, huge deep male choir chorus, stern powerful low male lead vocal, heavy distorted guitars, stomping drums, dirty distorted bass, low church organ, one deep bell, soft low female voice on the bridge, double kick on the final chorus, starts straight in on the choir, ends on the choir singing, raw mix, 140 bpm
+      canticle-trench-psalm: fast power metal, dark sci-fi war story, big male gang choir call and response chorus, powerful gritty male lead vocal, galloping double kick, palm-muted distorted guitars, dirty bass, harmonised twin guitar solo, deep solo male voice on the bridge over a choir hum, starts straight in on the choir, ends with the choir singing the last line slowly, raw mix, 145 bpm
+      canticle-prayer: slow heavy ritual metal hymn, low powerful male lead vocal, huge crowd choir answering, one deep bell, dark arpeggiated guitar, crushing half-time distorted riffs, dirty bass, double kick on the final chorus, starts straight in on the choir, ends on the crowd choir singing the chant, raw mix, 144 bpm
+      canticle-every-tenth-child: slow heavy metal power ballad, dark sci-fi, plain low female lead vocal, dark arpeggiated guitar, deep male choir on the chorus, heavy distorted guitars and slow drums from the second verse, band drops away for the bridge, starts straight in on her voice, ends with her singing alone, raw mix, 76 bpm
+      canticle-engine-litany: industrial metal, dark sci-fi, rigid male choir singing in unison, hard cold male lead vocal, mechanical distorted guitar riff locked to the kick, machine-straight drums, grinding distorted bass, chanted counting bridge, starts straight in on the choir, ends with the choir singing alone, raw mix, 120 bpm
+      canticle-deserter: fast galloping heavy metal, soaring gritty male lead vocal, gang choir chorus, double kick, galloping distorted guitars, dirty bass, harmonised twin guitar solo, heavy half-time call and response bridge, starts straight in on the chorus, ends with the lead singing the last line alone, raw mix, 168 bpm
+      canticle-the-undercroft: short dark slow metal piece, distant crowd choir singing softly, dark arpeggiated guitar, heartbeat kick, low close male voice, one heavy distorted chord at the end, starts straight in on the choir, ends on the choir over the distorted chord, raw mix, 70 bpm
+      canticle-the-silent-court: slow crushing heavy metal hymn, huge crowd choir, low cold male lead vocal, half-time distorted riff, dirty bass, sung question and answer over toms, slow mournful guitar solo, double kick on the final chorus, starts straight in on the choir, ends on the choir over one held chord, raw mix, 132 bpm
+      canticle-when-kingdoms-fall: the heaviest power metal track, powerful male lead vocal, huge gang choir chorus, galloping double kick, heavy distorted guitars, deep male choir hymn with one bell, crushing half-time breakdown with a chanting crowd, twin guitar solo, starts straight in on the chorus, ends with the whole choir singing, raw mix, 150 bpm
+      canticle-candles-for-a-dead-sun: slow tragic heavy metal anthem, steady powerful male lead vocal, slow heavy distorted chords, deep male choir chorus, soft low female voice on the bridge, slow melodic guitar solo, huge final chorus, starts straight in on the vocal, ends with the choir singing the title and one deep bell, raw mix, 84 bpm
+
+  last-carriage:
+    note: Instrumental, heavy and dark (industrial metal + noir).
+    source: sources/last-carriage.yaml
+    prefix: ''
+    captions:
+      lastcarriage-beattock: instrumental half-time sludge and industrial metal, slow and crushing, down-tuned fuzz guitars chugging with the kick, distorted synth bass, gliding 808 notes, huge pounding drums, dark distorted synth figure climbing every section, drops to near silence halfway then comes back harder, raw mix, 76 bpm
+      lastcarriage-over-the-border: instrumental dark driving industrial metal with noir, palm-muted down-tuned guitar chugs, overdriven gliding synth lead hook, pounding drums, distorted synth bass, breakdown with a lonely noir piano and a mournful saxophone, groove crashes back heavier, raw mix, 118 bpm
+      lastcarriage-rannoch: instrumental dark industrial electronic metal, fast menacing distorted synth arpeggio, heavy distorted kick, overdriven synth bass, down-tuned fuzz guitar swells, deep dark synth pads, the arpeggio slows at the end, raw mix, 104 bpm
+
+  lowbridge:
+    source: sources/lowbridge.yaml
+    prefix: ''
+    captions:
+      lowbridge-no-signal: dark UK drill, cold minimal British road rap, deep calm baritone male rap, British accent, haunting two-note piano motif, skippy hi-hats, sharp snare, deep sliding 808 with gaps, softer melodic male voice for one passage, short chanted hook, drums drop out leaving voice and piano, starts straight in on voice and piano, ends on the hook sung over the piano, raw mix, 140 bpm
+      lowbridge-weight-of-it: hard dark UK drill, three male rappers trading verses, calm deep baritone, fast sharp technical rapper, low melodic voice, British accents, ominous chopped vocal sample, distorted low piano, aggressive distorted sliding 808, rolling hi-hats, group hook trading lines, starts straight in on the rap, hard stop ending, raw mix, 144 bpm
+      lowbridge-last-bus-home: melancholic late-night UK drill, low melodic male rapper with drawn-out line endings, British accent, sad sparse piano, reversed vocal swell, restrained sliding 808, light drill drums with space, slightly sung emotional hook, short deep baritone verse near the end, starts straight in on piano and voice, ends on the last sung lines, raw mix, 138 bpm
