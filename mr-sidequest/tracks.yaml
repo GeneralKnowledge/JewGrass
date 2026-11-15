@@ -2,6 +2,7 @@
 act: MR. SIDEQUEST
 queue:
 - mr-sidequest-main-character-syndrome
+- mr-sidequest-ive-got-a-system
 tracks:
 - slug: mr-sidequest-main-character-syndrome
   title: Main Character Syndrome
@@ -125,3 +126,124 @@ tracks:
     Credits roll and my name's at the bottom in the smallest font
     Man buying milk. That's me. Still counts.
     Cut.
+- slug: mr-sidequest-ive-got-a-system
+  title: I've Got a System
+  credit: MR. SIDEQUEST
+  status: generate
+  bpm: 138
+  key: C minor
+  timesig: '4'
+  seconds: 170
+  caption: versatile alternative hip-hop, charismatic British male rapper, conversational expressive rap delivery,
+    sharp technical wordplay, dense internal rhymes, multisyllabic patterns, playful storytelling, unexpected punchlines,
+    natural British accent, dynamic flow switches, clear intelligible upfront vocal, warm cohesive blended mix,
+    138 bpm, C minor, fast boom bap and trap hybrid, rubbery bass, crisp snare, syncopated keys, chopped vocal stabs,
+    drums switch subdivisions between sections, starts straight in on the first verse, relaxed rhythmic flow then
+    faster multisyllabic flow, rapid internal-rhyme passage, bouncy chanted hook, half-time breakdown with calm
+    deadpan rap, stop-start gaps, switch to triplet flow, ends on a rapped line with a hard stop
+  lyrics: |
+    [verse - starts straight in, relaxed rhythmic rap, rubbery bass, crisp drums]
+    Sunday night, new notebook, spine's not even cracked
+    Three highlighters lined up and they're ready to attack
+    Watched a forty-minute video on getting things done
+    Bloke in a turtleneck said "block your time", so I blocked every one
+    Monday's cut in fifteen-minute slices, every slice has got a colour
+    Every colour's got a code and every code's got a number
+    Spreadsheet on the laptop with a tab for every chore
+    And a master tab that tracks the tabs, 'cause what else are tabs for
+    Laundry's in a column with a dropdown for the fabric
+    Whites, darks, delicates, conditional formatting, magic
+    Bins on a Tuesday got a reminder and a backup
+    And a backup for the backup in case the backup acts up
+    Mates say "you're mental", I say no, mate, I'm optimised
+    Every minute of my week is colour-coordinated, itemised
+    It's half eleven now. I should probably start the list.
+    Hang on. Need a column for the things I've already missed.
+
+    [chorus - bouncy group-like chant, full drums, chopped vocal stabs]
+    I've got a system, I've got a plan
+    Everything's organised, exactly as I am
+    I've got a system, colour-coded too
+    I've spent six hours planning what I'm going to do
+    Red is urgent, amber is soon
+    Green is for later, blue is for June
+    I've got a system, tick, tick, done
+    Six hours planning and I've not done one
+
+    [verse - faster multisyllabic rap, ends in a rapid internal-rhyme chain]
+    Monday, six o'clock, alarm one, that's a warning
+    Six-oh-five, alarm two, that's the actual morning
+    Six-ten, alarm three, it's a backup, keep it handy
+    Six-fifteen, voice note from Sunday me, he's bossy, he's demanding
+    Kettle's on a timer and the timer's in the sheet
+    Toast is a sub-task with a sub-task for the heat
+    Sub-sub-task, butter, is it soft? Check the column
+    Column says pending. It's been pending since autumn.
+    Categorise, prioritise, itemise, synchronise
+    Alphabetise the alphabet, colour-code the colour guides
+    Sticky-note the sticky notes, file the filing under files
+    Calendar the calendars, I've got calendars for miles
+    Notebook for the notebook and an index for the index
+    Planner for the planner and the planner's got a sixth sense
+    Ninety minutes in and I'm buzzing, I'm a genius
+    Look at the to-do list. Item one: begin this.
+
+    [chorus - bouncy group-like chant, full drums, chopped vocal stabs]
+    I've got a system, I've got a plan
+    Everything's organised, exactly as I am
+    I've got a system, colour-coded too
+    I've spent six hours planning what I'm going to do
+    Red is urgent, amber is soon
+    Green is for later, blue is for June
+    I've got a system, tick, tick, done
+    Six hours planning and I've not done one
+
+    [breakdown - beat switches to half-time, calm deadpan rap listing priorities]
+    Priority one, make a list of my priorities
+    Priority two, double-check it for inconsistencies
+    Priority three, buy milk, semi-skimmed, I've learned that
+    Priority four, text my mum back, she's been waiting since March
+    Priority five, dentist, it's been red since last May
+    Priority six, find a hobby that's not planning my day
+    Priority seven, stop adding priorities
+    Priority eight, see priority seven. Priority nine
+
+    [verse - full speed returns, stop-start gaps, then rapid triplet flow]
+    Wednesday, beat's back, I'm flying, I'm on it
+    Open up the laptop, spreadsheet, here we go, I want it
+    Enter your password. Easy. Done it a thousand times
+    Wrong. Wrong again. Hang on. Think. Wrong. Three strikes.
+    Account locked for thirty minutes. Thirty? That's two slices
+    That's a whole blue block and half a green one, that's a crisis
+    Password hint says "you know this". I don't know this
+    Sunday me's a genius but he's also a menace, he chose this
+    Stop. Breathe. Notebook. Where's the notebook? Bag. No.
+    Desk. No. Kitchen. No. Fridge? Why the fridge? I don't know.
+    Now I'm panicking, scrambling, rambling through the cupboards and the drawers
+    All the colour-coded order turned to chaos on the floor
+    Highlighters everywhere and the master tab's a memory
+    Thirty minutes later I'm in, it's all there, every entry
+    Tick box, tick box, tick box, tick box, every one is empty
+    Three days of planning. Things I've done: zero. Things I've planned: plenty.
+
+    [chorus - full instrumental, layered chant and ad-libs, biggest energy]
+    I've got a system, I've got a plan
+    Everything's organised, exactly as I am
+    I've got a system, colour-coded too
+    I've spent six hours planning what I'm going to do
+    Red is urgent, amber is soon
+    Green is for later, blue is for June
+    I've got a system, tick, tick, done
+    Six hours planning and I've not done one
+    I've got a system, it's got a flaw
+    The flaw is me, I checked, I made a column for it and all
+    I've got a system, password's on a note
+    Note's in the notebook, notebook's in my coat
+    Red is urgent, amber is soon
+    Green is for later, blue is for June
+    I've got a system, tick, tick, done
+    Six hours planning and I've not done one
+
+    [outro - rapped callback over bass and keys, hard stop]
+    Sunday night, new notebook, spine's not even cracked
+    System version two. This time I'm on it. Watch that.

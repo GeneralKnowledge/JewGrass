@@ -1,0 +1,167 @@
+# MR. SIDEQUEST Song Design: I've Got a System (02, technical showcase). From Reuben's spec, Nov 14.
+# Changes from the spec for his standing rules: no spoken intro (starts on verse 1), the half-time priority list
+# is rapped on the beat, and the ending is a rapped callback, not a spoken reveal.
+slug: mr-sidequest-ive-got-a-system
+title: I've Got a System
+credit: MR. SIDEQUEST
+version: 1
+order: 2
+purpose: Test technical rap, rapid delivery, internal rhyme density and changing rhythmic pockets.
+concept: >-
+  He has built an elaborate productivity system of spreadsheets, alarms, colour codes and notebooks. It takes
+  so long to run that he never does anything, and then he forgets the spreadsheet password.
+
+render:
+  bpm: 138
+  key: C minor
+  timesig: "4"
+  seconds: 170        # 92 bars at 138 is 160 s, plus room for the ending
+
+palette: fast boom bap and trap hybrid, rubbery bass, crisp snare, syncopated keys, chopped vocal punctuation
+harmony: Cm, Ab, G, G (mischievous minor loop with a dominant turnaround)
+technical: >-
+  Verse 2 ends with an 8-bar rapid internal-rhyme chain. Verse 3 has a stop-start passage with deliberate gaps,
+  then switches from straight eighths to triplets. Punchlines land on the beat.
+the_moment: >-
+  The breakdown drops to half-time while he calmly lists his priorities; verse 3 returns at full speed.
+
+sections:
+  - name: verse 1
+    tag: verse - starts straight in, relaxed rhythmic rap, rubbery bass, crisp drums
+    bars: 16
+    idea: the system explained like a professional breakthrough
+    lyrics: |
+      Sunday night, new notebook, spine's not even cracked
+      Three highlighters lined up and they're ready to attack
+      Watched a forty-minute video on getting things done
+      Bloke in a turtleneck said "block your time", so I blocked every one
+      Monday's cut in fifteen-minute slices, every slice has got a colour
+      Every colour's got a code and every code's got a number
+      Spreadsheet on the laptop with a tab for every chore
+      And a master tab that tracks the tabs, 'cause what else are tabs for
+      Laundry's in a column with a dropdown for the fabric
+      Whites, darks, delicates, conditional formatting, magic
+      Bins on a Tuesday got a reminder and a backup
+      And a backup for the backup in case the backup acts up
+      Mates say "you're mental", I say no, mate, I'm optimised
+      Every minute of my week is colour-coordinated, itemised
+      It's half eleven now. I should probably start the list.
+      Hang on. Need a column for the things I've already missed.
+  - name: hook 1
+    tag: chorus - bouncy group-like chant, full drums, chopped vocal stabs
+    bars: 8
+    lyrics: |
+      I've got a system, I've got a plan
+      Everything's organised, exactly as I am
+      I've got a system, colour-coded too
+      I've spent six hours planning what I'm going to do
+      Red is urgent, amber is soon
+      Green is for later, blue is for June
+      I've got a system, tick, tick, done
+      Six hours planning and I've not done one
+  - name: verse 2
+    tag: verse - faster multisyllabic rap, ends in a rapid internal-rhyme chain
+    bars: 16
+    idea: the absurd procedures; the rapid chain ends on the punchline
+    lyrics: |
+      Monday, six o'clock, alarm one, that's a warning
+      Six-oh-five, alarm two, that's the actual morning
+      Six-ten, alarm three, it's a backup, keep it handy
+      Six-fifteen, voice note from Sunday me, he's bossy, he's demanding
+      Kettle's on a timer and the timer's in the sheet
+      Toast is a sub-task with a sub-task for the heat
+      Sub-sub-task, butter, is it soft? Check the column
+      Column says pending. It's been pending since autumn.
+      Categorise, prioritise, itemise, synchronise
+      Alphabetise the alphabet, colour-code the colour guides
+      Sticky-note the sticky notes, file the filing under files
+      Calendar the calendars, I've got calendars for miles
+      Notebook for the notebook and an index for the index
+      Planner for the planner and the planner's got a sixth sense
+      Ninety minutes in and I'm buzzing, I'm a genius
+      Look at the to-do list. Item one: begin this.
+  - name: hook 2
+    tag: chorus - bouncy group-like chant, full drums, chopped vocal stabs
+    bars: 8
+    lyrics: |
+      I've got a system, I've got a plan
+      Everything's organised, exactly as I am
+      I've got a system, colour-coded too
+      I've spent six hours planning what I'm going to do
+      Red is urgent, amber is soon
+      Green is for later, blue is for June
+      I've got a system, tick, tick, done
+      Six hours planning and I've not done one
+  - name: breakdown
+    tag: breakdown - beat switches to half-time, calm deadpan rap listing priorities
+    bars: 8
+    lyrics: |
+      Priority one, make a list of my priorities
+      Priority two, double-check it for inconsistencies
+      Priority three, buy milk, semi-skimmed, I've learned that
+      Priority four, text my mum back, she's been waiting since March
+      Priority five, dentist, it's been red since last May
+      Priority six, find a hobby that's not planning my day
+      Priority seven, stop adding priorities
+      Priority eight, see priority seven. Priority nine
+  - name: verse 3
+    tag: verse - full speed returns, stop-start gaps, then rapid triplet flow
+    bars: 16
+    idea: the system collapses because he forgot the password
+    lyrics: |
+      Wednesday, beat's back, I'm flying, I'm on it
+      Open up the laptop, spreadsheet, here we go, I want it
+      Enter your password. Easy. Done it a thousand times
+      Wrong. Wrong again. Hang on. Think. Wrong. Three strikes.
+      Account locked for thirty minutes. Thirty? That's two slices
+      That's a whole blue block and half a green one, that's a crisis
+      Password hint says "you know this". I don't know this
+      Sunday me's a genius but he's also a menace, he chose this
+      Stop. Breathe. Notebook. Where's the notebook? Bag. No.
+      Desk. No. Kitchen. No. Fridge? Why the fridge? I don't know.
+      Now I'm panicking, scrambling, rambling through the cupboards and the drawers
+      All the colour-coded order turned to chaos on the floor
+      Highlighters everywhere and the master tab's a memory
+      Thirty minutes later I'm in, it's all there, every entry
+      Tick box, tick box, tick box, tick box, every one is empty
+      Three days of planning. Things I've done: zero. Things I've planned: plenty.
+  - name: final hook
+    tag: chorus - full instrumental, layered chant and ad-libs, biggest energy
+    bars: 16
+    lyrics: |
+      I've got a system, I've got a plan
+      Everything's organised, exactly as I am
+      I've got a system, colour-coded too
+      I've spent six hours planning what I'm going to do
+      Red is urgent, amber is soon
+      Green is for later, blue is for June
+      I've got a system, tick, tick, done
+      Six hours planning and I've not done one
+      I've got a system, it's got a flaw
+      The flaw is me, I checked, I made a column for it and all
+      I've got a system, password's on a note
+      Note's in the notebook, notebook's in my coat
+      Red is urgent, amber is soon
+      Green is for later, blue is for June
+      I've got a system, tick, tick, done
+      Six hours planning and I've not done one
+  - name: ending
+    tag: outro - rapped callback over bass and keys, hard stop
+    bars: 4
+    lyrics: |
+      Sunday night, new notebook, spine's not even cracked
+      System version two. This time I'm on it. Watch that.
+
+ending: Rapped callback to the first line of the song, hard stop on "Watch that". No speech.
+
+caption: >-
+  138 bpm, C minor, fast boom bap and trap hybrid, rubbery bass, crisp snare, syncopated keys, chopped vocal
+  stabs, drums switch subdivisions between sections, starts straight in on the first verse, relaxed rhythmic
+  flow then faster multisyllabic flow, rapid internal-rhyme passage, bouncy chanted hook, half-time breakdown with
+  calm deadpan rap, stop-start gaps, switch to triplet flow, ends on a rapped line with a hard stop
+
+lyric_audit:
+  verse_progression: the system as a breakthrough (v1), absurd procedures (v2), the password collapse (v3)
+  callbacks: [new notebook (first and last line), the master tab, Sunday me, blue and green blocks, milk from Main Character Syndrome]
+  technical: rapid internal-rhyme chain (v2 bars 9-16), stop-start (v3 bars 9-10), triplet switch (v3 bars 11-16)
+  hook: '"I''ve got a system" chant plus the colour rhyme (soon / June)'
