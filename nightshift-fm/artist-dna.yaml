@@ -104,14 +104,16 @@ families:
 caption_core: >-
   dark late-night instrumental hip-hop, phonk, hypnotic and rhythmic, heavy controlled sub-bass with room for
   the kick, dry punchy percussion, the voice used as a sampled instrument in short chopped phrases, no rap verses,
-  minor key, warm dark cohesive mix with every part blended together, punchy drums
+  minor key, raw saturated underground sound, gritty and not overproduced, warm dark cohesive mix
+  with every part blended together, punchy drums
 
+# clean/polished/crisp/pristine/glossy: Reuben Nov 15, instruments came out too clean; ask for raw and saturated instead.
 # Words that made ACE-Step put hiss or static over whole songs (Brass Plate, Bought and Sold, Nov 14) and their
 # radio relatives. The radio concept lives in the transmission_layer, added on the laptop after rendering, where
 # a tuning sweep or a signal drop can be placed on the exact bar and kept out of the music.
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere]
+avoid_in_captions: [clean, polished, crisp, pristine, glossy, static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere]
 # Section tags may name one transmission event (e.g. "radio tuning sweep", "tape stop"), never a constant bed.
-avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, lo-fi]
+avoid_in_tags: [clean, polished, crisp, pristine, glossy, static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, lo-fi]
 
 transmission_layer: >-
   After rendering, each track gets its radio events on the laptop from short original sound-design files:
