@@ -75,8 +75,8 @@ writing_rules:
 
 songs:
   main-character-syndrome: {status: done, round 2 take 6401 picked by Reuben (Nov 15), tests: character, humour and hooks}
-  ive-got-a-system: {status: written Nov 15, rendering next, tests: technical rap and flow changes, bpm: 138, key: C minor}
-  laughing-at-myself: {status: design next if the first works, tests: emotional range and melodic writing, bpm: 92, key: D major}
+  ive-got-a-system: {status: done, take 6501 picked by Reuben (Nov 15), tests: technical rap and flow changes, bpm: 138, key: C minor}
+  laughing-at-myself: {status: written Nov 15, rendering next, tests: emotional range and melodic writing, bpm: 92, key: D major}
 
 pilot_acceptance:
   rap: impressive even if the listener doesn't find the subject funny
