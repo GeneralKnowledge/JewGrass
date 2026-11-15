@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""Compile the LAST CARRIAGE artist DNA + Song Designs into last-carriage/tracks.yaml.
+
+    python3 last-carriage/build.py        # writes last-carriage/tracks.yaml, prints warnings, exits 1 if any
+
+Copied from nightshift-fm/build.py (itself from lowbridge/build.py). Extra checks here: banned instruments
+(circus/oom-pah) and banned mix words, and the first section must not be an intro (songs start straight in).
+Original notes: Changes: the caption is caption_core + the track's family caption + the
+track's own caption; section tags have their own avoid list (they may name one transmission event, such as a
+tuning sweep, never a constant bed); sections with no lyrics are instrumental and their tag must say so;
+performers must be voices from the DNA (or "none").
+
+tracks.yaml has the same shape as docs/album/tracks.yaml, so the Kaggle notebook (kaggle/plan.py) and the
+laptop loop can render it unchanged: queue + tracks[{slug, title, status, bpm, key, timesig, seconds,
+caption, lyrics}]. The caption is the DNA's caption_core followed by the song's own caption, so the shared
+sound is described the same way in every song. Needs only PyYAML.
+"""
+import glob
+import os
+import re
+import sys
+
+import yaml
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+class Literal(str):
+    pass
+
+
+yaml.add_representer(Literal, lambda d, s: d.represent_scalar("tag:yaml.org,2002:str", s, style="|"))
+
+
+def build():
+    dna = yaml.safe_load(open(os.path.join(HERE, "artist-dna.yaml")))
+    def words(ws):
+        return re.compile(r"\b(" + "|".join(re.escape(w) for w in ws) + r")\b", re.I)
+    avoid, avoid_tag = words(dna["avoid_in_captions"]), words(dna["avoid_in_tags"])
+    banned = words(dna["banned_instruments"] + dna["banned_mix_words"] + dna["banned_names"])
+    core = " ".join(dna["caption_core"].split())
+    families = {k: " ".join(v["caption"].split()) for k, v in dna["families"].items()}
+    voices = set(dna["voices"]) | {"none"}
+    tracks, problems = [], []
+
+    for path in sorted(glob.glob(os.path.join(HERE, "design", "*.yaml"))):
+        d = yaml.safe_load(open(path))
+        r = d["render"]
+        name = d["slug"]
+        if d["family"] not in families:
+            problems.append(f"{name}: unknown family {d['family']}")
+        caption = ", ".join([core, families.get(d["family"], ""), " ".join(d["caption"].split())])
+        if len(caption) > 1000:
+            problems.append(f"{name}: caption is {len(caption)} chars; keep it under ~1000")
+
+        blocks, bars = [], 0
+        for s in d["sections"]:
+            tag = s["tag"].strip()
+            bars += s["bars"]
+            if len(tag.split()) > 16:
+                problems.append(f"{name} {s['name']}: tag is {len(tag.split())} words (keep <= 16)")
+            text = (s.get("lyrics") or "").strip("\n")
+            lines = [l for l in text.splitlines() if l.strip()]
+            if len(lines) > s["bars"]:
+                problems.append(f"{name} {s['name']}: {len(lines)} lines for {s['bars']} bars")
+            for l in lines:
+                if re.fullmatch(r"\s*\(.*\)\s*", l):
+                    problems.append(f"{name} {s['name']}: '{l.strip()}' is all in brackets and gets stripped")
+            if avoid_tag.search(tag):
+                problems.append(f"{name} {s['name']}: tag has a hiss-prone word: {tag}")
+            if not lines and "instrumental" not in tag:
+                problems.append(f"{name} {s['name']}: no lyrics, so the tag should say instrumental")
+            if lines and "instrumental" in tag:
+                problems.append(f"{name} {s['name']}: tag says instrumental but the section has lyrics")
+            if s.get("performer", "none") not in voices:
+                problems.append(f"{name} {s['name']}: performer {s.get('performer')} is not a DNA voice")
+            blocks.append(f"[{tag}]" + ("\n" + text if text else ""))
+        if re.match(r"\s*intro\b", d["sections"][0]["tag"], re.I):
+            problems.append(f"{name}: first section is an intro; songs start straight in")
+        for m in banned.finditer(caption + " " + " ".join(s["tag"] for s in d["sections"])):
+            problems.append(f"{name}: banned instrument or mix word '{m.group(0)}'")
+        for m in avoid.finditer(caption):
+            problems.append(f"{name}: caption has a hiss-prone word '{m.group(0)}'")
+
+        planned = bars * int(r["timesig"]) * 60 / r["bpm"]
+        if r["seconds"] < planned:
+            problems.append(f"{name}: {r['seconds']} s is shorter than the planned {planned:.0f} s")
+        tracks.append({
+            "order": d.get("order", 99),
+            "slug": name, "title": d["title"], "credit": dna["act"], "family": d["family"], "status": "generate",
+            "bpm": r["bpm"], "key": r["key"], "timesig": str(r["timesig"]), "seconds": r["seconds"],
+            "caption": caption, "lyrics": Literal("\n\n".join(blocks) + "\n"),
+        })
+
+    tracks.sort(key=lambda t: t.pop("order"))
+    first = ["lastcarriage-" + s for s in dna["round1"]["tracks"]]
+    queue = first + [t["slug"] for t in tracks if t["slug"] not in first]
+    doc = {"act": dna["act"], "album": dna["album"], "queue": queue, "tracks": tracks}
+    out = os.path.join(HERE, "tracks.yaml")
+    with open(out, "w") as f:
+        f.write("# GENERATED by last-carriage/build.py from artist-dna.yaml + design/*.yaml. Edit those, not this.\n")
+        yaml.dump(doc, f, sort_keys=False, allow_unicode=True, width=110)
+    return out, tracks, problems
+
+
+if __name__ == "__main__":
+    out, tracks, problems = build()
+    for t in tracks:
+        print(f"{t['slug']:<30} {t['bpm']} bpm  {t['key']:<8} {t['seconds']} s  caption {len(t['caption'])} chars")
+    print("wrote", out)
+    for p in problems:
+        print("WARNING:", p)
+    sys.exit(1 if problems else 0)

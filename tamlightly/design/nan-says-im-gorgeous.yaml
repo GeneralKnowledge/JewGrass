@@ -1,0 +1,128 @@
+# TAM LIGHTLY Song Design: Nan Says I'm Gorgeous (pilot track 03, the warm one).
+slug: tamlightly-nan-says-im-gorgeous
+title: Nan Says I'm Gorgeous
+credit: Tam Lightly
+version: 1
+order: 3
+purpose: the longer, warmer singalong. Funny, but with heart, so the act isn't only jokes.
+concept: Nobody rates Tam's music except his ninety-one-year-old nan, and she's all he needs.
+
+render:
+  bpm: 92
+  key: C major
+  timesig: "4"
+  seconds: 175        # 64 bars at 92 is 167 s, plus room for the last chord
+
+palette:
+  signature: warm electric piano chords
+  drums: laid-back swinging boom bap, crisp snare, finger snaps
+  bass: warm round bass guitar
+  extras: a cheerful sung hook, a few bells in the last chorus
+  left_out: 808 slides, anything aggressive
+
+the_moment: >-
+  The bridge drops to electric piano and snaps for a singalong of "that's my grandson", then the last chorus
+  adds bells and group vocals.
+
+sections:
+  - name: hook 1
+    tag: chorus - starts straight in, cheerful sung hook, warm electric piano
+    bars: 8
+    lyrics: |
+      Nan says I'm gorgeous, Nan says I'm smart
+      Nan says I'm the best rapper since rapping got its start
+      Nobody came to the gig but she came twice
+      Nan says I'm gorgeous, and Nan's always right
+      Nan says I'm gorgeous, Nan says I'm tall
+      Five foot six but she says it's the doorframes that are small
+      Nobody streamed it but she pressed play all night
+      Nan says I'm gorgeous, and Nan's always right
+  - name: verse 1
+    tag: verse - laid-back warm storytelling rap, swinging boom bap groove
+    bars: 16
+    idea: Sunday at Nan's and the gig upstairs at the pub; the image is the handbag on her knee
+    lyrics: |
+      Sunday at Nan's and the soup's on the hob
+      She asks how's the music and I tell her it's a job
+      It's not a job. It pays nothing. She knows
+      Slips a tenner in my jacket on the way out the door
+      Told her I'm a rapper and she said "like a poet?"
+      I said "kind of, Nan", she said "son, I always knew it"
+      Played her my track on my phone, full blast
+      She clapped on the two and the four, she's got class
+      Told her about the gig at the pub, upstairs room
+      Eleven folk came and nine were in the wrong room
+      Two stayed. One was the barman. One was Nan
+      Front row, handbag on her knee, my biggest fan
+      She shouted "that's my grandson" in the middle of a verse
+      Every gig since, she's the one who shouts it first
+      Cool? No. Famous? Not even close
+      But I'm the most gorgeous man in Auchterbeg, she knows
+  - name: hook 2
+    tag: chorus - cheerful sung hook, warm electric piano, finger snaps
+    bars: 8
+    lyrics: |
+      Nan says I'm gorgeous, Nan says I'm smart
+      Nan says I'm the best rapper since rapping got its start
+      Nobody came to the gig but she came twice
+      Nan says I'm gorgeous, and Nan's always right
+      Nan says I'm gorgeous, Nan says I'm tall
+      Five foot six but she says it's the doorframes that are small
+      Nobody streamed it but she pressed play all night
+      Nan says I'm gorgeous, and Nan's always right
+  - name: verse 2
+    tag: verse - warm playful rap, a little more heart, groove keeps swinging
+    bars: 12
+    idea: the haters and her replies; the warm turn is that she keeps him going
+    lyrics: |
+      Comments said "who let this guy near a mic"
+      Nan replied "his gran did", and she spelt it like Mike
+      She doesn't know what a beat is, she calls it the tune
+      "Turn up the tune, son, I'm going deaf by June"
+      Ninety-one years old and her hip's made of metal
+      Still does the stairs, still puts on the kettle
+      Every time I doubt it, every time I'm done
+      I hear "that's my grandson" and I'm back on the one
+      So if you don't rate it, honestly, that's fine
+      I've got a one-woman fanbase and she's first in the line
+      Wears my T-shirt to the bingo, it's a medium on a small
+      Nan says I'm gorgeous and that settles it all
+  - name: bridge
+    tag: bridge - drums drop out, electric piano and finger snaps, singalong
+    bars: 4
+    lyrics: |
+      That's my grandson, that's my grandson
+      Front row shouting with her coat still on
+      That's my grandson, that's my grandson
+      Eleven folk came and she's the one
+  - name: final hook
+    tag: chorus - full groove returns, bells and group vocals join the sung hook
+    bars: 8
+    lyrics: |
+      Nan says I'm gorgeous, Nan says I'm smart
+      Nan says I'm the best rapper since rapping got its start
+      Nobody came to the gig but she came twice
+      Nan says I'm gorgeous, and Nan's always right
+      Nan says I'm gorgeous, Nan says I'm tall
+      Five foot six but she says it's the doorframes that are small
+      Nobody streamed it but she pressed play all night
+      Nan says I'm gorgeous, and Nan's always right
+  - name: ending
+    tag: outro - sung last line over one warm electric piano chord
+    bars: 2
+    lyrics: |
+      And Nan's always right
+
+ending: Sung last line, one warm electric piano chord, let it ring. No speech.
+
+caption: >-
+  92 bpm, C major, warm feel-good laid-back hip hop, swinging boom bap drums, finger snaps, warm electric piano
+  chords, warm round bass guitar, starts straight in on a cheerful sung chorus, friendly storytelling rap verses,
+  heartfelt and funny, breakdown with electric piano and snaps and a singalong, final chorus adds bells and group
+  vocals, ends on one warm piano chord
+
+lyric_audit:
+  joke: the only fan is his nan, and she is a superfan
+  imagery: [tenner in the jacket, handbag on her knee, spelt it like Mike, T-shirt at the bingo]
+  heart: she's what keeps him going
+  hook: '"Nan says I''m gorgeous" with the doorframes line as the big laugh'

@@ -1,0 +1,135 @@
+# AFTER HOURS Song Design: If You Were Here (02, emotional ballad). Format: see one-more-night.yaml.
+slug: ah-if-you-were-here
+title: If You Were Here
+credit: Noah, Alex, Leo and Jamie
+version: 1
+order: 2
+purpose: prove the group can carry a genuinely emotional song with vocal performance, not production tricks.
+concept: >-
+  Someone important is missing from a milestone: the group's first big hometown show. The one who drove them
+  to every practice when they were fourteen isn't in the second-row seat. Never says whether they moved
+  away, fell out or died: just the strange feeling of wishing one person could be there.
+
+render:
+  bpm: 76
+  key: D major
+  timesig: "4"
+  seconds: 240        # 72 bars at 76 is 227 s, plus room for the last chord
+
+palette:
+  lead: solo piano
+  strings: warm strings from the first chorus
+  bass: restrained
+  guitar: subtle acoustic guitar
+  drums: almost none until the final chorus
+  left_out: synths, claps, big drops, anything that competes with the voices
+
+harmony: D, A/C#, Bm, G. Bridge moves Em, G, D/F#, A to lift without melodrama.
+the_moment: >-
+  The bridge is a four-part a cappella passage: Noah starts on the low line, Alex enters with the melody,
+  Leo fills the middle, Jamie adds the high note. Nothing else until the last phrase.
+changes_from_spec: >-
+  No piano intro: Noah's first line starts the song. Verse 1 is 8 bars, chorus 1 is 8 and the interlude 2,
+  so the song lands near the 225 s target.
+
+sections:
+  - name: verse 1
+    tag: verse - starts immediately, warm intimate baritone with solo piano
+    bars: 8
+    performer: noah
+    lyrics: |
+      There's a seat in the second row with nobody in it
+      I keep checking it every couple of minutes
+      We put your name on the list at the door
+      Like you might walk in, like you did before
+      You drove us to every practice, sat outside in the cold
+      Four of us singing in the back the same song till it got old
+      Now there's two thousand people and they know every word
+      And the one voice I'm listening for is the one I haven't heard
+  - name: verse 2
+    tag: verse - expressive lead tenor, piano
+    bars: 8
+    performer: alex
+    lyrics: |
+      I wrote you a message, then I didn't send it
+      You'd be proud, was all it said, I couldn't find an ending
+      Mum says you'd be laughing at the shirts that we've got on
+      Telling us to stand up straight and not to rush the song
+      Hands shaking at the side of the stage, same as when I was ten
+      And you'd say good, it means it matters, and I'd breathe again
+  - name: pre-chorus
+    tag: pre-chorus - smooth soulful tenor with gentle runs, strings swell in
+    bars: 4
+    performer: leo
+    lyrics: |
+      And I know you'd say don't make a fuss
+      Just sing it like you sang it in the car with us
+      But tonight there's a space in the room
+      That's the exact shape of you
+  - name: chorus 1
+    tag: chorus - lead tenor melody, four-part harmonies underneath, piano and warm strings
+    bars: 8
+    performer: alex leads, all four harmonise
+    lyrics: |
+      If you were here, you'd know what to say
+      You'd make the whole room feel less far away
+      I wish you could see what we've become
+      There's still a space where you belong
+  - name: interlude
+    tag: interlude - piano and strings only, short
+    bars: 2
+    performer: none
+  - name: verse 3
+    tag: verse - bright high tenor, soft and close, piano only
+    bars: 8
+    performer: jamie
+    lyrics: |
+      Maybe you're miles away with a radio on
+      Hearing half a chorus, not knowing it's our song
+      Maybe you're somewhere that letters don't reach
+      Either way I'm singing it to the second row seat
+      Every high note I hit is the one you said I'd find
+      Every time I nearly stop, I hear you say one more time
+  - name: bridge
+    tag: bridge - a cappella four-part harmony, baritone first, then lead, then middle, then high tenor
+    bars: 8
+    performer: noah, alex, leo, jamie in turn, then all four
+    lyrics: |
+      One more time
+      From the top, like you used to say
+      One more time
+      Till we get it right
+      And we got it right
+      We got it right tonight
+  - name: final chorus
+    tag: final chorus - full group harmonies, strings, gentle drums enter, high tenor ad-libs
+    bars: 16
+    performer: all four, alex leads, jamie ad-libs
+    lyrics: |
+      If you were here, you'd know what to say
+      You'd make the whole room feel less far away
+      I wish you could see what we've become
+      There's still a space where you belong
+      If you were here, you'd be second row
+      Singing every word and trying not to let it show
+      I wish you could see what we've become
+      There's still a space where you belong
+  - name: outro
+    tag: outro - unaccompanied four-part final chord
+    bars: 2
+    performer: all four
+    lyrics: |
+      Where you belong
+
+ending: Four voices hold the last chord unaccompanied, then silence. Nothing spoken.
+
+caption: >-
+  76 bpm, D major, emotional pop ballad, starts straight away with a warm baritone and solo piano, warm
+  strings from the first chorus, almost no drums until the final chorus, each verse sung by a different voice, chorus with a lead tenor melody over four-part harmonies,
+  a cappella bridge where the voices enter one by one from low to high, vocal harmony is the emotional
+  centre, ends on an unaccompanied four-part chord
+
+lyric_audit:
+  idea: one empty seat at the biggest night of their lives
+  images: [the name on the door list, the second-row seat, singing in the back of the car, the unsent message, one more time]
+  hook: '"If you were here, you''d know what to say" (Reuben''s hook); the bridge pays off "one more time" from verse 3'

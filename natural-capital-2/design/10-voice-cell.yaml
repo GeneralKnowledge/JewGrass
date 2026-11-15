@@ -1,0 +1,13 @@
+slug: bon-voice-cell
+title: 'Voice Note: Cell'
+order: 10
+status: voice
+credit: Ewan (Reuben's speaking voice)
+purpose: The death, heard from the glen. Sets up the questions in the next song.
+render: {seconds: 30}
+script: |
+  Morag. Are you seeing this?
+  He's dead. In his cell. Before the trial.
+  Radio says the cameras weren't working.
+  Hughie was in the pub when it came on. Didn't say a word. Just laughed.
+  Phone me back. Please.

@@ -1,0 +1,92 @@
+# Matching Jackets band DNA: the persistent identity every Matching Jackets song is built from.
+# build.py joins `caption_core` with each song's own caption, so the shared sound is stated the same way every time.
+# Everything here is original. Genre and era references only: no real artist, record, person or song is named or imitated.
+
+act: Matching Jackets
+genre: new age boy band. Late-90s / early-2000s pop boy band songwriting, modern production, playful UK rap
+home: >-
+  Ashbrae, a fictional Scottish new town. Roundabouts, a shopping centre with a fountain that never runs,
+  a leisure centre with a swimming gala every spring, a corner shop with a meal deal fridge, and the 42 bus.
+premise: >-
+  Five lads who met in the Ashbrae leisure centre's after-school choir and never quite stopped. A boy band
+  that knows every boy band trope (the key change, standing up off the stools, the matching jackets) and
+  uses them on purpose, with a wink, but means the feelings underneath. Songs are about small modern things
+  treated like epic romance: being left on read, a meal deal, a hoodie someone left behind.
+tone: warm, funny, sincere underneath. The rap is cheeky and self-aware, never tough-guy.
+themes: [crushes, small embarrassments, phones, home town, friendship, trying too hard, being a bit daft about love]
+
+members:
+  cal:
+    role: lead vocal, the sincere one
+    voice: warm clear tenor, gets the first verse and the ballad lines
+    caption_words: warm clear male lead tenor
+  ollie:
+    role: pre-choruses and hooks, the youngest
+    voice: bright light pop tenor, a bit breathy
+    caption_words: bright breathy young male pop voice
+  dev:
+    role: falsetto and ad-libs, the key change riser
+    voice: high falsetto, runs and riffs, takes the bridges
+    caption_words: soaring male falsetto, vocal runs and ad-libs
+  big-jon:
+    role: low harmony anchor
+    voice: deep baritone, sings the low answers and holds the bottom of the stack
+    caption_words: deep baritone harmony answering lines
+  kez:
+    role: the rapper, the funny one
+    voice: quick, cheeky, conversational British rap with a grin in it
+    delivery: playful, storytelling, self-aware jokes, talks to the others mid-verse, punchlines about everyday things
+    caption_words: playful cheeky light-hearted British rap verse, witty storytelling flow
+
+world:
+  - The leisure centre, where they met in choir. Spring swimming gala, silver medals.
+  - The corner shop on Cedar Road with the meal deal fridge, and the girl on the till.
+  - The 42 bus.
+  - Cal's mum, who shouts up the stairs.
+  - The group chat, where Kez sends voice notes nobody listens to.
+
+sound:
+  tempo: varies by song, 70 to 132 bpm
+  vocals: five distinct male voices, stacked harmonies on every chorus, call and response, ad-libs over the last chorus
+  harmony: big major-key choruses, pre-choruses that lift, at least one key change in the album
+  production: warm modern pop. Pop drums, warm bass, synths, guitar, piano on the ballads, finger snaps
+  rap: one light, funny rap section per song, sat in the middle of the song, never the whole song
+  structure: songs start straight in (no standard intro), endings are sung or played, never spoken
+
+production_rules:
+  - Start straight in. The first sound is a voice or the hook, not a long instrumental intro.
+  - Every chorus has stacked harmonies, so it sounds like a group, not one singer with backing.
+  - The rap section changes the texture (drums thin or switch) so it reads as a different voice.
+  - Save the key change for the song that earns it, not every song.
+  - No spoken outros. No spoken skits.
+
+# Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi,
+  tuba, pizzicato, woodblock, marching snare, oom-pah, circus, comic, comedic, theatrical, brass, polished, glossy, clean mix, radio-ready]
+
+caption_core: >-
+  late-90s style pop boy band with warm modern production, five male singers, stacked five-part vocal
+  harmonies on every chorus, call and response vocals, warm male lead tenor, soaring falsetto ad-libs, deep
+  baritone harmony, one playful light-hearted British rap section, big singalong major-key chorus, pop drums,
+  warm bass, warm cohesive blended mix
+
+writing_rules:
+  - Small, specific, everyday things (a time on a phone, a sandwich, a bus number) treated like big romance.
+  - The joke and the feeling sit together. The rap gets the jokes; the chorus gets the feeling.
+  - Each member sings what fits his voice (see members).
+  - No real people, brands, places or songs. Ashbrae and everything in it is invented.
+  - No lines fully in brackets (the pipeline strips them). No spoken outros.
+
+variation_rules:
+  - Three different purposes: the upbeat single, the fun one, the ballad.
+  - Three different tempos and lengths (about 2.5, 3.5 and 4 minutes).
+  - Only one song in the pilot has the full key change; the ballad gets a gentle one.
+  - No two hooks built the same way.
+
+pilot_acceptance:
+  group_identity: it sounds like a boy band, a group of voices, not one singer
+  era: late-90s / 2000s boy band feel with modern sound, without sounding like any one real band
+  rap: the rap section is clearly lighter and funny, and sits in the song rather than taking it over
+  hooks: every song has a chorus you can sing after one listen
+  start: each song starts straight in
+  audio: no hiss, clipping or smeared vocals

@@ -1,0 +1,140 @@
+# LAST CARRIAGE artist DNA: the persistent identity every OVERNIGHT NORTH track is built from.
+# build.py joins caption_core + the track's family caption + the track's own caption.
+# Seeded by a long instrumental mix of Reuben's friend's own experimental music (a clip from the friend's livestream, shared by Reuben as InstruReuben.mp3, Nov 14). The concept, titles and designs are
+# original. Genre and technique words only: no real artist, record, sample or melody is named or imitated.
+# Act and album names are working titles and have not been checked for clashes yet.
+
+act: LAST CARRIAGE
+album: OVERNIGHT NORTH
+format: anonymous producer-led instrumental project. No members, no rapper, no frontman. One wordless voice.
+genre: heavy melodic bass music, instrumental trap, synth-led electronica
+premise: >-
+  One overnight sleeper train, London to the far north-west Highlands, told in music only. Nine tracks that
+  segue into each other, so the album plays as one continuous mix the way the friend's mix does (about
+  19 minutes in his mix; a little longer here). It leaves in D minor, the key wanders by semitones as the
+  line climbs, crosses the border and runs through the dark, and it arrives back in D minor at first light.
+  No words, no narrator: the story is in the titles, the keys and the energy.
+
+# What the seed mix actually measured (librosa on the friend's mix; tempos are estimates, not heard by a person).
+seed_analysis:
+  length: 19:04, one continuous piece with several clean breaks and drops
+  key_path: D minor drone -> B/G# minor area -> F minor -> E minor (heaviest) -> F# minor (clearest key) ->
+    E/D# minor (busiest) -> E/D# minor (arpeggios) -> back to D minor at the end
+  tempo_estimates: 107-118 bpm in most grooves, one half-time stretch around 76 (152), one around 136, the
+    last groove around 103
+  sound: very heavy sub-bass almost throughout, dense layered synths filling the mids, pitch-gliding synth
+    leads (clear slides around 7:40-9:20 and 11:30), a high blip figure around 2:30-3:50, a fast rising and
+    falling arpeggio around 16:40, a descending melodic run near 15:20, and a stretch around 14:00 where
+    the bass drops out completely
+  shape: starts and ends in the same key, so it is circular; every few minutes it drops to near silence
+    and rebuilds
+
+feel:
+  - one long night, not ten separate bangers
+  - heavy and physical, but melodic enough to hum
+  - forward motion: the groove always feels like it is going somewhere
+  - dark, then lifting near the end
+  - works played straight through; each track still stands alone
+
+# v2 (Nov 15, Reuben): "heavier and darker". Read as two halves, kept original and described in genre words only:
+# crushing industrial metal weight (down-tuned chugging guitars, distorted synth bass, pounding drums) and
+# dark lonely noir melody (slow minor piano, a mournful saxophone at the quiet moments).
+palette:
+  melody: dark distorted gliding synth leads, slow lonely noir piano, a mournful saxophone only in breakdowns, a dark synth arpeggio
+  guitars: down-tuned heavily distorted guitars, palm-muted chugs locked to the kick, power chords at the peaks
+  percussion: huge pounding industrial drums, heavy kick, gated snare, half-time in the heavy tracks, a steady
+    eighth-note pulse that stands in for the rails (written into drums, bass and guitar chugs, never as sound effects)
+  bass: crushing distorted synth bass over deep sub-bass, gliding 808 under it
+  voice: none in v2 (the hum was dropped for the saxophone)
+
+motifs:
+  departure-figure: five-note rising synth figure in D minor (D F G A C), heard plainly in Departures, climbing
+    in Beattock, stretched into the arpeggio in Rannoch, plainly again in End of the Line
+  the-glide: a lead note that bends up a fourth and falls back; it gets wider as the train goes north
+
+voices:
+  hum: one wordless female voice, soft, high and close ("ooh", "ah"). Dropped from the pilots in v2; may
+    come back once in End of the Line if Reuben wants it
+
+vocal_rules:
+  - Instrumental first. Most tracks have no voice at all.
+  - The hum sings vowels only, never words, and never ends a track on its own.
+  - No spoken parts, no announcements, no spoken outros.
+
+lyric_conventions:
+  - Instrumental sections have a tag that starts its cue with "instrumental" and no lyric lines.
+  - Hum lines are vowels only ("Ooh, ooh"), one line per bar or fewer.
+
+production_rules:
+  openings: songs start straight in on a groove or the main figure. No standard intro.
+  endings: each track ends on a musical figure that the next track picks up (segue), never a spoken bit
+  arrangement: build, drop to near silence, rebuild bigger, as the seed mix does every few minutes
+  bass: heavy sub, but the kick still audible on ordinary speakers
+  instruments: few named solo instruments; most of the sound is layered synths blended together
+  lengths: varied on purpose, from about 90 s to about 4 minutes
+
+families:
+  heavy:
+    feel: slow and crushing, the climb
+    caption: >-
+      half-time industrial metal, crushing down-tuned distorted guitars, distorted synth bass, huge pounding
+      drums, slow gated snare, deep sub-bass, dark menacing synth chords
+  glide:
+    feel: driving and dark, still melodic
+    caption: >-
+      dark driving industrial metal, palm-muted down-tuned guitar chugs on eighth notes, distorted gliding synth
+      lead, pounding drums, distorted synth bass, slow lonely noir piano in the quiet parts
+  pulse:
+    feel: hypnotic and grim
+    caption: >-
+      dark industrial electronic, fast menacing synth arpeggio, heavy steady kick, distorted synth bass,
+      down-tuned guitar swells, deep dark synth pads
+  drift:
+    feel: between stations, lonely and noir
+    caption: >-
+      slow dark noir, lonely minor piano, mournful saxophone, deep sub-bass swells, low distorted guitar drones
+
+caption_core: >-
+  instrumental, heavy and dark, industrial metal meets dark electronic, down-tuned distorted guitars, distorted
+  synth bass, pounding drums, deep sub-bass, menacing minor key, forward motion, warm cohesive mix with every
+  part blended together, powerful but controlled low end
+
+# Learned Nov 14: these words put hiss or static over whole songs.
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere, field recording, train, railway, whistle, announcement]
+avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, lo-fi, train, railway, whistle, announcement]
+# Learned Nov 14: these gave the circus / oom-pah sound (Brass Plate).
+banned_instruments: [tuba, pizzicato, woodblock, marching snare, oom-pah, circus, comic, theatrical, kazoo, accordion, brass band]
+# Learned Nov 14: "clean polished" made instruments stick out. Ask for a blended mix instead.
+banned_mix_words: [clean, polished, crisp, pristine, bright, uplifting]
+# Reuben's touchstones are described, never named in captions, titles or tags.
+banned_names: [doom, odst, halo]
+
+energy_curve: [01 mid, 02 mid, 03 low, 04 high, 05 highest, 06 high, 07 low, 08 mid, 09 low]
+
+album_outline:
+  - {n: 1, title: Departures, seed_mix: "0:00-1:58", family: glide, key: D minor, idea: starts straight in on the departure figure}
+  - {n: 2, title: Dead Hours, seed_mix: "1:58-3:48", family: pulse, key: F minor, idea: the high blip figure, the city lights going past}
+  - {n: 3, title: Lights Out, seed_mix: "3:48-4:47", family: drift, key: F minor, idea: short interlude, about 90 s}
+  - {n: 4, title: Beattock, seed_mix: "4:47-7:04", family: heavy, key: E minor, idea: the long climb to the summit, pilot}
+  - {n: 5, title: Over the Border, seed_mix: "7:04-10:54", family: glide, key: F# minor, idea: the lift, widest glides, pilot}
+  - {n: 6, title: Points Failure, seed_mix: "11:00-14:00", family: heavy, key: E minor, idea: stop-start, the busiest track}
+  - {n: 7, title: Signal Box, seed_mix: "14:00-15:36", family: drift, key: D# minor, idea: the bass vanishes, descending run}
+  - {n: 8, title: Rannoch, seed_mix: "16:00-17:50", family: pulse, key: E minor, idea: first light on the moor, pilot}
+  - {n: 9, title: End of the Line, seed_mix: "18:00-19:04", family: drift, key: D minor, idea: home key, short, ends on the figure}
+
+acceptance:
+  low_end: heavy and deep without mud; kick audible on phone speakers
+  melody: the glide and the departure figure are hummable
+  cohesion: plays as one night; tracks segue
+  variation: heavy, glide, pulse and drift tracks sound clearly different
+  cleanliness: no hiss, static or crackle; no circus instruments
+  repeatability: a second take keeps the same identity
+
+round2:
+  why: v2 heavier and darker (Reuben, Nov 15). Seeds 2411/2412, 2511/2512, 2811/2812. v1 takes stay in round1.
+round1:
+  tracks: [beattock, over-the-border, rannoch]
+  takes: 2
+  model: xl-turbo
+  why: one per family most likely to fail differently (heavy, glide, pulse), and three different lengths
+    (230 s, 200 s, 150 s). The other six get written only after Reuben has listened.
