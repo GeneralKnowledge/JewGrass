@@ -1,0 +1,161 @@
+# MR. SIDEQUEST Song Design: Laughing at Myself (03, unexpected sincerity). From Reuben's spec, Nov 14.
+# Changes from the spec for his standing rules: no spoken intro (starts on verse 1), and the outro is the sung
+# hook line over electric piano rather than a spoken voice.
+slug: mr-sidequest-laughing-at-myself
+title: Laughing at Myself
+credit: MR. SIDEQUEST
+version: 1
+order: 3
+purpose: Prove the persona has emotional depth and can carry a sincere song without undercutting it with jokes.
+concept: >-
+  Looking back at years of unfinished plans, missed chances and embarrassing moments. Being able to laugh at
+  himself is sometimes the only way to keep going, but some nights it isn't funny, and the song lets that stand.
+
+render:
+  bpm: 92
+  key: D major
+  timesig: "4"
+  seconds: 235        # 88 bars at 92 is 230 s, plus room for the last chord
+
+palette: warm electric piano, mellow guitar, round bass, restrained boom bap drums, subtle strings in the final hook
+harmony: D, A/C#, Bm, G. Bridge moves Em, G, D, A.
+the_moment: >-
+  The second half of the bridge drops almost everything away; the vocal is close and unguarded, and no joke
+  follows the serious passage.
+
+sections:
+  - name: verse 1
+    tag: verse - starts straight in, warm conversational rap, electric piano, restrained drums
+    bars: 16
+    idea: embarrassing ambitions and small failures, ending on the box in the loft
+    lyrics: |
+      At nine I was gonna play for my country, had the boots and the haircut
+      Couldn't kick with my left, so I spent the season on the bench as a spare, but
+      Mum still clapped like I'd scored every time I took my jacket off
+      That's the first time I learned that turning up can be enough
+      Fourteen, started a band and we named it something in Latin
+      Didn't know what it meant, had one song, and the gig never happened
+      Seventeen, wrote a novel, fifty pages, then I lost the charger
+      Never found it, never finished, and the story in my head got larger
+      Twenty-one, a business, homemade hot sauce in my mate's garage
+      Sold eleven bottles, nine to Nan, she says it's lovely on her porridge
+      Every plan was a sidequest and the main quest kept on waiting
+      I'd get bored or I'd get scared and I'd call it re-evaluating
+      There's a box in Mum's loft with every hobby that I've had
+      Guitar, easel, juggling clubs, a bread machine, a skateboard and a sketchpad
+      Some nights I go up there and I sit with all of it
+      And I laugh, 'cause what else, and it hurts a little bit
+  - name: hook 1
+    tag: chorus - warm sung melodic hook, electric piano and bass
+    bars: 8
+    lyrics: |
+      I'm laughing at myself, what else can I do?
+      Made a thousand wrong turns just to get to something true
+      I thought I'd have it figured out by now
+      But I'm still here, and I'm alright somehow
+      I'm laughing at myself 'cause the joke's on me
+      Took the long way round every time, just so I could see
+      I thought I'd have it figured out by now
+      But I'm still here, and I'm alright somehow
+  - name: verse 2
+    tag: verse - reflective heartfelt rap, warmer and slower phrasing, drums stay light
+    bars: 16
+    idea: the person he thought he'd be against the person he became
+    lyrics: |
+      Thought by twenty-eight I'd have a house, a dog, a plan
+      Someone to come home to and a job I'd understand
+      Instead I've got a flat above a takeaway that smells of chips
+      And a plant I've kept alive two years, my longest relationship
+      The me I pictured back at school would look at me and frown
+      Then I'd tell him all the stories and I think he'd settle down
+      'Cause he never had to sit with Dad in a hospital at three
+      He never learned the hard way what a quiet room can be
+      He never got his heart broke on a platform in the cold
+      Never learned to laugh at that before the story had got old
+      He was sure of everything and, honestly, a pain
+      I'm sure of nearly nothing, but I'd choose this me again
+      Every wrong turn was a road that went somewhere I needed
+      Every failure was a lesson, I just didn't always read it
+      So I keep the receipts, the rejections and the drafts
+      Not to punish myself. Just to prove that I laughed.
+  - name: hook 2
+    tag: chorus - sung melodic hook with added harmonies, fuller groove
+    bars: 8
+    lyrics: |
+      I'm laughing at myself, what else can I do?
+      Made a thousand wrong turns just to get to something true
+      I thought I'd have it figured out by now
+      But I'm still here, and I'm alright somehow
+      I'm laughing at myself 'cause the joke's on me
+      Took the long way round every time, just so I could see
+      I thought I'd have it figured out by now
+      But I'm still here, and I'm alright somehow
+  - name: bridge
+    tag: bridge - stripped back, half-sung, then almost silent, close intimate vocal
+    bars: 8
+    lyrics: |
+      But some nights it's not funny, and I won't pretend it is
+      Some nights the laugh's a door I hold shut, and that's all it is
+      Lying there at four with the ceiling and the what-ifs
+      Counting every bridge I burned and every one I didn't fix
+      And that's alright to say. That's alright to feel.
+      Not every wound's a punchline. Some just need time to heal.
+      So if you're laughing just to keep from going under
+      I see you. I've been there. Hold on a little longer.
+  - name: verse 3
+    tag: verse - direct sincere rap, drums return gently, electric piano
+    bars: 12
+    idea: acceptance without pretending everything is fine; callbacks to verse 1
+    lyrics: |
+      So here's where I'm at, no bow on it, no neat ending
+      Still forget to eat, still overthink a text before sending
+      Still start more than I finish, still a sidequest every week
+      But I'm learning which ones matter, and I'm finishing the ones I keep
+      Rang my dad last Sunday just to talk, no reason
+      We laughed about the hot sauce for an hour, best call all season
+      Mum still claps when I take my jacket off, she's still doing it
+      Twenty years on, same clap, and I'm still not used to it
+      I'm not fixed, I'm not finished, I'm not who I planned
+      But I'm kinder to the boy on the bench now, and I understand
+      So I laugh at the mess, 'cause the mess is how I got here
+      Every wrong turn, every single one, brought me to right here
+  - name: final hook
+    tag: chorus - full arrangement, strings join, sung hook with harmonies
+    bars: 16
+    lyrics: |
+      I'm laughing at myself, what else can I do?
+      Made a thousand wrong turns just to get to something true
+      I thought I'd have it figured out by now
+      But I'm still here, and I'm alright somehow
+      I'm laughing at myself 'cause the joke's on me
+      Took the long way round every time, just so I could see
+      I thought I'd have it figured out by now
+      But I'm still here, and I'm alright somehow
+      I'm laughing at myself and I'm laughing with you too
+      Every one of those wrong turns was the only way through
+      I don't have it figured out, not now
+      But I'm still here, and I'm alright somehow
+      I'm laughing at myself, and it's not a joke to me
+      Took the long way round, and the long way's where I'm free
+      I don't have it figured out, not now
+      But I'm still here, and I'm alright somehow
+  - name: ending
+    tag: outro - sung last line over warm electric piano, one chord rings out
+    bars: 4
+    lyrics: |
+      I'm still here
+      And I'm alright somehow
+
+ending: Sung last line over warm electric piano, one D chord rings out. No speech.
+
+caption: >-
+  92 bpm, D major, warm melodic hip hop, warm saturated electric piano, round bass, restrained live-sounding boom bap drums, strings
+  join in the final chorus, starts straight in on the first verse, conversational heartfelt rap verses, warm
+  sung melodic hook with harmonies, stripped half-sung bridge with a close intimate vocal, sincere and
+  emotional, ends on a sung line over electric piano
+
+lyric_audit:
+  verse_progression: failures and abandoned hobbies (v1), the self he imagined (v2), acceptance without a bow on it (v3)
+  callbacks: [the bench and Mum's clap, the hot sauce, the sidequest, the wrong turns]
+  sincerity: the bridge has no joke after it; the light humour lives in the verses only
+  hook: '"I''m laughing at myself ... but I''m still here, and I''m alright somehow"'

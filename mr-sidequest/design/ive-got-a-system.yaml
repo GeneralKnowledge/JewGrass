@@ -17,7 +17,7 @@ render:
   timesig: "4"
   seconds: 170        # 92 bars at 138 is 160 s, plus room for the ending
 
-palette: fast boom bap and trap hybrid, rubbery bass, crisp snare, syncopated keys, chopped vocal punctuation
+palette: fast boom bap and trap hybrid, rubbery bass, punchy snare, syncopated keys, chopped vocal punctuation
 harmony: Cm, Ab, G, G (mischievous minor loop with a dominant turnaround)
 technical: >-
   Verse 2 ends with an 8-bar rapid internal-rhyme chain. Verse 3 has a stop-start passage with deliberate gaps,
@@ -27,7 +27,7 @@ the_moment: >-
 
 sections:
   - name: verse 1
-    tag: verse - starts straight in, relaxed rhythmic rap, rubbery bass, crisp drums
+    tag: verse - starts straight in, relaxed rhythmic rap, rubbery bass, punchy drums
     bars: 16
     idea: the system explained like a professional breakthrough
     lyrics: |
@@ -155,7 +155,7 @@ sections:
 ending: Rapped callback to the first line of the song, hard stop on "Watch that". No speech.
 
 caption: >-
-  138 bpm, C minor, fast boom bap and trap hybrid, rubbery bass, crisp snare, syncopated keys, chopped vocal
+  138 bpm, C minor, fast boom bap and trap hybrid, rubbery bass, punchy snare, syncopated keys, chopped vocal
   stabs, drums switch subdivisions between sections, starts straight in on the first verse, relaxed rhythmic
   flow then faster multisyllabic flow, rapid internal-rhyme passage, bouncy chanted hook, half-time breakdown with
   calm deadpan rap, stop-start gaps, switch to triplet flow, ends on a rapped line with a hard stop

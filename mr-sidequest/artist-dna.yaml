@@ -34,7 +34,7 @@ signature_technique: >-
 
 # No fixed instrumental palette: each song picks a mode.
 modes:
-  boom_bap: crisp drums, sampled keys, upright bass, chopped breaks (wordplay and storytelling)
+  boom_bap: punchy live-sounding drums, sampled keys, upright bass, chopped breaks (wordplay and storytelling)
   funk_rap: live bass, guitar, brass, bouncy drums (playful songs)
   trap: deep bass, modern drums, fast hats, synths (high-energy tracks)
   jersey_club: bouncy kick patterns, chopped vocal hooks (short infectious choruses)
@@ -53,6 +53,7 @@ production_rules:
   - Start straight in (no spoken intro); end on a rapped or hook line, never a spoken outro (Reuben's standing rules).
 
 mix:
+  sound: "raw, warm, saturated, live-sounding, not overproduced (Reuben Nov 15: pure clean instruments are bad)"
   vocal: upfront, intelligible, fairly dry, moderate saturation
   low_end: tight
   ad_libs: may sit off-centre but never cover the main vocal
@@ -60,12 +61,12 @@ mix:
 
 # Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
 # ("dusty" is left out of the boom bap description for the same reason.)
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, dusty, radio noise, tuba, pizzicato, woodblock, marching snare, comic, comedy, theatrical, polished, circus, white noise, texture, ambience, atmosphere, rain, lo-fi]
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, dusty, radio noise, tuba, pizzicato, woodblock, marching snare, comic, comedy, theatrical, polished, circus, clean, crisp, pristine, glossy, white noise, texture, ambience, atmosphere, rain, lo-fi]
 
 caption_core: >-
   versatile alternative hip-hop, charismatic British male rapper, conversational expressive rap delivery,
   sharp technical wordplay, dense internal rhymes, multisyllabic patterns, playful storytelling, unexpected
-  punchlines, natural British accent, dynamic flow switches, clear intelligible upfront vocal, warm cohesive blended mix
+  punchlines, natural British accent, dynamic flow switches, clear intelligible upfront vocal, raw warm saturated sound, not overproduced, gritty blended mix
 
 writing_rules:
   - One line per bar in verses. Hooks repeat a phrase you can say back.
@@ -75,8 +76,8 @@ writing_rules:
 
 songs:
   main-character-syndrome: {status: done, round 2 take 6401 picked by Reuben (Nov 15), tests: character, humour and hooks}
-  ive-got-a-system: {status: written Nov 15, rendering next, tests: technical rap and flow changes, bpm: 138, key: C minor}
-  laughing-at-myself: {status: design next if the first works, tests: emotional range and melodic writing, bpm: 92, key: D major}
+  ive-got-a-system: {status: done, take 6501 picked by Reuben (Nov 15), tests: technical rap and flow changes, bpm: 138, key: C minor}
+  laughing-at-myself: {status: written Nov 15, rendering next, tests: emotional range and melodic writing, bpm: 92, key: D major}
 
 pilot_acceptance:
   rap: impressive even if the listener doesn't find the subject funny
