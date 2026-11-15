@@ -1,0 +1,86 @@
+# MR. SIDEQUEST artist DNA: the persistent identity every MR. SIDEQUEST song is built from (Reuben's spec, Nov 14).
+# build.py joins `caption_core` with each song's own caption. Everything is original: genre references only,
+# no real artist, record, person or brand is named or imitated in any file that goes into generation.
+
+act: MR. SIDEQUEST
+genre: alternative hip-hop, funny rap, boom bap, funk rap, melodic hip-hop
+origin: British, with an international hip-hop sound
+personality: overconfident, curious, self-aware, chaotic, charming
+themes: [everyday absurdity, bad decisions, ambition, technology, relationships, self-deception]
+signature: technical wordplay, elaborate stories, callbacks, sudden sincerity
+
+persona: >-
+  A genuinely talented rapper who finds the ridiculous in everyday life and treats ordinary life as a series of
+  increasingly complicated side quests. The comedy comes from his observations, writing and delivery; he takes
+  the craft seriously. Funny, technically accomplished, unpredictable and occasionally surprisingly moving.
+not:
+  - a constant stream of random jokes
+  - a parody of British accents
+  - a children's comedy rapper
+  - a rapper who sacrifices rhythm for punchlines
+  - permanently ironic and incapable of sincerity
+
+voice: mid-range male rap voice, slightly grainy, conversational British accent, strong diction
+delivery:
+  - comfortable conversational flow
+  - dense internal rhymes and multisyllabic patterns
+  - rapid bursts that stay intelligible
+  - sudden pauses before punchlines
+  - character voices used sparingly
+  - occasional melodic hooks, never over-sung
+signature_technique: >-
+  A verse starts with a simple observation, develops into a technically elaborate explanation, becomes absurd,
+  then circles back to the original idea with a callback.
+
+# No fixed instrumental palette: each song picks a mode.
+modes:
+  boom_bap: crisp drums, sampled keys, upright bass, chopped breaks (wordplay and storytelling)
+  funk_rap: live bass, guitar, brass, bouncy drums (playful songs)
+  trap: deep bass, modern drums, fast hats, synths (high-energy tracks)
+  jersey_club: bouncy kick patterns, chopped vocal hooks (short infectious choruses)
+  acoustic: guitar, piano, restrained percussion (personal songs)
+tempo: 88-145 bpm depending on the song
+
+production_rules:
+  - The beat serves the flow; songs don't all sit in the same pocket.
+  - Leave space around punchlines.
+  - Instrumental changes reinforce the story.
+  - No novelty sound effects instead of musical ideas.
+  - A funny song still needs a proper hook and a satisfying composition.
+  - At least one technically impressive passage per song.
+  - Serious moments stay serious.
+  - British references come naturally, no forced slang.
+  - Start straight in (no spoken intro); end on a rapped or hook line, never a spoken outro (Reuben's standing rules).
+
+mix:
+  vocal: upfront, intelligible, fairly dry, moderate saturation
+  low_end: tight
+  ad_libs: may sit off-centre but never cover the main vocal
+  loudness: about -9 LUFS integrated, true peak -1 dBTP, laptop pedalboard master
+
+# Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
+# ("dusty" is left out of the boom bap description for the same reason.)
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, dusty, radio noise, tuba, pizzicato, woodblock, marching snare, comic, comedy, theatrical, polished, circus, white noise, texture, ambience, atmosphere, rain, lo-fi]
+
+caption_core: >-
+  versatile alternative hip-hop, charismatic British male rapper, conversational expressive rap delivery,
+  sharp technical wordplay, dense internal rhymes, multisyllabic patterns, playful storytelling, unexpected
+  punchlines, natural British accent, dynamic flow switches, clear intelligible upfront vocal, warm cohesive blended mix
+
+writing_rules:
+  - One line per bar in verses. Hooks repeat a phrase you can say back.
+  - Punchlines land on the beat, not crammed into the last space.
+  - Every verse follows the signature technique and ends on a callback.
+  - No lines fully in brackets (the pipeline strips them).
+
+songs:
+  main-character-syndrome: {status: done, round 2 take 6401 picked by Reuben (Nov 15), tests: character, humour and hooks}
+  ive-got-a-system: {status: written Nov 15, rendering next, tests: technical rap and flow changes, bpm: 138, key: C minor}
+  laughing-at-myself: {status: design next if the first works, tests: emotional range and melodic writing, bpm: 92, key: D major}
+
+pilot_acceptance:
+  rap: impressive even if the listener doesn't find the subject funny
+  words: punchlines audible and on the beat
+  hooks: memorable after one listen
+  identity: sounds like one recognisable rapper across takes
+  audio: no obvious vocal artefacts, clipping or hiss

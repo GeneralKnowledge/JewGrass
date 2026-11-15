@@ -1,0 +1,120 @@
+# TAM LIGHTLY Song Design: Meal Deal Champion (pilot track 01, the single).
+slug: tamlightly-meal-deal-champion
+title: Meal Deal Champion
+credit: Tam Lightly
+version: 1
+order: 1
+purpose: the single. Prove the act is funny and catchy in under two minutes.
+concept: Getting the last good sandwich at lunchtime, told like winning a cup final.
+
+render:
+  bpm: 146
+  key: F major
+  timesig: "4"
+  seconds: 105        # 56 bars at 146 is 92 s, plus room for the ending
+
+palette:
+  signature: a whistled melody and plucky marimba
+  drums: bouncy hi-hats, handclaps on 2 and 4, snappy snare
+  bass: bouncy friendly 808
+  left_out: pads, strings, anything dark
+
+the_moment: >-
+  The bridge drops the drums to whistle and claps for a crowd-clap section, then the last hook slams back in.
+
+sections:
+  - name: hook 1
+    tag: chorus - starts straight in, whistle melody, bouncy drums, chantable hook
+    bars: 8
+    lyrics: |
+      Meal deal champion, meal deal champion
+      Last chicken club on the shelf and I'm the one that grabbed it, son
+      Crisps in the left, juice in the right
+      Three pound sixty and I'm winning tonight
+      Meal deal champion, meal deal champion
+      Queue to the door and I'm through it in a minute, done
+      Card on the reader, beep, that's me
+      Meal deal champion, Auchterbeg's MVP
+  - name: verse 1
+    tag: verse - cheeky bouncy rap, light keys, punchline pauses
+    bars: 16
+    idea: the dash to the shop; the image is the last sandwich on the top shelf
+    lyrics: |
+      Twelve twenty-nine and the whole floor's moving
+      I was out the door at twenty-eight, I keep improving
+      Shortcut through the car park, hop the wee wall
+      Corner shop, bell goes ding, I can hear the fridges call
+      Auntie at the till looks up and says "you again"
+      Course it's me again, I'm a creature of my habits, friend
+      Sandwich fridge, top shelf, slightly to the left
+      Last chicken club and I nearly lose my breath
+      Big lad in a hi-vis reaching over my shoulder
+      Sorry big man, should've moved when you were bolder
+      Crisp aisle, I'm a surgeon, salt and vinegar, precise
+      Orange fizz from the bottom, ice cold, very nice
+      Self-checkout, unexpected item? Nah, mate, I've been chosen
+      Beep, beep, beep, three for three-sixty, frozen
+      Walk back slow so the whole street can see me
+      Chicken club in the sun like a trophy, believe me
+  - name: hook 2
+    tag: chorus - whistle melody, bouncy drums, chantable hook
+    bars: 8
+    lyrics: |
+      Meal deal champion, meal deal champion
+      Last chicken club on the shelf and I'm the one that grabbed it, son
+      Crisps in the left, juice in the right
+      Three pound sixty and I'm winning tonight
+      Meal deal champion, meal deal champion
+      Queue to the door and I'm through it in a minute, done
+      Card on the reader, beep, that's me
+      Meal deal champion, Auchterbeg's MVP
+  - name: verse 2
+    tag: verse - faster bouncy rap, drums drop out before the last line
+    bars: 12
+    idea: the bad week before the win; the deflation is the clapping in his head
+    lyrics: |
+      Monday was a nightmare, all they had was egg and cress
+      Ate it on the steps and told my mum that I was blessed
+      Tuesday got the wrong crisps, Wednesday got a warm juice
+      Thursday I was late, a student got the last one, no excuse
+      But Friday? Friday I was born for this
+      Practised the route in my sleep, I don't miss
+      Mum says "it's a sandwich, son, it's not the Olympics"
+      Mum, with respect, you don't know my limits
+      Ten past one, wrapper folded like a flag
+      Crumbs on my tie and I wear them like a badge
+      Back at my desk and the whole floor's clapping
+      Nobody's clapping. In my head they're clapping.
+  - name: bridge
+    tag: bridge - drums drop out, whistle and handclaps only, crowd chant
+    bars: 4
+    lyrics: |
+      Three pound sixty, three pound sixty
+      Price goes up and I'm still here, I'm still nifty
+      Clap for the sandwich, clap for the crisps
+      Clap for the man who never ever misses
+  - name: final hook
+    tag: chorus - drums slam back in, full energy, gang vocals, hard stop
+    bars: 8
+    lyrics: |
+      Meal deal champion, meal deal champion
+      Last chicken club on the shelf and I'm the one that grabbed it, son
+      Crisps in the left, juice in the right
+      Three pound sixty and I'm winning tonight
+      Meal deal champion, meal deal champion
+      Queue to the door and I'm through it in a minute, done
+      Card on the reader, beep, that's me
+      Meal deal champion, champion
+
+ending: Hard stop on the last "champion", one whistle note rings out.
+
+caption: >-
+  146 bpm, F major, bouncy party rap single, whistled melody hook, bright keys, bouncy hi-hats, handclaps,
+  bouncy 808, starts straight in on the chorus, playful mock-epic bragging, drums drop out before punchlines,
+  breakdown with whistle and handclaps, gang vocal final chorus, hard stop ending
+
+lyric_audit:
+  joke: a cup-final victory speech about a sandwich
+  imagery: [the bell on the door, top shelf slightly to the left, the hi-vis lad, the wrapper folded like a flag]
+  twist: nobody is clapping
+  hook: '"Meal deal champion" twice, then the price'

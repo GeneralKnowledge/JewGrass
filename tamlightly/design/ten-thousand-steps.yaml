@@ -1,0 +1,116 @@
+# TAM LIGHTLY Song Design: Ten Thousand Steps (pilot track 02, the sprint).
+slug: tamlightly-ten-thousand-steps
+title: Ten Thousand Steps
+credit: Tam Lightly
+version: 1
+order: 2
+purpose: the short fast one. Show Tam can rap quickly and stay funny.
+concept: A smartwatch step goal turns into an obsession, from midnight laps of the living room to the next day.
+
+render:
+  bpm: 160
+  key: E minor
+  timesig: "4"
+  seconds: 90         # 56 bars at 160 is 84 s, plus room for the ending
+
+palette:
+  signature: a bright bleepy chiptune-style synth lead, like a fitness app
+  drums: fast bouncy hi-hats, snappy snare, claps
+  bass: bouncy 808 following the lead
+  left_out: pads, piano, anything slow
+
+the_moment: >-
+  Verse 1 counts up to ten thousand; on the last step everything stops for one beat, then the hook explodes.
+
+sections:
+  - name: hook 1
+    tag: chorus - starts straight in, bright synth lead, fast bouncy drums, chant
+    bars: 8
+    lyrics: |
+      Ten thousand steps, ten thousand steps
+      Watch on my wrist says I'm nowhere yet
+      Up and down the hall like a man possessed
+      Ten thousand steps, ten thousand steps
+      Ten thousand steps, ten thousand steps
+      Walked to the shop and I drove back, yes
+      Little green ring and I'm closing it, bet
+      Ten thousand steps, ten thousand steps
+  - name: verse 1
+    tag: verse - fast excited rap, tight rhythmic pocket, counting
+    bars: 16
+    idea: midnight laps of the living room; the image is trainers on with pyjamas
+    lyrics: |
+      Half eleven at night and I'm on nine thousand and two
+      Wee watch buzzing on my wrist like "what you gonna do"
+      Trainers on with pyjamas, I'm a professional
+      Laps of the living room, round the couch, sensational
+      Mind the cat, mind the lamp, mind the edge of the rug
+      Nine thousand three hundred, I could do with a hug
+      Up the stairs, down the stairs, up the stairs, down
+      Neighbour bangs the wall, I'm like thanks for the sound
+      Nine six, nine seven, now I'm feeling the burn
+      Kettle on, walk to the kettle, every trip is a turn
+      Mum shouts "it's midnight", I shout "it's cardio"
+      Counting out loud like I'm hosting a show
+      Nine nine nine eight, nine nine nine nine
+      Last step, foot in the air, I'm taking my time
+      Down it comes, watch goes off, fireworks, confetti
+      Fell asleep on the stairs but my legs are ready
+  - name: hook 2
+    tag: chorus - everything stops for one beat then explodes, bright synth lead
+    bars: 8
+    lyrics: |
+      Ten thousand steps, ten thousand steps
+      Watch on my wrist says I'm nowhere yet
+      Up and down the hall like a man possessed
+      Ten thousand steps, ten thousand steps
+      Ten thousand steps, ten thousand steps
+      Walked to the shop and I drove back, yes
+      Little green ring and I'm closing it, bet
+      Ten thousand steps, ten thousand steps
+  - name: verse 2
+    tag: verse - even faster double-time rap, breathless and funny
+    bars: 16
+    idea: the next day it's out of hand; the deflation is "what do I do now"
+    lyrics: |
+      Next day I'm at twenty thousand and it's only two
+      Pacing at the bus stop while the buses go through
+      Missed three buses 'cause the bus is a cheat
+      Every seat's a step I'm not doing with my feet
+      Phone call? Walk. Toast? Walk. Brushing my teeth? Lunges
+      Meeting at work and I'm standing at the back doing plunges
+      Gran says "sit down, son", I say "Gran, I'm on a mission"
+      She says "it's just a watch", I say "it's a competition"
+      Against who? Me. Who's winning? Also me
+      Who's losing? Also me, but I'm fitter, you'll see
+      Dog walker passed me so I lapped her, she was raging
+      Wee dog was in on it, wee dog was celebrating
+      Watch at four per cent and I panic and I sprint
+      Home to the charger, stand beside it, I don't sit
+      Ring's nearly closed and the green's coming through
+      Close it. Ding. Right. What do I do?
+  - name: final hook
+    tag: chorus - full energy, gang chant, hard stop
+    bars: 8
+    lyrics: |
+      Ten thousand steps, ten thousand steps
+      Watch on my wrist says I'm nowhere yet
+      Up and down the hall like a man possessed
+      Ten thousand steps, ten thousand steps
+      Ten thousand steps, ten thousand steps
+      Walked to the shop and I drove back, yes
+      Little green ring and I'm closing it, bet
+      Ten thousand and one. Done.
+
+ending: Hard stop on "Done", one synth bleep.
+
+caption: >-
+  160 bpm, E minor, fast bouncy energetic rap, bright synth lead, fast bouncy hi-hats,
+  snappy snare, claps, bouncy 808, starts straight in on the chorus, fast excited rapid-fire delivery,
+  double-time second verse, one-beat full stop before the second chorus, gang chant chorus, hard stop ending
+
+lyric_audit:
+  joke: a training montage that is entirely laps of a living room
+  imagery: [trainers with pyjamas, the cat and the lamp, the kettle laps, the wee dog celebrating, standing by the charger]
+  twist: he closes the ring and has no idea what to do next
+  hook: '"Ten thousand steps" as the first and last words of every half'
