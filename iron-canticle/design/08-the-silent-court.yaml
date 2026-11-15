@@ -1,0 +1,118 @@
+# IRON CANTICLE Song Design: The Silent Court (track 08, cult family).
+slug: canticle-the-silent-court
+title: The Silent Court
+credit: IRON CANTICLE
+order: 8
+family: cult
+version: 2
+role: Kell's initiation and first killing. The album's darkest turn, told plainly.
+story: >-
+  The cult leads Kell through the bone-house to the faceless judges. They give him a knife. He finds the levy
+  warden who read his name out as a child, strikes the warden's name from the book, and goes back down.
+test: Can the cult's slow heavy sound carry a first-person story verse without losing the hymn feel?
+
+render:
+  bpm: 132
+  key: G minor
+  timesig: "4"
+  seconds: 170        # 84 bars at 132 is 153 s
+
+palette:
+  lead: Kell, low and controlled, colder than before
+  guitars: slow crushing half-time riffs, a mournful melodic guitar solo
+  drums: slow heavy half-time beat, double kick in the final chorus
+  colour: the crowd choir answering
+  left_out: rap, 808, bell, gang shouts
+harmony: "Gm - Eb - Cm - D (D major, harmonic minor)."
+drums: Half-time throughout, kick with the riff, snare on 3; catechism is toms only.
+bass_movement: bass on the roots with the riff.
+the_moment: The catechism, the same questions as Prayer, now with Kell's own answer, "His final breath".
+
+sections:
+  - name: chorus 1
+    tag: chorus - huge crowd choir sings, crushing half-time riff, straight in
+    bars: 8
+    performer: congregation
+    lyrics: |
+      Stand before the Silent Court
+      Give your name and give it up
+      Take the knife and take the vow
+      You belong to the red now
+  - name: verse 1
+    tag: verse - low controlled male lead sings, slow heavy riff
+    bars: 16
+    performer: kell
+    lyrics: |
+      They led me through the bone-house where the skulls are stacked in rows
+      Each one with a candle, and each candle burning low
+      The judges wore no faces and the court made not a sound
+      They only held a mirror up and asked me what I'd found
+      I told them of the frozen moon, I told them of the line
+      I told them of the psalm that read the same for every time
+      They said the Synod counts the dead and lets the counting stand
+      We count them too, but we decide, and put a knife in my hand
+  - name: chorus 2
+    tag: chorus - crowd choir and male lead, crushing riff
+    bars: 8
+    performer: congregation+kell
+    lyrics: |
+      Stand before the Silent Court
+      Give your name and give it up
+      Take the knife and take the vow
+      You belong to the red now
+  - name: verse 2
+    tag: verse - low cold male lead sings, quieter, the riff thins out
+    bars: 16
+    performer: kell
+    lyrics: |
+      The warden of the ninth level, he kept the levy book
+      He read my name out on the stair, he didn't even look
+      I found him at his ledger when the candles had burned down
+      He knew me by the dead man's coat, he didn't make a sound
+      I didn't feel the anger and I didn't feel the fear
+      I only felt the quiet, and a smile from somewhere near
+      I struck his name out of the book, the way he'd struck out mine
+      Then went back down to the candles, and I didn't look behind
+  - name: catechism
+    tag: call and response - lead sings the question, male lead answers, toms only
+    bars: 8
+    performer: red-choir+kell
+    lyrics: |
+      Who do you serve
+      The Saint of Murder
+      What did you give
+      His final breath
+  - name: solo
+    tag: guitar solo - instrumental, slow mournful melodic guitar lead over the heavy riff
+    bars: 8
+    performer: none
+  - name: final chorus
+    tag: final chorus - overwhelming, double kick, whole crowd choir and lead
+    bars: 16
+    performer: congregation+kell
+    lyrics: |
+      Stand before the Silent Court
+      Give your name and give it up
+      Take the knife and take the vow
+      You belong to the red now
+      Stand before the Silent Court
+      Give your name and give it up
+      Take the knife and take the vow
+      You belong to the red now
+  - name: end
+    tag: ending - band stops, crowd choir sings the last line over one held chord
+    bars: 4
+    performer: congregation
+    lyrics: |
+      You belong to the red now
+
+ending: Band stops; the choir sings "You belong to the red now" over one held chord.
+caption: >-
+  132 bpm, G minor, slow crushing heavy metal hymn, opens straight in on a huge crowd choir over a half-time riff,
+  a low cold controlled male lead sings the story verses, a sung question and answer with only toms, a slow
+  mournful guitar solo, overwhelming final chorus with double kick, ends on the choir over one held chord
+
+lyric_audit:
+  character_voice: Kell tells the killing without drama; the horror is how calm he is
+  imagery: [skulls with candles, the faceless judges and the mirror, the levy book, striking the name out]
+  throughline: the ledger (striking names), counting the dead, Prayer's catechism and "a smile from somewhere near" echoing the friend's verse

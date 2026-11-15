@@ -29,7 +29,7 @@ drums: >-
   guitar chugs. Mother's bridge: no drums. Final chorus: double-kick sixteenths under the stomp.
 bass_movement: bass guitar doubles the guitar roots, one note per beat, drops out for the bridge.
 the_moment: >-
-  The mother's "count to nine" sung over a held keyboard chord, then the bell and the whole choir come straight back in
+  The mother's "count to nine" sung over one held chord, then the bell and the whole choir come straight back in
   over it, louder, as if she wasn't heard.
 
 sections:
@@ -66,7 +66,7 @@ sections:
       Light a candle, close the door
       Ring the bell and ask no more
   - name: bridge
-    tag: bridge - soft low female voice sings alone over a held keyboard chord, no drums
+    tag: bridge - soft low female voice sings alone over one held chord, no drums
     bars: 8
     performer: mother
     lyrics: |

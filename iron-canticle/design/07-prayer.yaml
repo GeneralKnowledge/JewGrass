@@ -35,9 +35,9 @@ render:
 
 palette:
   lead: a low powerful male lead, fully sung, with the congregation choir answering
-  guitars: clean dark arpeggios in verse 1, heavy half-time riffs from the first chorus, everything in the final chorus
+  guitars: dark arpeggiated guitar in verse 1, heavy half-time riffs from the first chorus, everything in the final chorus
   drums: sparse toms in verse 1, slow heavy half-time beat from the first chorus, double kick in the last
-  colour: the bell once at the very start; keyboard strings hold the chords underneath
+  colour: the bell once at the very start; a low organ holds the chords underneath
   left_out: rap, 808, trap drums, hand drums, female voice
 harmony: >-
   Dm - Bb - Gm - A (A major, harmonic minor), choruses lift to F - C - Dm - A. The reference drifts toward G and
@@ -59,7 +59,7 @@ sections:
       Every death is a prayer
       Every death is a prayer
   - name: verse 1
-    tag: verse - low powerful male lead sings quietly, clean dark guitar arpeggios, floor toms
+    tag: verse - low powerful male lead sings quietly, dark arpeggiated guitar, floor toms
     bars: 16
     performer: red-choir
     lyrics: |
@@ -164,7 +164,7 @@ sections:
 ending: The final "Every death is a prayer" is sung over one held chord; drums and bass stop under it. No spoken outro.
 caption: >-
   144 bpm, D minor, slow heavy ritual metal hymn, opens straight in on a huge crowd choir with one deep bell,
-  a low powerful male lead sings over clean dark guitar arpeggios in the first verse, crushing half-time riffs
+  a low powerful male lead sings over dark arpeggiated guitar in the first verse, crushing half-time riffs
   from the first chorus, the lead sings questions and the crowd choir sings the answers with the drums almost
   gone, overwhelming final chorus with double kick, ends on the crowd choir singing the chant
 

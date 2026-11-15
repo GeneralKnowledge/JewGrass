@@ -1,0 +1,125 @@
+# IRON CANTICLE Song Design: Deserter (track 05, war family).
+slug: canticle-deserter
+title: Deserter
+credit: IRON CANTICLE
+order: 5
+family: war
+version: 2
+role: The fastest track. Kell runs from the war and comes home to a city that can't take him back.
+story: >-
+  Kell buries Teague without the psalm, stows away on a supply ship for forty days, lands in Vigil, sees his
+  mother's candle, and goes down into the drains instead of home, because deserters hang from the spire.
+test: Does a fast galloping metal track with a singalong chorus still feel bleak?
+
+render:
+  bpm: 168
+  key: B minor
+  timesig: "4"
+  seconds: 160        # 100 bars at 168 is 143 s
+
+palette:
+  lead: Kell, powerful and gritty, at the top of his range in the chorus
+  guitars: fast galloping riffs, harmonised twin lead in the solo
+  drums: fast double kick throughout the verses, driving beat in the choruses
+  left_out: rap, 808, bell, female voice
+harmony: "Bm - G - D - A; chorus Bm - G - A - F#."
+drums: Verses double-kick gallop, choruses driving straight beat, bridge half-time.
+bass_movement: bass gallops with the kick.
+the_moment: The bridge answers Trench Psalm's call and response with "Not me, not now".
+
+sections:
+  - name: chorus 1
+    tag: chorus - powerful gritty male lead and gang choir, fast driving drums, straight in
+    bars: 16
+    performer: kell+soldiers
+    lyrics: |
+      Run, deserter, run
+      Under the red of a dying sun
+      They'll hang you high on the spire for what you've done
+      Run, deserter, run
+      No candle lit for the ones who flee
+      No name in the ledger, no memory
+      I left my line and I left my oath behind
+      Run, deserter, run
+  - name: verse 1
+    tag: verse - powerful gritty male lead sings, fast galloping double kick
+    bars: 16
+    performer: kell
+    lyrics: |
+      I buried Teague in the frozen ground, and I didn't say the psalm
+      I walked out past the wire that night with his rifle in my arms
+      A supply ship was loading at the edge of the landing field
+      Crates of shells and crates of prayers and a hold that wasn't sealed
+      I lay down with the dead men's coats for forty days of night
+      I heard the engines singing and I never saw a light
+      I counted every heartbeat and I counted every breath
+      Forty days between the war and the city of my death
+  - name: chorus 2
+    tag: chorus - male lead and gang choir, fast driving drums
+    bars: 16
+    performer: kell+soldiers
+    lyrics: |
+      Run, deserter, run
+      Under the red of a dying sun
+      They'll hang you high on the spire for what you've done
+      Run, deserter, run
+      No candle lit for the ones who flee
+      No name in the ledger, no memory
+      I left my line and I left my oath behind
+      Run, deserter, run
+  - name: verse 2
+    tag: verse - male lead sings quieter, then builds, galloping drums
+    bars: 16
+    performer: kell
+    lyrics: |
+      The ship came down on Vigil through the smoke and through the bells
+      I climbed out with the cargo and I breathed the candle smell
+      Home was nine levels up, and the wardens knew my face
+      My mother's sill still had a candle, and my name had lost its place
+      I didn't climb the stairwell and I didn't knock to say
+      I let her keep the boy who died, it's kinder that way
+      So down I went through the drains and the bones beneath the street
+      Down where the dark has candles too, and someone waits to meet
+  - name: solo
+    tag: guitar solo - instrumental, fast harmonised twin guitar lead over double kick
+    bars: 8
+    performer: none
+  - name: bridge
+    tag: bridge - gang choir asks, male lead answers, half-time, heavy
+    bars: 8
+    performer: soldiers+kell
+    lyrics: |
+      Who holds the line
+      Not me, not now
+      Who feeds the guns
+      Not me, not now
+  - name: final chorus
+    tag: final chorus - heaviest, male lead and full gang choir, double kick
+    bars: 16
+    performer: kell+soldiers
+    lyrics: |
+      Run, deserter, run
+      Under the red of a dying sun
+      They'll hang you high on the spire for what you've done
+      Run, deserter, run
+      No candle lit for the ones who flee
+      No name in the ledger, no memory
+      I left my line and I left my oath behind
+      Run, deserter, run
+  - name: end
+    tag: ending - band stops dead, male lead sings the last line alone
+    bars: 4
+    performer: kell
+    lyrics: |
+      Run, deserter, run
+
+ending: Band stops on the downbeat; Kell sings "Run, deserter, run" alone.
+caption: >-
+  168 bpm, B minor, fast galloping heavy metal, opens straight in on a soaring gritty male lead and a gang choir
+  singing a big chorus, fast double-kick verses with galloping guitars, a harmonised twin guitar solo, a heavy
+  half-time call and response bridge, ends with the band stopping and the lead singing the last line alone
+
+lyric_audit:
+  character_voice: Kell is ashamed and practical; the only tenderness is letting his mother keep "the boy who died"
+  imagery: [the hold that wasn't sealed, forty days with the dead men's coats, the candle on his mother's sill, the drains]
+  throughline: counting heartbeats, the candle on the sill from Every Tenth Child, the call and response from Trench Psalm

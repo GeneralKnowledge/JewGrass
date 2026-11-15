@@ -1,0 +1,64 @@
+# IRON CANTICLE Song Design: The Undercroft (track 06, undercroft family).
+slug: canticle-the-undercroft
+title: The Undercroft
+credit: IRON CANTICLE
+order: 6
+family: undercroft
+version: 2
+role: The short breath before Prayer. Under the city, almost still. Ends in Prayer's key.
+story: Kell comes down into the dark beneath Vigil. A voice asks who he is and tells him to leave his name at the stair.
+test: Can a short quiet piece stay heavy in mood with almost no distortion?
+
+render:
+  bpm: 70
+  key: D minor
+  timesig: "4"
+  seconds: 85         # 20 bars at 70 is 69 s
+
+palette:
+  lead: the red-choir lead, low and close; the congregation distant
+  guitars: dark arpeggiated guitar, one distorted chord only at the very end
+  drums: a heartbeat kick only
+  left_out: rap, 808, full drums, solo, bell
+harmony: "Dm - Bb - Gm - A, slow."
+drums: Heartbeat kick (two soft hits) on beat 1 of every bar. Nothing else.
+bass_movement: one low sustained note per chord.
+the_moment: The single heavy distorted chord under the last line, leading straight into Prayer.
+
+sections:
+  - name: opening
+    tag: opening - distant crowd choir sings softly over dark arpeggiated guitar, heartbeat kick, straight in
+    bars: 4
+    performer: congregation
+    lyrics: |
+      Down where the candles are
+      Down where the dead are kept
+  - name: interlude
+    tag: interlude - instrumental, dark arpeggiated guitar and heartbeat kick
+    bars: 4
+    performer: none
+  - name: verse
+    tag: verse - low male lead sings close and quiet, dark arpeggiated guitar, distant choir
+    bars: 8
+    performer: red-choir
+    lyrics: |
+      Who comes down from the light
+      Wearing a dead man's coat
+      Leave your name at the stair
+      You won't be needing it here
+  - name: end
+    tag: ending - crowd choir sings, one heavy distorted chord rings out underneath
+    bars: 4
+    performer: congregation
+    lyrics: |
+      Down where the candles are
+
+ending: The choir sings "Down where the candles are" over one heavy chord that rings into Prayer.
+caption: >-
+  70 bpm, D minor, short dark slow piece, opens straight in on a distant crowd choir singing softly over dark
+  arpeggiated guitar, a heartbeat kick, a low close male voice sings a short verse, no full drums, ends with
+  the choir singing over one heavy distorted chord
+
+lyric_audit:
+  imagery: [the dead man's coat, leaving your name at the stair]
+  throughline: candles; giving up the name (the ledger) sets up Prayer and The Silent Court
