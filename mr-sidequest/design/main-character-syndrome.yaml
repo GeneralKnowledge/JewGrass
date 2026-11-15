@@ -17,7 +17,7 @@ render:
   timesig: "4"
   seconds: 220        # 92 bars at 104 is 212 s, plus room for the ending
 
-palette: funky bass guitar, crisp boom bap drums, chopped soul keys, short brass accents, an occasional guitar riff
+palette: funky bass guitar, punchy boom bap drums, chopped soul keys, short brass accents, an occasional guitar riff
 harmony: Gm, Eb, Bb, F, circular
 the_moment: >-
   At the end of verse 1 the beat cuts out before the punchline, one dry vocal line, then bass and drums return.
@@ -153,7 +153,7 @@ sections:
 ending: Rapped punchline over the bass riff, hard stop on "Cut". No speech.
 
 caption: >-
-  104 bpm, G minor, funky boom bap hip hop, funky bass, crisp boom bap drums, soul keys, short brass stabs,
+  104 bpm, G minor, funky boom bap hip hop, funky bass, punchy boom bap drums, soul keys, short brass stabs,
   energetic but not busy, starts straight in on the first verse, relaxed conversational flow then denser
   technical flow, chanted melodic hook, beat drops out before punchlines, stripped breakdown with bass and kick
   only, fast final verse with callbacks, layered final hook with ad-libs, ends on a rapped line with a hard stop
