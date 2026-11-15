@@ -1,0 +1,69 @@
+# NIGHTSHIFT FM Song Design: Tuning In (track 01). build.py compiles it into nightshift-fm/tracks.yaml.
+slug: nightshift-tuning-in
+title: Tuning In
+order: 1
+family: memphis
+version: 1
+role: Establish the sonic world. An instrumental opening, not a conventional song.
+test: Can the album establish a recognisable identity before the first full song?
+
+render:
+  bpm: 90
+  key: F minor
+  timesig: "4"
+  seconds: 171        # 64 bars at 90 is 171 s
+
+palette:
+  lead: transmission-piano (four-note detuned piano phrase) and the signal-bell (two notes, F down to D, faint)
+  bed: one low synth pad, very quiet
+  bass: deep sub-bass, held notes under each chord
+  drums: muffled kick only at first; the first full kick lands at bar 25
+  left_out: cowbell, hats before bar 25, any guitar, any distortion
+
+harmony: Fm - Db - Eb - Fm, two bars each. The last Fm has no resolution under it (bass drops out first).
+drums: >-
+  Bars 9-24 a muffled kick on 1 only. Bar 25 the full kit arrives (dry kick on 1 and the "and" of 2, snare on 3,
+  loose swung hats). Bar 41 heavier: ghost snares, a rimshot on the last eighth of every fourth bar.
+bass_movement: Sub follows the roots, F, Db, Eb, F, entering bar 25 together with the first full kick.
+vocal_motif:
+  voice: station
+  phrase: "you're listening"
+  treatments: [plain and distant, split into "you're" and "listening", syllable chop on the off-beats, short identification tone after it]
+the_moment: Bar 25. The first full kick and the sub arrive together, as if the station has finally locked on.
+
+sections:
+  - name: intro
+    tag: intro - instrumental, radio tuning sweep, then a faint two-note bell, no drums
+    bars: 8
+    performer: none
+  - name: motif A
+    tag: theme - detuned piano phrase, distant calm spoken voice, muffled kick
+    bars: 16
+    performer: station
+    lyrics: |
+      You're listening
+      You're listening
+  - name: motif B
+    tag: groove - instrumental, full kick and deep sub-bass lock in together, swung hats
+    bars: 16
+    performer: none
+  - name: motif A2
+    tag: groove - heavier drums, the spoken words chopped into rhythmic syllables
+    bars: 16
+    performer: station
+    lyrics: |
+      You're, you're
+      Listening
+      You're, you're, you're
+      Listen, listening
+  - name: outro
+    tag: outro - instrumental, filter closes, drums fall away, the signal fades unresolved
+    bars: 8
+    performer: none
+
+ending: The filter closes over the last four bars and the final Fm is left hanging with no bass under it.
+transmission_layer: tuning sweep across bars 1-8; one short identification tone after the first "you're listening"; signal loss over the outro.
+caption: >-
+  90 bpm, F minor, slow instrumental opening, detuned piano phrase, a faint two-note bell motif, deep sub-bass,
+  muffled kick that builds into a full groove halfway, a calm low spoken voice saying two words then chopped
+  into rhythm, the final chord left unresolved

@@ -1,0 +1,87 @@
+# NIGHTSHIFT FM Song Design: Overdrive (track 09).
+slug: nightshift-overdrive
+title: Overdrive
+order: 9
+family: drift
+version: 1
+role: The album climax; the biggest and most energetic track.
+test: Can the engine produce an exciting, replayable drift-phonk track with a memorable original cowbell melody?
+
+render:
+  bpm: 170
+  key: C# minor
+  timesig: "4"
+  seconds: 181        # 104 bars at 170 is 147 s
+
+palette:
+  lead: cowbell melody, the album's strongest hook - an eight-note phrase that starts on the high G# and falls to C# with a skip back up to E; the variation turns it upside down
+  bass: heavily saturated 808, sub kept intact
+  drums: punchy kick, hard snare, rapid hats; half-time breakdown; gaps left on purpose in the drops
+  extra: electronic risers; short vocal shouts
+  left_out: piano, pads, organ; no percussion in the gap at the end of every eighth bar
+
+harmony: C#m - A - E - B, one bar each.
+drums: >-
+  Drops: four-bar pattern with the kick pushed onto the "and" of 4 in bar 4 and a full beat of silence before
+  each new eight-bar phrase. Breakdown: half-time. Final drop: adds a second cowbell and claps, still keeps the gaps.
+bass_movement: 808 follows the roots with octave jumps on the "and" of 2; stronger saturation from drop B.
+vocal_motif:
+  voice: shout
+  phrase: "Don't stop"
+  treatments: [two syllables chopped into a rhythm in the drops ("don't, don't, don't stop"), one plain shout in the final drop]
+the_moment: The opening. The cowbell hook is teased filtered in the intro, then drop A plays it in full on the first downbeat.
+
+sections:
+  - name: intro
+    tag: intro - instrumental, filtered cowbell hook tease, riser
+    bars: 8
+    performer: none
+  - name: drop A
+    tag: drop - full drift groove, cowbell hook in full, chopped two-word shout
+    bars: 16
+    performer: shout
+    lyrics: |
+      Don't, don't, don't stop
+  - name: variation
+    tag: variation - instrumental, cowbell melody turned upside down
+    bars: 8
+    performer: none
+  - name: drop B
+    tag: drop - instrumental, stronger saturated 808, gaps before each phrase
+    bars: 16
+    performer: none
+  - name: breakdown
+    tag: breakdown - instrumental, half-time drums, cowbell alone for two bars, riser
+    bars: 8
+    performer: none
+  - name: drop A2
+    tag: drop - main groove and cowbell hook return
+    bars: 16
+    performer: shout
+    lyrics: |
+      Don't, don't stop
+  - name: variation 2
+    tag: variation - extra percussion and stuttered vocal chops
+    bars: 8
+    performer: shout
+    lyrics: |
+      Don't, don't, don't
+      Don't stop
+  - name: final drop
+    tag: final drop - fullest arrangement, second cowbell, claps, one plain shout
+    bars: 16
+    performer: shout
+    lyrics: |
+      Don't stop!
+  - name: outro
+    tag: outro - instrumental, abrupt cut to silence
+    bars: 8
+    performer: none
+
+ending: An abrupt cut mid-phrase; the station loses the signal.
+transmission_layer: the abrupt cut to silence is the signal loss; a half-second of silence, then Lost Transmission tunes in.
+caption: >-
+  170 bpm, C-sharp minor, the biggest highest-energy drift phonk track, a memorable original cowbell hook
+  melody from the first drop, heavily saturated 808 with intact sub, rapid hats, hard snare, punchy kick,
+  electronic risers, gaps and contrast in the drops, half-time breakdown, a two-word male shout chopped
+  into rhythm, clear escalation, abrupt ending

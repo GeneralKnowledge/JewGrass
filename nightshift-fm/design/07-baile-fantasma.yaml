@@ -1,0 +1,89 @@
+# NIGHTSHIFT FM Song Design: Baile Fantasma (track 07, round 1).
+slug: nightshift-baile-fantasma
+title: Baile Fantasma
+order: 7
+family: baile
+version: 1
+role: Bring in Brazilian funk without losing the album's Memphis identity.
+test: Can JewGrass create a genuinely different rhythmic feel while keeping the project's dark aesthetic?
+
+render:
+  bpm: 130
+  key: A minor
+  timesig: "4"
+  seconds: 207        # 96 bars at 130 is 177 s
+
+palette:
+  lead: dark synth stabs on the off-beats; no long melody
+  bass: rolling bass that locks to the syncopated kick, not to the bar
+  drums: the rhythm is the song. A syncopated Brazilian funk pattern on dry kicks and clipped snares with hand percussion, not percussion laid over a drift beat
+  voice: a small group chant, used as a percussion part
+  extra: occasional cowbell; a Memphis-style snare joins only in groove A2
+  left_out: drift hi-hat rolls, four-on-the-floor, piano
+
+harmony: Am - F - G - E, one bar each, played as short stabs to leave space.
+drums: >-
+  3+3+2 accent figure across each bar (kick on 1, the "and" of 2 and 4, snare-clap on the e of 2 and on 4), with
+  hand percussion filling the sixteenths between. The Memphis snare in groove A2 lands on 3, against it.
+bass_movement: Rolling bass doubles the kick's 3+3+2 accents, sliding down to E at the end of every fourth bar.
+vocal_motif:
+  voice: chant
+  phrase: "Vai, vai"
+  treatments: [chant as rhythm, chopped on the off-beats, stuttered and rearranged in the variation, fading at the end]
+the_moment: The percussion-only break. The bass and synths vanish and the pattern stands on its own, proving the rhythm.
+
+sections:
+  - name: intro
+    tag: intro - group chant as a rhythm, filtered funk percussion
+    bars: 8
+    performer: chant
+    lyrics: |
+      Vai, vai
+      Vai, vai
+  - name: groove A
+    tag: groove - instrumental, syncopated Brazilian funk drum pattern, dry kick, clipped snare, hand percussion
+    bars: 16
+    performer: none
+  - name: groove B
+    tag: groove - rolling bass, chant chopped on the off-beats, dark synth stabs
+    bars: 16
+    performer: chant
+    lyrics: |
+      Vai, vai, vai
+      Vai, vai
+      Vai, vai, vai
+      Vai
+  - name: break
+    tag: break - instrumental, percussion only, hand drums and rim clicks
+    bars: 8
+    performer: none
+  - name: groove A2
+    tag: groove - instrumental, more cowbell, a dusty Memphis-style snare joins the funk pattern
+    bars: 16
+    performer: none
+  - name: variation
+    tag: variation - chant stuttered and rearranged against the beat
+    bars: 8
+    performer: chant
+    lyrics: |
+      Va, va, vai
+      Vai, vai, vai
+      Va, va, vai
+      Vai
+  - name: groove C
+    tag: groove - instrumental, full percussion, heaviest bass, synth stabs
+    bars: 16
+    performer: none
+  - name: outro
+    tag: outro - chopped chant fades, percussion thins out
+    bars: 8
+    performer: chant
+    lyrics: |
+      Vai, vai
+
+ending: The chant and hand percussion thin out one layer at a time until a single clap is left.
+transmission_layer: the station drifts slightly off frequency in the break (a gentle pitch wobble, no noise), and the outro fades as if the dial moves away.
+caption: >-
+  130 bpm, A minor, dark Brazilian funk and Memphis phonk hybrid, a strongly syncopated funk drum pattern with
+  dry kicks, clipped snares and hand percussion that carries the song, rolling bass locked to the kick, dark
+  synth stabs, occasional cowbell, a short group chant chopped and used as percussion, a percussion-only break

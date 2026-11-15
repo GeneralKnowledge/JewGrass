@@ -1,0 +1,79 @@
+# NIGHTSHIFT FM Song Design: Static Dreams (track 08).
+# The title stays; the word only goes to ACE-Step as the title, never in the caption or tags.
+slug: nightshift-static-dreams
+title: Static Dreams
+order: 8
+family: memphis
+version: 1
+role: The slowest, most hypnotic track; a return to the original Memphis mood.
+test: Can JewGrass sustain a slow instrumental without it feeling empty or repetitive?
+
+render:
+  bpm: 80
+  key: Bb minor
+  timesig: "4"
+  seconds: 264        # 88 bars at 80 is 264 s, no headroom; check the outro isn't cut
+
+palette:
+  lead: dusty piano phrase with a descending counterline (Db C Bb Ab) in groove C
+  bed: soft organ, distant pads entering in groove C
+  bass: deep, rounded, no distortion
+  drums: muffled Memphis drums, slow swing
+  voice: whisper
+  left_out: cowbell, distortion, risers, anything bright; change comes from small shifts, not more instruments
+
+harmony: Bbm - Gb - Db - Ab, with inversions (Gb/Bb, Db/Ab) so the bass barely moves.
+drums: Muffled kick on 1 and the "and" of 3, soft snare on 3, sparse swung hats; groove A2 adds a shaker and a ghost snare.
+bass_movement: Rounded sub moving by step under the inversions, Bb-Bb-Ab-Ab.
+vocal_motif:
+  voice: whisper
+  phrase: "Don't wake me"
+  treatments: [whispered and stretched, reversed and pitched in motif B2, almost subliminal throughout]
+the_moment: The descending counterline in groove C. One new line changes the mood more than any new instrument.
+
+sections:
+  - name: intro
+    tag: intro - instrumental, dusty piano phrase alone, soft organ
+    bars: 8
+    performer: none
+  - name: groove A
+    tag: groove - instrumental, soft muffled Memphis drums, deep rounded bass
+    bars: 16
+    performer: none
+  - name: motif B
+    tag: hook - whispered stretched vocal, very quiet, almost subliminal
+    bars: 8
+    performer: whisper
+    lyrics: |
+      Don't wake me
+  - name: groove A2
+    tag: groove - instrumental, small bass and percussion changes, shaker
+    bars: 16
+    performer: none
+  - name: breakdown
+    tag: breakdown - drums out, piano and a faint whisper only
+    bars: 8
+    performer: whisper
+    lyrics: |
+      Don't wake me
+  - name: groove C
+    tag: groove - instrumental, distant pads, a descending piano counter-melody
+    bars: 16
+    performer: none
+  - name: motif B2
+    tag: hook - whisper reversed and pitched down, blurred
+    bars: 8
+    performer: whisper
+    lyrics: |
+      Wake me, don't
+  - name: outro
+    tag: outro - instrumental, everything slows down and sinks, tape stop
+    bars: 8
+    performer: none
+
+ending: A slow tape stop over the last two bars, pitch sinking into silence.
+transmission_layer: no noise bed; the dusty feel comes from the piano and drums. Only the tape stop at the end.
+caption: >-
+  80 bpm, B-flat minor, the slowest and most hypnotic track, spacious, dusty piano phrase, soft organ, muffled
+  Memphis drums with a slow swing, deep rounded bass, distant pads later, a descending piano counter-melody,
+  a whispered stretched vocal fragment that is almost subliminal, changes are subtle, ends in a slowdown

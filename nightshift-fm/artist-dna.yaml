@@ -1,0 +1,144 @@
+# NIGHTSHIFT FM artist DNA: the persistent identity every PHANTOM FREQUENCY track is built from.
+# build.py joins caption_core + the track's family caption + the track's own caption, so the shared sound is
+# stated the same way every time while each production family keeps its own drums.
+# Everything here is original. Genre and technique words only: no real artist, record, sample or melody is
+# named or imitated, and every vocal fragment is our own words.
+
+act: NIGHTSHIFT FM
+album: PHANTOM FREQUENCY
+format: anonymous producer-led project. No members, no rapper, no frontman.
+genre: Memphis-style phonk, underground hip-hop, drift phonk, experimental phonk; Brazilian funk rhythms on one track
+era: early-1990s Memphis underground methods, reinterpreted with modern production
+premise: >-
+  Someone has found an old radio frequency that only appears late at night. Every track is a different
+  transmission: a different frequency, location or state of mind. Some come through clearly, some are damaged,
+  distorted or interrupted. The album starts like an obscure broadcast, gets heavier, detours through a
+  Brazilian rhythm, peaks with two high-energy tracks and fades back into the transmission it started with.
+
+feel:
+  - underground rather than glossy
+  - dark without being monotonously aggressive
+  - hypnotic rather than constantly busy
+  - rhythmic and physical
+  - slightly unsettling, occasionally nostalgic
+  - musically interesting with no vocal at all
+  - works in the background, rewards headphones
+
+palette:
+  melody: minor-key piano fragments, detuned bells, eerie synth pads, reversed keys, short guitar phrases, occasional organ
+  percussion: cowbell (a colour, not a compulsory lead), dry snares, Memphis-style patterns, shuffled hats, syncopated kicks, rimshots, claps; Brazilian funk percussion on one track
+  bass: deep 808, saturated sub, distorted mid-bass, occasional slides. Powerful but controlled, room for the kick
+  transmission: tuning sweeps, tape stops, filtered tails, reversed fragments, bit reduction, pitch drift, signal loss. Placed on purpose, never pasted over a whole track. No crackle, hiss or static
+
+# The one album-wide melodic thread. ACE-Step can't read notation, so it reaches the renders as words only;
+# the notes are here for the DAW stage and for checking takes.
+motifs:
+  signal-bell: two-note falling bell, a minor third (F down to D in F minor), left hanging. Tuning In, Ghost Ride (transposed), Lost Transmission
+  transmission-piano: four-note detuned piano phrase over Fm, the album's opening identity. Tuning In, Lost Transmission
+  the-phrase: '"you''re listening", the station''s own voice. Clear in Tuning In, chopped by its end, almost unrecognisable in Lost Transmission'
+
+voices:
+  station: calm, low, close spoken voice; the station identity (Tuning In, Lost Transmission)
+  deep-chop: deep male spoken phrase, pitched down, chopped into rhythm (No Reception, Pressure)
+  shout: one short male shout, pitched down, used as an accent (Redline, Overdrive)
+  grains: breaths, syllables, half-words; no sentence (Dead Channel)
+  soft: quiet female spoken voice that becomes a pitched melodic chop (Ghost Ride)
+  chant: small group chant, rhythmic, a percussion part (Baile Fantasma)
+  whisper: whispered, stretched, almost subliminal (Static Dreams)
+
+vocal_rules:
+  - The voice is an instrument. No verses, no choruses in the pop sense, no storytelling.
+  - A motif is short enough to sit inside the rhythm (one to three words).
+  - Variation comes from treatment (filtered, chopped, pitched, stuttered, reversed), not from new words.
+  - Recognisable enough to add character; never a clutter of unintelligible voices.
+  - Not every track needs a voice, and most sections have none.
+  - The signature treatment, in order across a track - filtered and distant, then a syllable chop repeated in
+    rhythm, then pitched down as a bass-like texture, then reversed as a transition, then the plain phrase once more before the outro.
+  - Outros are instrumental. No spoken outros (they don't come through).
+  - Original or properly licensed source recordings only. No lifted records, no uncleared samples.
+
+# How the voice and the instrumental sections reach ACE-Step (it sings whatever is in the lyric lines):
+lyric_conventions:
+  - Lyrics hold only the actual words or syllables. Treatment goes in the section tag.
+  - A chop is written as the stutter it should become ("Can't, can't, can't get through"), one line per hit.
+  - Instrumental sections have a tag and no lyric lines, and the tag starts its cue with "instrumental".
+  - Never more lines than bars. Nothing fully in brackets (the pipeline strips it).
+
+production_rules:
+  drums: strong groove, deliberate swing and variation; the families do not share a drum kit
+  bass: deep, distorted where it helps, never uncontrolled
+  cowbell: written melodic phrases with rhythmic variation; never a four-note loop for three minutes
+  melody: short, memorable motifs; a track should be identifiable within a few seconds
+  arrangement: introduce and remove layers; no eight-bar loop that never develops
+  transitions: tuning sweeps, tape stops, filtered tails (mostly added in post, see transmission_layer)
+  mastering: preserve punch and transients; don't crush every track
+
+# Each family gets its own drums and its own sentence in the caption, so ten tracks don't become one beat.
+families:
+  memphis:
+    feel: sampled and dusty, slow and hypnotic
+    caption: >-
+      Memphis phonk, dusty sampled feel, slow hypnotic swing, dry kick and snare, rolling bass,
+      eerie minor-key piano loop, chopped and pitched-down spoken vocal samples
+  drift:
+    feel: aggressive and modern
+    caption: >-
+      drift phonk, aggressive modern production, distorted 808 bass, melodic cowbell lead,
+      rapid hi-hats, punchy kick, hard snare, short electronic risers, high-energy drops
+  experimental:
+    feel: strange but always with a pulse
+    caption: >-
+      experimental glitch hip-hop, broken drum breaks, deliberate silences, stuttering edits,
+      reversed piano, sub-bass pulses, granular vocal fragments
+  ambient:
+    feel: beautiful in a slightly unsettling way
+    caption: >-
+      atmospheric melodic phonk, warm detuned synth bells, spacious choir-like pads, soft dry drums,
+      rolling 808, melancholic and hypnotic
+  baile:
+    feel: rhythmically alive
+    caption: >-
+      Brazilian funk rhythm, baile funk syncopated drum pattern, dry kicks, clipped snares, hand percussion,
+      chanted vocal chops used as percussion, dark phonk synth stabs
+
+caption_core: >-
+  dark late-night instrumental hip-hop, phonk, hypnotic and rhythmic, heavy controlled sub-bass with room for
+  the kick, dry punchy percussion, the voice used as a sampled instrument in short chopped phrases, no rap verses,
+  minor key, warm dark cohesive mix with every part blended together, punchy drums
+
+# Words that made ACE-Step put hiss or static over whole songs (Brass Plate, Bought and Sold, Nov 14) and their
+# radio relatives. The radio concept lives in the transmission_layer, added on the laptop after rendering, where
+# a tuning sweep or a signal drop can be placed on the exact bar and kept out of the music.
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere]
+# Section tags may name one transmission event (e.g. "radio tuning sweep", "tape stop"), never a constant bed.
+avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, lo-fi]
+
+transmission_layer: >-
+  After rendering, each track gets its radio events on the laptop from short original sound-design files:
+  a tuning sweep into the first bar, signal drops at the moments listed in each design's transmission_layer,
+  tape stops and filtered tails, and the signal loss at the end. No crackle, hiss, static
+  or other noise beds anywhere, in the renders or in post (Reuben, Nov 14): the radio idea comes from sweeps,
+  filtering, dropouts, pitch drift and tape stops only.
+
+sample_bank: >-
+  Later, not in round 1: a bank of original source recordings (10-15 spoken phrases, 5-10 chants, 5 non-verbal
+  sounds, sustained notes), reused and transformed across the album, so "you're listening" from Tuning In can
+  come back almost unrecognisable in Lost Transmission.
+
+energy_curve: [01 low, 02 mid, 03 high, 04 strange, 05 low, 06 high, 07 mid-high, 08 lowest, 09 highest, 10 low]
+
+acceptance:
+  memphis_identity: dark, dusty, hypnotic, distinctive
+  cowbell_writing: memorable original melodies, not generic loops
+  bass: deep and powerful without mud, kick still audible on ordinary speakers
+  vocal_chops: rhythmic and musical, not unintelligible noise
+  variation: tracks have different rhythmic identities
+  arrangement: sections develop rather than repeat
+  cohesion: recurring motifs and sounds connect the tracks
+  repeatability: a second take keeps the same identity
+
+round1:
+  tracks: [no-reception, redline, baile-fantasma]
+  takes: 2
+  model: xl-turbo
+  why: one track per production family most likely to fail differently (Memphis, drift, Brazilian hybrid). The other seven render only after Reuben has heard these.

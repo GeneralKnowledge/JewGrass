@@ -1,0 +1,85 @@
+# NIGHTSHIFT FM Song Design: Redline (track 03, round 1).
+slug: nightshift-redline
+title: Redline
+order: 3
+family: drift
+version: 1
+role: The first full drift-phonk track and the first energy peak.
+test: Can JewGrass generate a distinctive drift-phonk lead and a satisfying drop?
+
+render:
+  bpm: 160
+  key: G minor
+  timesig: "4"
+  seconds: 192        # 104 bars at 160 is 156 s; the rest is room for the tail
+
+palette:
+  lead: cowbell melody - a real phrase. Two-bar call (G Bb A G, D on the "and" of 4), two-bar answer that climbs to C; variations change rhythm, not just pitch
+  bass: distorted 808, sliding into each drop; sub stays clean underneath
+  drums: punchy kick, hard snare, rapid hats and rolls; half-time in the break
+  extra: short electronic risers into drops, a low engine-like rumble in the intro
+  left_out: piano, pads, organ, any second lead
+
+harmony: Gm - Eb - F - D, one bar each. Movement comes from the cowbell and the bass, not the chords.
+drums: >-
+  Drops: kick on 1 and 3 with a pushed kick on the "and" of 4, snare on 2 and 4, sixteenth hats with triplet rolls
+  every fourth bar. Break: half-time, snare on 3 only. Variation 2 adds claps and a shaker.
+bass_movement: 808 slides up an octave into every drop; drop B adds a growling distorted mid-bass on beats 2 and 4.
+vocal_motif:
+  voice: shout
+  phrase: "Redline"
+  treatments: [one shout at the start of a drop, pitched down in the break, chopped "red-red" before drop B]
+the_moment: Drop C. The cowbell answer phrase goes up an octave and the 808 doubles it for the last eight bars.
+
+sections:
+  - name: intro
+    tag: intro - instrumental, filtered cowbell melody, low engine rumble, short riser
+    bars: 8
+    performer: none
+  - name: drop A
+    tag: drop - one short male shout, full drift groove, distorted 808, melodic cowbell lead
+    bars: 16
+    performer: shout
+    lyrics: |
+      Redline!
+  - name: variation
+    tag: variation - instrumental, cowbell lead changes melody and rhythm, hats thin out
+    bars: 8
+    performer: none
+  - name: drop B
+    tag: drop - chopped shout, heavier distorted bass, cowbell call and response
+    bars: 16
+    performer: shout
+    lyrics: |
+      Red, red, redline!
+  - name: break
+    tag: break - half-time drums, pitched-down shout, cowbell sparse
+    bars: 8
+    performer: shout
+    lyrics: |
+      Redline
+  - name: drop A2
+    tag: drop - instrumental, main cowbell phrase and full groove return
+    bars: 16
+    performer: none
+  - name: variation 2
+    tag: variation - instrumental, extra percussion, claps and shaker, new cowbell rhythm
+    bars: 8
+    performer: none
+  - name: drop C
+    tag: final drop - fullest arrangement, cowbell lead up an octave, 808 doubles it
+    bars: 16
+    performer: shout
+    lyrics: |
+      Redline!
+  - name: outro
+    tag: outro - instrumental, bass cuts out, cowbell rings out alone
+    bars: 8
+    performer: none
+
+ending: The bass cuts on the downbeat of the outro and the cowbell phrase rings out once, unaccompanied.
+transmission_layer: a fast tuning sweep into bar 1 (as if the dial is being turned too quickly); nothing else, the track is clean.
+caption: >-
+  160 bpm, G minor, aggressive drift phonk, a real melodic cowbell lead phrase with call and response that
+  changes rhythm and melody through the track, distorted 808 with a controlled sub, low engine rumble intro,
+  short risers into satisfying drops, half-time break, one short pitched-down male shout used as an accent
