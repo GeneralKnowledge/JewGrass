@@ -1,0 +1,164 @@
+# AFTER HOURS Song Design: Everybody Knows (03, playful dance-pop). Format: see one-more-night.yaml.
+# Round 1 passed (Nov 15): now status generate.
+slug: ah-everybody-knows
+title: Everybody Knows
+credit: Leo, Alex, Jamie and Noah
+version: 1
+order: 3
+status: generate
+purpose: show personality, rhythmic interplay and the more energetic side of the group.
+concept: >-
+  Everyone can see two friends fancy each other except the two people involved. The group narrates, with
+  playful confidence, to the mate who still hasn't worked it out.
+
+render:
+  bpm: 120
+  key: E major
+  timesig: "4"
+  seconds: 215        # 104 bars at 120 is 208 s, plus room for the chant
+
+palette:
+  bass: bouncy synth bass
+  guitar: bright guitar chops
+  drums: punchy dance-pop drums, handclaps
+  stabs: short synth chords
+  left_out: strings, ballad piano, long intro
+
+harmony: E, B, C#m, A. Simple on purpose; the rhythm and the voices do the work.
+the_moment: >-
+  Members interrupt and answer each other through the verses. The chorus opens in unison and splits into
+  four-part harmony for its second half.
+changes_from_spec: >-
+  The 8-bar intro is the group's call and response, sung straight away (voice first). Verse 2 is 8 bars and
+  the second pre-chorus 4, to stay near the 195 s target. Hook line 2 is now "She's looking at you when you're
+  looking at your feet", so it agrees with "you're the only two who haven't worked it out".
+
+sections:
+  - name: opening
+    tag: opening - starts immediately, group call and response over handclaps, unison answers
+    bars: 8
+    performer: alex, jamie, leo call; group answers
+    lyrics: |
+      Everybody knows
+      Everybody knows
+      Everybody sees
+      Everybody sees
+      Everybody but you two
+      Everybody but you two
+  - name: verse 1
+    tag: verse - smooth soulful tenor, rhythmic, other voices interrupt
+    bars: 16
+    performer: leo, with jamie and noah cutting in
+    lyrics: |
+      Saturday, same table, same seat by the window
+      You both turn up early, then pretend you didn't know
+      She laughs at your jokes, even the one about the ferry
+      You've told it nine times and it isn't even funny
+      It isn't
+      She saves you a chair with her coat every week
+      You save her the crisps that you don't even eat
+      You both say we're just mates in the very same voice
+      Same voice
+      Like you practised it together, like you didn't have a choice
+      Group chat's got a bet on, we've all put a tenner in
+      Twenty
+      Alex says by Christmas, I said before the summer begins
+  - name: pre-chorus 1
+    tag: pre-chorus - lead tenor and high tenor trading lines, building, drums thin
+    bars: 8
+    performer: alex and jamie
+    lyrics: |
+      You talk about her all the time
+      Then say it's nothing, that's a lie
+      You saved her number under Don't
+      And you ring it every night, so
+      Come on
+  - name: chorus 1
+    tag: chorus - unison first half, then splits into four-part harmony, handclaps, full beat
+    bars: 16
+    performer: all four
+    lyrics: |
+      Everybody knows, everybody sees
+      She's looking at you when you're looking at your feet
+      Everybody knows, but nobody says
+      You're the only two who haven't worked it out yet
+      Everybody knows, the barman knows
+      Your mum knows, the dog knows, the whole street knows
+      Everybody knows, so go on and say it
+      You're the only two who haven't worked it out yet
+  - name: verse 2
+    tag: verse - high tenor and warm baritone trading lines, quick call and response
+    bars: 8
+    performer: jamie and noah, alternating lines
+    lyrics: |
+      She asked me what your favourite song was
+      Then asked if you were seeing anyone
+      I said ask him yourself, she went red as a bus
+      Then you asked me the same, it was ridiculous
+      Same day
+      Same question
+      Same face
+      Same blush
+  - name: pre-chorus 2
+    tag: pre-chorus - lead tenor, building, synth stabs
+    bars: 4
+    performer: alex
+    lyrics: |
+      You saved her number under Don't
+      And you ring it every night, so go on, go on
+  - name: chorus 2
+    tag: chorus - unison first half, then four-part harmony, fuller beat
+    bars: 16
+    performer: all four
+    lyrics: |
+      Everybody knows, everybody sees
+      She's looking at you when you're looking at your feet
+      Everybody knows, but nobody says
+      You're the only two who haven't worked it out yet
+      Everybody knows, the barman knows
+      Your mum knows, the dog knows, the whole street knows
+      Everybody knows, so go on and say it
+      You're the only two who haven't worked it out yet
+  - name: breakdown
+    tag: breakdown - percussion and handclaps only, baritone and soulful tenor trading lines
+    bars: 8
+    performer: noah and leo
+    lyrics: |
+      Here's how it goes, you walk over there
+      Don't fix your hair, she likes your hair
+      Say something simple, say hiya, you alright
+      Not the ferry joke
+      Not the ferry joke
+      And ask her out tonight
+  - name: final chorus
+    tag: final chorus - full harmonies, group answers every line, high tenor ad-libs
+    bars: 16
+    performer: all four, extra responses
+    lyrics: |
+      Everybody knows, we know, everybody sees, we see
+      She's looking at you when you're looking at your feet
+      Everybody knows, but nobody says
+      You're the only two who haven't worked it out yet
+      Everybody knows, the barman knows
+      Your mum knows, the dog knows, the whole street knows
+      Everybody knows, so go on and say it
+      You're the only two who haven't worked it out yet
+  - name: outro
+    tag: outro - group chant over handclaps, hard stop
+    bars: 4
+    performer: all four
+    lyrics: |
+      Everybody knows
+      Now you know too
+
+ending: Group chant, then the beat stops dead on the last word. Nothing spoken.
+
+caption: >-
+  120 bpm, E major, playful upbeat dance-pop, starts straight away with group call and response over
+  handclaps, bouncy synth bass and guitar chops, verses where the singers interrupt and answer each other, chorus opens in unison then splits into four-part
+  harmony, percussion-only breakdown with two voices trading lines, ends on a group chant and a hard stop
+
+lyric_audit:
+  idea: the whole world can see it except the two of them
+  images: [the ferry joke told nine times, the coat on the chair, the crisps he doesn't eat, number saved as Don't, the group chat bet]
+  hook: '"Everybody knows, everybody sees" (Reuben''s hook), with line 2 changed so the story adds up'
