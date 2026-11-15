@@ -30,7 +30,7 @@ tracks:
   key: B minor
   timesig: '4'
   caption: |
-    cinematic spoken word prologue, deep calm Scottish male narrator, slow and grave, long pauses between lines, solo Highland bagpipe playing a slow falling lament, low cello drone, howling wind on a hillside, distant church bell, a single deep heartbeat drum from the second verse, no other instruments, very sparse and spacious, the bagpipe stops suddenly mid-phrase and the track ends in silence, cohesive warm band mix with the instruments blended together, 70 bpm
+    cinematic spoken word prologue, deep calm Scottish male narrator, slow and grave, long pauses between lines, solo Highland bagpipe playing a slow falling lament, low cello drone, howling wind on a hillside, distant church bell, a single deep heartbeat drum from the second verse, no other instruments, very sparse and spacious, the bagpipe stops suddenly mid-phrase and the track ends in silence, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 70 bpm
   lyrics: |
     [intro - solo bagpipe lament, wind, distant church bell]
 
@@ -65,7 +65,7 @@ tracks:
   key: F major
   timesig: '4'
   caption: |
-    cheerful estate agent property video, spoken word, bright smiling English male voiceover, smooth corporate hold music, soft electric piano playing a simple happy melody, light bossa nova guitar, soft brushed shuffle, vibraphone, cheap and cheerful, no vocals sung, the music stops suddenly at the end, cohesive warm band mix with the instruments blended together, 100 bpm
+    cheerful estate agent property video, spoken word, bright smiling English male voiceover, smooth corporate hold music, soft electric piano playing a simple happy melody, light bossa nova guitar, soft brushed shuffle, vibraphone, cheap and cheerful, no vocals sung, the music stops suddenly at the end, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 100 bpm
   lyrics: |
     [intro - cheerful hold music, electric piano and bossa guitar]
 
@@ -102,7 +102,7 @@ tracks:
   key: F major
   timesig: '4'
   caption: |
-    luxurious smooth soul pop with a slow trap groove, beautiful, wealthy and empty, whispered close-mic English female spoken word verses, cool half-sung female chorus hook, soft Rhodes electric piano, lush expensive string section, glassy bell synth melody, clean deep sub bass, soft clean drums and finger snaps, gospel choir on the chorus, a two-note bagpipe sting used like a jingle, champagne glass clinks, a breathless nerdy male guest and a bubbly influencer guest in the second verse, the bridge drops to one uneasy organ chord, ends on a whisper and a single electric piano chord, cohesive warm band mix with the instruments blended together, 92 bpm
+    luxurious smooth soul pop with a slow trap groove, beautiful, wealthy and empty, whispered close-mic English female spoken word verses, cool half-sung female chorus hook, soft Rhodes electric piano, lush expensive string section, glassy bell synth melody, deep warm sub bass, soft drums and finger snaps, gospel choir on the chorus, a two-note bagpipe sting used like a jingle, champagne glass clinks, a breathless nerdy male guest and a bubbly influencer guest in the second verse, the bridge drops to one uneasy organ chord, ends on a whisper and a single electric piano chord, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 92 bpm
   lyrics: |
     [intro - hold music jingle on electric piano, champagne glasses, crowd murmur]
     Thank you all for coming.
@@ -252,7 +252,7 @@ tracks:
   key: G minor
   timesig: '4'
   caption: |
-    loud flashy UK trap banger, cocky posh English male rap, a chancer who can't believe his luck, laughing ad-libs, fast distorted banjo riff as the main hook, revving sports car 808 slides, hard trap drums, rapid hi-hats, fiddle stabs and heavy distorted guitars only on the chorus, gang chant hook, the second verse drops to half-time, the bridge stops for a slow lone piano and a mocking sweet sung melody, ends on the banjo riff alone and a car door slam, cohesive punchy band mix with the instruments blended together, 145 bpm
+    loud flashy UK trap banger, cocky posh English male rap, a chancer who can't believe his luck, laughing ad-libs, fast distorted banjo riff as the main hook, revving sports car 808 slides, hard trap drums, rapid hi-hats, fiddle stabs and heavy distorted guitars only on the chorus, gang chant hook, the second verse drops to half-time, the bridge stops for a slow lone piano and a mocking sweet sung melody, ends on the banjo riff alone and a car door slam, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 145 bpm
   lyrics: |
     [intro - banjo riff alone, car engine revving]
     Hello? Yes, Minister. Of course, Minister.
@@ -314,8 +314,82 @@ tracks:
 - n: 10
   slug: swim-at-your-own-risk
   title: Swim at Your Own Risk
-  status: existing
-  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
+  status: existing   # final/10 take 5555 stays the main version
+  design: docs/album/design/swim-at-your-own-risk.yaml   # design alternate, render only on request
+  seconds: 225
+  bpm: 140
+  key: E minor
+  timesig: '4'
+  caption: |
+    dark underground country trap, Scottish accent, sneering satirical villain rap, raw banjo riff, distorted sliding 808 bass, hard trap drums, rapid hi-hats, stuttering vocal chops, Scottish fiddle answering the rap, low bagpipe drone, metallic industrial clanks and dripping water in the second verse, nu metal guitars and gang chant only on the chorus, smug corporate spoken intro over the banjo alone, sweet psalm-like female vocal on the bridge with the beat dropped out, the band cuts dead at the end leaving the banjo riff alone, gritty saturated live band sound, raw and unpolished, not overproduced, 140 bpm
+  lyrics: |
+    [intro - smug corporate spoken voice over the banjo riff alone]
+    Welcome, shareholders, to the AGM.
+    Record dividends. Record bonuses.
+    Record spills... let's not dwell.
+
+    [verse - sneering Scottish villain rap, 808 and trap drums, fiddle answers]
+    They sold me the pipes back in eighty-nine
+    Every reservoir, every drain down the line
+    Borrowed ten billion, paid it out to the board
+    Now the debt's on your bill and my yacht's in a fjord
+    Hosepipe ban in a country made of rain
+    Leaking a third of it straight down the drain
+    Fixing the pipes? What a lovely idea
+    Pencil it in for, let's say, next year
+
+    [chorus - gang chant, nu metal guitars, fiddle doubles the hook]
+    Swim at your own risk, son, swim at your own risk
+    Every river in the country's on my bonus list
+    Pay the bill, flush it down, watch it float on by
+    It's raining every day and the taps run dry
+
+    [verse - rap gets nastier, metallic clank on the backbeat, dripping water]
+    Storm overflow? Darling, that's a feature
+    Brown in the river, call it natural texture
+    Surfer got sick at the beach in July
+    Sent him a voucher and a cheery goodbye
+    Regulator came with a fine and a frown
+    Ninety million quid, so I put your bill up in town
+    Dead fish on the bank like silver confetti
+    Shareholders abroad and the payout is ready
+
+    [chorus - gang chant, nu metal guitars, fiddle doubles the hook]
+    Swim at your own risk, son, swim at your own risk
+    Every river in the country's on my bonus list
+    Pay the bill, flush it down, watch it float on by
+    It's raining every day and the taps run dry
+
+    [bridge - beat drops out, sweet psalm-like female vocal over a low bagpipe drone]
+    Bless the tap and bless the drain
+    Bless the man who sells the rain
+    We bow our heads beside the stream
+    And hold our noses while we dream
+
+    [verse - full weight again, stuttering vocal chops on the last lines]
+    You want it nationalised? Cute, take a seat
+    I'll sell it back at triple with the leaks complete
+    Firm goes bust and the taxpayer bails
+    I'm already gone with the wind in my sails
+    Your kids at the seaside, the flags flying red
+    Me? I've a pool at a villa in Spain instead
+    Filled up with water I bottled from your rain
+    And every toilet in Britain pays me again
+
+    [breakdown - gang chant, guitars and drums]
+    Swim at your own risk!
+    Swim at your own risk!
+    Swim at your own risk!
+    Swim at your own risk!
+
+    [final chorus - everything, gang chant, then the band cuts dead]
+    Swim at your own risk, son, swim at your own risk
+    Every river in the country's on my bonus list
+    Pay the bill, flush it down, watch it float on by
+    It's raining every day and the taps run dry
+    Bill's due Friday!
+
+    [outro - banjo riff alone, then silence]
 - n: 11
   slug: ermine-and-ink
   title: Ermine and Ink
@@ -327,7 +401,7 @@ tracks:
   key: D minor
   timesig: '4'
   caption: |
-    dark sinister trap duet, a posh sneering English male rapper and a gravelly older English male newsreader voice trading verses, dark minor harpsichord riff, low string quartet, heavy slow trap drums, deep printing press thud on the backbeat, distorted 808 bass, gang chant chorus, the third verse turns quiet and uneasy, the last chorus is biggest with full strings, ends on one held dark string chord, cohesive warm band mix with the instruments blended together, 92 bpm
+    dark sinister trap duet, a posh sneering English male rapper and a gravelly older English male newsreader voice trading verses, dark minor harpsichord riff, low string quartet, heavy slow trap drums, deep printing press thud on the backbeat, distorted 808 bass, gang chant chorus, the third verse turns quiet and uneasy, the last chorus is biggest with full strings, ends on one held dark string chord, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 92 bpm
   lyrics: |
     [intro - dark harpsichord alone]
     Order, order. The noble lord has the floor.
@@ -393,7 +467,7 @@ tracks:
   key: Db major
   timesig: '4'
   caption: |
-    silky smooth bossa nova lounge pop with a slow soft trap groove, elegant and empty, sultry calm English female vocal, half sung half spoken, never raises her voice, soft Rhodes electric piano, warm nylon string guitar, slow steel pan melody, deep clean sub bass, soft brushed bossa drums with a lazy hi-hat, seagulls and gentle waves, a lounge piano tune like hotel lobby music in the intro, the bridge floats with no bass or drums, lush strings in the last chorus, ends on one held electric piano chord and waves, cohesive warm band mix with the instruments blended together, 88 bpm
+    silky smooth bossa nova lounge pop with a slow soft trap groove, elegant and empty, sultry calm English female vocal, half sung half spoken, never raises her voice, soft Rhodes electric piano, warm nylon string guitar, slow steel pan melody, deep warm sub bass, soft brushed bossa drums with a lazy hi-hat, seagulls and gentle waves, a lounge piano tune like hotel lobby music in the intro, the bridge floats with no bass or drums, lush strings in the last chorus, ends on one held electric piano chord and waves, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 88 bpm
   lyrics: |
     [intro - lounge piano hold music in a hotel lobby, waves, seagulls]
     Welcome to the island. Do mind the step.
@@ -450,7 +524,7 @@ tracks:
   key: B minor
   timesig: '4'
   caption: |
-    dark angry Scottish political hip hop, measured angry Scottish male rap, half spoken, space between the lines, solo Highland bagpipe lament intro, low strings and cello drones, slow heavy boom bap drums, booming 808 and heavy distorted guitars only in the choruses, deep male gang vocals on the chorus with the bagpipe doubling the melody, haunting female vocal bridge over a pipe drone, breakdown of drums and call and response chant, ends with the solo bagpipe alone holding one long unresolved note, cohesive warm band mix with the instruments blended together, 84 bpm
+    dark angry Scottish political hip hop, measured angry Scottish male rap, half spoken, space between the lines, solo Highland bagpipe lament intro, low strings and cello drones, slow heavy boom bap drums, booming 808 and heavy distorted guitars only in the choruses, deep male gang vocals on the chorus with the bagpipe doubling the melody, haunting female vocal bridge over a pipe drone, breakdown of drums and call and response chant, ends with the solo bagpipe alone holding one long unresolved note, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 84 bpm
   lyrics: |
     [intro - solo bagpipe lament, low strings, wind]
     They tell ye it's new. It's no new.
@@ -619,7 +693,7 @@ tracks:
   key: B minor
   timesig: '4'
   caption: |
-    dark epic industrial trap, slow menacing build, powerful and oppressive, an emergency conference call, church organ playing a slow uneasy chord progression throughout, heavy half-time drums with metallic industrial percussion, distorted 808 and pounding industrial bass, panicked overlapping English male voices, a sneering Scottish male rapper, a cool calm English female voice half sung and whispered, heavy distorted guitars and a screamed gang chant chorus, a slowed warped hold music melody in the intro, a low bagpipe drone under the final chorus, ends on a held organ chord and a phone call disconnect beep, huge cohesive mix with the instruments blended together, 130 bpm
+    dark epic industrial trap, slow menacing build, powerful and oppressive, an emergency conference call, church organ playing a slow uneasy chord progression throughout, heavy half-time drums with metallic industrial percussion, distorted 808 and pounding industrial bass, panicked overlapping English male voices, a sneering Scottish male rapper, a cool calm English female voice half sung and whispered, heavy distorted guitars and a screamed gang chant chorus, a slowed warped hold music melody in the intro, a low bagpipe drone under the final chorus, ends on a held organ chord and a phone call disconnect beep, huge gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 130 bpm
   lyrics: |
     [intro - slowed broken hold music, conference call beep]
     You are now joining the call.

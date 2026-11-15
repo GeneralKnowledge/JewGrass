@@ -16,8 +16,8 @@ palette:
   world: "The fund. Glass, champagne, nothing touches the ground."
   lead: "Rhodes electric piano"
   secondary: "lush expensive strings"
-  rhythm: "soft clean drums, finger snaps, a slow trap hi-hat only in the choruses"
-  bass: "clean deep sub-bass, smooth"
+  rhythm: "soft drums, finger snaps, a slow trap hi-hat only in the choruses"
+  bass: "deep warm sub-bass"
   colour: "glassy bell synths playing the money theme, the hold music turned into a corporate jingle, champagne clinks"
   weight: "choruses get a gospel-style choir and a bigger sub, never distortion"
   left_out: "banjo, fiddle, distorted 808, nu-metal guitars, glitch. Fenella's world is clean. The only Highland sound is two chopped pipe notes, used as a jingle."
@@ -39,7 +39,7 @@ harmony:
 motifs:
   - "hold music: licensed - the Viewing tune comes back as a bright corporate jingle"
   - "ownership theme: chopped into a two-note bagpipe jingle (the land sold back as branding)"
-  - "money theme: glassy bell synth, clean and beautiful"
+  - "money theme: glassy bell synth, warm and beautiful"
   - "corruption progression: under the bridge, so the one honest moment sounds wrong"
   - "due Friday: joke stage - Fenella whispers 'Settlement's due Friday' as the last line of the final chorus"
 
@@ -140,10 +140,10 @@ ending: "The choir cuts out, she whispers the Friday line with nothing under it,
 caption: >-
   luxurious smooth soul pop with a slow trap groove, beautiful, wealthy and empty, whispered close-mic English
   female spoken word verses, cool half-sung female chorus hook, soft Rhodes electric piano, lush expensive string
-  section, glassy bell synth melody, clean deep sub bass, soft clean drums and finger snaps, gospel choir on the
+  section, glassy bell synth melody, deep warm sub bass, soft drums and finger snaps, gospel choir on the
   chorus, a two-note bagpipe sting used like a jingle, champagne glass clinks, a breathless nerdy male guest and a
   bubbly influencer guest in the second verse, the bridge drops to one uneasy organ chord, ends on a whisper and a
-  single electric piano chord, cohesive warm band mix with the instruments blended together, 92 bpm
+  single electric piano chord, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 92 bpm
 
 lyric_audit:
   before: "Five voices in one verse (Rory, Grid Man, Tamsin and the lord) and three verses that all listed scams. 'Ka-ching' and 'Sold' ad-libs on every chorus."

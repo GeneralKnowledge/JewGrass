@@ -39,6 +39,11 @@ def compile_design(path, out_root="build/design"):
                "comic", "theatrical", "ridiculous", "playful", "cheeky", "pompous", "regal", "whimsical", "brass band",
                "gavel", "desk bell"]
     alltext = (caption + " " + " ".join(s["tag"] for s in d["sections"])).lower()
+    # Too-clean wording (Reuben, 15 Nov: "the pure clean instruments is a bad thing"). Whole words only,
+    # so "unpolished" is still allowed.
+    for w in ["clean", "crisp", "polished", "pristine", "glossy", "hi-fi", "pure"]:
+        if re.search(rf"\b{w}\b", alltext):
+            problems.append(f"too-clean word '{w}' (Reuben wants a gritty, saturated sound)")
     for b in banned:
         if b in alltext:
             problems.append(f"banned phrase '{b}' (renders as static)")

@@ -99,7 +99,7 @@ Not adopted yet: music21, Tonal, Strudel, isobar, Basic Pitch, Surge XT. Each be
 
 ## Banned caption phrases
 
-The blind A/B on 14 November found that ACE-Step renders some texture words as audible static. `compile_design.py` refuses captions and tags containing: crackle, gramophone, vinyl, hiss, static, lo-fi, raw mix, typewriter clacks, radio noise, white noise, glitch noise. Every design caption ends with a "cohesive ... band mix with the instruments blended together" phrase. "Clean polished mix" made single instruments stick out (Reuben, round 2).
+The blind A/B on 14 November found that ACE-Step renders some texture words as audible static. `compile_design.py` refuses captions and tags containing: crackle, gramophone, vinyl, hiss, static, lo-fi, raw mix, typewriter clacks, radio noise, white noise, glitch noise. Every design caption ends with "gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together". "Clean polished mix" made instruments stick out and sound too clean (Reuben, 14-15 Nov); clean, crisp, polished, pristine, glossy and pure are banned as whole words.
 
 ## Old versions
 

@@ -1,0 +1,165 @@
+# Song Design: Swim at Your Own Risk (track 10). Format: docs/song-design/README.md
+# Reuben's favourite. The original (final/10, take 5555, pedalboard master) stays the main version; this is an alternate
+# that shows what the Song Design stage does to it. The sound is deliberately kept: same core caption, same tempo.
+slug: swim-at-your-own-risk
+title: Swim at Your Own Risk
+version: 1
+approach: "dark comedy, but told in order - the sale, the spills, the getaway - with the villain exposing himself"
+identity: "The band's own dark country trap at full weight, with the water boss's industrial world creeping in."
+story_beat: "The third investor. Everyone in the fund got rich from public services."
+
+render:
+  bpm: 140              # same as the original
+  key: E minor          # laptop - if take 5555's measured key is confident, use that instead
+  timesig: "4"
+  seconds: 225
+
+palette:
+  world: "The band's core sound (it's the original's), plus a little industry: metallic hits and dripping pipes."
+  lead: "raw banjo riff"
+  secondary: "Scottish fiddle answering the rap"
+  rhythm: "hard trap drums, rapid hi-hats, a metallic clank on the backbeat in verse 2"
+  bass: "distorted sliding 808"
+  colour: "stuttering vocal chops, a low bagpipe drone, dripping water"
+  weight: "nu-metal guitars and the gang chant on the choruses only"
+  left_out: "nothing new added on top. The design changes the order and the space, not the sound."
+
+roles:
+  - {instrument: banjo, job: "the riff; alone in the intro and alone at the end", enters: intro, leaves: end}
+  - {instrument: 808 and trap drums, job: "the engine; drop out for the bridge", enters: verse 1, leaves: bridge}
+  - {instrument: fiddle, job: "answers each rap line in verse 1, then doubles the chorus hook", enters: verse 1, leaves: final chorus}
+  - {instrument: nu-metal guitars, job: "weight in choruses and the breakdown only", enters: chorus 1, leaves: final chorus}
+  - {instrument: bagpipe drone, job: "low under the bridge, the hymn's church", enters: bridge, leaves: bridge}
+  - {instrument: sweet female vocal, job: "the psalm bridge, alone over the drone", enters: bridge, leaves: bridge}
+
+harmony:
+  verse: "E minor and C, two chords, relentless"
+  chorus: "C, D, E minor, E minor - the gang shout lands on the minor"
+  bridge: "E minor, C, G, D - a hymn, the only open-sounding chords"
+  ending: "the band cuts on the last chorus line; the banjo plays the riff once alone"
+
+motifs:
+  - "due Friday: routine stage - 'Bill's due Friday' becomes the gang's last shout in the final chorus, not a spoken outro"
+  - "money trail: the dividends leave for 'shareholders abroad' (Sunshine Trust)"
+
+sections:
+  - name: intro
+    tag: "intro - smug corporate spoken voice over the banjo riff alone"
+    bars: 4
+    dynamics: 2
+    lyrics: |
+      Welcome, shareholders, to the AGM.
+      Record dividends. Record bonuses.
+      Record spills... let's not dwell.
+  - name: verse 1
+    tag: "verse - sneering Scottish villain rap, 808 and trap drums, fiddle answers"
+    bars: 16
+    dynamics: 3
+    idea: "the sale and the debt; the image is the yacht in a fjord"
+    lyrics: |
+      They sold me the pipes back in eighty-nine
+      Every reservoir, every drain down the line
+      Borrowed ten billion, paid it out to the board
+      Now the debt's on your bill and my yacht's in a fjord
+      Hosepipe ban in a country made of rain
+      Leaking a third of it straight down the drain
+      Fixing the pipes? What a lovely idea
+      Pencil it in for, let's say, next year
+  - name: chorus 1
+    tag: "chorus - gang chant, nu metal guitars, fiddle doubles the hook"
+    bars: 8
+    dynamics: 5
+    lyrics: |
+      Swim at your own risk, son, swim at your own risk
+      Every river in the country's on my bonus list
+      Pay the bill, flush it down, watch it float on by
+      It's raining every day and the taps run dry
+  - name: verse 2
+    tag: "verse - rap gets nastier, metallic clank on the backbeat, dripping water"
+    bars: 16
+    dynamics: 4
+    idea: "the spills; the image is dead fish like silver confetti"
+    lyrics: |
+      Storm overflow? Darling, that's a feature
+      Brown in the river, call it natural texture
+      Surfer got sick at the beach in July
+      Sent him a voucher and a cheery goodbye
+      Regulator came with a fine and a frown
+      Ninety million quid, so I put your bill up in town
+      Dead fish on the bank like silver confetti
+      Shareholders abroad and the payout is ready
+  - name: chorus 2
+    tag: "chorus - gang chant, nu metal guitars, fiddle doubles the hook"
+    bars: 8
+    dynamics: 5
+    lyrics: |
+      Swim at your own risk, son, swim at your own risk
+      Every river in the country's on my bonus list
+      Pay the bill, flush it down, watch it float on by
+      It's raining every day and the taps run dry
+  - name: bridge
+    tag: "bridge - beat drops out, sweet psalm-like female vocal over a low bagpipe drone"
+    bars: 8
+    dynamics: 1
+    lyrics: |
+      Bless the tap and bless the drain
+      Bless the man who sells the rain
+      We bow our heads beside the stream
+      And hold our noses while we dream
+  - name: verse 3
+    tag: "verse - full weight again, stuttering vocal chops on the last lines"
+    bars: 16
+    dynamics: 4
+    idea: "the getaway; the image is a pool filled with water bottled from your rain"
+    lyrics: |
+      You want it nationalised? Cute, take a seat
+      I'll sell it back at triple with the leaks complete
+      Firm goes bust and the taxpayer bails
+      I'm already gone with the wind in my sails
+      Your kids at the seaside, the flags flying red
+      Me? I've a pool at a villa in Spain instead
+      Filled up with water I bottled from your rain
+      And every toilet in Britain pays me again
+  - name: breakdown
+    tag: "breakdown - gang chant, guitars and drums"
+    bars: 8
+    dynamics: 5
+    lyrics: |
+      Swim at your own risk!
+      Swim at your own risk!
+      Swim at your own risk!
+      Swim at your own risk!
+  - name: final chorus
+    tag: "final chorus - everything, gang chant, then the band cuts dead"
+    bars: 10
+    dynamics: 5
+    lyrics: |
+      Swim at your own risk, son, swim at your own risk
+      Every river in the country's on my bonus list
+      Pay the bill, flush it down, watch it float on by
+      It's raining every day and the taps run dry
+      Bill's due Friday!
+  - name: outro
+    tag: "outro - banjo riff alone, then silence"
+    bars: 2
+    dynamics: 2
+    lyrics: ""
+
+ending: "The gang shouts 'Bill's due Friday!' and the band cuts dead; the banjo plays the riff once alone, then silence."
+
+caption: >-
+  dark underground country trap, Scottish accent, sneering satirical villain rap, raw banjo riff, distorted sliding
+  808 bass, hard trap drums, rapid hi-hats, stuttering vocal chops, Scottish fiddle answering the rap, low bagpipe
+  drone, metallic industrial clanks and dripping water in the second verse, nu metal guitars and gang chant only on
+  the chorus, smug corporate spoken intro over the banjo alone, sweet psalm-like female vocal on the bridge with the
+  beat dropped out, the band cuts dead at the end leaving the banjo riff alone, gritty saturated live band sound,
+  raw and unpolished, not overproduced, 140 bpm
+
+lyric_audit:
+  before: "His favourite, and the best villain song. Three ten-line verses mixed the sale, the spills, the fine and the getaway; the parenthesised ad-lib line is stripped by the laptop; spoken outros don't render."
+  changes:
+    - "One idea per verse - the sale and the debt, the spills, the getaway. Verses trimmed from ten lines to eight."
+    - "The 'next year' joke moves to verse 1 next to the debt; the surfer and the fine move to verse 2 with the dead fish."
+    - "'Bill's due Friday' becomes the gang's last shout in the final chorus instead of a spoken outro."
+    - "The chorus, the psalm bridge and the breakdown are untouched."
+  scores_after: {character_voice: 5, narrative: 4, imagery: 5, singability: 4, hook: 5}
