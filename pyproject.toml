@@ -1,0 +1,22 @@
+# Tooling config only (tests, lint). The scripts still run as plain files; nothing here changes how
+# Kaggle or the laptop call them. Heavy audio tools keep their own environments (see laptop/README.md).
+[project]
+name = "jewgrass"
+version = "0.0.0"
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["laptop/patches"]
+
+[tool.ruff.lint]
+# Only things that are real bugs (syntax errors, undefined names). Style is left alone on purpose.
+select = ["E9", "F63", "F7", "F82"]

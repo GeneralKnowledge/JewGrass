@@ -61,7 +61,8 @@ def build():
         for m in avoid.finditer(caption):
             problems.append(f"{name}: caption has a hiss-prone word '{m.group(0)}'")
 
-        planned = bars * int(r["timesig"]) * 60 / r["bpm"]
+        beats = 3 if str(r["timesig"]) == "6" else int(r["timesig"])  # 6 = 6/8: three quarter-note beats a bar
+        planned = bars * beats * 60 / r["bpm"]
         if r["seconds"] < planned:
             problems.append(f"{name}: {r['seconds']} s is shorter than the planned {planned:.0f} s")
         tracks.append({
