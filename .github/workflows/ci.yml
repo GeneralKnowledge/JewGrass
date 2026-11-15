@@ -1,0 +1,22 @@
+name: checks
+# CPU only, about a minute. No audio generation, no GPU, no model downloads.
+on:
+  push:
+    branches: [claude/project-thread-l3ovu9, main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pyyaml pytest ruff
+      - name: Lint (real bugs only)
+        run: ruff check .
+      - name: Shell syntax
+        run: for f in $(git ls-files '*.sh'); do bash -n "$f"; done
+      - name: Tests (builds, tracks.yaml contract, Song Design compile)
+        run: pytest -q
