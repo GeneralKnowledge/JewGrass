@@ -3,13 +3,14 @@ title: All Rise
 order: 1
 status: generate
 credit: The band (Frontman lead, Ghost and choir on the chorus)
+version: 2   # Nov 15 13:20: Reuben 'pure clean instruments is a bad thing': raw, saturated, not overproduced
 purpose: Open the service and the court at once. There's a book, every powerful name is in it, and we're asked to read it aloud.
 render: {bpm: 74, key: D minor, timesig: "4", seconds: 120}
 caption: >-
   dark Celtic gospel trap hymn, live band, real recorded instruments, starts straight in with a deep Scottish
   male vocal over slow church organ chords, slow heavy trap drums, distorted 808 bass, small choir and a
   haunting female vocal on the chorus, fiddle sitting back in the mix, heavy guitars only on the final chorus,
-  warm cohesive blended mix, 74 bpm, D minor, ends on the choir singing
+  raw saturated live-sounding instruments, not overproduced, gritty warm blended mix, 74 bpm, D minor, ends on the choir singing
 lyrics: |
   [verse - starts immediately, deep Scottish male vocal over organ chords]
   All rise, the court's in session

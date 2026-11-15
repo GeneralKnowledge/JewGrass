@@ -3,12 +3,13 @@ title: Pilate
 order: 9
 status: generate
 credit: The Editor, the College, the Neighbour; the band on the bridge
+version: 2   # Nov 15 13:20: Reuben 'pure clean instruments is a bad thing': raw, saturated, not overproduced
 purpose: Everyone who could have stopped it washes their hands. Sung, soft and pretty, which makes it worse.
 render: {bpm: 84, key: E minor, timesig: "4", seconds: 170}
 caption: >-
   soulful folk trap, starts straight in with rich soulful group vocals over fingerpicked acoustic guitar, soft
   trap drums, warm 808 bass, verses sung by a weary male vocal and a bright female vocal, angry Scottish male rap
-  on the bridge, fiddle sitting back in the mix, warm cohesive blended mix, 84 bpm, E minor, ends on the group
+  on the bridge, fiddle sitting back in the mix, raw saturated live-sounding instruments, not overproduced, gritty warm blended mix, 84 bpm, E minor, ends on the group
   vocals singing
 lyrics: |
   [chorus - starts immediately, rich soulful group vocals, acoustic guitar]

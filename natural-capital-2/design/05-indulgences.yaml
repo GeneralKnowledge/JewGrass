@@ -3,12 +3,13 @@ title: Indulgences
 order: 5
 status: generate
 credit: The Banker (fictional)
+version: 2   # Nov 15 13:20: Reuben 'pure clean instruments is a bad thing': raw, saturated, not overproduced
 purpose: Absolution for sale, then and now. The bank that moved his money for twenty years buys a clean conscience with gallery wings and charity galas.
 render: {bpm: 140, key: C minor, timesig: "4", seconds: 200}
 caption: >-
-  dark glossy UK trap, starts straight in with a smug posh English male rap, hard trap drums, rapid hi-hats,
+  dark gritty UK trap, starts straight in with a smug posh English male rap, hard trap drums, rapid hi-hats,
   deep sliding 808, cold dark synth chords, a low choir pad sitting back, sung male and female hook, glitch
-  stutters, warm cohesive blended mix, 140 bpm, C minor, ends on the sung hook
+  stutters, raw saturated live-sounding instruments, not overproduced, gritty warm blended mix, 140 bpm, C minor, ends on the sung hook
 lyrics: |
   [verse - starts immediately, smug posh English male rap, hard trap drums]
   Back in fifteen-seventeen they sold you a pardon

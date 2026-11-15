@@ -3,12 +3,13 @@ title: Rose
 order: 7
 status: generate
 credit: Rose, a survivor (fictional, sung by Ghost)
+version: 2   # Nov 15 13:20: Reuben 'pure clean instruments is a bad thing': raw, saturated, not overproduced
 purpose: The heart of the album and the only voice that isn't guilty. Nothing explicit. Not being believed, being called "the girls", and taking her name back.
 render: {bpm: 68, key: B minor, timesig: "4", seconds: 260}
 caption: >-
   slow haunting emotional ballad, starts straight in with a fragile female vocal over soft piano, distant string
   section, deep slow 808 swells, layered female harmonies on the chorus, quiet voice and piano bridge, huge final
-  chorus with full strings and heavy drums, warm cohesive blended mix, 68 bpm, B minor, ends on the voice alone
+  chorus with full strings and heavy drums, raw saturated live-sounding instruments, not overproduced, gritty warm blended mix, 68 bpm, B minor, ends on the voice alone
 lyrics: |
   [verse - starts immediately, fragile female vocal, soft piano]
   I was the girl who brought the towels
