@@ -3,14 +3,14 @@ title: Book of Names
 order: 14
 status: generate
 credit: Morag, Rose, Frontman, and the whole glen as a choir
+version: 2   # Nov 15 13:20: Reuben 'pure clean instruments is a bad thing': raw, saturated, not overproduced
 purpose: The answer to the black book. Morag comes home; the survivors write their own names in a different book. No one is jailed, but the names that matter are finally the right ones. Full pipes only in the last chorus.
 render: {bpm: 80, key: D major, timesig: "4", seconds: 210}
 caption: >-
   triumphant Celtic folk hymn with trap drums, live band, real recorded acoustic instruments, starts straight in
   with a tender Scottish female vocal over strummed acoustic guitar, a second fragile female vocal on the next
   verse, warm Scottish male vocal on the third verse, big warm community choir on the chorus, soft 808 and slow
-  trap drums, fiddle sitting back, full Highland bagpipes join only on the final chorus, warm cohesive blended
-  mix, 80 bpm, D major, ends with everyone singing
+  trap drums, fiddle sitting back, full Highland bagpipes join only on the final chorus, raw saturated live-sounding instruments, not overproduced, gritty warm blended mix, 80 bpm, D major, ends with everyone singing
 lyrics: |
   [verse - starts immediately, tender Scottish female vocal, acoustic guitar]
   I came home on the last bus up the glen

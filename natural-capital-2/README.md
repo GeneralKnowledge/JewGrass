@@ -69,4 +69,5 @@ Pipes are kept back for the very end: they only play in the last chorus of *Book
 
 That is 12 songs × 2 takes = 24 XL-turbo takes (about 41 minutes of audio per take set), split across both GPUs. Results go to project files `book-of-names/round1/`.
 
+- **v2 captions (Nov 15, 13:20).** Reuben said "pure clean instruments is a bad thing", so the captions now ask for raw, saturated, live-sounding instruments that aren't overproduced, with a gritty warm blended mix. `build.py` now rejects clean, pristine, glossy and crisp, as well as the static-prone words. The round 1 captions are kept in `previous/v1-tracks.yaml`, and the round 1 renders are in project files `book-of-names/round1/`.
 - `alt-lifeline/`: the first idea for part 2 (water company and ferry fiasco), started before Reuben redirected it. Kept, not used.

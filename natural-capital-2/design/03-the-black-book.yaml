@@ -3,13 +3,14 @@ title: The Black Book
 order: 3
 status: generate
 credit: Frontman (rap), Ghost (chorus)
+version: 2   # Nov 15 13:20: Reuben 'pure clean instruments is a bad thing': raw, saturated, not overproduced
 purpose: The leak arrives. Morag opens the files and the band lists who's in them, by job not by name. The point is how many kinds of power are in one book.
 render: {bpm: 90, key: A minor, timesig: "4", seconds: 220}
 caption: >-
   dark political hip hop with Celtic country trap, starts straight in with an angry precise Scottish male rap
   over hard boom bap drums, switching to heavy trap drums on the second verse, distorted 808 bass, banjo loop
   sitting back, haunting sung female chorus, low choir pad under the chorus, glitch stutters between sections,
-  warm cohesive blended mix, 90 bpm, A minor, ends on the sung chorus
+  raw saturated live-sounding instruments, not overproduced, gritty warm blended mix, 90 bpm, A minor, ends on the sung chorus
 lyrics: |
   [verse - starts immediately, angry precise Scottish male rap, boom bap drums]
   Morag got a parcel wi' nae name on the front

@@ -23,8 +23,8 @@ AVOID = [
     # circus and oom-pah
     "circus", "oom-pah", "oompah", "tuba", "pizzicato", "woodblock", "marching", "march", "comic", "comedic",
     "theatrical", "playful", "cheeky", "whimsical", "kazoo", "slide whistle",
-    # mixes that make instruments stick out
-    "clean polished", "polished", "clean mix",
+    # mixes that make instruments stick out or sound too clean (Reuben, Nov 15: 'pure clean instruments is a bad thing')
+    "clean polished", "polished", "clean mix", "clean", "pristine", "glossy", "crisp",
 ]
 AVOID_RE = re.compile(r"\b(" + "|".join(re.escape(w) for w in AVOID) + r")\b", re.I)
 SPOKEN_RE = re.compile(r"\b(spoken|speech|narrat|voiceover)", re.I)
