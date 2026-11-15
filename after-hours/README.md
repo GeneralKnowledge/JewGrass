@@ -18,7 +18,7 @@ Separate from LOWBRIDGE and from the earlier Matching Jackets sketch (kept in `m
 |---|---|---|---|---|---|
 | 1 | [One More Night](design/one-more-night.yaml) | catchy pop, does it sound like a group | 112, A major | 3:45 | round 1 |
 | 2 | [If You Were Here](design/if-you-were-here.yaml) | harmony, a cappella bridge, emotion | 76, D major | 4:00 | round 1 |
-| 3 | [Everybody Knows](design/everybody-knows.yaml) | member interplay, dance-pop | 120, E major | 3:35 | pending |
+| 3 | [Everybody Knows](design/everybody-knows.yaml) | member interplay, dance-pop | 120, E major | 3:35 | round 3 |
 
 Following the project rules, every song starts on a voice (no instrumental intro) and ends sung. Each
 design's `changes_from_spec` lists what moved from the original spec and why.

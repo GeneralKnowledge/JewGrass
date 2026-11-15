@@ -1,11 +1,11 @@
 # AFTER HOURS Song Design: Everybody Knows (03, playful dance-pop). Format: see one-more-night.yaml.
-# status: pending until One More Night and If You Were Here pass the group-sound test.
+# Round 1 passed (Nov 15): now status generate.
 slug: ah-everybody-knows
 title: Everybody Knows
 credit: Leo, Alex, Jamie and Noah
 version: 1
 order: 3
-status: pending
+status: generate
 purpose: show personality, rhythmic interplay and the more energetic side of the group.
 concept: >-
   Everyone can see two friends fancy each other except the two people involved. The group narrates, with

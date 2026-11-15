@@ -185,7 +185,7 @@ tracks:
 - slug: ah-everybody-knows
   title: Everybody Knows
   credit: Leo, Alex, Jamie and Noah
-  status: pending
+  status: generate
   bpm: 120
   key: E major
   timesig: '4'
