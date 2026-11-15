@@ -1,0 +1,16 @@
+album: Book of Names
+band: the Natural Capital band (part 2)
+# Render order, strongest songs first. Kaggle: XL turbo, 2 takes each, seeds from 5101.
+queue:
+- bon-judgment-day
+- bon-rose
+- bon-two-guards-asleep
+- bon-the-black-book
+- bon-redacted
+- bon-book-of-names
+- bon-last-supper
+- bon-confession
+- bon-indulgences
+- bon-pilate
+- bon-all-rise
+- bon-sweetheart-deal
