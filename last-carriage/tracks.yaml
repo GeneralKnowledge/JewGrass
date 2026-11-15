@@ -15,24 +15,25 @@ tracks:
   key: E minor
   timesig: '4'
   seconds: 230
-  caption: instrumental electronic music, heavy melodic bass music, deep sub-bass, dense layered synths, forward
-    motion, minor key, warm cohesive mix with every part blended together, powerful but controlled low end, half-time
-    heavy bass music, huge deep sub-bass, gliding 808, slow hard snare, rolling hi-hats, dark layered synth chords,
-    76 bpm, E minor, slow and enormous, a dark synth figure that climbs a step every section, gliding 808 notes
-    bending up into each chord change, the music drops to near silence halfway then comes back harder, a lift to
-    a major chord near the end
+  caption: instrumental, heavy and dark, industrial metal meets dark electronic, down-tuned distorted guitars, distorted
+    synth bass, pounding drums, deep sub-bass, menacing minor key, forward motion, warm cohesive mix with every
+    part blended together, powerful but controlled low end, half-time industrial metal, crushing down-tuned distorted
+    guitars, distorted synth bass, huge pounding drums, slow gated snare, deep sub-bass, dark menacing synth chords,
+    76 bpm, E minor, slow and crushing, down-tuned distorted guitars chugging with the kick, a dark distorted synth
+    figure that climbs a step every section, gliding 808 notes under distorted synth bass, the music drops to near
+    silence halfway then comes back harder, full power chords at the summit
   lyrics: |
-    [instrumental, straight in, half-time drums and huge sub, dark synth figure climbing]
+    [instrumental, straight in, crushing down-tuned guitars, pounding half-time drums, dark synth climbing]
 
-    [instrumental, hi-hats double up, gliding 808 bends into every chord, heavier]
+    [instrumental, palm-muted guitar chugs, distorted synth bass, gliding 808, heavier]
 
-    [instrumental, drop to near silence, low sub swell and the synth figure alone]
+    [instrumental, drop to near silence, low sub swell and the dark synth figure alone]
 
-    [instrumental, full drums return harder, distorted mid-bass joins, synth figure higher]
+    [instrumental, guitars and drums return harder, crushing distorted bass, synth figure higher]
 
-    [instrumental, one beat of silence then chords lift to major, glide lead an octave up]
+    [instrumental, one beat of silence then full power chords, distorted lead an octave up]
 
-    [instrumental, drums thin to kick and hats, sub holds one low note, synth figure hands over]
+    [instrumental, guitars ring out, sub holds one low note, synth figure hands over]
 - slug: lastcarriage-over-the-border
   title: Over the Border
   credit: LAST CARRIAGE
@@ -42,30 +43,27 @@ tracks:
   key: F# minor
   timesig: '4'
   seconds: 200
-  caption: instrumental electronic music, heavy melodic bass music, deep sub-bass, dense layered synths, forward
-    motion, minor key, warm cohesive mix with every part blended together, powerful but controlled low end, melodic
-    instrumental trap, bright pitch-gliding synth lead, warm layered synth chords, tight drums, steady driving eighth-note
-    bass, 118 bpm, F# minor, uplifting and driving, a bright pitch-gliding synth lead that bends up and falls back
-    as the hook, steady eighth-note bass like rails underneath, rolling hi-hats, a breakdown with only held chords
-    and a soft high wordless female voice, then the groove crashes back bigger
+  caption: instrumental, heavy and dark, industrial metal meets dark electronic, down-tuned distorted guitars, distorted
+    synth bass, pounding drums, deep sub-bass, menacing minor key, forward motion, warm cohesive mix with every
+    part blended together, powerful but controlled low end, dark driving industrial metal, palm-muted down-tuned
+    guitar chugs on eighth notes, distorted gliding synth lead, pounding drums, distorted synth bass, slow lonely
+    noir piano in the quiet parts, 118 bpm, F# minor, dark and driving, a distorted gliding synth lead that bends
+    up and falls back as the hook, palm-muted down-tuned guitar chugs on eighth notes underneath, pounding drums,
+    a breakdown with only a lonely noir piano and a mournful saxophone, then the groove crashes back heavier
   lyrics: |
-    [instrumental, straight in, driving eighth-note bass, tight drums, gliding synth lead hook]
+    [instrumental, straight in, palm-muted guitar chugs, pounding drums, distorted gliding synth lead hook]
 
-    [instrumental, lead glides wider, rolling hi-hats, warm synth chords pumping]
+    [instrumental, lead glides wider, distorted synth bass, dark synth chords]
 
-    [instrumental, full energy, lead doubled an octave up, bass driving hard]
+    [instrumental, full force, power chords, lead doubled an octave up]
 
-    [breakdown - drums stop, held synth chords, soft high wordless female voice]
-    Ooh
-    Ooh, ooh
-    Ooh
-    Ah
+    [instrumental breakdown, guitars and drums stop, lonely noir piano and mournful saxophone]
 
-    [instrumental, eighth-note bass returns alone, drums build back in]
+    [instrumental, guitar chugs return alone, drums build back in]
 
-    [instrumental, full groove crashes back, lead an octave higher, biggest moment]
+    [instrumental, full groove crashes back heavier, lead an octave higher, biggest moment]
 
-    [instrumental, drums drop away, bass eighths and the lead glide keep going]
+    [instrumental, drums drop away, guitar chugs and the lead glide keep going]
 - slug: lastcarriage-rannoch
   title: Rannoch
   credit: LAST CARRIAGE
@@ -75,18 +73,19 @@ tracks:
   key: E minor
   timesig: '4'
   seconds: 150
-  caption: instrumental electronic music, heavy melodic bass music, deep sub-bass, dense layered synths, forward
-    motion, minor key, warm cohesive mix with every part blended together, powerful but controlled low end, melodic
-    electronic, fast rising and falling synth arpeggio, soft steady kick, light hi-hats, warm sub-bass, spacious
-    synth pads, 104 bpm, E minor, hypnotic and lighter, a fast rising and falling synth arpeggio over two octaves,
-    soft steady kick, spacious warm synth pads that open up slowly like light coming up, warm sub-bass, the last
-    bars turn to D minor and the arpeggio slows down
+  caption: instrumental, heavy and dark, industrial metal meets dark electronic, down-tuned distorted guitars, distorted
+    synth bass, pounding drums, deep sub-bass, menacing minor key, forward motion, warm cohesive mix with every
+    part blended together, powerful but controlled low end, dark industrial electronic, fast menacing synth arpeggio,
+    heavy steady kick, distorted synth bass, down-tuned guitar swells, deep dark synth pads, 104 bpm, E minor, hypnotic
+    and grim, a fast menacing synth arpeggio over two octaves, heavy steady kick, distorted synth bass, down-tuned
+    distorted guitar swells, deep dark synth pads that grow slowly, the last bars turn to D minor and the arpeggio
+    slows down
   lyrics: |
-    [instrumental, straight in, fast synth arpeggio and soft kick, warm sub]
+    [instrumental, straight in, fast menacing synth arpeggio, heavy kick, distorted bass]
 
-    [instrumental, spacious synth pads rise underneath, light hi-hats]
+    [instrumental, dark synth pads and distorted guitar swells rise underneath]
 
-    [instrumental, clap on four, open hi-hats, arpeggio over two octaves, brightest point]
+    [instrumental, guitar chugs, gated snare on four, arpeggio over two octaves, heaviest point]
 
     [instrumental, drums drop to the kick, pads hold]
 

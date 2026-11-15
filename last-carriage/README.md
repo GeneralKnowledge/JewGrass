@@ -19,6 +19,14 @@ the findings are in `artist-dna.yaml` under `seed_analysis`, and each album trac
 python3 last-carriage/build.py      # rebuild after editing a design; exits 1 on any warning
 ```
 
+## v2 (Nov 15): heavier and darker
+
+Reuben heard round 1 and asked for heavier, darker instruments. The sound is now industrial metal weight
+(down-tuned distorted guitars, palm-muted chugs, distorted synth bass, pounding drums) plus dark noir melody
+(lonely minor piano, a mournful saxophone in the quiet moments). Touchstones are described in genre words and
+never named; build.py rejects the names. Round 2 seeds: 2411/2412, 2511/2512, 2811/2812, to project files
+last-carriage/round2/.
+
 ## Rules carried over from Nov 14
 
 No crackle/hiss/static/vinyl/tape/radio words; no "train" or "railway" words either (they may pull in sound

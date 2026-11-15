@@ -36,12 +36,16 @@ feel:
   - dark, then lifting near the end
   - works played straight through; each track still stands alone
 
+# v2 (Nov 15, Reuben): "heavier and darker". Read as two halves, kept original and described in genre words only:
+# crushing industrial metal weight (down-tuned chugging guitars, distorted synth bass, pounding drums) and
+# dark lonely noir melody (slow minor piano, a mournful saxophone at the quiet moments).
 palette:
-  melody: pitch-gliding synth leads, layered warm synth chords, a fast synth arpeggio, a few piano notes
-  percussion: tight trap drums, rolling hi-hats, half-time snare in the heavy tracks, a steady eighth-note
-    pulse that stands in for the rails (written into drums and bass, never as sound effects)
-  bass: deep sub-bass, gliding 808, distorted mid-bass only at the peaks
-  voice: one wordless female voice, used only twice on the album
+  melody: dark distorted gliding synth leads, slow lonely noir piano, a mournful saxophone only in breakdowns, a dark synth arpeggio
+  guitars: down-tuned heavily distorted guitars, palm-muted chugs locked to the kick, power chords at the peaks
+  percussion: huge pounding industrial drums, heavy kick, gated snare, half-time in the heavy tracks, a steady
+    eighth-note pulse that stands in for the rails (written into drums, bass and guitar chugs, never as sound effects)
+  bass: crushing distorted synth bass over deep sub-bass, gliding 808 under it
+  voice: none in v2 (the hum was dropped for the saxophone)
 
 motifs:
   departure-figure: five-note rising synth figure in D minor (D F G A C), heard plainly in Departures, climbing
@@ -49,7 +53,8 @@ motifs:
   the-glide: a lead note that bends up a fourth and falls back; it gets wider as the train goes north
 
 voices:
-  hum: one wordless female voice, soft, high and close ("ooh", "ah"); Over the Border and End of the Line only
+  hum: one wordless female voice, soft, high and close ("ooh", "ah"). Dropped from the pilots in v2; may
+    come back once in End of the Line if Reuben wants it
 
 vocal_rules:
   - Instrumental first. Most tracks have no voice at all.
@@ -70,28 +75,29 @@ production_rules:
 
 families:
   heavy:
-    feel: slow and enormous, the climb
+    feel: slow and crushing, the climb
     caption: >-
-      half-time heavy bass music, huge deep sub-bass, gliding 808, slow hard snare, rolling hi-hats,
-      dark layered synth chords
+      half-time industrial metal, crushing down-tuned distorted guitars, distorted synth bass, huge pounding
+      drums, slow gated snare, deep sub-bass, dark menacing synth chords
   glide:
-    feel: lifting and melodic, open road
+    feel: driving and dark, still melodic
     caption: >-
-      melodic instrumental trap, bright pitch-gliding synth lead, warm layered synth chords, tight drums,
-      steady driving eighth-note bass
+      dark driving industrial metal, palm-muted down-tuned guitar chugs on eighth notes, distorted gliding synth
+      lead, pounding drums, distorted synth bass, slow lonely noir piano in the quiet parts
   pulse:
-    feel: hypnotic and light on its feet
+    feel: hypnotic and grim
     caption: >-
-      melodic electronic, fast rising and falling synth arpeggio, soft steady kick, light hi-hats,
-      warm sub-bass, spacious synth pads
+      dark industrial electronic, fast menacing synth arpeggio, heavy steady kick, distorted synth bass,
+      down-tuned guitar swells, deep dark synth pads
   drift:
-    feel: between stations, almost beatless
+    feel: between stations, lonely and noir
     caption: >-
-      slow beatless electronic, long warm synth chords, deep sub-bass swells, a few soft piano notes
+      slow dark noir, lonely minor piano, mournful saxophone, deep sub-bass swells, low distorted guitar drones
 
 caption_core: >-
-  instrumental electronic music, heavy melodic bass music, deep sub-bass, dense layered synths, forward motion,
-  minor key, warm cohesive mix with every part blended together, powerful but controlled low end
+  instrumental, heavy and dark, industrial metal meets dark electronic, down-tuned distorted guitars, distorted
+  synth bass, pounding drums, deep sub-bass, menacing minor key, forward motion, warm cohesive mix with every
+  part blended together, powerful but controlled low end
 
 # Learned Nov 14: these words put hiss or static over whole songs.
 avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere, field recording, train, railway, whistle, announcement]
@@ -99,7 +105,9 @@ avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, t
 # Learned Nov 14: these gave the circus / oom-pah sound (Brass Plate).
 banned_instruments: [tuba, pizzicato, woodblock, marching snare, oom-pah, circus, comic, theatrical, kazoo, accordion, brass band]
 # Learned Nov 14: "clean polished" made instruments stick out. Ask for a blended mix instead.
-banned_mix_words: [clean, polished, crisp, pristine]
+banned_mix_words: [clean, polished, crisp, pristine, bright, uplifting]
+# Reuben's touchstones are described, never named in captions, titles or tags.
+banned_names: [doom, odst, halo]
 
 energy_curve: [01 mid, 02 mid, 03 low, 04 high, 05 highest, 06 high, 07 low, 08 mid, 09 low]
 
@@ -122,6 +130,8 @@ acceptance:
   cleanliness: no hiss, static or crackle; no circus instruments
   repeatability: a second take keeps the same identity
 
+round2:
+  why: v2 heavier and darker (Reuben, Nov 15). Seeds 2411/2412, 2511/2512, 2811/2812. v1 takes stay in round1.
 round1:
   tracks: [beattock, over-the-border, rannoch]
   takes: 2

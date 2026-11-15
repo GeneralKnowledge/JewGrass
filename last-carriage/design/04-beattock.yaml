@@ -3,7 +3,7 @@ slug: lastcarriage-beattock
 title: Beattock
 order: 4
 family: heavy
-version: 1
+version: 2   # v2 Nov 15: heavier and darker (Reuben)
 role: The heaviest track. The long climb to the summit in the dark. From the seed mix's 4:47-7:04 stretch (E minor, half-time, loudest part).
 test: Is it massive and slow without turning into mud, and does it still feel like it is moving forward?
 
@@ -14,45 +14,46 @@ render:
   seconds: 230        # 72 bars at 76 is 227 s
 
 palette:
-  lead: the departure figure, now in E minor, played low on a dark synth and climbing a step each section
-  bed: dark layered synth chords, very wide
-  bass: huge sub with gliding 808 notes that bend up into each chord change
-  drums: half-time snare on 3, rolling hi-hats that double up in the second climb
-  left_out: piano, voice, anything bright before the summit
+  lead: the departure figure, now in E minor, played low on a dark distorted synth and climbing a step each section
+  guitars: crushing down-tuned distorted guitars, slow palm-muted chugs locked to the kick, power chords at the summit
+  bed: dark menacing synth chords
+  bass: distorted synth bass over deep sub, gliding 808 notes that bend up into each chord change
+  drums: huge pounding drums, half-time gated snare on 3, toms rolling into each section
+  left_out: piano, voice, anything bright
 
-harmony: Em - C - Am - B (B major, pulling hard back to E minor), two bars each; the summit moves to G - D - Em.
+harmony: Em - C - Am - B (B major, pulling hard back to E minor), two bars each; the summit goes to C - B - Em, darker not brighter.
 drums: Kick on 1 and the "and" of 2, snare on 3, hats in eighths rolling into thirty-seconds at the ends of phrases. Climb 2 adds a second kick on the "and" of 4.
 bass_movement: Sustained sub on the root, 808 glide up a fourth into every change; at the summit it holds one low E for eight bars.
-the_moment: The summit. Everything stops for one beat, then the chords lift to G major and the glide lead goes up an octave.
+the_moment: The summit. Everything stops for one beat, then the guitars hit full power chords and the distorted lead goes up an octave.
 
 sections:
   - name: climb 1
-    tag: instrumental, straight in, half-time drums and huge sub, dark synth figure climbing
+    tag: instrumental, straight in, crushing down-tuned guitars, pounding half-time drums, dark synth climbing
     bars: 16
     performer: none
   - name: climb 2
-    tag: instrumental, hi-hats double up, gliding 808 bends into every chord, heavier
+    tag: instrumental, palm-muted guitar chugs, distorted synth bass, gliding 808, heavier
     bars: 16
     performer: none
   - name: drop
-    tag: instrumental, drop to near silence, low sub swell and the synth figure alone
+    tag: instrumental, drop to near silence, low sub swell and the dark synth figure alone
     bars: 8
     performer: none
   - name: climb 3
-    tag: instrumental, full drums return harder, distorted mid-bass joins, synth figure higher
+    tag: instrumental, guitars and drums return harder, crushing distorted bass, synth figure higher
     bars: 16
     performer: none
   - name: summit
-    tag: instrumental, one beat of silence then chords lift to major, glide lead an octave up
+    tag: instrumental, one beat of silence then full power chords, distorted lead an octave up
     bars: 8
     performer: none
   - name: over the top
-    tag: instrumental, drums thin to kick and hats, sub holds one low note, synth figure hands over
+    tag: instrumental, guitars ring out, sub holds one low note, synth figure hands over
     bars: 8
     performer: none
 
 ending: The synth figure on its own over the held low E, which becomes the first bar of Over the Border (segue, no fade to silence).
 caption: >-
-  76 bpm, E minor, slow and enormous, a dark synth figure that climbs a step every section, gliding 808 notes
-  bending up into each chord change, the music drops to near silence halfway then comes back harder, a lift to
-  a major chord near the end
+  76 bpm, E minor, slow and crushing, down-tuned distorted guitars chugging with the kick, a dark distorted
+  synth figure that climbs a step every section, gliding 808 notes under distorted synth bass, the music drops
+  to near silence halfway then comes back harder, full power chords at the summit

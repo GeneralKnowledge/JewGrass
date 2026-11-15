@@ -37,7 +37,7 @@ def build():
     def words(ws):
         return re.compile(r"\b(" + "|".join(re.escape(w) for w in ws) + r")\b", re.I)
     avoid, avoid_tag = words(dna["avoid_in_captions"]), words(dna["avoid_in_tags"])
-    banned = words(dna["banned_instruments"] + dna["banned_mix_words"])
+    banned = words(dna["banned_instruments"] + dna["banned_mix_words"] + dna["banned_names"])
     core = " ".join(dna["caption_core"].split())
     families = {k: " ".join(v["caption"].split()) for k, v in dna["families"].items()}
     voices = set(dna["voices"]) | {"none"}

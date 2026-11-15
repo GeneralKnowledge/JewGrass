@@ -3,9 +3,9 @@ slug: lastcarriage-rannoch
 title: Rannoch
 order: 8
 family: pulse
-version: 1
-role: First light on the open moor. Lighter, hypnotic, the comedown before home. From the seed mix's 16:00-17:50 stretch (fast rising and falling arpeggio, around 103 bpm).
-test: Can a short, lighter track keep the album's weight in the sub while the top end opens up?
+version: 2   # v2 Nov 15: heavier and darker (Reuben); a grim first light, not a pretty one
+role: First light on the open moor. Grim and hypnotic, the last stretch before home. From the seed mix's 16:00-17:50 stretch (fast rising and falling arpeggio, around 103 bpm).
+test: Can a short arpeggio track stay as heavy and dark as the rest?
 
 render:
   bpm: 104
@@ -14,11 +14,12 @@ render:
   seconds: 150        # 64 bars at 104 is 148 s
 
 palette:
-  lead: fast rising and falling synth arpeggio built from the departure figure, stretched over two octaves
-  bed: spacious warm synth pads that open up slowly, like light coming up
-  bass: warm sub-bass on the root, long notes, no glides
-  drums: soft steady kick, light hi-hats, a clap on 4 only in the second half
-  left_out: half-time drums, distorted bass, voice, any lead other than the arpeggio
+  lead: fast menacing synth arpeggio built from the departure figure, stretched over two octaves
+  guitars: down-tuned distorted guitar swells under the arpeggio, chugs in the full section
+  bed: deep dark synth pads that grow slowly
+  bass: distorted synth bass on the root, long notes, no glides
+  drums: heavy steady kick, gated snare on 4 in the second half
+  left_out: voice, any lead other than the arpeggio, anything bright
 
 harmony: Em - Cmaj7 - G - D, two bars each; the last eight bars move to Dm to set up End of the Line.
 drums: Four-on-the-floor soft kick, closed hats on the offbeat; second half adds a clap on 4 and open hats on the "and" of 4.
@@ -27,15 +28,15 @@ the_moment: The last eight bars, where the chords turn from E minor to D minor a
 
 sections:
   - name: arpeggio
-    tag: instrumental, straight in, fast synth arpeggio and soft kick, warm sub
+    tag: instrumental, straight in, fast menacing synth arpeggio, heavy kick, distorted bass
     bars: 16
     performer: none
   - name: opening up
-    tag: instrumental, spacious synth pads rise underneath, light hi-hats
+    tag: instrumental, dark synth pads and distorted guitar swells rise underneath
     bars: 16
     performer: none
   - name: full
-    tag: instrumental, clap on four, open hi-hats, arpeggio over two octaves, brightest point
+    tag: instrumental, guitar chugs, gated snare on four, arpeggio over two octaves, heaviest point
     bars: 16
     performer: none
   - name: thinning
@@ -49,6 +50,6 @@ sections:
 
 ending: The slowed arpeggio on D minor, which End of the Line picks up (segue).
 caption: >-
-  104 bpm, E minor, hypnotic and lighter, a fast rising and falling synth arpeggio over two octaves, soft steady
-  kick, spacious warm synth pads that open up slowly like light coming up, warm sub-bass, the last bars turn to
-  D minor and the arpeggio slows down
+  104 bpm, E minor, hypnotic and grim, a fast menacing synth arpeggio over two octaves, heavy steady kick,
+  distorted synth bass, down-tuned distorted guitar swells, deep dark synth pads that grow slowly, the last bars
+  turn to D minor and the arpeggio slows down
