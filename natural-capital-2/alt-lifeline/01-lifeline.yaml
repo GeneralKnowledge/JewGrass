@@ -1,0 +1,50 @@
+slug: nc2-lifeline
+title: Lifeline
+order: 1
+status: generate
+credit: The band (Frontman lead, Ghost harmony)
+purpose: Open the album in the band's own voice and ask its question. Who holds the other end of the lines a place hangs by?
+render: {bpm: 78, key: D major, timesig: "4", seconds: 140}
+caption: >-
+  dark Celtic folk trap hymn, live band, real recorded acoustic instruments, starts straight in with a warm
+  Scottish male vocal over fingerpicked acoustic guitar, brief low Highland bagpipe drone under the first verse
+  only, soft distorted 808 bass, slow trap drums, haunting female harmony vocal on the chorus, fiddle sitting
+  back in the mix, heavy guitars only on the final chorus, warm cohesive blended mix, 78 bpm, D major, ends on
+  voices singing
+lyrics: |
+  [verse - starts immediately, warm Scottish male vocal, acoustic guitar, low drone]
+  There's a pipe beneath the heather and it runs down to the sea
+  There's a rope on the pier where the boat's supposed to be
+  There's a wire on the poles and it hums when it rains
+  And a hand on the other end that never gives its name
+
+  [chorus - haunting female harmony joins, slow trap drums, 808]
+  Throw me a lifeline, throw me a line
+  Somebody's holding it and somebody's fine
+  We bought back the hill but we don't own the tide
+  Throw me a lifeline, who's on the other side?
+
+  [verse - haunting female vocal leads, male harmony]
+  Water off the hill and it's billed by a town
+  That's never seen the hill but it's watching it run down
+  The boat from the mainland's late again
+  Ten minutes over, ninety miles round by the glen
+
+  [chorus - full band, fiddle sitting back]
+  Throw me a lifeline, throw me a line
+  Somebody's holding it and somebody's fine
+  We bought back the hill but we don't own the tide
+  Throw me a lifeline, who's on the other side?
+
+  [bridge - half time, both voices, quiet]
+  Every line's got two ends and every end's got a hand
+  Pull it when you need it and you'll find out where they stand
+
+  [final chorus - everyone, heavy guitars, big drums]
+  Throw me a lifeline, throw me a line
+  Somebody's holding it and somebody's fine
+  We bought back the hill but we don't own the tide
+  Throw me a lifeline, who's on the other side?
+
+  [outro - voices only, sung softly]
+  Who's on the other side?
