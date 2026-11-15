@@ -1,7 +1,9 @@
 # Song Design: Brass Plate (track 7). Format: docs/song-design/README.md
 slug: brass-plate
+status: dropped   # Reuben, 14 Nov 2026: cut from the album. Design kept for reference; nothing deleted.
 title: Brass Plate
-version: 1
+version: 3
+v3_note: "v2 sounded like a circus (tuba, pizzicato, brass band, comic and theatrical wording). Back to the band's dark trap core; the harpsichord riff is the one colour."
 approach: dark comedy told as a story - one working day, three clock times, and the villain exposes himself
 identity: A theatrical, bureaucratic, slightly ridiculous patter song, where the office itself is the band.
 story_beat: How anonymous money hides in plain sight in Glasgow. Malky never asks who owns anything, until a rule change makes him find out it's him.
@@ -16,14 +18,14 @@ palette:
   world: Bureaucratic, theatrical, slightly ridiculous. The paperwork is the percussion.
   lead: harpsichord riff (plays the money theme as a flourish)
   secondary: pizzicato strings
-  rhythm: typewriter clacks, rubber stamp thuds on the backbeat, desk bell, crisp dry drums
+  rhythm: crisp clean drums with a woodblock backbeat; typewriter bell, desk bell and rubber stamp as occasional accents only (v2 - constant typewriter clacks read as static)
   bass: tuba, walking down C Bb Ab G like a pompous march
   colour: muted brass stabs, sharp electronic synth stabs
   weight: brass band and a heavy 808 hit, choruses only
   left_out: banjo, fiddle, nu-metal guitars, bagpipes, constant 808. Nothing about this office is Highland.
 
 roles:
-  - {instrument: typewriter and rubber stamp, job: "the groove; the stamp lands on beats 2 and 4", enters: intro, leaves: never}
+  - {instrument: "woodblock, typewriter bell and rubber stamp", job: "accents on the punchlines; the woodblock carries the backbeat", enters: intro, leaves: never}
   - {instrument: harpsichord, job: "the riff, and the four-note money flourish whenever a company is made", enters: intro, leaves: never}
   - {instrument: tuba, job: "walking bass line, falling C Bb Ab G", enters: verse 1, leaves: final stamp}
   - {instrument: pizzicato strings, job: "chugging eighth notes under the patter", enters: verse 1, leaves: final chord}
@@ -45,13 +47,13 @@ motifs:
 
 sections:
   - name: intro
-    tag: intro - typewriter rhythm alone, then harpsichord riff, desk bell
+    tag: intro - dark harpsichord riff alone, then the beat drops
     bars: 4
     dynamics: 2
     lyrics: |
       Baird Formations, how can I help?
   - name: verse 1
-    tag: verse - nine in the morning, fast cheeky patter, tuba and pizzicato
+    tag: verse - nine in the morning, fast sly patter, 808 and trap drums
     bars: 16
     dynamics: 2
     idea: what the business is; the image is four hundred companies living in one wee drawer
@@ -65,7 +67,7 @@ sections:
       I don't do the business, son, I'm only the address
       The less I know the better, and I know a whole lot less
   - name: chorus 1
-    tag: chorus - brass stabs, 808 hits, gang shout
+    tag: chorus - gang chant, heavy 808, banjo hook
     bars: 8
     dynamics: 4
     lyrics: |
@@ -74,7 +76,7 @@ sections:
       Who owns the money? Naebody at all
       Brass plate! Letterbox in the hall
   - name: verse 2
-    tag: verse - twelve o'clock, the phone call, synth stabs on punchlines
+    tag: verse - twelve o'clock, the phone call, dark synth stabs on punchlines
     bars: 16
     dynamics: 3
     idea: the glen deal arrives by phone and he refuses to hear who's in it; the image is him humming with his fingers in his ears
@@ -88,7 +90,7 @@ sections:
       The pound that paid the laird's rent comes through my door at two
       And by quarter past it's sailing to an island. Toodle-oo
   - name: chorus 2
-    tag: chorus - brass stabs, 808 hits, gang shout
+    tag: chorus - gang chant, heavy 808, banjo hook
     bars: 8
     dynamics: 4
     lyrics: |
@@ -111,7 +113,7 @@ sections:
       And there's a lassie at the door, says she's frae the paper, aye
       Are you Malcolm Baird? Naw, hen. Never heard of the guy
   - name: final chorus
-    tag: final chorus - full brass band, everything in, gang shout
+    tag: final chorus - everything in, heavy guitars, gang chant
     bars: 10
     dynamics: 5
     lyrics: |
@@ -121,7 +123,7 @@ sections:
       Brass plate! Filing's due Friday
       Mine.
   - name: ending
-    tag: outro - one triumphant major brass chord, one rubber stamp
+    tag: outro - the beat cuts dead, one rubber stamp
     bars: 1
     dynamics: 5
     lyrics: ""
@@ -131,11 +133,7 @@ ending: >-
   pompous C major brass chord with a single rubber stamp thud. Silence. A comic full stop, not a fade.
 
 caption: >-
-  theatrical comic baroque hip hop, fast cheeky Glaswegian male rap, Scottish accent, playful patter,
-  bureaucratic and slightly ridiculous, typewriter clacks and rubber stamp thuds as the beat, harpsichord riff,
-  pizzicato strings, tuba bass line, desk bell dings, crisp dry drums, sharp electronic synth stabs, muted brass
-  stabs, brass band and heavy 808 hits only on the chorus, office gang chant chorus, dark uneasy strings in the
-  third verse, last chorus biggest with full brass, ends on one triumphant major brass chord and a stamp, 112 bpm
+  dark glitch trap, Scottish hip hop, fast sly Glaswegian male rap, Scottish accent, dark minor harpsichord riff as the hook, plucked banjo answering the riff, distorted 808 bass, hard trap drums, rapid hi-hats, dark synth stabs on the punchlines, gang chant chorus, heavy distorted guitars only in the last chorus, the third verse drops the drums for dark uneasy strings, the beat cuts dead at the end with one rubber stamp thud, gritty saturated live band sound, raw and unpolished, not overproduced, instruments blended together, 112 bpm
 
 lyric_audit:
   before: Funny, but a list of jokes. Verse 2 crammed the rule change, Switzerland, Fenella's call and the investors into ten lines. Ended on a spoken "Filing's due Friday" tag like every other villain.

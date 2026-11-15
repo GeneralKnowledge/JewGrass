@@ -6,7 +6,7 @@
 Writes OUT_ROOT/<slug>/design-v<N>/ (default OUT_ROOT: build/design):
   caption.txt   the caption
   lyrics.txt    lyrics with each section tag carrying its arrangement cue, e.g. [verse - guitar and bass only]
-  meta.env      SLUG, BPM, KEY, TIMESIG, SECONDS (gen.py reads BAND_KEY / BAND_TIMESIG)
+  meta.env      SLUG, BPM, KEY, TIMESIG, SECONDS (gen-design.py reads BAND_KEY / BAND_TIMESIG; gen.py ignores them)
   run.sh        the exact laptop command for one seed
 
 Only needs PyYAML. Checks the things that have bitten us before.
@@ -30,6 +30,23 @@ def compile_design(path, out_root="build/design"):
         problems.append("seconds should be 30-300 (one pass on the laptop)")
     if str(r["timesig"]) not in ("2", "3", "4", "6"):
         problems.append("timesig must be 2, 3, 4 or 6 (ACE-Step codes)")
+
+    # Phrases that ACE-Step renders as hiss or static (blind A/B, Nov 14): keep them out of captions and tags.
+    banned = ["crackl", "gramophone", "vinyl", "tape hiss", "hiss", "static", "lo-fi", "lofi", "raw mix",
+              "typewriter clacks", "radio noise", "white noise", "glitch noise"]
+    # Words that turned songs into circus music (round 2, Nov 14).
+    banned += ["circus", "calliope", "oompah", "tuba", "pizzicato", "woodblock", "marching", "military", "fanfare",
+               "comic", "theatrical", "ridiculous", "playful", "cheeky", "pompous", "regal", "whimsical", "brass band",
+               "gavel", "desk bell"]
+    alltext = (caption + " " + " ".join(s["tag"] for s in d["sections"])).lower()
+    # Too-clean wording (Reuben, 15 Nov: "the pure clean instruments is a bad thing"). Whole words only,
+    # so "unpolished" is still allowed.
+    for w in ["clean", "crisp", "polished", "pristine", "glossy", "hi-fi", "pure"]:
+        if re.search(rf"\b{w}\b", alltext):
+            problems.append(f"too-clean word '{w}' (Reuben wants a gritty, saturated sound)")
+    for b in banned:
+        if b in alltext:
+            problems.append(f"banned phrase '{b}' (renders as static)")
 
     blocks = []
     for s in d["sections"]:
@@ -58,7 +75,7 @@ def compile_design(path, out_root="build/design"):
         'cd "$(dirname "$0")"\n'
         "seed=${1:?seed}\n"
         f"BAND_KEY='{r['key']}' BAND_TIMESIG={r['timesig']} \\\n"
-        f"  flock ~/band/.gpu.lock ~/band/heavy.sh ~/band/gen.sh caption.txt lyrics.txt {r['seconds']} \"$seed\" "
+        f"  flock ~/band/.gpu.lock ~/band/heavy.sh ~/band/gen-design.sh caption.txt lyrics.txt {r['seconds']} \"$seed\" "
         f"{name}-s$seed {r['bpm']}\n"
     )
     os.chmod(os.path.join(out, "run.sh"), 0o755)

@@ -1,0 +1,689 @@
+# Natural Capital: every track, machine-readable, for the laptop.
+# status: generate = make it (two takes, keep the better); existing = already made;
+#         voice = spoken voicemail for Reuben's voice, skip; pending = lyrics not written yet.
+# seconds is the target length (all <= 260 so nothing should OOM). The two skits are short on purpose.
+# queue = the order to generate in, strongest songs first; album order is n.
+# Story and notes: docs/natural-capital.md
+album: Natural Capital
+queue:
+- bought-and-sold
+- natural-capital
+- fast-lane
+- brass-plate
+- exit-strategy
+- sunshine-trust
+- ermine-and-ink
+- gavs-song
+- parcel-of-rogues
+- viewing
+tracks:
+- n: 1
+  slug: parcel-of-rogues
+  title: Parcel of Rogues
+  status: generate
+  batch: 1
+  seconds: 90
+  bpm: 70
+  caption: |
+    cinematic spoken word prologue, solo Highland bagpipe lament, howling wind, deep calm Scottish male narrator, slow and grave, low drone, distant church bell, sparse heartbeat kick drum, the bagpipe gradually swallowed by glitching stock ticker beeps and digital noise, ends on a sudden silence, 70 bpm
+  lyrics: |
+    [intro]
+
+    [verse]
+    We're bought and sold for English gold.
+    Such a parcel of rogues in a nation.
+    Robert Burns wrote that in seventeen ninety-one.
+    He was talking about the men who signed us away.
+
+    [verse]
+    Sixteen ninety-eight. A swamp in Panama.
+    A country's savings, gone.
+    Seventeen-oh-seven. A parliament, sold.
+    Eighteen-twenty. The glens, emptied for sheep.
+    Nineteen seventy-four. The oil, counted, and hidden.
+
+    [verse]
+    Twenty twenty-six.
+    A glen. A fund. A letterbox in Glasgow.
+    They don't burn the roofs now.
+    They just send you the receipt.
+
+    [outro]
+    This is Natural Capital.
+- n: 2
+  slug: viewing
+  title: Viewing by Appointment Only
+  status: generate
+  batch: 1
+  seconds: 60
+  bpm: 90
+  caption: |
+    solo Highland bagpipe lament on a windy hillside, abruptly cut off, cheesy estate agent hold music, soft electric piano, smooth corporate muzak, cheerful English male voiceover, spoken word, tape warble, glitch stutter ending, no drums
+  lyrics: |
+    [intro]
+    (solo bagpipe lament, wind, cut off mid-phrase by hold music)
+
+    Hello and welcome to Glen Corran.
+    Forty thousand acres of unspoilt Highland,
+    very lightly peopled.
+    To your left, a loch. Fishing rights included.
+    To your right, a village. Not included,
+    but very quiet, we're told.
+    Sporting estate, wonderful views,
+    and tremendous natural capital.
+    Viewing by appointment only.
+    Offers over... well. Make us an offer.
+
+    [outro]
+    (hold music slows, skips, glitches into silence)
+- n: 3
+  slug: deed-to-the-glen
+  title: Deed to the Glen
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
+- n: 4
+  slug: voicemail-sold
+  title: 'Voicemail: They''ve Sold It'
+  status: voice
+  note: Spoken voicemail for Reuben's own voice later; text in docs/natural-capital.md. Do not generate.
+- n: 5
+  slug: natural-capital
+  title: Natural Capital
+  status: generate
+  batch: 1
+  seconds: 260
+  bpm: 140
+  caption: |
+    dark glitch trap, slow build, minimal then huge, whispered close-mic English female spoken word, cool half-sung female vocal, sneering Scottish male rap features, chopped bagpipe drone used as a jingle, cheesy hold music sample, distorted 808 bass, crisp trap drums, champagne glass clinks, crowd applause, gang chant chorus, cinematic, raw mix
+  lyrics: |
+    [intro]
+    Thank you all for coming.
+    Do help yourselves to the salmon.
+    It's local. Everything here is local,
+    except the money.
+    Ladies and gentlemen... your future.
+
+    [verse]
+    I don't see a glen, I see a balance sheet
+    Bog and bracken, darling, that's a carbon receipt
+    Every inch of heather is a unit I can sell
+    Every drop of rain, I'll invoice that as well
+    Bought it off a laird who was tired of the cold
+    Paid him in pounds, and I'll sell it back in gold
+    Plant a little forest where no forest should grow
+    It doesn't have to live, it just has to look good on a slide show
+
+    [chorus]
+    Natural capital! (Ka-ching!)
+    Every hill is a bank and the deer can sing
+    Natural capital! (Sold!)
+    Greenest thing in Scotland and it's paved with gold
+    Natural capital!
+
+    [verse]
+    Doc Rory Mair, I'm the man with the stamp
+    Call a bog a forest and a puddle a swamp
+    Fee's in advance and the science is flexible
+    Planet's a client and the client's always delectable
+
+    I am the Grid Man. Wind blows, I win.
+    Wind stops, I win. Cable's full, I win.
+    Switch it off. Send the bill. Begin.
+
+    Hi guys, it's Tamsin! I'm literally obsessed
+    Beavers and a sauna and a forty-quid rest
+    Book the glamping pods while the locals are asleep
+    Wellness in the wilderness, the wilderness is cheap
+
+    And I'm just a humble peer with a word for the minister
+    Planning's a formality, the pylons aren't sinister
+    Paperwork's sorted and the hearing's adjourned
+    And the village? The village will be very concerned
+
+    [chorus]
+    Natural capital! (Ka-ching!)
+    Every hill is a bank and the deer can sing
+    Natural capital! (Sold!)
+    Greenest thing in Scotland and it's paved with gold
+    Natural capital!
+
+    [bridge]
+    They'll call it a land grab.
+    We call it a nature-based solution.
+    They'll call it a clearance.
+    We call it a transition.
+    Same glen. Same leaving.
+    Better branding.
+
+    [verse]
+    Tax relief in the morning, a grant by lunch
+    Credits by teatime, and that's just the brunch
+    Village wants houses? Well, so do the bees
+    Can't put a family where I put the trees
+    Ninety-nine years and a covenant tight
+    Hill's off limits to the walkers at night
+    And in five or six years when the numbers are done
+    I'll sell it again to the next one along
+
+    [chorus]
+    Natural capital! (Ka-ching!)
+    Every hill is a bank and the deer can sing
+    Natural capital! (Sold!)
+    Greenest thing in Scotland and it's paved with gold
+    Natural capital! Natural capital!
+
+    [outro]
+    Thank you so much. Do enjoy the views.
+    They're ours now.
+    Settlement's due Friday.
+- n: 6
+  slug: voicemail-companies
+  title: 'Voicemail: Four Hundred Companies'
+  status: voice
+  note: Spoken voicemail for Reuben's own voice later; text in docs/natural-capital.md. Do not generate.
+- n: 7
+  slug: brass-plate
+  title: Brass Plate
+  status: generate
+  batch: 2
+  seconds: 160
+  bpm: 150
+  caption: |
+    bouncy glitch trap, cheeky fast Glaswegian male rap, Scottish accent, playful patter, office sounds, stamp thuds and typewriter as percussion, filing cabinet drawer slams, chiptune bleeps, plucked banjo hook, tin whistle riff, distorted 808, rapid hi-hats, catchy chant chorus, comedic, raw mix, 150 bpm
+  lyrics: |
+    [intro]
+    Right, son. Name of the company? Disnae matter.
+    Name of the owner? Even less.
+    Sign there. Lovely. You're a business.
+
+    [verse]
+    Wee office in Glasgow up above a vape shop
+    Four hundred companies, the letters never stop
+    Brass plate, brass neck, rubber stamp, done
+    I can make ye a company before your tea's gone cauld, son
+    Partners in Belize and a partner in the Seychelles
+    Partner is a company that's a partner in itself
+    Who's the real owner? Pal, I never ask
+    I'm a postbox wi' a pension and I'm brilliant at my task
+    Billions went through here, every currency and flag
+    I didnae see a penny, just the fee and a fag
+    Moldova, Latvia, never been, nae idea
+    Cannae point to it on a map but it all came through here
+
+    [chorus]
+    Brass plate, brass plate, shiny on the door
+    Four hundred companies and room for a hundred more
+    Who owns the money? Nobody at all
+    Brass plate, brass plate, letterbox in the hall
+    Brass plate!
+
+    [verse]
+    Then the government woke up and they changed the rules
+    Wanted names and addresses, think we're all fools?
+    Fine, I'll write a name, it's a name I've been given
+    Name's in a trust and the trust is in Switzerland
+    Now a posh lady phones me from a fund down south
+    Wants a partnership quick, she's got a glen in her mouth
+    Carbon and acres and a laird to buy out
+    Partners are a who's who that nobody'll shout about
+    The oil man, the water man, the fella wi' the masks
+    All in the same envelope, nobody asks
+
+    [chorus]
+    Brass plate, brass plate, shiny on the door
+    Four hundred companies and room for a hundred more
+    Who owns the money? Nobody at all
+    Brass plate, brass plate, letterbox in the hall
+    Brass plate!
+
+    [outro]
+    Mind and keep your receipt. Actually, don't.
+    Filing's due Friday.
+- n: 8
+  slug: cold-hame
+  title: Cold Hame
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
+- n: 9
+  slug: fast-lane
+  title: Fast Lane
+  status: generate
+  batch: 2
+  seconds: 250
+  bpm: 145
+  caption: |
+    loud flashy UK trap banger, cocky English male rap, posh chancer voice, laughing ad-libs, revving sports car 808 slides, hard trap drums, rapid hi-hats, cash register samples, distorted banjo riff, Celtic fiddle stabs, nu metal guitars on the chorus, gang chant hook, glitch stutters, raw mix, 145 bpm
+  lyrics: |
+    [intro]
+    Hello? Yes, Minister. Of course, Minister.
+    How many? How many million?
+    Oh, I'm sure we can find some.
+
+    [verse]
+    Woke up Tuesday with a hangover and a hunch
+    Country's in a panic so I'm skipping lunch
+    Never sold a glove in my life, that's fine
+    Got a mate of a mate with a number on the line
+    Set up a company at half past three
+    By Friday it was worth a hundred million, see
+    Gowns in a warehouse that never got shipped
+    Masks with the loops that snapped when you slipped
+    Price went up when the people got scared
+    Nobody checked and nobody cared
+    Lorry full of boxes and the boxes full of air
+    Sign here, sign here, sign here, there
+
+    [chorus]
+    Fast lane, fast lane, wave me through
+    Skip the queue, the queue was for you
+    Fast lane, fast lane, cash in the boot
+    Panic pays better than a pinstripe suit
+    Fast lane!
+
+    [verse]
+    Nurses in bin bags on the evening news
+    I was in Mustique choosing yachts to cruise
+    Inquiry later? Darling, that's a decade
+    By the time they report, all the money's been made
+    Ten billion lost and they call it an error
+    I call it a bonus, the business of terror
+    Some of it's fraud and some of it's waste
+    And some of it's me with exquisite taste
+    Paid a little back so the headline would fade
+    Kept a bigger bit in a Scottish brigade
+    Of limited partners at a Glasgow address
+    Put the rest in a glen, cause the glen's a success
+
+    [chorus]
+    Fast lane, fast lane, wave me through
+    Skip the queue, the queue was for you
+    Fast lane, fast lane, cash in the boot
+    Panic pays better than a pinstripe suit
+    Fast lane!
+
+    [bridge]
+    Thank you for clapping on a Thursday night
+    Thank you for staying in and doing it right
+    Thank you for the money that you never got to see
+    It's planted on a hillside and it's growing for me
+
+    [breakdown]
+    Wave me through!
+    Wave me through!
+    Skip the queue!
+    Wave me through!
+
+    [verse]
+    Next time there's a crisis give us a ring
+    Floods or a war or a pandemic thing
+    I'll sell you the sandbags, I'll sell you the tents
+    I'll sell you the sorry and the lessons learnt since
+    Now I'm going green with a carbon estate
+    Same mates, same lane, same velvet gate
+    Don't call it greed, call it nimble supply
+    Every disaster's got a fella like I
+
+    [chorus]
+    Fast lane, fast lane, wave me through
+    Skip the queue, the queue was for you
+    Fast lane, fast lane, cash in the boot
+    Panic pays better than a pinstripe suit
+    Fast lane!
+
+    [outro]
+    Invoice due Friday.
+- n: 10
+  slug: swim-at-your-own-risk
+  title: Swim at Your Own Risk
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.
+- n: 11
+  slug: ermine-and-ink
+  title: Ermine and Ink
+  status: generate
+  batch: 2
+  seconds: 200
+  bpm: 92
+  caption: |
+    baroque harpsichord trap, pompous posh English male rap, aristocratic sneer, duet with a gravelly older male newsreader voice, typewriter and printing press as drums, string quartet stabs, brass fanfare, distorted 808, hard trap drums, rolling hi-hats, glitch cut-up headlines, regal chant chorus, satirical, raw mix, 92 bpm
+  lyrics: |
+    [intro]
+    Order, order.
+    The noble lord has the floor.
+    And the noble lord would like it carpeted.
+
+    [verse]
+    Gave the party half a million, now they call me lord
+    Red bench, ermine robe, and a seat on the board
+    Never been elected, never will, don't need
+    Write a cheque, wear a hat, then I vote on your feed
+    Planning for the pylons? Have a word in the lift
+    Licence for the carbon? Darling, consider it a gift
+    Dinner at the club with the minister's spad
+    Best four hundred quid that a democracy had
+
+    [chorus]
+    Ermine and ink, ermine and ink
+    We decide the news and the news decides what you think
+    Ermine and ink, ermine and ink
+    One holds the pen and the other holds the drink
+
+    [verse]
+    Press baron here, I own the morning view
+    Ten million readers and they're angry, who at? You
+    Crofters blocking progress, front page, bold
+    Greedy wee villagers, out in the cold
+    Never mention partners, never mention funds
+    Never print the island, print the small boats instead, chums
+    Spiked the girl's story with a phone call and a smile
+    Lord's my godson's godfather, it's been a while
+
+    [chorus]
+    Ermine and ink, ermine and ink
+    We decide the news and the news decides what you think
+    Ermine and ink, ermine and ink
+    One holds the pen and the other holds the drink
+
+    [bridge]
+    Rise for the lords, sit for the press
+    Pay for the honour and we'll do the rest
+    Rise for the lords, sit for the press
+    Pay for the honour and we'll do the rest
+
+    [outro]
+    Division's on Friday.
+    And it's in Friday's edition.
+- n: 12
+  slug: sunshine-trust
+  title: Sunshine Trust
+  status: generate
+  batch: 3
+  seconds: 230
+  bpm: 96
+  caption: |
+    silky smooth yacht lounge trap, sultry calm English female vocal, half sung half spoken, never raises her voice, soft Rhodes electric piano, warm nylon string guitar, gentle steel pan accents, seagulls and lapping waves, champagne clinks, deep clean 808, slow crisp trap drums, lazy hi-hats, faint glitch on the money lines, elegant and empty, 96 bpm
+  lyrics: |
+    [intro]
+    Welcome to the island. Do mind the step.
+    Nobody here owns anything.
+    That's rather the point.
+
+    [verse]
+    Palm trees and a harbour and a brass plate too
+    Thirty thousand companies and a population of a few
+    The trust owns the fund and the fund owns the glen
+    And the trust is owned by a foundation, and then
+    The foundation's owned by a purpose, not a man
+    Beneficiaries? Darling, catch me if you can
+    The profits sail in on a spreadsheet tide
+    Tax rate zero, and the tide's on my side
+
+    [chorus]
+    Sunshine trust, sunshine trust
+    Money comes to bask in the sun with us
+    Nothing's ever owed and nothing's ever taxed
+    Sunshine trust, lie back and relax
+
+    [verse]
+    Don't call it foreign, we fly the same flag
+    Same king on the coins in the Highland lad's bag
+    London says sorry and London says reform
+    Then sends us the paperwork to keep us all warm
+    The water man's dividend, the oil man's cut
+    The mask man's millions and the laird's old rut
+    All of it lands on a beach in the sea
+    British as a teapot, and it's taxed like a breeze
+
+    [chorus]
+    Sunshine trust, sunshine trust
+    Money comes to bask in the sun with us
+    Nothing's ever owed and nothing's ever taxed
+    Sunshine trust, lie back and relax
+
+    [bridge]
+    Somewhere there's a glen in the rain
+    Somewhere there's a school with a leak again
+    Somewhere there's a nurse on a bus at three
+    And none of it is anything to do with me
+
+    [chorus]
+    Sunshine trust, sunshine trust
+    Money comes to bask in the sun with us
+    Nothing's ever owed and nothing's ever taxed
+    Sunshine trust, lie back and relax
+
+    [outro]
+    Nothing's due. Ever.
+- n: 13
+  slug: bought-and-sold
+  title: Bought and Sold
+  status: generate
+  batch: 1
+  seconds: 260
+  bpm: 82
+  caption: |
+    dark political hip hop with Celtic country trap, hard boom bap drums switching to heavy trap, distorted 808 bass, angry precise male rap, Scottish accent, solo bagpipe lament in the intro, banjo and fiddle loops, nu metal guitars on the chorus, haunting female vocal bridge, gang chant chorus, raw mix, 82 bpm
+  lyrics: |
+    [intro]
+    They tell ye it's new. It's no new.
+    Sit doon. This is the long version.
+
+    [verse]
+    Sixteen ninety-eight, a nation bet the lot
+    On a swamp in Panama, a colony that rot
+    Fever in the tents and the ships came hame light
+    A fortune in the mud and a country in a fright
+    So the men wi' the money took a cheque to sign away
+    Called it the Equivalent, a lovely word for pay
+    Parliament adjourned and the pens went to work
+    The crowds in the street, and the lords did the smirk
+    They paid back the shareholders, the bonnet lairds were sorted
+    The ploughman got nothing but the news when it reported
+    Three hundred years later, same suit, different cloth
+    A glen for a carbon cheque, a land for a loss
+
+    [chorus]
+    Bought and sold! (Bought and sold!)
+    For somebody else's gold!
+    Same glen, same leaving, better branding on the deed
+    Bought and sold! (Bought and sold!)
+    And the story's never told
+    They don't burn the roofs now, they just send ye the receipt
+
+    [verse]
+    Next came the sheep, the factor wi' the torch
+    Families on the shore wi' a Bible and a porch
+    No porch, just the beach, and the boats to the west
+    Forty thousand acres for a hundred-sheep rest
+    Now the glens are empty and they call it a view
+    Wild land, wilderness, it was full of people too
+    And the same estates now are a portfolio line
+    Rewilding a hill that was cleared the first time
+    Plant a sitka forest on the bones of a croft
+    Sell the air above it to a firm in a loft
+    Ye can't buy a hoose in the glen where ye were born
+    But a fund in the Capital can buy it every morn
+
+    [chorus]
+    Bought and sold! (Bought and sold!)
+    For somebody else's gold!
+    Same glen, same leaving, better branding on the deed
+    Bought and sold! (Bought and sold!)
+    And the story's never told
+    They don't burn the roofs now, they just send ye the receipt
+
+    [verse]
+    Seventy-four, a report on the oil
+    Said Scotland's rich, so they buried it in foil
+    Thirty years secret, while the platforms pumped
+    And the pits shut down and the shipyards slumped
+    Now a letterbox in Glasgow holds four hundred names
+    A brass plate company for anybody's games
+    Billions through partnerships nobody would own
+    Till the regulators noticed it and changed the tone
+    Ten point nine billion gone in the panic years
+    Fast lane contracts, slow lane tears
+    And the profit takes a yacht to a sunny British rock
+    Where the trust owns the trust and the clock's got no clock
+
+    [bridge]
+    Fareweel to a' our Scottish fame
+    Fareweel our ancient glory
+    We were bought and sold, we were bought and sold
+    And they're telling us the same old story
+
+    [breakdown]
+    Who owns the hill? (Not you!)
+    Who owns the water? (Not you!)
+    Who owns the oil? (Not you!)
+    Who owns the law? (Not you!)
+    Who owns the hill?
+    (We will.)
+
+    [outro]
+    They didnae need a war this time.
+    Just a form, a fund, and an address in Glasgow.
+    Next track.
+- n: 14
+  slug: gavs-song
+  title: Gav's Song
+  status: generate
+  batch: 3
+  seconds: 240
+  bpm: 76
+  caption: |
+    slow acoustic bluegrass ballad, tired cracked Scottish male vocal, heartfelt and ashamed, fingerpicked acoustic guitar, mournful fiddle, soft upright bass, brushed snare, lap steel, sparse and intimate, solo Highland bagpipe slow air only in the final chorus, subtle tape hiss, gentle glitch fade at the end, 76 bpm
+  lyrics: |
+    [intro]
+
+    [verse]
+    I was born at the foot of the hill
+    Learned to fish where the water's still
+    My granda walked me up the brae
+    Said this is yours, son, come what may
+    Then the laird sold out and a lady came
+    Wi' a London smile and a hi-vis name
+    Said Gav, we need a local face
+    To keep the walkers in their place
+
+    [chorus]
+    So I locked the gate on my own hill
+    I took their wage, I'm taking it still
+    I turned away the folk I know
+    From the hill my granda told me so
+    Lord forgive the gate I keep
+    I'm a shepherd now that's selling sheep
+
+    [verse]
+    Wee Ewan came by wi' his flask and his dog
+    I told him the path was closed for the bog
+    He looked at me like I'd died
+    And I suppose that some of me had, inside
+    They planted trees where the trees won't grow
+    I watched them yellow in the first hard snow
+    And every month the money came
+    From an island I cannae even name
+
+    [chorus]
+    So I locked the gate on my own hill
+    I took their wage, I'm taking it still
+    I turned away the folk I know
+    From the hill my granda told me so
+    Lord forgive the gate I keep
+    I'm a shepherd now that's selling sheep
+
+    [bridge]
+    There's a box in the office, there's a key on my chain
+    There's every name and number, there's every hidden gain
+    And Morag's at the paper and Ewan's at the door
+    And I'm no a hero, but I cannae do this anymore
+
+    [chorus]
+    So I opened up the gate on my own hill
+    I gave them the papers, I'm shaking still
+    Let the walkers come, let the village know
+    The hill my granda told me so
+    Lord forgive the years I keep
+    I was a shepherd, selling sheep
+
+    [outro]
+    Gate's open.
+- n: 15
+  slug: exit-strategy
+  title: Exit Strategy
+  status: generate
+  batch: 3
+  seconds: 260
+  bpm: 130
+  caption: |
+    dark epic cinematic trap, slow menacing build, whispered close-mic English female spoken word, panicked overlapping male voices on a conference call, sneering Scottish male rap, cool half-sung female vocal, heavy nu metal guitars and screamed gang chant chorus, distorted 808, glitch stutters, slowed broken hold music sample, church organ, solo bagpipe drone in the final chorus, huge raw mix, 130 bpm
+  lyrics: |
+    [intro]
+    You are now joining the call.
+    Is everyone on? Lovely.
+    Has anyone seen the paper this morning?
+
+    [verse]
+    Front page, my face, the glen and the trees
+    The fund, the partners, the brass plate fees
+    The oil man's shouting, the water man's sweating
+    The mask man's laughing, the lord's forgetting
+    "I never met her", "I don't recall"
+    "My office handles it", "not me at all"
+    Calm down, darlings, breathe, sit tight
+    This was always the plan for a Friday night
+
+    [chorus]
+    Bought and sold! Bought and sold!
+    Sell it on before it's cold
+    Bought and sold! Bought and sold!
+    Every scandal's worth its weight in gold
+    Exit! Exit! Exit strategy!
+
+    [verse]
+    The reporter's a lassie from a glen up north
+    Her brother's on the phone saying she's coming forth
+    With paperwork leaked by a lad on the payroll
+    Gav? Gav, you idiot, you've lost us the whole
+    No. We've lost nothing. Listen to me
+    Scandal's just a discount for the next buyer's fee
+    There's a fund in New York and a fund in Dubai
+    And a pension in Ontario that doesn't ask why
+
+    [verse]
+    Did you think there'd be handcuffs? Did you think there'd be jail?
+    Did you think that a story was the end of the sale?
+    Nobody's charged, nobody's named
+    Committee will meet and the system gets blamed
+    Sold it on Thursday at a forty percent
+    Paid it offshore to the island it went
+    The trees are still dead and the houses still dear
+    And all of us here will be richer next year
+
+    [chorus]
+    Bought and sold! Bought and sold!
+    Sell it on before it's cold
+    Bought and sold! Bought and sold!
+    Every scandal's worth its weight in gold
+    Exit! Exit! Exit strategy!
+
+    [bridge]
+    Thank you all for joining.
+    The glen is no longer our concern.
+    The village wants to buy it? How sweet.
+    Let them. At market value.
+    Settlement's due Friday.
+
+    [breakdown]
+    Bought and sold!
+    Bought and sold!
+    Bought and sold!
+    Bought and sold!
+
+    [outro]
+    You have left the call.
+- n: 16
+  slug: we-bought-the-hill
+  title: We Bought the Hill
+  status: existing
+  note: Already made; lyrics in docs/lyrics.md. Do not regenerate.

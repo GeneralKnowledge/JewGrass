@@ -83,7 +83,7 @@ The money-trail motif: in each villain's song, one line says where "the pound" g
 
 **6. Voicemail: "Four Hundred Companies"** (0:50). Ewan has looked up the buyer: a partnership registered at a Glasgow letterbox above a vape shop, shared with four hundred other companies. Morag is starting to listen. *Beat:* the money trail begins.
 
-**7. Brass Plate** (2:40). Malky the formation agent: "I can make you a company before your tea's gone cold." He doesn't ask who the partners are, and he's very proud of it. *Beat:* how anonymous money hides in plain sight, in Scotland.
+**7. Brass Plate** (DROPPED 14 Nov: cut from the album; the letterbox story is carried by the voicemail before it and by *Bought and Sold*). (2:40). Malky the formation agent: "I can make you a company before your tea's gone cold." He doesn't ask who the partners are, and he's very proud of it. *Beat:* how anonymous money hides in plain sight, in Scotland.
 
 **8. Cold Hame** (3:30, existing). One of the partners: the oil boss. *Beat:* the first big investor, energy bills into land.
 
