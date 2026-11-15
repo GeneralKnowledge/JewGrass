@@ -35,7 +35,7 @@ the_moment: >-
 
 sections:
   - name: intro
-    tag: intro - ominous vocal chop and distorted low piano, no drums
+    tag: intro - vocal chop and distorted low piano, voice straight in
     bars: 4
     performer: rook
     lyrics: |
@@ -143,13 +143,14 @@ sections:
       Shoulders don't drop, head don't crack
       All of it's mine and I can't put it back
   - name: outro
-    tag: outro - vocal chop and 808 only, hard stop
+    tag: outro - all three voices, vocal chop and 808 only, hard stop
     bars: 4
-    performer: rook
+    performer: all three
     lyrics: |
-      Weight of it
+      Weight of it, weight of it
+      All of it's mine and I can't put it back
 
-ending: The vocal chop and one last 808 slide, then a hard stop on beat 1. No fade.
+ending: The last hook lines over the vocal chop and one last 808 slide, then a hard stop on beat 1. No fade.
 
 caption: >-
   144 bpm, C minor, the hardest track, ominous chopped vocal sample, distorted low piano, aggressive sliding

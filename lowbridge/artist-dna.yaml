@@ -66,14 +66,15 @@ production_rules:
   - Build energy with transitions, drops and instrumental changes, not by stacking layers.
   - Each song has one planned "moment" (a dropout, a new bass movement) written into its section tags.
 
-# Words that must stay out of captions and section tags: they made ACE-Step add hiss on earlier songs.
-avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi]
+# Words that must stay out of captions and section tags (JewGrass lessons, Nov 14): noise words added hiss/static,
+# circus and oom-pah instruments took over, and "clean polished mix" made instruments stick out instead of blending.
+avoid_in_captions: [static, hiss, crackle, crackling, vinyl, tape, gramophone, typewriter, radio noise, white noise, texture, ambience, atmosphere, rain, lo-fi, tuba, pizzicato, woodblock, marching, oom-pah, circus, comic, theatrical, polished, clean mix]
 
 caption_core: >-
   UK drill, dark minimal British road rap, cold and stripped back, half-time drill groove,
   skippy syncopated hi-hats, sharp dry snare, tight kick, deep sliding 808 bass with deliberate gaps,
-  minor-key piano loop, sparse bells, dry close upfront male rap vocals with British accents,
-  space and silence between hits, clean hard-hitting mix
+  minor-key piano loop, dry close upfront male rap vocals with British accents,
+  space and silence between hits, warm cohesive blended mix with a hard-hitting low end
 
 writing_rules:
   - Specific and believable: a named stop, a price, a time, an object. No stock lines.
@@ -81,7 +82,9 @@ writing_rules:
   - No glorifying violence, no weapons talk, no real people or real places. Southmere and everything in it is invented.
   - Consequences, not bragging. Pressure, loyalty and money are told from the inside.
   - One line per bar in verses (a 16-bar verse is 16 lines). Hooks repeat a short phrase.
-  - No spoken outros (they don't come through). No lines fully in brackets (the pipeline strips them).
+  - Songs start straight in (voice within the first bars, no long instrumental intro) and end sung (no spoken outros, they don't come through).
+  - No lines fully in brackets (the pipeline strips them).
+  - Few named instruments per song: piano, 808 and drums, plus at most one colour (bells, vocal chop or reversed swell).
 
 mix_targets:
   loudness: about -9 LUFS integrated, true peak -1 dBTP
@@ -103,7 +106,7 @@ variation_rules:
 pilot_acceptance:
   group_identity: all three songs sound like the same act
   member_identity: you can tell the three performers apart
-  production: cold, clean, powerful drill instrumentals
+  production: cold, blended, powerful drill instrumentals
   lyrics: specific, believable, memorable
   hooks: at least one genuinely memorable hook per song
   arrangement: each track has a different musical identity
