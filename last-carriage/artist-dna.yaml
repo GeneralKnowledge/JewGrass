@@ -17,7 +17,7 @@ premise: >-
 
 # What the seed mix actually measured (librosa on the friend's mix; tempos are estimates, not heard by a person).
 seed_analysis:
-  length: 19:04, one continuous piece with several clean breaks and drops
+  length: 19:04, one continuous piece with several sharp breaks and drops
   key_path: D minor drone -> B/G# minor area -> F minor -> E minor (heaviest) -> F# minor (clearest key) ->
     E/D# minor (busiest) -> E/D# minor (arpeggios) -> back to D minor at the end
   tempo_estimates: 107-118 bpm in most grooves, one half-time stretch around 76 (152), one around 136, the
@@ -42,7 +42,7 @@ feel:
 palette:
   melody: dark distorted gliding synth leads, slow lonely noir piano, a mournful saxophone only in breakdowns, a dark synth arpeggio
   guitars: down-tuned heavily distorted guitars, palm-muted chugs locked to the kick, power chords at the peaks
-  percussion: huge pounding industrial drums, heavy kick, gated snare, half-time in the heavy tracks, a steady
+  percussion: huge pounding industrial drums, heavy kick, hard snare, half-time in the heavy tracks, a steady
     eighth-note pulse that stands in for the rails (written into drums, bass and guitar chugs, never as sound effects)
   bass: crushing distorted synth bass over deep sub-bass, gliding 808 under it
   voice: none in v2 (the hum was dropped for the saxophone)
@@ -78,7 +78,7 @@ families:
     feel: slow and crushing, the climb
     caption: >-
       half-time sludge and industrial metal, crushing down-tuned fuzz guitars, overdriven synth bass, huge
-      dirty pounding drums, slow gated snare, deep sub-bass, dark menacing distorted synth chords
+      dirty pounding drums, slow hard snare, deep sub-bass, dark menacing distorted synth chords
   glide:
     feel: driving and dark, still melodic
     caption: >-
@@ -99,8 +99,9 @@ families:
 # hiss words below, which put a noise bed over everything on Nov 14.
 caption_core: >-
   instrumental, crushingly heavy and dark, industrial metal meets dark electronic, raw gritty and saturated,
-  everything driven hard into distortion, down-tuned fuzz guitars, overdriven synth bass, dirty pounding drums,
-  deep sub-bass, menacing minor key, forward motion, abrasive grimy wall of sound with every part blended together
+  everything driven hard into distortion, thick saturated down-tuned fuzz guitars, overdriven synth bass,
+  hard-hitting live-sounding dirty drums, deep sub-bass, menacing minor key, forward motion, raw and heavy and
+  not over-produced, abrasive grimy wall of sound with every part blended together
 
 # Learned Nov 14: these words put hiss or static over whole songs.
 avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere, field recording, train, railway, whistle, announcement]
@@ -108,7 +109,7 @@ avoid_in_tags: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, t
 # Learned Nov 14: these gave the circus / oom-pah sound (Brass Plate).
 banned_instruments: [tuba, pizzicato, woodblock, marching snare, oom-pah, circus, comic, theatrical, kazoo, accordion, brass band]
 # Learned Nov 14: "clean polished" made instruments stick out. Ask for a blended mix instead.
-banned_mix_words: [clean, polished, crisp, pristine, bright, uplifting]
+banned_mix_words: [clean, polished, crisp, pristine, glossy, bright, uplifting, symphonic, orchestral, epic, cinematic, overproduced]
 # Reuben's touchstones are described, never named in captions, titles or tags.
 banned_names: [doom, odst, halo]
 

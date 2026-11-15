@@ -18,7 +18,7 @@ palette:
   guitars: down-tuned distorted guitar swells under the arpeggio, chugs in the full section
   bed: deep dark synth pads that grow slowly
   bass: distorted synth bass on the root, long notes, no glides
-  drums: heavy steady kick, gated snare on 4 in the second half
+  drums: heavy steady kick, hard snare on 4 in the second half
   left_out: voice, any lead other than the arpeggio, anything bright
 
 harmony: Em - Cmaj7 - G - D, two bars each; the last eight bars move to Dm to set up End of the Line.
@@ -36,7 +36,7 @@ sections:
     bars: 16
     performer: none
   - name: full
-    tag: instrumental, guitar chugs, gated snare on four, arpeggio over two octaves, heaviest point
+    tag: instrumental, guitar chugs, hard snare on four, arpeggio over two octaves, heaviest point
     bars: 16
     performer: none
   - name: thinning
