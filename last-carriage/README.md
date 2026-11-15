@@ -27,6 +27,12 @@ Reuben heard round 1 and asked for heavier, darker instruments. The sound is now
 never named; build.py rejects the names. Round 2 seeds: 2411/2412, 2511/2512, 2811/2812, to project files
 last-carriage/round2/.
 
+## v3 (Nov 15): heavier and grittier
+
+Reuben liked v2 but found it too clean after the anti-hiss work. Grit now comes from distortion and saturation
+words (raw, gritty, saturated, overdriven, fuzz, dirty, grimy, abrasive, wall of sound) in the caption core and
+families. The hiss words stay banned. Round 3 seeds: 2421/2422, 2521/2522, 2821/2822, to last-carriage/round3/.
+
 ## Rules carried over from Nov 14
 
 No crackle/hiss/static/vinyl/tape/radio words; no "train" or "railway" words either (they may pull in sound

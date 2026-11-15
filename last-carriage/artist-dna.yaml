@@ -77,27 +77,30 @@ families:
   heavy:
     feel: slow and crushing, the climb
     caption: >-
-      half-time industrial metal, crushing down-tuned distorted guitars, distorted synth bass, huge pounding
-      drums, slow gated snare, deep sub-bass, dark menacing synth chords
+      half-time sludge and industrial metal, crushing down-tuned fuzz guitars, overdriven synth bass, huge
+      dirty pounding drums, slow gated snare, deep sub-bass, dark menacing distorted synth chords
   glide:
     feel: driving and dark, still melodic
     caption: >-
-      dark driving industrial metal, palm-muted down-tuned guitar chugs on eighth notes, distorted gliding synth
-      lead, pounding drums, distorted synth bass, slow lonely noir piano in the quiet parts
+      dark driving industrial metal, heavy palm-muted down-tuned guitar chugs on eighth notes, overdriven gliding
+      synth lead, dirty pounding drums, saturated synth bass, slow lonely noir piano in the quiet parts
   pulse:
     feel: hypnotic and grim
     caption: >-
-      dark industrial electronic, fast menacing synth arpeggio, heavy steady kick, distorted synth bass,
-      down-tuned guitar swells, deep dark synth pads
+      dark industrial electronic, fast menacing overdriven synth arpeggio, heavy distorted kick, saturated synth
+      bass, down-tuned fuzz guitar swells, deep dark synth pads
   drift:
     feel: between stations, lonely and noir
     caption: >-
       slow dark noir, lonely minor piano, mournful saxophone, deep sub-bass swells, low distorted guitar drones
 
+# v3 (Nov 15, Reuben): "heavier, and our work to get rid of noise has made it way too clean". The grit comes back
+# through distortion and saturation words (overdriven, fuzz, saturated, raw, dirty, grimy, abrasive), never the
+# hiss words below, which put a noise bed over everything on Nov 14.
 caption_core: >-
-  instrumental, heavy and dark, industrial metal meets dark electronic, down-tuned distorted guitars, distorted
-  synth bass, pounding drums, deep sub-bass, menacing minor key, forward motion, warm cohesive mix with every
-  part blended together, powerful but controlled low end
+  instrumental, crushingly heavy and dark, industrial metal meets dark electronic, raw gritty and saturated,
+  everything driven hard into distortion, down-tuned fuzz guitars, overdriven synth bass, dirty pounding drums,
+  deep sub-bass, menacing minor key, forward motion, abrasive grimy wall of sound with every part blended together
 
 # Learned Nov 14: these words put hiss or static over whole songs.
 avoid_in_captions: [static, hiss, crackle, crackling, vinyl, cassette, gramophone, typewriter, white noise, noise, lo-fi, radio, tape, texture, ambience, atmosphere, field recording, train, railway, whistle, announcement]
@@ -130,6 +133,8 @@ acceptance:
   cleanliness: no hiss, static or crackle; no circus instruments
   repeatability: a second take keeps the same identity
 
+round3:
+  why: v3 heavier and grittier (Reuben, Nov 15 13:02). Seeds 2421/2422, 2521/2522, 2821/2822. v1/v2 takes kept.
 round2:
   why: v2 heavier and darker (Reuben, Nov 15). Seeds 2411/2412, 2511/2512, 2811/2812. v1 takes stay in round1.
 round1:
