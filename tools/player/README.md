@@ -40,8 +40,23 @@ Standard library Python only, so nothing is installed. Then in Soundscape, Liste
 |---|---|
 | `GET /api/library` | `{"songs": [{slug, title, act, actTitle, takes, updated, pick, pickLabel, rated}]}`, newest first. `?fresh` rescans now (otherwise every 20 s) |
 | `GET /api/song?slug=S` | `{slug, title, act, actTitle, pick, takes: [{id, file, label, run, mtime, seed, model, seconds, bpm, key, caption, lyrics, lufs, stars, note}]}` |
+| `GET /api/catalog` | everything the phone's library needs at once: `{version: 1, artists: [{id, name, artwork}], albums: [{id, title, artist, artwork}], tracks: [{slug, title, artist, album, number, artwork, pick, updated, takes: [as in /api/song]}]}`. An act is an artist, and its songs are one album numbered in `catalog.json`'s order. `?fresh` rescans now |
 | `GET /audio/<file>` | the audio, with `Range` support |
+| `GET /art/<file>` | artwork found under `~/band/artwork` (only files listed in the catalog) |
 | `POST /api/pick` | body `{song, take, pick?: true/false, stars?: 0-5, note?: "..."}`; returns the song's saved entry |
+
+## Artwork (optional)
+
+Put JPEG or PNG pictures under `~/band/artwork/` and they show in Soundscape's library:
+
+| File | Shows on |
+|---|---|
+| `<act>/artist.jpg` | the artist (an act, such as `after-hours`) |
+| `<act>/album.jpg` | the act's album |
+| `<act>/<song slug>.jpg` | one song |
+| `<song slug>.jpg` | a song with no act |
+
+Pictures chosen on the phone win over these. With neither, the phone draws a coloured stand-in.
 
 ## Running it all the time (optional)
 

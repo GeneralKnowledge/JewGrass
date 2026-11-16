@@ -14,6 +14,10 @@ anyone (or any Claude thread) can read to learn which take you chose.
 Loudness matching for A/B: each file's integrated loudness is measured once with ffmpeg (nice 19, idle I/O,
 one file at a time) and cached in ~/band/.player/loudness.json. While a heavy job holds ~/band/.gpu.lock,
 only the takes of the song you have open are measured.
+
+GET /api/catalog answers with everything the phone's library needs at once: artists (acts), albums and
+tracks with their takes. Artwork is optional, as JPEG or PNG under ~/band/artwork: <act>/artist.jpg,
+<act>/album.jpg, <act>/<song slug>.jpg, or <song slug>.jpg for a song with no act.
 """
 
 import argparse
@@ -29,9 +33,10 @@ import threading
 import time
 from collections import deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from urllib.parse import parse_qs, unquote, urlparse
+from urllib.parse import parse_qs, quote, unquote, urlparse
 
 AUDIO_EXTS = [".mp3", ".m4a", ".flac", ".wav", ".ogg", ".opus"]  # preference order when one take has several
+ART_EXTS = [".jpg", ".jpeg", ".png"]
 DEFAULT_DIRS = ["kaggle/runs", "songs", "outputs"]
 DEFAULT_SKIP = ["10-analysis", "20-stems", "__pycache__", "tmp", "models", "model"]
 mimetypes.add_type("audio/mp4", ".m4a")
@@ -352,13 +357,14 @@ class App:
         self.loud = Loudness(self.band, os.path.join(state, "loudness.json"), measure)
         self.catalog_path = catalog
         self.act_titles = act_titles
-        self._songs, self._at = None, 0
+        self._songs, self._at, self._catalog = None, 0, {}
         self._scan_lock = threading.Lock()
 
     def songs(self, fresh=False):
         with self._scan_lock:
             if fresh or self._songs is None or time.time() - self._at > 20:
                 catalog = load_catalog(self.catalog_path) if self.catalog_path else {}
+                self._catalog = catalog
                 self._songs = scan(self.band, self.dirs, self.skip, catalog)
                 self._at = time.time()
                 self.loud.want([t["file"] for s in self._songs.values() for t in s["takes"]])
@@ -401,6 +407,72 @@ class App:
         return {"slug": slug, "title": self.title(s), "act": s.get("act"), "actTitle": s.get("actTitle"),
                 "pick": p.get("pick"), "takes": takes}
 
+    def catalog(self, fresh=False):
+        """Everything for the phone's library in one answer: artists (acts), albums, and tracks with their takes.
+
+        An act is an artist and its songs one album, named after the act unless catalog.json's "albums" names it,
+        numbered in catalog.json's order. Artwork comes from ~/band/artwork (see artwork())."""
+        songs = self.songs(fresh)
+        cat = self._catalog or {}
+        acts = cat.get("acts", {})
+        album_titles = cat.get("albums", {})
+        order = {slug: i for i, slug in enumerate(cat.get("songs", {}))}
+        art = self.artwork()
+        picks = self.picks.load()["songs"]
+        used = sorted({s["act"] for s in songs.values() if s.get("act")})
+        artists = [{"id": a, "name": acts.get(a, a), "artwork": art.get(f"{a}/artist")} for a in used]
+        albums = [{"id": a, "title": album_titles.get(a) or acts.get(a, a), "artist": a,
+                   "artwork": art.get(f"{a}/album")} for a in used]
+        tracks = []
+        for slug, s in songs.items():
+            act = s.get("act")
+            p = self.song_picks(picks, slug, s)
+            takes = []
+            for t in s["takes"]:
+                mine = p.get("takes", {}).get(t["id"], {})
+                takes.append(dict(t, lufs=self.loud.get(t["file"]), stars=mine.get("stars", 0),
+                                  note=mine.get("note", "")))
+            tracks.append({"slug": slug, "title": s["title"], "artist": act, "album": act,
+                           "artwork": art.get(f"{act}/{slug}" if act else slug),
+                           "pick": p.get("pick"), "updated": s["updated"], "takes": takes,
+                           "_order": order.get(slug, len(order))})
+        # number each album's tracks in catalog order (then newest first for songs the catalog doesn't list)
+        tracks.sort(key=lambda t: (t["album"] or "", t["_order"], -t["updated"], t["slug"]))
+        counters = {}
+        for t in tracks:
+            del t["_order"]
+            if t["album"]:
+                counters[t["album"]] = counters.get(t["album"], 0) + 1
+                t["number"] = counters[t["album"]]
+            else:
+                t["number"] = None
+        return {"version": 1, "artists": artists, "albums": albums, "tracks": tracks,
+                "measuring": self.loud.enabled}
+
+    def artwork(self):
+        """{"<act>/artist" | "<act>/album" | "<act>/<slug>" | "<slug>": "/art/<path>"} from ~/band/artwork."""
+        top = os.path.join(self.band, "artwork")
+        found = {}
+        if not os.path.isdir(top):
+            return found
+        for root, subdirs, files in os.walk(top, followlinks=False):
+            subdirs[:] = sorted(d for d in subdirs if not d.startswith("."))
+            for f in sorted(files):
+                stem, ext = os.path.splitext(f)
+                if ext.lower() not in ART_EXTS or stem.startswith("."):
+                    continue
+                rel = os.path.relpath(os.path.join(root, f), top).replace(os.sep, "/")
+                key = os.path.splitext(rel)[0]
+                found.setdefault(key, "/art/" + quote(rel))
+        return found
+
+    def art_path(self, rel):
+        """The file for /art/<rel>, only if artwork() lists it."""
+        rel = unquote(rel)
+        if "/art/" + quote(rel) in self.artwork().values():
+            return os.path.join(self.band, "artwork", rel)
+        return None
+
     def title(self, s):
         """'AFTER HOURS · One More Night', so the phone's flat song list still shows the act."""
         if self.act_titles and s.get("actTitle"):
@@ -442,8 +514,12 @@ def make_handler(app):
             elif u.path == "/api/song":
                 s = app.song(q.get("slug", [""])[0])
                 self._json(s) if s else self._json({"error": "no such song"}, 404)
+            elif u.path == "/api/catalog":
+                self._json(app.catalog(fresh="fresh" in q))
             elif u.path.startswith("/audio/"):
                 self._audio(u.path[len("/audio/"):])
+            elif u.path.startswith("/art/"):
+                self._art(u.path[len("/art/"):])
             else:
                 self._json({"error": "not found"}, 404)
 
@@ -467,6 +543,19 @@ def make_handler(app):
                 self._json({"ok": True, "song": song})
             except (ValueError, TypeError) as e:
                 self._json({"error": str(e)}, 400)
+
+        def _art(self, rel):
+            full = app.art_path(rel)
+            if not full or not os.path.isfile(full):
+                return self._json({"error": "not found"}, 404)
+            with open(full, "rb") as f:
+                body = f.read()
+            self.send_response(200)
+            self.send_header("Content-Type", mimetypes.guess_type(full)[0] or "application/octet-stream")
+            self.send_header("Cache-Control", "private, max-age=300")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
 
         def _audio(self, rel, head=False):
             full = app.audio_path(rel)
