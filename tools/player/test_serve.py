@@ -94,6 +94,63 @@ class LibraryTest(unittest.TestCase):
             srv.shutdown()
 
 
+class CatalogTest(unittest.TestCase):
+    def setUp(self):
+        self.band = tempfile.mkdtemp()
+        b = self.band
+        for run, slug, seed in [("20261114-2004", "swim-at-your-own-risk", 8101),
+                                ("20261115-1635", "nc-swim-at-your-own-risk", 1501),
+                                ("20261115-1635", "ah-one-more-night", 1501)]:
+            r = f"{b}/kaggle/runs/{run}/renders/{slug}"
+            touch(f"{r}/{slug}-{seed}-xl-turbo.mp3")
+            json.dump({"slug": slug, "title": slug, "seed": seed, "model": "xl-turbo"},
+                      open(f"{r}/{slug}-{seed}-xl-turbo.json", "w"))
+        touch(f"{b}/outputs/swim-len240-5555.wav")
+        self.catalog = f"{b}/catalog.json"
+        json.dump({"acts": {"natural-capital": "Natural Capital", "after-hours": "AFTER HOURS"},
+                   "songs": {"nc-swim-at-your-own-risk": {"title": "Swim at Your Own Risk", "act": "natural-capital",
+                                                          "aliases": ["swim-at-your-own-risk", "swim"]},
+                             "ah-one-more-night": {"title": "One More Night", "act": "after-hours", "aliases": []}}},
+                  open(self.catalog, "w"))
+
+    def tearDown(self):
+        shutil.rmtree(self.band)
+
+    def test_old_slugs_join_their_song(self):
+        songs = serve.scan(self.band, serve.DEFAULT_DIRS, serve.DEFAULT_SKIP, serve.load_catalog(self.catalog))
+        self.assertEqual(sorted(songs), ["ah-one-more-night", "nc-swim-at-your-own-risk"])
+        swim = songs["nc-swim-at-your-own-risk"]
+        self.assertEqual((swim["title"], swim["act"], swim["actTitle"]),
+                         ("Swim at Your Own Risk", "natural-capital", "Natural Capital"))
+        self.assertEqual(sorted(t["label"] for t in swim["takes"]),
+                         ["seed 1501 · xl-turbo · run 20261115-1635", "seed 8101 · xl-turbo · run 20261114-2004",
+                          "swim-len240-5555"])
+        # one run only: no run in the label
+        self.assertEqual([t["label"] for t in songs["ah-one-more-night"]["takes"]], ["seed 1501 · xl-turbo"])
+
+    def test_act_in_titles_and_old_picks_kept(self):
+        app = serve.App(self.band, serve.DEFAULT_DIRS, serve.DEFAULT_SKIP, measure=False, catalog=self.catalog)
+        app.picks.update("swim", "outputs/swim-len240-5555", pick=True, stars=5)  # saved before the catalog
+        lib = {x["slug"]: x for x in app.library()["songs"]}
+        swim = lib["nc-swim-at-your-own-risk"]
+        self.assertEqual((swim["title"], swim["actTitle"]), ("Natural Capital · Swim at Your Own Risk", "Natural Capital"))
+        self.assertEqual((swim["pick"], swim["rated"]), ("outputs/swim-len240-5555", 1))
+        plain = serve.App(self.band, serve.DEFAULT_DIRS, serve.DEFAULT_SKIP, measure=False, catalog=self.catalog,
+                          act_titles=False)
+        self.assertEqual(plain.song("ah-one-more-night")["title"], "One More Night")
+
+    def test_no_catalog_is_fine(self):
+        self.assertEqual(serve.load_catalog(f"{self.band}/missing.json"), {})
+        songs = serve.scan(self.band, serve.DEFAULT_DIRS, serve.DEFAULT_SKIP, {})
+        self.assertIn("swim", songs)
+
+    def test_repo_catalog_is_valid(self):
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalog.json")
+        index = serve.catalog_index(serve.load_catalog(path))
+        self.assertEqual(index["swim"][0], "nc-swim-at-your-own-risk")
+        self.assertEqual(index["ah-one-more-night"][0], "ah-one-more-night")
+
+
 class HelpersTest(unittest.TestCase):
     def test_range(self):
         self.assertIsNone(serve.parse_range(None, 100))
