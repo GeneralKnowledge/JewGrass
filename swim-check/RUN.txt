@@ -1,0 +1,15 @@
+JewGrass Kaggle run, 2026-11-16 08:15 UTC, 0.2 GPU hours, Tesla T4, 15360 MiB x2
+settings: JOB=render TRACKS_YAML=baseline-run/swim-check.yaml TRACKS=queue TAKES=2 FIRST_SEED=8001 SEEDS={'swim-check': [5555, 1601, 1602]} DIT_MODELS=['turbo'] RENDER_FIRST=[{'tracks_yaml': 'baseline-run/swim-check.yaml', 'tracks': 'queue', 'seeds': {'swim-check': [5555]}, 'models': ['xl-turbo']}] VOICE_MODEL=reuben VOICE_EPOCHS=250
+
+renders/swim-check/swim-check-1601.json                           0.0 MB
+renders/swim-check/swim-check-1601.mp3                            9.2 MB
+renders/swim-check/swim-check-1601.wav                           43.9 MB
+renders/swim-check/swim-check-1602.json                           0.0 MB
+renders/swim-check/swim-check-1602.mp3                            9.2 MB
+renders/swim-check/swim-check-1602.wav                           43.9 MB
+renders/swim-check/swim-check-5555-xl-turbo.json                  0.0 MB
+renders/swim-check/swim-check-5555-xl-turbo.mp3                   9.2 MB
+renders/swim-check/swim-check-5555-xl-turbo.wav                  43.9 MB
+renders/swim-check/swim-check-5555.json                           0.0 MB
+renders/swim-check/swim-check-5555.mp3                            9.2 MB
+renders/swim-check/swim-check-5555.wav                           43.9 MB
