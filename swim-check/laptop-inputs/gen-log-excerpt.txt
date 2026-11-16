@@ -1,0 +1,18 @@
+BAND settings: FP32_COMPUTE=True DIT_DIRECT=True OFFLOAD_DIT=False ATTN=sdpa
+Main model: /home/red/band/ACE-Step-1.5/checkpoints/acestep-v15-turbo
+LOAD_SECONDS=136.4 VRAM_ALLOC_GB=4.46
+2026-11-14 00:35:22.555 | INFO     | acestep.inference:generate_music:662 - [generate_music] LLM usage decision: thinking=False, use_cot_caption=False, use_cot_language=False, use_cot_metas=False, need_lm_for_cot=False, llm_initialized=False, use_lm=False
+2026-11-14 00:35:22.626 | INFO     | acestep.core.generation.handler.generate_music:generate_music:313 - [generate_music] Turbo model detected: overriding guidance_scale 7.0 -> 1.0 (turbo does not use CFG).
+- bpm: 140
+- keyscale: N/A
+- duration: 240 seconds
+2026-11-14 00:36:25.538 | INFO     | acestep.models.common.dcw_correction:__init__:98 - [DCW] Active — mode=double, scaler=0.0500, high_scaler=0.0200, wavelet='haar'
+2026-11-14 00:37:07.765 | DEBUG    | acestep.core.generation.handler.generate_music_decode:_prepare_generate_music_decode_state:64 - [generate_music] pred_latents: torch.Size([1, 6000, 64]), dtype=torch.float32
+2026-11-14 00:37:10.056 | INFO     | acestep.core.generation.handler.generate_music_decode:_decode_generate_music_pred_latents:127 - [generate_music] Decoding latents with VAE...
+2026-11-14 00:37:10.384 | DEBUG    | acestep.core.generation.handler.generate_music_decode:_decode_generate_music_pred_latents:136 - [generate_music] Before VAE decode: allocated=4.81GB, max=5.66GB
+2026-11-14 00:37:10.404 | INFO     | acestep.core.generation.handler.generate_music_decode:_decode_generate_music_pred_latents:154 - [generate_music] Effective free VRAM before VAE decode: 1.03 GB
+2026-11-14 00:37:10.404 | INFO     | acestep.core.generation.handler.generate_music_decode:_decode_generate_music_pred_latents:172 - [generate_music] Using tiled VAE decode to reduce VRAM usage...
+2026-11-14 00:38:09.720 | DEBUG    | acestep.core.generation.handler.generate_music_decode:_decode_generate_music_pred_latents:193 - [generate_music] After VAE decode: allocated=4.97GB, max=5.66GB
+PEAK_VRAM_TORCH_GB=5.66
+LOAD_SECONDS=136.4 GEN_SECONDS=178.3
+OUTPUT=/home/red/band/outputs/swim-at-your-own-risk-5555.wav BYTES=46080078

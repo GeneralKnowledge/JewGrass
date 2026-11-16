@@ -1,0 +1,2 @@
+NVIDIA GeForce GTX 1060 with Max-Q Design SMs 10 torch 2.10.0+cu126
+seed 5555 first5 [0.306745, 0.830241, 0.004785, -1.3394, 0.274049] mean -0.000998 sha256 272d6e3a8d125402

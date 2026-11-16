@@ -1,0 +1,16 @@
+{
+  "caption": "dark underground country trap, Scottish accent, sneering satirical villain rap, raw banjo riff, distorted sliding 808 bass, hard trap drums, rapid hi-hats, glitch production, stuttering vocal chops, Scottish fiddle, bagpipe drone, nu metal guitars on the chorus, gang chant chorus, smug corporate spoken intro, sweet psalm-like female vocal on the bridge, raw unpolished mix",
+  "lyrics_file": "/home/red/band/swim-lyrics.txt",
+  "seconds": 240,
+  "seed": 5555,
+  "bpm": 140,
+  "band_settings": {
+    "BAND_FP32_COMPUTE": "1",
+    "BAND_DIT_DIRECT": "1",
+    "BAND_OFFLOAD_DIT": "0",
+    "BAND_ATTN": "sdpa"
+  },
+  "load_seconds": 136.4,
+  "gen_seconds": 178.3,
+  "peak_vram_torch_gb": 5.66
+}
