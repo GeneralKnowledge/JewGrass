@@ -14,6 +14,10 @@ anyone (or any Claude thread) can read to learn which take you chose.
 Loudness matching for A/B: each file's integrated loudness is measured once with ffmpeg (nice 19, idle I/O,
 one file at a time) and cached in ~/band/.player/loudness.json. While a heavy job holds ~/band/.gpu.lock,
 only the takes of the song you have open are measured.
+
+GET /api/catalog answers with everything the phone's library needs at once: artists (acts), albums and
+tracks with their takes. Artwork is optional, as JPEG or PNG under ~/band/artwork: <act>/artist.jpg,
+<act>/album.jpg, <act>/<song slug>.jpg, or <song slug>.jpg for a song with no act.
 """
 
 import argparse
@@ -29,9 +33,10 @@ import threading
 import time
 from collections import deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from urllib.parse import parse_qs, unquote, urlparse
+from urllib.parse import parse_qs, quote, unquote, urlparse
 
 AUDIO_EXTS = [".mp3", ".m4a", ".flac", ".wav", ".ogg", ".opus"]  # preference order when one take has several
+ART_EXTS = [".jpg", ".jpeg", ".png"]
 DEFAULT_DIRS = ["kaggle/runs", "songs", "outputs"]
 DEFAULT_SKIP = ["10-analysis", "20-stems", "__pycache__", "tmp", "models", "model"]
 mimetypes.add_type("audio/mp4", ".m4a")
@@ -81,9 +86,32 @@ def run_label(rel_path):
     return m.group(1) if m else ""
 
 
-def scan(band, dirs, skip):
-    """Return {song: {"title", "takes": [...]}} for every audio file under band/<dirs>."""
+def load_catalog(path):
+    """catalog.json (build_catalog.py): {"acts": {act: name}, "songs": {slug: {title, act, aliases}}}, or {}."""
+    try:
+        data = read_json(path)
+        return data if isinstance(data, dict) and isinstance(data.get("songs"), dict) else {}
+    except (OSError, ValueError):
+        return {}
+
+
+def catalog_index(catalog):
+    """{slug or alias: (canonical slug, entry)} from a loaded catalog."""
+    index = {}
+    for slug, entry in (catalog or {}).get("songs", {}).items():
+        index[slug] = (slug, entry)
+        for alias in entry.get("aliases") or []:
+            index.setdefault(alias, (slug, entry))
+    return index
+
+
+def scan(band, dirs, skip, catalog=None):
+    """Return {song: {"title", "takes": [...]}} for every audio file under band/<dirs>.
+
+    With a catalog, takes rendered under an older slug join their song, and each song gets its act and title."""
     skip = set(skip)
+    index = catalog_index(catalog)
+    acts = (catalog or {}).get("acts", {})
     found = {}  # rel path without extension -> {ext: full path}
     for d in dirs:
         top = os.path.join(band, d)
@@ -113,8 +141,15 @@ def scan(band, dirs, skip):
                 meta = {}
         st = os.stat(full)
         key = song_key(rel + ext, meta)
+        key, entry = index.get(key, (key, None))
         song = songs.setdefault(key, {"slug": key, "title": key, "takes": []})
-        if meta.get("title"):
+        if entry:
+            song["title"] = entry.get("title") or song["title"]
+            song["aliases"] = list(entry.get("aliases") or [])
+            if entry.get("act"):
+                song["act"] = entry["act"]
+                song["actTitle"] = acts.get(entry["act"], entry["act"])
+        elif meta.get("title") and song["title"] == key:
             song["title"] = str(meta["title"])
         song["takes"].append({
             "id": rel,
@@ -134,10 +169,11 @@ def scan(band, dirs, skip):
     for song in songs.values():
         song["takes"].sort(key=lambda t: (t["mtime"], t["id"]))
         song["updated"] = max(t["mtime"] for t in song["takes"])
-        # same-labelled takes from different Kaggle runs: add the run to tell them apart
+        # takes from more than one Kaggle run (or a run and the laptop): add the run to tell them apart
+        runs = {t["run"] for t in song["takes"]}
         labels = [t["label"] for t in song["takes"]]
         for t in song["takes"]:
-            if labels.count(t["label"]) > 1 and t["run"]:
+            if t["run"] and (len(runs) > 1 or labels.count(t["label"]) > 1):
                 t["label"] += f" · run {t['run']}"
     return songs
 
@@ -311,7 +347,7 @@ def parse_range(header, size):
 
 
 class App:
-    def __init__(self, band, dirs, skip, measure=True):
+    def __init__(self, band, dirs, skip, measure=True, catalog=None, act_titles=True):
         self.band = os.path.abspath(os.path.expanduser(band))
         self.dirs = dirs
         self.skip = skip
@@ -319,24 +355,40 @@ class App:
         os.makedirs(state, exist_ok=True)
         self.picks = Picks(os.path.join(self.band, "picks.json"))
         self.loud = Loudness(self.band, os.path.join(state, "loudness.json"), measure)
-        self._songs, self._at = None, 0
+        self.catalog_path = catalog
+        self.act_titles = act_titles
+        self._songs, self._at, self._catalog = None, 0, {}
         self._scan_lock = threading.Lock()
 
     def songs(self, fresh=False):
         with self._scan_lock:
             if fresh or self._songs is None or time.time() - self._at > 20:
-                self._songs = scan(self.band, self.dirs, self.skip)
+                catalog = load_catalog(self.catalog_path) if self.catalog_path else {}
+                self._catalog = catalog
+                self._songs = scan(self.band, self.dirs, self.skip, catalog)
                 self._at = time.time()
                 self.loud.want([t["file"] for s in self._songs.values() for t in s["takes"]])
             return self._songs
+
+    @staticmethod
+    def song_picks(picks, slug, s):
+        """The song's saved picks, including any saved under an old slug before the catalog joined them."""
+        merged = {"pick": None, "takes": {}}
+        for key in list(reversed(s.get("aliases", []))) + [slug]:
+            p = picks.get(key) or {}
+            merged["takes"].update(p.get("takes") or {})
+            if p.get("pick"):
+                merged["pick"] = p["pick"]
+        return merged
 
     def library(self, fresh=False):
         picks = self.picks.load()["songs"]
         out = []
         for slug, s in self.songs(fresh).items():
-            p = picks.get(slug, {})
+            p = self.song_picks(picks, slug, s)
             pick = p.get("pick")
-            out.append({"slug": slug, "title": s["title"], "takes": len(s["takes"]), "updated": s["updated"],
+            out.append({"slug": slug, "title": self.title(s), "act": s.get("act"), "actTitle": s.get("actTitle"),
+                        "takes": len(s["takes"]), "updated": s["updated"],
                         "pick": pick, "pickLabel": next((t["label"] for t in s["takes"] if t["id"] == pick), None),
                         "rated": sum(1 for t in s["takes"] if p.get("takes", {}).get(t["id"], {}).get("stars"))})
         out.sort(key=lambda x: -x["updated"])
@@ -347,12 +399,85 @@ class App:
         if not s:
             return None
         self.loud.want([t["file"] for t in s["takes"]], urgent=True)
-        p = self.picks.load()["songs"].get(slug, {})
+        p = self.song_picks(self.picks.load()["songs"], slug, s)
         takes = []
         for t in s["takes"]:
             mine = p.get("takes", {}).get(t["id"], {})
             takes.append(dict(t, lufs=self.loud.get(t["file"]), stars=mine.get("stars", 0), note=mine.get("note", "")))
-        return {"slug": slug, "title": s["title"], "pick": p.get("pick"), "takes": takes}
+        return {"slug": slug, "title": self.title(s), "act": s.get("act"), "actTitle": s.get("actTitle"),
+                "pick": p.get("pick"), "takes": takes}
+
+    def catalog(self, fresh=False):
+        """Everything for the phone's library in one answer: artists (acts), albums, and tracks with their takes.
+
+        An act is an artist and its songs one album, named after the act unless catalog.json's "albums" names it,
+        numbered in catalog.json's order. Artwork comes from ~/band/artwork (see artwork())."""
+        songs = self.songs(fresh)
+        cat = self._catalog or {}
+        acts = cat.get("acts", {})
+        album_titles = cat.get("albums", {})
+        order = {slug: i for i, slug in enumerate(cat.get("songs", {}))}
+        art = self.artwork()
+        picks = self.picks.load()["songs"]
+        used = sorted({s["act"] for s in songs.values() if s.get("act")})
+        artists = [{"id": a, "name": acts.get(a, a), "artwork": art.get(f"{a}/artist")} for a in used]
+        albums = [{"id": a, "title": album_titles.get(a) or acts.get(a, a), "artist": a,
+                   "artwork": art.get(f"{a}/album")} for a in used]
+        tracks = []
+        for slug, s in songs.items():
+            act = s.get("act")
+            p = self.song_picks(picks, slug, s)
+            takes = []
+            for t in s["takes"]:
+                mine = p.get("takes", {}).get(t["id"], {})
+                takes.append(dict(t, lufs=self.loud.get(t["file"]), stars=mine.get("stars", 0),
+                                  note=mine.get("note", "")))
+            tracks.append({"slug": slug, "title": s["title"], "artist": act, "album": act,
+                           "artwork": art.get(f"{act}/{slug}" if act else slug),
+                           "pick": p.get("pick"), "updated": s["updated"], "takes": takes,
+                           "_order": order.get(slug, len(order))})
+        # number each album's tracks in catalog order (then newest first for songs the catalog doesn't list)
+        tracks.sort(key=lambda t: (t["album"] or "", t["_order"], -t["updated"], t["slug"]))
+        counters = {}
+        for t in tracks:
+            del t["_order"]
+            if t["album"]:
+                counters[t["album"]] = counters.get(t["album"], 0) + 1
+                t["number"] = counters[t["album"]]
+            else:
+                t["number"] = None
+        return {"version": 1, "artists": artists, "albums": albums, "tracks": tracks,
+                "measuring": self.loud.enabled}
+
+    def artwork(self):
+        """{"<act>/artist" | "<act>/album" | "<act>/<slug>" | "<slug>": "/art/<path>"} from ~/band/artwork."""
+        top = os.path.join(self.band, "artwork")
+        found = {}
+        if not os.path.isdir(top):
+            return found
+        for root, subdirs, files in os.walk(top, followlinks=False):
+            subdirs[:] = sorted(d for d in subdirs if not d.startswith("."))
+            for f in sorted(files):
+                stem, ext = os.path.splitext(f)
+                if ext.lower() not in ART_EXTS or stem.startswith("."):
+                    continue
+                rel = os.path.relpath(os.path.join(root, f), top).replace(os.sep, "/")
+                key = os.path.splitext(rel)[0]
+                found.setdefault(key, "/art/" + quote(rel))
+        return found
+
+    def art_path(self, rel):
+        """The file for /art/<rel>, only if artwork() lists it."""
+        rel = unquote(rel)
+        if "/art/" + quote(rel) in self.artwork().values():
+            return os.path.join(self.band, "artwork", rel)
+        return None
+
+    def title(self, s):
+        """'AFTER HOURS · One More Night', so the phone's flat song list still shows the act."""
+        if self.act_titles and s.get("actTitle"):
+            return f"{s['actTitle']} · {s['title']}"
+        return s["title"]
 
     def audio_path(self, rel):
         """The file for /audio/<rel>, only if it is a take we listed (no wandering around the disk)."""
@@ -389,8 +514,12 @@ def make_handler(app):
             elif u.path == "/api/song":
                 s = app.song(q.get("slug", [""])[0])
                 self._json(s) if s else self._json({"error": "no such song"}, 404)
+            elif u.path == "/api/catalog":
+                self._json(app.catalog(fresh="fresh" in q))
             elif u.path.startswith("/audio/"):
                 self._audio(u.path[len("/audio/"):])
+            elif u.path.startswith("/art/"):
+                self._art(u.path[len("/art/"):])
             else:
                 self._json({"error": "not found"}, 404)
 
@@ -414,6 +543,19 @@ def make_handler(app):
                 self._json({"ok": True, "song": song})
             except (ValueError, TypeError) as e:
                 self._json({"error": str(e)}, 400)
+
+        def _art(self, rel):
+            full = app.art_path(rel)
+            if not full or not os.path.isfile(full):
+                return self._json({"error": "not found"}, 404)
+            with open(full, "rb") as f:
+                body = f.read()
+            self.send_response(200)
+            self.send_header("Content-Type", mimetypes.guess_type(full)[0] or "application/octet-stream")
+            self.send_header("Cache-Control", "private, max-age=300")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
 
         def _audio(self, rel, head=False):
             full = app.audio_path(rel)
@@ -464,8 +606,12 @@ def main():
     ap.add_argument("--bind", default="0.0.0.0", help="address to listen on; use the Tailscale address to keep it off the LAN")
     ap.add_argument("--port", type=int, default=8642)
     ap.add_argument("--no-loudness", action="store_true", help="don't measure loudness (A/B is then not matched)")
+    ap.add_argument("--catalog", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalog.json"),
+                    help="songs, acts and old slugs (default: catalog.json next to this script; missing is fine)")
+    ap.add_argument("--plain-titles", action="store_true", help="don't put the act in front of song titles")
     a = ap.parse_args()
-    app = App(a.band, [d for d in a.dirs.split(",") if d], [s for s in a.skip.split(",") if s], not a.no_loudness)
+    app = App(a.band, [d for d in a.dirs.split(",") if d], [s for s in a.skip.split(",") if s], not a.no_loudness,
+              catalog=a.catalog, act_titles=not a.plain_titles)
     n = sum(len(s["takes"]) for s in app.songs().values())
     print(f"{n} takes in {len(app.songs())} songs under {app.band}")
     print(f"in Soundscape, Listen, set the server to http://{'<laptop tailscale address>' if a.bind == '0.0.0.0' else a.bind}:{a.port}")

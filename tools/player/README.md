@@ -18,6 +18,13 @@ Standard library Python only, so nothing is installed. Then in Soundscape, Liste
 - **Groups them by song**: the slug in the take's `.json` sidecar (Kaggle renders), otherwise the song folder
   (`songs/<slug>/60-master/x.wav` belongs to `<slug>`), otherwise the file name without its `-seed` ending.
   The sidecar's title, seed, model, caption and lyrics go to the phone.
+- **Joins old slugs and shows the act** using `catalog.json` (next to `serve.py`; copy it with the script).
+  The baseline run renamed Natural Capital's songs (`swim-at-your-own-risk` became `nc-swim-at-your-own-risk`),
+  so without it the album-xl takes, the baseline takes and the laptop's original Swim would be three songs; with
+  it they are one, and A/B works across them. Titles read `AFTER HOURS · One More Night` (`--plain-titles` to
+  drop the act). When a song has takes from more than one run, each label says its run. Picks saved under an
+  old slug still show. Rebuild it after adding an act or song:
+  `python3 tools/player/build_catalog.py baseline-run/tracks.yaml baseline-run/sources/*.yaml` (needs PyYAML).
 - **Saves picks** to `~/band/picks.json`: for each song, the chosen take and each take's stars (0 to 5) and
   note. `pick` is the take's path under `~/band` without the extension, for example
   `kaggle/runs/20261115-2100/renders/gavs-song/gavs-song-7202`. Read this file to find out what Reuben picked.
@@ -31,10 +38,25 @@ Standard library Python only, so nothing is installed. Then in Soundscape, Liste
 
 | Request | Answer |
 |---|---|
-| `GET /api/library` | `{"songs": [{slug, title, takes, updated, pick, pickLabel, rated}]}`, newest first. `?fresh` rescans now (otherwise every 20 s) |
-| `GET /api/song?slug=S` | `{slug, title, pick, takes: [{id, file, label, run, mtime, seed, model, seconds, bpm, key, caption, lyrics, lufs, stars, note}]}` |
+| `GET /api/library` | `{"songs": [{slug, title, act, actTitle, takes, updated, pick, pickLabel, rated}]}`, newest first. `?fresh` rescans now (otherwise every 20 s) |
+| `GET /api/song?slug=S` | `{slug, title, act, actTitle, pick, takes: [{id, file, label, run, mtime, seed, model, seconds, bpm, key, caption, lyrics, lufs, stars, note}]}` |
+| `GET /api/catalog` | everything the phone's library needs at once: `{version: 1, artists: [{id, name, artwork}], albums: [{id, title, artist, artwork}], tracks: [{slug, title, artist, album, number, artwork, pick, updated, takes: [as in /api/song]}]}`. An act is an artist, and its songs are one album numbered in `catalog.json`'s order. `?fresh` rescans now |
 | `GET /audio/<file>` | the audio, with `Range` support |
+| `GET /art/<file>` | artwork found under `~/band/artwork` (only files listed in the catalog) |
 | `POST /api/pick` | body `{song, take, pick?: true/false, stars?: 0-5, note?: "..."}`; returns the song's saved entry |
+
+## Artwork (optional)
+
+Put JPEG or PNG pictures under `~/band/artwork/` and they show in Soundscape's library:
+
+| File | Shows on |
+|---|---|
+| `<act>/artist.jpg` | the artist (an act, such as `after-hours`) |
+| `<act>/album.jpg` | the act's album |
+| `<act>/<song slug>.jpg` | one song |
+| `<song slug>.jpg` | a song with no act |
+
+Pictures chosen on the phone win over these. With neither, the phone draws a coloured stand-in.
 
 ## Running it all the time (optional)
 
