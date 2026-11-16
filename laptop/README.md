@@ -42,6 +42,7 @@ layout below. Secrets and IP addresses have been removed.
 | `tools/produce.py` | Full stem-based production pass: Demucs stems, measured per-stem processing, vocal doubles and octave, sidechain, gentler master, report. Config example in `songs/deed-to-the-glen/` |
 | `systemd/claude-remote-control.service` | Optional user unit so Remote Control restarts by itself (written, not enabled) |
 | `systemd/wifi-powersave-off.sh` | Optional, needs sudo, not applied: turn Wi-Fi power saving off |
+| `systemd/take-server.service` | Optional user unit that keeps the take server ([`../tools/player/`](../tools/player/README.md)) running |
 | `NOTES.md` | Standing preferences for new songs |
 | `songs/deed-to-the-glen/production-v1.config*.json` | `produce.py` config for Glen, and the sections it detected |
 | `songs/swim-at-your-own-risk/caption.txt` | Example caption. The lyrics are in [`docs/lyrics.md`](../docs/lyrics.md) |

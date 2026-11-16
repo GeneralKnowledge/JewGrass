@@ -1,0 +1,16 @@
+[Unit]
+Description=Take server for Soundscape's Listen tab (tools/player/serve.py)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/band/tools/player/serve.py --band %h/band --port 8642
+Nice=10
+IOSchedulingClass=idle
+MemoryMax=300M
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

@@ -5,6 +5,7 @@ Working docs for an original band in dark country trap, bluegrass and glitch.
 - [Local generation plan](docs/stage-2-local-option.md) (current, start with the smoke test)
 - [Video engine design](docs/video/video-engine.md) (music videos from finished songs: tool check, architecture, first milestone)
 - [Laptop pipeline](docs/laptop-pipeline.md) (how songs are generated, fixed, mastered, and the voice setup)
+- [Take server](tools/player/README.md) (play, compare and pick takes on the phone, in Soundscape's Listen tab)
 - [Voice recording script](docs/voice/recording-script.md)
 - [Open-source production ecosystem research](docs/research/open-source-music-production-ecosystem.md) (tools around ACE-Step, compatibility audit, roadmap)
 - [Stage 1: free Suno experiments](docs/stage-1-suno-plan.md) (done for now)
