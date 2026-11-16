@@ -1,0 +1,347 @@
+{
+ "note": "Built by tools/player/build_catalog.py. The take server groups every take whose slug is a song's slug or one of its aliases under that song, and shows the act.",
+ "acts": {
+  "natural-capital": "Natural Capital",
+  "book-of-names": "Book of Names",
+  "after-hours": "AFTER HOURS",
+  "mr-sidequest": "MR. SIDEQUEST",
+  "nightshift-fm": "NIGHTSHIFT FM",
+  "iron-canticle": "IRON CANTICLE",
+  "last-carriage": "LAST CARRIAGE",
+  "lowbridge": "LOWBRIDGE"
+ },
+ "songs": {
+  "ah-everybody-knows": {
+   "title": "Everybody Knows",
+   "act": "after-hours",
+   "aliases": []
+  },
+  "ah-if-you-were-here": {
+   "title": "If You Were Here",
+   "act": "after-hours",
+   "aliases": []
+  },
+  "ah-one-more-night": {
+   "title": "One More Night",
+   "act": "after-hours",
+   "aliases": []
+  },
+  "bon-all-rise": {
+   "title": "All Rise",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-book-of-names": {
+   "title": "Book of Names",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-confession": {
+   "title": "Confession",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-indulgences": {
+   "title": "Indulgences",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-judgment-day": {
+   "title": "Judgment Day",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-last-supper": {
+   "title": "Last Supper on Sabbath Cay",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-pilate": {
+   "title": "Pilate",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-redacted": {
+   "title": "Redacted",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-rose": {
+   "title": "Rose",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-sweetheart-deal": {
+   "title": "Sweetheart Deal",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-the-black-book": {
+   "title": "The Black Book",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-two-guards-asleep": {
+   "title": "Two Guards Asleep",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-voice-cell": {
+   "title": "Voice Note: Cell",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "bon-voice-helicopters": {
+   "title": "Voice Note: Helicopters",
+   "act": "book-of-names",
+   "aliases": []
+  },
+  "brass-plate": {
+   "title": "Brass Plate",
+   "act": "natural-capital",
+   "aliases": []
+  },
+  "canticle-candles-for-a-dead-sun": {
+   "title": "Candles for a Dead Sun",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-deserter": {
+   "title": "Deserter",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-engine-litany": {
+   "title": "Engine Litany",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-every-tenth-child": {
+   "title": "Every Tenth Child",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-prayer": {
+   "title": "Prayer",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-the-silent-court": {
+   "title": "The Silent Court",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-the-undercroft": {
+   "title": "The Undercroft",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-tithe-bell": {
+   "title": "Tithe Bell",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-trench-psalm": {
+   "title": "Trench Psalm",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "canticle-when-kingdoms-fall": {
+   "title": "When Kingdoms Fall",
+   "act": "iron-canticle",
+   "aliases": []
+  },
+  "cold-hame": {
+   "title": "Cold Hame",
+   "act": "natural-capital",
+   "aliases": []
+  },
+  "deed-to-the-glen": {
+   "title": "Deed to the Glen",
+   "act": "natural-capital",
+   "aliases": []
+  },
+  "lastcarriage-beattock": {
+   "title": "Beattock",
+   "act": "last-carriage",
+   "aliases": []
+  },
+  "lastcarriage-over-the-border": {
+   "title": "Over the Border",
+   "act": "last-carriage",
+   "aliases": []
+  },
+  "lastcarriage-rannoch": {
+   "title": "Rannoch",
+   "act": "last-carriage",
+   "aliases": []
+  },
+  "lowbridge-last-bus-home": {
+   "title": "Last Bus Home",
+   "act": "lowbridge",
+   "aliases": []
+  },
+  "lowbridge-no-signal": {
+   "title": "No Signal",
+   "act": "lowbridge",
+   "aliases": []
+  },
+  "lowbridge-weight-of-it": {
+   "title": "Weight of It",
+   "act": "lowbridge",
+   "aliases": []
+  },
+  "mr-sidequest-ive-got-a-system": {
+   "title": "I've Got a System",
+   "act": "mr-sidequest",
+   "aliases": []
+  },
+  "mr-sidequest-laughing-at-myself": {
+   "title": "Laughing at Myself",
+   "act": "mr-sidequest",
+   "aliases": []
+  },
+  "mr-sidequest-main-character-syndrome": {
+   "title": "Main Character Syndrome",
+   "act": "mr-sidequest",
+   "aliases": []
+  },
+  "nc-bought-and-sold": {
+   "title": "Bought and Sold",
+   "act": "natural-capital",
+   "aliases": [
+    "bought-and-sold"
+   ]
+  },
+  "nc-ermine-and-ink": {
+   "title": "Ermine and Ink",
+   "act": "natural-capital",
+   "aliases": [
+    "ermine-and-ink"
+   ]
+  },
+  "nc-exit-strategy": {
+   "title": "Exit Strategy",
+   "act": "natural-capital",
+   "aliases": [
+    "exit-strategy"
+   ]
+  },
+  "nc-fast-lane": {
+   "title": "Fast Lane",
+   "act": "natural-capital",
+   "aliases": [
+    "fast-lane"
+   ]
+  },
+  "nc-gavs-song": {
+   "title": "Gav's Song",
+   "act": "natural-capital",
+   "aliases": [
+    "gavs-song"
+   ]
+  },
+  "nc-natural-capital": {
+   "title": "Natural Capital",
+   "act": "natural-capital",
+   "aliases": [
+    "natural-capital"
+   ]
+  },
+  "nc-parcel-of-rogues": {
+   "title": "Parcel of Rogues",
+   "act": "natural-capital",
+   "aliases": [
+    "parcel-of-rogues"
+   ]
+  },
+  "nc-sunshine-trust": {
+   "title": "Sunshine Trust",
+   "act": "natural-capital",
+   "aliases": [
+    "sunshine-trust"
+   ]
+  },
+  "nc-swim-at-your-own-risk": {
+   "title": "Swim at Your Own Risk",
+   "act": "natural-capital",
+   "aliases": [
+    "swim-at-your-own-risk",
+    "swim",
+    "swim-check"
+   ]
+  },
+  "nc-viewing": {
+   "title": "Viewing by Appointment Only",
+   "act": "natural-capital",
+   "aliases": [
+    "viewing"
+   ]
+  },
+  "nightshift-baile-fantasma": {
+   "title": "Baile Fantasma",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-dead-channel": {
+   "title": "Dead Channel",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-ghost-ride": {
+   "title": "Ghost Ride",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-lost-transmission": {
+   "title": "Lost Transmission",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-no-reception": {
+   "title": "No Reception",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-overdrive": {
+   "title": "Overdrive",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-pressure": {
+   "title": "Pressure",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-redline": {
+   "title": "Redline",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-static-dreams": {
+   "title": "Static Dreams",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "nightshift-tuning-in": {
+   "title": "Tuning In",
+   "act": "nightshift-fm",
+   "aliases": []
+  },
+  "voicemail-companies": {
+   "title": "Voicemail: Four Hundred Companies",
+   "act": "natural-capital",
+   "aliases": []
+  },
+  "voicemail-sold": {
+   "title": "Voicemail: They've Sold It",
+   "act": "natural-capital",
+   "aliases": []
+  },
+  "we-bought-the-hill": {
+   "title": "We Bought the Hill",
+   "act": "natural-capital",
+   "aliases": []
+  }
+ }
+}
