@@ -53,6 +53,18 @@ class LibraryTest(unittest.TestCase):
         self.assertEqual(sorted(t["label"] for t in gav["takes"]), ["seed 7202", "seed 7202 · xl-turbo"])
         glen = songs["deed-to-the-glen"]["takes"]
         self.assertEqual([t["label"] for t in glen], ["pedalboard-v2 · master"])  # stems skipped
+        self.assertEqual({t["lrc"] for t in gav["takes"]}, {None})
+
+    def test_timed_lyrics_from_an_lrc_file_or_the_sidecar(self):
+        r = f"{self.band}/kaggle/runs/20261115-2100/renders/gavs-song"
+        with open(f"{r}/gavs-song-7202.lrc", "w") as f:
+            f.write("[00:12.00] [verse]\n[00:12.50] hello\n")
+        json.dump({"slug": "gavs-song", "seed": 7202, "model": "xl-turbo", "lrc": "[00:01.00] hi"},
+                  open(f"{r}/gavs-song-7202-xl-turbo.json", "w"))
+        takes = {t["label"]: t for t in serve.scan(self.band, serve.DEFAULT_DIRS, serve.DEFAULT_SKIP)
+                 ["gavs-song"]["takes"]}
+        self.assertEqual(takes["seed 7202"]["lrc"], "[00:12.00] [verse]\n[00:12.50] hello")
+        self.assertEqual(takes["seed 7202 · xl-turbo"]["lrc"], "[00:01.00] hi")
 
     def test_picks_round_trip(self):
         app = serve.App(self.band, serve.DEFAULT_DIRS, serve.DEFAULT_SKIP, measure=False)

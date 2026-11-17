@@ -46,6 +46,24 @@ mimetypes.add_type("audio/ogg", ".opus")
 
 # ---------------------------------------------------------------- library
 
+MAX_LRC_BYTES = 256 * 1024
+
+
+def timed_lyrics(path, meta):
+    """The take's timed lyrics in LRC form ("[01:23.40] One more night"): a .lrc file next to the audio, else
+    the sidecar's "lrc". None when there are none; the phone then shows the plain lyrics."""
+    if os.path.isfile(path) and os.path.getsize(path) <= MAX_LRC_BYTES:
+        try:
+            with open(path, encoding="utf-8", errors="replace") as f:
+                text = f.read().strip()
+            if text:
+                return text
+        except OSError:
+            pass
+    lrc = meta.get("lrc")
+    return lrc.strip() or None if isinstance(lrc, str) else None
+
+
 def read_json(path):
     with open(path) as f:
         return json.load(f)
@@ -165,6 +183,7 @@ def scan(band, dirs, skip, catalog=None):
             "key": meta.get("key"),
             "caption": meta.get("caption"),
             "lyrics": meta.get("lyrics"),
+            "lrc": timed_lyrics(os.path.join(band, rel + ".lrc"), meta),
         })
     for song in songs.values():
         song["takes"].sort(key=lambda t: (t["mtime"], t["id"]))
