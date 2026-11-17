@@ -26,6 +26,13 @@ ACTS = {
     "last-carriage": "LAST CARRIAGE",
     "lowbridge": "LOWBRIDGE",
 }
+# album titles where they differ from the act name (Soundscape shows these with the cover art)
+ALBUMS = {
+    "nightshift-fm": "Phantom Frequency",
+    "iron-canticle": "Candles for a Dead Sun",
+    "last-carriage": "Overnight North",
+    "lowbridge": "Under the Bridge",
+}
 # act prefixes the baseline run added to slugs that had none before
 PREFIXES = {"natural-capital": "nc-"}
 # slugs the take server makes up for takes without a sidecar, or one-off checks, that belong to a known song
@@ -68,6 +75,7 @@ def main(paths):
         "note": "Built by tools/player/build_catalog.py. The take server groups every take whose slug is a song's "
                 "slug or one of its aliases under that song, and shows the act.",
         "acts": ACTS,
+        "albums": ALBUMS,
         "songs": dict(sorted(songs.items())),
     }
     dest = os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalog.json")

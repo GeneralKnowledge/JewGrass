@@ -56,6 +56,10 @@ Put JPEG or PNG pictures under `~/band/artwork/` and they show in Soundscape's l
 | `<act>/<song slug>.jpg` | one song |
 | `<song slug>.jpg` | a song with no act |
 
+Covers for every act are made by `tools/art/covers.py` and committed in `tools/art/covers/` in this
+layout: `cp -r tools/art/covers/. ~/band/artwork/`. Album titles that differ from the act name are in
+`catalog.json`'s `albums`.
+
 Pictures chosen on the phone win over these. With neither, the phone draws a coloured stand-in.
 
 ## Running it all the time (optional)
