@@ -18,6 +18,9 @@ Standard library Python only, so nothing is installed. Then in Soundscape, Liste
 - **Groups them by song**: the slug in the take's `.json` sidecar (Kaggle renders), otherwise the song folder
   (`songs/<slug>/60-master/x.wav` belongs to `<slug>`), otherwise the file name without its `-seed` ending.
   The sidecar's title, seed, model, caption and lyrics go to the phone.
+  Timed lyrics go too: a `.lrc` file next to the take (`gavs-song-7202.lrc`, lines like `[01:23.40] One more
+  night`, section tags allowed as `[00:12.00] [verse]`), or an `"lrc"` field in the sidecar. The phone then
+  highlights the line being sung.
 - **Joins old slugs and shows the act** using `catalog.json` (next to `serve.py`; copy it with the script).
   The baseline run renamed Natural Capital's songs (`swim-at-your-own-risk` became `nc-swim-at-your-own-risk`),
   so without it the album-xl takes, the baseline takes and the laptop's original Swim would be three songs; with
@@ -39,7 +42,7 @@ Standard library Python only, so nothing is installed. Then in Soundscape, Liste
 | Request | Answer |
 |---|---|
 | `GET /api/library` | `{"songs": [{slug, title, act, actTitle, takes, updated, pick, pickLabel, rated}]}`, newest first. `?fresh` rescans now (otherwise every 20 s) |
-| `GET /api/song?slug=S` | `{slug, title, act, actTitle, pick, takes: [{id, file, label, run, mtime, seed, model, seconds, bpm, key, caption, lyrics, lufs, stars, note}]}` |
+| `GET /api/song?slug=S` | `{slug, title, act, actTitle, pick, takes: [{id, file, label, run, mtime, seed, model, seconds, bpm, key, caption, lyrics, lrc, lufs, stars, note}]}` |
 | `GET /api/catalog` | everything the phone's library needs at once: `{version: 1, artists: [{id, name, artwork}], albums: [{id, title, artist, artwork}], tracks: [{slug, title, artist, album, number, artwork, pick, updated, takes: [as in /api/song]}]}`. An act is an artist, and its songs are one album numbered in `catalog.json`'s order. `?fresh` rescans now |
 | `GET /audio/<file>` | the audio, with `Range` support |
 | `GET /art/<file>` | artwork found under `~/band/artwork` (only files listed in the catalog) |

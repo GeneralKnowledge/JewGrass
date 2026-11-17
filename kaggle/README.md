@@ -15,6 +15,7 @@ The laptop stays the place for quick tests, repaints, mastering, stems and video
 | `setup.sh` | Installs ACE-Step 1.5 and/or Applio on the Kaggle machine, same versions as the laptop (PyTorch 2.10, CUDA 12.6) |
 | `plan.py` | tracks.yaml + settings → list of takes, split across the cards. Drops caption phrases that cause hiss |
 | `render.py` | Renders takes on one card with the laptop's `gen.py` settings, loading the model once |
+| `../tools/lyrics/time_take.py` | With `TIME_LYRICS = True`, times each new take's lyrics after the renders, so the phone can follow word by word ([tools/lyrics](../tools/lyrics/README.md)) |
 | `voice.py` | Trains or resumes the voice model, converts the probe at every checkpoint, saves the state |
 | `laptop/kjob.py` | Run all of this from the laptop: upload voice clips, start a run, fetch the results |
 
