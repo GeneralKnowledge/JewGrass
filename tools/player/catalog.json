@@ -10,6 +10,12 @@
   "last-carriage": "LAST CARRIAGE",
   "lowbridge": "LOWBRIDGE"
  },
+ "albums": {
+  "nightshift-fm": "Phantom Frequency",
+  "iron-canticle": "Candles for a Dead Sun",
+  "last-carriage": "Overnight North",
+  "lowbridge": "Under the Bridge"
+ },
  "songs": {
   "ah-everybody-knows": {
    "title": "Everybody Knows",
