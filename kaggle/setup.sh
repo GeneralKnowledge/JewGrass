@@ -30,6 +30,16 @@ if [[ " $* " == *" ace "* ]]; then
   echo "ACE-Step ready in $((SECONDS - t0)) s"
 fi
 
+if [[ " $* " == *" lyrics "* ]]; then
+  # faster-whisper for timed lyrics (tools/lyrics/time_take.py), the laptop's version (laptop/tools/asr.md),
+  # with the CUDA 12 cuBLAS and cuDNN 9 libraries its GPU build loads.
+  t0=$SECONDS
+  [ -x $T/venv-asr/bin/python ] || uv venv -q $T/venv-asr --python 3.12
+  uv pip install -q --python $T/venv-asr/bin/python faster-whisper==1.2.1 nvidia-cublas-cu12 "nvidia-cudnn-cu12==9.*"
+  HF_HUB_DISABLE_XET=1 $T/venv-asr/bin/python -c "from faster_whisper.utils import download_model; print(download_model('medium.en'))"
+  echo "Whisper ready in $((SECONDS - t0)) s"
+fi
+
 if [[ " $* " == *" applio "* ]]; then
   t0=$SECONDS
   clone https://github.com/IAHispano/Applio $T/Applio $APPLIO_COMMIT

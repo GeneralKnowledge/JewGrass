@@ -30,6 +30,8 @@ DIT_MODELS = ["xl-turbo"] # music model(s), every take is made with each: "xl-tu
 RENDER_FIRST = []         # batches rendered before the one above, same keys in lower case, e.g.
                           # [{"tracks_yaml": "https://...", "tracks": "queue", "seeds": {...}, "models": ["turbo", "xl-turbo"]}]
 RENDER_MAX_HOURS = 6      # stop starting new takes after this long
+TIME_LYRICS = False       # after the renders, time each take's lyrics (tools/lyrics/time_take.py) so the phone can
+                          # light up the word being sung: Whisper on the GPU, about half a minute per take, writes <take>.lrc
 RENDER_FILL = 8           # JOB=both: when the render card runs out of takes before voice training ends, it keeps
                           # making extra takes (next seeds of the same tracks, up to this many more each) instead of idling
 
@@ -70,7 +72,7 @@ REPO = "/kaggle/temp/JewGrass"
 if not os.path.isdir(REPO):
     subprocess.run(["git", "clone", "-q", "--depth", "1", "--filter=blob:none", "--sparse", "--branch", BRANCH,
                     "https://github.com/GeneralKnowledge/JewGrass", REPO], check=True)
-    subprocess.run(["git", "-C", REPO, "sparse-checkout", "set", "kaggle", "docs/album"], check=True)
+    subprocess.run(["git", "-C", REPO, "sparse-checkout", "set", "kaggle", "docs/album", "tools/lyrics"], check=True)
 print(subprocess.run(["git", "-C", REPO, "log", "-1", "--format=%h %s"], capture_output=True, text=True).stdout)
 
 
@@ -87,7 +89,8 @@ def run_all(cmds, envs, cwd=None):
         procs.append(p)
     return [p.wait() for p in procs]"""),
     (CODE, """# --- install (about 5-10 minutes) -------------------------------------------------------------------------------
-parts = (["ace"] if JOB in ("render", "both") else []) + (["applio"] if JOB in ("voice", "both") else [])
+parts = (["ace"] if JOB in ("render", "both") else []) + (["applio"] if JOB in ("voice", "both") else []) \
+    + (["lyrics"] if TIME_LYRICS and JOB in ("render", "both") else [])
 subprocess.run(["bash", f"{REPO}/kaggle/setup.sh", *parts], check=True)
 print(f"installed in {(time.time() - T0) / 60:.0f} min")"""),
     (CODE, """# --- the work: voice training and/or renders ---------------------------------------------------------------------
@@ -188,6 +191,16 @@ else:
 for n, c in zip(names, codes):
     print(f"{n}: exit {c}")
 print(f"work done after {(time.time() - T0) / 60:.0f} min in total")
+
+if render_on and TIME_LYRICS:
+    # Timed lyrics for every new take, on card 0 (the renders are done): <take>.lrc next to its mp3.
+    import glob
+    libs = ":".join(glob.glob("/kaggle/temp/venv-asr/lib/python3.*/site-packages/nvidia/*/lib"))
+    env = dict(os.environ, CUDA_VISIBLE_DEVICES="0", BAND_DEADLINE=str(HARD_STOP),
+               LD_LIBRARY_PATH=f"{libs}:{os.environ.get('LD_LIBRARY_PATH', '')}")
+    rc = subprocess.run(["/kaggle/temp/venv-asr/bin/python", f"{REPO}/tools/lyrics/time_take.py", "--all", f"{OUT}/renders"],
+                        env=env).returncode
+    print(f"lyric timing: exit {rc}, {len(glob.glob(f'{OUT}/renders/**/*.lrc', recursive=True))} .lrc files")
 
 if voice_on:
     # Keep the training state on Kaggle as the private dataset <user>/jewgrass-voice-state, so the next run
